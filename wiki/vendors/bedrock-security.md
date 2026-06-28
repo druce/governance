@@ -4,41 +4,64 @@ name: Bedrock Security
 slug: bedrock-security
 categories: [dspm]
 layer: data
-aliases: []
-website:
-founded:
-hq:
+aliases: [Bedrock Data]
+website: https://www.bedrock.security
+founded: 2021
+hq: Menlo Park, California, USA
 ownership: independent
-ownership_detail: 
-ownership_confidence: low
-funding_total:
-last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+ownership_detail: VC-backed private; $25M Series A led by Greylock (2025-11). No M&A.
+ownership_confidence: high
+funding_total: ~$35M (disclosed)
+last_funding: Series A $25M (2025-11-19, Greylock Partners)
+deployment: [saas, api]
+target_customer: enterprise / mid-market
+hedge_fund_fit: medium
 priority: day-1
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [sensitive-data]
+status: researched
+confidence: medium
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [dspm, data-security, ai-data-governance]
 ---
 
 # Bedrock Security
 
-> **Stub.** Researched in Phase 3. Primary category: [[dspm]].
+> Now operating as **Bedrock Data** (rebrand from Bedrock Security). Primary category: [[dspm]].
 
-**One-liner** — _TODO (research)._
+**One-liner** — An AI-native data security posture management (DSPM) platform that discovers, classifies, and governs sensitive enterprise data in place using a "Metadata Lake," without moving data outside the customer boundary.
 
-**Categories** — [[dspm]]
+## What it does
+Bedrock continuously discovers and classifies sensitive data across cloud, SaaS, on-prem, and AI environments, then scores and helps remediate data-security posture (over-exposed data, stale data, access risk). Its differentiator is a patented **Metadata Lake** that autonomously catalogs data *in place* — it reads metadata/context rather than copying the underlying data out, which keeps regulated data inside the customer's trust boundary. The pitch is "operationalizing a data security program": not just visibility, but driving down exposure and improving access governance, increasingly framed around safe AI/RAG adoption.
+
+## Where it sits in the stack
+Data layer — [[dspm]]. Lethal-trifecta role: protects the **sensitive-data** leg by finding and reducing where sensitive data lives and who/what can reach it (including AI agents and copilots). Lives in the data trust zone feeding AI systems; adjacent to [[dlp]] and [[data-access-governance]].
+
+## Deployment & architecture
+SaaS control plane with agentless, metadata-based scanning across private cloud, IaaS, PaaS, SaaS, and AI environments; data stays in place. Aimed at integrating into a broader data-security/governance program rather than acting as an inline proxy.
+
+## Positioning & differentiators
+Competes in the crowded DSPM field against [[cyera]], [[sentra]], [[bigid]], [[normalyze]], [[concentric-ai]], [[symmetry-systems]], and [[wiz]]'s DSPM. Its angle is the "Metadata Lake" / data-stays-in-place architecture and AI-native classification, positioned for the AI-data-governance moment. Founder/CEO Bruno Kurtic co-founded Sumo Logic, which shapes the data-platform-at-scale narrative. Note marketing language ("industry-first," "frictionless") is vendor framing.
+
+## Ownership, funding & M&A
+Independent, VC-backed. $10M seed (March 2024, Greylock) and a $25M Series A announced 2025-11-19, led by Greylock Partners with Mangusta Capital, Mantis Venture Capital, and Pier 88 Investment Partners. No seed M&A flag; none found. Ownership confidence high (recent primary funding announcement).
+
+## CTO / hedge-fund lens
+DSPM is **Day-1** for a fund standing up AI on internal data — you must know where MNPI/PII/material data sits before pointing a copilot or RAG pipeline at it. Bedrock is a credible newer entrant; for a hedge fund the practical question is whether to buy a focused DSPM or use DSPM bundled into a platform already owned ([[microsoft-purview]], [[wiz]], [[rubrik]]). The data-in-place architecture is attractive for regulated shops wary of exporting sensitive data to a scanner. Early-stage vendor risk applies (small, ~Series A).
+
+## Competitors / alternatives
+[[cyera]], [[sentra]], [[bigid]], [[symmetry-systems]], [[normalyze]], [[concentric-ai]], [[securiti]], [[microsoft-purview]], [[wiz]].
 
 ## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- (no seed M&A flag)
+- Exact total funding and full cap table (only seed + Series A confirmed; total ~$35M is disclosed-rounds sum).
+- Confirm all three co-founders and current exec roster post-rebrand.
+- Real-world classification accuracy / scale vs. Cyera/Sentra (independent benchmarks).
 
 ## Sources
-- _none yet_
+- [Bedrock Data Announces $25 Million Series A](https://www.businesswire.com/news/home/20251119811935/en/) — fetched 2026-06-28 — supports: Series A amount/date/lead, HQ, CEO, product/Metadata Lake; confidence: high.
+- [Bedrock Data Series A (Yahoo Finance mirror)](https://finance.yahoo.com/news/bedrock-data-announces-25-million-150000042.html) — fetched 2026-06-28 — supports: same; confidence: high.
+- Earlier coverage (seed $10M, March 2024, Greylock; founders/founded 2021) via BusinessWire/Crunchbase — confidence: med.
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched; established independent VC-backed (Greylock seed + $25M Series A Nov 2025), rebrand to "Bedrock Data," Menlo Park HQ, founded 2021, DSPM/Metadata-Lake product. No M&A. Set ownership_confidence high.

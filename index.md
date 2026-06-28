@@ -79,7 +79,7 @@ Read this first when answering a query. Every page, grouped by section, with sta
 - [[harmonic-security]] — Harmonic Security — (stub, 2026-06-28)
 - [[lanai]] — Lanai — (stub, 2026-06-28)
 - [[nudge-security]] — Nudge Security — (stub, 2026-06-28)
-- [[portal26]] — Portal26 — (stub, 2026-06-28)
+- [[portal26]] — GenAI governance/visibility/forensics (AI TRiSM) SaaS; formerly Titaniam — (researched, 2026-06-28)
 - [[wald-ai]] — Wald.ai — (stub, 2026-06-28)
 - [[witnessai]] — WitnessAI — (stub, 2026-06-28)
 
