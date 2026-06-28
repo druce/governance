@@ -64,11 +64,19 @@ enforceable. Lives wherever decisions are made — typically yellow/green zones.
 
 ## Consolidation / M&A dynamics
 
-No seed M&A flags here — the category is mostly independent OSS projects and venture-backed
-authz startups, not yet a roll-up target. The dynamic to watch is **adjacency capture**:
-MCP-gateway and tool-identity vendors are bundling authz as a feature, and these engines
-are repositioning from "microservice authz" to "agent authz" to ride the agentic wave.
-OPA's gravity (via [[styra]] and [[policy-as-code]]) is the center of mass.
+No seed M&A flags, but research surfaced one **major event**: in **Aug 2025 Apple acqui-hired
+the core OPA maintainers and several engineers from [[styra]]** (the commercial OPA company).
+It was a **team acqui-hire, not a clean corporate acquisition** — [[open-policy-agent]] itself
+stays under CNCF (governance/license/cadence unchanged), but Styra's commercial products (DAS,
+Enterprise OPA) face an uncertain roadmap. Net effect: buyers standing up authz today should
+default to OPA directly or a managed alternative ([[permit-io]], [[cerbos]] Cloud, [[oso]]);
+existing Styra DAS customers have a vendor-risk/migration question. Otherwise the category is
+independent OSS projects and venture-backed startups (Cerbos, Permit.io, AuthZed, Oso all
+independent; AuthZed Series A $12M/2024, Permit.io Series A $8M/2024). The dynamic to watch is
+**adjacency capture**: MCP-gateway and tool-identity vendors bundle authz as a feature, and
+these engines are repositioning from "microservice authz" to **"agent authz"** to ride the
+agentic wave — [[oso]] went furthest, launching "Oso for Agents" (2025) that extends into
+[[agent-runtime-security]].
 
 ## Adjacent categories
 
@@ -92,7 +100,7 @@ In production; Would recommend; Would not recommend.
 
 **Notes for survey design.**
 - **Table-stakes / most-deployed:** OPA (likely already in production for non-AI authz — responses may reflect existing infra, not new agent use). **Niche:** AuthZed, Oso.
-- **OPA vs Styra confusion:** Styra is the commercial OPA company; some respondents will pick one meaning the other. Consider pairing them ("OPA / Styra") as the CSV did, or a clarifying note.
+- **OPA vs Styra confusion:** Styra is the commercial OPA company; some respondents will pick one meaning the other. Consider pairing them ("OPA / Styra") as the CSV did, or a clarifying note. **M&A dates this option:** Apple acqui-hired Styra's OPA team (Aug 2025) and its commercial products are in limbo — a "Styra" response in 2026 likely means legacy DAS usage, not net-new adoption.
 - This question overlaps [[policy-as-code]] and [[mcp-gateway]] survey items (same vendors appear). If you ask all three, scope each clearly ("agent/tool *authorization decisions*" here) to avoid respondents answering the same thing three times.
 
 ## Open taxonomy questions
