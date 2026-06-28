@@ -4,41 +4,51 @@ name: GitHub Codespaces
 slug: github-codespaces
 categories: [ephemeral-environments]
 layer: governance
-aliases: []
-website:
-founded:
-hq:
-ownership: independent
-ownership_detail: 
-ownership_confidence: low
+aliases: [Codespaces]
+website: https://github.com/features/codespaces
+founded: 2020
+hq: San Francisco, CA, USA
+ownership: subsidiary
+ownership_detail: Product of GitHub, Inc., a Microsoft subsidiary (Microsoft acquired GitHub in 2018)
+ownership_confidence: high
 funding_total:
 last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+deployment: [saas]
+target_customer: enterprise
+hedge_fund_fit: medium
 priority: day-2
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [untrusted-input, egress]
+status: researched
+confidence: high
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [first-party, dev-environments, microsoft]
 ---
 
 # GitHub Codespaces
 
-> **Stub.** Researched in Phase 3. Primary category: [[ephemeral-environments]].
+**One-liner** — Cloud-hosted, on-demand development environments spun up from a Git repo, so code (including AI-generated or AI-agent-run code) executes in a disposable container instead of on a developer's laptop.
 
-**One-liner** — _TODO (research)._
+**What it does** — Codespaces launches a containerized dev environment (a "devcontainer") on Microsoft-managed Azure VMs, preconfigured from a repo's `devcontainer.json`. Developers get a full VS Code workspace in seconds; the environment is torn down when idle. For an AI stack, the relevant use is **sandboxing untrusted execution**: running coding agents, untrusted dependencies, or experimental tooling in an isolated, short-lived box rather than on a trusted endpoint.
 
-**Categories** — [[ephemeral-environments]]
+**Where it sits in the stack** — [[ephemeral-environments]] in the governance/policy layer. It is an *enabler* of [[trust-zone-segmentation]]: ephemeral, isolated compute is how you keep agentic or untrusted code out of the green zone. Lethal-trifecta role: limits **untrusted-input** blast radius (code runs in a throwaway sandbox) and can constrain **egress** via network policy. Not a security product per se — a primitive you build zone isolation on.
 
-## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- (no seed M&A flag)
+**Deployment & architecture** — SaaS; containers run on Azure VMs, accessed via browser or VS Code / JetBrains. Integrates with GitHub repos, Actions, org policy controls (prebuilds, network egress controls, IP allow-lists, spending limits). Not self-hostable (contrast self-managed alternatives).
+
+**Positioning & differentiators** — Tightest integration with GitHub repos and the GitHub Enterprise control plane; the default ephemeral-dev option if you already live in GitHub. Neighbors: [[azure-dev-boxes]] (full Windows dev workstations vs. Linux containers), [[cloudflare-workers]] (edge runtime, not a dev environment).
+
+**Ownership, funding & M&A** — Product of GitHub, Inc., a wholly-owned Microsoft subsidiary (Microsoft acquired GitHub in 2018). No standalone funding/M&A. Confidence: high.
+
+**CTO / hedge-fund lens** — Day-2 infrastructure, not a security purchase. Relevant if your developers or coding agents are generating/executing code and you want that to happen in disposable, policy-governed sandboxes rather than on managed endpoints. Most funds already have GitHub Enterprise, so this is a configuration/governance decision, not a procurement one.
+
+**Competitors / alternatives** — [[azure-dev-boxes]], [[cloudflare-workers]], self-hosted devcontainers, Coder/Gitpod (not in registry).
+
+**Open questions / to verify** — Exact egress-control granularity for agent workloads.
 
 ## Sources
-- _none yet_
+- [GitHub Codespaces](https://github.com/features/codespaces) — fetched 2026-06-28 — supports: product description, GitHub/Microsoft ownership; confidence: high
+- [raw/sources/2026-06-28--retrieval-infra--first-party-ownership.md] — supports: GitHub is a Microsoft subsidiary; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched (light); established ownership = subsidiary (GitHub/Microsoft), set as ephemeral-environments enabler for trust-zone segmentation. Ownership confidence high.
