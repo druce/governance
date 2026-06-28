@@ -4,41 +4,48 @@ name: Azure AI Search
 slug: azure-ai-search
 categories: [vector-retrieval]
 layer: retrieval
-aliases: []
-website:
-founded:
-hq:
-ownership: independent
-ownership_detail: 
-ownership_confidence: low
+aliases: [Azure Cognitive Search, Azure Search]
+website: https://azure.microsoft.com/en-us/products/ai-services/ai-search
+founded: 2014
+hq: Redmond, WA, USA
+ownership: public
+ownership_detail: First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); renamed from Azure Cognitive Search in 2023
+ownership_confidence: high
 funding_total:
 last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+deployment: [saas, api]
+target_customer: enterprise
+hedge_fund_fit: high
 priority: day-1
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [sensitive-data]
+status: researched
+confidence: high
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [first-party, vector-database, retrieval, microsoft, azure]
 ---
 
 # Azure AI Search
 
-> **Stub.** Researched in Phase 3. Primary category: [[vector-retrieval]].
+**One-liner** — Microsoft's managed search-and-vector-index service — the retrieval engine most Azure-based RAG apps (and Azure OpenAI "on your data") use to find the right chunks to feed an LLM.
 
-**One-liner** — _TODO (research)._
+**What it does** — Azure AI Search (formerly Azure Cognitive Search) indexes your content and serves keyword, vector, and hybrid search with semantic ranking. In a RAG pipeline it is the **vector-retrieval** layer: store embeddings, retrieve top-k relevant chunks at query time. Supports security trimming (filtering results by the caller's permissions), which is the hook for entitlement-aware retrieval.
 
-**Categories** — [[vector-retrieval]]
+**Where it sits in the stack** — [[vector-retrieval]], retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (the indexed corpus + embeddings). The natural Azure pairing for [[sharepoint]] content and [[microsoft-365-copilot]]-adjacent custom RAG.
 
-## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- (no seed M&A flag)
+**Deployment & architecture** — SaaS / managed Azure service, API-driven. Integrates with Azure OpenAI, Microsoft Entra (RBAC), and supports document-level security filters for entitlement-aware results.
+
+**Positioning & differentiators** — Default for Azure-centric shops; not a pure vector DB but a full search service with vectors added. Neighbors: [[pinecone]] (managed pure-play), [[weaviate]] (open-source + cloud), [[opensearch]] (open-source/self-host).
+
+**Ownership, funding & M&A** — First-party Microsoft Azure service (public, NASDAQ: MSFT). No M&A. Confidence: high.
+
+**CTO / hedge-fund lens** — Day-1 RAG infra if you are on Azure — usually you adopt whatever your cloud provides rather than buying a separate vector DB. Verify you wire up security trimming so retrieval honors source permissions.
+
+**Competitors / alternatives** — [[pinecone]], [[weaviate]], [[opensearch]].
 
 ## Sources
-- _none yet_
+- [raw/sources/2026-06-28--retrieval-infra--first-party-ownership.md] — supports: Microsoft Azure ownership, rename history; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched (light); brief stub — vector retrieval engine. Ownership Microsoft (public, high).

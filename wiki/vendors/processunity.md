@@ -4,41 +4,53 @@ name: ProcessUnity
 slug: processunity
 categories: [vendor-risk]
 layer: governance
-aliases: []
-website:
-founded:
-hq:
-ownership: independent
-ownership_detail: 
-ownership_confidence: low
+aliases: [ProcessUnity + CyberGRX]
+website: https://www.processunity.com/
+founded: 2003
+hq: Concord, Massachusetts, USA
+ownership: acquired
+ownership_detail: "PE-owned: Marlin Equity Partners acquired ProcessUnity 2021-09-28. ProcessUnity acquired/merged CyberGRX 2023-07."
+ownership_confidence: high
 funding_total:
-last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+last_funding: "Acquired by Marlin Equity Partners (2021)"
+deployment: [saas]
+target_customer: enterprise
+hedge_fund_fit: medium
 priority: day-1
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [none]
+status: researched
+confidence: high
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [tprm, vendor-risk, grc, third-party-risk]
 ---
 
 # ProcessUnity
 
-> **Stub.** Researched in Phase 3. Primary category: [[vendor-risk]].
+> Primary category: [[vendor-risk]].
 
-**One-liner** — _TODO (research)._
+**One-liner** — A third-party-risk-management (TPRM) and GRC platform that, after merging with CyberGRX, pairs assessment workflow with a large pre-completed vendor-risk data exchange.
 
-**Categories** — [[vendor-risk]]
+**What it does** — ProcessUnity runs the TPRM lifecycle: vendor onboarding, risk-tiering, assessments/questionnaires, continuous monitoring, and remediation, plus broader GRC (policy, controls). The 2023 CyberGRX combination added an "exchange" of pre-completed third-party risk assessments and predictive risk data, reducing the questionnaire burden on both buyers and vendors.
 
-## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- (no seed M&A flag)
+**Where it sits in the stack** — [[vendor-risk]], governance layer. Process/workflow + data for assessing suppliers — including AI vendors — not a runtime data control (`trifecta_relevance: none`). Complements security-ratings vendors ([[bitsight]], [[securityscorecard]], [[black-kite]], [[upguard]]) by owning the assessment workflow they feed into.
+
+**Deployment & architecture** — SaaS. Questionnaire/assessment engine + CyberGRX exchange data; integrations with GRC and security tooling.
+
+**Positioning & differentiators** — Workflow-and-exchange TPRM, differentiated from the pure outside-in cyber-ratings vendors. The CyberGRX merger is its main moat (assessment data network). Competes with [[onetrust]] vendor risk and the ratings players.
+
+**Ownership, funding & M&A** — `acquired` / PE-owned. **Marlin Equity Partners** acquired ProcessUnity on 2021-09-28. As a Marlin portfolio company, ProcessUnity then acquired/merged with **CyberGRX** (announced 2023-07-12; CyberGRX holders retained a minority stake; terms undisclosed). Stub "independent" corrected to `acquired`. (high confidence)
+
+**CTO / hedge-fund lens** — Day-1 for a fund formalizing third-party/vendor risk (extends naturally to AI-vendor due diligence). Good fit where the fund wants a real assessment workflow plus reusable vendor data rather than just an external score. Heavier than a ratings-only subscription.
+
+**Competitors / alternatives** — [[onetrust]], [[securityscorecard]], [[bitsight]], [[black-kite]], [[upguard]], [[archer]].
+
+**Open questions / to verify** — Current scale of the CyberGRX exchange; AI-vendor-specific assessment content.
 
 ## Sources
-- _none yet_
+- [Marlin: ProcessUnity acquires CyberGRX](https://www.marlinequity.com/news/marlin-portfolio-company-processunity-acquires-cybergrx/) — fetched 2026-06-28 — supports: Marlin ownership, CyberGRX merger 2023; confidence: high
+- [ProcessUnity + CyberGRX press release](https://www.processunity.com/resources/press-releases/processunity-cybergrx-form-most-complete-third-party-risk-management-platform/) — fetched 2026-06-28 — supports: combined TPRM platform scope; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched; corrected ownership independent→acquired (Marlin Equity PE, 2021); documented CyberGRX merger (2023); confidence high.

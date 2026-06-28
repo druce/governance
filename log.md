@@ -59,3 +59,12 @@ Researched GHAS. Product (not company) of GitHub, a Microsoft subsidiary (acq. a
 
 ## [2026-06-28] research | gitlab
 Researched GitLab (Ultimate). Public company, NASDAQ: GTLB, IPO 2021-10-14 (~$10B), founded 2014 (Zaporozhets & Sijbrandij), all-remote SF HQ — ownership: public, high confidence. Ultimate tier bundles SAST/DAST/dependency scanning/secret detection/container scanning/license compliance. Deployment SaaS + self-managed/on-prem. M&A: verified Datadog acquisition is RUMORED/UNCONFIRMED (Reuters 2024-07; renewed Oct 2025 ~$60/share buzz; Wolfe Research skeptical) — no definitive agreement or 8-K found as of 2026-06-28; kept ownership public with dated note. No hard contradiction. hedge_fund_fit: high. 2 sources cached. status stub -> researched.
+
+## [2026-06-28] research | jfrog
+Researched JFrog (NASDAQ: FROG). Public — IPO Sept 2020 (~$509M at ~$3.9B); founded 2008 Netanya (Ben Haim/Landman/Simon); dual HQ Sunnyvale+Netanya. Artifactory (universal binary repo) + Xray (SCA/scanning) = software-supply-chain spine; JFrog ML / model-management via Qwak acquisition (announced 2024-06-25, ~$230M press-reported, undisclosed by JFrog). ownership=public, confidence high. hedge_fund_fit medium (Day-1 if shipping AI-gen code at scale). 2 sources cached. status stub -> researched.
+
+## [2026-06-28] research | sonatype
+Researched Sonatype. CORRECTION to seed brief: Vista Equity Partners majority interest was announced 2019-11-18 (NOT ~2024/2025); majority stake, existing investors retained some — PE-controlled. Founded 2008 Fulton MD by Maven creators Brian Fox & Jason van Zyl; stewards Maven Central. Products: Nexus Repository + Lifecycle/IQ SCA + Repository Firewall (blocks malicious OSS). ownership=acquired (Vista), confidence high on 2019 event. hedge_fund_fit medium. 2 sources cached. status stub -> researched.
+
+## [2026-06-28] research | aikido-security
+Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (Delbare/Delrue/Garriau). Funding ~$84M total: pre-seed €2M (Jan 2023), seed €5M (Nov 2023), Series A $17M (May 2024, Singular), Series B $60M (Jan 2026, $1B unicorn, led by DST Global w/ PSG Equity/Notion/Singular) — fastest EU cyber unicorn. Consolidated dev-first all-in-one AppSec (SCA/SAST/secrets/IaC/container/DAST/cloud); SaaS, no binary repo. ownership=independent, confidence high. hedge_fund_fit medium (Day-1 candidate for small fund shipping AI-gen code). 2 sources cached. status stub -> researched.
