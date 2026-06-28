@@ -6,6 +6,10 @@ for, when you actually need it (Day-1 vs Day-2), which vendors fill each slot, w
 and how to tell neighbors apart. It also doubles as scaffolding for a CTO usage/evaluation
 **survey**.
 
+**📖 Browse the published site: [druce.ai/governance](https://druce.ai/governance/)** — a Quartz
+build of this repo with graph view, full-text search, and backlinks. (Or read the markdown directly
+in this repo; start at [wiki/overview.md](wiki/overview.md).)
+
 Built and maintained by an LLM agent following [Karpathy's LLM-wiki pattern](https://github.com/karpathy/llm-wiki),
 adapted for a landscape **researched from the web** rather than a pre-existing corpus. Every
 claim that can go stale is dated and anchored to a cached source.
