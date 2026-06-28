@@ -27,7 +27,7 @@ tags: [secrets, open-source, self-hosted, developer-first, certificates, pam]
 
 # Infisical
 
-> **Researched 2026-06-28.** Primary category: [[secrets-management]].
+> **Researched 2026-06-28.** Primary category: [secrets-management](../categories/secrets-management.md).
 
 **One-liner** — The open-source, self-hostable secrets manager — an end-to-end-encrypted alternative to Doppler and cloud-only stores that also reaches into certificates and privileged access, increasingly pitched for AI agents.
 
@@ -35,13 +35,13 @@ tags: [secrets, open-source, self-hosted, developer-first, certificates, pam]
 Infisical centralizes secrets, app config, and credentials and injects them into dev workflows, CI/CD pipelines, and cloud infrastructure instead of leaving them in `.env` files or code. It adds secrets versioning, point-in-time recovery, audit logging, and automatic rotation, and has expanded toward certificate management and privileged access management. The differentiator is the **open-source core** with a **self-hosted, end-to-end-encrypted** deployment option, for teams that don't want a third party holding their secrets.
 
 ## Where it sits in the stack
-Foundation layer, [[secrets-management]], at the developer-workflow end. Lethal-trifecta leg: **sensitive-data** — keeps secrets out of code, repos, and prompts. Its newer secrets-for-agents framing makes it relevant to agentic/[[non-human-identity]] deployments, though the core job is classic app/CI secrets.
+Foundation layer, [secrets-management](../categories/secrets-management.md), at the developer-workflow end. Lethal-trifecta leg: **sensitive-data** — keeps secrets out of code, repos, and prompts. Its newer secrets-for-agents framing makes it relevant to agentic/[non-human-identity](../categories/non-human-identity.md) deployments, though the core job is classic app/CI secrets.
 
 ## Deployment & architecture
 Available as managed SaaS **or** self-hosted (the draw for regulated/air-gapped shops); web UI, CLI, SDKs, Kubernetes operator, and broad platform integrations. Large open-source footprint (tens of millions of downloads claimed; very active GitHub repo). End-to-end encryption.
 
 ## Positioning & differentiators
-The open-source challenger to [[doppler]] (SaaS) and a lighter-weight alternative to [[hashicorp-vault]] for teams that find Vault heavy. Versus the hyperscaler stores ([[aws-secrets-manager]], [[azure-key-vault]], [[gcp-secret-manager]]) it is cloud-agnostic and self-hostable. Versus [[1password]] it is purely developer/machine secrets (no human-password-manager/device-trust side). Self-hosting + OSS transparency are the key buying reasons.
+The open-source challenger to [doppler](doppler.md) (SaaS) and a lighter-weight alternative to [hashicorp-vault](hashicorp-vault.md) for teams that find Vault heavy. Versus the hyperscaler stores ([aws-secrets-manager](aws-secrets-manager.md), [azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md)) it is cloud-agnostic and self-hostable. Versus [1password](1password.md) it is purely developer/machine secrets (no human-password-manager/device-trust side). Self-hosting + OSS transparency are the key buying reasons.
 
 ## Ownership, funding & M&A
 Independent, private, VC-backed. Founded 2022 by Vlad Matsiiako (CEO), Tony Dang, and Maidul Islam; HQ San Francisco; Y Combinator W23. $16M Series A led by Elad Gil (reported ~2025), with Y Combinator, Gradient, Dynamic Fund, and angels (Datadog CEO Olivier Pomel, Samsara CEO Sanjit Biswas). No M&A. Confidence high (founding/founders/round); exact Series A date approximate.
@@ -50,7 +50,7 @@ Independent, private, VC-backed. Founded 2022 by Vlad Matsiiako (CEO), Tony Dang
 Day-1 *if* you want a cloud-agnostic or self-hosted secrets manager and value open-source auditability — the self-hosting option is the standout for a regulated fund that doesn't want secrets sitting in a third-party SaaS. If you're single-cloud, the native manager is usually simpler. Diligence: maturity of the self-hosted deployment you'll operate, support model, and whether the OSS vs paid feature split covers what you need. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[[doppler]], [[hashicorp-vault]], [[aws-secrets-manager]], [[azure-key-vault]], [[gcp-secret-manager]], [[1password]], [[conjur]] (CyberArk).
+[doppler](doppler.md), [hashicorp-vault](hashicorp-vault.md), [aws-secrets-manager](aws-secrets-manager.md), [azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md), [1password](1password.md), [conjur](conjur.md) (CyberArk).
 
 ## Open questions / to verify
 - Exact Series A close date and total raised to date.

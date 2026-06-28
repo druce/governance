@@ -27,7 +27,7 @@ tags: [mcp, gateway, open-source, ibm, agentic]
 
 # IBM ContextForge MCP Gateway
 
-> Primary category: [[mcp-gateway]]. Layer: model-prompt.
+> Primary category: [mcp-gateway](../categories/mcp-gateway.md). Layer: model-prompt.
 
 **One-liner** — IBM's open-source (Apache-2.0) MCP gateway, registry, and proxy that sits in front of many MCP / A2A / REST / gRPC backends and exposes them as one governed, observable endpoint.
 
@@ -45,7 +45,7 @@ It is itself a fully compliant MCP server, so any MCP client can talk to it.
 
 ## Where it sits in the stack
 
-Lives in the [[mcp-gateway]] category at the model/prompt-to-tool boundary: it brokers what tools and data an agent (or LLM app) can reach. In lethal-trifecta terms it is positioned to control two legs:
+Lives in the [mcp-gateway](../categories/mcp-gateway.md) category at the model/prompt-to-tool boundary: it brokers what tools and data an agent (or LLM app) can reach. In lethal-trifecta terms it is positioned to control two legs:
 
 - **Egress / sensitive-action control** — it is the chokepoint between the model and the tools/APIs/data the agent can call, so it is where you would enforce which backends and actions are allowed.
 - **Untrusted-input handling** — its plugin/guardrail hooks can inspect and filter tool inputs/outputs (e.g. prompt-injection or content guardrails) as they flow through.
@@ -70,11 +70,11 @@ Trust-zone role: a gateway/broker that you place between a (yellow/red) agent ru
 - **Self-hosted, infra-first.** Kubernetes/Helm + Redis federation + OTel make it look like infrastructure you operate, versus managed-SaaS control planes.
 
 Nearest neighbors:
-- [[docker-mcp-gateway]] — Docker's MCP gateway, tightly tied to Docker tooling/containerized MCP catalog; ContextForge is framework-agnostic Python and adds REST/A2A federation and a registry.
-- [[agentgateway]] — open-source agent/MCP data-plane proxy (CNCF/solo.io orbit); similar gateway role, different ecosystem.
-- [[obot]] — open-source MCP gateway with a stronger product/UI bent.
-- [[mintmcp]], [[arcade]] — more managed/commercial MCP access-control and tool-platform offerings.
-- [[pomerium]] — identity-aware access proxy extending to MCP; access-control-first vs ContextForge's registry/federation-first framing.
+- [docker-mcp-gateway](docker-mcp-gateway.md) — Docker's MCP gateway, tightly tied to Docker tooling/containerized MCP catalog; ContextForge is framework-agnostic Python and adds REST/A2A federation and a registry.
+- [agentgateway](agentgateway.md) — open-source agent/MCP data-plane proxy (CNCF/solo.io orbit); similar gateway role, different ecosystem.
+- [obot](obot.md) — open-source MCP gateway with a stronger product/UI bent.
+- [mintmcp](mintmcp.md), [arcade](arcade.md) — more managed/commercial MCP access-control and tool-platform offerings.
+- [pomerium](pomerium.md) — identity-aware access proxy extending to MCP; access-control-first vs ContextForge's registry/federation-first framing.
 
 ## Ownership, funding & M&A
 
@@ -93,7 +93,7 @@ Nearest neighbors:
 
 ## Competitors / alternatives
 
-[[docker-mcp-gateway]], [[agentgateway]], [[obot]], [[mintmcp]], [[arcade]], [[pomerium]]
+[docker-mcp-gateway](docker-mcp-gateway.md), [agentgateway](agentgateway.md), [obot](obot.md), [mintmcp](mintmcp.md), [arcade](arcade.md), [pomerium](pomerium.md)
 
 ## Open questions / to verify
 
@@ -111,4 +111,4 @@ Nearest neighbors:
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established it's IBM's Apache-2.0 open-source MCP/A2A/REST gateway+registry (Python/FastAPI, self-host via PyPI/Docker/K8s), federation + virtual servers + REST-to-MCP, OTel observability, used in IBM watsonx Orchestrate tutorials. Ownership set public (IBM, high confidence); flagged that commercial support model is unconfirmed (appears community OSS). Kept category [[mcp-gateway]]. Latest release v1.0.4 (2026-06-23).
+- [2026-06-28] Researched; established it's IBM's Apache-2.0 open-source MCP/A2A/REST gateway+registry (Python/FastAPI, self-host via PyPI/Docker/K8s), federation + virtual servers + REST-to-MCP, OTel observability, used in IBM watsonx Orchestrate tutorials. Ownership set public (IBM, high confidence); flagged that commercial support model is unconfirmed (appears community OSS). Kept category [mcp-gateway](../categories/mcp-gateway.md). Latest release v1.0.4 (2026-06-23).

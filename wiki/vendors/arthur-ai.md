@@ -27,27 +27,27 @@ tags: [observability, model-monitoring, explainability, guardrails, governance, 
 
 # Arthur AI
 
-> Researched 2026-06-28. Primary category: [[llm-observability]]; also [[ai-governance-platform]].
+> Researched 2026-06-28. Primary category: [llm-observability](../categories/llm-observability.md); also [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **One-liner** — An enterprise AI monitoring and governance platform that evaluates, monitors, and guardrails ML models, LLMs, and agents in production.
 
 **What it does** — Arthur began as a model-monitoring platform — tracking performance, data drift, bias/fairness, and explainability across tabular, computer-vision, NLP, and (later) LLM models. It has repositioned around agents: continuous evaluations across the lifecycle, agent discovery and governance (find agents, enforce policy, keep oversight), and built-in guardrails (a "firewall") to block misuse and off-brand outputs. The CTO pitch is one control plane to ship reliable AI agents and prove they behave.
 
-**Where it sits in the stack** — Primarily [[llm-observability]] (model/prompt layer) with a clear [[ai-governance-platform]] story (policy, oversight, audit). Its guardrails touch the **untrusted-input** leg of the lethal trifecta; the platform is observe-evaluate-and-govern first, with inline guardrailing as a feature rather than a dedicated [[ai-runtime-security]] firewall.
+**Where it sits in the stack** — Primarily [llm-observability](../categories/llm-observability.md) (model/prompt layer) with a clear [ai-governance-platform](../categories/ai-governance-platform.md) story (policy, oversight, audit). Its guardrails touch the **untrusted-input** leg of the lethal trifecta; the platform is observe-evaluate-and-govern first, with inline guardrailing as a feature rather than a dedicated [ai-runtime-security](../categories/ai-runtime-security.md) firewall.
 
 **Deployment & architecture** — SDK/API instrumentation feeding a platform deployable as SaaS, **on-premises**, or via GCP/AWS marketplace — the strong self-hosted option matters for regulated buyers who won't send model traffic to a vendor cloud. Maintains open source: **Arthur Engine** (GitHub `arthur-ai/arthur-engine`) and previously Arthur Bench (LLM eval benchmark).
 
-**Positioning & differentiators** — The closest analogue to [[fiddler-ai]] — both are NYC/Bay-area enterprise platforms born from ML monitoring + explainability + bias detection, both pivoting to agents/governance, both with serious on-prem stories for regulated customers. Differs from developer-first OSS tracers ([[langfuse]], [[arize-phoenix]], [[trulens]]) by leading with enterprise governance and an open-source guardrails engine. Differs from pure red-teaming/eval tools ([[giskard]], [[patronus-ai]]) by centering production monitoring.
+**Positioning & differentiators** — The closest analogue to [fiddler-ai](fiddler-ai.md) — both are NYC/Bay-area enterprise platforms born from ML monitoring + explainability + bias detection, both pivoting to agents/governance, both with serious on-prem stories for regulated customers. Differs from developer-first OSS tracers ([langfuse](langfuse.md), [arize-phoenix](arize-phoenix.md), [trulens](trulens.md)) by leading with enterprise governance and an open-source guardrails engine. Differs from pure red-teaming/eval tools ([giskard](giskard.md), [patronus-ai](patronus-ai.md)) by centering production monitoring.
 
 **Ownership, funding & M&A** — Independent and VC-backed. Founded 2018, HQ New York City. Raised a $3.3M seed at launch and a **$42M Series B in September 2022** led by Acrew Capital and Greycroft, with Index Ventures and Work-Bench; ~$63M total. No M&A. (confidence: high)
 
 **CTO / hedge-fund lens** — Day-1-ish for shops running production AI that needs monitoring + governance evidence. The bias/explainability/audit heritage maps well to **SR 11-7 / model-risk** expectations, and the on-prem option suits a fund unwilling to route model traffic externally. For a small fund it's likely heavier than an OSS tracer; it fits mid-market-to-enterprise with a formal model-risk or compliance function. The OSS Arthur Engine is a low-commitment way to trial the guardrails/eval piece.
 
-**Competitors / alternatives** — [[fiddler-ai]], [[arize-phoenix]], [[whylabs]] (wound down), [[langfuse]], [[braintrust]], [[giskard]], [[datadog]].
+**Competitors / alternatives** — [fiddler-ai](fiddler-ai.md), [arize-phoenix](arize-phoenix.md), [whylabs](whylabs.md) (wound down), [langfuse](langfuse.md), [braintrust](braintrust.md), [giskard](giskard.md), [datadog](datadog.md).
 
 **Open questions / to verify**
 - Any funding/ownership changes since the 2022 Series B (no later round confirmed).
-- How the Arthur guardrails/firewall compares on latency/coverage with dedicated [[ai-runtime-security]] vendors.
+- How the Arthur guardrails/firewall compares on latency/coverage with dedicated [ai-runtime-security](../categories/ai-runtime-security.md) vendors.
 
 ## Sources
 - [Arthur AI homepage](https://www.arthur.ai/) — fetched 2026-06-28 — supports: current product scope, deployment, Arthur Engine OSS; confidence: med (vendor/marketing).

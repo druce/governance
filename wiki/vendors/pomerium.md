@@ -31,7 +31,7 @@ tags: [ztna, identity-aware-proxy, reverse-proxy, mcp, zero-trust, open-source]
 > zero-trust access proxy that re-checks every request against policy using
 > identity + context, now extended to broker and authorize access to **MCP** servers.
 
-**Categories** — [[mcp-gateway]], [[authorization-engine]]
+**Categories** — [mcp-gateway](../categories/mcp-gateway.md), [authorization-engine](../categories/authorization-engine.md)
 
 ## One-liner
 A self-hosted reverse proxy that puts continuous, per-request authorization in
@@ -59,8 +59,8 @@ you don't modify MCP clients or servers — you point them through the proxy —
 stays MCP-spec compliant.
 
 ## Where it sits in the stack
-Primary fit is [[mcp-gateway]] (the inline broker/PEP for agent-to-tool traffic)
-and [[authorization-engine]] (the per-request policy decision point). Layer:
+Primary fit is [mcp-gateway](../categories/mcp-gateway.md) (the inline broker/PEP for agent-to-tool traffic)
+and [authorization-engine](../categories/authorization-engine.md) (the per-request policy decision point). Layer:
 `model-prompt` / runtime control plane. Note the **dual identity**: Pomerium is
 first and foremost a general ZTNA/identity-aware access proxy for human and service
 access to internal apps; MCP authorization is a recent, additive use of the same
@@ -80,7 +80,7 @@ tools/data) and less-trusted callers (agents, remote users).
 - **Policy**: YAML-based route configuration combining identity conditions with
   per-route authorization; MCP controls expressed as route policy (e.g.
   `mcp_tool: { in: ["search","fetch"] }`). This is Pomerium's own policy model — not
-  Rego — though it occupies the same PDP/PEP role as [[open-policy-agent]].
+  Rego — though it occupies the same PDP/PEP role as [open-policy-agent](open-policy-agent.md).
 - **IdP integration**: OIDC/SSO with Okta, Azure AD / Entra, Google Workspace, etc.;
   agents inherit user-level identity for attribution.
 - **Logging**: per-request decision logs with identity, tool/method, and allow/deny
@@ -89,8 +89,8 @@ tools/data) and less-trusted callers (agents, remote users).
 ## Positioning & differentiators
 Pomerium's pitch for MCP is "you already need a zero-trust proxy; extend the one you
 trust to agents." That contrasts with **purpose-built MCP gateways** designed agent-
-first — [[agentgateway]], [[obot]], [[mintmcp]], [[docker-mcp-gateway]],
-[[ibm-contextforge]], [[arcade]] — which start from the MCP/agent use case rather
+first — [agentgateway](agentgateway.md), [obot](obot.md), [mintmcp](mintmcp.md), [docker-mcp-gateway](docker-mcp-gateway.md),
+[ibm-contextforge](ibm-contextforge.md), [arcade](arcade.md) — which start from the MCP/agent use case rather
 than retrofitting a mature ZTNA product. Strengths Pomerium brings: a battle-tested
 inline proxy (years in production, ~1B Docker pulls claimed by 2023), real continuous
 authorization, and a single policy plane spanning humans, services, and agents.
@@ -98,8 +98,8 @@ Tradeoff: it is a network/infra proxy first, so agent-specific niceties (MCP ser
 catalogs, tool discovery UX, prompt-layer inspection) may be thinner than in
 dedicated tools, and its YAML policy model is its own rather than a standard like Rego.
 
-As a pure policy engine it overlaps with [[open-policy-agent]], [[cerbos]], and
-[[permit-io]], but those are decision libraries/services you embed; Pomerium is an
+As a pure policy engine it overlaps with [open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), and
+[permit-io](permit-io.md), but those are decision libraries/services you embed; Pomerium is an
 inline enforcement proxy that bundles the decision point with the data path.
 
 ## Ownership, funding & M&A
@@ -125,9 +125,9 @@ procurement friction and allows code review — a plus for security-conscious,
 regulated buyers; Enterprise edition adds the managed console and support.
 
 ## Competitors / alternatives
-- MCP gateways: [[agentgateway]], [[obot]], [[mintmcp]], [[docker-mcp-gateway]],
-  [[ibm-contextforge]], [[arcade]]
-- Policy/authorization engines: [[open-policy-agent]], [[cerbos]], [[permit-io]]
+- MCP gateways: [agentgateway](agentgateway.md), [obot](obot.md), [mintmcp](mintmcp.md), [docker-mcp-gateway](docker-mcp-gateway.md),
+  [ibm-contextforge](ibm-contextforge.md), [arcade](arcade.md)
+- Policy/authorization engines: [open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [permit-io](permit-io.md)
 
 ## Open questions / to verify
 - Exact HQ city (Solana Beach, CA vs Beaverton, OR — aggregators disagree).

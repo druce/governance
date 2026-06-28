@@ -30,31 +30,31 @@ Detection and forensics, not prevention. The SIEM does not break untrusted-input
 
 Enterprise SIEM / SecOps platforms:
 
-- [[microsoft-sentinel]] — cloud-native SIEM, default for Azure/M365 shops; tight Defender integration.
-- [[splunk]] — the data-platform incumbent; powerful, broad, expensive (per seed, acquired by Cisco).
-- [[sumo-logic]] — cloud-native SIEM/log analytics (per seed, taken private by Francisco Partners).
-- [[elastic]] — ELK/Elastic Security; open-source-rooted, popular where teams want to self-host and control cost.
-- [[google-secops]] — Google SecOps (formerly Chronicle); hyperscale log retention and detection.
-- [[crowdstrike-logscale]] — CrowdStrike Falcon LogScale; high-speed log management tied to the CrowdStrike estate.
-- [[palo-alto-networks]] — Cortex XSIAM; AI-driven SIEM/SOC platform consolidating SIEM + SOAR + analytics.
+- [microsoft-sentinel](../vendors/microsoft-sentinel.md) — cloud-native SIEM, default for Azure/M365 shops; tight Defender integration.
+- [splunk](../vendors/splunk.md) — the data-platform incumbent; powerful, broad, expensive (per seed, acquired by Cisco).
+- [sumo-logic](../vendors/sumo-logic.md) — cloud-native SIEM/log analytics (per seed, taken private by Francisco Partners).
+- [elastic](../vendors/elastic.md) — ELK/Elastic Security; open-source-rooted, popular where teams want to self-host and control cost.
+- [google-secops](../vendors/google-secops.md) — Google SecOps (formerly Chronicle); hyperscale log retention and detection.
+- [crowdstrike-logscale](../vendors/crowdstrike-logscale.md) — CrowdStrike Falcon LogScale; high-speed log management tied to the CrowdStrike estate.
+- [palo-alto-networks](../vendors/palo-alto-networks.md) — Cortex XSIAM; AI-driven SIEM/SOC platform consolidating SIEM + SOAR + analytics.
 
 SOAR / automation cross-listed (modern, AI-leaning automation that overlaps the SOC):
 
-- [[torq]] — hyperautomation/SOAR platform (also relevant to AI-SPM and AI SOC).
+- [torq](../vendors/torq.md) — hyperautomation/SOAR platform (also relevant to AI-SPM and AI SOC).
 
 ## Consolidation / M&A dynamics
 
 - Splunk — per seed, acquired by Cisco (per seed; unverified — to confirm in research).
 - Sumo Logic — per seed, taken private by Francisco Partners (per seed; unverified — to confirm in research).
 
-The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto Cortex, Microsoft, Google, CrowdStrike), with the standalone independents being absorbed. The strategic trend is SIEM folding into broader "SecOps platforms" that bundle SIEM + SOAR + XDR + AI analysts (see [[ai-soc-analysts]]).
+The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto Cortex, Microsoft, Google, CrowdStrike), with the standalone independents being absorbed. The strategic trend is SIEM folding into broader "SecOps platforms" that bundle SIEM + SOAR + XDR + AI analysts (see [ai-soc-analysts](ai-soc-analysts.md)).
 
 ## Adjacent categories
 
-- [[ai-soc-analysts]] — the AI/agentic layer that triages the alerts this SIEM generates; tightly coupled (XSIAM, Charlotte, LogScale all pair with their SOC).
-- [[edr-xdr]] — feeds endpoint telemetry into the SIEM; CrowdStrike and Defender span both.
-- [[ai-gateway]] / [[llm-observability]] — sources of AI telemetry that should be ingested for audit.
-- [[comms-surveillance]] — separate compliance-driven archive/surveillance; different system of record but conceptually adjacent.
+- [ai-soc-analysts](ai-soc-analysts.md) — the AI/agentic layer that triages the alerts this SIEM generates; tightly coupled (XSIAM, Charlotte, LogScale all pair with their SOC).
+- [edr-xdr](edr-xdr.md) — feeds endpoint telemetry into the SIEM; CrowdStrike and Defender span both.
+- [ai-gateway](ai-gateway.md) / [llm-observability](llm-observability.md) — sources of AI telemetry that should be ingested for audit.
+- [comms-surveillance](comms-surveillance.md) — separate compliance-driven archive/surveillance; different system of record but conceptually adjacent.
 
 ## Survey
 
@@ -64,9 +64,9 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Torq is SOAR/automation rather than full SIEM — it overlaps [[ai-soc-analysts]] and may confuse respondents; consider moving them to that question or labeling them clearly. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
+**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Torq is SOAR/automation rather than full SIEM — it overlaps [ai-soc-analysts](ai-soc-analysts.md) and may confuse respondents; consider moving them to that question or labeling them clearly. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
 
 ## Open taxonomy questions
 
-- SOAR/automation (Torq) straddles this and [[ai-soc-analysts]]. (Jazz Security reclassified to [[dlp]] post-research.)
-- As SIEM folds into "SecOps platforms," confirm whether this stays a distinct category or merges with [[ai-soc-analysts]] and [[edr-xdr]].
+- SOAR/automation (Torq) straddles this and [ai-soc-analysts](ai-soc-analysts.md). (Jazz Security reclassified to [dlp](dlp.md) post-research.)
+- As SIEM folds into "SecOps platforms," confirm whether this stays a distinct category or merges with [ai-soc-analysts](ai-soc-analysts.md) and [edr-xdr](edr-xdr.md).

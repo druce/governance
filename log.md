@@ -43,7 +43,7 @@ Append-only, chronological. Each entry: `## [YYYY-MM-DD] <op> | <subject>` where
 - **Corrected seed:** Astrix→Cisco is announced INTENT (2026-05-04), NOT closed as of 2026-06-28 — soft contradiction noted on page. Galileo→Cisco intent (2026-04-09), close date medium-confidence.
 - **NEW (not in seed):** TrojAI→A10 Networks (NYSE:ATEN), announced 2026-06-15.
 - **Confirmed independent:** HiddenLayer ($50M A, 2023), WitnessAI ($86.5M total, Series B 2026-01). 
-- **Fixes:** crowdstrike/sentinelone/cisco were mis-stubbed `acquired` (generator regex matched "acquirer") → corrected to public/subsidiary. robust-intelligence → thin alias of [[cisco-ai-defense]].
+- **Fixes:** crowdstrike/sentinelone/cisco were mis-stubbed `acquired` (generator regex matched "acquirer") → corrected to public/subsidiary. robust-intelligence → thin alias of [cisco-ai-defense](wiki/vendors/cisco-ai-defense.md).
 - Generator-bug note for lint: any acquirer mis-stubbed `acquired`; remaining acquirers (palo-alto-networks, f5, cato-networks) being fixed by their Wave-1 agents.
 
 ## [2026-06-28] research | portal26
@@ -52,7 +52,7 @@ Append-only, chronological. Each entry: `## [YYYY-MM-DD] <op> | <subject>` where
 - Platform: GenAI visibility / AI TRiSM / Shadow-AI discovery / policy enforcement / FIPS-140-2-marketed forensic vault / agentic-AI governance. SaaS. hedge_fund_fit medium (audit/recordkeeping appeal). 4 sources cached. status stub -> researched.
 
 ## [2026-06-28] research | ibm-contextforge
-Researched IBM ContextForge MCP Gateway (github.com/IBM/mcp-context-forge). Established: Apache-2.0 OSS MCP/A2A/REST-gRPC gateway+registry+proxy, Python/FastAPI, self-host via PyPI/Docker/K8s (Redis federation), transports stdio/SSE/streamable-HTTP/WebSocket/JSON-RPC, REST-to-MCP wrapping, virtual servers, auth (Basic/JWT/OAuth), OTel observability, 40+ plugins. Used in IBM watsonx Orchestrate tutorials (on Code Engine). Ownership=public (IBM, NYSE:IBM, Armonk), confidence high; commercial support model unconfirmed — appears community/corporate-backed OSS, flagged to verify. Latest release v1.0.4 (2026-06-23). hedge_fund_fit=medium. Kept category [[mcp-gateway]]. Cached 2 source files. No contradictions.
+Researched IBM ContextForge MCP Gateway (github.com/IBM/mcp-context-forge). Established: Apache-2.0 OSS MCP/A2A/REST-gRPC gateway+registry+proxy, Python/FastAPI, self-host via PyPI/Docker/K8s (Redis federation), transports stdio/SSE/streamable-HTTP/WebSocket/JSON-RPC, REST-to-MCP wrapping, virtual servers, auth (Basic/JWT/OAuth), OTel observability, 40+ plugins. Used in IBM watsonx Orchestrate tutorials (on Code Engine). Ownership=public (IBM, NYSE:IBM, Armonk), confidence high; commercial support model unconfirmed — appears community/corporate-backed OSS, flagged to verify. Latest release v1.0.4 (2026-06-23). hedge_fund_fit=medium. Kept category [mcp-gateway](wiki/categories/mcp-gateway.md). Cached 2 source files. No contradictions.
 
 ## [2026-06-28] research | github-advanced-security
 Researched GHAS. Product (not company) of GitHub, a Microsoft subsidiary (acq. announced 2018-06, closed 2018-10-26, ~$7.5B) — ownership: subsidiary, high confidence. Components: CodeQL SAST/code scanning, secret scanning + push protection, Dependabot/dependency review, Copilot Autofix. Verified 2025 repackaging into two separately purchasable products: GitHub Secret Protection ($19/committer/mo) and GitHub Code Security ($30/committer/mo), announced 2025-03-04, GA to Team plans 2025-04-01 via metered billing. Deployment SaaS + Enterprise Server. hedge_fund_fit: high (Day-1 if shipping AI-generated code on GitHub; tier upgrade, not new vendor). 2 sources cached. status stub -> researched.
@@ -71,7 +71,7 @@ Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (
 
 ## [2026-06-28] research | Phase 3 complete — all 222 vendors researched (Waves 1–4)
 - Wave 1 (M&A core), Wave 2 (Day-1 AI-native), Wave 3 (Day-2 agent/AI + governance), Wave 4 (foundation/infra). ~378 sources cached to raw/sources/.
-- ~30 seed M&A flags verified against primary sources; ~20 NEW deals discovered (not in seed) — see [[ai-security-m-and-a-map]].
+- ~30 seed M&A flags verified against primary sources; ~20 NEW deals discovered (not in seed) — see [ai-security-m-and-a-map](wiki/comparisons/ai-security-m-and-a-map.md).
 
 ## [2026-06-28] compare | Phase 4 — overview thesis + 6 comparison pages
 - Built: ai-security-m-and-a-map, ai-gateways-head-to-head, runtime-ai-firewalls, entitlement-aware-rag-options, day-1-for-a-50-person-fund, survey-blueprint. Fleshed overview.md into full thesis.
@@ -81,3 +81,6 @@ Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (
 
 ## [2026-06-28] lint | clean pass
 - 0 broken wikilinks, 0 orphans, 0 stubs (222/222 researched), 0 "Status: Unresolved", 0 unverified-M&A (acquired+low). Both commit gates pass. 6 zero-vendor categories are intentional (process + third-party-ai-apps). Regenerated index.md.
+
+## [2026-06-28] decision | converted [[wikilinks]] -> relative markdown links (Option A)
+- Converted 5,415 `[[slug]]` / `[[slug|alias]]` links across 275 md files to relative `[text](path.md)` links so they render as clickable in GitHub's repo view (GHFM does not resolve `[[ ]]`). 0 unresolved, 0 broken targets, 0 wikilinks remaining. Excluded Claude.md (convention examples) and conversation.txt (transcript). Updated Claude.md §3 note.

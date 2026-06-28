@@ -30,14 +30,14 @@ Cross-cutting rather than a single leg. Identity does not by itself break untrus
 
 Core enterprise IdPs (the survey shortlist):
 
-- [[microsoft-entra]] — Microsoft Entra ID; default for M365 shops, bundled, broad reach into the Microsoft estate.
-- [[okta]] — independent identity platform; strong in heterogeneous/multi-cloud environments and as a neutral SSO hub.
-- [[ping-identity]] — enterprise IdP, strong in regulated/large-enterprise and CIAM use cases (now under Thoma Bravo).
-- [[forgerock]] — enterprise identity platform; per seed, acquired into the Ping/Thoma Bravo orbit (unverified — to confirm in research).
+- [microsoft-entra](../vendors/microsoft-entra.md) — Microsoft Entra ID; default for M365 shops, bundled, broad reach into the Microsoft estate.
+- [okta](../vendors/okta.md) — independent identity platform; strong in heterogeneous/multi-cloud environments and as a neutral SSO hub.
+- [ping-identity](../vendors/ping-identity.md) — enterprise IdP, strong in regulated/large-enterprise and CIAM use cases (now under Thoma Bravo).
+- [forgerock](../vendors/forgerock.md) — enterprise identity platform; per seed, acquired into the Ping/Thoma Bravo orbit (unverified — to confirm in research).
 
 Adjacent / agent-era identity:
 
-- [[workos]] — developer-focused auth and SSO; primary fit is tool/agent identity, listed here as it overlaps the IdP slot for app builders.
+- [workos](../vendors/workos.md) — developer-focused auth and SSO; primary fit is tool/agent identity, listed here as it overlaps the IdP slot for app builders.
 
 ## Consolidation / M&A dynamics
 
@@ -48,10 +48,10 @@ The macro story: the standalone-IdP field has thinned via private-equity roll-up
 
 ## Adjacent categories
 
-- [[non-human-identity]] — extends the same "real identity" idea to workloads and agents; the agent-era growth edge of this layer.
-- [[identity-governance]] — sits on top of the IdP to decide who *should* have access (joiner/mover/leaver, access certifications).
-- [[secrets-management]] — handles machine credentials/API keys; complements human/agent identity.
-- [[tool-identity-integration]] — how agents authenticate to downstream SaaS tools; WorkOS/Descope/Stytch live here.
+- [non-human-identity](non-human-identity.md) — extends the same "real identity" idea to workloads and agents; the agent-era growth edge of this layer.
+- [identity-governance](identity-governance.md) — sits on top of the IdP to decide who *should* have access (joiner/mover/leaver, access certifications).
+- [secrets-management](secrets-management.md) — handles machine credentials/API keys; complements human/agent identity.
+- [tool-identity-integration](tool-identity-integration.md) — how agents authenticate to downstream SaaS tools; WorkOS/Descope/Stytch live here.
 
 ## Survey
 
@@ -65,5 +65,5 @@ The macro story: the standalone-IdP field has thinned via private-equity roll-up
 
 ## Open taxonomy questions
 
-- Where does the human-IdP slot end and [[non-human-identity]] begin as agents get first-class identities? The two may converge.
-- WorkOS is cross-listed; decide whether it appears in this survey question or only under [[tool-identity-integration]].
+- Where does the human-IdP slot end and [non-human-identity](non-human-identity.md) begin as agents get first-class identities? The two may converge.
+- WorkOS is cross-listed; decide whether it appears in this survey question or only under [tool-identity-integration](tool-identity-integration.md).

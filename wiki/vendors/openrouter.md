@@ -27,7 +27,7 @@ tags: [ai-gateway, inference-marketplace, model-routing, hosted-aggregator]
 
 # OpenRouter
 
-> Primary category: [[ai-gateway]].
+> Primary category: [ai-gateway](../categories/ai-gateway.md).
 
 **One-liner** — A hosted "unified interface for LLMs": one API and one billing relationship that routes your requests across 400+ models from 70+ providers, with automatic fallback and price/latency routing.
 
@@ -39,7 +39,7 @@ It is consumer/developer-facing in origin (it also ships a web chat UI) and has 
 
 ## Where it sits in the stack
 
-[[ai-gateway]] (AI model & prompt layer). An AI gateway is the **single exit door for model traffic** — the choke point where an org centralizes keys, spend, routing and policy for outbound LLM calls. OpenRouter occupies that slot but as a **hosted aggregator** rather than infrastructure you run.
+[ai-gateway](../categories/ai-gateway.md) (AI model & prompt layer). An AI gateway is the **single exit door for model traffic** — the choke point where an org centralizes keys, spend, routing and policy for outbound LLM calls. OpenRouter occupies that slot but as a **hosted aggregator** rather than infrastructure you run.
 
 Lethal-trifecta role: **egress**. The gateway is exactly where outbound model traffic (potentially carrying sensitive data) leaves your control. The critical nuance for a regulated buyer: with OpenRouter the egress endpoint is *OpenRouter's own cloud*, and from there to whichever downstream provider it routes to — so it adds a hop and a counterparty rather than being a control you own. It does not address untrusted-input or sensitive-data legs.
 
@@ -55,10 +55,10 @@ Lethal-trifecta role: **egress**. The gateway is exactly where outbound model tr
 Known for **breadth of model catalog and zero-friction multi-model access** — the fastest way to try, compare, and fail over across many models without per-provider contracts. Neutral marketplace positioning: it claims not to prioritize its own models (it has none).
 
 How it differs from neighbors:
-- vs **[[litellm]]** — LiteLLM is an open-source, self-hostable gateway/proxy you run inside your own perimeter; OpenRouter is a hosted service you route *through*. Same "unified API" idea, opposite trust model.
-- vs **[[portkey]]** — Portkey is a gateway + observability/guardrails control plane (self-host or SaaS) aimed at enterprises; OpenRouter is a marketplace optimized for model access and billing aggregation.
-- vs **[[kong]]** / **[[truefoundry]]** — infrastructure/platform gateways you deploy and own; OpenRouter is managed and opinionated toward the aggregator marketplace.
-- vs **[[cloudflare]]** (AI Gateway) — Cloudflare provides a hosted gateway too, but as edge infra alongside your existing provider keys; OpenRouter additionally aggregates *billing and supply* across providers.
+- vs **[litellm](litellm.md)** — LiteLLM is an open-source, self-hostable gateway/proxy you run inside your own perimeter; OpenRouter is a hosted service you route *through*. Same "unified API" idea, opposite trust model.
+- vs **[portkey](portkey.md)** — Portkey is a gateway + observability/guardrails control plane (self-host or SaaS) aimed at enterprises; OpenRouter is a marketplace optimized for model access and billing aggregation.
+- vs **[kong](kong.md)** / **[truefoundry](truefoundry.md)** — infrastructure/platform gateways you deploy and own; OpenRouter is managed and opinionated toward the aggregator marketplace.
+- vs **[cloudflare](cloudflare.md)** (AI Gateway) — Cloudflare provides a hosted gateway too, but as edge infra alongside your existing provider keys; OpenRouter additionally aggregates *billing and supply* across providers.
 
 The defining difference for governance: OpenRouter is a **counterparty in the data path**, not just software.
 
@@ -76,12 +76,12 @@ AI gateways are a **Day-1** control (single exit door for model traffic), but Op
 
 - **Data residency / egress concern.** Routing prompts (which may contain MNPI, positions, or client data) through a *third-party aggregator* that then forwards to downstream providers adds a counterparty and a second hop in the data path. Even with ZDR and EU-region options, you are trusting OpenRouter's controls plus each selected provider's — a harder vendor-risk and data-flow story than calling Anthropic/OpenAI directly or running a self-hosted gateway.
 - **Concentration & supply opacity.** Auto-routing to "best available" provider can land your traffic on hosts (including open-weight/overseas providers) you might not have approved; you must actively constrain allow/deny lists.
-- **Where it does fit:** R&D/experimentation, model evaluation, cost optimization on non-sensitive workloads — exactly the "try everything cheaply" use case. For production traffic with sensitive data, most funds will prefer a gateway they own ([[litellm]], [[kong]], [[truefoundry]], [[portkey]] self-hosted) or direct provider contracts.
+- **Where it does fit:** R&D/experimentation, model evaluation, cost optimization on non-sensitive workloads — exactly the "try everything cheaply" use case. For production traffic with sensitive data, most funds will prefer a gateway they own ([litellm](litellm.md), [kong](kong.md), [truefoundry](truefoundry.md), [portkey](portkey.md) self-hosted) or direct provider contracts.
 - Not an SR 11-7 / model-risk tool; it's plumbing, though it touches model-inventory and vendor-risk questions.
 
 ## Competitors / alternatives
 
-[[litellm]], [[portkey]], [[kong]], [[truefoundry]], [[cloudflare]] — see the [[ai-gateway]] page. Self-hostable options are the natural alternative for regulated shops.
+[litellm](litellm.md), [portkey](portkey.md), [kong](kong.md), [truefoundry](truefoundry.md), [cloudflare](cloudflare.md) — see the [ai-gateway](../categories/ai-gateway.md) page. Self-hostable options are the natural alternative for regulated shops.
 
 ## Open questions / to verify
 

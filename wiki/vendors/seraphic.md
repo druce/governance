@@ -27,7 +27,7 @@ tags: [browser-security, secure-browsing, crowdstrike]
 
 # Seraphic Security
 
-> Browser-runtime security that turns **any** existing browser (Chrome, Edge, Safari, Firefox, agentic browsers) into a "secure enterprise browser" — no separate browser, no traffic rerouting. Primary category: [[enterprise-browser]].
+> Browser-runtime security that turns **any** existing browser (Chrome, Edge, Safari, Firefox, agentic browsers) into a "secure enterprise browser" — no separate browser, no traffic rerouting. Primary category: [enterprise-browser](../categories/enterprise-browser.md).
 
 **One-liner** — Adds enterprise security and governance *inside* the browsers employees already use, rather than making them switch to a dedicated secure browser.
 
@@ -37,7 +37,7 @@ Seraphic injects protection into the browser runtime to deliver in-session visib
 
 ## Where it sits in the stack
 
-[[enterprise-browser]] category, **UX layer**. Enterprise browsers/browser-security tools mainly control the **egress** and **untrusted-input** legs of the lethal trifecta at the point where the user meets the web: they govern what data can leave (copy/paste, download, upload, paste-into-GenAI) and filter hostile web/page content reaching the user. Sits in the boundary between the untrusted web (red zone) and corporate apps/data (green/yellow), enforcing policy at the last mile.
+[enterprise-browser](../categories/enterprise-browser.md) category, **UX layer**. Enterprise browsers/browser-security tools mainly control the **egress** and **untrusted-input** legs of the lethal trifecta at the point where the user meets the web: they govern what data can leave (copy/paste, download, upload, paste-into-GenAI) and filter hostile web/page content reaching the user. Sits in the boundary between the untrusted web (red zone) and corporate apps/data (green/yellow), enforcing policy at the last mile.
 
 ## Deployment & architecture
 
@@ -46,11 +46,11 @@ Delivered as a SaaS-managed capability that operates within the existing browser
 ## Positioning & differentiators
 
 Seraphic competes in the "secure any browser" segment rather than the "ship a custom Chromium browser" segment. Nearest neighbors:
-- vs [[island]] and [[prisma-access-browser]] — those ship a dedicated managed Chromium browser; Seraphic instead secures the user's existing browser.
-- vs [[layerx]] — closest analog (browser-extension-delivered security on existing browsers); compete directly.
-- vs [[red-access]] — both pursue agentless/"any browser" secure browsing; Red Access leans on a session-based SSE-extension framing.
-- vs [[menlo-security]] — Menlo's heritage is remote browser isolation (rendering/proxy); Seraphic avoids rerouting traffic.
-- vs [[chrome-enterprise]] and [[microsoft-edge-business]] — native browser-management controls from the browser makers; Seraphic is browser-agnostic and adds deeper security/DLP.
+- vs [island](island.md) and [prisma-access-browser](prisma-access-browser.md) — those ship a dedicated managed Chromium browser; Seraphic instead secures the user's existing browser.
+- vs [layerx](layerx.md) — closest analog (browser-extension-delivered security on existing browsers); compete directly.
+- vs [red-access](red-access.md) — both pursue agentless/"any browser" secure browsing; Red Access leans on a session-based SSE-extension framing.
+- vs [menlo-security](menlo-security.md) — Menlo's heritage is remote browser isolation (rendering/proxy); Seraphic avoids rerouting traffic.
+- vs [chrome-enterprise](chrome-enterprise.md) and [microsoft-edge-business](microsoft-edge-business.md) — native browser-management controls from the browser makers; Seraphic is browser-agnostic and adds deeper security/DLP.
 
 ## Ownership, funding & M&A
 
@@ -66,7 +66,7 @@ Seraphic competes in the "secure any browser" segment rather than the "ship a cu
 
 ## Competitors / alternatives
 
-[[layerx]], [[red-access]], [[island]], [[menlo-security]], [[prisma-access-browser]], [[chrome-enterprise]], [[microsoft-edge-business]]
+[layerx](layerx.md), [red-access](red-access.md), [island](island.md), [menlo-security](menlo-security.md), [prisma-access-browser](prisma-access-browser.md), [chrome-enterprise](chrome-enterprise.md), [microsoft-edge-business](microsoft-edge-business.md)
 
 ## Open questions / to verify
 

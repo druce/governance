@@ -27,17 +27,17 @@ tags: [platform, sase, xdr, siem, ai-security, acquirer]
 
 # Palo Alto Networks
 
-> Primary category: [[network-security-sase]]. The largest pure-play cybersecurity platform vendor, and the most aggressive consolidator in AI security.
+> Primary category: [network-security-sase](../categories/network-security-sase.md). The largest pure-play cybersecurity platform vendor, and the most aggressive consolidator in AI security.
 
 **One-liner** — The incumbent network/SOC security platform (Strata SASE, Cortex XDR/XSIAM, Prisma Cloud) that has bought its way into a full AI-security stack: Prisma AIRS for AI runtime, Portkey as its AI gateway, CyberArk for identity, and Prisma Access Browser for enterprise browsing.
 
 **What it does** — PANW sells three platform pillars plus a new fourth: **Strata** (next-gen firewalls, Prisma Access / SASE — the TLS-inspecting man-in-the-middle that sees user and AI traffic), **Cortex** (XDR, XSIAM SOC platform, agentic SOC analysts), **Prisma Cloud** (CNAPP), and now **Prisma AIRS** (AI runtime security + posture + red-teaming + AI gateway). The CyberArk deal adds an Identity Security pillar (PAM, secrets, machine/agent identity). For a buyer this means much of the AI-governance layer cake can be sourced from one vendor.
 
-**Where it sits in the stack** — Spans nearly every layer this wiki tracks: [[network-security-sase]], [[siem-soc]], [[edr-xdr]], [[ai-runtime-security]] (via [[prisma-airs]]), [[ai-gateway]] (via [[portkey]]), [[ai-soc-analysts]] (Cortex AgentiX), [[enterprise-browser]] (via [[prisma-access-browser]]), and [[non-human-identity]] / [[secrets-management]] / [[identity-governance]] (via [[cyberark]] and [[conjur]]). Touches all three legs of the lethal trifecta: inspects untrusted input (AIRS, SASE), guards sensitive data (DLP in SASE/browser), and controls egress (SASE, AI gateway).
+**Where it sits in the stack** — Spans nearly every layer this wiki tracks: [network-security-sase](../categories/network-security-sase.md), [siem-soc](../categories/siem-soc.md), [edr-xdr](../categories/edr-xdr.md), [ai-runtime-security](../categories/ai-runtime-security.md) (via [prisma-airs](prisma-airs.md)), [ai-gateway](../categories/ai-gateway.md) (via [portkey](portkey.md)), [ai-soc-analysts](../categories/ai-soc-analysts.md) (Cortex AgentiX), [enterprise-browser](../categories/enterprise-browser.md) (via [prisma-access-browser](prisma-access-browser.md)), and [non-human-identity](../categories/non-human-identity.md) / [secrets-management](../categories/secrets-management.md) / [identity-governance](../categories/identity-governance.md) (via [cyberark](cyberark.md) and [conjur](conjur.md)). Touches all three legs of the lethal trifecta: inspects untrusted input (AIRS, SASE), guards sensitive data (DLP in SASE/browser), and controls egress (SASE, AI gateway).
 
 **Deployment & architecture** — Inline TLS-inspecting proxy (Prisma Access), on-box and virtual firewalls, SaaS consoles (Cortex, Prisma AIRS), API/SDK guardrails (AIRS API intercept), an enterprise browser, and now an AI gateway (Portkey) between apps and model APIs. Integrates with its own SIEM (XSIAM), IdP, and third-party tooling.
 
-**Positioning & differentiators** — The "platformization" pitch: consolidate point tools onto Strata/Cortex/Prisma/Identity. Differentiator is breadth plus the SASE install base — it already mediates traffic, so AI controls bolt on. Nearest platform neighbors: [[cisco]] (also rolling up AI security: Robust Intelligence -> AI Defense, Splunk, Astrix, Galileo), [[crowdstrike]] (SOC + Pangea), the Microsoft stack ([[microsoft-entra]]/Defender/Purview), and SASE peers [[zscaler]] and [[netskope]].
+**Positioning & differentiators** — The "platformization" pitch: consolidate point tools onto Strata/Cortex/Prisma/Identity. Differentiator is breadth plus the SASE install base — it already mediates traffic, so AI controls bolt on. Nearest platform neighbors: [cisco](cisco.md) (also rolling up AI security: Robust Intelligence -> AI Defense, Splunk, Astrix, Galileo), [crowdstrike](crowdstrike.md) (SOC + Pangea), the Microsoft stack ([microsoft-entra](microsoft-entra.md)/Defender/Purview), and SASE peers [zscaler](zscaler.md) and [netskope](netskope.md).
 
 **Ownership, funding & M&A** — Public, NASDAQ: PANW; founded 2005 (Nir Zuk); HQ Santa Clara; CEO Nikesh Arora since 2018; FY2025 revenue ~$9.22B. **AI-security roll-up, all verified against PANW press releases this research:**
 - **Talon Cyber Security** -> Prisma Access Browser. Closed **2023-12-28**.
@@ -47,7 +47,7 @@ tags: [platform, sase, xdr, siem, ai-security, acquirer]
 
 **CTO / hedge-fund lens** — Day-1 relevance is high because most funds already run something from PANW (a firewall, Prisma Access, or Cortex). The strategic question is consolidation risk vs. convenience: buying the AI-security layer from your existing SASE vendor is operationally simple and procurement-friendly, but concentrates dependency and means inheriting integration timelines for freshly-acquired products (Portkey, Protect AI) still being natively stitched in. Identity-Security-for-agentic-AI (CyberArk) is the piece most relevant to SR 11-7-style model/agent governance.
 
-**Competitors / alternatives** — [[cisco]], [[crowdstrike]], [[zscaler]], [[netskope]], [[microsoft-entra]] (as platform stacks), plus the standalone vendors PANW's acquisitions displace.
+**Competitors / alternatives** — [cisco](cisco.md), [crowdstrike](crowdstrike.md), [zscaler](zscaler.md), [netskope](netskope.md), [microsoft-entra](microsoft-entra.md) (as platform stacks), plus the standalone vendors PANW's acquisitions displace.
 
 **Open questions / to verify**
 - Integration maturity of Portkey and Protect AI inside Prisma AIRS (marketing claims native; verify in product).

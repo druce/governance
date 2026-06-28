@@ -27,11 +27,11 @@ tags: [ai-governance, grc, compliance, eu-ai-act, nist-ai-rmf, iso-42001]
 
 # Credo AI
 
-> Primary category: [[ai-governance-platform]].
+> Primary category: [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **One-liner** — An enterprise AI governance (GRC) platform that inventories AI systems, runs risk assessments, and maps them to regulatory frameworks (EU AI Act, NIST AI RMF, ISO 42001) to produce audit-ready evidence.
 
-**Categories** — [[ai-governance-platform]]
+**Categories** — [ai-governance-platform](../categories/ai-governance-platform.md)
 
 ## What it does
 Credo AI is a governance/risk/compliance (GRC) layer for AI. It maintains a central registry of an organization's AI systems (predictive ML, generative-AI apps, and autonomous agents), runs structured risk and impact assessments against them, and translates external regulations and internal policies into "policy packs" — questionnaires and controls — that generate the documentation an auditor or regulator would ask for. Its pitch is to turn diffuse "responsible AI" obligations into a repeatable, evidence-producing workflow owned by risk/compliance and legal teams rather than by ML engineers.
@@ -39,7 +39,7 @@ Credo AI is a governance/risk/compliance (GRC) layer for AI. It maintains a cent
 Newer capabilities push toward operational governance: auto-discovery of "shadow AI," a governance assistant (GAIA) that drafts evidence and risk assessments, and runtime trace evaluation with human-in-the-loop escalation. The center of gravity, though, remains policy/compliance documentation, not inline traffic enforcement.
 
 ## Where it sits in the stack
-Sits in the **governance** layer — the top of the cake, alongside [[ai-governance-platform]] peers. This is the "policy, paperwork, and accountability" tier, not a data-path control.
+Sits in the **governance** layer — the top of the cake, alongside [ai-governance-platform](../categories/ai-governance-platform.md) peers. This is the "policy, paperwork, and accountability" tier, not a data-path control.
 
 **Lethal-trifecta role:** none directly. Credo AI does not break any leg of the lethal trifecta (untrusted input / sensitive-data access / external egress) at runtime — it documents and governs the systems that do. It lives in the **green/governance zone**: it reasons about risk and produces controls and evidence, but the actual enforcement of untrusted-input filtering, data minimization, or egress control is done by runtime tools it would catalog and reference (e.g. AI firewalls, DLP, gateways). Its runtime-governance feature is closer to policy evaluation/monitoring than to inline data-path mediation.
 
@@ -52,10 +52,10 @@ Sits in the **governance** layer — the top of the cake, alongside [[ai-governa
 Credo AI is one of the earliest pure-play AI-governance vendors and leans hard into regulatory mapping — EU AI Act, NIST AI RMF, ISO/IEC 42001, plus US state/local rules (Colorado SB21-169, NYC Local Law 144). Founder/CEO Navrina Singh is a visible figure in AI-policy circles (e.g. NIST and World Economic Forum involvement), which reinforces a "policy-first" brand. Mozilla Ventures' participation underlines the responsible-AI positioning (marketing).
 
 Nearest neighbors and how they differ:
-- [[holistic-ai]] — similar AI-GRC + EU AI Act focus; competes most directly.
-- [[ibm-watsonx-governance]] — governance bundled with a model platform and incumbent enterprise reach; Credo AI is platform-neutral.
-- [[modelop]] — heavier on Day-2 *model operations*/ModelOps monitoring and lifecycle for large model estates; Credo AI is more policy/compliance-document oriented.
-- [[monitaur]] — overlapping AI-GRC, with roots closer to insurance/regulated model-risk documentation.
+- [holistic-ai](holistic-ai.md) — similar AI-GRC + EU AI Act focus; competes most directly.
+- [ibm-watsonx-governance](ibm-watsonx-governance.md) — governance bundled with a model platform and incumbent enterprise reach; Credo AI is platform-neutral.
+- [modelop](modelop.md) — heavier on Day-2 *model operations*/ModelOps monitoring and lifecycle for large model estates; Credo AI is more policy/compliance-document oriented.
+- [monitaur](monitaur.md) — overlapping AI-GRC, with roots closer to insurance/regulated model-risk documentation.
 
 ## Ownership, funding & M&A
 - **Ownership:** Independent, private, VC-backed. No acquisition or public listing found (confidence: high, as of 2026-06-28).
@@ -69,7 +69,7 @@ Nearest neighbors and how they differ:
 - **Fit: low.** A 50–500-person fund rarely has a large enough internal AI *estate* to justify a dedicated AI-GRC platform; AI governance is more likely a few policy decisions plus runtime controls (gateways, DLP, an AI firewall). Credo AI becomes interesting only for a large asset manager building many internal AI/agent applications and facing EU AI Act or ISO 42001 obligations.
 
 ## Competitors / alternatives
-[[holistic-ai]] · [[ibm-watsonx-governance]] · [[modelop]] · [[monitaur]] · [[ai-governance-platform]] (category page for the full map)
+[holistic-ai](holistic-ai.md) · [ibm-watsonx-governance](ibm-watsonx-governance.md) · [modelop](modelop.md) · [monitaur](monitaur.md) · [ai-governance-platform](../categories/ai-governance-platform.md) (category page for the full map)
 
 ## Open questions / to verify
 - Exact round letter for the 2024-07-30 $21M round (Series A vs B — trackers disagree).

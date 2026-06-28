@@ -37,7 +37,7 @@ LayerX installs as a lightweight extension on the browsers employees already use
 
 ## Where it sits in the stack
 
-Primary category: [[browser-security-extension]] (layer: `ux`). It operates at the last mile — the point where a human interacts with web apps and LLMs. In lethal-trifecta terms it mainly addresses **egress** (data leaving to AI/SaaS) and **sensitive-data** exposure (what gets pasted/uploaded); shadow-AI discovery is its headline use case. It lives in the user/endpoint trust zone rather than at a network or model gateway.
+Primary category: [browser-security-extension](../categories/browser-security-extension.md) (layer: `ux`). It operates at the last mile — the point where a human interacts with web apps and LLMs. In lethal-trifecta terms it mainly addresses **egress** (data leaving to AI/SaaS) and **sensitive-data** exposure (what gets pasted/uploaded); shadow-AI discovery is its headline use case. It lives in the user/endpoint trust zone rather than at a network or model gateway.
 
 ## Deployment & architecture
 
@@ -46,10 +46,10 @@ Agentless from the endpoint's perspective: no OS agent, no separate browser — 
 ## Positioning & differentiators
 
 Known for the "agentless, last-mile guardrails" angle: cover GenAI data leakage and shadow AI with a low-friction extension instead of a heavier control point. Nearest neighbors:
-- [[island]] and enterprise browsers — replace the browser entirely; LayerX keeps the user's browser.
-- [[chrome-enterprise]] — native browser management/DLP from Google; LayerX is browser-agnostic and AI-risk-focused.
-- [[menlo-security]] — remote browser isolation / proxy model; LayerX is extension-based, not isolation.
-- [[grip-security]] — SaaS/shadow-AI discovery and identity governance, but Grip is identity-centric rather than an in-browser enforcement extension.
+- [island](island.md) and enterprise browsers — replace the browser entirely; LayerX keeps the user's browser.
+- [chrome-enterprise](chrome-enterprise.md) — native browser management/DLP from Google; LayerX is browser-agnostic and AI-risk-focused.
+- [menlo-security](menlo-security.md) — remote browser isolation / proxy model; LayerX is extension-based, not isolation.
+- [grip-security](grip-security.md) — SaaS/shadow-AI discovery and identity governance, but Grip is identity-centric rather than an in-browser enforcement extension.
 
 ## Ownership, funding & M&A
 
@@ -63,7 +63,7 @@ Priority: **optional**. This is a last-mile control, not a Day-1 essential for a
 
 ## Competitors / alternatives
 
-[[island]] · [[chrome-enterprise]] · [[menlo-security]] · [[grip-security]]
+[island](island.md) · [chrome-enterprise](chrome-enterprise.md) · [menlo-security](menlo-security.md) · [grip-security](grip-security.md)
 
 ## Open questions / to verify
 

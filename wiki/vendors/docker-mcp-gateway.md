@@ -59,7 +59,7 @@ Around that it layers a handful of governance features:
 
 ## Where it sits in the stack
 
-Primary category: [[mcp-gateway]] (layer: model-prompt). It is the control point
+Primary category: [mcp-gateway](../categories/mcp-gateway.md) (layer: model-prompt). It is the control point
 between an agent and its tools, the same slot as other MCP gateways/proxies.
 
 Lethal-trifecta role: its main contribution is **containment** — each tool server
@@ -97,15 +97,15 @@ already good at — running things in containers — and adds catalog signing, s
 hygiene, and interceptors on top. That makes it distinctive among MCP gateways,
 most of which focus on identity/policy/proxying rather than per-tool sandboxing.
 
-Nearest neighbors (all in [[mcp-gateway]]):
+Nearest neighbors (all in [mcp-gateway](../categories/mcp-gateway.md)):
 
-- [[ibm-contextforge]] — open-source MCP gateway/registry; federation and
+- [ibm-contextforge](ibm-contextforge.md) — open-source MCP gateway/registry; federation and
   virtualization of servers, less about container sandboxing.
-- [[agentgateway]] — data-plane/proxy oriented gateway for agent/MCP traffic.
-- [[obot]] — MCP gateway with an access-control/management focus.
-- [[mintmcp]] — managed MCP gateway aimed at enterprise governance.
-- [[arcade]] — tool-calling/auth platform (strong on per-user OAuth/identity).
-- [[pomerium]] — identity-aware access proxy applied to MCP.
+- [agentgateway](agentgateway.md) — data-plane/proxy oriented gateway for agent/MCP traffic.
+- [obot](obot.md) — MCP gateway with an access-control/management focus.
+- [mintmcp](mintmcp.md) — managed MCP gateway aimed at enterprise governance.
+- [arcade](arcade.md) — tool-calling/auth platform (strong on per-user OAuth/identity).
+- [pomerium](pomerium.md) — identity-aware access proxy applied to MCP.
 
 Versus those, Docker's relative strengths are containment + a signed image supply
 chain + native Docker/Compose workflow; its relative gaps are enterprise identity,
@@ -144,8 +144,8 @@ stack; not sufficient on its own as the *access-governance* layer.
 
 ## Competitors / alternatives
 
-[[ibm-contextforge]] · [[agentgateway]] · [[obot]] · [[mintmcp]] · [[arcade]] ·
-[[pomerium]]
+[ibm-contextforge](ibm-contextforge.md) · [agentgateway](agentgateway.md) · [obot](obot.md) · [mintmcp](mintmcp.md) · [arcade](arcade.md) ·
+[pomerium](pomerium.md)
 
 ## Open questions / to verify
 
@@ -166,4 +166,4 @@ stack; not sufficient on its own as the *access-governance* layer.
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established Docker MCP Gateway as an MIT-licensed open-source Docker CLI plugin/gateway (launched 2025-07-09) that runs MCP servers as isolated containers from a signed Docker MCP Catalog, with secrets handling, `--verify-signatures`/`--block-secrets`/`--log-calls` interceptors, and OAuth; ships in Docker Desktop's MCP Toolkit and runs standalone on Docker Engine. Owner = Docker, Inc., independent private company (Palo Alto); not acquired. Corrected license assumption: repo states MIT, not Apache-2.0. Kept primary category [[mcp-gateway]]. Set ownership_confidence high (origin) but funding low (aggregator-only). hedge_fund_fit = medium. No M&A flag; no contradictions.
+- [2026-06-28] Researched; established Docker MCP Gateway as an MIT-licensed open-source Docker CLI plugin/gateway (launched 2025-07-09) that runs MCP servers as isolated containers from a signed Docker MCP Catalog, with secrets handling, `--verify-signatures`/`--block-secrets`/`--log-calls` interceptors, and OAuth; ships in Docker Desktop's MCP Toolkit and runs standalone on Docker Engine. Owner = Docker, Inc., independent private company (Palo Alto); not acquired. Corrected license assumption: repo states MIT, not Apache-2.0. Kept primary category [mcp-gateway](../categories/mcp-gateway.md). Set ownership_confidence high (origin) but funding low (aggregator-only). hedge_fund_fit = medium. No M&A flag; no contradictions.

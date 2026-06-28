@@ -33,7 +33,7 @@ tags: [ai-red-teaming, guardrails, open-source, nvidia, colang]
 **One-liner** — An open-source Python toolkit from NVIDIA that wraps an LLM with
 configurable input, dialog, retrieval, execution, and output rails.
 
-**Categories** — [[ai-red-teaming]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md)
 
 ## What it does
 NeMo Guardrails sits between the user and the LLM and enforces programmable rules. It
@@ -46,10 +46,10 @@ self-check with an LLM and pairs with NVIDIA's NeMo Guard / Aegis content-safety
 models.
 
 ## Where it sits in the stack
-[[ai-red-teaming]] / guardrails in the model/prompt layer, overlapping
-[[ai-runtime-security]]. Lethal-trifecta role: **untrusted-input** (input/jailbreak
+[ai-red-teaming](../categories/ai-red-teaming.md) / guardrails in the model/prompt layer, overlapping
+[ai-runtime-security](../categories/ai-runtime-security.md). Lethal-trifecta role: **untrusted-input** (input/jailbreak
 rails) and **sensitive-data** (output moderation/PII rails); execution rails also
-touch the tool-call surface relevant to [[mcp-gateway]] / agent control. It is an
+touch the tool-call surface relevant to [mcp-gateway](../categories/mcp-gateway.md) / agent control. It is an
 in-app library, not a network proxy.
 
 ## Deployment & architecture
@@ -59,12 +59,12 @@ with LangChain. Part of the broader NVIDIA NeMo / NIM microservices ecosystem, s
 slots naturally into NVIDIA-hosted inference stacks. Latest release 0.22.0 (May 2026).
 
 ## Positioning & differentiators
-The other reference **open-source guardrails framework** alongside [[guardrails-ai]];
+The other reference **open-source guardrails framework** alongside [guardrails-ai](guardrails-ai.md);
 the two interoperate. NeMo Guardrails is distinguished by **Colang** and its
 dialog-flow modeling (strong for scripted conversational control) and by tight
-coupling to NVIDIA's model/microservice stack. [[guardrails-ai]] leans toward a
-validator marketplace. Commercial managed alternatives: [[lakera]], [[prompt-security]],
-[[pillar-security]], [[prisma-airs]].
+coupling to NVIDIA's model/microservice stack. [guardrails-ai](guardrails-ai.md) leans toward a
+validator marketplace. Commercial managed alternatives: [lakera](lakera.md), [prompt-security](prompt-security.md),
+[pillar-security](pillar-security.md), [prisma-airs](prisma-airs.md).
 
 ## Ownership, funding & M&A
 **Not an independent company** — it is an open-source project owned and maintained by
@@ -77,13 +77,13 @@ Day-2, developer-facing, and free. Relevant only if your team is **building LLM/
 apps in code** and wants programmable rails — especially if you already run on NVIDIA
 infrastructure. For a fund consuming off-the-shelf assistants it is not an operated
 control. As open source it carries no license cost but does carry build/maintain
-effort; most funds will instead buy guardrails inside an [[ai-runtime-security]]
+effort; most funds will instead buy guardrails inside an [ai-runtime-security](../categories/ai-runtime-security.md)
 product. Useful as documented output/PII controls for an SR 11-7 model-risk story if
 you self-build.
 
 ## Competitors / alternatives
-[[guardrails-ai]], [[lakera]], [[prompt-security]], [[pillar-security]],
-[[prisma-airs]], [[enkrypt-ai]].
+[guardrails-ai](guardrails-ai.md), [lakera](lakera.md), [prompt-security](prompt-security.md), [pillar-security](pillar-security.md),
+[prisma-airs](prisma-airs.md), [enkrypt-ai](enkrypt-ai.md).
 
 ## Open questions / to verify
 - Relationship/packaging with commercial NeMo microservices and NIM (paid vs. free line).

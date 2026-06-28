@@ -33,7 +33,7 @@ tags: [dlp, data-security, genai-data-protection, browser-extension]
 **One-liner** — A cloud-native DLP platform that uses machine-learning detectors (not regex/agents) to
 find and stop sensitive data leaking into SaaS apps, browsers, and GenAI tools like ChatGPT.
 
-**Categories** — [[dlp]]
+**Categories** — [dlp](../categories/dlp.md)
 
 ## What it does
 
@@ -52,12 +52,12 @@ analyst ("Nyx").
 
 ## Where it sits in the stack
 
-Primary category: [[dlp]] (Data layer). Its job is preventing **sensitive-data** egress: it inspects
+Primary category: [dlp](../categories/dlp.md) (Data layer). Its job is preventing **sensitive-data** egress: it inspects
 content at the points where data leaves a sanctioned zone (a SaaS app, the browser, a prompt to an
 external LLM) and blocks/redacts. In lethal-trifecta terms it primarily breaks the **sensitive-data**
 and **egress** legs — it does not address untrusted-input/prompt-injection. It overlaps the data-security
-neighborhood: lighter-touch and more egress/leak-focused than full [[microsoft-purview]]-style suites,
-and adjacent to DSPM ([[cyera]], [[bigid]]) which focuses on discovery/posture of data at rest rather
+neighborhood: lighter-touch and more egress/leak-focused than full [microsoft-purview](microsoft-purview.md)-style suites,
+and adjacent to DSPM ([cyera](cyera.md), [bigid](bigid.md)) which focuses on discovery/posture of data at rest rather
 than inline interception.
 
 ## Deployment & architecture
@@ -77,10 +77,10 @@ than inline interception.
 Nightfall's pitch is "DLP rebuilt for the AI/SaaS era": API-/browser-native and ML-driven rather than
 agent-heavy and rule-driven. Differentiators it emphasizes (marketing) are fast out-of-the-box
 deployment, high-precision ML detection that reduces false positives, and the no-proxy browser approach
-for governing GenAI usage. Versus nearest neighbors: [[cyberhaven]] leads with data-lineage/origin
-tracking; [[mind]] is another AI-era DLP entrant; [[prompt-security]] and [[lasso-security]] approach
+for governing GenAI usage. Versus nearest neighbors: [cyberhaven](cyberhaven.md) leads with data-lineage/origin
+tracking; [mind](mind.md) is another AI-era DLP entrant; [prompt-security](prompt-security.md) and [lasso-security](lasso-security.md) approach
 the GenAI-leak problem from the AI-runtime/guardrail side rather than classic DLP. Large platforms
-([[microsoft-purview]], [[forcepoint]], [[netskope]]) bundle DLP into broader suites.
+([microsoft-purview](microsoft-purview.md), [forcepoint](forcepoint.md), [netskope](netskope.md)) bundle DLP into broader suites.
 
 ## Ownership, funding & M&A
 
@@ -99,14 +99,14 @@ positions). Nightfall fits a shop that wants to govern **GenAI/SaaS data leakage
 standing up proxy-based DLP or rolling endpoint agents — the browser extension and API connectors are
 quick to deploy. It is relevant to controlling what staff paste into ChatGPT/Claude and to scanning
 Slack/Drive/GitHub for leaked secrets and PII. It is **not** a comms-surveillance/SR 11-7 tool and does
-not cover model risk; pair it with archiving/surveillance ([[behavox]], [[theta-lake]]) and, if you run
+not cover model risk; pair it with archiving/surveillance ([behavox](behavox.md), [theta-lake](theta-lake.md)) and, if you run
 internal LLM apps, with runtime guardrails. Caveat for the smallest funds: it is a dedicated platform
 spend, and a shop already on Microsoft E5/Purview or Netskope may get "good-enough" DLP bundled.
 
 ## Competitors / alternatives
 
-[[cyberhaven]], [[mind]], [[prompt-security]], [[lasso-security]], [[microsoft-purview]],
-[[forcepoint]], [[netskope]], [[cyera]]
+[cyberhaven](cyberhaven.md), [mind](mind.md), [prompt-security](prompt-security.md), [lasso-security](lasso-security.md), [microsoft-purview](microsoft-purview.md),
+[forcepoint](forcepoint.md), [netskope](netskope.md), [cyera](cyera.md)
 
 ## Open questions / to verify
 

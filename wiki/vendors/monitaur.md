@@ -27,7 +27,7 @@ tags: [ai-governance, model-risk, insurance, ml-assurance, model-monitoring]
 
 # Monitaur
 
-> Primary category: [[ai-governance-platform]].
+> Primary category: [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **One-liner** — A SaaS "ML Assurance" / model-governance platform purpose-built for highly regulated financial services (above all insurance), giving risk and compliance teams a system of record, control library, model monitoring, and an audit trail from "policy to proof."
 
@@ -43,9 +43,9 @@ Historically these capabilities shipped as named products — **GovernML** (syst
 
 ## Where it sits in the stack
 
-This is a **governance-layer** tool — it documents, monitors, and produces evidence about models rather than sitting inline in any request path. See [[ai-governance-platform]].
+This is a **governance-layer** tool — it documents, monitors, and produces evidence about models rather than sitting inline in any request path. See [ai-governance-platform](../categories/ai-governance-platform.md).
 
-- **Lethal-trifecta role:** none directly. Monitaur does not break untrusted-input, sensitive-data, or egress legs at runtime; it is an oversight/assurance layer, not a runtime guardrail. (Contrast with [[ai-runtime-security]] tools that sit inline.)
+- **Lethal-trifecta role:** none directly. Monitaur does not break untrusted-input, sensitive-data, or egress legs at runtime; it is an oversight/assurance layer, not a runtime guardrail. (Contrast with [ai-runtime-security](../categories/ai-runtime-security.md) tools that sit inline.)
 - **Trust zone:** governance/oversight plane spanning all zones — it inventories and monitors models wherever they run, but enforcement of data/egress boundaries lives elsewhere.
 
 ## Deployment & architecture
@@ -59,7 +59,7 @@ This is a **governance-layer** tool — it documents, monitors, and produces evi
 - **Insurance-first.** Monitaur's sharpest differentiation is depth in U.S. insurance: a control library (reported as ~33 controls) mapped to the **NAIC AI model bulletin** (adopted by more than half of U.S. states) and state-level AI fairness rules (e.g., Colorado, New York). This is narrower and deeper than horizontal governance platforms.
 - **Evidence/audit emphasis.** Cryptographic/tamper-evident audit logs and a system-of-record posture are built for state insurance examination patterns and regulator scrutiny.
 - **Recognition.** Named a "Strong Performer" and "Customer Favorite" in a Forrester evaluation (Q3 2025) — vendor-cited, treat as marketing.
-- **Vs. neighbors:** [[credo-ai]] and [[holistic-ai]] are broader, regulation-agnostic enterprise AI governance platforms with heavier EU AI Act / NIST AI RMF framing; [[modelop]] focuses on ModelOps and large-bank model operations/inventory at scale; [[fairly-ai]] competes closely on regulated-FS/insurance compliance and fairness. Monitaur's edge is insurance-specific control content and audit evidence; its limit is breadth.
+- **Vs. neighbors:** [credo-ai](credo-ai.md) and [holistic-ai](holistic-ai.md) are broader, regulation-agnostic enterprise AI governance platforms with heavier EU AI Act / NIST AI RMF framing; [modelop](modelop.md) focuses on ModelOps and large-bank model operations/inventory at scale; [fairly-ai](fairly-ai.md) competes closely on regulated-FS/insurance compliance and fairness. Monitaur's edge is insurance-specific control content and audit evidence; its limit is breadth.
 
 ## Ownership, funding & M&A
 
@@ -76,7 +76,7 @@ This is a **governance-layer** tool — it documents, monitors, and produces evi
 
 ## Competitors / alternatives
 
-[[credo-ai]] · [[holistic-ai]] · [[modelop]] · [[fairly-ai]]
+[credo-ai](credo-ai.md) · [holistic-ai](holistic-ai.md) · [modelop](modelop.md) · [fairly-ai](fairly-ai.md)
 
 ## Open questions / to verify
 

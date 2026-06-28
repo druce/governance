@@ -27,23 +27,23 @@ tags: [secrets, devops, machine-identity, cyberark, palo-alto]
 
 # CyberArk Conjur
 
-> Primary category: [[secrets-management]]. CyberArk's DevOps/cloud-native secrets engine — not a standalone company.
+> Primary category: [secrets-management](../categories/secrets-management.md). CyberArk's DevOps/cloud-native secrets engine — not a standalone company.
 
-**One-liner** — An open-source-rooted secrets management engine for DevOps and cloud-native workloads, owned by [[cyberark]] (and therefore now by [[palo-alto-networks]]), that injects credentials into pipelines and applications instead of hardcoding them.
+**One-liner** — An open-source-rooted secrets management engine for DevOps and cloud-native workloads, owned by [cyberark](cyberark.md) (and therefore now by [palo-alto-networks](palo-alto-networks.md)), that injects credentials into pipelines and applications instead of hardcoding them.
 
 **What it does** — Conjur stores, rotates, and brokers machine secrets (API keys, DB credentials, tokens) for CI/CD pipelines, containers, and Kubernetes. Applications authenticate to Conjur via machine identity and fetch secrets at runtime through an API/SDK, removing hardcoded credentials from code and config. It ships as **Conjur Open Source** plus commercial **Conjur Enterprise / CyberArk Secrets Manager**.
 
-**Where it sits in the stack** — Foundation-layer [[secrets-management]], adjacent to [[non-human-identity]]. It addresses the **sensitive-data** leg of the lethal trifecta by keeping high-value credentials out of code and reachable only by authenticated workloads. In an AI context it secures the secrets agents and model-serving infra need.
+**Where it sits in the stack** — Foundation-layer [secrets-management](../categories/secrets-management.md), adjacent to [non-human-identity](../categories/non-human-identity.md). It addresses the **sensitive-data** leg of the lethal trifecta by keeping high-value credentials out of code and reachable only by authenticated workloads. In an AI context it secures the secrets agents and model-serving infra need.
 
-**Deployment & architecture** — Self-hosted (the OSS lineage) or via CyberArk's SaaS Secrets Manager; API/SDK-driven secret retrieval; native integrations for Kubernetes, OpenShift, Ansible, and major CI/CD tools. A direct competitor in posture to [[hashicorp-vault]].
+**Deployment & architecture** — Self-hosted (the OSS lineage) or via CyberArk's SaaS Secrets Manager; API/SDK-driven secret retrieval; native integrations for Kubernetes, OpenShift, Ansible, and major CI/CD tools. A direct competitor in posture to [hashicorp-vault](hashicorp-vault.md).
 
-**Positioning & differentiators** — Conjur's pitch is DevOps-native secrets with CyberArk's enterprise governance behind it — bridging developer ergonomics and the audit/compliance posture regulated buyers expect. Nearest neighbor is [[hashicorp-vault]] (now part of IBM); cloud-native alternatives are [[aws-secrets-manager]], [[azure-key-vault]], [[gcp-secret-manager]]; startup challengers include [[doppler]], [[infisical]], [[entro-security]].
+**Positioning & differentiators** — Conjur's pitch is DevOps-native secrets with CyberArk's enterprise governance behind it — bridging developer ergonomics and the audit/compliance posture regulated buyers expect. Nearest neighbor is [hashicorp-vault](hashicorp-vault.md) (now part of IBM); cloud-native alternatives are [aws-secrets-manager](aws-secrets-manager.md), [azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md); startup challengers include [doppler](doppler.md), [infisical](infisical.md), [entro-security](entro-security.md).
 
-**Ownership, funding & M&A** — Conjur Inc. (Newton/Waltham, MA) was **acquired by CyberArk in May 2017 for ~$42M** and turned into CyberArk's secrets-management product line; it is not an independent vendor. With CyberArk's own acquisition by [[palo-alto-networks]] (closed 2026-02-11), Conjur is now part of PANW. Confirmed via CyberArk's press release; PANW chain confirmed via the CyberArk acquisition (see [[cyberark]]).
+**Ownership, funding & M&A** — Conjur Inc. (Newton/Waltham, MA) was **acquired by CyberArk in May 2017 for ~$42M** and turned into CyberArk's secrets-management product line; it is not an independent vendor. With CyberArk's own acquisition by [palo-alto-networks](palo-alto-networks.md) (closed 2026-02-11), Conjur is now part of PANW. Confirmed via CyberArk's press release; PANW chain confirmed via the CyberArk acquisition (see [cyberark](cyberark.md)).
 
 **CTO / hedge-fund lens** — Day-1 if you run your own CI/CD and need machine secrets governed centrally; a fund already standardized on CyberArk PAM gets Conjur as the natural secrets layer. Otherwise, cloud-native secret managers may be lower-friction. Watch the PANW reorganization for how Conjur is packaged going forward.
 
-**Competitors / alternatives** — [[hashicorp-vault]], [[aws-secrets-manager]], [[azure-key-vault]], [[gcp-secret-manager]], [[doppler]], [[infisical]], [[1password]].
+**Competitors / alternatives** — [hashicorp-vault](hashicorp-vault.md), [aws-secrets-manager](aws-secrets-manager.md), [azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md), [doppler](doppler.md), [infisical](infisical.md), [1password](1password.md).
 
 **Open questions / to verify**
 - Whether "Conjur" survives as a brand or is fully merged into CyberArk/PANW Secrets Manager.

@@ -27,23 +27,23 @@ tags: [observability, evals, agent-engineering, langchain]
 
 # LangSmith (LangChain)
 
-> **Researched 2026-06-28.** Primary category: [[llm-observability]].
+> **Researched 2026-06-28.** Primary category: [llm-observability](../categories/llm-observability.md).
 
 **One-liner** — LangChain's commercial observability-and-evaluation platform for building, tracing, and improving LLM agents.
 
 **What it does** — LangSmith captures detailed traces of every LLM call, tool call, cost, and latency in an agent, then layers evaluation (LLM-as-a-judge and custom evaluators), a prompt playground, dataset management, and human-in-the-loop annotation on top. It is LangChain's primary revenue product and the natural observability choice if you build on LangChain/LangGraph — though it works independently of those frameworks too.
 
-**Where it sits in the stack** — The [[llm-observability]] layer of the model/prompt tier. Development- and operations-time visibility plus eval; not an inline runtime control, so it does not directly break a leg of the lethal trifecta. Complements [[ai-runtime-security]] and [[ai-gateway]] controls rather than replacing them.
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Development- and operations-time visibility plus eval; not an inline runtime control, so it does not directly break a leg of the lethal trifecta. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-gateway](../categories/ai-gateway.md) controls rather than replacing them.
 
 **Deployment & architecture** — SDK-based instrumentation (Python, JS/TS), tightest with LangChain/LangGraph but framework-agnostic. SaaS (LangSmith Cloud) plus self-hosted/enterprise deployment for teams that need traces inside their own boundary. Adjacent "Deployment" product (formerly LangGraph Platform) ships long-running agents on managed infra.
 
-**Positioning & differentiators** — The incumbent tied to the most widely used agent framework; strong for teams already on LangChain. Closed-source SaaS, unlike OSS-first [[langfuse]] and [[arize-phoenix]]. Versus [[braintrust]] it is observability-and-framework-led rather than eval-first; versus [[helicone]] it is SDK-based rather than proxy-based. Framework lock-in is the main critique — LangSmith is most compelling inside the LangChain ecosystem.
+**Positioning & differentiators** — The incumbent tied to the most widely used agent framework; strong for teams already on LangChain. Closed-source SaaS, unlike OSS-first [langfuse](langfuse.md) and [arize-phoenix](arize-phoenix.md). Versus [braintrust](braintrust.md) it is observability-and-framework-led rather than eval-first; versus [helicone](helicone.md) it is SDK-based rather than proxy-based. Framework lock-in is the main critique — LangSmith is most compelling inside the LangChain ecosystem.
 
 **Ownership, funding & M&A** — Independent, VC-backed. LangChain raised a **$125M Series B in Oct 2025 at a $1.25B valuation** (led by IVP; Sequoia, Benchmark, Amplify, plus new CapitalG and Sapphire Ventures), ~$160M total. HQ San Francisco. No M&A; the company is a unicorn-stage independent. Confidence: high.
 
-**CTO / hedge-fund lens** — Day-1 if you are building agents, especially on LangChain/LangGraph. Self-host option matters for a fund that does not want prompts/outputs (potential MNPI) in a third-party cloud. Healthy funding and Fortune 500 traction reduce continuity risk. Not a model-risk/SR 11-7 governance system — pair with an [[ai-governance-platform]]. Watch framework lock-in if you are not committed to LangChain.
+**CTO / hedge-fund lens** — Day-1 if you are building agents, especially on LangChain/LangGraph. Self-host option matters for a fund that does not want prompts/outputs (potential MNPI) in a third-party cloud. Healthy funding and Fortune 500 traction reduce continuity risk. Not a model-risk/SR 11-7 governance system — pair with an [ai-governance-platform](../categories/ai-governance-platform.md). Watch framework lock-in if you are not committed to LangChain.
 
-**Competitors / alternatives** — [[langfuse]], [[arize-phoenix]], [[braintrust]], [[helicone]], [[datadog]], [[comet]].
+**Competitors / alternatives** — [langfuse](langfuse.md), [arize-phoenix](arize-phoenix.md), [braintrust](braintrust.md), [helicone](helicone.md), [datadog](datadog.md), [comet](comet.md).
 
 **Open questions / to verify**
 - Self-hosted/enterprise pricing and exact data-residency guarantees.

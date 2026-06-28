@@ -27,7 +27,7 @@ tags: [identity-governance, iga, cloud-pam, converged-identity]
 
 # Saviynt
 
-> Researched 2026-06-28. Primary category: [[identity-governance]].
+> Researched 2026-06-28. Primary category: [identity-governance](../categories/identity-governance.md).
 
 **One-liner** — Cloud-native converged identity security platform: IGA plus privileged access and app/data access governance in one SaaS, the main challenger to SailPoint.
 
@@ -35,22 +35,22 @@ tags: [identity-governance, iga, cloud-pam, converged-identity]
 Saviynt's Enterprise Identity Cloud converges several identity disciplines that legacy vendors sell separately: identity governance & administration (access requests, certifications, lifecycle, SoD), cloud privileged access management (PAM), application access governance (deep ERP/SoD controls, e.g. SAP), and third-party/non-human identity governance — increasingly with AI/agent identity. The pitch is one cloud platform instead of stitched-together point tools.
 
 ## Where it sits in the stack
-The [[identity-governance]] foundation (IGA/ISPM). It addresses the **sensitive-data** leg of the lethal trifecta by governing and attesting entitlements — the access substrate AI assistants and [[entitlement-aware-rag]] must inherit.
+The [identity-governance](../categories/identity-governance.md) foundation (IGA/ISPM). It addresses the **sensitive-data** leg of the lethal trifecta by governing and attesting entitlements — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) must inherit.
 
 ## Deployment & architecture
-Cloud-native SaaS (born in the cloud, unlike SailPoint's on-prem IdentityIQ heritage). Connects to IdPs ([[microsoft-entra]], [[okta]], [[ping-identity]]), HR, cloud platforms, and enterprise apps; notable depth in SAP/ERP access controls and cloud PAM.
+Cloud-native SaaS (born in the cloud, unlike SailPoint's on-prem IdentityIQ heritage). Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md), [ping-identity](ping-identity.md)), HR, cloud platforms, and enterprise apps; notable depth in SAP/ERP access controls and cloud PAM.
 
 ## Positioning & differentiators
-Known for **convergence** (IGA + PAM + app-access in one platform) and strength in application/ERP access governance and regulated-industry compliance. Direct competitor to [[sailpoint]]; differentiates on single-platform breadth and cloud-native architecture. Heavier and more compliance-oriented than automation-first challengers [[lumos]]/[[conductorone]] and visibility-first [[veza]].
+Known for **convergence** (IGA + PAM + app-access in one platform) and strength in application/ERP access governance and regulated-industry compliance. Direct competitor to [sailpoint](sailpoint.md); differentiates on single-platform breadth and cloud-native architecture. Heavier and more compliance-oriented than automation-first challengers [lumos](lumos.md)/[conductorone](conductorone.md) and visibility-first [veza](veza.md).
 
 ## Ownership, funding & M&A
 Independent, private company. Raised a **$700M Series B growth round in December 2025 at ~$3B valuation, led by KKR** (with Sixth Street Growth, TenEleven, and existing Carrick Capital); ~$870M total raised. Founded 2010, HQ El Segundo, CA. No acquisition; ownership confidence high. (No seed M&A flag; ownership remains independent.)
 
 ## CTO / hedge-fund lens
-**Day-2**, same logic as [[sailpoint]]: a governance/compliance layer added after IdP/SIEM/DLP basics, moving toward Day-1 under SR 11-7-style model-risk or heavy-RAG regimes where entitlements must be proven and recertified. Convergence (governance + PAM in one tool) can simplify procurement for a mid-to-large fund that wants fewer vendors. For a small fund, still likely heavier than necessary.
+**Day-2**, same logic as [sailpoint](sailpoint.md): a governance/compliance layer added after IdP/SIEM/DLP basics, moving toward Day-1 under SR 11-7-style model-risk or heavy-RAG regimes where entitlements must be proven and recertified. Convergence (governance + PAM in one tool) can simplify procurement for a mid-to-large fund that wants fewer vendors. For a small fund, still likely heavier than necessary.
 
 ## Competitors / alternatives
-[[sailpoint]], [[veza]], [[conductorone]], [[lumos]]. Bundled option: [[microsoft-entra]] (Entra ID Governance). PASM/secrets neighbor: [[cyberark]].
+[sailpoint](sailpoint.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). PASM/secrets neighbor: [cyberark](cyberark.md).
 
 ## Open questions / to verify
 - Depth/maturity of agent and non-human identity governance relative to newer NHI-focused vendors.

@@ -33,7 +33,7 @@ tags: [ai-red-teaming, jailbreak, evaluation, judge-models]
 **One-liner** — Automated red-teaming that algorithmically discovers how an LLM fails
 (jailbreaks, harmful or wrong outputs) so you can fix it before shipping.
 
-**Categories** — [[ai-red-teaming]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md)
 
 ## What it does
 Haize Labs runs large-scale automated adversarial testing — "haizing" — to surface the
@@ -44,10 +44,10 @@ modes, and feeds them back for hardening. It also builds evaluation/**judge mode
 Anthropic is named among its customers.
 
 ## Where it sits in the stack
-[[ai-red-teaming]] in the model/prompt layer. Lethal-trifecta role: the
+[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Lethal-trifecta role: the
 **untrusted-input** leg — it specializes in finding adversarial inputs that break the
 model. It is a pre-production/assurance tool and a source of evaluators, not an inline
-runtime firewall, so it complements [[ai-runtime-security]] rather than replacing it.
+runtime firewall, so it complements [ai-runtime-security](../categories/ai-runtime-security.md) rather than replacing it.
 
 ## Deployment & architecture
 SaaS / API: a red-team suite plus judge models callable in evaluation pipelines.
@@ -57,8 +57,8 @@ Public deployment/integration detail is limited (early-stage); see open question
 Known for **research-driven, automated jailbreak discovery** and a high-profile young
 founding team; counts a frontier lab (Anthropic) as a customer, which is strong
 signal for the adversarial-testing thesis. Nearest neighbors are red-team testers
-[[mindgard]], [[splxai]], [[promptfoo]] and the eval-leaning [[patronus-ai]],
-[[maxim-ai]]. Differentiates on attack-generation depth and judge models (j1) vs.
+[mindgard](mindgard.md), [splxai](splxai.md), [promptfoo](promptfoo.md) and the eval-leaning [patronus-ai](patronus-ai.md),
+[maxim-ai](maxim-ai.md). Differentiates on attack-generation depth and judge models (j1) vs.
 broader eval/observability platforms.
 
 ## Ownership, funding & M&A
@@ -77,7 +77,7 @@ assistants. Limited direct SR 11-7 utility beyond serving as adversarial-testing
 evidence. Early-stage vendor: weigh maturity for production-critical reliance.
 
 ## Competitors / alternatives
-[[mindgard]], [[splxai]], [[promptfoo]], [[patronus-ai]], [[maxim-ai]], [[hiddenlayer]].
+[mindgard](mindgard.md), [splxai](splxai.md), [promptfoo](promptfoo.md), [patronus-ai](patronus-ai.md), [maxim-ai](maxim-ai.md), [hiddenlayer](hiddenlayer.md).
 
 ## Open questions / to verify
 - Productization/pricing and how the j1 judge models are packaged.

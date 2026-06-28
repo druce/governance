@@ -27,7 +27,7 @@ tags: [acquired, ai-spm, shadow-ai, agent-security, exposure-management]
 
 # Apex Security
 
-> **Researched 2026-06-28.** Primary category: [[agent-runtime-security]]. **Acquired by Tenable** (announced 2025-05-29).
+> **Researched 2026-06-28.** Primary category: [agent-runtime-security](../categories/agent-runtime-security.md). **Acquired by Tenable** (announced 2025-05-29).
 
 **One-liner** — An AI-attack-surface / AI-governance startup (discover ungoverned AI, enforce policy, govern agents) bought by exposure-management vendor Tenable and folded into Tenable One.
 
@@ -35,13 +35,13 @@ tags: [acquired, ai-spm, shadow-ai, agent-security, exposure-management]
 Apex secures the AI attack surface: it discovers **ungoverned / shadow AI** (apps, AI-generated code, AI identities), enforces policy on AI usage, and controls exposure across both the AI tools an organization *uses* and the AI systems it *builds* — including governance/runtime control of AI agents. The pitch is visibility + control over everything AI in the enterprise, mapped into a security/exposure view.
 
 ## Where it sits in the stack
-Primary [[agent-runtime-security]] (runtime governance of agentic AI) with strong overlap into [[ai-spm]] (AI discovery/posture) and [[ai-access-governance]] (shadow AI). Layer: model-prompt. Lethal-trifecta role: as a governance/visibility + policy layer it touches all three legs indirectly — flagging risky **untrusted-input** exposure, **sensitive-data** handling, and AI **egress**. Post-acquisition it becomes the AI lens of Tenable's exposure-management view.
+Primary [agent-runtime-security](../categories/agent-runtime-security.md) (runtime governance of agentic AI) with strong overlap into [ai-spm](../categories/ai-spm.md) (AI discovery/posture) and [ai-access-governance](../categories/ai-access-governance.md) (shadow AI). Layer: model-prompt. Lethal-trifecta role: as a governance/visibility + policy layer it touches all three legs indirectly — flagging risky **untrusted-input** exposure, **sensitive-data** handling, and AI **egress**. Post-acquisition it becomes the AI lens of Tenable's exposure-management view.
 
 ## Deployment & architecture
 SaaS / API-based discovery and policy enforcement across the AI estate (used tools + built systems). Following close, capabilities are delivered as part of **Tenable One**, Tenable's unified exposure-management platform — adding AI visibility, context and control alongside vuln/asset exposure data. Integrations: the enterprise SaaS/AI estate, IdP, Tenable One.
 
 ## Positioning & differentiators
-Apex's angle was breadth across "AI you use and AI you build" framed as **exposure management** rather than a single inline firewall — which is exactly why an exposure-management leader (Tenable) acquired it to extend Tenable One into AI. Notable for a marquee investor list. Nearest neighbors: [[zenity]], [[operant-ai]], [[straiker]], [[noma-security]], [[quilr]], [[reco]], [[nudge-security]].
+Apex's angle was breadth across "AI you use and AI you build" framed as **exposure management** rather than a single inline firewall — which is exactly why an exposure-management leader (Tenable) acquired it to extend Tenable One into AI. Notable for a marquee investor list. Nearest neighbors: [zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md), [noma-security](noma-security.md), [quilr](quilr.md), [reco](reco.md), [nudge-security](nudge-security.md).
 
 ## Ownership, funding & M&A
 Founded **2023** by Matan Derman (CEO) and Tomer Avni (CPO); Israeli startup (HQ Tel Aviv). Backed by a high-profile group — **Sam Altman**, Clem Delangue (Hugging Face), **Sequoia Capital**, **Index Ventures** (~$25M raised across seed + Series A; exact total not itemized in sources). **Acquired by Tenable** (NASDAQ: TENB) — announced **2025-05-29**; deal value not officially disclosed, Calcalist reported **>$105M**; expected to **close in Q2 2025**, with integrated capabilities in Tenable One in **H2 2025**. Verified against Tenable's own press release and corroborating press; confirms the seed flag ("acq by Tenable"). **Confidence: high.**
@@ -50,7 +50,7 @@ Founded **2023** by Matan Derman (CEO) and Tomer Avni (CPO); Israeli startup (HQ
 Day-2 (AI posture/governance is something you layer on after baseline controls). Relevant mainly if you are a **Tenable shop** doing exposure management and want AI assets in the same risk picture — shadow-AI discovery + agent governance has real value for a fund worried about ungoverned AI usage. Mild SR 11-7 relevance (AI inventory/governance supports model-risk documentation). Standalone Apex is no longer the buying unit; evaluate via Tenable One.
 
 ## Competitors / alternatives
-[[zenity]], [[operant-ai]], [[straiker]], [[noma-security]], [[quilr]], [[reco]], [[nudge-security]], [[wiz]].
+[zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md), [noma-security](noma-security.md), [quilr](quilr.md), [reco](reco.md), [nudge-security](nudge-security.md), [wiz](wiz.md).
 
 ## Open questions / to verify
 - Confirm the deal **closed** (announced 2025-05-29, expected Q2 2025) — verify completion date.

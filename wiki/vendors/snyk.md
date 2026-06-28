@@ -27,7 +27,7 @@ tags: [sca, sast, appsec, dependency-scanning, container-security]
 
 # Snyk
 
-> Primary category: [[software-supply-chain]].
+> Primary category: [software-supply-chain](../categories/software-supply-chain.md).
 
 **One-liner** — Developer-first security platform that scans your own code, your open-source dependencies, containers, and IaC for vulnerabilities, integrated into the IDE and CI/CD so issues are caught before they ship.
 
@@ -41,7 +41,7 @@ It is positioned around developer workflow: fast scans, IDE plugins, one-click f
 
 ## Where it sits in the stack
 
-[[software-supply-chain]], foundation layer. Snyk secures the code-and-dependencies substrate everything else runs on. Relevance to **AI-generated code**: when devs use Copilot/Cursor/Claude to generate code, that code and the dependencies it pulls in are effectively **untrusted input** to your codebase — LLMs hallucinate package names (a "slopsquatting" vector) and reproduce insecure patterns. SCA + SAST in CI is the table-stakes control. Note: Snyk is CVE/known-vuln oriented, not primarily a malicious-package detector (see [[socket]]).
+[software-supply-chain](../categories/software-supply-chain.md), foundation layer. Snyk secures the code-and-dependencies substrate everything else runs on. Relevance to **AI-generated code**: when devs use Copilot/Cursor/Claude to generate code, that code and the dependencies it pulls in are effectively **untrusted input** to your codebase — LLMs hallucinate package names (a "slopsquatting" vector) and reproduce insecure patterns. SCA + SAST in CI is the table-stakes control. Note: Snyk is CVE/known-vuln oriented, not primarily a malicious-package detector (see [socket](socket.md)).
 
 ## Deployment & architecture
 
@@ -49,7 +49,7 @@ SaaS platform with self-hosted/broker options for regulated buyers. Surfaces: ID
 
 ## Positioning & differentiators
 
-Broadest suite and strongest developer-adoption brand among [[software-supply-chain]] vendors. Versus [[semgrep]]: Snyk is a wider multi-product platform (SCA+SAST+container+IaC) with a curated proprietary vuln database, where Semgrep is rooted in fast, customizable SAST with an open-source engine. Versus [[socket]]: Snyk catches *known* CVEs; Socket catches *malicious/novel* packages — complementary, not substitutes. Versus reachability-focused [[endor-labs]] and all-in-one [[aikido-security]]: Snyk is the incumbent with the largest footprint but is generally the pricier, heavier option.
+Broadest suite and strongest developer-adoption brand among [software-supply-chain](../categories/software-supply-chain.md) vendors. Versus [semgrep](semgrep.md): Snyk is a wider multi-product platform (SCA+SAST+container+IaC) with a curated proprietary vuln database, where Semgrep is rooted in fast, customizable SAST with an open-source engine. Versus [socket](socket.md): Snyk catches *known* CVEs; Socket catches *malicious/novel* packages — complementary, not substitutes. Versus reachability-focused [endor-labs](endor-labs.md) and all-in-one [aikido-security](aikido-security.md): Snyk is the incumbent with the largest footprint but is generally the pricier, heavier option.
 
 ## Ownership, funding & M&A
 
@@ -57,11 +57,11 @@ Independent, private, venture-backed. Founded 2015 (Tel Aviv/London origins; HQ 
 
 ## CTO / hedge-fund lens
 
-**Day-2 generally, but Day-1 the moment your devs ship AI-generated code.** If a fund's engineers use Copilot/Cursor/Claude, dependency + static scanning in CI becomes table-stakes hygiene, and Snyk is the safe default if you want one broad platform. For a small fund (sub-50 eng) Snyk can be heavier and pricier than needed — [[semgrep]] (lighter SAST/SCA) or [[aikido-security]] (consolidated, SMB-friendly) may fit better, often paired with [[socket]] for malicious-package defense. Model-risk relevance is light/indirect: it doesn't address SR 11-7 model governance, but it does reduce the operational risk of AI-authored code reaching production.
+**Day-2 generally, but Day-1 the moment your devs ship AI-generated code.** If a fund's engineers use Copilot/Cursor/Claude, dependency + static scanning in CI becomes table-stakes hygiene, and Snyk is the safe default if you want one broad platform. For a small fund (sub-50 eng) Snyk can be heavier and pricier than needed — [semgrep](semgrep.md) (lighter SAST/SCA) or [aikido-security](aikido-security.md) (consolidated, SMB-friendly) may fit better, often paired with [socket](socket.md) for malicious-package defense. Model-risk relevance is light/indirect: it doesn't address SR 11-7 model governance, but it does reduce the operational risk of AI-authored code reaching production.
 
 ## Competitors / alternatives
 
-[[semgrep]], [[socket]], [[endor-labs]], [[aikido-security]]; also GitHub Advanced Security (not yet a page).
+[semgrep](semgrep.md), [socket](socket.md), [endor-labs](endor-labs.md), [aikido-security](aikido-security.md); also GitHub Advanced Security (not yet a page).
 
 ## Open questions / to verify
 

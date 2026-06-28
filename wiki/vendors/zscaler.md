@@ -34,7 +34,7 @@ tags: [sase, sse, zero-trust, cloud-proxy, shadow-ai, inline-dlp]
 sits between your users and the internet, and which now uses that position to find
 shadow AI, control who can use which AI apps, and block sensitive data going into prompts.
 
-**Categories** — [[network-security-sase]] (primary), [[ai-access-governance]]
+**Categories** — [network-security-sase](../categories/network-security-sase.md) (primary), [ai-access-governance](../categories/ai-access-governance.md)
 
 ## What it does
 Zscaler runs a global cloud proxy (the "Zero Trust Exchange") that inspects user and
@@ -46,8 +46,8 @@ employees use, coaching/allowing/blocking access by user or group, and applying 
 DLP to prompts.
 
 ## Where it sits in the stack
-Foundation-layer network control under [[network-security-sase]], with an
-[[ai-access-governance]] role as a secondary use of the same proxy. On the lethal
+Foundation-layer network control under [network-security-sase](../categories/network-security-sase.md), with an
+[ai-access-governance](../categories/ai-access-governance.md) role as a secondary use of the same proxy. On the lethal
 trifecta it primarily addresses the **egress** leg (controlling where data can flow,
 blocking unsanctioned AI destinations) and the **sensitive-data** leg (inline DLP on
 prompts). It is the green/yellow-zone perimeter, not a model-layer guardrail.
@@ -67,8 +67,8 @@ of AI-security firm SPLX — both largely vendor-stated and not independently ve
 Known for scale and an installed inline footprint: if a shop already routes egress
 through Zscaler, turning on AI discovery/DLP is incremental rather than a new deployment.
 Differs from API-first CASB/DSPM tools by being inline-first. Nearest neighbors:
-[[netskope]] (closest SSE/SASE competitor, also pushing AI controls), [[palo-alto-networks]]
-(Prisma Access / Prisma AIRS), [[cisco]], [[cato-networks]], [[forcepoint]]. Versus
+[netskope](netskope.md) (closest SSE/SASE competitor, also pushing AI controls), [palo-alto-networks](palo-alto-networks.md)
+(Prisma Access / Prisma AIRS), [cisco](cisco.md), [cato-networks](cato-networks.md), [forcepoint](forcepoint.md). Versus
 dedicated AI-runtime/guardrail vendors, Zscaler's AI governance is a perimeter overlay,
 not deep model-prompt inspection.
 
@@ -88,7 +88,7 @@ browser/DLP point tool. No direct SR 11-7 / model-risk function; it governs *acc
 not model validation.
 
 ## Competitors / alternatives
-[[netskope]], [[palo-alto-networks]], [[cisco]], [[cato-networks]], [[forcepoint]].
+[netskope](netskope.md), [palo-alto-networks](palo-alto-networks.md), [cisco](cisco.md), [cato-networks](cato-networks.md), [forcepoint](forcepoint.md).
 
 ## Open questions / to verify
 - Independent (non-marketing) validation of AI-access DLP efficacy and prompt inspection depth.

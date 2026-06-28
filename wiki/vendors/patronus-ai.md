@@ -34,7 +34,7 @@ tags: [ai-red-teaming, evaluation, hallucination, llm-observability]
 **One-liner** — A model-agnostic evaluation/judge platform that scores and flags LLM
 outputs for hallucination, accuracy, safety, and compliance failures.
 
-**Categories** — [[ai-red-teaming]], [[llm-observability]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md), [llm-observability](../categories/llm-observability.md)
 
 ## What it does
 Patronus runs automated evaluations against LLM outputs using purpose-built evaluator
@@ -47,7 +47,7 @@ of its 2026 Series B it is expanding into "Digital World Models" — large-scale
 simulation/reliability tooling for autonomous AI systems.
 
 ## Where it sits in the stack
-Straddles [[ai-red-teaming]] (adversarial/failure testing) and [[llm-observability]]
+Straddles [ai-red-teaming](../categories/ai-red-teaming.md) (adversarial/failure testing) and [llm-observability](../categories/llm-observability.md)
 (production evaluation/monitoring) in the model/prompt layer. Lethal-trifecta role:
 **untrusted-input** (adversarial eval, jailbreak/safety testing) and **sensitive-data**
 (PII-leakage and copyright detection on outputs). It is an offline/async evaluation
@@ -61,8 +61,8 @@ Model- and domain-agnostic.
 ## Positioning & differentiators
 Best known for **hallucination detection and rigorous benchmarks** (FinanceBench is
 notable for finance use cases), backed by ex-Meta AI research founders. Competes with
-eval/observability platforms [[maxim-ai]], [[braintrust]], [[galileo]], [[arize-phoenix]],
-[[langsmith]] and red-team testers [[haize-labs]], [[mindgard]], [[splxai]]. Its
+eval/observability platforms [maxim-ai](maxim-ai.md), [braintrust](braintrust.md), [galileo](galileo.md), [arize-phoenix](arize-phoenix.md),
+[langsmith](langsmith.md) and red-team testers [haize-labs](haize-labs.md), [mindgard](mindgard.md), [splxai](splxai.md). Its
 FinanceBench benchmark is the most directly finance-relevant artifact among these
 vendors. The 2026 pivot toward simulation/"world models" pushes it beyond pure text eval.
 
@@ -83,8 +83,8 @@ fit for an internal AI/quant team productionizing LLM workflows that need defens
 evaluation documentation.
 
 ## Competitors / alternatives
-[[maxim-ai]], [[braintrust]], [[galileo]], [[arize-phoenix]], [[langsmith]],
-[[haize-labs]], [[mindgard]], [[splxai]].
+[maxim-ai](maxim-ai.md), [braintrust](braintrust.md), [galileo](galileo.md), [arize-phoenix](arize-phoenix.md), [langsmith](langsmith.md),
+[haize-labs](haize-labs.md), [mindgard](mindgard.md), [splxai](splxai.md).
 
 ## Open questions / to verify
 - How material the "Digital World Models" / simulation pivot is vs. the core eval product.

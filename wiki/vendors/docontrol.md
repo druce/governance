@@ -39,7 +39,7 @@ The job for a buyer: stop sensitive data leaking out of SaaS via over-sharing, a
 
 ## Where it sits in the stack
 
-Filed under [[sspm]] in this wiki, but its center of gravity is **SaaS data security / data-access governance** (closer to DSPM-for-SaaS than to config-posture SSPM). Layer: foundation.
+Filed under [sspm](../categories/sspm.md) in this wiki, but its center of gravity is **SaaS data security / data-access governance** (closer to DSPM-for-SaaS than to config-posture SSPM). Layer: foundation.
 
 Lethal-trifecta role: **sensitive-data** and **egress** — it limits exposure and exfiltration of corporate data shared through SaaS apps. Not a model/prompt firewall.
 
@@ -49,7 +49,7 @@ SaaS, **API-first / agentless**: connects to SaaS apps via API to read sharing a
 
 ## Positioning & differentiators
 
-Known for **data-centric, no-code remediation** of SaaS over-sharing — a different emphasis from config-posture-first SSPMs like [[appomni]], [[obsidian-security]], and [[wing-security]]. Closest neighbors are tools that govern SaaS data access and OAuth/identity risk: [[valence-security]], [[grip-security]], [[reco]]. Backed early by CrowdStrike's Falcon Fund, which positions it near the endpoint-security ecosystem (vendor/investor framing).
+Known for **data-centric, no-code remediation** of SaaS over-sharing — a different emphasis from config-posture-first SSPMs like [appomni](appomni.md), [obsidian-security](obsidian-security.md), and [wing-security](wing-security.md). Closest neighbors are tools that govern SaaS data access and OAuth/identity risk: [valence-security](valence-security.md), [grip-security](grip-security.md), [reco](reco.md). Backed early by CrowdStrike's Falcon Fund, which positions it near the endpoint-security ecosystem (vendor/investor framing).
 
 ## Ownership, funding & M&A
 
@@ -61,7 +61,7 @@ Independent, VC-backed. Founded 2020; HQ New York, NY. Total funding ~$45M raise
 
 ## Competitors / alternatives
 
-[[valence-security]], [[grip-security]], [[reco]], [[appomni]], [[obsidian-security]], [[wing-security]], [[nudge-security]].
+[valence-security](valence-security.md), [grip-security](grip-security.md), [reco](reco.md), [appomni](appomni.md), [obsidian-security](obsidian-security.md), [wing-security](wing-security.md), [nudge-security](nudge-security.md).
 
 ## Open questions / to verify
 

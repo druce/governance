@@ -27,7 +27,7 @@ tags: [browser-security, secure-browsing, agentless, sse]
 
 # Red Access
 
-> Agentless "secure browsing" platform that adds enterprise security to any existing browser via a session-based architecture — pitched as a lightweight SSE alternative with no agents or network overhaul. Primary category: [[enterprise-browser]].
+> Agentless "secure browsing" platform that adds enterprise security to any existing browser via a session-based architecture — pitched as a lightweight SSE alternative with no agents or network overhaul. Primary category: [enterprise-browser](../categories/enterprise-browser.md).
 
 **One-liner** — Secures web/SaaS/GenAI sessions inside the browsers people already use, without deploying a dedicated browser, endpoint agent, or rerouting traffic through a network stack.
 
@@ -37,7 +37,7 @@ Red Access protects browsing sessions across browsers, web apps, and SaaS/GenAI 
 
 ## Where it sits in the stack
 
-[[enterprise-browser]] category, **UX layer**. Like other browser-security tools it primarily controls the **egress** leg (what data can leave a session — uploads, downloads, paste-into-GenAI) and the **untrusted-input** leg (hostile web content) at the user's last mile, sitting on the boundary between the untrusted web (red zone) and corporate apps/data. Its session-based design integrates with existing firewalls/SSE rather than replacing them.
+[enterprise-browser](../categories/enterprise-browser.md) category, **UX layer**. Like other browser-security tools it primarily controls the **egress** leg (what data can leave a session — uploads, downloads, paste-into-GenAI) and the **untrusted-input** leg (hostile web content) at the user's last mile, sitting on the boundary between the untrusted web (red zone) and corporate apps/data. Its session-based design integrates with existing firewalls/SSE rather than replacing them.
 
 ## Deployment & architecture
 
@@ -46,11 +46,11 @@ Delivered as SaaS with an **agentless, session-based architecture** — no endpo
 ## Positioning & differentiators
 
 Red Access plays in the "secure any browser, agentless" segment:
-- vs [[seraphic]] — closest peer; both secure existing browsers without rerouting traffic. Red Access emphasizes an agentless, SSE-extension/session framing; Seraphic emphasizes browser-runtime protection and was acquired by CrowdStrike.
-- vs [[layerx]] — both deliver browser-layer security on existing browsers (LayerX via extension); direct competitors.
-- vs [[island]] and [[prisma-access-browser]] — those ship a dedicated managed Chromium browser; Red Access avoids deploying a new browser.
-- vs [[menlo-security]] — Menlo's heritage is remote browser isolation/proxy; Red Access avoids the proxy/network overhaul.
-- vs [[chrome-enterprise]] / [[microsoft-edge-business]] — native browser-management from the browser makers; Red Access is browser-agnostic with added security/DLP.
+- vs [seraphic](seraphic.md) — closest peer; both secure existing browsers without rerouting traffic. Red Access emphasizes an agentless, SSE-extension/session framing; Seraphic emphasizes browser-runtime protection and was acquired by CrowdStrike.
+- vs [layerx](layerx.md) — both deliver browser-layer security on existing browsers (LayerX via extension); direct competitors.
+- vs [island](island.md) and [prisma-access-browser](prisma-access-browser.md) — those ship a dedicated managed Chromium browser; Red Access avoids deploying a new browser.
+- vs [menlo-security](menlo-security.md) — Menlo's heritage is remote browser isolation/proxy; Red Access avoids the proxy/network overhaul.
+- vs [chrome-enterprise](chrome-enterprise.md) / [microsoft-edge-business](microsoft-edge-business.md) — native browser-management from the browser makers; Red Access is browser-agnostic with added security/DLP.
 
 ## Ownership, funding & M&A
 
@@ -65,7 +65,7 @@ Red Access plays in the "secure any browser, agentless" segment:
 
 ## Competitors / alternatives
 
-[[seraphic]], [[layerx]], [[island]], [[menlo-security]], [[prisma-access-browser]], [[chrome-enterprise]], [[microsoft-edge-business]]
+[seraphic](seraphic.md), [layerx](layerx.md), [island](island.md), [menlo-security](menlo-security.md), [prisma-access-browser](prisma-access-browser.md), [chrome-enterprise](chrome-enterprise.md), [microsoft-edge-business](microsoft-edge-business.md)
 
 ## Open questions / to verify
 

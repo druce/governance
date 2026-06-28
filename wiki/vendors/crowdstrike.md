@@ -27,31 +27,31 @@ tags: [edr, xdr, siem, soc, ai-security, falcon]
 
 # CrowdStrike
 
-> Primary category: [[edr-xdr]]. Also [[siem-soc]], [[ai-soc-analysts]], and (via Pangea) [[ai-red-teaming]] / AI runtime security.
+> Primary category: [edr-xdr](../categories/edr-xdr.md). Also [siem-soc](../categories/siem-soc.md), [ai-soc-analysts](../categories/ai-soc-analysts.md), and (via Pangea) [ai-red-teaming](../categories/ai-red-teaming.md) / AI runtime security.
 
 **One-liner** — The dominant cloud-native endpoint protection (EDR/XDR) vendor, whose Falcon platform has expanded into SIEM, cloud, identity, an agentic SOC analyst (Charlotte AI), and — via the Pangea acquisition — AI prompt-layer security ("AI Detection and Response").
 
 ## What it does
-CrowdStrike's Falcon is a single-agent, cloud-delivered security platform. Its core is best-in-class [[edr-xdr]] (endpoint/extended detection and response), but it now spans next-gen SIEM (Falcon LogScale, see [[crowdstrike-logscale]]), cloud security (CNAPP), identity threat detection, exposure management, and a SOC-automation layer. For a CTO, it is the "if you already own one security platform, it's probably this or [[microsoft-defender]]" incumbent.
+CrowdStrike's Falcon is a single-agent, cloud-delivered security platform. Its core is best-in-class [edr-xdr](../categories/edr-xdr.md) (endpoint/extended detection and response), but it now spans next-gen SIEM (Falcon LogScale, see [crowdstrike-logscale](crowdstrike-logscale.md)), cloud security (CNAPP), identity threat detection, exposure management, and a SOC-automation layer. For a CTO, it is the "if you already own one security platform, it's probably this or [microsoft-defender](microsoft-defender.md)" incumbent.
 
-In 2024–2025 CrowdStrike pushed hard into AI security on two fronts: **Charlotte AI**, an internally built agentic SOC analyst (see [[ai-soc-analysts]]), and the **Pangea** acquisition, which adds AI prompt-layer guardrails and what CrowdStrike brands as the industry's first complete **AI Detection and Response (AIDR)** — securing data, models, agents, identities, and AI interactions across the AI lifecycle.
+In 2024–2025 CrowdStrike pushed hard into AI security on two fronts: **Charlotte AI**, an internally built agentic SOC analyst (see [ai-soc-analysts](../categories/ai-soc-analysts.md)), and the **Pangea** acquisition, which adds AI prompt-layer guardrails and what CrowdStrike brands as the industry's first complete **AI Detection and Response (AIDR)** — securing data, models, agents, identities, and AI interactions across the AI lifecycle.
 
 ## Where it sits in the stack
-Foundation layer. Falcon is endpoint/identity/cloud telemetry and response ([[edr-xdr]], [[siem-soc]], [[ai-soc-analysts]]). With Pangea folded in, CrowdStrike also reaches into the model/prompt layer ([[ai-runtime-security]] / [[ai-red-teaming]]), addressing the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta at the AI interaction layer. It spans the green (managed endpoints) and is extending into the yellow (AI app) trust zones.
+Foundation layer. Falcon is endpoint/identity/cloud telemetry and response ([edr-xdr](../categories/edr-xdr.md), [siem-soc](../categories/siem-soc.md), [ai-soc-analysts](../categories/ai-soc-analysts.md)). With Pangea folded in, CrowdStrike also reaches into the model/prompt layer ([ai-runtime-security](../categories/ai-runtime-security.md) / [ai-red-teaming](../categories/ai-red-teaming.md)), addressing the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta at the AI interaction layer. It spans the green (managed endpoints) and is extending into the yellow (AI app) trust zones.
 
 ## Deployment & architecture
 SaaS control plane with a lightweight single endpoint agent; API-first for integrations. Pangea's AI guardrails deploy via gateway or are embedded in applications with a few lines of code (API/SDK). Integrates with SIEM/SOC workflows natively (it *is* a SIEM via LogScale), IdP, and cloud providers.
 
 ## Positioning & differentiators
 - Market-leading EDR/XDR brand; very broad single-agent platform consolidation play.
-- Charlotte AI (agentic triage) competes with [[ai-soc-analysts]] pure-plays like [[prophet-security]], [[dropzone-ai]], [[radiant-security]].
-- AIDR via Pangea positions it against [[sentinelone]] (which bought [[prompt-security]]), [[prisma-airs]] (Palo Alto), [[cisco-ai-defense]], and AI-runtime pure-plays ([[hiddenlayer]], [[witnessai]], [[lakera]]).
-- Nearest neighbor is [[microsoft-defender]] (bundled-with-E5 economics) and [[sentinelone]] (challenger with a near-identical AI-security M&A playbook).
+- Charlotte AI (agentic triage) competes with [ai-soc-analysts](../categories/ai-soc-analysts.md) pure-plays like [prophet-security](prophet-security.md), [dropzone-ai](dropzone-ai.md), [radiant-security](radiant-security.md).
+- AIDR via Pangea positions it against [sentinelone](sentinelone.md) (which bought [prompt-security](prompt-security.md)), [prisma-airs](prisma-airs.md) (Palo Alto), [cisco-ai-defense](cisco-ai-defense.md), and AI-runtime pure-plays ([hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md), [lakera](lakera.md)).
+- Nearest neighbor is [microsoft-defender](microsoft-defender.md) (bundled-with-E5 economics) and [sentinelone](sentinelone.md) (challenger with a near-identical AI-security M&A playbook).
 
 ## Ownership, funding & M&A
 Public company, NASDAQ: CRWD, IPO June 2019; HQ Austin, TX; founded 2011 (George Kurtz et al.). The seed flagged it as "acquirer (Pangea, Charlotte AI internal)" — **confirmed**:
 - **Pangea** — acquisition announced 2025-09-16 at Fal.Con 2025; reported ~$260M; completed ~September 2025. Adds AI prompt-layer security / AIDR. (Confidence: high on the deal; medium on exact close date and price, which were press-reported not officially disclosed.)
-- **Adaptive Shield** — announced 2024-11-06 at Fal.Con Europe; reported ~$300M; closed ~January 2025. Adds [[sspm]] / GenAI SaaS posture. (See [[adaptive-shield]].)
+- **Adaptive Shield** — announced 2024-11-06 at Fal.Con Europe; reported ~$300M; closed ~January 2025. Adds [sspm](../categories/sspm.md) / GenAI SaaS posture. (See [adaptive-shield](adaptive-shield.md).)
 - **Charlotte AI** is internally built, not an acquisition — confirmed.
 - Falcon LogScale comes from the earlier Humio acquisition (2021).
 
@@ -59,7 +59,7 @@ Public company, NASDAQ: CRWD, IPO June 2019; HQ Austin, TX; founded 2011 (George
 Day-1 foundational. Most funds of any size already run CrowdStrike or Defender for endpoint; it's table-stakes EDR. The AI-security additions (Charlotte AI, Pangea/AIDR) are a Day-2 consolidation convenience — attractive if you're already a Falcon shop and want AI guardrails from an incumbent rather than a pure-play. Not specifically an SR 11-7/model-risk tool; it's security infrastructure, not model governance. Fits enterprise and serious mid-market; arguably heavy for a very small fund that could lean on Defender bundled with M365.
 
 ## Competitors / alternatives
-[[microsoft-defender]], [[sentinelone]], [[palo-alto-networks]] (Cortex), [[cisco]]. For the AI-security overlap: [[prompt-security]], [[prisma-airs]], [[cisco-ai-defense]], [[pangea]] (now part of CrowdStrike).
+[microsoft-defender](microsoft-defender.md), [sentinelone](sentinelone.md), [palo-alto-networks](palo-alto-networks.md) (Cortex), [cisco](cisco.md). For the AI-security overlap: [prompt-security](prompt-security.md), [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md), [pangea](pangea.md) (now part of CrowdStrike).
 
 ## Open questions / to verify
 - Exact Pangea close date and final purchase price (press-reported ~$260M; not officially disclosed).

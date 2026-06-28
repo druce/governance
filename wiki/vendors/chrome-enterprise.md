@@ -42,7 +42,7 @@ The pitch is that you don't deploy a new browser or a proxy; you light up securi
 
 ## Where it sits in the stack
 
-Primary category: [[enterprise-browser]] (layer: ux). Also relevant to [[browser-security-extension]] because, unlike a separate dedicated browser, its controls are delivered through the managed Chrome agent/policy layer rather than a swap-out application. It addresses the **sensitive-data** and **egress** legs of the lethal trifecta — it watches and constrains what data leaves through the browser (uploads, pastes, downloads to/from web apps) — and the context-aware access piece enforces trust-zone boundaries (managed vs unmanaged device, network, geography). It does little for the **untrusted-input** leg of LLM prompt-injection per se; its AI relevance is governing human use of GenAI web apps.
+Primary category: [enterprise-browser](../categories/enterprise-browser.md) (layer: ux). Also relevant to [browser-security-extension](../categories/browser-security-extension.md) because, unlike a separate dedicated browser, its controls are delivered through the managed Chrome agent/policy layer rather than a swap-out application. It addresses the **sensitive-data** and **egress** legs of the lethal trifecta — it watches and constrains what data leaves through the browser (uploads, pastes, downloads to/from web apps) — and the context-aware access piece enforces trust-zone boundaries (managed vs unmanaged device, network, geography). It does little for the **untrusted-input** leg of LLM prompt-injection per se; its AI relevance is governing human use of GenAI web apps.
 
 ## Deployment & architecture
 
@@ -53,11 +53,11 @@ Primary category: [[enterprise-browser]] (layer: ux). Also relevant to [[browser
 
 The differentiator is **incumbency**: it secures the browser most enterprises already standardize on, with no migration and a familiar admin surface, and it folds in Google's Zero Trust access (BeyondCorp) heritage. Contrast with the neighbors:
 
-- **Dedicated enterprise browsers** — [[island]] and [[prisma-access-browser]] ship their own Chromium-based browser with deeper last-mile controls (screenshot/watermark/copy restrictions, fully isolated managed environment). They offer more control but require adopting a new browser.
-- **Remote-isolation approaches** — [[menlo-security]] renders pages in a remote cloud container, a different architecture (isolation rather than in-browser policy).
-- **Extension/overlay approaches** — [[layerx]] adds an enterprise security extension on top of any existing browser (including Chrome or Edge), competing partly on being browser-agnostic.
+- **Dedicated enterprise browsers** — [island](island.md) and [prisma-access-browser](prisma-access-browser.md) ship their own Chromium-based browser with deeper last-mile controls (screenshot/watermark/copy restrictions, fully isolated managed environment). They offer more control but require adopting a new browser.
+- **Remote-isolation approaches** — [menlo-security](menlo-security.md) renders pages in a remote cloud container, a different architecture (isolation rather than in-browser policy).
+- **Extension/overlay approaches** — [layerx](layerx.md) adds an enterprise security extension on top of any existing browser (including Chrome or Edge), competing partly on being browser-agnostic.
 
-Chrome Enterprise Premium sits between "free managed browser" and "dedicated enterprise browser" — more than a console, less than a purpose-built isolated browser. Its natural counterpart for Microsoft shops is [[microsoft-edge-business]].
+Chrome Enterprise Premium sits between "free managed browser" and "dedicated enterprise browser" — more than a console, less than a purpose-built isolated browser. Its natural counterpart for Microsoft shops is [microsoft-edge-business](microsoft-edge-business.md).
 
 ## Ownership, funding & M&A
 
@@ -65,11 +65,11 @@ Part of a **public** company. Chrome Enterprise is a Google product line (Google
 
 ## CTO / hedge-fund lens
 
-**Optional / baseline.** If the fund standardizes on Chrome (or Google Workspace / ChromeOS), this is the "already in the building" path to browser DLP and Zero Trust access without buying a separate enterprise browser. The $6/user/month Premium tier is modest, and consolidating browser DLP + context-aware access here can defer or replace a dedicated-browser purchase. Fit is **medium**: strong if you are a Google/Chrome shop, weaker if you are an M365/Edge shop (where [[microsoft-edge-business]] is the parallel "free" baseline) or if you need the deeper last-mile controls of [[island]]/[[prisma-access-browser]]. No direct SR 11-7 / model-risk role; relevance is data-exfiltration control and governing employee GenAI use.
+**Optional / baseline.** If the fund standardizes on Chrome (or Google Workspace / ChromeOS), this is the "already in the building" path to browser DLP and Zero Trust access without buying a separate enterprise browser. The $6/user/month Premium tier is modest, and consolidating browser DLP + context-aware access here can defer or replace a dedicated-browser purchase. Fit is **medium**: strong if you are a Google/Chrome shop, weaker if you are an M365/Edge shop (where [microsoft-edge-business](microsoft-edge-business.md) is the parallel "free" baseline) or if you need the deeper last-mile controls of [island](island.md)/[prisma-access-browser](prisma-access-browser.md). No direct SR 11-7 / model-risk role; relevance is data-exfiltration control and governing employee GenAI use.
 
 ## Competitors / alternatives
 
-[[microsoft-edge-business]], [[island]], [[prisma-access-browser]], [[menlo-security]], [[layerx]].
+[microsoft-edge-business](microsoft-edge-business.md), [island](island.md), [prisma-access-browser](prisma-access-browser.md), [menlo-security](menlo-security.md), [layerx](layerx.md).
 
 ## Open questions / to verify
 

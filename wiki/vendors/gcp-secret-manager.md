@@ -27,7 +27,7 @@ tags: [secrets, iam, cmek, rotation, google-cloud, first-party-cloud]
 
 # GCP Secret Manager
 
-> **Researched 2026-06-28 (light — well-known first-party cloud service).** Primary category: [[secrets-management]].
+> **Researched 2026-06-28 (light — well-known first-party cloud service).** Primary category: [secrets-management](../categories/secrets-management.md).
 
 **One-liner** — Google Cloud's managed service for storing API keys, passwords, certificates, and other sensitive data as versioned secrets, with IAM-based access control — the default vault if you run on Google Cloud.
 
@@ -35,13 +35,13 @@ tags: [secrets, iam, cmek, rotation, google-cloud, first-party-cloud]
 Central place to store secrets as named objects with immutable, versioned payloads, so apps fetch them at runtime instead of embedding them in code or config. Access is governed by Google Cloud IAM at the project or per-secret level; every access is logged via Cloud Audit Logs; secrets can be encrypted with customer-managed keys (CMEK). It supports rotation schedules with Pub/Sub notifications and regional or automatic (multi-region) replication. Workloads authenticate via Google Cloud service accounts / Workload Identity, avoiding a bootstrap secret.
 
 ## Where it sits in the stack
-Foundation layer, [[secrets-management]] — the Google-Cloud-native building block, the counterpart of Cloud IAM (identity) and Cloud KMS (encryption). Lethal-trifecta role: none directly; it is plumbing that keeps long-lived credentials out of code, prompts, and repos.
+Foundation layer, [secrets-management](../categories/secrets-management.md) — the Google-Cloud-native building block, the counterpart of Cloud IAM (identity) and Cloud KMS (encryption). Lethal-trifecta role: none directly; it is plumbing that keeps long-lived credentials out of code, prompts, and repos.
 
 ## Deployment & architecture
 Fully managed, multi-tenant service within Google Cloud, accessed via API/SDK/CLI/Terraform. IAM for access; Cloud KMS/CMEK for encryption; Cloud Audit Logs for audit; Pub/Sub for rotation events. Versioning with explicit enable/disable/destroy of versions. (Note: rotation here means scheduled notifications/automation hooks rather than the fully-managed DB-credential rotation AWS offers out of the box.)
 
 ## Positioning & differentiators
-The default on Google Cloud: minimal setup, native IAM/Workload Identity, simple versioning. Direct analogue of [[azure-key-vault]] and [[aws-secrets-manager]] (+ KMS) on the other clouds. Versus [[hashicorp-vault]] it is simpler and managed but GCP-bound and lighter on dynamic secrets / advanced policy. Versus developer SaaS ([[doppler]], [[infisical]], [[1password]]) it is infra-centric, not developer-workflow-centric.
+The default on Google Cloud: minimal setup, native IAM/Workload Identity, simple versioning. Direct analogue of [azure-key-vault](azure-key-vault.md) and [aws-secrets-manager](aws-secrets-manager.md) (+ KMS) on the other clouds. Versus [hashicorp-vault](hashicorp-vault.md) it is simpler and managed but GCP-bound and lighter on dynamic secrets / advanced policy. Versus developer SaaS ([doppler](doppler.md), [infisical](infisical.md), [1password](1password.md)) it is infra-centric, not developer-workflow-centric.
 
 ## Ownership, funding & M&A
 First-party Google Cloud service, GA since 2020. Owner: Google LLC / Alphabet Inc. (public, NASDAQ: GOOGL). No M&A question. Confidence high.
@@ -50,7 +50,7 @@ First-party Google Cloud service, GA since 2020. Owner: Google LLC / Alphabet In
 Day-1 if you run anything on Google Cloud. For a fund whose workloads sit in GCP (or who use Vertex AI / Gemini), this is the natural secrets manager — IAM-integrated, audited, cheap. Not a model-risk (SR 11-7) tool, but secret hygiene is table-stakes for any AI deployment. Most funds will pick whichever of the three hyperscaler managers matches their primary cloud rather than run a separate tool.
 
 ## Competitors / alternatives
-[[azure-key-vault]], [[aws-secrets-manager]], [[hashicorp-vault]], [[conjur]] (CyberArk), [[1password]], [[doppler]], [[infisical]].
+[azure-key-vault](azure-key-vault.md), [aws-secrets-manager](aws-secrets-manager.md), [hashicorp-vault](hashicorp-vault.md), [conjur](conjur.md) (CyberArk), [1password](1password.md), [doppler](doppler.md), [infisical](infisical.md).
 
 ## Open questions / to verify
 - None material — first-party, well-documented.

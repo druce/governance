@@ -32,7 +32,7 @@ modern collaboration tools (Zoom, Teams, Webex, Slack, RingCentral) that capture
 and supervises video, voice, chat — and increasingly the output of AI meeting
 assistants like Zoom AI Companion and Microsoft Copilot.
 
-**Categories** — [[comms-surveillance]]
+**Categories** — [comms-surveillance](../categories/comms-surveillance.md)
 
 ## What it does
 
@@ -54,7 +54,7 @@ often come from separate vendors:
 
 ## Where it sits in the stack
 
-This is a **governance-layer**, **detective** control on the [[comms-surveillance]]
+This is a **governance-layer**, **detective** control on the [comms-surveillance](../categories/comms-surveillance.md)
 slot. Like other surveillance tools it is **"none" on the lethal trifecta** — it
 does not block untrusted input, sensitive data, or egress in real time; it captures
 records after the fact and detects problems for human review. It lives in the
@@ -87,12 +87,12 @@ incumbents (Smarsh, Global Relay) as well as analytics-first players.
   voice/chat collaboration, not retrofitted from email archiving. Deep, certified
   partnerships with the platform vendors themselves (Cisco, Zoom, RingCentral,
   Salesforce are both investors and integration partners).
-- Differs from **markets-/trade-surveillance-first** vendors — [[behavox]],
-  [[steeleye]], [[nice-actimize]], [[shield]] — which lead with trade + comms
+- Differs from **markets-/trade-surveillance-first** vendors — [behavox](behavox.md),
+  [steeleye](steeleye.md), [nice-actimize](nice-actimize.md), [shield](shield.md) — which lead with trade + comms
   analytics aimed at market-abuse detection. Theta Lake leads with rich
   collaboration capture and conduct/AI surveillance, and is typically a complement
   to (not a replacement for) a markets-surveillance system.
-- Differs from **eDiscovery/investigations** tooling like [[relativity-trace]],
+- Differs from **eDiscovery/investigations** tooling like [relativity-trace](relativity-trace.md),
   which focuses on review/legal hold over captured comms.
 
 ## Ownership, funding & M&A
@@ -126,9 +126,9 @@ incumbents (Smarsh, Global Relay) as well as analytics-first players.
 
 ## Competitors / alternatives
 
-- Surveillance / analytics: [[behavox]], [[steeleye]], [[nice-actimize]],
-  [[shield]]
-- eDiscovery / comms review: [[relativity-trace]]
+- Surveillance / analytics: [behavox](behavox.md), [steeleye](steeleye.md), [nice-actimize](nice-actimize.md),
+  [shield](shield.md)
+- eDiscovery / comms review: [relativity-trace](relativity-trace.md)
 - Capture/archive incumbents (email-era, now extending to collaboration): Smarsh,
   Global Relay (no page yet)
 

@@ -27,23 +27,23 @@ tags: [grc, no-code, risk-management, compliance]
 
 # Onspring
 
-> Primary category: [[enterprise-grc]].
+> Primary category: [enterprise-grc](../categories/enterprise-grc.md).
 
 **One-liner** — A no-code GRC / business-process-automation SaaS built by ex-RSA Archer people, pitched as a flexible, easier-to-configure alternative to legacy GRC.
 
 **What it does** — Onspring is a configurable platform for GRC and adjacent process automation: risk management, compliance, internal audit, policy management, third-party/vendor risk, and business continuity, plus general no-code workflow apps. The founding team's RSA Archer background shows in a similar configure-your-own-app model with a more modern delivery.
 
-**Where it sits in the stack** — [[enterprise-grc]], governance layer. System of record for risk/compliance workflows, not a runtime data control (`trifecta_relevance: none`). Can carry AI-use-case risk and policy attestations, overlapping [[ai-governance-platform]].
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for risk/compliance workflows, not a runtime data control (`trifecta_relevance: none`). Can carry AI-use-case risk and policy attestations, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **Deployment & architecture** — SaaS. No-code app/workflow builder with reporting/dashboards; integrations via API and connectors; questionnaire automation for third-party risk.
 
-**Positioning & differentiators** — A mid-market no-code challenger, closest to [[logicgate]]; both position against heavyweight [[archer]] / [[servicenow]]. Smaller and less well-known than [[auditboard]].
+**Positioning & differentiators** — A mid-market no-code challenger, closest to [logicgate](logicgate.md); both position against heavyweight [archer](archer.md) / [servicenow](servicenow.md). Smaller and less well-known than [auditboard](auditboard.md).
 
 **Ownership, funding & M&A** — `independent`. Privately held, HQ Overland Park, Kansas; founded 2010. Took a minority growth investment from Capital IP Investment Partners; no control change / acquisition found. (medium confidence — private company, limited disclosure.)
 
 **CTO / hedge-fund lens** — Day-1 GRC for a smaller or mid-size fund wanting a configurable risk/compliance system without heavy implementation. Niche/less-proven brand than the leaders; fine where flexibility and price matter more than analyst-leader status.
 
-**Competitors / alternatives** — [[logicgate]], [[auditboard]], [[archer]], [[servicenow]], [[onetrust]].
+**Competitors / alternatives** — [logicgate](logicgate.md), [auditboard](auditboard.md), [archer](archer.md), [servicenow](servicenow.md), [onetrust](onetrust.md).
 
 **Open questions / to verify** — Funding amount/date; size of customer base; depth of AI-governance templates.
 

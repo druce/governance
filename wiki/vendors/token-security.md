@@ -34,7 +34,7 @@ tags: [non-human-identity, machine-identity, nhi, ai-agent-identity, secrets, ag
 **One-liner** — Identity-first security for non-human and AI-agent identities: find every machine
 credential, attach a human owner, and enforce least privilege from one dashboard.
 
-**Categories** — [[non-human-identity]]
+**Categories** — [non-human-identity](../categories/non-human-identity.md)
 
 ## What it does
 
@@ -52,13 +52,13 @@ breach — and extending that same governance to the explosion of AI-agent ident
 
 ## Where it sits in the stack
 
-Primary category: [[non-human-identity]] (Foundation layer). Its job is discovery, ownership, and
+Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Its job is discovery, ownership, and
 least-privilege governance of machine and agent identities — the identity-plane control that sits
 beneath secrets management and IGA. In lethal-trifecta terms it does not inspect prompts or content;
 it constrains the **sensitive-data** and **egress** legs indirectly, by ensuring an agent or service
 account can only reach the data and systems it is entitled to, and by killing orphaned/over-privileged
 credentials an attacker (or a compromised agent) would otherwise use to exfiltrate. It does not address
-the untrusted-input leg — that is the job of [[ai-runtime-security]] guardrails. Trust-zone relevance:
+the untrusted-input leg — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md) guardrails. Trust-zone relevance:
 it polices who/what can cross zone boundaries at the identity layer.
 
 ## Deployment & architecture
@@ -81,13 +81,13 @@ claims (marketing) are the unified identity-secret-permission-owner graph ("deep
 intelligence"), agentless deployment, and early moves into AI-agent and MCP governance (it markets an
 "industry-first" MCP server for NHI security).
 
-Versus nearest neighbors in [[non-human-identity]]: [[oasis-security]] is the closest peer — another
-Israeli NHI-discovery/governance platform, better funded (raised ~$40M by 2024). [[astrix-security]]
+Versus nearest neighbors in [non-human-identity](../categories/non-human-identity.md): [oasis-security](oasis-security.md) is the closest peer — another
+Israeli NHI-discovery/governance platform, better funded (raised ~$40M by 2024). [astrix-security](astrix-security.md)
 came at NHI from the third-party app/OAuth-integration angle (and per the registry is flagged as
-acquired by Cisco — verify). [[aembit]] is more of a workload IAM / access *issuer* (it brokers
-secretless workload-to-service access) rather than a discovery/posture tool. [[entro-security]] leads
-with secrets/NHI posture and secrets-security lineage. [[clutch-security]] is another NHI-lifecycle
-entrant. [[cyberark]] is the incumbent — secrets/PAM plus its Venafi (machine-identity/certificates)
+acquired by Cisco — verify). [aembit](aembit.md) is more of a workload IAM / access *issuer* (it brokers
+secretless workload-to-service access) rather than a discovery/posture tool. [entro-security](entro-security.md) leads
+with secrets/NHI posture and secrets-security lineage. [clutch-security](clutch-security.md) is another NHI-lifecycle
+entrant. [cyberark](cyberark.md) is the incumbent — secrets/PAM plus its Venafi (machine-identity/certificates)
 acquisition — and competes top-down from the enterprise PAM install base. Token's wedge is breadth of
 agentless discovery plus the AI-agent identity story.
 
@@ -114,12 +114,12 @@ is the relevant control. It is not an SR 11-7 / model-risk tool and does not do 
 content DLP — pair it with those. Fit is **medium**: most valuable to larger, cloud- and AI-heavy
 shops; a small fund living mostly in SaaS with few machine identities may get enough from its IdP and
 secrets manager. As a Series-A startup, weigh vendor maturity/longevity against incumbents like
-[[cyberark]].
+[cyberark](cyberark.md).
 
 ## Competitors / alternatives
 
-[[oasis-security]], [[aembit]], [[astrix-security]], [[entro-security]], [[clutch-security]],
-[[cyberark]], [[natoma]], [[silverfort]]
+[oasis-security](oasis-security.md), [aembit](aembit.md), [astrix-security](astrix-security.md), [entro-security](entro-security.md), [clutch-security](clutch-security.md),
+[cyberark](cyberark.md), [natoma](natoma.md), [silverfort](silverfort.md)
 
 ## Open questions / to verify
 
@@ -137,4 +137,4 @@ secrets manager. As a Series-A startup, weigh vendor maturity/longevity against 
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2023 (ex-Unit 8200 founders Itamar Apelblat CEO & Ido Shlomo CTO), HQ Tel Aviv + New York, $7M Seed (TLV Partners) + $20M Series A (2025-01-28, Notable Capital) = $27M total, independent/no M&A. Documented agentless SaaS NHI-discovery + AI-agent/MCP governance; positioned vs [[oasis-security]], [[aembit]], [[astrix-security]], [[entro-security]], [[clutch-security]], [[cyberark]]. Set status: researched, confidence medium. 3 sources cached.
+- [2026-06-28] Researched; established founded 2023 (ex-Unit 8200 founders Itamar Apelblat CEO & Ido Shlomo CTO), HQ Tel Aviv + New York, $7M Seed (TLV Partners) + $20M Series A (2025-01-28, Notable Capital) = $27M total, independent/no M&A. Documented agentless SaaS NHI-discovery + AI-agent/MCP governance; positioned vs [oasis-security](oasis-security.md), [aembit](aembit.md), [astrix-security](astrix-security.md), [entro-security](entro-security.md), [clutch-security](clutch-security.md), [cyberark](cyberark.md). Set status: researched, confidence medium. 3 sources cached.

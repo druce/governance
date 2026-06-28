@@ -27,21 +27,21 @@ tags: [secrets, password-manager, extended-access-management, device-trust, acqu
 
 # 1Password
 
-> **Researched 2026-06-28.** Primary category: [[secrets-management]].
+> **Researched 2026-06-28.** Primary category: [secrets-management](../categories/secrets-management.md).
 
 **One-liner** — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (post-Apono) governing just-in-time access for people, machines, and AI agents.
 
 ## What it does
-1Password started as a consumer/business password manager (the AgileBits product) and is now pitched to enterprises as **Extended Access Management**: securing the credentials, passkeys, SSH keys, and developer secrets that flow through unmanaged apps and devices that traditional IAM/MDM doesn't cover. For engineering teams it offers a **Secrets Automation / Developer** product — a vault plus CLI, SDKs, and CI/CD integrations to inject secrets at runtime instead of hard-coding them — which is why it sits in [[secrets-management]]. With the 2026 Apono acquisition it is moving toward just-in-time, auto-revoked access governance and a "Credential Broker" that releases short-lived credentials on demand.
+1Password started as a consumer/business password manager (the AgileBits product) and is now pitched to enterprises as **Extended Access Management**: securing the credentials, passkeys, SSH keys, and developer secrets that flow through unmanaged apps and devices that traditional IAM/MDM doesn't cover. For engineering teams it offers a **Secrets Automation / Developer** product — a vault plus CLI, SDKs, and CI/CD integrations to inject secrets at runtime instead of hard-coding them — which is why it sits in [secrets-management](../categories/secrets-management.md). With the 2026 Apono acquisition it is moving toward just-in-time, auto-revoked access governance and a "Credential Broker" that releases short-lived credentials on demand.
 
 ## Where it sits in the stack
-Foundation layer, [[secrets-management]], with adjacencies into device-trust / access management (Kolide) and now privileged/just-in-time access (Apono). Lethal-trifecta leg: **sensitive-data** — its job is to keep credentials out of code, browsers, prompts, and repos. Complements the IdP ([[microsoft-entra]], [[okta]]) rather than replacing it.
+Foundation layer, [secrets-management](../categories/secrets-management.md), with adjacencies into device-trust / access management (Kolide) and now privileged/just-in-time access (Apono). Lethal-trifecta leg: **sensitive-data** — its job is to keep credentials out of code, browsers, prompts, and repos. Complements the IdP ([microsoft-entra](microsoft-entra.md), [okta](okta.md)) rather than replacing it.
 
 ## Deployment & architecture
 SaaS, end-to-end (zero-knowledge) encrypted vaults, with the famous secret-key + master-password model. For developers: CLI, SDKs, Connect/Service Accounts, and integrations with CI/CD and cloud. Device-trust checks via the former Kolide product. The forthcoming **1Password Credential Broker** (private beta) brokers short-lived credentials, beginning with GitHub Actions workload identity.
 
 ## Positioning & differentiators
-Best known for human credential management and ease of use, then for "managing the unmanaged" (devices/apps outside MDM/SSO). In pure machine/CI secrets it overlaps with [[doppler]] and [[infisical]] but is less developer-infra-native than they are; its strength is the human + device + secret bundle. The Apono deal pushes it toward access governance / NHI territory adjacent to [[cyberark]] and [[silverfort]].
+Best known for human credential management and ease of use, then for "managing the unmanaged" (devices/apps outside MDM/SSO). In pure machine/CI secrets it overlaps with [doppler](doppler.md) and [infisical](infisical.md) but is less developer-infra-native than they are; its strength is the human + device + secret bundle. The Apono deal pushes it toward access governance / NHI territory adjacent to [cyberark](cyberark.md) and [silverfort](silverfort.md).
 
 ## Ownership, funding & M&A
 Independent and private. Founded 2005 (legal entity AgileBits Inc.), HQ Toronto. ~$920M raised; the $620M Series C (Jan 2022) was at a $6.8B valuation, led by ICONIQ Growth — the largest venture round by a Canadian company at the time. 2024 revenue ~$318M ARR.
@@ -51,10 +51,10 @@ Independent and private. Founded 2005 (legal entity AgileBits Inc.), HQ Toronto.
 Confidence high.
 
 ## CTO / hedge-fund lens
-Day-1 as a **human** credential/password manager — many funds already run it, and it is an easy, well-regarded baseline. As a **machine/CI secrets manager** it is optional: if your workloads live in one cloud, the native manager ([[aws-secrets-manager]], [[azure-key-vault]], [[gcp-secret-manager]]) is usually the simpler choice; 1Password shines when you want one tool spanning humans, devices, and some developer secrets. Watch the Apono integration — JIT access for AI agents is genuinely relevant to agentic deployments. Not a model-risk (SR 11-7) tool.
+Day-1 as a **human** credential/password manager — many funds already run it, and it is an easy, well-regarded baseline. As a **machine/CI secrets manager** it is optional: if your workloads live in one cloud, the native manager ([aws-secrets-manager](aws-secrets-manager.md), [azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md)) is usually the simpler choice; 1Password shines when you want one tool spanning humans, devices, and some developer secrets. Watch the Apono integration — JIT access for AI agents is genuinely relevant to agentic deployments. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[[doppler]], [[infisical]], [[azure-key-vault]], [[aws-secrets-manager]], [[gcp-secret-manager]], [[hashicorp-vault]], [[cyberark]] (for the access-governance direction).
+[doppler](doppler.md), [infisical](infisical.md), [azure-key-vault](azure-key-vault.md), [aws-secrets-manager](aws-secrets-manager.md), [gcp-secret-manager](gcp-secret-manager.md), [hashicorp-vault](hashicorp-vault.md), [cyberark](cyberark.md) (for the access-governance direction).
 
 ## Open questions / to verify
 - Apono integration timeline and how "Credential Broker" maps onto existing Secrets Automation.

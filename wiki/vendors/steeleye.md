@@ -44,7 +44,7 @@ Its AI layer, **Compliance CoPilot** (launched 2023-11), uses LLMs to triage and
 
 ## Where it sits in the stack
 
-- Category: [[comms-surveillance]], in the **governance** layer.
+- Category: [comms-surveillance](../categories/comms-surveillance.md), in the **governance** layer.
 - This is a **detective control**, not a preventive one — it does "none-detection" (catching abuse/MNPI/conduct after the fact in logged comms and trades). It is a **green-zone backstop**: it watches the trusted internal environment for misconduct rather than blocking untrusted input or egress.
 - It does **not** break a leg of the lethal trifecta (`trifecta_relevance: none`); its value is regulatory and conduct oversight, not data-exfiltration prevention.
 
@@ -58,10 +58,10 @@ Its AI layer, **Compliance CoPilot** (launched 2023-11), uses LLMs to triage and
 
 SteelEye's distinguishing claim is the **single integrated platform** spanning trade surveillance + comms surveillance + recordkeeping + reporting, versus point tools you have to stitch together. How it differs from neighbors:
 
-- vs [[behavox]] and [[shield]] — both are comms-surveillance / conduct specialists leaning heavily on AI/NLP; SteelEye spans the wider compliance stack (trade surveillance, reporting, recordkeeping) rather than being comms-first.
-- vs [[nice-actimize]] — NICE Actimize is the incumbent enterprise surveillance/financial-crime suite (tier-1 banks); SteelEye positions as a more consolidated, lower-friction option aimed at mid-size firms.
-- vs [[theta-lake]] — Theta Lake focuses on capture/compliance for modern collaboration tools (video, voice, UC); SteelEye covers comms surveillance but as part of a broader trade+records platform.
-- vs [[relativity-trace]] — Relativity Trace is comms-surveillance built on Relativity's eDiscovery lineage; SteelEye couples comms with native trade surveillance and reporting.
+- vs [behavox](behavox.md) and [shield](shield.md) — both are comms-surveillance / conduct specialists leaning heavily on AI/NLP; SteelEye spans the wider compliance stack (trade surveillance, reporting, recordkeeping) rather than being comms-first.
+- vs [nice-actimize](nice-actimize.md) — NICE Actimize is the incumbent enterprise surveillance/financial-crime suite (tier-1 banks); SteelEye positions as a more consolidated, lower-friction option aimed at mid-size firms.
+- vs [theta-lake](theta-lake.md) — Theta Lake focuses on capture/compliance for modern collaboration tools (video, voice, UC); SteelEye covers comms surveillance but as part of a broader trade+records platform.
+- vs [relativity-trace](relativity-trace.md) — Relativity Trace is comms-surveillance built on Relativity's eDiscovery lineage; SteelEye couples comms with native trade surveillance and reporting.
 
 ## Ownership, funding & M&A
 
@@ -78,7 +78,7 @@ SteelEye's distinguishing claim is the **single integrated platform** spanning t
 
 ## Competitors / alternatives
 
-[[behavox]] · [[shield]] · [[nice-actimize]] · [[theta-lake]] · [[relativity-trace]]
+[behavox](behavox.md) · [shield](shield.md) · [nice-actimize](nice-actimize.md) · [theta-lake](theta-lake.md) · [relativity-trace](relativity-trace.md)
 
 ## Open questions / to verify
 

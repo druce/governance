@@ -33,7 +33,7 @@ tags: [ai-red-teaming, evaluation, simulation, llm-observability]
 **One-liner** — A lifecycle platform to experiment with prompts, evaluate (machine +
 human), simulate agents, red-team, and monitor LLM apps in production.
 
-**Categories** — [[ai-red-teaming]], [[llm-observability]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md), [llm-observability](../categories/llm-observability.md)
 
 ## What it does
 Maxim covers the build-to-production loop for LLM/agent apps in one platform: an
@@ -45,8 +45,8 @@ also offers agent **simulation** and **red-teaming** of agentic apps. Pitch is
 bringing test-driven development discipline to GenAI.
 
 ## Where it sits in the stack
-Straddles [[llm-observability]] (eval + production monitoring, its center of gravity)
-and [[ai-red-teaming]] (agent simulation/adversarial testing) in the model/prompt
+Straddles [llm-observability](../categories/llm-observability.md) (eval + production monitoring, its center of gravity)
+and [ai-red-teaming](../categories/ai-red-teaming.md) (agent simulation/adversarial testing) in the model/prompt
 layer. Lethal-trifecta role: mainly **untrusted-input** via adversarial simulation;
 otherwise it is an assurance/observability layer rather than an inline control.
 
@@ -57,10 +57,10 @@ production for monitoring.
 
 ## Positioning & differentiators
 Positions as a single end-to-end platform spanning experimentation → eval →
-simulation → observability, which is broader than pure red-teamers ([[haize-labs]],
-[[mindgard]], [[splxai]]) and overlaps the eval/observability set
-([[patronus-ai]], [[braintrust]], [[langsmith]], [[arize-phoenix]], [[galileo]],
-[[comet]]). India+US team, seed-stage; lighter funding than [[patronus-ai]]. Agent
+simulation → observability, which is broader than pure red-teamers ([haize-labs](haize-labs.md),
+[mindgard](mindgard.md), [splxai](splxai.md)) and overlaps the eval/observability set
+([patronus-ai](patronus-ai.md), [braintrust](braintrust.md), [langsmith](langsmith.md), [arize-phoenix](arize-phoenix.md), [galileo](galileo.md),
+[comet](comet.md)). India+US team, seed-stage; lighter funding than [patronus-ai](patronus-ai.md). Agent
 simulation is its more differentiated angle.
 
 ## Ownership, funding & M&A
@@ -78,8 +78,8 @@ option helps where data-residency matters. Smaller/earlier-stage than peers, so 
 vendor-risk for production-critical use.
 
 ## Competitors / alternatives
-[[patronus-ai]], [[braintrust]], [[langsmith]], [[arize-phoenix]], [[galileo]],
-[[comet]], [[haize-labs]], [[mindgard]].
+[patronus-ai](patronus-ai.md), [braintrust](braintrust.md), [langsmith](langsmith.md), [arize-phoenix](arize-phoenix.md), [galileo](galileo.md),
+[comet](comet.md), [haize-labs](haize-labs.md), [mindgard](mindgard.md).
 
 ## Open questions / to verify
 - Any funding round since the 2024 seed; current headcount/traction.

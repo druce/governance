@@ -12,7 +12,7 @@ status: drafted
 last_updated: 2026-06-28
 ---
 
-> **STUB.** This is the plumbing layer, not the governance layer. The part that actually matters for keeping an AI from leaking data is **[[entitlement-aware-rag]]** — read that page. This page exists to name the slot.
+> **STUB.** This is the plumbing layer, not the governance layer. The part that actually matters for keeping an AI from leaking data is **[entitlement-aware-rag](entitlement-aware-rag.md)** — read that page. This page exists to name the slot.
 
 ## Business objective
 
@@ -30,9 +30,9 @@ This is the **sensitive-data** leg — it *is* the sensitive data. Content sourc
 
 These are infrastructure/systems of record, not a competitive survey shortlist:
 
-- [[sharepoint]] — SharePoint / OneDrive; the dominant enterprise document store and the default corpus for Microsoft-centric RAG.
-- [[confluence]] — Atlassian wiki; common engineering and internal-knowledge source.
-- [[google-drive]] — Google Workspace document store; the Google-shop equivalent of SharePoint/OneDrive.
+- [sharepoint](../vendors/sharepoint.md) — SharePoint / OneDrive; the dominant enterprise document store and the default corpus for Microsoft-centric RAG.
+- [confluence](../vendors/confluence.md) — Atlassian wiki; common engineering and internal-knowledge source.
+- [google-drive](../vendors/google-drive.md) — Google Workspace document store; the Google-shop equivalent of SharePoint/OneDrive.
 
 (Plus everything else with an API: ticketing systems, CRMs, file shares, data warehouses.)
 
@@ -42,15 +42,15 @@ N/A — these are incumbent platform vendors (Microsoft, Atlassian, Google), not
 
 ## Adjacent categories
 
-- [[entitlement-aware-rag]] — the governance layer that decides which of these documents a given user's query is allowed to see. The part that matters.
-- [[vector-retrieval]] — the index built on top of these sources.
-- [[data-access-governance]] — the audit of who can open which file *before* an AI ever indexes it; the cleanup you do here pays off directly in RAG safety.
-- [[dspm]] — knows where the sensitive data inside these sources actually lives.
+- [entitlement-aware-rag](entitlement-aware-rag.md) — the governance layer that decides which of these documents a given user's query is allowed to see. The part that matters.
+- [vector-retrieval](vector-retrieval.md) — the index built on top of these sources.
+- [data-access-governance](data-access-governance.md) — the audit of who can open which file *before* an AI ever indexes it; the cleanup you do here pays off directly in RAG safety.
+- [dspm](dspm.md) — knows where the sensitive data inside these sources actually lives.
 
 ## Survey
 
-Folded into the [[enterprise-ai-assistant]] / [[entitlement-aware-rag]] survey questions. No standalone survey question — respondents do not "evaluate and select" SharePoint vs Google Drive as an AI decision; they already own one.
+Folded into the [enterprise-ai-assistant](enterprise-ai-assistant.md) / [entitlement-aware-rag](entitlement-aware-rag.md) survey questions. No standalone survey question — respondents do not "evaluate and select" SharePoint vs Google Drive as an AI decision; they already own one.
 
 ## Open taxonomy questions
 
-- Whether this slot deserves a page at all, or should be a section inside [[entitlement-aware-rag]]. Kept separate to mirror the seed doc's layer-cake row, but it carries no buying decision of its own.
+- Whether this slot deserves a page at all, or should be a section inside [entitlement-aware-rag](entitlement-aware-rag.md). Kept separate to mirror the seed doc's layer-cake row, but it carries no buying decision of its own.

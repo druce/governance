@@ -27,7 +27,7 @@ tags: [identity-governance, iga, access-reviews, jit-access, ispm]
 
 # ConductorOne
 
-> Researched 2026-06-28. Primary category: [[identity-governance]].
+> Researched 2026-06-28. Primary category: [identity-governance](../categories/identity-governance.md).
 
 **One-liner** — Modern, automation-first identity governance: access reviews, just-in-time access requests, and identity security posture for the cloud/agentic era.
 
@@ -35,22 +35,22 @@ tags: [identity-governance, iga, access-reviews, jit-access, ispm]
 ConductorOne automates the access lifecycle: self-service access requests with policy-based approvals, just-in-time (JIT) and time-bound grants, automated access reviews/certifications, least-privilege analysis, and identity security posture management (ISPM). It increasingly targets non-human and agent identity governance. The pitch is a lighter, faster, more automated alternative to legacy IGA for cloud-forward companies.
 
 ## Where it sits in the stack
-The [[identity-governance]] foundation plus [[data-access-governance]]. Addresses the **sensitive-data** leg of the lethal trifecta by controlling and certifying entitlements (and shrinking standing privilege via JIT) — the access substrate AI assistants and [[entitlement-aware-rag]] inherit.
+The [identity-governance](../categories/identity-governance.md) foundation plus [data-access-governance](../categories/data-access-governance.md). Addresses the **sensitive-data** leg of the lethal trifecta by controlling and certifying entitlements (and shrinking standing privilege via JIT) — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) inherit.
 
 ## Deployment & architecture
-SaaS. Connects to IdPs ([[microsoft-entra]], [[okta]]), cloud platforms, and SaaS apps to collect entitlements, drive reviews, and provision JIT access. Workflow/automation-centric (Slack-native approvals, etc.) rather than the heavy connector-and-config model of incumbents.
+SaaS. Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md)), cloud platforms, and SaaS apps to collect entitlements, drive reviews, and provision JIT access. Workflow/automation-centric (Slack-native approvals, etc.) rather than the heavy connector-and-config model of incumbents.
 
 ## Positioning & differentiators
-Founded by ex-[[okta]] leaders (Alex Bovee, Paul Querna); positions as **AI-native, automation-first IGA** for the agentic era. Lighter and faster to deploy than [[sailpoint]]/[[saviynt]]; overlaps [[lumos]] (modern IGA challengers) and [[veza]] on access reviews, though Veza leans visibility/graph while ConductorOne leans workflow/JIT. CrowdStrike Falcon Fund investment signals a security-ecosystem tilt.
+Founded by ex-[okta](okta.md) leaders (Alex Bovee, Paul Querna); positions as **AI-native, automation-first IGA** for the agentic era. Lighter and faster to deploy than [sailpoint](sailpoint.md)/[saviynt](saviynt.md); overlaps [lumos](lumos.md) (modern IGA challengers) and [veza](veza.md) on access reviews, though Veza leans visibility/graph while ConductorOne leans workflow/JIT. CrowdStrike Falcon Fund investment signals a security-ecosystem tilt.
 
 ## Ownership, funding & M&A
 Independent, private, VC-backed. **$79M Series B (October 2025)** led by Greycroft, with new investor CrowdStrike Falcon Fund and existing Accel and Felicis; ~$111M total raised. Founded 2020, HQ San Francisco. No acquisition; ownership confidence high. (No seed M&A flag.)
 
 ## CTO / hedge-fund lens
-**Day-2**, but a stronger fit than legacy IGA for a small-to-mid hedge fund: lighter weight, automation-first, JIT access reduces standing privilege (a real risk-reducer), and faster to stand up. Becomes more pressing under model-risk/audit or RAG, where you must certify and minimize access. Trade-off vs incumbents: younger company, shallower connector catalog and compliance pedigree than [[sailpoint]] for very large regulated estates.
+**Day-2**, but a stronger fit than legacy IGA for a small-to-mid hedge fund: lighter weight, automation-first, JIT access reduces standing privilege (a real risk-reducer), and faster to stand up. Becomes more pressing under model-risk/audit or RAG, where you must certify and minimize access. Trade-off vs incumbents: younger company, shallower connector catalog and compliance pedigree than [sailpoint](sailpoint.md) for very large regulated estates.
 
 ## Competitors / alternatives
-[[lumos]], [[veza]], [[sailpoint]], [[saviynt]]. Bundled option: [[microsoft-entra]] (Entra ID Governance).
+[lumos](lumos.md), [veza](veza.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance).
 
 ## Open questions / to verify
 - Depth of non-human/agent identity governance vs NHI specialists; connector breadth vs incumbents.

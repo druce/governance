@@ -27,25 +27,25 @@ tags: [observability, evaluation, open-source, rag, snowflake]
 
 # TruLens
 
-> Researched 2026-06-28. Primary category: [[llm-observability]].
+> Researched 2026-06-28. Primary category: [llm-observability](../categories/llm-observability.md).
 
 **One-liner** — An open-source Python library for evaluating and tracing LLM, RAG, and agent applications, now stewarded by Snowflake.
 
 **What it does** — TruLens instruments an LLM/RAG/agent app and scores it with "feedback functions" — programmatic evaluators for things like context relevance, groundedness, and answer relevance (the "RAG triad"), plus toxicity, bias, and custom criteria. It records traces of each call and surfaces a local dashboard to compare app versions experiment-over-experiment. The job: measure whether your LLM app is actually correct/grounded before and after you ship, without hand-built eval harnesses.
 
-**Where it sits in the stack** — [[llm-observability]] (model/prompt layer), specifically the **evaluation** sub-segment. Its groundedness/relevance checks touch the **untrusted-input** leg (catching hallucination/injection-driven bad outputs) but TruLens is a measurement/eval library, not an inline guardrail or firewall — it observes, it doesn't block.
+**Where it sits in the stack** — [llm-observability](../categories/llm-observability.md) (model/prompt layer), specifically the **evaluation** sub-segment. Its groundedness/relevance checks touch the **untrusted-input** leg (catching hallucination/injection-driven bad outputs) but TruLens is a measurement/eval library, not an inline guardrail or firewall — it observes, it doesn't block.
 
 **Deployment & architecture** — A pip-installable OSS SDK (Apache-licensed, GitHub `truera/trulens`) that runs in your own environment; feedback functions can call any model provider as the judge. Ships a Streamlit dashboard for local/self-hosted review. Integrates tightly with the Snowflake ecosystem (Cortex, Arctic, Streamlit) but works standalone with LangChain/LlamaIndex and arbitrary stacks.
 
-**Positioning & differentiators** — Known as a developer-first, **open-source evaluation** library — lighter and more eval-focused than full hosted observability platforms. The productized, commercial version of this technology now lives inside Snowflake (Cortex AI Observability) rather than being sold as a separate "TruLens" product, so TruLens itself is best understood as the free OSS layer. Nearest neighbors: [[arize-phoenix]] (also OSS eval/tracing), [[langfuse]] (OSS tracing + evals), [[giskard]] (OSS testing/red-teaming), [[braintrust]] and [[comet]] (Opik).
+**Positioning & differentiators** — Known as a developer-first, **open-source evaluation** library — lighter and more eval-focused than full hosted observability platforms. The productized, commercial version of this technology now lives inside Snowflake (Cortex AI Observability) rather than being sold as a separate "TruLens" product, so TruLens itself is best understood as the free OSS layer. Nearest neighbors: [arize-phoenix](arize-phoenix.md) (also OSS eval/tracing), [langfuse](langfuse.md) (OSS tracing + evals), [giskard](giskard.md) (OSS testing/red-teaming), [braintrust](braintrust.md) and [comet](comet.md) (Opik).
 
 **Ownership, funding & M&A** — **M&A CONFIRMED.** TruLens was created by **TruEra**; **Snowflake** announced a definitive agreement to acquire the TruEra AI Observability platform on **2024-05-22** (primary source: Snowflake blog). TruEra co-founders Anupam Datta, Shayak Sen, and Will Uppington joined Snowflake. Snowflake publicly committed to keeping TruLens open source and now maintains it (adding parallelized feedback eval, LangChain compatibility, dashboard speedups). Deal terms not disclosed. (confidence: high)
 
 > Seed flag "(Snowflake/TruEra)" verified: correct. TruLens is the OSS project; the company TruEra was acquired by Snowflake.
 
-**CTO / hedge-fund lens** — Day-1 for any team building RAG/agent apps that wants a cheap, code-first way to prove output quality and groundedness — the OSS library has no license cost. Especially natural if your data already lives in **Snowflake**. It is an engineering tool, not a governance/audit platform: it gives you eval evidence but not the SR 11-7 reporting wrapper that [[fiddler-ai]] or [[arthur-ai]] aim at. Good complement to, not replacement for, a governance layer.
+**CTO / hedge-fund lens** — Day-1 for any team building RAG/agent apps that wants a cheap, code-first way to prove output quality and groundedness — the OSS library has no license cost. Especially natural if your data already lives in **Snowflake**. It is an engineering tool, not a governance/audit platform: it gives you eval evidence but not the SR 11-7 reporting wrapper that [fiddler-ai](fiddler-ai.md) or [arthur-ai](arthur-ai.md) aim at. Good complement to, not replacement for, a governance layer.
 
-**Competitors / alternatives** — [[arize-phoenix]], [[langfuse]], [[langsmith]], [[giskard]], [[braintrust]], [[comet]], [[patronus-ai]].
+**Competitors / alternatives** — [arize-phoenix](arize-phoenix.md), [langfuse](langfuse.md), [langsmith](langsmith.md), [giskard](giskard.md), [braintrust](braintrust.md), [comet](comet.md), [patronus-ai](patronus-ai.md).
 
 **Open questions / to verify**
 - Current degree of separation between the standalone OSS TruLens and Snowflake's commercial Cortex AI Observability offering.

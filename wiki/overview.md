@@ -11,36 +11,36 @@ The thesis: standing up a *governed* enterprise AI platform isn't one purchase �
 Each layer does one job, has a priority (Day-1 / Day-2 / optional), and a shortlist of vendors
 competing for the slot. This wiki maps that stack for a **hedge-fund / asset-manager CTO**: what
 each layer is for, when you actually need it, who fills it, who owns whom, and how to tell neighbors
-apart. It also doubles as scaffolding for a CTO usage/evaluation **survey** (see [[survey-blueprint]]).
+apart. It also doubles as scaffolding for a CTO usage/evaluation **survey** (see [survey-blueprint](comparisons/survey-blueprint.md)).
 
-If you read nothing else, read [[day-1-for-a-50-person-fund]] — the opinionated minimum.
+If you read nothing else, read [day-1-for-a-50-person-fund](comparisons/day-1-for-a-50-person-fund.md) — the opinionated minimum.
 
 ## The three organizing ideas
 
 ### 1. The layer cake (the spine)
 Seven layers, top to bottom. Each links to its categories:
 
-1. **Foundation** — [[identity-access]], [[non-human-identity]], [[identity-governance]],
-   [[secrets-management]], [[siem-soc]], [[ai-soc-analysts]], [[edr-xdr]],
-   [[network-security-sase]], [[sspm]], [[software-supply-chain]], [[anti-deepfake]].
+1. **Foundation** — [identity-access](categories/identity-access.md), [non-human-identity](categories/non-human-identity.md), [identity-governance](categories/identity-governance.md),
+   [secrets-management](categories/secrets-management.md), [siem-soc](categories/siem-soc.md), [ai-soc-analysts](categories/ai-soc-analysts.md), [edr-xdr](categories/edr-xdr.md),
+   [network-security-sase](categories/network-security-sase.md), [sspm](categories/sspm.md), [software-supply-chain](categories/software-supply-chain.md), [anti-deepfake](categories/anti-deepfake.md).
    *The security estate you mostly already own; extend it to AI.*
-2. **Data** — [[dspm]], [[dlp]], [[data-access-governance]]. *Know where sensitive data is, stop it
+2. **Data** — [dspm](categories/dspm.md), [dlp](categories/dlp.md), [data-access-governance](categories/data-access-governance.md). *Know where sensitive data is, stop it
    walking out, right-size who can read it.*
-3. **AI model & prompt** — [[ai-runtime-security]], [[ai-gateway]], [[llm-observability]],
-   [[ai-red-teaming]], [[ai-access-governance]], [[ai-spm]], [[agent-runtime-security]],
-   [[authorization-engine]], [[mcp-gateway]], [[tool-identity-integration]]. *The AI-specific
+3. **AI model & prompt** — [ai-runtime-security](categories/ai-runtime-security.md), [ai-gateway](categories/ai-gateway.md), [llm-observability](categories/llm-observability.md),
+   [ai-red-teaming](categories/ai-red-teaming.md), [ai-access-governance](categories/ai-access-governance.md), [ai-spm](categories/ai-spm.md), [agent-runtime-security](categories/agent-runtime-security.md),
+   [authorization-engine](categories/authorization-engine.md), [mcp-gateway](categories/mcp-gateway.md), [tool-identity-integration](categories/tool-identity-integration.md). *The AI-specific
    control plane — the heart of this wiki.*
-4. **Retrieval** — [[content-sources]], [[vector-retrieval]], [[entitlement-aware-rag]].
+4. **Retrieval** — [content-sources](categories/content-sources.md), [vector-retrieval](categories/vector-retrieval.md), [entitlement-aware-rag](categories/entitlement-aware-rag.md).
    *Once you do RAG, the AI must never surface a doc the user couldn't already open.*
-5. **User experience** — [[enterprise-ai-assistant]], [[third-party-ai-apps]], [[enterprise-browser]],
-   [[browser-security-extension]]. *The governed tools people actually use.*
-6. **Governance** — [[ai-governance-platform]], [[enterprise-grc]], [[vendor-risk]],
-   [[comms-surveillance]], [[ephemeral-environments]], [[policy-as-code]]. *Prove and manage AI risk
+5. **User experience** — [enterprise-ai-assistant](categories/enterprise-ai-assistant.md), [third-party-ai-apps](categories/third-party-ai-apps.md), [enterprise-browser](categories/enterprise-browser.md),
+   [browser-security-extension](categories/browser-security-extension.md). *The governed tools people actually use.*
+6. **Governance** — [ai-governance-platform](categories/ai-governance-platform.md), [enterprise-grc](categories/enterprise-grc.md), [vendor-risk](categories/vendor-risk.md),
+   [comms-surveillance](categories/comms-surveillance.md), [ephemeral-environments](categories/ephemeral-environments.md), [policy-as-code](categories/policy-as-code.md). *Prove and manage AI risk
    to regulators and allocators.*
-7. **Policy / process** — [[trust-zone-segmentation]], [[risk-tiers]], [[promotion-gates]],
-   [[hitl-approvals]], [[acceptable-use-policies]]. *Practices, not products.*
+7. **Policy / process** — [trust-zone-segmentation](categories/trust-zone-segmentation.md), [risk-tiers](categories/risk-tiers.md), [promotion-gates](categories/promotion-gates.md),
+   [hitl-approvals](categories/hitl-approvals.md), [acceptable-use-policies](categories/acceptable-use-policies.md). *Practices, not products.*
 
-Full canonical map: [taxonomy.md](../taxonomy.md) (42 categories). Catalog: [[index]].
+Full canonical map: [taxonomy.md](../taxonomy.md) (42 categories). Catalog: [index](../index.md).
 
 ### 2. The three trust zones (red / yellow / green)
 Segment where agents run so the dangerous combination never lines up:
@@ -49,8 +49,8 @@ Segment where agents run so the dangerous combination never lines up:
 - **Green zone** — agents touch internal production systems, but only under extreme vetting and
   governance, and **no untrusted prompt input**.
 
-[[trust-zone-segmentation]] is the architectural control that makes the next idea impossible by
-construction. [[ephemeral-environments]] are how you implement disposable, zone-scoped compute.
+[trust-zone-segmentation](categories/trust-zone-segmentation.md) is the architectural control that makes the next idea impossible by
+construction. [ephemeral-environments](categories/ephemeral-environments.md) are how you implement disposable, zone-scoped compute.
 
 ### 3. The lethal trifecta
 From [Simon Willison](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/): three ingredients
@@ -60,34 +60,34 @@ that are individually fine but catastrophic together —
 3. **An egress path** to exfiltrate it.
 
 Most of this stack exists to **break one leg** at each layer:
-- **Untrusted input** → [[ai-runtime-security]], [[ai-red-teaming]], [[anti-deepfake]].
-- **Sensitive data** → [[dspm]], [[data-access-governance]], [[entitlement-aware-rag]],
-  [[non-human-identity]].
-- **Egress** → [[dlp]], [[ai-gateway]], [[ai-access-governance]], [[network-security-sase]],
-  [[mcp-gateway]].
+- **Untrusted input** → [ai-runtime-security](categories/ai-runtime-security.md), [ai-red-teaming](categories/ai-red-teaming.md), [anti-deepfake](categories/anti-deepfake.md).
+- **Sensitive data** → [dspm](categories/dspm.md), [data-access-governance](categories/data-access-governance.md), [entitlement-aware-rag](categories/entitlement-aware-rag.md),
+  [non-human-identity](categories/non-human-identity.md).
+- **Egress** → [dlp](categories/dlp.md), [ai-gateway](categories/ai-gateway.md), [ai-access-governance](categories/ai-access-governance.md), [network-security-sase](categories/network-security-sase.md),
+  [mcp-gateway](categories/mcp-gateway.md).
 Trust-zone segmentation guarantees the three never co-occur.
 
 ## What's actually Day-1 vs Day-2
-- **Day-1 (before go-live):** identity/SASE you already own; a governed [[enterprise-ai-assistant]];
-  an [[ai-gateway]]; [[ai-access-governance]]/[[dlp]] for prompts; [[acceptable-use-policies]] +
-  [[risk-tiers]] + [[trust-zone-segmentation]]; and, if doing RAG, [[entitlement-aware-rag]] +
-  [[dspm]]/[[data-access-governance]] hygiene.
-- **Day-2 (when agents proliferate/act):** [[ai-spm]], [[agent-runtime-security]],
-  [[authorization-engine]], [[mcp-gateway]], [[tool-identity-integration]], [[ai-soc-analysts]],
-  full [[ai-red-teaming]]; and an [[ai-governance-platform]] (Day-1 under SR 11-7).
-Detailed: [[day-1-for-a-50-person-fund]].
+- **Day-1 (before go-live):** identity/SASE you already own; a governed [enterprise-ai-assistant](categories/enterprise-ai-assistant.md);
+  an [ai-gateway](categories/ai-gateway.md); [ai-access-governance](categories/ai-access-governance.md)/[dlp](categories/dlp.md) for prompts; [acceptable-use-policies](categories/acceptable-use-policies.md) +
+  [risk-tiers](categories/risk-tiers.md) + [trust-zone-segmentation](categories/trust-zone-segmentation.md); and, if doing RAG, [entitlement-aware-rag](categories/entitlement-aware-rag.md) +
+  [dspm](categories/dspm.md)/[data-access-governance](categories/data-access-governance.md) hygiene.
+- **Day-2 (when agents proliferate/act):** [ai-spm](categories/ai-spm.md), [agent-runtime-security](categories/agent-runtime-security.md),
+  [authorization-engine](categories/authorization-engine.md), [mcp-gateway](categories/mcp-gateway.md), [tool-identity-integration](categories/tool-identity-integration.md), [ai-soc-analysts](categories/ai-soc-analysts.md),
+  full [ai-red-teaming](categories/ai-red-teaming.md); and an [ai-governance-platform](categories/ai-governance-platform.md) (Day-1 under SR 11-7).
+Detailed: [day-1-for-a-50-person-fund](comparisons/day-1-for-a-50-person-fund.md).
 
 ## Consolidation: the map is moving under you
 2025–26 saw a wave of M&A — **much of the AI-runtime/guardrail field is now inside platforms**
 (Palo Alto, Cisco, CrowdStrike, SentinelOne, F5, Zscaler, Check Point, Cato). If you already run one
 of those, you may get an AI-firewall/guardrail capability as a module — check before buying
-standalone. Full, dated, verified detail: [[ai-security-m-and-a-map]].
+standalone. Full, dated, verified detail: [ai-security-m-and-a-map](comparisons/ai-security-m-and-a-map.md).
 
 ## How to navigate this wiki
 - **Categories** — one page per layer slot: what it's for, when you need it, vendors, survey scaffold.
 - **Vendors** — one page per company (multi-category tagged), with ownership/funding/M&A verified
   and dated, and a hedge-fund lens.
-- **Comparisons** — filed-back answers: [[ai-gateways-head-to-head]], [[runtime-ai-firewalls]],
-  [[entitlement-aware-rag-options]], [[ai-security-m-and-a-map]], [[day-1-for-a-50-person-fund]],
-  [[survey-blueprint]].
-- Start at [[index]] for the full catalog.
+- **Comparisons** — filed-back answers: [ai-gateways-head-to-head](comparisons/ai-gateways-head-to-head.md), [runtime-ai-firewalls](comparisons/runtime-ai-firewalls.md),
+  [entitlement-aware-rag-options](comparisons/entitlement-aware-rag-options.md), [ai-security-m-and-a-map](comparisons/ai-security-m-and-a-map.md), [day-1-for-a-50-person-fund](comparisons/day-1-for-a-50-person-fund.md),
+  [survey-blueprint](comparisons/survey-blueprint.md).
+- Start at [index](../index.md) for the full catalog.

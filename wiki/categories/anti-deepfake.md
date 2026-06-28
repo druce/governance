@@ -45,11 +45,11 @@ employee is talked into bypassing it by a convincing deepfake).
 
 ## Vendors
 
-- [[adaptive-security]] — AI-driven security-awareness training and simulated AI/deepfake phishing.
-- [[doppel]] — digital-risk protection: detection and takedown of impersonation domains, brands, and social accounts.
-- [[reality-defender]] — real-time deepfake detection across audio, video, and images.
-- [[getreal]] — synthetic-media / deepfake detection aimed at enterprise comms and meetings.
-- [[pindrop]] — voice authentication and deepfake-voice detection (call centers, phone channels).
+- [adaptive-security](../vendors/adaptive-security.md) — AI-driven security-awareness training and simulated AI/deepfake phishing.
+- [doppel](../vendors/doppel.md) — digital-risk protection: detection and takedown of impersonation domains, brands, and social accounts.
+- [reality-defender](../vendors/reality-defender.md) — real-time deepfake detection across audio, video, and images.
+- [getreal](../vendors/getreal.md) — synthetic-media / deepfake detection aimed at enterprise comms and meetings.
+- [pindrop](../vendors/pindrop.md) — voice authentication and deepfake-voice detection (call centers, phone channels).
 
 ## Consolidation / M&A dynamics
 
@@ -62,9 +62,9 @@ fraud, or identity-verification platforms.
 
 ## Adjacent categories
 
-- [[identity-access]] — strong identity/MFA reduces reliance on humans spotting fakes; deepfakes increasingly target identity-verification flows.
-- [[comms-surveillance]] — both touch the comms channel, but surveillance hunts MNPI/conduct in archives rather than detecting synthetic media live.
-- [[vendor-risk]] — impersonation/business-email-compromise risk overlaps with third-party trust.
+- [identity-access](identity-access.md) — strong identity/MFA reduces reliance on humans spotting fakes; deepfakes increasingly target identity-verification flows.
+- [comms-surveillance](comms-surveillance.md) — both touch the comms channel, but surveillance hunts MNPI/conduct in archives rather than detecting synthetic media live.
+- [vendor-risk](vendor-risk.md) — impersonation/business-email-compromise risk overlaps with third-party trust.
 
 ## Survey
 

@@ -27,7 +27,7 @@ tags: [dspm, data-security, ai-data-governance]
 
 # Bedrock Security
 
-> Now operating as **Bedrock Data** (rebrand from Bedrock Security). Primary category: [[dspm]].
+> Now operating as **Bedrock Data** (rebrand from Bedrock Security). Primary category: [dspm](../categories/dspm.md).
 
 **One-liner** — An AI-native data security posture management (DSPM) platform that discovers, classifies, and governs sensitive enterprise data in place using a "Metadata Lake," without moving data outside the customer boundary.
 
@@ -35,22 +35,22 @@ tags: [dspm, data-security, ai-data-governance]
 Bedrock continuously discovers and classifies sensitive data across cloud, SaaS, on-prem, and AI environments, then scores and helps remediate data-security posture (over-exposed data, stale data, access risk). Its differentiator is a patented **Metadata Lake** that autonomously catalogs data *in place* — it reads metadata/context rather than copying the underlying data out, which keeps regulated data inside the customer's trust boundary. The pitch is "operationalizing a data security program": not just visibility, but driving down exposure and improving access governance, increasingly framed around safe AI/RAG adoption.
 
 ## Where it sits in the stack
-Data layer — [[dspm]]. Lethal-trifecta role: protects the **sensitive-data** leg by finding and reducing where sensitive data lives and who/what can reach it (including AI agents and copilots). Lives in the data trust zone feeding AI systems; adjacent to [[dlp]] and [[data-access-governance]].
+Data layer — [dspm](../categories/dspm.md). Lethal-trifecta role: protects the **sensitive-data** leg by finding and reducing where sensitive data lives and who/what can reach it (including AI agents and copilots). Lives in the data trust zone feeding AI systems; adjacent to [dlp](../categories/dlp.md) and [data-access-governance](../categories/data-access-governance.md).
 
 ## Deployment & architecture
 SaaS control plane with agentless, metadata-based scanning across private cloud, IaaS, PaaS, SaaS, and AI environments; data stays in place. Aimed at integrating into a broader data-security/governance program rather than acting as an inline proxy.
 
 ## Positioning & differentiators
-Competes in the crowded DSPM field against [[cyera]], [[sentra]], [[bigid]], [[normalyze]], [[concentric-ai]], [[symmetry-systems]], and [[wiz]]'s DSPM. Its angle is the "Metadata Lake" / data-stays-in-place architecture and AI-native classification, positioned for the AI-data-governance moment. Founder/CEO Bruno Kurtic co-founded Sumo Logic, which shapes the data-platform-at-scale narrative. Note marketing language ("industry-first," "frictionless") is vendor framing.
+Competes in the crowded DSPM field against [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), [symmetry-systems](symmetry-systems.md), and [wiz](wiz.md)'s DSPM. Its angle is the "Metadata Lake" / data-stays-in-place architecture and AI-native classification, positioned for the AI-data-governance moment. Founder/CEO Bruno Kurtic co-founded Sumo Logic, which shapes the data-platform-at-scale narrative. Note marketing language ("industry-first," "frictionless") is vendor framing.
 
 ## Ownership, funding & M&A
 Independent, VC-backed. $10M seed (March 2024, Greylock) and a $25M Series A announced 2025-11-19, led by Greylock Partners with Mangusta Capital, Mantis Venture Capital, and Pier 88 Investment Partners. No seed M&A flag; none found. Ownership confidence high (recent primary funding announcement).
 
 ## CTO / hedge-fund lens
-DSPM is **Day-1** for a fund standing up AI on internal data — you must know where MNPI/PII/material data sits before pointing a copilot or RAG pipeline at it. Bedrock is a credible newer entrant; for a hedge fund the practical question is whether to buy a focused DSPM or use DSPM bundled into a platform already owned ([[microsoft-purview]], [[wiz]], [[rubrik]]). The data-in-place architecture is attractive for regulated shops wary of exporting sensitive data to a scanner. Early-stage vendor risk applies (small, ~Series A).
+DSPM is **Day-1** for a fund standing up AI on internal data — you must know where MNPI/PII/material data sits before pointing a copilot or RAG pipeline at it. Bedrock is a credible newer entrant; for a hedge fund the practical question is whether to buy a focused DSPM or use DSPM bundled into a platform already owned ([microsoft-purview](microsoft-purview.md), [wiz](wiz.md), [rubrik](rubrik.md)). The data-in-place architecture is attractive for regulated shops wary of exporting sensitive data to a scanner. Early-stage vendor risk applies (small, ~Series A).
 
 ## Competitors / alternatives
-[[cyera]], [[sentra]], [[bigid]], [[symmetry-systems]], [[normalyze]], [[concentric-ai]], [[securiti]], [[microsoft-purview]], [[wiz]].
+[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [symmetry-systems](symmetry-systems.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), [securiti](securiti.md), [microsoft-purview](microsoft-purview.md), [wiz](wiz.md).
 
 ## Open questions / to verify
 - Exact total funding and full cap table (only seed + Series A confirmed; total ~$35M is disclosed-rounds sum).

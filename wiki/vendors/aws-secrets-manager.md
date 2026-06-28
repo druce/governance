@@ -27,7 +27,7 @@ tags: [secrets, rotation, iam, kms, aws, first-party-cloud]
 
 # AWS Secrets Manager
 
-> **Researched 2026-06-28 (light — well-known first-party cloud service).** Primary category: [[secrets-management]].
+> **Researched 2026-06-28 (light — well-known first-party cloud service).** Primary category: [secrets-management](../categories/secrets-management.md).
 
 **One-liner** — AWS's official wording: it "helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets throughout their lifecycles" — the default secrets store if you run on AWS.
 
@@ -35,13 +35,13 @@ tags: [secrets, rotation, iam, kms, aws, first-party-cloud]
 Replaces hard-coded credentials with a runtime API call: your app asks Secrets Manager for the secret when it needs it, so credentials never live in source code or config. Its signature feature is **built-in automatic rotation** (via Lambda) — including native rotation for RDS/Aurora and other databases — so you can move from long-lived to short-lived secrets without redeploying apps. Access is governed by IAM policies; secrets are encrypted with AWS KMS; all access is auditable via CloudTrail. (AWS positions IAM for AWS credentials, KMS for encryption keys, and ACM for certificates — Secrets Manager is for application/DB secrets.)
 
 ## Where it sits in the stack
-Foundation layer, [[secrets-management]] — the AWS-native building block. Tightly coupled to IAM (identity), KMS (encryption), and CloudTrail (audit). Lethal-trifecta role: none directly; it is plumbing that keeps secrets out of code, agents, and repos, lowering the chance an AI pipeline leaks a long-lived credential.
+Foundation layer, [secrets-management](../categories/secrets-management.md) — the AWS-native building block. Tightly coupled to IAM (identity), KMS (encryption), and CloudTrail (audit). Lethal-trifecta role: none directly; it is plumbing that keeps secrets out of code, agents, and repos, lowering the chance an AI pipeline leaks a long-lived credential.
 
 ## Deployment & architecture
 Fully managed, multi-tenant service within AWS, accessed via API/SDK/CLI. IAM resource policies for fine-grained access; KMS for encryption; Lambda rotation functions; native integrations across AWS data services. Note a common cost nuance: it bills per secret per month plus per API call (cheaper, no-rotation alternative for static config is SSM Parameter Store).
 
 ## Positioning & differentiators
-The default on AWS, especially where automatic DB-credential rotation matters. Versus [[hashicorp-vault]] it is simpler and managed but AWS-bound and less capable for multi-cloud / dynamic secrets / advanced policy. Direct analogue of [[azure-key-vault]] (+ KMS) and [[gcp-secret-manager]]. Versus developer SaaS ([[doppler]], [[infisical]], [[1password]]) it is infra-centric, not developer-workflow-centric.
+The default on AWS, especially where automatic DB-credential rotation matters. Versus [hashicorp-vault](hashicorp-vault.md) it is simpler and managed but AWS-bound and less capable for multi-cloud / dynamic secrets / advanced policy. Direct analogue of [azure-key-vault](azure-key-vault.md) (+ KMS) and [gcp-secret-manager](gcp-secret-manager.md). Versus developer SaaS ([doppler](doppler.md), [infisical](infisical.md), [1password](1password.md)) it is infra-centric, not developer-workflow-centric.
 
 ## Ownership, funding & M&A
 First-party AWS service, launched 2018. Owner: Amazon.com, Inc. (public, NASDAQ: AMZN). No M&A question. Confidence high.
@@ -50,7 +50,7 @@ First-party AWS service, launched 2018. Owner: Amazon.com, Inc. (public, NASDAQ:
 Day-1 if you run anything on AWS. The automatic rotation story is the standout for regulated shops (rotating DB creds without downtime supports audit and reduces standing-secret risk). For a fund whose stack lives in AWS, this is the natural secrets manager. Not a model-risk (SR 11-7) tool, but secret hygiene is table-stakes for any AI deployment.
 
 ## Competitors / alternatives
-[[azure-key-vault]], [[gcp-secret-manager]], [[hashicorp-vault]], [[conjur]] (CyberArk), [[1password]], [[doppler]], [[infisical]].
+[azure-key-vault](azure-key-vault.md), [gcp-secret-manager](gcp-secret-manager.md), [hashicorp-vault](hashicorp-vault.md), [conjur](conjur.md) (CyberArk), [1password](1password.md), [doppler](doppler.md), [infisical](infisical.md).
 
 ## Open questions / to verify
 - None material — first-party, well-documented.

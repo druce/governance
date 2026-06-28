@@ -20,7 +20,7 @@ compute**: a dev box, sandbox, or runtime that is spun up from declarative confi
 scoped to exactly one trust zone, used for a task, and then destroyed. The security
 value is that there is no long-lived, drifted, credential-laden machine sitting around
 for an attacker (or a runaway agent) to find and pivot from. For agentic AI workloads,
-this is the practical substrate of [[trust-zone-segmentation]]: an agent runs in a
+this is the practical substrate of [trust-zone-segmentation](trust-zone-segmentation.md): an agent runs in a
 fresh, network-constrained sandbox with only the access its zone permits.
 
 ## When you need it
@@ -41,7 +41,7 @@ trust zones are physically realized, and the trifecta is broken by **constrainin
 network egress and data reach per zone**: a red-zone agent gets internet but no internal
 data; a yellow-zone agent gets data-warehouse access but no internet to exfiltrate to.
 Because the environment is short-lived and rebuilt from config, there is no accumulated
-sensitive state to leak. It underpins [[trust-zone-segmentation]] directly and spans the
+sensitive state to leak. It underpins [trust-zone-segmentation](trust-zone-segmentation.md) directly and spans the
 red and yellow zones by design.
 
 ## Vendors
@@ -49,10 +49,10 @@ red and yellow zones by design.
 These are general-purpose compute/dev-environment platforms used *for* zone-scoped
 ephemeral workloads, not AI-security products per se:
 
-- [[github-codespaces]] — on-demand, container-based cloud dev environments defined in-repo.
-- [[azure-dev-boxes]] — managed, policy-governed cloud developer workstations on Azure.
-- [[terraform-cloud]] — declarative infrastructure provisioning/teardown; cross-listed with [[policy-as-code]] (Sentinel) for governing what gets built.
-- [[cloudflare-workers]] — edge serverless compute; short-lived, isolated execution for sandboxed/red-zone tasks.
+- [github-codespaces](../vendors/github-codespaces.md) — on-demand, container-based cloud dev environments defined in-repo.
+- [azure-dev-boxes](../vendors/azure-dev-boxes.md) — managed, policy-governed cloud developer workstations on Azure.
+- [terraform-cloud](../vendors/terraform-cloud.md) — declarative infrastructure provisioning/teardown; cross-listed with [policy-as-code](policy-as-code.md) (Sentinel) for governing what gets built.
+- [cloudflare-workers](../vendors/cloudflare-workers.md) — edge serverless compute; short-lived, isolated execution for sandboxed/red-zone tasks.
 
 ## Consolidation / M&A dynamics
 
@@ -65,10 +65,10 @@ purpose-built for AI agents executing code).
 
 ## Adjacent categories
 
-- [[trust-zone-segmentation]] — the design pattern ephemeral environments physically enforce.
-- [[policy-as-code]] — governs *what* may be provisioned and how zones are configured (Terraform Cloud / Sentinel).
-- [[agent-runtime-security]] — runtime protection for the agents that run inside these environments.
-- [[mcp-gateway]] — controls the tools/egress an agent in a zone is allowed to reach.
+- [trust-zone-segmentation](trust-zone-segmentation.md) — the design pattern ephemeral environments physically enforce.
+- [policy-as-code](policy-as-code.md) — governs *what* may be provisioned and how zones are configured (Terraform Cloud / Sentinel).
+- [agent-runtime-security](agent-runtime-security.md) — runtime protection for the agents that run inside these environments.
+- [mcp-gateway](mcp-gateway.md) — controls the tools/egress an agent in a zone is allowed to reach.
 
 ## Survey
 
@@ -93,5 +93,5 @@ specific product.
 
 - This category is doc-only (no CSV question) and product selection is largely
   determined by incumbency — it may read better as a practice note under
-  [[trust-zone-segmentation]] than as a vendor shortlist. Keep as-is for now.
-- Overlap with [[policy-as-code]] via Terraform Cloud / Sentinel; cross-listed.
+  [trust-zone-segmentation](trust-zone-segmentation.md) than as a vendor shortlist. Keep as-is for now.
+- Overlap with [policy-as-code](policy-as-code.md) via Terraform Cloud / Sentinel; cross-listed.

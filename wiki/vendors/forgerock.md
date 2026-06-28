@@ -27,30 +27,30 @@ tags: [iam, ciam, identity-access, thoma-bravo, ping-identity]
 
 # ForgeRock
 
-> **One-liner** — An enterprise identity & access management platform (workforce + customer IAM, governance, orchestration); acquired by Thoma Bravo and folded into [[ping-identity]] — effectively no longer a standalone brand.
+> **One-liner** — An enterprise identity & access management platform (workforce + customer IAM, governance, orchestration); acquired by Thoma Bravo and folded into [ping-identity](ping-identity.md) — effectively no longer a standalone brand.
 
-**Categories** — [[identity-access]]
+**Categories** — [identity-access](../categories/identity-access.md)
 
 ## What it does
 ForgeRock provided a full IAM platform: access management/SSO, customer identity (CIAM), identity governance, and identity orchestration — built originally on the open-source OpenAM/OpenIDM lineage. The job: be the front door that authenticates and authorizes humans (and increasingly workloads) into applications, including AI assistants. It served 1,300+ organizations at acquisition.
 
 ## Where it sits in the stack
-Foundation layer, [[identity-access]] — the human/agent front door that everything else gates on. Lethal-trifecta leg: **none directly**, but it is the identity substrate that access governance, [[entitlement-aware-rag]] and agent authz all depend on. Adjacent to [[identity-governance]] and [[non-human-identity]].
+Foundation layer, [identity-access](../categories/identity-access.md) — the human/agent front door that everything else gates on. Lethal-trifecta leg: **none directly**, but it is the identity substrate that access governance, [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and agent authz all depend on. Adjacent to [identity-governance](../categories/identity-governance.md) and [non-human-identity](../categories/non-human-identity.md).
 
 ## Deployment & architecture
 SaaS (ForgeRock Identity Cloud) plus self-managed/on-prem deployments — historically stronger than pure-SaaS rivals at complex on-prem/hybrid and CIAM scenarios. Standards-based (OIDC, SAML, OAuth2, SCIM).
 
 ## Positioning & differentiators
-Was known for deployment flexibility (self-managed + cloud), heavy-duty CIAM, and identity orchestration. Nearest neighbors: [[ping-identity]] (now the parent brand), [[okta]], [[microsoft-entra]]. Post-merger, ForgeRock capabilities are being consolidated into the Ping Identity portfolio, so it is increasingly a feature set under Ping rather than a separate product to shop.
+Was known for deployment flexibility (self-managed + cloud), heavy-duty CIAM, and identity orchestration. Nearest neighbors: [ping-identity](ping-identity.md) (now the parent brand), [okta](okta.md), [microsoft-entra](microsoft-entra.md). Post-merger, ForgeRock capabilities are being consolidated into the Ping Identity portfolio, so it is increasingly a feature set under Ping rather than a separate product to shop.
 
 ## Ownership, funding & M&A
 **Verified — both seed flags confirmed.** Acquired by **Thoma Bravo** in an all-cash deal (~**$2.3B**, **$23.25/share**) and **merged into Ping Identity** (also Thoma Bravo-owned). Announced **2022-10-11**; stockholder approval 2023-01-12; **closed 2023-08-23**. Delisted from NYSE (was FORG). Founded 2010 (origins in Norway, ex-Sun Microsystems team); HQ San Francisco; previously public (IPO Sep 2021). Ownership confidence **high**.
 
 ## CTO / hedge-fund lens
-**Day-1 in the sense that an IdP is table-stakes — but you would not buy "ForgeRock" net-new today**; you would evaluate [[ping-identity]] (the surviving brand), [[microsoft-entra]] or [[okta]]. ForgeRock remains relevant mainly to existing customers managing the migration/consolidation into Ping. For a typical fund already on Entra or Okta, this is not a fresh buying decision. Note the Thoma Bravo identity roll-up (Ping + ForgeRock + others) as a market-concentration trend.
+**Day-1 in the sense that an IdP is table-stakes — but you would not buy "ForgeRock" net-new today**; you would evaluate [ping-identity](ping-identity.md) (the surviving brand), [microsoft-entra](microsoft-entra.md) or [okta](okta.md). ForgeRock remains relevant mainly to existing customers managing the migration/consolidation into Ping. For a typical fund already on Entra or Okta, this is not a fresh buying decision. Note the Thoma Bravo identity roll-up (Ping + ForgeRock + others) as a market-concentration trend.
 
 ## Competitors / alternatives
-[[ping-identity]], [[okta]], [[microsoft-entra]], [[sailpoint]] (governance overlap), [[saviynt]].
+[ping-identity](ping-identity.md), [okta](okta.md), [microsoft-entra](microsoft-entra.md), [sailpoint](sailpoint.md) (governance overlap), [saviynt](saviynt.md).
 
 ## Open questions / to verify
 - Long-term product roadmap: which ForgeRock components survive vs are sunset under Ping.

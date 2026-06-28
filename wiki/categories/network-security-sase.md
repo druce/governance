@@ -34,7 +34,7 @@ those TLS sessions. "AI-aware" SSE/SASE is the differentiator the seed CSV calls
 out: vendors are adding inline visibility and policy on AI-tool traffic (block
 unsanctioned models, log prompts, apply DLP to uploads). For a hedge-fund CTO this
 is the cheapest existing lever for shadow-AI control before buying a dedicated
-[[ai-access-governance]] tool — though it's destination-aware, not intent-aware.
+[ai-access-governance](ai-access-governance.md) tool — though it's destination-aware, not intent-aware.
 
 ## Lethal-trifecta role
 
@@ -48,31 +48,31 @@ internet. Lives at the perimeter of every zone; it's the wall between
 
 ## Vendors
 
-- [[palo-alto-networks]] — NGFW + Prisma Access; the incumbent platform play, deep inspection plus its own AI-security stack (Prisma AIRS).
-- [[zscaler]] — cloud-native zero-trust SSE pioneer; also pushing AI-traffic guardrails (AI Guard).
-- [[netskope]] — SSE with strong inline CASB/DLP heritage; markets AI-app visibility heavily.
-- [[cloudflare]] — global edge network; SASE plus developer/AI-gateway adjacencies.
-- [[cisco]] — Secure Access; bundled with Cisco's networking and security portfolio.
-- [[cato-networks]] — single-vendor SASE built cloud-first; converged networking + security.
-- [[forcepoint]] — SSE with a data-security/DLP focus.
+- [palo-alto-networks](../vendors/palo-alto-networks.md) — NGFW + Prisma Access; the incumbent platform play, deep inspection plus its own AI-security stack (Prisma AIRS).
+- [zscaler](../vendors/zscaler.md) — cloud-native zero-trust SSE pioneer; also pushing AI-traffic guardrails (AI Guard).
+- [netskope](../vendors/netskope.md) — SSE with strong inline CASB/DLP heritage; markets AI-app visibility heavily.
+- [cloudflare](../vendors/cloudflare.md) — global edge network; SASE plus developer/AI-gateway adjacencies.
+- [cisco](../vendors/cisco.md) — Secure Access; bundled with Cisco's networking and security portfolio.
+- [cato-networks](../vendors/cato-networks.md) — single-vendor SASE built cloud-first; converged networking + security.
+- [forcepoint](../vendors/forcepoint.md) — SSE with a data-security/DLP focus.
 
 ## Consolidation / M&A dynamics
 
 A consolidating, platform-driven market — buyers increasingly want one SASE vendor
-rather than stitched point products. [[cato-networks]] is reported to have acquired
+rather than stitched point products. [cato-networks](../vendors/cato-networks.md) is reported to have acquired
 Aim Security to add AI-runtime capability (per seed; unverified — to confirm in
-research). [[cisco]] has been an active acquirer across security (Splunk, and AI
+research). [cisco](../vendors/cisco.md) has been an active acquirer across security (Splunk, and AI
 players such as Robust Intelligence) and folds those into its access platform.
-[[palo-alto-networks]] continues to absorb adjacent AI-security capability into the
+[palo-alto-networks](../vendors/palo-alto-networks.md) continues to absorb adjacent AI-security capability into the
 Prisma line. The trend: SASE vendors bolting on "AI-aware" inspection to defend the
 egress point against AI-driven data loss.
 
 ## Adjacent categories
 
-- [[ai-access-governance]] — the intent-aware, AI-specific layer that sits on top of (or inside) the SASE proxy for shadow-AI control.
-- [[dlp]] — content/lineage-aware exfiltration controls; SASE often carries an inline DLP engine.
-- [[ai-runtime-security]] — AI-specific prompt/response inspection; positioned as an upgrade on top of generic SASE/NGFW.
-- [[enterprise-browser]] — an alternative enforcement point closer to the user.
+- [ai-access-governance](ai-access-governance.md) — the intent-aware, AI-specific layer that sits on top of (or inside) the SASE proxy for shadow-AI control.
+- [dlp](dlp.md) — content/lineage-aware exfiltration controls; SASE often carries an inline DLP engine.
+- [ai-runtime-security](ai-runtime-security.md) — AI-specific prompt/response inspection; positioned as an upgrade on top of generic SASE/NGFW.
+- [enterprise-browser](enterprise-browser.md) — an alternative enforcement point closer to the user.
 
 ## Survey
 
@@ -94,14 +94,14 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 
 **Notes for survey design:** Table-stakes infrastructure — almost every respondent
 will own one, so the signal is the incumbent and whether its *AI-aware* features
-are actually turned on. Watch for overlap confusion with [[ai-access-governance]]
-and [[dlp]]: respondents may credit their SASE vendor with shadow-AI control they
+are actually turned on. Watch for overlap confusion with [ai-access-governance](ai-access-governance.md)
+and [dlp](dlp.md): respondents may credit their SASE vendor with shadow-AI control they
 haven't enabled. Palo Alto, Zscaler, and Netskope are the table-stakes options;
 Cato and Forcepoint are more selective.
 
 ## Open taxonomy questions
 
-- Heavy overlap with [[ai-access-governance]] and [[dlp]] — SASE vendors are
+- Heavy overlap with [ai-access-governance](ai-access-governance.md) and [dlp](dlp.md) — SASE vendors are
   absorbing both; respondents may not distinguish the network layer from the
   AI-policy layer riding on it.
 - SSE vs SASE distinction (security-only vs security+networking) may matter to some

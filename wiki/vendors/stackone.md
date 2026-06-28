@@ -34,7 +34,7 @@ tags: [tool-identity-integration, unified-api, agent-tooling, mcp, saas-connecto
 **One-liner** — Unified-API / agent-tooling infrastructure: one interface that turns hundreds of
 SaaS apps into authenticated, governed tool-calls an AI agent can invoke.
 
-**Categories** — [[tool-identity-integration]]
+**Categories** — [tool-identity-integration](../categories/tool-identity-integration.md)
 
 ## What it does
 
@@ -55,7 +55,7 @@ as prompt-injection detection — these last claims are vendor marketing and unv
 
 ## Where it sits in the stack
 
-Primary category: [[tool-identity-integration]] (AI model/prompt layer; the "Tool Identity &
+Primary category: [tool-identity-integration](../categories/tool-identity-integration.md) (AI model/prompt layer; the "Tool Identity &
 Integration" row). This is the plumbing that lets an agent actually *do things* in enterprise SaaS —
 the managed agent→SaaS connector + auth layer that sits between an agent framework and the outside
 world.
@@ -86,13 +86,13 @@ StackOne's pitch is "integration infrastructure for the AI-agent era": it compet
 unified-API players (Merge, Finch, Apideck) and with the newer agent-tooling/auth crowd. Versus
 nearest neighbors:
 
-- [[composio]] — the closest comparable: a tool-calling/integration layer that gives agents
+- [composio](composio.md) — the closest comparable: a tool-calling/integration layer that gives agents
   authenticated access to hundreds of apps. Both chase the "managed tools + auth for agents" slot;
   StackOne leans into enterprise unified-API depth (HR/ATS/CRM) and its own tool-calling model.
-- [[arcade]] — overlaps on agent tool-calling and auth, but Arcade is more developer/runtime and
-  MCP-gateway flavored (it's cross-listed under [[mcp-gateway]]); StackOne emphasizes breadth of
+- [arcade](arcade.md) — overlaps on agent tool-calling and auth, but Arcade is more developer/runtime and
+  MCP-gateway flavored (it's cross-listed under [mcp-gateway](../categories/mcp-gateway.md)); StackOne emphasizes breadth of
   managed enterprise SaaS connectors.
-- [[workos]] — adjacent but different job: WorkOS is auth/enterprise-readiness (SSO/SCIM/directory
+- [workos](workos.md) — adjacent but different job: WorkOS is auth/enterprise-readiness (SSO/SCIM/directory
   sync) infrastructure; it secures the *identity* front door, whereas StackOne provides the *action/
   data* connectors. They can be complementary rather than substitutes.
 
@@ -120,7 +120,7 @@ shelf. It is **Day-2 (or N/A)** for most asset managers. You would care about St
 **building your own AI agents that need to act across many third-party SaaS systems** and want to avoid
 hand-rolling and maintaining those integrations. For a hedge fund, the relevant SaaS estate (HRIS/ATS/
 LMS) is rarely where agentic automation creates edge, and most funds will consume agents through
-[[enterprise-ai-assistant]] platforms rather than wiring custom tool-calling into back-office SaaS — so
+[enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) platforms rather than wiring custom tool-calling into back-office SaaS — so
 **hedge_fund_fit: low**.
 
 If you *do* adopt it, treat it as a high-privilege trust boundary: it holds OAuth tokens to your SaaS
@@ -131,9 +131,9 @@ obligations sit with whatever agent/model uses it.
 
 ## Competitors / alternatives
 
-[[composio]], [[arcade]], [[workos]], plus legacy unified-API vendors (Merge, Finch, Apideck — no
-pages) and MCP-gateway/tool-access players ([[mcp-gateway]] category: [[mintmcp]], [[obot]],
-[[natoma]]). For agent identity/auth specifically, see [[descope]] and [[stytch]].
+[composio](composio.md), [arcade](arcade.md), [workos](workos.md), plus legacy unified-API vendors (Merge, Finch, Apideck — no
+pages) and MCP-gateway/tool-access players ([mcp-gateway](../categories/mcp-gateway.md) category: [mintmcp](mintmcp.md), [obot](obot.md),
+[natoma](natoma.md)). For agent identity/auth specifically, see [descope](descope.md) and [stytch](stytch.md).
 
 ## Open questions / to verify
 
@@ -153,4 +153,4 @@ pages) and MCP-gateway/tool-access players ([[mcp-gateway]] category: [[mintmcp]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2023, HQ London (registered Newbury), founders Romain Sestier (CEO) & Guillaume Lebedel (CTO), $20M Series A (2025-05-06, led by GV) / ~$24M total, independent (no M&A). Documented managed-SaaS unified-API + agent tool-calling (MCP/SDK/API) product, HR/ATS/CRM/LMS connector focus; positioned vs [[composio]], [[arcade]], [[workos]]; placed on egress/sensitive-data trifecta legs. Set hedge_fund_fit low (build-side infra), status: researched, confidence medium. 3 sources cached.
+- [2026-06-28] Researched; established founded 2023, HQ London (registered Newbury), founders Romain Sestier (CEO) & Guillaume Lebedel (CTO), $20M Series A (2025-05-06, led by GV) / ~$24M total, independent (no M&A). Documented managed-SaaS unified-API + agent tool-calling (MCP/SDK/API) product, HR/ATS/CRM/LMS connector focus; positioned vs [composio](composio.md), [arcade](arcade.md), [workos](workos.md); placed on egress/sensitive-data trifecta legs. Set hedge_fund_fit low (build-side infra), status: researched, confidence medium. 3 sources cached.

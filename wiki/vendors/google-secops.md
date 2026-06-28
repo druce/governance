@@ -33,17 +33,17 @@ tags: [google, alphabet, siem, soc, chronicle, mandiant, incumbent]
 
 **What it does** — Ingests and retains security telemetry at very large scale, applies detections, and supports threat hunting and SOAR-style response. Differentiated historically by flat-rate, petabyte-scale storage (priced on employee count rather than ingest volume) and by built-in Mandiant frontline threat intelligence. The 2025-26 story is Gemini: AI-generated case summaries, response recommendations, context-aware chat, and NL detection/playbook creation.
 
-**Where it sits in the stack** — [[siem-soc]], foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. It is where AI/security signals are centralized and where Gemini agents perform [[ai-soc-analysts]]-style triage natively.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. It is where AI/security signals are centralized and where Gemini agents perform [ai-soc-analysts](../categories/ai-soc-analysts.md)-style triage natively.
 
 **Deployment & architecture** — SaaS on Google Cloud, API-driven ingestion. Bundles Mandiant threat intel; Gemini agents (Alert Triage & Investigation agent, Threat Intel agent) entered public preview late 2025 and reached GA in 1Q26. Integrates with Google Cloud, Chrome Enterprise, and third-party sources.
 
-**Positioning & differentiators** — Scale + threat-intel depth (Mandiant) + Gemini. Elevated to Leader in Gartner MQ for SIEM (2025) and IDC MarketScape SIEM 2026. Strongest for Google Cloud-centric or threat-intel-hungry shops; weaker native pull for Microsoft-centric estates ([[microsoft-sentinel]]). Competes with [[splunk]], [[elastic]], [[crowdstrike-logscale]], [[sumo-logic]].
+**Positioning & differentiators** — Scale + threat-intel depth (Mandiant) + Gemini. Elevated to Leader in Gartner MQ for SIEM (2025) and IDC MarketScape SIEM 2026. Strongest for Google Cloud-centric or threat-intel-hungry shops; weaker native pull for Microsoft-centric estates ([microsoft-sentinel](microsoft-sentinel.md)). Competes with [splunk](splunk.md), [elastic](elastic.md), [crowdstrike-logscale](crowdstrike-logscale.md), [sumo-logic](sumo-logic.md).
 
 **Ownership, funding & M&A** — Product line of **Alphabet Inc. (NASDAQ: GOOGL/GOOG)** via Google Cloud; public, high confidence. Chronicle began inside Alphabet's X moonshot lab (2018), became a Google Cloud product, rebranded Chronicle -> Google Security Operations (April 2024). **Mandiant acquisition confirmed**: announced March 2022 ($23.00/share, ~$5.4B all-cash), completed **2022-09-12**. Stub previously `ownership: independent` — corrected to `public`.
 
-**CTO / hedge-fund lens** — **Day-1** if you are Google Cloud-centric or want bundled top-tier threat intel; otherwise a strong alternative to evaluate against [[microsoft-sentinel]]. Pricing model (often per-user) can favor data-heavy shops. Not an SR 11-7 tool; useful as the central audit/log store for AI activity.
+**CTO / hedge-fund lens** — **Day-1** if you are Google Cloud-centric or want bundled top-tier threat intel; otherwise a strong alternative to evaluate against [microsoft-sentinel](microsoft-sentinel.md). Pricing model (often per-user) can favor data-heavy shops. Not an SR 11-7 tool; useful as the central audit/log store for AI activity.
 
-**Competitors / alternatives** — [[microsoft-sentinel]], [[splunk]], [[elastic]], [[crowdstrike-logscale]], [[sumo-logic]].
+**Competitors / alternatives** — [microsoft-sentinel](microsoft-sentinel.md), [splunk](splunk.md), [elastic](elastic.md), [crowdstrike-logscale](crowdstrike-logscale.md), [sumo-logic](sumo-logic.md).
 
 **Open questions / to verify** — Current pricing structure (per-user vs ingest) for a small fund; degree of Chrome Enterprise / Gemini Enterprise integration.
 

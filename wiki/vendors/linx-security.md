@@ -27,7 +27,7 @@ tags: [iga, ispm, identity, ai-native, non-human-identity]
 
 # Linx Security
 
-> **Researched 2026-06-28.** Primary category: [[identity-governance]].
+> **Researched 2026-06-28.** Primary category: [identity-governance](../categories/identity-governance.md).
 
 **One-liner** — An AI-native identity governance (IGA) platform that continuously maps, monitors, and governs every identity in the enterprise — human, non-human, and AI agent — instead of running periodic, form-driven access reviews.
 
@@ -35,13 +35,13 @@ tags: [iga, ispm, identity, ai-native, non-human-identity]
 Linx is positioned as a modern rebuild of identity governance and administration (IGA). Traditional IGA tools (joiner/mover/leaver workflows, quarterly access certifications) were built for a world of mostly human employees and relatively static apps. Linx's pitch is that the identity estate is now dominated by service accounts, machine identities, and AI agents — which it claims outnumber humans by roughly 80 to 1 — and that governing them requires continuous, automated discovery and correlation rather than spreadsheet-driven recerts. It markets "Linx Autopilot," an autonomous agent that drives identity governance tasks.
 
 ## Where it sits in the stack
-Foundation layer, [[identity-governance]] (IGA/ISPM), with a strong [[non-human-identity]] angle. It sits downstream of the IdP ([[microsoft-entra]], [[okta]]) and reconciles identities/entitlements across the estate. Lethal-trifecta role: none directly — this is an access-hygiene and least-privilege control, not a prompt/data/egress firewall. It reduces blast radius by limiting standing access and over-entitlement.
+Foundation layer, [identity-governance](../categories/identity-governance.md) (IGA/ISPM), with a strong [non-human-identity](../categories/non-human-identity.md) angle. It sits downstream of the IdP ([microsoft-entra](microsoft-entra.md), [okta](okta.md)) and reconciles identities/entitlements across the estate. Lethal-trifecta role: none directly — this is an access-hygiene and least-privilege control, not a prompt/data/egress firewall. It reduces blast radius by limiting standing access and over-entitlement.
 
 ## Deployment & architecture
 SaaS, integrating via API/connectors to IdPs, cloud, and SaaS apps to build and continuously update an identity graph. (Exact connector catalog not verified.)
 
 ## Positioning & differentiators
-"AI-native" continuous governance vs the legacy suites ([[sailpoint]], [[saviynt]]) and the newer access-request/least-privilege challengers ([[lumos]], [[conductorone]]). Its explicit framing around AI agents and non-human identities overlaps with the visibility pitch of [[hydden]] and the access-graph pitch of [[veza]]. Nearest neighbors in spirit: [[veza]] (authorization/entitlement graph), [[conductorone]], [[lumos]].
+"AI-native" continuous governance vs the legacy suites ([sailpoint](sailpoint.md), [saviynt](saviynt.md)) and the newer access-request/least-privilege challengers ([lumos](lumos.md), [conductorone](conductorone.md)). Its explicit framing around AI agents and non-human identities overlaps with the visibility pitch of [hydden](hydden.md) and the access-graph pitch of [veza](veza.md). Nearest neighbors in spirit: [veza](veza.md) (authorization/entitlement graph), [conductorone](conductorone.md), [lumos](lumos.md).
 
 ## Ownership, funding & M&A
 Independent, VC-backed. Founded 2023 by Israel Duanis (CEO) and Niv Goldenberg; HQ New York. $83M total funding; $50M Series B led by Insight Partners announced 2026-03-31, with continued participation from Cyberstarts and Index Ventures. No M&A. Confidence high (primary announcement + Insight Partners).
@@ -50,7 +50,7 @@ Independent, VC-backed. Founded 2023 by Israel Duanis (CEO) and Niv Goldenberg; 
 Day-2. IGA is a real need for a regulated shop (access certifications, least privilege, SOX/audit evidence), but Linx is young (founded 2023) — a credible modernization play, not yet a safe default. A 50-person fund likely does not need a dedicated IGA platform on day one; identity governance can start inside Entra/Okta. Worth watching if you have a sprawling SaaS estate and a growing fleet of service accounts/agents. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[[sailpoint]], [[saviynt]], [[veza]], [[conductorone]], [[lumos]], [[hydden]], [[silverfort]].
+[sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md), [hydden](hydden.md), [silverfort](silverfort.md).
 
 ## Open questions / to verify
 - Concrete connector/integration list and whether it does access certifications vs only visibility.

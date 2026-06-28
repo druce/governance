@@ -48,17 +48,17 @@ governance buildout is Day-2.
 inline and does not prevent a leak in real time, so it breaks no leg of the lethal
 trifecta directly. It is the **green-zone** detective backstop that catches MNPI /
 sensitive-data leakage *after* it has hit a comms channel — complementary to the
-preventive controls in [[dlp]] and [[ai-access-governance]] that try to stop the leak
+preventive controls in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md) that try to stop the leak
 before it happens.
 
 ## Vendors
 
-- [[behavox]] — AI-led conduct and market-abuse surveillance; behavioral/voice analytics, lexicon-plus-ML.
-- [[steeleye]] — combined trade + comms surveillance with integrated recordkeeping; strong MAR framing.
-- [[nice-actimize]] — incumbent financial-crime/markets surveillance suite (also AML/fraud); enterprise-heavy.
-- [[theta-lake]] — surveillance and compliance for modern collaboration channels (Zoom, Teams, Webex) and AI features.
-- [[shield]] — communications compliance/surveillance platform with an AI/LLM analytics emphasis.
-- [[relativity-trace]] — proactive comms surveillance built on the Relativity (e-discovery) platform.
+- [behavox](../vendors/behavox.md) — AI-led conduct and market-abuse surveillance; behavioral/voice analytics, lexicon-plus-ML.
+- [steeleye](../vendors/steeleye.md) — combined trade + comms surveillance with integrated recordkeeping; strong MAR framing.
+- [nice-actimize](../vendors/nice-actimize.md) — incumbent financial-crime/markets surveillance suite (also AML/fraud); enterprise-heavy.
+- [theta-lake](../vendors/theta-lake.md) — surveillance and compliance for modern collaboration channels (Zoom, Teams, Webex) and AI features.
+- [shield](../vendors/shield.md) — communications compliance/surveillance platform with an AI/LLM analytics emphasis.
+- [relativity-trace](../vendors/relativity-trace.md) — proactive comms surveillance built on the Relativity (e-discovery) platform.
 
 ## Consolidation / M&A dynamics
 
@@ -72,10 +72,10 @@ detection.
 
 ## Adjacent categories
 
-- [[dlp]] — preventive control that tries to stop MNPI/sensitive data leaving before surveillance would catch it.
-- [[ai-access-governance]] — governs/records what employees send to AI tools; a capture point for the surveillance archive.
-- [[ai-governance-platform]] — the broader model-risk/governance register; the CSV folds surveillance under it.
-- [[enterprise-grc]] — where surveillance alerts and conduct findings are tracked as risk/audit items.
+- [dlp](dlp.md) — preventive control that tries to stop MNPI/sensitive data leaving before surveillance would catch it.
+- [ai-access-governance](ai-access-governance.md) — governs/records what employees send to AI tools; a capture point for the surveillance archive.
+- [ai-governance-platform](ai-governance-platform.md) — the broader model-risk/governance register; the CSV folds surveillance under it.
+- [enterprise-grc](enterprise-grc.md) — where surveillance alerts and conduct findings are tracked as risk/audit items.
 
 ## Survey
 
@@ -104,4 +104,4 @@ capture and surveillance?"
   page) — should capture be its own thin category? Currently treated as upstream infra.
 - The CSV folds this under "AI Governance, Model Risk & Compliance"; kept separate here
   because the buyer (compliance/surveillance) and vendors are distinct from
-  [[ai-governance-platform]].
+  [ai-governance-platform](ai-governance-platform.md).

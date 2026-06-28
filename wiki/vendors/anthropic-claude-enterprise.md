@@ -29,7 +29,7 @@ tags: [llm-vendor, ai-assistant, frontier-model]
 
 **One-liner** — Anthropic's enterprise tier of Claude: the Claude chat assistant (plus Projects and Claude Code) wrapped in the admin, identity, audit, retention, and compliance controls a regulated buyer needs, with a default no-training-on-your-data commitment.
 
-**Categories** — [[enterprise-ai-assistant]]
+**Categories** — [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)
 
 ## What it does
 
@@ -37,9 +37,9 @@ Claude Enterprise is the governed, tenant-administered version of the Claude ass
 
 ## Where it sits in the stack
 
-This is the **UX / [[enterprise-ai-assistant]]** layer — the chatbot people actually use, the direct competitor to [[openai-chatgpt-enterprise]], [[microsoft-365-copilot]], [[gemini-enterprise]], [[amazon-q-business]], [[perplexity-enterprise]], and [[glean]]. As a first-party model app it is itself the "AI" that the rest of the governance stack ([[ai-access-governance]], [[ai-runtime-security]], [[dlp]], [[comms-surveillance]]) is meant to wrap or watch.
+This is the **UX / [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)** layer — the chatbot people actually use, the direct competitor to [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md), [microsoft-365-copilot](microsoft-365-copilot.md), [gemini-enterprise](gemini-enterprise.md), [amazon-q-business](amazon-q-business.md), [perplexity-enterprise](perplexity-enterprise.md), and [glean](glean.md). As a first-party model app it is itself the "AI" that the rest of the governance stack ([ai-access-governance](../categories/ai-access-governance.md), [ai-runtime-security](../categories/ai-runtime-security.md), [dlp](../categories/dlp.md), [comms-surveillance](../categories/comms-surveillance.md)) is meant to wrap or watch.
 
-Lethal-trifecta role: as a sanctioned assistant its main exposure is the **sensitive-data** leg — staff paste confidential/MNPI material into prompts and files. The no-training default plus retention controls plus the Compliance API are how you keep that data governed. It does not itself break the untrusted-input or egress legs; pairing it with a [[dlp]] / [[ai-access-governance]] / [[comms-surveillance]] control covers those.
+Lethal-trifecta role: as a sanctioned assistant its main exposure is the **sensitive-data** leg — staff paste confidential/MNPI material into prompts and files. The no-training default plus retention controls plus the Compliance API are how you keep that data governed. It does not itself break the untrusted-input or egress legs; pairing it with a [dlp](../categories/dlp.md) / [ai-access-governance](../categories/ai-access-governance.md) / [comms-surveillance](../categories/comms-surveillance.md) control covers those.
 
 ## Deployment & architecture
 
@@ -48,14 +48,14 @@ Lethal-trifecta role: as a sanctioned assistant its main exposure is the **sensi
 - **Admin & audit:** audit logs (Owners/Primary Owners can export ~180 days of access metadata — user, timestamp, event type, device, platform, user agent; chat titles/content are *not* in the audit export, only identifiers), usage analytics, spend controls, IP allowlisting, OpenTelemetry (OTEL) monitoring (Enterprise-only).
 - **Data retention:** custom retention controls (Enterprise-only); no training on your data by default.
 - **Compliance API:** REST feed launched 2025-08-20. On Enterprise it exposes **conversation content** (chats, uploaded files, Projects) plus activity-feed events (logins, admin actions, config changes); on the Platform/API tier only activity events, no conversation content. ~30 typed events, 180-day window for the activity feed. This is the hook archiving/eDiscovery/SIEM vendors plug into.
-- **Integrations:** native connectors + **MCP**; 60+ Compliance API integration partners (expanded from 28 announced 2026-05) spanning eDiscovery/archiving (Smarsh-style capture, Proofpoint, [[theta-lake]], RelativityOne/RSMF), SIEM ([[crowdstrike]], [[elastic]], [[sumo-logic]]), DLP ([[forcepoint]], [[nightfall-ai]], [[zscaler]]), identity ([[okta]], [[sailpoint]], [[saviynt]]).
+- **Integrations:** native connectors + **MCP**; 60+ Compliance API integration partners (expanded from 28 announced 2026-05) spanning eDiscovery/archiving (Smarsh-style capture, Proofpoint, [theta-lake](theta-lake.md), RelativityOne/RSMF), SIEM ([crowdstrike](crowdstrike.md), [elastic](elastic.md), [sumo-logic](sumo-logic.md)), DLP ([forcepoint](forcepoint.md), [nightfall-ai](nightfall-ai.md), [zscaler](zscaler.md)), identity ([okta](okta.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md)).
 
 ## Positioning & differentiators
 
 - **No-training default + governance posture** is the headline. Anthropic leans on safety/trust branding and was one of the first frontier labs to certify to **ISO/IEC 42001** (AI management system).
 - **Compliance API with conversation-content export** is a genuine differentiator for regulated buyers: it lets comms-surveillance/archiving tools ingest the actual prompts, responses, files, and Claude-generated artifacts (including deleted/archived messages, per partner claims like Smarsh) — the same way a bank archives Bloomberg chat or Slack. That directly addresses MAR/MNPI supervision needs, which is unusual among assistant vendors.
 - **Claude Code** governance (enterprise-managed agentic coding) is a draw for engineering-heavy shops; admin controls, audit, and spend management extend to it.
-- vs [[microsoft-365-copilot]]: Claude is model-first and not natively wired into your M365 data graph/entitlements, so it lacks Copilot's built-in [[entitlement-aware-rag]] over SharePoint/Graph — you bring data in via connectors/Projects. vs [[openai-chatgpt-enterprise]]: closest analog; both offer SSO/SCIM/audit/no-training/Compliance-style export — differentiation is model quality, Claude Code, and Anthropic's ISO 42001/safety positioning.
+- vs [microsoft-365-copilot](microsoft-365-copilot.md): Claude is model-first and not natively wired into your M365 data graph/entitlements, so it lacks Copilot's built-in [entitlement-aware-rag](../categories/entitlement-aware-rag.md) over SharePoint/Graph — you bring data in via connectors/Projects. vs [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md): closest analog; both offer SSO/SCIM/audit/no-training/Compliance-style export — differentiation is model quality, Claude Code, and Anthropic's ISO 42001/safety positioning.
 
 ## Ownership, funding & M&A
 
@@ -66,16 +66,16 @@ Lethal-trifecta role: as a sanctioned assistant its main exposure is the **sensi
 ## CTO / hedge-fund lens
 
 - **Day-1.** If your staff are going to use a frontier assistant (they are), a governed tenant with no-training, SSO/SCIM, audit, retention, and an archiving hook is the minimum bar. Claude Enterprise clears it.
-- **Comms-surveillance fit is the standout for a fund.** The Compliance API streams conversation content into [[comms-surveillance]] / archiving tools (Smarsh, Proofpoint, [[theta-lake]], RelativityOne), so Claude usage can sit inside the same MAR/MNPI supervision and eDiscovery workflow as email and chat. Few assistant vendors offer this; for a regulated shop it can be the deciding feature.
+- **Comms-surveillance fit is the standout for a fund.** The Compliance API streams conversation content into [comms-surveillance](../categories/comms-surveillance.md) / archiving tools (Smarsh, Proofpoint, [theta-lake](theta-lake.md), RelativityOne), so Claude usage can sit inside the same MAR/MNPI supervision and eDiscovery workflow as email and chat. Few assistant vendors offer this; for a regulated shop it can be the deciding feature.
 - **Certifications** cover the regulated checklist: SOC 2 Type I & II, ISO 27001:2022, ISO/IEC 42001:2023, HIPAA-ready with BAA, GDPR/CCPA. Detailed SOC 2 report is available under NDA via the Trust Portal (trust.anthropic.com, on Vanta). Sign a DPA.
-- **Caveats to verify in procurement:** (1) **data residency** — Anthropic markets US processing; confirm whether EU/region-pinned data residency is contractually available for your tenant (not clearly documented publicly). (2) The assistant is **not entitlement-aware** over your file stores out of the box — if you want RAG over internal data with permission trimming, that's connectors/Projects work or a separate [[entitlement-aware-rag]] layer. (3) IPO filing (2026-06) means watch for any change in terms/governance.
-- **SR 11-7 / model risk:** Claude as a general assistant is typically a productivity tool, not a model in a regulated decision pipeline; if you embed Claude (via API) into a model that informs investment/credit/risk decisions, that instance falls under your model-risk governance ([[ai-governance-platform]]) regardless of the assistant's certifications.
+- **Caveats to verify in procurement:** (1) **data residency** — Anthropic markets US processing; confirm whether EU/region-pinned data residency is contractually available for your tenant (not clearly documented publicly). (2) The assistant is **not entitlement-aware** over your file stores out of the box — if you want RAG over internal data with permission trimming, that's connectors/Projects work or a separate [entitlement-aware-rag](../categories/entitlement-aware-rag.md) layer. (3) IPO filing (2026-06) means watch for any change in terms/governance.
+- **SR 11-7 / model risk:** Claude as a general assistant is typically a productivity tool, not a model in a regulated decision pipeline; if you embed Claude (via API) into a model that informs investment/credit/risk decisions, that instance falls under your model-risk governance ([ai-governance-platform](../categories/ai-governance-platform.md)) regardless of the assistant's certifications.
 
 ## Competitors / alternatives
 
-- [[openai-chatgpt-enterprise]] — nearest analog (governed frontier assistant).
-- [[microsoft-365-copilot]] — assistant natively bound to M365 data/entitlements.
-- [[gemini-enterprise]], [[amazon-q-business]], [[perplexity-enterprise]], [[glean]].
+- [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md) — nearest analog (governed frontier assistant).
+- [microsoft-365-copilot](microsoft-365-copilot.md) — assistant natively bound to M365 data/entitlements.
+- [gemini-enterprise](gemini-enterprise.md), [amazon-q-business](amazon-q-business.md), [perplexity-enterprise](perplexity-enterprise.md), [glean](glean.md).
 
 ## Open questions / to verify
 
@@ -93,4 +93,4 @@ Lethal-trifecta role: as a sanctioned assistant its main exposure is the **sensi
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established Claude Enterprise as a Day-1 governed frontier assistant ([[enterprise-ai-assistant]]). Confirmed enterprise governance posture: no-training default, SSO/SAML + domain capture, SCIM, RBAC, audit logs (~180d), custom retention, IP allowlisting, OTEL, and a Compliance API that exports conversation content into eDiscovery/archiving/SIEM partners (Smarsh, Proofpoint, Theta Lake, RelativityOne) — a strong comms-surveillance fit for funds (hedge_fund_fit: high). Certs: SOC 2 I/II, ISO 27001, ISO 42001, HIPAA-ready/BAA, GDPR/CCPA. Ownership: independent (Amazon/Google minority investments), confidence high; IPO filed 2026-06-01. Open: EU data residency, Global Relay integration. Cached 4 sources.
+- [2026-06-28] Researched; established Claude Enterprise as a Day-1 governed frontier assistant ([enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)). Confirmed enterprise governance posture: no-training default, SSO/SAML + domain capture, SCIM, RBAC, audit logs (~180d), custom retention, IP allowlisting, OTEL, and a Compliance API that exports conversation content into eDiscovery/archiving/SIEM partners (Smarsh, Proofpoint, Theta Lake, RelativityOne) — a strong comms-surveillance fit for funds (hedge_fund_fit: high). Certs: SOC 2 I/II, ISO 27001, ISO 42001, HIPAA-ready/BAA, GDPR/CCPA. Ownership: independent (Amazon/Google minority investments), confidence high; IPO filed 2026-06-01. Open: EU data residency, Global Relay integration. Cached 4 sources.

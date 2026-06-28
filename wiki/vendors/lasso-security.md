@@ -27,7 +27,7 @@ tags: [genai-security, llm-security, mcp, shadow-ai, israel]
 
 # Lasso Security
 
-> Primary category: [[dlp]]. Spans [[ai-runtime-security]], [[agent-runtime-security]], and [[ai-access-governance]].
+> Primary category: [dlp](../categories/dlp.md). Spans [ai-runtime-security](../categories/ai-runtime-security.md), [agent-runtime-security](../categories/agent-runtime-security.md), and [ai-access-governance](../categories/ai-access-governance.md).
 
 **One-liner** — An Israeli end-to-end GenAI security platform that watches every LLM and
 agent touchpoint (employee chatbots, built apps, MCP tools) to stop sensitive-data leakage,
@@ -56,12 +56,12 @@ shadow-AI tool, an AI firewall, and an agent-security tool.
 
 ## Where it sits in the stack
 
-Primary home is [[dlp]] (Data layer) because the headline job is keeping sensitive data out
+Primary home is [dlp](../categories/dlp.md) (Data layer) because the headline job is keeping sensitive data out
 of prompts and responses. But Lasso is genuinely cross-layer:
 
-- [[ai-runtime-security]] (Model/Prompt layer) — inline guardrails / AI-firewall function.
-- [[agent-runtime-security]] — MCP Gateway + intent baselining for agentic apps.
-- [[ai-access-governance]] — shadow-AI discovery and employee-AI control via browser extension.
+- [ai-runtime-security](../categories/ai-runtime-security.md) (Model/Prompt layer) — inline guardrails / AI-firewall function.
+- [agent-runtime-security](../categories/agent-runtime-security.md) — MCP Gateway + intent baselining for agentic apps.
+- [ai-access-governance](../categories/ai-access-governance.md) — shadow-AI discovery and employee-AI control via browser extension.
 
 **Lethal-trifecta role:** addresses all three legs — screens **untrusted input** (prompt
 injection/jailbreak detection), guards **sensitive data** (DLP on prompts/responses), and
@@ -81,7 +81,7 @@ Multiple insertion points rather than a single chokepoint:
   (on GitHub, Smithery, MCP Servers), for agentic workflows.
 - **SaaS** control plane with dashboards/observability.
 
-Integrations include AI gateways — e.g. Lasso ships as a guardrail in [[portkey]]'s gateway.
+Integrations include AI gateways — e.g. Lasso ships as a guardrail in [portkey](portkey.md)'s gateway.
 Vendor performance claims (marketing): sub-50ms decisions, 99.8% detection accuracy.
 
 ## Positioning & differentiators
@@ -94,10 +94,10 @@ Vendor performance claims (marketing): sub-50ms decisions, 99.8% detection accur
 - **Origin in LLM threat research** — leans on a large prompt-injection/jailbreak dataset as
   the basis for its detection models.
 
-Nearest neighbors: [[prompt-security]] (very similar end-to-end GenAI scope; acquired by
-SentinelOne), [[witnessai]] (runtime + AI access governance), [[harmonic-security]] and
-[[cyberhaven]] (shadow-AI / DLP for AI), [[nightfall-ai]] and [[mind]] (data-centric DLP),
-[[pillar-security]] and [[hiddenlayer]] (AI runtime), [[zenity]] (agent runtime).
+Nearest neighbors: [prompt-security](prompt-security.md) (very similar end-to-end GenAI scope; acquired by
+SentinelOne), [witnessai](witnessai.md) (runtime + AI access governance), [harmonic-security](harmonic-security.md) and
+[cyberhaven](cyberhaven.md) (shadow-AI / DLP for AI), [nightfall-ai](nightfall-ai.md) and [mind](mind.md) (data-centric DLP),
+[pillar-security](pillar-security.md) and [hiddenlayer](hiddenlayer.md) (AI runtime), [zenity](zenity.md) (agent runtime).
 
 ## Ownership, funding & M&A
 
@@ -119,16 +119,16 @@ SentinelOne), [[witnessai]] (runtime + AI access governance), [[harmonic-securit
   one vendor instead of three, that breadth is attractive.
 - **Model-risk / SR 11-7:** Lasso is a control/monitoring layer, not a model-governance
   platform — it helps with the data-leakage and prompt-abuse side, not model validation or
-  documentation. Pair with an [[ai-governance-platform]] for SR 11-7 obligations.
+  documentation. Pair with an [ai-governance-platform](../categories/ai-governance-platform.md) for SR 11-7 obligations.
 - **Fit:** medium. Strong for a shop standing up employee AI + a few internal LLM/agent
   apps and wanting a single pane. Less compelling if you already own DLP via
-  [[netskope]]/[[microsoft-purview]] or an AI firewall via [[prisma-airs]]. Early-stage
+  [netskope](netskope.md)/[microsoft-purview](microsoft-purview.md) or an AI firewall via [prisma-airs](prisma-airs.md). Early-stage
   vendor — diligence the roadmap, support, and SOC 2 posture.
 
 ## Competitors / alternatives
 
-[[prompt-security]], [[witnessai]], [[harmonic-security]], [[cyberhaven]], [[nightfall-ai]],
-[[mind]], [[pillar-security]], [[hiddenlayer]], [[prisma-airs]], [[zenity]].
+[prompt-security](prompt-security.md), [witnessai](witnessai.md), [harmonic-security](harmonic-security.md), [cyberhaven](cyberhaven.md), [nightfall-ai](nightfall-ai.md),
+[mind](mind.md), [pillar-security](pillar-security.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [zenity](zenity.md).
 
 ## Open questions / to verify
 

@@ -27,7 +27,7 @@ tags: [ai-gateway, mcp-gateway, api-management, llm-proxy, guardrails]
 
 # Kong
 
-> This page is scoped to **Kong's AI angle** — the **Kong AI Gateway** (AI plugins on Kong Gateway) and its **MCP / agent gateway** capabilities. Kong Inc. is primarily an API-management company (Kong Gateway, Kong Konnect, Insomnia); general API-management history is kept brief here. Primary category: [[ai-gateway]].
+> This page is scoped to **Kong's AI angle** — the **Kong AI Gateway** (AI plugins on Kong Gateway) and its **MCP / agent gateway** capabilities. Kong Inc. is primarily an API-management company (Kong Gateway, Kong Konnect, Insomnia); general API-management history is kept brief here. Primary category: [ai-gateway](../categories/ai-gateway.md).
 
 **One-liner** — Kong is a mature, open-source-rooted API-management vendor whose **AI Gateway** turns its battle-tested Kong Gateway proxy into a single governed exit door for LLM and agent traffic, adding multi-LLM routing, guardrails, PII redaction, semantic caching, and an MCP/agent gateway.
 
@@ -47,8 +47,8 @@ You'd want it when you already run, or are willing to run, an API gateway and wa
 
 ## Where it sits in the stack
 
-- Primary: [[ai-gateway]] (model-prompt layer) — the single governed egress point for model traffic.
-- Secondary: [[mcp-gateway]] — tool/agent access control for MCP and A2A.
+- Primary: [ai-gateway](../categories/ai-gateway.md) (model-prompt layer) — the single governed egress point for model traffic.
+- Secondary: [mcp-gateway](../categories/mcp-gateway.md) — tool/agent access control for MCP and A2A.
 
 **Lethal-trifecta role:** primarily controls the **egress** leg — it is the chokepoint where outbound model calls (and now MCP/agent calls) are routed, logged, rate-limited, and cost-controlled. Its guardrail and prompt-guard plugins also touch the **untrusted-input** leg (blocking/inspecting malicious prompts and moderating content). PII sanitization touches the sensitive-data leg but is redaction, not full DLP. Lives at the boundary between the application/agent zone and external model/tool providers.
 
@@ -61,9 +61,9 @@ You'd want it when you already run, or are willing to run, an API gateway and wa
 ## Positioning & differentiators
 
 - **API-management incumbent extending into AI.** Unlike AI-native gateways, Kong's pitch is "you already need an API gateway — let it govern AI too," consolidating LLM, MCP, and A2A traffic on one mature, self-hostable proxy. This is its key differentiator vs lighter LLM-only routers.
-- **vs [[litellm]]** — LiteLLM is an open-source, developer-first LLM proxy/SDK; Kong is a heavier enterprise gateway with broader policy/auth/observability and a commercial control plane (Konnect), but more operational weight.
-- **vs [[portkey]]** and **[[truefoundry]]** — those are AI-native gateways/LLMOps platforms; Kong leads on general API-gateway maturity, self-hosting depth, and treating AI as one traffic class among many, rather than an AI-first product.
-- **vs [[cloudflare]]** (AI Gateway) — Cloudflare is edge/SaaS-network-native and easy to switch on; Kong is the self-hostable, data-plane-owned alternative favored by teams wanting on-prem control.
+- **vs [litellm](litellm.md)** — LiteLLM is an open-source, developer-first LLM proxy/SDK; Kong is a heavier enterprise gateway with broader policy/auth/observability and a commercial control plane (Konnect), but more operational weight.
+- **vs [portkey](portkey.md)** and **[truefoundry](truefoundry.md)** — those are AI-native gateways/LLMOps platforms; Kong leads on general API-gateway maturity, self-hosting depth, and treating AI as one traffic class among many, rather than an AI-first product.
+- **vs [cloudflare](cloudflare.md)** (AI Gateway) — Cloudflare is edge/SaaS-network-native and easy to switch on; Kong is the self-hostable, data-plane-owned alternative favored by teams wanting on-prem control.
 - **vs MCP-gateway neighbors** — Kong competes with MCP/agent-gateway entrants on the agentic side; advantage is auto-generating MCP servers from existing Kong-managed APIs and unifying LLM+MCP+A2A in one gateway.
 
 ## Ownership, funding & M&A
@@ -75,13 +75,13 @@ You'd want it when you already run, or are willing to run, an API gateway and wa
 ## CTO / hedge-fund lens
 
 - **Day-1** if you treat a governed AI exit door as foundational and you want to self-host the control point. Kong is most compelling for a fund that **already runs Kong Gateway** for its APIs — adding AI Gateway is incremental and keeps one policy/audit plane.
-- **Fit: medium.** Strong if you want on-prem/self-hosted control, unified API+AI governance, and don't mind running gateway infrastructure. For a small fund with no existing gateway, a lighter SaaS option ([[portkey]], [[cloudflare]]) or open-source [[litellm]] may be faster to stand up. Kong shines at enterprise scale and multi-team governance.
+- **Fit: medium.** Strong if you want on-prem/self-hosted control, unified API+AI governance, and don't mind running gateway infrastructure. For a small fund with no existing gateway, a lighter SaaS option ([portkey](portkey.md), [cloudflare](cloudflare.md)) or open-source [litellm](litellm.md) may be faster to stand up. Kong shines at enterprise scale and multi-team governance.
 - **Model-risk / SR 11-7:** the gateway gives you the centralized logging, cost attribution, and access control that support model-usage oversight, but it is governance plumbing, not a model-validation tool.
 - Egress control + PII redaction + prompt guards address the most common Day-1 worries (uncontrolled model calls, data leaving, prompt injection) at one chokepoint.
 
 ## Competitors / alternatives
 
-[[litellm]], [[portkey]], [[truefoundry]], [[cloudflare]] — and on the agentic side, MCP-gateway peers in [[mcp-gateway]].
+[litellm](litellm.md), [portkey](portkey.md), [truefoundry](truefoundry.md), [cloudflare](cloudflare.md) — and on the agentic side, MCP-gateway peers in [mcp-gateway](../categories/mcp-gateway.md).
 
 ## Open questions / to verify
 

@@ -29,7 +29,7 @@ tags: [google, alphabet, gcp, workspace, enterprise-search, rag, agents]
 
 **One-liner** — Google's enterprise AI front door: a governed chat + enterprise-search + agent platform that grounds Gemini models on your company's data (Workspace, Drive, plus third-party connectors) while honoring source permissions, with the data-residency, no-training and audit controls a regulated buyer expects from Google Cloud.
 
-**Categories** — [[enterprise-ai-assistant]] (primary), [[entitlement-aware-rag]]
+**Categories** — [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) (primary), [entitlement-aware-rag](../categories/entitlement-aware-rag.md)
 
 > **Naming / rebrand (2025-10-09):** Google folded **Google Agentspace** into **Gemini Enterprise** (announced around the "Gemini at Work"/Google Cloud event). The Agentspace URL now redirects to Gemini Enterprise; existing Agentspace customers continue uninterrupted, but **Agentspace is closed to new subscriptions from 2025-12-31**. "Agentspace" survives as the underlying agent-platform/orchestration tech ("Gemini Enterprise Agent Platform" in the docs). Sold as **Gemini Enterprise Standard** and **Gemini Enterprise Plus**, with **NotebookLM Enterprise** as a related SKU. Distinguish from **Gemini for Google Workspace** (the assistant embedded in Gmail/Docs/Meet) and the consumer **Gemini app** — governance behavior differs by surface (see Vault note below).
 
@@ -45,7 +45,7 @@ For a hedge fund the draw is that it sits natively on top of Google Workspace if
 
 ## Where it sits in the stack
 
-UX layer — the [[enterprise-ai-assistant]] people interact with — riding on a [[entitlement-aware-rag]] retrieval layer. It pulls from [[google-drive]] / Workspace and other [[content-sources]]. Lethal-trifecta role: its main job is to control the **sensitive-data** leg — retrieval is permission-filtered so the model never grounds on data the user can't see. It does **not** by itself break the untrusted-input or egress legs; pair it with [[ai-runtime-security]] / [[ai-access-governance]] for those. Trust zone: handles green/yellow-zone enterprise data under enterprise controls.
+UX layer — the [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) people interact with — riding on a [entitlement-aware-rag](../categories/entitlement-aware-rag.md) retrieval layer. It pulls from [google-drive](google-drive.md) / Workspace and other [content-sources](../categories/content-sources.md). Lethal-trifecta role: its main job is to control the **sensitive-data** leg — retrieval is permission-filtered so the model never grounds on data the user can't see. It does **not** by itself break the untrusted-input or egress legs; pair it with [ai-runtime-security](../categories/ai-runtime-security.md) / [ai-access-governance](../categories/ai-access-governance.md) for those. Trust zone: handles green/yellow-zone enterprise data under enterprise controls.
 
 ## Deployment & architecture
 
@@ -57,7 +57,7 @@ UX layer — the [[enterprise-ai-assistant]] people interact with — riding on 
 
 ## Positioning & differentiators
 
-- **Native to Google Workspace.** If your firm runs on Gmail/Drive, the entitlement-aware grounding is largely "free" because it reuses Workspace permissions — analogous to [[microsoft-365-copilot]] on M365 + [[microsoft-graph]]. The cross-cloud parallel is [[glean]] (best-of-breed connectors/search) and [[openai-chatgpt-enterprise]] / [[anthropic-claude-enterprise]] (model-led assistants with thinner native connector graphs).
+- **Native to Google Workspace.** If your firm runs on Gmail/Drive, the entitlement-aware grounding is largely "free" because it reuses Workspace permissions — analogous to [microsoft-365-copilot](microsoft-365-copilot.md) on M365 + [microsoft-graph](microsoft-graph.md). The cross-cloud parallel is [glean](glean.md) (best-of-breed connectors/search) and [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md) / [anthropic-claude-enterprise](anthropic-claude-enterprise.md) (model-led assistants with thinner native connector graphs).
 - **Agent platform inheritance.** Carries Agentspace's agent builder/orchestration, which positions it more as a build-and-run agent platform than a pure chatbot.
 - **Cloud-grade governance.** Data residency zones, no-training commitments, broad certifications, Vault/eDiscovery integration — see below.
 
@@ -67,7 +67,7 @@ UX layer — the [[enterprise-ai-assistant]] people interact with — riding on 
 - **Data residency (DRZ).** At-rest residency in multi-regions `us` and `eu`, plus in-country `ca` (Canada) and `in` (India) (GA with allowlist). ML processing (training/prediction/tuning) stays in the `us` or `eu` multi-region matching the regional API used. Caveat: "Grounding with Google Search" and "dynamic facets" run only in the `global` region, where DRZ/CMEK/Access Transparency don't apply — so residency holds only if you avoid those features.
 - **Encryption:** CMEK via Cloud KMS (US/EU multi-region APIs only; not in in-country or `global` regions).
 - **Certifications (Gemini Enterprise Standard/Plus + NotebookLM Enterprise):** SOC 1/2/3, ISO/IEC 27001, 27017, 27018, 27701, PCI DSS, BSI C5:2020, HIPAA, FedRAMP; **ISO/IEC 42001** (AI management system) awarded May 2025 to Gemini for Google Cloud / Vertex AI Agents / Code Assist. (Confirm exact FedRAMP level and per-SKU scope on Google Cloud's compliance pages before relying on it.) GDPR addressed via the CDPA/DPA.
-- **Vault / eDiscovery / retention (comms surveillance angle).** Google Vault supports the **Gemini app** for search/export of prompts & responses (since 2025-02), and as of **2026-06** supports **retention rules and litigation holds** for the Gemini app (Vault holds take precedence over admin/user settings). Important caveat: this covers the standalone Gemini app; "Gemini in Workspace" features embedded in other apps (e.g., "Help me write" in Gmail/Docs) are **not** retained the same way — a gap to probe if you need full comms-surveillance capture ([[comms-surveillance]]).
+- **Vault / eDiscovery / retention (comms surveillance angle).** Google Vault supports the **Gemini app** for search/export of prompts & responses (since 2025-02), and as of **2026-06** supports **retention rules and litigation holds** for the Gemini app (Vault holds take precedence over admin/user settings). Important caveat: this covers the standalone Gemini app; "Gemini in Workspace" features embedded in other apps (e.g., "Help me write" in Gmail/Docs) are **not** retained the same way — a gap to probe if you need full comms-surveillance capture ([comms-surveillance](../categories/comms-surveillance.md)).
 
 ## Ownership, funding & M&A
 
@@ -75,14 +75,14 @@ UX layer — the [[enterprise-ai-assistant]] people interact with — riding on 
 
 ## CTO / hedge-fund lens
 
-- **Day-1** for the assistant/RAG slot **if you're a Google Workspace shop** — the entitlement-aware grounding reuses permissions you already manage, which is the hard part of safe RAG. If you're on Microsoft, [[microsoft-365-copilot]] is the natural default and this becomes a comparison candidate rather than the obvious pick.
-- **Governance fit is strong:** no-training, residency zones, CMEK, broad certs incl. ISO 42001, and Vault-based eDiscovery/holds map well onto regulated/asset-manager requirements. ISO 42001 + model documentation can feed an SR 11-7 / model-risk file, though Gemini Enterprise is an *assistant*, not a model-risk governance tool ([[ai-governance-platform]]).
-- **Watch-outs:** (1) residency only holds if you avoid `global`-only features like Google Search grounding; (2) Vault capture gaps for embedded "Gemini in Workspace" actions vs the standalone app — material for MNPI/comms surveillance; (3) you still need [[ai-runtime-security]] / [[ai-access-governance]] for prompt-injection and shadow-AI — this product governs *its own* data access, not all AI traffic.
+- **Day-1** for the assistant/RAG slot **if you're a Google Workspace shop** — the entitlement-aware grounding reuses permissions you already manage, which is the hard part of safe RAG. If you're on Microsoft, [microsoft-365-copilot](microsoft-365-copilot.md) is the natural default and this becomes a comparison candidate rather than the obvious pick.
+- **Governance fit is strong:** no-training, residency zones, CMEK, broad certs incl. ISO 42001, and Vault-based eDiscovery/holds map well onto regulated/asset-manager requirements. ISO 42001 + model documentation can feed an SR 11-7 / model-risk file, though Gemini Enterprise is an *assistant*, not a model-risk governance tool ([ai-governance-platform](../categories/ai-governance-platform.md)).
+- **Watch-outs:** (1) residency only holds if you avoid `global`-only features like Google Search grounding; (2) Vault capture gaps for embedded "Gemini in Workspace" actions vs the standalone app — material for MNPI/comms surveillance; (3) you still need [ai-runtime-security](../categories/ai-runtime-security.md) / [ai-access-governance](../categories/ai-access-governance.md) for prompt-injection and shadow-AI — this product governs *its own* data access, not all AI traffic.
 - **Fit:** mid-to-large regulated shops already on Google Workspace/Cloud. A small Microsoft-centric fund gets less value.
 
 ## Competitors / alternatives
 
-[[microsoft-365-copilot]] · [[openai-chatgpt-enterprise]] · [[anthropic-claude-enterprise]] · [[glean]] · [[amazon-q-business]] · [[perplexity-enterprise]]. On the retrieval/entitlement axis specifically: [[glean]], [[microsoft-graph]], [[knostic]].
+[microsoft-365-copilot](microsoft-365-copilot.md) · [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md) · [anthropic-claude-enterprise](anthropic-claude-enterprise.md) · [glean](glean.md) · [amazon-q-business](amazon-q-business.md) · [perplexity-enterprise](perplexity-enterprise.md). On the retrieval/entitlement axis specifically: [glean](glean.md), [microsoft-graph](microsoft-graph.md), [knostic](knostic.md).
 
 ## Open questions / to verify
 - Exact **FedRAMP level** (High vs Moderate) and which controls/certs attach to **Gemini Enterprise Standard vs Plus vs NotebookLM Enterprise** specifically (vs Gemini for Google Cloud broadly).

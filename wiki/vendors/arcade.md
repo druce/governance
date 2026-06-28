@@ -39,8 +39,8 @@ The pitch (their words): "Agents fail because nobody can prove that this agent, 
 
 ## Where it sits in the stack
 
-- **Primary category:** [[tool-identity-integration]] — Arcade is fundamentally about *non-human / delegated identity*: binding an agent's tool call to an authenticated end-user's OAuth grant and scopes. (Frontmatter keeps `mcp-gateway` first for registry continuity, but the substance is tool-identity; see History.)
-- **Secondary:** [[mcp-gateway]] — Arcade authored the MCP authorization spec (a marketing/credibility claim it says Anthropic adopted) and hosts/serves MCP tools to clients like Cursor, Claude Desktop and VS Code, so it functions as an MCP runtime/gateway too.
+- **Primary category:** [tool-identity-integration](../categories/tool-identity-integration.md) — Arcade is fundamentally about *non-human / delegated identity*: binding an agent's tool call to an authenticated end-user's OAuth grant and scopes. (Frontmatter keeps `mcp-gateway` first for registry continuity, but the substance is tool-identity; see History.)
+- **Secondary:** [mcp-gateway](../categories/mcp-gateway.md) — Arcade authored the MCP authorization spec (a marketing/credibility claim it says Anthropic adopted) and hosts/serves MCP tools to clients like Cursor, Claude Desktop and VS Code, so it functions as an MCP runtime/gateway too.
 - **Layer:** model-prompt (it mediates what the model is allowed to *invoke*).
 - **Lethal-trifecta role:** controls the **egress** leg (the agent can only take actions it's been explicitly, user-scoped authorized to take) and guards **sensitive-data** access (tokens are scoped and never exposed to the model). It does *not* inspect untrusted input — pair it with a prompt-injection / runtime-security layer for that.
 - **Trust zone:** sits at the boundary between the agent (yellow/untrusted reasoning) and external SaaS systems (where the real data and side effects live).
@@ -56,9 +56,9 @@ The pitch (their words): "Agents fail because nobody can prove that this agent, 
 
 Arcade's distinctive angle is **per-user delegated authorization at the moment of action**, not just a catalog of tool connectors. Compared with neighbors:
 
-- vs [[composio]] and [[stackone]] — these are also "many pre-built tool integrations for agents" platforms; Composio overlaps most directly. Arcade leans harder on the auth/identity story and self-host/air-gap for regulated shops.
-- vs [[descope]], [[stytch]], [[workos]] — these are auth/CIAM vendors that have added agent/MCP auth primitives; they give you the OAuth/token machinery but you assemble the tools. Arcade bundles the token machinery *with* a large pre-built tool library and execution runtime. WorkOS itself published an explainer on Arcade, framing it as an LLM tool-calling platform.
-- vs [[mintmcp]], [[obot]], [[agentgateway]], [[natoma]] — these are MCP-gateway / MCP-management plays (hosting, proxying, governing MCP servers). Arcade competes on the MCP-runtime side but its center of gravity is authorized *execution*, not just gatewaying traffic.
+- vs [composio](composio.md) and [stackone](stackone.md) — these are also "many pre-built tool integrations for agents" platforms; Composio overlaps most directly. Arcade leans harder on the auth/identity story and self-host/air-gap for regulated shops.
+- vs [descope](descope.md), [stytch](stytch.md), [workos](workos.md) — these are auth/CIAM vendors that have added agent/MCP auth primitives; they give you the OAuth/token machinery but you assemble the tools. Arcade bundles the token machinery *with* a large pre-built tool library and execution runtime. WorkOS itself published an explainer on Arcade, framing it as an LLM tool-calling platform.
+- vs [mintmcp](mintmcp.md), [obot](obot.md), [agentgateway](agentgateway.md), [natoma](natoma.md) — these are MCP-gateway / MCP-management plays (hosting, proxying, governing MCP servers). Arcade competes on the MCP-runtime side but its center of gravity is authorized *execution*, not just gatewaying traffic.
 
 The "thousands of pre-built tools" (8,000+ tool count cited at Series A) and "authored the MCP auth spec" are vendor/marketing claims — credible but not independently audited here.
 
@@ -80,7 +80,7 @@ The "thousands of pre-built tools" (8,000+ tool count cited at Series A) and "au
 
 ## Competitors / alternatives
 
-[[composio]], [[stackone]], [[descope]], [[stytch]], [[workos]], [[mintmcp]], [[obot]], [[agentgateway]], [[natoma]]
+[composio](composio.md), [stackone](stackone.md), [descope](descope.md), [stytch](stytch.md), [workos](workos.md), [mintmcp](mintmcp.md), [obot](obot.md), [agentgateway](agentgateway.md), [natoma](natoma.md)
 
 ## Open questions / to verify
 

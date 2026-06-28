@@ -27,9 +27,9 @@ tags: [ai-guardrails, prompt-injection, aidr, crowdstrike]
 
 # Pangea
 
-> Primary category: [[ai-red-teaming]] (AI guardrails). Also [[ai-runtime-security]]. **Acquired by [[crowdstrike]]** (2025).
+> Primary category: [ai-red-teaming](../categories/ai-red-teaming.md) (AI guardrails). Also [ai-runtime-security](../categories/ai-runtime-security.md). **Acquired by [crowdstrike](crowdstrike.md)** (2025).
 
-**One-liner** — A developer-first "AI guardrail" platform — prompt-injection blocking, AI DLP, and policy guardrails delivered as APIs/SDK — now the prompt-layer core of [[crowdstrike]]'s AI Detection and Response (AIDR).
+**One-liner** — A developer-first "AI guardrail" platform — prompt-injection blocking, AI DLP, and policy guardrails delivered as APIs/SDK — now the prompt-layer core of [crowdstrike](crowdstrike.md)'s AI Detection and Response (AIDR).
 
 ## What it does
 Pangea provides a set of composable **AI security guardrails** that developers drop into AI applications or AI gateways: prompt-injection detection/blocking, sensitive-data redaction (AI DLP), malicious-content and PII filters, and policy enforcement on prompts and responses. It also protects workforce AI use (visibility + guardrails on how employees use AI). The pitch is "ship secure AI apps fast" via a few lines of code rather than standing up a separate inline appliance.
@@ -37,24 +37,24 @@ Pangea provides a set of composable **AI security guardrails** that developers d
 (Pangea began life in 2021 as a broader developer-first security-services API platform — auth, audit logging, secure-by-design building blocks — and pivoted to AI guardrails as that market emerged.)
 
 ## Where it sits in the stack
-Model/prompt layer. It breaks the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta, sitting in the yellow (AI application) trust zone. Functionally it overlaps [[ai-runtime-security]] (AI firewall) and [[ai-red-teaming]]/guardrails; it is more an embeddable guardrail toolkit than a standalone inline proxy.
+Model/prompt layer. It breaks the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta, sitting in the yellow (AI application) trust zone. Functionally it overlaps [ai-runtime-security](../categories/ai-runtime-security.md) (AI firewall) and [ai-red-teaming](../categories/ai-red-teaming.md)/guardrails; it is more an embeddable guardrail toolkit than a standalone inline proxy.
 
 ## Deployment & architecture
-API/SDK-first, cloud-delivered. Guardrails are invoked from application code or fronted by an AI gateway. Vendor claims prompt-injection blocking at ~99% efficacy and sub-30ms latency (marketing — unverified). Post-acquisition, capabilities are being folded into [[crowdstrike]] Falcon as AIDR.
+API/SDK-first, cloud-delivered. Guardrails are invoked from application code or fronted by an AI gateway. Vendor claims prompt-injection blocking at ~99% efficacy and sub-30ms latency (marketing — unverified). Post-acquisition, capabilities are being folded into [crowdstrike](crowdstrike.md) Falcon as AIDR.
 
 ## Positioning & differentiators
-- Developer-/API-first guardrails vs. inline-proxy AI firewalls like [[witnessai]] or [[prisma-airs]].
+- Developer-/API-first guardrails vs. inline-proxy AI firewalls like [witnessai](witnessai.md) or [prisma-airs](prisma-airs.md).
 - Founders Oliver Friedrichs and Sourabh Satish previously built Phantom Cyber (SOAR, acquired by Splunk 2018) — a security-operations pedigree that fits CrowdStrike's SOC focus.
-- Nearest neighbors: [[lakera]], [[prompt-security]], [[hiddenlayer]], [[enkrypt-ai]], [[pillar-security]], [[aim-security]] in the guardrails/AI-runtime space.
+- Nearest neighbors: [lakera](lakera.md), [prompt-security](prompt-security.md), [hiddenlayer](hiddenlayer.md), [enkrypt-ai](enkrypt-ai.md), [pillar-security](pillar-security.md), [aim-security](aim-security.md) in the guardrails/AI-runtime space.
 
 ## Ownership, funding & M&A
 **Seed flag "acq by CrowdStrike" — CONFIRMED.** CrowdStrike announced the acquisition on 2025-09-16 at Fal.Con 2025 and announced completion later that month (~2025-09-26). Reported deal value ~$260M (BankInfoSecurity; not officially disclosed). Pre-acquisition Pangea was independent, ~$51M raised, including a $26M Series B (Nov 2022) led by GV with Decibel and Okta Ventures. Confidence: high on the acquisition; medium on exact price/close date (press-reported).
 
 ## CTO / hedge-fund lens
-Day-2. Relevant only if you are *building* AI applications and want embeddable guardrails, or if you're a CrowdStrike shop adopting AIDR. A fund that only *consumes* SaaS AI assistants would get more from an [[ai-access-governance]] CASB-for-AI tool than from a developer guardrail SDK. As a now-CrowdStrike product, evaluate it as part of the Falcon platform rather than a standalone purchase.
+Day-2. Relevant only if you are *building* AI applications and want embeddable guardrails, or if you're a CrowdStrike shop adopting AIDR. A fund that only *consumes* SaaS AI assistants would get more from an [ai-access-governance](../categories/ai-access-governance.md) CASB-for-AI tool than from a developer guardrail SDK. As a now-CrowdStrike product, evaluate it as part of the Falcon platform rather than a standalone purchase.
 
 ## Competitors / alternatives
-[[lakera]], [[prompt-security]] (now [[sentinelone]]), [[hiddenlayer]], [[prisma-airs]], [[cisco-ai-defense]], [[enkrypt-ai]], [[witnessai]].
+[lakera](lakera.md), [prompt-security](prompt-security.md) (now [sentinelone](sentinelone.md)), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md), [enkrypt-ai](enkrypt-ai.md), [witnessai](witnessai.md).
 
 ## Open questions / to verify
 - Exact close date and final price (press-reported ~$260M).

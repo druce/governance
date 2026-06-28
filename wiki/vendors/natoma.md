@@ -29,19 +29,19 @@ tags: [mcp, ai-agents, non-human-identity, agentic]
 
 > **One-liner** — An enterprise Model Context Protocol (MCP) governance gateway that gives AI agents identity-scoped, audited, policy-controlled access to enterprise tools and data — being acquired by Snowflake.
 
-**Categories** — [[non-human-identity]] (primary), [[mcp-gateway]]
+**Categories** — [non-human-identity](../categories/non-human-identity.md) (primary), [mcp-gateway](../categories/mcp-gateway.md)
 
 ## What it does
 Natoma sits between AI clients/agents and the enterprise systems they want to call (SaaS apps, databases, APIs, cloud, on-prem). It standardizes those connections through MCP, then layers identity, authorization, credential management, and audit on top so an agent acts with scoped, governed permissions rather than a broad static key. Marketing positions it as the "control and governance fabric" for agent-to-tool connections: a verified MCP server library, role/intent-based tool bundles ("Profiles"), attribute-based authorization, managed-or-BYO credentials, full audit trails, and shadow-AI discovery.
 
 ## Where it sits in the stack
-Foundation layer, at the intersection of [[non-human-identity]] (governing the agent's identity and entitlements) and [[mcp-gateway]] (the runtime broker for MCP tool calls). Lethal-trifecta role: it primarily constrains the **egress / action** leg (what an agent is allowed to do and reach) and helps protect the **sensitive-data** leg by scoping tool/data access per identity and logging it. It does not itself inspect prompts for untrusted input — that's [[ai-runtime-security]] territory.
+Foundation layer, at the intersection of [non-human-identity](../categories/non-human-identity.md) (governing the agent's identity and entitlements) and [mcp-gateway](../categories/mcp-gateway.md) (the runtime broker for MCP tool calls). Lethal-trifecta role: it primarily constrains the **egress / action** leg (what an agent is allowed to do and reach) and helps protect the **sensitive-data** leg by scoping tool/data access per identity and logging it. It does not itself inspect prompts for untrusted input — that's [ai-runtime-security](../categories/ai-runtime-security.md) territory.
 
 ## Deployment & architecture
 Hybrid: cloud-hosted, VPC, on-premises, and desktop (for local tool access). Acts as a gateway/broker for MCP servers. Integrations called out: SIEM, EDR, MDM; identity-aware access controls; credential vaulting (managed or bring-your-own). SOC2 certified; GDPR/CCPA compliant per vendor.
 
 ## Positioning & differentiators
-Natoma is an MCP-native entrant (founded 2024, as MCP itself was emerging) rather than a legacy NHI/secrets vendor extending into agents. Its pitch is governance *at the MCP layer* — a verified server registry plus identity-aware, attribute-based authorization on every tool call — which differentiates it from secrets-lifecycle players like [[entro-security]] and [[clutch-security]] and from pure MCP brokers like [[mintmcp]], [[obot]], or [[arcade]]. Against [[mcp-gateway]] peers it leans harder on identity governance and shadow-AI discovery; against [[non-human-identity]] peers it leans harder on the agent/MCP runtime.
+Natoma is an MCP-native entrant (founded 2024, as MCP itself was emerging) rather than a legacy NHI/secrets vendor extending into agents. Its pitch is governance *at the MCP layer* — a verified server registry plus identity-aware, attribute-based authorization on every tool call — which differentiates it from secrets-lifecycle players like [entro-security](entro-security.md) and [clutch-security](clutch-security.md) and from pure MCP brokers like [mintmcp](mintmcp.md), [obot](obot.md), or [arcade](arcade.md). Against [mcp-gateway](../categories/mcp-gateway.md) peers it leans harder on identity governance and shadow-AI discovery; against [non-human-identity](../categories/non-human-identity.md) peers it leans harder on the agent/MCP runtime.
 
 ## Ownership, funding & M&A
 - **Independent funding:** $7M seed, May 2025, led by Index Ventures and Greylock. Founder/CEO Pratyus Patnaik (previously founded atSpoke, acquired by Okta in 2021; then senior director at Okta). Founding team drawn from Okta, Microsoft, Google, Salesforce.
@@ -51,7 +51,7 @@ Natoma is an MCP-native entrant (founded 2024, as MCP itself was emerging) rathe
 Day-2 for most funds: relevant once you are actually deploying internal AI agents that call live enterprise systems and you need per-agent entitlements and an audit trail rather than shared API keys. The Snowflake acquisition matters two ways: (1) if you are a Snowflake shop, this likely becomes a native governance feature rather than a separate buy; (2) if you are not, Natoma's roadmap and standalone availability now carry integration-uncertainty risk. No direct SR 11-7 / model-risk role, but the audit trail and access scoping support operational-risk and access-control evidence for agentic workflows.
 
 ## Competitors / alternatives
-[[mintmcp]], [[obot]], [[arcade]], [[ibm-contextforge]], [[pomerium]] (MCP gateways); [[entro-security]], [[clutch-security]], [[token-security]], [[oasis-security]], [[aembit]] (non-human / agent identity); [[astrix-security]].
+[mintmcp](mintmcp.md), [obot](obot.md), [arcade](arcade.md), [ibm-contextforge](ibm-contextforge.md), [pomerium](pomerium.md) (MCP gateways); [entro-security](entro-security.md), [clutch-security](clutch-security.md), [token-security](token-security.md), [oasis-security](oasis-security.md), [aembit](aembit.md) (non-human / agent identity); [astrix-security](astrix-security.md).
 
 ## Open questions / to verify
 - Deal close date and whether Natoma remains available standalone post-acquisition.

@@ -32,7 +32,7 @@ organization's AI systems, runs technical risk/bias tests, and maps them to regu
 (EU AI Act, NIST AI RMF, ISO 42001, NYC Local Law 144); known originally for independent
 bias audits of hiring algorithms.
 
-**Categories** — [[ai-governance-platform]]
+**Categories** — [ai-governance-platform](../categories/ai-governance-platform.md)
 
 ## What it does
 
@@ -48,7 +48,7 @@ requires. It has since broadened into a full governance/registry platform.
 
 ## Where it sits in the stack
 
-This is a **[[ai-governance-platform]]** play at the **governance layer** — the system-of-record
+This is a **[ai-governance-platform](../categories/ai-governance-platform.md)** play at the **governance layer** — the system-of-record
 and policy/oversight tier that sits *above* the runtime data path, not in it. Its job is
 inventory, documentation, risk assessment, attestation and regulatory mapping, not inline
 traffic inspection.
@@ -75,15 +75,15 @@ algorithm-auditing work at UCL and leans on standards credibility (its solutions
 **OECD Trustworthy AI Toolkit**; it claims Observer Status with the **Council of Europe
 Committee on AI** — vendor claim). Versus its neighbors:
 
-- **[[credo-ai]]** — closest competitor; both are governance/registry + framework-mapping
+- **[credo-ai](credo-ai.md)** — closest competitor; both are governance/registry + framework-mapping
   platforms. Credo AI is more policy/governance-workflow led; Holistic AI carries more
   technical-testing and formal-audit heritage.
-- **[[modelop]]** — more focused on **operational model governance / ModelOps** for production
+- **[modelop](modelop.md)** — more focused on **operational model governance / ModelOps** for production
   model fleets (closer to SR 11-7 model inventory and monitoring in banks).
-- **[[ibm-watsonx-governance]]** — incumbent/stack play bundled with IBM's AI platform; heavier,
+- **[ibm-watsonx-governance](ibm-watsonx-governance.md)** — incumbent/stack play bundled with IBM's AI platform; heavier,
   enterprise-IT anchored.
-- **[[monitaur]]** — model-risk/assurance focused, strong in insurance/regulated ML.
-- **[[fairly-ai]]** — overlapping AI GRC / compliance-automation focus, smaller.
+- **[monitaur](monitaur.md)** — model-risk/assurance focused, strong in insurance/regulated ML.
+- **[fairly-ai](fairly-ai.md)** — overlapping AI GRC / compliance-automation focus, smaller.
 
 Holistic AI's bias-audit lineage makes it relatively strong on **fairness/EEO** use cases
 (hiring) where others are thinner.
@@ -117,7 +117,7 @@ Holistic AI's bias-audit lineage makes it relatively strong on **fairness/EEO** 
   governance registry and risk-assessment workflow can *support* that documentation discipline,
   but it is built around **AI/ML system governance and regulatory mapping** (EU AI Act, NIST AI
   RMF, ISO 42001), not SR 11-7 model-validation methodology specifically. Funds that already run
-  a model-risk function ([[modelop]], [[monitaur]] are closer matches) will find more overlap
+  a model-risk function ([modelop](modelop.md), [monitaur](monitaur.md) are closer matches) will find more overlap
   there.
 - **When you'd actually need it:** if the fund builds or sells AI-driven HR/screening tools
   (NYC LL144 exposure), has material **EU AI Act** obligations, or wants a single inventory +
@@ -125,7 +125,7 @@ Holistic AI's bias-audit lineage makes it relatively strong on **fairness/EEO** 
 
 ## Competitors / alternatives
 
-[[credo-ai]] · [[ibm-watsonx-governance]] · [[modelop]] · [[monitaur]] · [[fairly-ai]]
+[credo-ai](credo-ai.md) · [ibm-watsonx-governance](ibm-watsonx-governance.md) · [modelop](modelop.md) · [monitaur](monitaur.md) · [fairly-ai](fairly-ai.md)
 
 ## Open questions / to verify
 - **Exact funding total and latest round** — needs a primary press release; aggregator figures

@@ -27,7 +27,7 @@ tags: [identity, idp, sso, mfa, microsoft]
 
 # Microsoft Entra ID
 
-> Researched 2026-06-28. Primary category: [[identity-access]].
+> Researched 2026-06-28. Primary category: [identity-access](../categories/identity-access.md).
 
 **One-liner** — Microsoft's cloud identity provider (the former Azure Active Directory): the SSO/MFA/Conditional-Access front door for everyone already living in Microsoft 365 and Azure.
 
@@ -37,13 +37,13 @@ Entra ID is the directory and identity-provider (IdP) layer that authenticates u
 It was renamed from **Azure Active Directory (Azure AD)** to Microsoft Entra ID in July 2023 — a rename only, no feature change. "Microsoft Entra" is the broader family: Entra ID (the IdP), Entra ID Governance (IGA), Entra Permissions Management (CIEM), Entra Verified ID, Entra Internet/Private Access (SSE), and newer Entra Agent ID for agent identities.
 
 ## Where it sits in the stack
-The [[identity-access]] foundation — the human (and increasingly agent) front door. In lethal-trifecta terms it governs the **sensitive-data** leg by deciding who/what is authenticated and authorized before anything reaches data or models. It's the IdP that AI gateways, [[entitlement-aware-rag]], and downstream tools federate against.
+The [identity-access](../categories/identity-access.md) foundation — the human (and increasingly agent) front door. In lethal-trifecta terms it governs the **sensitive-data** leg by deciding who/what is authenticated and authorized before anything reaches data or models. It's the IdP that AI gateways, [entitlement-aware-rag](../categories/entitlement-aware-rag.md), and downstream tools federate against.
 
 ## Deployment & architecture
-SaaS, multi-tenant, delivered as part of Azure / Microsoft 365. Standards-based (SAML, OIDC, OAuth2, SCIM) so it federates to virtually any app. Integrates natively with [[microsoft-purview]], [[microsoft-sentinel]], [[microsoft-defender]], Intune, and Microsoft 365 Copilot. Licensed in tiers (Free, P1, P2); governance and CIEM are add-ons.
+SaaS, multi-tenant, delivered as part of Azure / Microsoft 365. Standards-based (SAML, OIDC, OAuth2, SCIM) so it federates to virtually any app. Integrates natively with [microsoft-purview](microsoft-purview.md), [microsoft-sentinel](microsoft-sentinel.md), [microsoft-defender](microsoft-defender.md), Intune, and Microsoft 365 Copilot. Licensed in tiers (Free, P1, P2); governance and CIEM are add-ons.
 
 ## Positioning & differentiators
-Default-by-bundling: if you pay for Microsoft 365 you already have Entra ID, which makes it the path of least resistance versus standalone [[okta]] or [[ping-identity]]. Strongest where the estate is Microsoft-centric (Windows, Office, Azure). Weaker as a neutral, best-of-breed IdP for heterogeneous or heavy-CIAM environments, where Okta/Auth0 or Ping are often preferred. Governance (Entra ID Governance) is newer and lighter than dedicated [[sailpoint]]/[[saviynt]].
+Default-by-bundling: if you pay for Microsoft 365 you already have Entra ID, which makes it the path of least resistance versus standalone [okta](okta.md) or [ping-identity](ping-identity.md). Strongest where the estate is Microsoft-centric (Windows, Office, Azure). Weaker as a neutral, best-of-breed IdP for heterogeneous or heavy-CIAM environments, where Okta/Auth0 or Ping are often preferred. Governance (Entra ID Governance) is newer and lighter than dedicated [sailpoint](sailpoint.md)/[saviynt](saviynt.md).
 
 ## Ownership, funding & M&A
 Microsoft product; not separately funded. Public parent (Nasdaq: MSFT). Ownership confidence high. No M&A relevant to the unit itself.
@@ -52,7 +52,7 @@ Microsoft product; not separately funded. Public parent (Nasdaq: MSFT). Ownershi
 **Day-1, and for most funds it's already there.** A hedge fund running Microsoft 365 effectively already owns its IdP — the work is configuration (Conditional Access, MFA, privileged-role protection), not procurement. For AI specifically, Entra is what your AI gateway, Copilot, and RAG layer should authenticate against so access decisions inherit existing entitlements. Bundled cost and tight Microsoft integration usually make it the default; the question is whether you also want best-of-breed governance on top.
 
 ## Competitors / alternatives
-[[okta]], [[ping-identity]]. Governance neighbors: [[sailpoint]], [[saviynt]], [[veza]], [[conductorone]], [[lumos]].
+[okta](okta.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md).
 
 ## Open questions / to verify
 - Exact split of what's licensed P1 vs P2 vs Governance add-on for a given fund's needs (verify at purchase).

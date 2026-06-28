@@ -27,7 +27,7 @@ tags: [identity, visibility, ispm, identity-system-of-record, seed-stage]
 
 # Hydden
 
-> **Researched 2026-06-28.** Primary category: [[identity-governance]].
+> **Researched 2026-06-28.** Primary category: [identity-governance](../categories/identity-governance.md).
 
 **One-liner** — A seed-stage "identity system of record" that builds a single data layer across your IAM, IGA, PAM, and ITDR tools so security teams get one complete view of every identity, account, and privilege.
 
@@ -35,13 +35,13 @@ tags: [identity, visibility, ispm, identity-system-of-record, seed-stage]
 Hydden is a visibility/correlation layer, not a full governance suite. The problem it targets: identity data is scattered across the IdP, the IGA tool, the PAM vault, and the ITDR/detection stack, each with its own partial view, so no one can answer "who/what has access to what, everywhere." Hydden ingests from those systems to produce a unified inventory of human and non-human identities, accounts, and privileges across hybrid (cloud + on-prem) infrastructure — without replacing the existing tools. Think of it as the connective tissue / source of truth beneath the identity stack.
 
 ## Where it sits in the stack
-Foundation layer, [[identity-governance]] (closer to the ISPM / identity-visibility end than classic joiner/mover/leaver IGA). It is an overlay on [[microsoft-entra]] / [[okta]], PAM ([[cyberark]]), and IGA ([[sailpoint]], [[saviynt]]). Lethal-trifecta role: none directly — it improves identity hygiene and attack-surface visibility, an input to least-privilege decisions.
+Foundation layer, [identity-governance](../categories/identity-governance.md) (closer to the ISPM / identity-visibility end than classic joiner/mover/leaver IGA). It is an overlay on [microsoft-entra](microsoft-entra.md) / [okta](okta.md), PAM ([cyberark](cyberark.md)), and IGA ([sailpoint](sailpoint.md), [saviynt](saviynt.md)). Lethal-trifecta role: none directly — it improves identity hygiene and attack-surface visibility, an input to least-privilege decisions.
 
 ## Deployment & architecture
 SaaS, integrating via connectors/APIs to IAM, IGA, PAM, and ITDR systems to build a normalized identity data layer. Designed to deploy without disrupting existing infrastructure. (Connector catalog not independently verified.)
 
 ## Positioning & differentiators
-Positions as the "identity system of record" / data layer beneath the stack — adjacent to but distinct from the entitlement-graph players ([[veza]]) and the AI-native IGA rebuilders ([[linx-security]]). Versus [[silverfort]] (which enforces at runtime via an agentless MFA/RAP layer), Hydden is about correlation and visibility, not inline enforcement. Smallest and earliest-stage of the identity vendors in this batch.
+Positions as the "identity system of record" / data layer beneath the stack — adjacent to but distinct from the entitlement-graph players ([veza](veza.md)) and the AI-native IGA rebuilders ([linx-security](linx-security.md)). Versus [silverfort](silverfort.md) (which enforces at runtime via an agentless MFA/RAP layer), Hydden is about correlation and visibility, not inline enforcement. Smallest and earliest-stage of the identity vendors in this batch.
 
 ## Ownership, funding & M&A
 Independent, VC-backed and early. CEO/co-founder Jai Dargan; founded ~2022; HQ New York (founding year/HQ from secondary sources — the funding release names only the CEO). $4.4M seed announced 2024-09-17, led by Access Venture Partners, with Lockstep (CISOs Rinki Sethi & Lucas Moody), Service Provider Capital, and angels (Andy Grolnick, Paul Trulove). No M&A. Confidence high on the seed; medium on founding-year/HQ.
@@ -50,7 +50,7 @@ Independent, VC-backed and early. CEO/co-founder Jai Dargan; founded ~2022; HQ N
 Day-2, and likely **too early** for most funds. The category problem (fragmented identity visibility) is real, but a $4.4M seed-stage company is a procurement risk for a regulated shop — small, unproven, single round. Of note mainly to large enterprises with genuinely sprawling, multi-tool identity estates. Most hedge funds get adequate identity visibility from Entra/Okta plus their existing IGA/PAM. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[[veza]], [[linx-security]], [[silverfort]], [[sailpoint]], [[saviynt]], [[conductorone]].
+[veza](veza.md), [linx-security](linx-security.md), [silverfort](silverfort.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md), [conductorone](conductorone.md).
 
 ## Open questions / to verify
 - Founding year and HQ (confirm against an authoritative primary source — funding release omits both).

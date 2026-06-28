@@ -27,7 +27,7 @@ tags: [malicious-packages, npm, pypi, supply-chain-attacks, typosquatting, sca]
 
 # Socket
 
-> Primary category: [[software-supply-chain]].
+> Primary category: [software-supply-chain](../categories/software-supply-chain.md).
 
 **One-liner** — Supply-chain security that catches *malicious* open-source packages — backdoors, typosquats, install-script abuse, obfuscated code — before they land in your codebase, rather than just flagging known CVEs.
 
@@ -37,7 +37,7 @@ Socket inspects the actual behavior and metadata of open-source packages (npm, P
 
 ## Where it sits in the stack
 
-[[software-supply-chain]], foundation layer. Relevance to **AI-generated code**: this is exactly the **untrusted-input** vector that AI coding assistants amplify. LLMs hallucinate plausible-but-nonexistent package names ("slopsquatting"), which attackers pre-register with malware; LLMs also confidently suggest installing obscure packages. Socket's behavioral, malicious-package focus is the control aimed at that threat — complementary to CVE scanners like [[snyk]] and [[semgrep]], which would not flag a brand-new malicious package.
+[software-supply-chain](../categories/software-supply-chain.md), foundation layer. Relevance to **AI-generated code**: this is exactly the **untrusted-input** vector that AI coding assistants amplify. LLMs hallucinate plausible-but-nonexistent package names ("slopsquatting"), which attackers pre-register with malware; LLMs also confidently suggest installing obscure packages. Socket's behavioral, malicious-package focus is the control aimed at that threat — complementary to CVE scanners like [snyk](snyk.md) and [semgrep](semgrep.md), which would not flag a brand-new malicious package.
 
 ## Deployment & architecture
 
@@ -45,7 +45,7 @@ SaaS. Primary surface is a **GitHub App** that posts pull-request comments/alert
 
 ## Positioning & differentiators
 
-The category leader for **malicious-package / active-supply-chain-attack detection**, distinct from the known-CVE SCA done by [[snyk]], [[semgrep]], and [[endor-labs]]. Where those answer "does this dependency have a published vulnerability?", Socket answers "is this dependency *trying to attack me*?" Founder/CEO Feross Aboukhadijeh is a well-known open-source author (WebTorrent, StandardJS), which underpins its credibility and ecosystem reach. Best used **alongside** a CVE scanner, not instead of one. Versus [[aikido-security]] (which bundles many scanner types for SMBs), Socket is the specialist on the malicious-package leg.
+The category leader for **malicious-package / active-supply-chain-attack detection**, distinct from the known-CVE SCA done by [snyk](snyk.md), [semgrep](semgrep.md), and [endor-labs](endor-labs.md). Where those answer "does this dependency have a published vulnerability?", Socket answers "is this dependency *trying to attack me*?" Founder/CEO Feross Aboukhadijeh is a well-known open-source author (WebTorrent, StandardJS), which underpins its credibility and ecosystem reach. Best used **alongside** a CVE scanner, not instead of one. Versus [aikido-security](aikido-security.md) (which bundles many scanner types for SMBs), Socket is the specialist on the malicious-package leg.
 
 ## Ownership, funding & M&A
 
@@ -53,11 +53,11 @@ Independent, private, venture-backed. Founded ~2020; HQ San Francisco; founder/C
 
 ## CTO / hedge-fund lens
 
-**Day-2 baseline, Day-1 if your devs ship AI-generated code** — and arguably the single highest-leverage add precisely because AI assistants increase the odds of pulling in a hallucinated or malicious package. It is cheap to deploy (a GitHub App on your repos) and low-friction, so even a small fund (sub-50 eng) can adopt it. The recommended posture is **Socket for malicious packages + [[snyk]] or [[semgrep]] for known CVEs and SAST** — they cover different halves of the supply-chain problem. Model-risk relevance is light/indirect: it doesn't touch SR 11-7 model governance, but it directly mitigates a fast-growing AI-coding-era attack surface.
+**Day-2 baseline, Day-1 if your devs ship AI-generated code** — and arguably the single highest-leverage add precisely because AI assistants increase the odds of pulling in a hallucinated or malicious package. It is cheap to deploy (a GitHub App on your repos) and low-friction, so even a small fund (sub-50 eng) can adopt it. The recommended posture is **Socket for malicious packages + [snyk](snyk.md) or [semgrep](semgrep.md) for known CVEs and SAST** — they cover different halves of the supply-chain problem. Model-risk relevance is light/indirect: it doesn't touch SR 11-7 model governance, but it directly mitigates a fast-growing AI-coding-era attack surface.
 
 ## Competitors / alternatives
 
-[[snyk]], [[semgrep]], [[endor-labs]], [[aikido-security]]; GitHub Dependabot (CVE-only, different scope; not yet a page).
+[snyk](snyk.md), [semgrep](semgrep.md), [endor-labs](endor-labs.md), [aikido-security](aikido-security.md); GitHub Dependabot (CVE-only, different scope; not yet a page).
 
 ## Open questions / to verify
 

@@ -39,7 +39,7 @@ The job for a buyer: get an accurate, continuously updated map of every SaaS/AI 
 
 ## Where it sits in the stack
 
-Primary category [[sspm]]; also [[browser-security-extension]] (its endpoint/browser agent extends discovery and control to the user) and [[ai-access-governance]] (shadow-AI discovery and OAuth governance). Layer: foundation.
+Primary category [sspm](../categories/sspm.md); also [browser-security-extension](../categories/browser-security-extension.md) (its endpoint/browser agent extends discovery and control to the user) and [ai-access-governance](../categories/ai-access-governance.md) (shadow-AI discovery and OAuth governance). Layer: foundation.
 
 Lethal-trifecta role: mainly **sensitive-data** and **egress** — it limits which third-party SaaS/AI apps can reach corporate data and where OAuth-granted access can send it. It is not an inline prompt/content firewall; it governs the access plane, not model I/O.
 
@@ -49,7 +49,7 @@ SaaS control plane fed by API integrations to IdP (SSO/OAuth logs), email, and S
 
 ## Positioning & differentiators
 
-Known for **identity-based discovery** — using authentication/identity events to find apps that config-scanning SSPMs miss, especially long-tail shadow SaaS and shadow AI. Grip explicitly contrasts itself with config-posture-centric peers like [[appomni]] (Grip marketing: "Posture identifies risk. Governance controls it"). Versus [[nudge-security]] (also OAuth/identity-driven discovery and offboarding) the lines blur; versus [[valence-security]] and [[wing-security]] it leans more on identity signals and the browser last mile. Differentiator claims are vendor marketing pending independent validation.
+Known for **identity-based discovery** — using authentication/identity events to find apps that config-scanning SSPMs miss, especially long-tail shadow SaaS and shadow AI. Grip explicitly contrasts itself with config-posture-centric peers like [appomni](appomni.md) (Grip marketing: "Posture identifies risk. Governance controls it"). Versus [nudge-security](nudge-security.md) (also OAuth/identity-driven discovery and offboarding) the lines blur; versus [valence-security](valence-security.md) and [wing-security](wing-security.md) it leans more on identity signals and the browser last mile. Differentiator claims are vendor marketing pending independent validation.
 
 ## Ownership, funding & M&A
 
@@ -61,7 +61,7 @@ Independent, VC-backed. Founded 2021; HQ Tel Aviv with a Boston, MA US office. T
 
 ## Competitors / alternatives
 
-[[appomni]], [[obsidian-security]], [[valence-security]], [[wing-security]], [[docontrol]], [[reco]], [[nudge-security]].
+[appomni](appomni.md), [obsidian-security](obsidian-security.md), [valence-security](valence-security.md), [wing-security](wing-security.md), [docontrol](docontrol.md), [reco](reco.md), [nudge-security](nudge-security.md).
 
 ## Open questions / to verify
 

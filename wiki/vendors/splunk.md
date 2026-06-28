@@ -27,29 +27,29 @@ tags: [siem, soar, observability, cisco]
 
 # Splunk
 
-> Primary category: [[siem-soc]]. The incumbent SIEM/observability platform, now owned by [[cisco]].
+> Primary category: [siem-soc](../categories/siem-soc.md). The incumbent SIEM/observability platform, now owned by [cisco](cisco.md).
 
 **One-liner** — The market-leading machine-data platform for searching, monitoring and analyzing logs — the SIEM/SOAR and observability backbone many SOCs run on, now Cisco's security/observability flagship.
 
-**What it does** — Ingests and indexes log and telemetry data at scale, then powers search, dashboards, alerting and correlation. **Splunk Enterprise Security** is the SIEM; **Splunk SOAR** automates response; **Splunk Observability Cloud** covers APM/infra/AI-agent monitoring. For an AI stack, Splunk is where security and AI-app telemetry lands for detection, investigation and audit. Cisco is routing telemetry from its acquired AI-security products ([[cisco-ai-defense]], [[galileo]], pending [[astrix-security]]) into Splunk as the unifying SOC/observability layer.
+**What it does** — Ingests and indexes log and telemetry data at scale, then powers search, dashboards, alerting and correlation. **Splunk Enterprise Security** is the SIEM; **Splunk SOAR** automates response; **Splunk Observability Cloud** covers APM/infra/AI-agent monitoring. For an AI stack, Splunk is where security and AI-app telemetry lands for detection, investigation and audit. Cisco is routing telemetry from its acquired AI-security products ([cisco-ai-defense](cisco-ai-defense.md), [galileo](galileo.md), pending [astrix-security](astrix-security.md)) into Splunk as the unifying SOC/observability layer.
 
-**Where it sits in the stack** — [[siem-soc]] at the foundation layer: the system of record for security events and the place AI-pipeline logs get correlated. Trifecta role is indirect — it doesn't block any leg in line, but it gives you the **detection and audit** visibility over sensitive-data access and anomalous behavior that the other controls feed.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md) at the foundation layer: the system of record for security events and the place AI-pipeline logs get correlated. Trifecta role is indirect — it doesn't block any leg in line, but it gives you the **detection and audit** visibility over sensitive-data access and anomalous behavior that the other controls feed.
 
 **Deployment & architecture** — Self-hosted (Splunk Enterprise), cloud (Splunk Cloud Platform), or hybrid. Ingests via forwarders, HEC, and APIs; huge app/integration ecosystem. Observability Cloud is SaaS. Cisco is layering Talos threat intel into Splunk and connecting Splunk to Cisco XDR.
 
-**Positioning & differentiators** — The reference SIEM by mindshare and ecosystem depth; cost (volume-based licensing) is the classic complaint and the reason shops weigh alternatives. Nearest neighbors: [[microsoft-sentinel]], [[google-secops]], [[elastic]], [[sumo-logic]], [[crowdstrike-logscale]], plus Cisco/Palo Alto Cortex XSIAM at the high end.
+**Positioning & differentiators** — The reference SIEM by mindshare and ecosystem depth; cost (volume-based licensing) is the classic complaint and the reason shops weigh alternatives. Nearest neighbors: [microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [elastic](elastic.md), [sumo-logic](sumo-logic.md), [crowdstrike-logscale](crowdstrike-logscale.md), plus Cisco/Palo Alto Cortex XSIAM at the high end.
 
 ## Ownership, funding & M&A
 
-**Acquired by [[cisco]]** — announced **2023-09-21**, completed **2024-03-18** for ~**$28 billion** ($157/share cash), the largest acquisition in Cisco's history. Splunk (founded 2003, San Francisco; formerly NASDAQ: SPLK) is now a Cisco business unit. Verified against Network World and Channel Futures completion coverage and the original SEC 8-K (high confidence).
+**Acquired by [cisco](cisco.md)** — announced **2023-09-21**, completed **2024-03-18** for ~**$28 billion** ($157/share cash), the largest acquisition in Cisco's history. Splunk (founded 2003, San Francisco; formerly NASDAQ: SPLK) is now a Cisco business unit. Verified against Network World and Channel Futures completion coverage and the original SEC 8-K (high confidence).
 
 ## CTO / hedge-fund lens
 
-**Day-1.** SIEM/SOC logging is table-stakes and Splunk is the most common shortlist entry; many funds already run it. For AI specifically, it's where you centralize and retain AI-app and security telemetry for detection and for audit/regulatory evidence. The Cisco ownership matters for roadmap (tighter Cisco XDR/AI-Defense integration) and for procurement leverage if you're a Cisco shop. Main decision axis vs [[microsoft-sentinel]]/[[google-secops]] is cost and existing platform gravity, not capability.
+**Day-1.** SIEM/SOC logging is table-stakes and Splunk is the most common shortlist entry; many funds already run it. For AI specifically, it's where you centralize and retain AI-app and security telemetry for detection and for audit/regulatory evidence. The Cisco ownership matters for roadmap (tighter Cisco XDR/AI-Defense integration) and for procurement leverage if you're a Cisco shop. Main decision axis vs [microsoft-sentinel](microsoft-sentinel.md)/[google-secops](google-secops.md) is cost and existing platform gravity, not capability.
 
 ## Competitors / alternatives
 
-[[microsoft-sentinel]], [[google-secops]], [[elastic]], [[sumo-logic]], [[crowdstrike-logscale]], [[palo-alto-networks]] (Cortex XSIAM).
+[microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [elastic](elastic.md), [sumo-logic](sumo-logic.md), [crowdstrike-logscale](crowdstrike-logscale.md), [palo-alto-networks](palo-alto-networks.md) (Cortex XSIAM).
 
 ## Open questions / to verify
 

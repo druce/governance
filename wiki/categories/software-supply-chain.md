@@ -42,21 +42,21 @@ runtime environments. Supply-chain security is where that input gets vetted befo
 it can execute — catching a poisoned package or an injected vulnerability before it
 becomes a foothold an attacker (or a rogue agent) can chain into data access or
 egress. Sits at the boundary of the **green zone** (production/build systems);
-also reinforces [[promotion-gates]] between experiment and production.
+also reinforces [promotion-gates](promotion-gates.md) between experiment and production.
 
 ## Vendors
 
-- [[snyk]] — broad developer-first platform spanning SAST, SCA, container, and IaC.
-- [[semgrep]] — fast customizable static analysis (SAST + secrets), strong OSS roots.
-- [[endor-labs]] — reachability-based SCA and supply-chain/CI risk; AI-code focus.
-- [[socket]] — real-time malicious-dependency / supply-chain attack detection.
-- [[apiiro]] — application-security posture and code-to-runtime risk graph.
-- [[legit-security]] — SDLC/pipeline security and SBOM/provenance governance.
-- [[aikido-security]] — consolidated all-in-one AppSec for smaller teams.
-- [[sonatype]] — open-source governance / artifact firewall (Nexus heritage).
-- [[jfrog]] — artifact management and software-supply-chain platform (Artifactory).
-- [[github-advanced-security]] — native code/secret/dependency scanning in GitHub.
-- [[gitlab]] — GitLab Ultimate's built-in security scanning across the DevOps platform.
+- [snyk](../vendors/snyk.md) — broad developer-first platform spanning SAST, SCA, container, and IaC.
+- [semgrep](../vendors/semgrep.md) — fast customizable static analysis (SAST + secrets), strong OSS roots.
+- [endor-labs](../vendors/endor-labs.md) — reachability-based SCA and supply-chain/CI risk; AI-code focus.
+- [socket](../vendors/socket.md) — real-time malicious-dependency / supply-chain attack detection.
+- [apiiro](../vendors/apiiro.md) — application-security posture and code-to-runtime risk graph.
+- [legit-security](../vendors/legit-security.md) — SDLC/pipeline security and SBOM/provenance governance.
+- [aikido-security](../vendors/aikido-security.md) — consolidated all-in-one AppSec for smaller teams.
+- [sonatype](../vendors/sonatype.md) — open-source governance / artifact firewall (Nexus heritage).
+- [jfrog](../vendors/jfrog.md) — artifact management and software-supply-chain platform (Artifactory).
+- [github-advanced-security](../vendors/github-advanced-security.md) — native code/secret/dependency scanning in GitHub.
+- [gitlab](../vendors/gitlab.md) — GitLab Ultimate's built-in security scanning across the DevOps platform.
 
 ## Consolidation / M&A dynamics
 
@@ -64,16 +64,16 @@ No specific seed M&A flags for this category, but it's an active and crowded spa
 with frequent funding rounds and acquisitions as platforms converge SAST + SCA +
 secrets + pipeline into single "AppSec platform" offerings. The notable recent
 shift is positioning around AI-generated code and AI coding agents, with several
-vendors ([[endor-labs]], [[socket]], [[semgrep]]) marketing AI-code-specific
-detection. Native platform options ([[github-advanced-security]], [[gitlab]]) pull
+vendors ([endor-labs](../vendors/endor-labs.md), [socket](../vendors/socket.md), [semgrep](../vendors/semgrep.md)) marketing AI-code-specific
+detection. Native platform options ([github-advanced-security](../vendors/github-advanced-security.md), [gitlab](../vendors/gitlab.md)) pull
 buyers toward whoever already hosts their repos.
 
 ## Adjacent categories
 
-- [[secrets-management]] — secrets scanning here finds leaked credentials; secrets managers store them properly.
-- [[promotion-gates]] — supply-chain scans are a natural gate between experiment and production.
-- [[policy-as-code]] — pipeline policy enforcement (e.g. block builds failing a scan).
-- [[ephemeral-environments]] — short-lived build/dev compute these tools protect.
+- [secrets-management](secrets-management.md) — secrets scanning here finds leaked credentials; secrets managers store them properly.
+- [promotion-gates](promotion-gates.md) — supply-chain scans are a natural gate between experiment and production.
+- [policy-as-code](policy-as-code.md) — pipeline policy enforcement (e.g. block builds failing a scan).
+- [ephemeral-environments](ephemeral-environments.md) — short-lived build/dev compute these tools protect.
 
 ## Survey
 
@@ -108,5 +108,5 @@ predicts the answer. Aikido skews to smaller teams.
 
 - This page bundles SAST, SCA, secrets scanning, and pipeline/SBOM security under
   one slug; if respondents shop these separately we may need sub-categories.
-- Overlap with [[secrets-management]] on secrets detection vs storage — keep the
+- Overlap with [secrets-management](secrets-management.md) on secrets detection vs storage — keep the
   "find" vs "vault" distinction explicit.

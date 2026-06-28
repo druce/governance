@@ -29,7 +29,7 @@ tags: [surveillance, market-abuse, mar, mnpi, aml, financial-crime, trade-survei
 
 **One-liner** — The incumbent enterprise compliance suite for financial-crime and conduct risk: its SURVEIL-X platform does holistic trade + communications surveillance for market-abuse (MAR/MNPI) detection, alongside a large AML/fraud business — all as a division of public parent NICE Ltd.
 
-**Categories** — [[comms-surveillance]]
+**Categories** — [comms-surveillance](../categories/comms-surveillance.md)
 
 ## What it does
 
@@ -42,7 +42,7 @@ For the comms-surveillance category here, SURVEIL-X is the relevant product.
 
 ## Where it sits in the stack
 
-This is the **governance layer** — [[comms-surveillance]]. It is a **detective** control: it does not sit inline in the request/response path, break the lethal trifecta, or block anything in real time. It monitors recorded comms and executed/attempted trades after the fact (or near-real-time) and raises alerts for compliance review. In trust-zone terms it operates in the **green zone** on already-captured enterprise data; `trifecta_relevance: none` (it's surveillance/forensics, not a runtime guardrail). Note: this is surveillance of *human* trader/employee conduct and market activity, not (primarily) of LLM/AI usage — though the same comms-capture pipes increasingly carry AI-assistant chat too.
+This is the **governance layer** — [comms-surveillance](../categories/comms-surveillance.md). It is a **detective** control: it does not sit inline in the request/response path, break the lethal trifecta, or block anything in real time. It monitors recorded comms and executed/attempted trades after the fact (or near-real-time) and raises alerts for compliance review. In trust-zone terms it operates in the **green zone** on already-captured enterprise data; `trifecta_relevance: none` (it's surveillance/forensics, not a runtime guardrail). Note: this is surveillance of *human* trader/employee conduct and market activity, not (primarily) of LLM/AI usage — though the same comms-capture pipes increasingly carry AI-assistant chat too.
 
 ## Deployment & architecture
 
@@ -54,7 +54,7 @@ This is the **governance layer** — [[comms-surveillance]]. It is a **detective
 
 - **Incumbent enterprise suite.** NICE Actimize is one of the largest, longest-standing vendors in trade surveillance and financial-crime compliance, widely deployed at tier-1 banks and broker-dealers. Breadth (surveillance + AML + fraud under one roof) and analyst-recognition ("leader" in trade surveillance) are its calling cards.
 - **Holistic surveillance** (trade × comms correlation) is the core differentiator vs point tools.
-- **vs AI-native challengers** — Differs from [[behavox]] (AI/NLP-first comms surveillance), [[steeleye]] (integrated comms + trade surveillance on a unified data platform, often cloud/mid-market friendlier), [[shield]] (comms-surveillance-focused), [[theta-lake]] (modern collaboration/UC surveillance — Zoom/Teams/Slack), and [[relativity-trace]] (proactive comms surveillance from the eDiscovery world). NICE Actimize tends to be the heavier, broader, more expensive enterprise incumbent; the challengers compete on AI quality, modern-comms coverage, faster deployment, and lower TCO.
+- **vs AI-native challengers** — Differs from [behavox](behavox.md) (AI/NLP-first comms surveillance), [steeleye](steeleye.md) (integrated comms + trade surveillance on a unified data platform, often cloud/mid-market friendlier), [shield](shield.md) (comms-surveillance-focused), [theta-lake](theta-lake.md) (modern collaboration/UC surveillance — Zoom/Teams/Slack), and [relativity-trace](relativity-trace.md) (proactive comms surveillance from the eDiscovery world). NICE Actimize tends to be the heavier, broader, more expensive enterprise incumbent; the challengers compete on AI quality, modern-comms coverage, faster deployment, and lower TCO.
 
 ## Ownership, funding & M&A
 
@@ -67,13 +67,13 @@ This is the **governance layer** — [[comms-surveillance]]. It is a **detective
 ## CTO / hedge-fund lens
 
 - **Day-2, but not optional if you're regulated.** Comms/trade surveillance is a compliance obligation under **MAR** (EU/UK market-abuse), **SEC/FINRA** (US broker-dealer supervision, books-and-records, off-channel-comms enforcement), and **CFTC** (for derivatives/futures). A registered investment adviser or broker-dealer of meaningful size will need *something* here; NICE Actimize is one of the default enterprise answers.
-- **Likely overkill for a small fund.** This is enterprise-grade kit aimed at banks and large buy-/sell-side firms; a 50-person hedge fund will usually find the cost, implementation weight, and feature breadth disproportionate and lean toward lighter/cloud-native options ([[steeleye]], [[shield]], [[theta-lake]]) or an outsourced/managed surveillance service.
+- **Likely overkill for a small fund.** This is enterprise-grade kit aimed at banks and large buy-/sell-side firms; a 50-person hedge fund will usually find the cost, implementation weight, and feature breadth disproportionate and lean toward lighter/cloud-native options ([steeleye](steeleye.md), [shield](shield.md), [theta-lake](theta-lake.md)) or an outsourced/managed surveillance service.
 - **MNPI / insider-dealing angle** is the part most relevant to an asset manager: correlating research/IR communications and trading to flag possible MNPI misuse. The GenAI (Actimize Intelligence) layer is the current sales story; treat the false-positive-reduction and accuracy numbers as vendor claims pending independent validation.
 - **AI-governance note:** this is surveillance *of people and markets*, not an AI-usage guardrail. It is adjacent to AI governance only insofar as employee AI-assistant chats flow through the same comms-capture pipes it monitors.
 
 ## Competitors / alternatives
 
-[[behavox]] · [[steeleye]] · [[shield]] · [[theta-lake]] · [[relativity-trace]]
+[behavox](behavox.md) · [steeleye](steeleye.md) · [shield](shield.md) · [theta-lake](theta-lake.md) · [relativity-trace](relativity-trace.md)
 
 ## Open questions / to verify
 - Exact current SURVEIL-X module breakdown (Markets Surveillance vs Communications Surveillance vs Sales Practice & Suitability) and whether they are licensed separately.

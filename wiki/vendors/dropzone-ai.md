@@ -31,17 +31,17 @@ tags: [agentic-soc, ai-soc, alert-triage, mssp]
 
 **What it does** — Dropzone connects to your SIEM/EDR/cloud/identity tooling and, for each alert, runs a full investigation the way an experienced analyst would: pulls context, chases artifacts, decides whether it's a real threat, and writes a verdict with the evidence. It covers phishing, endpoint, network, cloud, identity, and insider-threat alerts. The goal is to clear the Tier-1 triage backlog and cut MTTR without expanding headcount — explicitly marketed (marketing) as "the world's first AI SOC analyst."
 
-**Where it sits in the stack** — [[ai-soc-analysts]], Foundation layer; an automation layer over [[siem-soc]] and [[edr-xdr]]. SOC-ops tooling, not an AI-application control — trifecta_relevance: none. Operates in the trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; an automation layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling, not an AI-application control — trifecta_relevance: none. Operates in the trusted security-ops zone.
 
 **Deployment & architecture** — SaaS with API integrations into SIEM, EDR, and cloud systems; no inline/proxy data-path role. Notably sold to **MSSPs/MDR providers** as well as end-enterprises, so it shows up as the engine behind some managed offerings. Named customers include UiPath, Zapier, Pipe, Mysten Labs.
 
-**Positioning & differentiators** — Founder/CEO Edward Wu (early ExtraHop engineer). Differentiates on no-playbook autonomy (claims it doesn't need pre-built runbooks) and breadth of alert types, plus an MSSP channel. Nearest neighbors: [[prophet-security]], [[radiant-security]], [[7ai]], [[simbian]]; vs. [[torq]] (which comes from hyperautomation/SOAR rather than analyst-replacement).
+**Positioning & differentiators** — Founder/CEO Edward Wu (early ExtraHop engineer). Differentiates on no-playbook autonomy (claims it doesn't need pre-built runbooks) and breadth of alert types, plus an MSSP channel. Nearest neighbors: [prophet-security](prophet-security.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [simbian](simbian.md); vs. [torq](torq.md) (which comes from hyperautomation/SOAR rather than analyst-replacement).
 
 **Ownership, funding & M&A** — Independent, VC-backed. $37M Series B led by Theory Ventures (2025-07-17), with Madrona, Decibel Ventures, Pioneer Square Labs, and IQT; prior $16.85M Series A (2024-04, also Theory Ventures). ~$57.4M total across three rounds; reported ~$207M valuation. No M&A; no seed acquisition flag. Confidence high on independence.
 
 **CTO / hedge-fund lens** — **Day-2.** Same logic as the rest of this category: you need an existing SIEM/EDR and meaningful alert volume first. The MSSP angle matters for a hedge fund — if you outsource detection-and-response, your provider may already run Dropzone (or a peer) under the hood, so the buying decision may be "which MDR" rather than "which AI SOC tool." No direct model-risk/SR 11-7 tie; standard vendor diligence on data retention and LLM use applies.
 
-**Competitors / alternatives** — [[prophet-security]], [[radiant-security]], [[7ai]], [[simbian]], [[torq]].
+**Competitors / alternatives** — [prophet-security](prophet-security.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [simbian](simbian.md), [torq](torq.md).
 
 **Open questions / to verify** — Exact total/valuation; data-residency and self-hosted options for regulated customers; how its agents are evaluated for false-negatives (autonomous verdicts carry tail risk).
 

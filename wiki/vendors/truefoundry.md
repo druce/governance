@@ -27,7 +27,7 @@ tags: [ai-gateway, mcp-gateway, llmops, kubernetes]
 
 # TrueFoundry
 
-> Primary category: [[ai-gateway]]. Also: [[mcp-gateway]].
+> Primary category: [ai-gateway](../categories/ai-gateway.md). Also: [mcp-gateway](../categories/mcp-gateway.md).
 
 **One-liner** — A Kubernetes-native enterprise AI platform whose centerpiece is an
 LLM/AI gateway (plus MCP gateway and model-deployment/LLMOps tooling) that gives a
@@ -52,12 +52,12 @@ and full tracing of agent→tool actions.
 
 ## Where it sits in the stack
 
-Lives in the model/prompt layer as the [[ai-gateway]] — the single exit door for
-model traffic — and as an [[mcp-gateway]] for agent tool access. Its lethal-trifecta
+Lives in the model/prompt layer as the [ai-gateway](../categories/ai-gateway.md) — the single exit door for
+model traffic — and as an [mcp-gateway](../categories/mcp-gateway.md) for agent tool access. Its lethal-trifecta
 role is primarily **egress**: it is the chokepoint where outbound model/tool calls
 are routed, logged, budgeted and policy-checked, so it's the natural place to enforce
 where data can and can't go. The built-in guardrails give it a secondary touch on the
-untrusted-input and sensitive-data legs, but it is not a dedicated [[ai-runtime-security]]
+untrusted-input and sensitive-data legs, but it is not a dedicated [ai-runtime-security](../categories/ai-runtime-security.md)
 firewall. It sits between the apps/agents (yellow zone) and external model providers,
 and is most valuable when self-hosted so traffic and logs stay inside the trust boundary.
 
@@ -79,16 +79,16 @@ TrueFoundry's pitch is "one control plane for models, gateway, and agents," with
 self-hosted, Kubernetes-native, full-LLMOps story as the differentiator. Versus
 neighbors:
 
-- **[[portkey]]** — closest analog (gateway + guardrails + observability); Portkey is
+- **[portkey](portkey.md)** — closest analog (gateway + guardrails + observability); Portkey is
   more gateway-focused, TrueFoundry bundles the gateway into a broader deploy/serve
   platform.
-- **[[litellm]]** — open-source/library and lightweight proxy; TrueFoundry is a
+- **[litellm](litellm.md)** — open-source/library and lightweight proxy; TrueFoundry is a
   heavier, commercial, enterprise-governed platform with UI, RBAC, deployment.
-- **[[kong]]** — API-gateway incumbent extending into AI/MCP gateways; Kong leads with
+- **[kong](kong.md)** — API-gateway incumbent extending into AI/MCP gateways; Kong leads with
   general API-management heritage, TrueFoundry is AI/ML-native and ships model serving.
-- **[[cloudflare]]** — edge/SaaS AI Gateway tied to Cloudflare's network; TrueFoundry
+- **[cloudflare](cloudflare.md)** — edge/SaaS AI Gateway tied to Cloudflare's network; TrueFoundry
   is run-it-yourself inside your K8s rather than at a third party's edge.
-- **[[openrouter]]** — a hosted multi-model marketplace/router (buy access to models);
+- **[openrouter](openrouter.md)** — a hosted multi-model marketplace/router (buy access to models);
   TrueFoundry is governance/infrastructure you run, not a model reseller.
 
 ## Ownership, funding & M&A
@@ -108,7 +108,7 @@ switch. TrueFoundry's self-hosted/air-gapped, Kubernetes-native posture is attra
 to a fund that wants prompts and outputs to never leave its own infrastructure (MNPI,
 data-residency concerns). The catch: it is a **heavier, infra-centric platform** that
 assumes you run Kubernetes and want model serving/LLMOps too. A 50-person fund that
-just wants a managed exit door may find [[portkey]] (or a thin [[litellm]] proxy)
+just wants a managed exit door may find [portkey](portkey.md) (or a thin [litellm](litellm.md) proxy)
 lighter; TrueFoundry fits a shop that already operates its own ML/K8s infra and wants
 gateway + serving + agent governance from one vendor. Not itself a model-risk/SR 11-7
 governance tool, but its audit logs and policy enforcement feed that process. Note its
@@ -116,9 +116,9 @@ smaller scale (single Series A, India+US startup) when weighing vendor risk.
 
 ## Competitors / alternatives
 
-[[portkey]], [[litellm]], [[kong]], [[cloudflare]], [[openrouter]]. Adjacent:
-[[ai-runtime-security]] (dedicated AI firewalls), [[llm-observability]],
-[[authorization-engine]] (fine-grained agent/tool authz).
+[portkey](portkey.md), [litellm](litellm.md), [kong](kong.md), [cloudflare](cloudflare.md), [openrouter](openrouter.md). Adjacent:
+[ai-runtime-security](../categories/ai-runtime-security.md) (dedicated AI firewalls), [llm-observability](../categories/llm-observability.md),
+[authorization-engine](../categories/authorization-engine.md) (fine-grained agent/tool authz).
 
 ## Open questions / to verify
 

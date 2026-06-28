@@ -27,7 +27,7 @@ tags: [deepfake, forensics, provenance, content-authenticity]
 
 # GetReal Security
 
-> Primary category: [[anti-deepfake]].
+> Primary category: [anti-deepfake](../categories/anti-deepfake.md).
 
 **One-liner** — An enterprise deepfake-defense and digital-forensics platform — co-founded by deepfake-detection authority Hany Farid — that detects, analyzes, and helps respond to synthetic media and impersonation across voice, video, and content provenance.
 
@@ -35,17 +35,17 @@ tags: [deepfake, forensics, provenance, content-authenticity]
 GetReal combines real-time deepfake detection with forensic content analysis and content-provenance/authenticity verification. Beyond a yes/no detector, it positions as a "Forensics Platform as a Service" with detection plus human expert investigation and response. The job it does: when an org receives a suspicious call, video, or piece of media (e.g., a "CFO" on a video call authorizing a transfer), GetReal helps determine whether it is authentic and supports an incident response.
 
 ## Where it sits in the stack
-Sits in [[anti-deepfake]] at the **foundation** layer, defending the authenticity of human communications and media. Lethal-trifecta relevance is **untrusted-input**-adjacent: it gates whether incoming media/identity can be trusted. It is a social-engineering / authenticity and digital-forensics control rather than a model/data control. Trust zone: the external-communications boundary (red→yellow), with an incident-response role inside the org.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, defending the authenticity of human communications and media. Lethal-trifecta relevance is **untrusted-input**-adjacent: it gates whether incoming media/identity can be trusted. It is a social-engineering / authenticity and digital-forensics control rather than a model/data control. Trust zone: the external-communications boundary (red→yellow), with an incident-response role inside the org.
 
 ## Deployment & architecture
 - **SaaS platform + API** ("FPaaS"); product line spans:
   - **GetReal Protect** — real-time detection across voice and video.
   - **GetReal Inspect** — forensic content verification (launched Feb 2025).
   - **GetReal Prepare** / **GetReal Respond** — training and expert investigation services.
-- Pitched for high-value communications (conferencing, calls). Has announced a partnership with [[doppel]] for deepfake brand/executive-impersonation attacks. Specific SIEM/IdP connectors not confirmed here.
+- Pitched for high-value communications (conferencing, calls). Has announced a partnership with [doppel](doppel.md) for deepfake brand/executive-impersonation attacks. Specific SIEM/IdP connectors not confirmed here.
 
 ## Positioning & differentiators
-Known for the **Hany Farid pedigree** (digital forensics / provenance research) and a forensics-plus-services posture rather than a pure detection API. Differs from [[reality-defender]] (detection-API breadth across audio/video/image/text) by emphasizing forensic analysis, provenance, and expert response. Differs from [[pindrop]] (telephony voice biometrics / call-center fraud at scale) by being communications- and media-forensics-oriented rather than call-channel infrastructure. Co-founded with Ted Schlein (Ballistic Ventures); CEO Matthew Moynahan. Other neighbors: [[adaptive-security]], [[doppel]].
+Known for the **Hany Farid pedigree** (digital forensics / provenance research) and a forensics-plus-services posture rather than a pure detection API. Differs from [reality-defender](reality-defender.md) (detection-API breadth across audio/video/image/text) by emphasizing forensic analysis, provenance, and expert response. Differs from [pindrop](pindrop.md) (telephony voice biometrics / call-center fraud at scale) by being communications- and media-forensics-oriented rather than call-channel infrastructure. Co-founded with Ted Schlein (Ballistic Ventures); CEO Matthew Moynahan. Other neighbors: [adaptive-security](adaptive-security.md), [doppel](doppel.md).
 
 ## Ownership, funding & M&A
 - **Independent, VC-backed.** No acquisition found (no seed M&A flag).
@@ -57,7 +57,7 @@ Known for the **Hany Farid pedigree** (digital forensics / provenance research) 
 **Day-2 / situational.** Strong fit for **executive-impersonation and synthetic-media fraud** — the deepfake-on-a-video-call or cloned-voice-authorizing-a-wire scenarios that directly threaten asset managers. The forensics + response services angle suits firms that want investigation support, not just a detector. Not a model-risk/SR 11-7 control. Better fit for larger or more targeted shops (those with public-facing executives, large wire flows, or recruiting/BPO exposure) than for a lean 50-person fund, which may not justify a dedicated platform yet.
 
 ## Competitors / alternatives
-[[reality-defender]], [[pindrop]], [[doppel]], [[adaptive-security]]
+[reality-defender](reality-defender.md), [pindrop](pindrop.md), [doppel](doppel.md), [adaptive-security](adaptive-security.md)
 
 ## Open questions / to verify
 - Exact HQ (San Mateo vs older Austin listing) and current headcount.

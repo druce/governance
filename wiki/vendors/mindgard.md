@@ -35,7 +35,7 @@ tags: [ai-red-teaming, offensive-security, model-testing]
 applications for jailbreaks, prompt injection, data leakage, and model-level
 vulnerabilities.
 
-**Categories** — [[ai-red-teaming]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md)
 
 ## What it does
 Mindgard runs automated attacks against AI systems — large language models,
@@ -48,10 +48,10 @@ its founding research is that "traditional AppSec could not address AI-specific
 risks."
 
 ## Where it sits in the stack
-[[ai-red-teaming]] in the model/prompt layer. Lethal-trifecta role: primarily the
+[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Lethal-trifecta role: primarily the
 **untrusted-input** leg — it probes how the model handles adversarial/malicious
 input. It is a pre-production and continuous-assurance tool rather than an inline
-runtime control, so it complements (not replaces) an [[ai-runtime-security]] firewall
+runtime control, so it complements (not replaces) an [ai-runtime-security](../categories/ai-runtime-security.md) firewall
 that blocks attacks live.
 
 ## Deployment & architecture
@@ -62,9 +62,9 @@ fully documented on public pages — see open questions.
 ## Positioning & differentiators
 Known as an academically-rooted, red-teaming-first vendor (spun out of Dr. Peter
 Garraghan's research at Lancaster University). Nearest neighbors are other
-red-teaming/guardrail testers: [[splxai]], [[haize-labs]], [[promptfoo]],
-[[patronus-ai]], and the testing side of [[hiddenlayer]] and [[enkrypt-ai]]. Unlike
-the eval-platform players ([[patronus-ai]], [[maxim-ai]]) that center on quality/
+red-teaming/guardrail testers: [splxai](splxai.md), [haize-labs](haize-labs.md), [promptfoo](promptfoo.md),
+[patronus-ai](patronus-ai.md), and the testing side of [hiddenlayer](hiddenlayer.md) and [enkrypt-ai](enkrypt-ai.md). Unlike
+the eval-platform players ([patronus-ai](patronus-ai.md), [maxim-ai](maxim-ai.md)) that center on quality/
 hallucination metrics, Mindgard leads with offensive security testing.
 
 ## Ownership, funding & M&A
@@ -84,8 +84,8 @@ evidence of adversarial testing, but lighter-weight eval tools or a pen-test
 engagement may suffice.
 
 ## Competitors / alternatives
-[[splxai]], [[haize-labs]], [[promptfoo]], [[patronus-ai]], [[hiddenlayer]],
-[[enkrypt-ai]], [[mindgard]]'s testing overlaps with [[cisco-ai-defense]] validation.
+[splxai](splxai.md), [haize-labs](haize-labs.md), [promptfoo](promptfoo.md), [patronus-ai](patronus-ai.md), [hiddenlayer](hiddenlayer.md),
+[enkrypt-ai](enkrypt-ai.md), [mindgard](mindgard.md)'s testing overlaps with [cisco-ai-defense](cisco-ai-defense.md) validation.
 
 ## Open questions / to verify
 - Exact current funding total and any 2025–2026 round.

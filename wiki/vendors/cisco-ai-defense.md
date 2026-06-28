@@ -27,21 +27,21 @@ tags: [ai-firewall, red-teaming, cisco]
 
 # Cisco AI Defense
 
-> Primary category: [[ai-runtime-security]]. Built on the former [[robust-intelligence]], now owned by [[cisco]].
+> Primary category: [ai-runtime-security](../categories/ai-runtime-security.md). Built on the former [robust-intelligence](robust-intelligence.md), now owned by [cisco](cisco.md).
 
 **One-liner** — Cisco's "security for AI" product: it validates and red-teams models before deployment and enforces runtime guardrails (prompt-injection, jailbreak, data-leak, toxic-content) on AI apps in production.
 
-**What it does** — Two halves. (1) **Validation / algorithmic red teaming** — automatically probes models and AI applications for vulnerabilities (jailbreaks, prompt injection, data poisoning, unsafe outputs) before they ship, the capability that came from [[robust-intelligence]]. (2) **Runtime protection** — an inline guardrail layer that inspects prompts and responses to block attacks and policy violations in production. Cisco positions it as model-agnostic protection that plugs into its network/SASE fabric so the same controls apply wherever AI traffic flows.
+**What it does** — Two halves. (1) **Validation / algorithmic red teaming** — automatically probes models and AI applications for vulnerabilities (jailbreaks, prompt injection, data poisoning, unsafe outputs) before they ship, the capability that came from [robust-intelligence](robust-intelligence.md). (2) **Runtime protection** — an inline guardrail layer that inspects prompts and responses to block attacks and policy violations in production. Cisco positions it as model-agnostic protection that plugs into its network/SASE fabric so the same controls apply wherever AI traffic flows.
 
-**Where it sits in the stack** — Squarely [[ai-runtime-security]] (the AI firewall) with a strong [[ai-red-teaming]] component. Trifecta role: breaks the **untrusted-input** leg (prompt-injection / jailbreak defense), and helps on **sensitive-data** and **egress** by inspecting model I/O. Lives at the model/prompt layer, fed by and feeding Cisco's network and SOC ([[splunk]]) zones.
+**Where it sits in the stack** — Squarely [ai-runtime-security](../categories/ai-runtime-security.md) (the AI firewall) with a strong [ai-red-teaming](../categories/ai-red-teaming.md) component. Trifecta role: breaks the **untrusted-input** leg (prompt-injection / jailbreak defense), and helps on **sensitive-data** and **egress** by inspecting model I/O. Lives at the model/prompt layer, fed by and feeding Cisco's network and SOC ([splunk](splunk.md)) zones.
 
-**Deployment & architecture** — Delivered as a Cisco cloud service with API/SDK enforcement points and inline inspection that can ride Cisco Secure Access / network egress. Integrates with the broader Cisco Security Cloud and routes detections to [[splunk]]. Model-agnostic across major LLM providers.
+**Deployment & architecture** — Delivered as a Cisco cloud service with API/SDK enforcement points and inline inspection that can ride Cisco Secure Access / network egress. Integrates with the broader Cisco Security Cloud and routes detections to [splunk](splunk.md). Model-agnostic across major LLM providers.
 
-**Positioning & differentiators** — Among the earliest "AI firewall" entrants by pedigree — Robust Intelligence shipped one of the first AI firewalls and validation platforms out of Harvard ML research. Cisco's edge over standalone rivals is distribution: bundling AI Defense with network, identity (Duo), and SIEM that enterprises already own. Nearest neighbors: [[prisma-airs]], [[hiddenlayer]], [[witnessai]], [[pillar-security]], [[lakera]], [[calypsoai]].
+**Positioning & differentiators** — Among the earliest "AI firewall" entrants by pedigree — Robust Intelligence shipped one of the first AI firewalls and validation platforms out of Harvard ML research. Cisco's edge over standalone rivals is distribution: bundling AI Defense with network, identity (Duo), and SIEM that enterprises already own. Nearest neighbors: [prisma-airs](prisma-airs.md), [hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md), [pillar-security](pillar-security.md), [lakera](lakera.md), [calypsoai](calypsoai.md).
 
 ## Ownership, funding & M&A
 
-A **Cisco** product, not an independent vendor. Robust Intelligence — founded **2019** in San Francisco by Yaron Singer (CEO), Kojin Oshiba, Eric Balkanski and Alexander Rilee — was acquired by Cisco (intent **2024-08-26**, closed ~**2024-09-24**) and its technology became Cisco AI Defense (and Cisco Foundation AI). Confirmed against Cisco's announcement and the "Robust Intelligence is now part of Cisco" page (high confidence). See [[robust-intelligence]] (alias page) for the legacy entity.
+A **Cisco** product, not an independent vendor. Robust Intelligence — founded **2019** in San Francisco by Yaron Singer (CEO), Kojin Oshiba, Eric Balkanski and Alexander Rilee — was acquired by Cisco (intent **2024-08-26**, closed ~**2024-09-24**) and its technology became Cisco AI Defense (and Cisco Foundation AI). Confirmed against Cisco's announcement and the "Robust Intelligence is now part of Cisco" page (high confidence). See [robust-intelligence](robust-intelligence.md) (alias page) for the legacy entity.
 
 ## CTO / hedge-fund lens
 
@@ -49,7 +49,7 @@ Day-1 if you are exposing internal or customer-facing LLM apps and want a single
 
 ## Competitors / alternatives
 
-[[prisma-airs]], [[hiddenlayer]], [[witnessai]], [[pillar-security]], [[lakera]], [[calypsoai]], [[enkrypt-ai]], [[trojai]], [[splxai]].
+[prisma-airs](prisma-airs.md), [hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md), [pillar-security](pillar-security.md), [lakera](lakera.md), [calypsoai](calypsoai.md), [enkrypt-ai](enkrypt-ai.md), [trojai](trojai.md), [splxai](splxai.md).
 
 ## Open questions / to verify
 

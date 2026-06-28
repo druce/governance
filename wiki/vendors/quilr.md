@@ -27,7 +27,7 @@ tags: [ai-spm, shadow-ai, guardrails, seed-stage, agentic]
 
 # Quilr
 
-> Primary category: [[ai-spm]]. Also spans [[ai-access-governance]].
+> Primary category: [ai-spm](../categories/ai-spm.md). Also spans [ai-access-governance](../categories/ai-access-governance.md).
 
 **One-liner** — An early-stage agentic-AI security startup that discovers shadow AI, applies adaptive guardrails to prompts and data, and provides posture management over AI usage and autonomous agents.
 
@@ -35,13 +35,13 @@ tags: [ai-spm, shadow-ai, guardrails, seed-stage, agentic]
 Quilr aims to stop "human-related" and AI-related security breaches by sitting between employees/agents and AI tools. It does **shadow-AI discovery** (which AI apps/agents are in use), applies **adaptive guardrails** on prompts and responses (data-leak prevention, prompt-injection defense, regulated-data protection), and provides **AI security posture management** across prompts, shadow AI, and autonomous agents. Branded as an agentic "service-as-software" platform.
 
 ## Where it sits in the stack
-Straddles [[ai-spm]] (visibility/posture over AI usage and agents) and [[ai-access-governance]] (CASB-for-AI / shadow-AI control of what employees feed to which tools). Layer: model/prompt. Touches all three trifecta legs at a lightweight level — screens **untrusted input** (prompt injection), guards **sensitive data** in prompts, and limits risky **egress** to unsanctioned AI. Lives at the employee↔AI and agent↔tool boundary.
+Straddles [ai-spm](../categories/ai-spm.md) (visibility/posture over AI usage and agents) and [ai-access-governance](../categories/ai-access-governance.md) (CASB-for-AI / shadow-AI control of what employees feed to which tools). Layer: model/prompt. Touches all three trifecta legs at a lightweight level — screens **untrusted input** (prompt injection), guards **sensitive data** in prompts, and limits risky **egress** to unsanctioned AI. Lives at the employee↔AI and agent↔tool boundary.
 
 ## Deployment & architecture
 SaaS with guardrail enforcement on the AI interaction path (API/inline guardrails; the exact browser-extension vs proxy vs API mechanism is not clearly documented publicly). ~70 employees per third-party profiles. Treat architecture specifics as unverified.
 
 ## Positioning & differentiators
-A **seed-stage** entrant in a crowded shadow-AI / AI-SPM field, leaning on its founder/advisor security pedigree (angels include Tanuj Gulati, ex-Securonix CTO/founder, and Sam Kassoumeh, SecurityScorecard co-founder/COO). Differs from larger, better-funded neighbors mostly by maturity. Nearest neighbors: [[harmonic-security]], [[aurascape]], [[wald-ai]], [[lanai]], [[nudge-security]], and [[reco]] on the access-governance/shadow-AI side; [[noma-security]] and [[zenity]] on the heavier AI-SPM/agent side.
+A **seed-stage** entrant in a crowded shadow-AI / AI-SPM field, leaning on its founder/advisor security pedigree (angels include Tanuj Gulati, ex-Securonix CTO/founder, and Sam Kassoumeh, SecurityScorecard co-founder/COO). Differs from larger, better-funded neighbors mostly by maturity. Nearest neighbors: [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [wald-ai](wald-ai.md), [lanai](lanai.md), [nudge-security](nudge-security.md), and [reco](reco.md) on the access-governance/shadow-AI side; [noma-security](noma-security.md) and [zenity](zenity.md) on the heavier AI-SPM/agent side.
 
 ## Ownership, funding & M&A
 Independent, seed-stage. Founder: Vidit Arora. **~$3–4M seed (April 2025) led by Crew Capital**, with Sprout & Oak and angels (Tanuj Gulati, Sam Kassoumeh). No M&A; no seed acquisition flag. Ownership confidence: high (clearly independent), though firmographics are thin.
@@ -49,10 +49,10 @@ Independent, seed-stage. Founder: Vidit Arora. **~$3–4M seed (April 2025) led 
 > Contradiction (soft): founding year listed as 2023 (startuphub) vs 2024 (Tracxn); HQ listed as Austin, TX (Tracxn/Crunchbase) vs San Francisco (startuphub). Non-blocking — recorded both, dated 2026-06-28.
 
 ## CTO / hedge-fund lens
-**Day-2**, and for most hedge funds **not yet** — at seed stage with ~$3–4M raised, Quilr is an early bet, not a procurement-ready control. The job it does (shadow-AI discovery + DLP-style guardrails on AI usage) is real and arguably Day-1, but a regulated fund would more likely buy that capability from a more established [[ai-access-governance]] vendor or get it bundled in [[netskope]]/[[zscaler]] SSE. Worth watching, not yet a core stack item.
+**Day-2**, and for most hedge funds **not yet** — at seed stage with ~$3–4M raised, Quilr is an early bet, not a procurement-ready control. The job it does (shadow-AI discovery + DLP-style guardrails on AI usage) is real and arguably Day-1, but a regulated fund would more likely buy that capability from a more established [ai-access-governance](../categories/ai-access-governance.md) vendor or get it bundled in [netskope](netskope.md)/[zscaler](zscaler.md) SSE. Worth watching, not yet a core stack item.
 
 ## Competitors / alternatives
-[[harmonic-security]], [[aurascape]], [[wald-ai]], [[lanai]], [[nudge-security]], [[reco]], [[noma-security]], [[zenity]].
+[harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [wald-ai](wald-ai.md), [lanai](lanai.md), [nudge-security](nudge-security.md), [reco](reco.md), [noma-security](noma-security.md), [zenity](zenity.md).
 
 ## Open questions / to verify
 - Founding year (2023 vs 2024) and HQ (Austin vs SF).

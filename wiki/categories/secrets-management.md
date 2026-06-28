@@ -30,22 +30,22 @@ The sensitive-data leg, at its root. Secrets are the keys to sensitive data and 
 
 Cloud-native (usually already owned, bundled with the platform):
 
-- [[azure-key-vault]] — Microsoft's managed secrets/key store; default for Azure/M365 shops.
-- [[aws-secrets-manager]] — AWS-native secrets store with built-in rotation.
-- [[gcp-secret-manager]] — Google Cloud's managed secrets store.
+- [azure-key-vault](../vendors/azure-key-vault.md) — Microsoft's managed secrets/key store; default for Azure/M365 shops.
+- [aws-secrets-manager](../vendors/aws-secrets-manager.md) — AWS-native secrets store with built-in rotation.
+- [gcp-secret-manager](../vendors/gcp-secret-manager.md) — Google Cloud's managed secrets store.
 
 Platform / enterprise:
 
-- [[hashicorp-vault]] — the cross-cloud incumbent; broad secrets, dynamic secrets, and encryption-as-a-service (per seed, acquired by IBM).
-- [[conjur]] — CyberArk Conjur; secrets management for apps/DevOps, tied to the CyberArk PAM estate.
+- [hashicorp-vault](../vendors/hashicorp-vault.md) — the cross-cloud incumbent; broad secrets, dynamic secrets, and encryption-as-a-service (per seed, acquired by IBM).
+- [conjur](../vendors/conjur.md) — CyberArk Conjur; secrets management for apps/DevOps, tied to the CyberArk PAM estate.
 
 Developer-friendly / modern:
 
-- [[1password]] — secrets management extending from the password-manager franchise into developer/infrastructure secrets.
-- [[doppler]] — developer-centric secrets platform (SecretOps) with environment syncing.
-- [[infisical]] — open-source-rooted secrets management platform.
+- [1password](../vendors/1password.md) — secrets management extending from the password-manager franchise into developer/infrastructure secrets.
+- [doppler](../vendors/doppler.md) — developer-centric secrets platform (SecretOps) with environment syncing.
+- [infisical](../vendors/infisical.md) — open-source-rooted secrets management platform.
 
-Cross-listed (secrets sit adjacent to NHI): [[cyberark]], [[entro-security]].
+Cross-listed (secrets sit adjacent to NHI): [cyberark](../vendors/cyberark.md), [entro-security](../vendors/entro-security.md).
 
 ## Consolidation / M&A dynamics
 
@@ -56,10 +56,10 @@ The independents are consolidating into platform owners (IBM, Palo Alto), while 
 
 ## Adjacent categories
 
-- [[non-human-identity]] — NHI governs *which workload/agent* gets a credential; secrets management stores and rotates the credential itself. Heavy overlap (Entro, CyberArk span both).
-- [[identity-access]] — human/agent identity; complementary to machine credentials.
-- [[policy-as-code]] — Vault pairs with policy tooling; HashiCorp spans both.
-- [[ephemeral-environments]] — short-lived environments pull short-lived secrets.
+- [non-human-identity](non-human-identity.md) — NHI governs *which workload/agent* gets a credential; secrets management stores and rotates the credential itself. Heavy overlap (Entro, CyberArk span both).
+- [identity-access](identity-access.md) — human/agent identity; complementary to machine credentials.
+- [policy-as-code](policy-as-code.md) — Vault pairs with policy tooling; HashiCorp spans both.
+- [ephemeral-environments](ephemeral-environments.md) — short-lived environments pull short-lived secrets.
 
 ## Survey
 
@@ -73,5 +73,5 @@ The independents are consolidating into platform owners (IBM, Palo Alto), while 
 
 ## Open taxonomy questions
 
-- Overlap with [[non-human-identity]] is significant — Entro and CyberArk straddle both; confirm where vaulting ends and NHI governance begins.
+- Overlap with [non-human-identity](non-human-identity.md) is significant — Entro and CyberArk straddle both; confirm where vaulting ends and NHI governance begins.
 - Whether to treat cloud-native and dedicated/enterprise secrets managers as one survey question or split them.

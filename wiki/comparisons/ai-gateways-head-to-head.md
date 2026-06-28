@@ -10,7 +10,7 @@ sources_count: 18
 
 # AI gateways, head to head
 
-The [[ai-gateway]] is the **single exit door for all model traffic** — one endpoint in front of
+The [ai-gateway](../categories/ai-gateway.md) is the **single exit door for all model traffic** — one endpoint in front of
 many model providers, with routing/failover, rate + cost limits, caching, prompt/response logging,
 and guardrail hooks. For a hedge-fund CTO it's a **Day-1** control: it's the chokepoint where you
 get one audit log of every model call and one place to enforce policy, archive for surveillance,
@@ -20,31 +20,31 @@ and cap spend. This page compares the realistic shortlist. See each vendor page 
 
 | Vendor | What it really is | Deploy | OSS? | Ownership (2026-06-28) | Best fit |
 |---|---|---|---|---|---|
-| [[portkey]] | Fast gateway + built-in governance/observability | SaaS or self-hosted | Partial | **Acquired → [[palo-alto-networks]]** (closed 2026-05-29) | Shops standardizing on Prisma AIRS / PANW |
-| [[litellm]] | OSS unified API + lightweight proxy (100+ providers) | Self-hosted (or SaaS) | **Yes (core)** | Independent | Teams wanting OSS control, no lock-in |
-| [[kong]] | API-gateway lineage extended to AI + MCP | Self-hosted / hybrid | Partial (Kong GW OSS) | Independent (~$2B val, 2024) | Shops already running Kong for APIs |
-| [[truefoundry]] | LLMOps platform with a gateway + MCP gateway | Self-hosted / SaaS | Partial | Independent | Teams wanting gateway + deployment/LLMOps in one |
-| [[f5]] | App-delivery/security giant; AI gateway + guardrails | Self-hosted / appliance | No | Public (NYSE: FFIV); **acquired [[calypsoai]]** 2025-10 | F5 estates wanting gateway+guardrails together |
-| [[cloudflare]] | AI Gateway as part of the edge/CDN platform | SaaS (edge) | No | Public (NYSE: NET) | Cloudflare-native shops, edge inference |
-| [[openrouter]] | Hosted **third-party** inference aggregator | SaaS only | No | Independent (~$1.3B val, 2026-05) | Dev/experimentation; **not** for regulated data |
+| [portkey](../vendors/portkey.md) | Fast gateway + built-in governance/observability | SaaS or self-hosted | Partial | **Acquired → [palo-alto-networks](../vendors/palo-alto-networks.md)** (closed 2026-05-29) | Shops standardizing on Prisma AIRS / PANW |
+| [litellm](../vendors/litellm.md) | OSS unified API + lightweight proxy (100+ providers) | Self-hosted (or SaaS) | **Yes (core)** | Independent | Teams wanting OSS control, no lock-in |
+| [kong](../vendors/kong.md) | API-gateway lineage extended to AI + MCP | Self-hosted / hybrid | Partial (Kong GW OSS) | Independent (~$2B val, 2024) | Shops already running Kong for APIs |
+| [truefoundry](../vendors/truefoundry.md) | LLMOps platform with a gateway + MCP gateway | Self-hosted / SaaS | Partial | Independent | Teams wanting gateway + deployment/LLMOps in one |
+| [f5](../vendors/f5.md) | App-delivery/security giant; AI gateway + guardrails | Self-hosted / appliance | No | Public (NYSE: FFIV); **acquired [calypsoai](../vendors/calypsoai.md)** 2025-10 | F5 estates wanting gateway+guardrails together |
+| [cloudflare](../vendors/cloudflare.md) | AI Gateway as part of the edge/CDN platform | SaaS (edge) | No | Public (NYSE: NET) | Cloudflare-native shops, edge inference |
+| [openrouter](../vendors/openrouter.md) | Hosted **third-party** inference aggregator | SaaS only | No | Independent (~$1.3B val, 2026-05) | Dev/experimentation; **not** for regulated data |
 
 ## How to tell them apart
 
-**Pure OSS / control plane you run yourself.** [[litellm]] is the reference open-source gateway —
+**Pure OSS / control plane you run yourself.** [litellm](../vendors/litellm.md) is the reference open-source gateway —
 a unified OpenAI-compatible API over 100+ providers plus a self-hostable proxy with keys, budgets,
-and logging. Pick it when you want no vendor lock-in and are comfortable operating it. [[truefoundry]]
-and [[kong]] also self-host but bring more platform around the gateway (LLMOps; full API management).
+and logging. Pick it when you want no vendor lock-in and are comfortable operating it. [truefoundry](../vendors/truefoundry.md)
+and [kong](../vendors/kong.md) also self-host but bring more platform around the gateway (LLMOps; full API management).
 
-**Gateway bundled into a security platform.** [[portkey]] (now Palo Alto's [[prisma-airs]] gateway
-layer) and [[f5]] (with [[calypsoai]] guardrails) are the "gateway + AI firewall in one" plays. If
-you're already buying the platform, the gateway comes wired into [[ai-runtime-security]],
+**Gateway bundled into a security platform.** [portkey](../vendors/portkey.md) (now Palo Alto's [prisma-airs](../vendors/prisma-airs.md) gateway
+layer) and [f5](../vendors/f5.md) (with [calypsoai](../vendors/calypsoai.md) guardrails) are the "gateway + AI firewall in one" plays. If
+you're already buying the platform, the gateway comes wired into [ai-runtime-security](../categories/ai-runtime-security.md),
 observability, and agent identity — fewer integrations, more lock-in. This is the single biggest
 2025–26 shift in the category: **two of the strongest independents are now inside platforms.**
 
-**Edge/CDN-native.** [[cloudflare]] AI Gateway is the natural choice if you already run Cloudflare —
+**Edge/CDN-native.** [cloudflare](../vendors/cloudflare.md) AI Gateway is the natural choice if you already run Cloudflare —
 caching, rate-limiting, and logging at the edge, close to where inference and Workers run.
 
-**The odd one out.** [[openrouter]] is not a gateway you deploy — it's a **hosted aggregator** that
+**The odd one out.** [openrouter](../vendors/openrouter.md) is not a gateway you deploy — it's a **hosted aggregator** that
 routes your calls through *its* infrastructure to many models. Great for experimentation and breadth;
 **a poor fit for MNPI/PII** because your prompts traverse a third party (data-residency/egress concern).
 Rated low hedge-fund fit for that reason.
@@ -52,13 +52,13 @@ Rated low hedge-fund fit for that reason.
 ## The governance angle (what a CTO actually buys this for)
 
 A gateway is where three Day-1 needs converge:
-1. **One audit log** of every model call → feeds [[siem-soc]] and [[comms-surveillance]] archival.
-2. **Egress control** — it's the lethal-trifecta **egress** chokepoint; bolt [[ai-runtime-security]]
+1. **One audit log** of every model call → feeds [siem-soc](../categories/siem-soc.md) and [comms-surveillance](../categories/comms-surveillance.md) archival.
+2. **Egress control** — it's the lethal-trifecta **egress** chokepoint; bolt [ai-runtime-security](../categories/ai-runtime-security.md)
    inspection (prompt-injection, DLP) onto it.
 3. **Cost + rate governance** — budgets, quotas, caching to control spend.
 
-If you only deploy one AI-specific control on Day 1, this plus an [[ai-access-governance]]/DLP layer
-is the highest-leverage pair. Note the overlap with [[mcp-gateway]]: Kong, TrueFoundry, and Prisma
+If you only deploy one AI-specific control on Day 1, this plus an [ai-access-governance](../categories/ai-access-governance.md)/DLP layer
+is the highest-leverage pair. Note the overlap with [mcp-gateway](../categories/mcp-gateway.md): Kong, TrueFoundry, and Prisma
 AIRS also broker **tool/MCP** traffic, not just model calls.
 
 ## Survey-design notes
@@ -69,7 +69,7 @@ AIRS also broker **tool/MCP** traffic, not just model calls.
 
 ## Sources
 Per-vendor sourcing is on each linked vendor page (funding, ownership, deployment). M&A confirmations
-(Portkey→PANW, CalypsoAI→F5) are in [[ai-security-m-and-a-map]].
+(Portkey→PANW, CalypsoAI→F5) are in [ai-security-m-and-a-map](ai-security-m-and-a-map.md).
 
 ## History
 - [2026-06-28] Created from Phase 3 Wave 2 researched gateway pages.

@@ -31,17 +31,17 @@ tags: [first-party, serverless, edge-compute, cloudflare]
 
 **What it does** — Workers runs functions in V8 isolates (not full containers/VMs) at Cloudflare's edge, with sub-millisecond cold starts and per-request isolation. The broader platform adds Workers AI (inference), AI Gateway, Durable Objects, KV/R2 storage, and a sandboxed code-execution offering for agents. For this wiki it appears as an **ephemeral-environments** primitive: a place to run untrusted or agent-generated code in a strongly isolated, short-lived sandbox with controllable egress.
 
-**Where it sits in the stack** — [[ephemeral-environments]], governance layer; overlaps Cloudflare's network/SASE and AI-gateway lines (see [[cloudflare]]). Lethal-trifecta role: isolates **untrusted-input** execution and is a natural **egress** chokepoint (all outbound traffic flows through Cloudflare's network). Enabler of [[trust-zone-segmentation]].
+**Where it sits in the stack** — [ephemeral-environments](../categories/ephemeral-environments.md), governance layer; overlaps Cloudflare's network/SASE and AI-gateway lines (see [cloudflare](cloudflare.md)). Lethal-trifecta role: isolates **untrusted-input** execution and is a natural **egress** chokepoint (all outbound traffic flows through Cloudflare's network). Enabler of [trust-zone-segmentation](../categories/trust-zone-segmentation.md).
 
 **Deployment & architecture** — SaaS / serverless; deploy via Wrangler CLI or API. V8-isolate sandboxing (lighter and more locked-down than containers, but with runtime constraints). Integrates with Cloudflare's WAF, Zero Trust/SASE, AI Gateway, and storage.
 
-**Positioning & differentiators** — Isolate-based model gives very fast, very cheap, strongly-bounded sandboxes — contrast [[github-codespaces]] / [[azure-dev-boxes]] which are full dev environments, not a production execution runtime. Different *purpose*: Workers is where agent/tool code runs in production; Codespaces/Dev Box are where developers work.
+**Positioning & differentiators** — Isolate-based model gives very fast, very cheap, strongly-bounded sandboxes — contrast [github-codespaces](github-codespaces.md) / [azure-dev-boxes](azure-dev-boxes.md) which are full dev environments, not a production execution runtime. Different *purpose*: Workers is where agent/tool code runs in production; Codespaces/Dev Box are where developers work.
 
-**Ownership, funding & M&A** — Product of Cloudflare, Inc. (public, NYSE: NET). Seed flag "(Cloudflare)" confirmed; no separate M&A. Confidence: high. See parent page [[cloudflare]].
+**Ownership, funding & M&A** — Product of Cloudflare, Inc. (public, NYSE: NET). Seed flag "(Cloudflare)" confirmed; no separate M&A. Confidence: high. See parent page [cloudflare](cloudflare.md).
 
 **CTO / hedge-fund lens** — Day-2 infrastructure. Relevant if you want agent tool execution or lightweight AI proxies running in isolated, egress-controlled sandboxes rather than on broadly-permissioned servers. Strong fit if Cloudflare is already your edge/Zero Trust provider; otherwise a build-vs-buy call against your existing serverless stack.
 
-**Competitors / alternatives** — [[github-codespaces]], [[azure-dev-boxes]] (dev-side), AWS Lambda / Fargate, Vercel, Deno Deploy (not in registry). Parent: [[cloudflare]].
+**Competitors / alternatives** — [github-codespaces](github-codespaces.md), [azure-dev-boxes](azure-dev-boxes.md) (dev-side), AWS Lambda / Fargate, Vercel, Deno Deploy (not in registry). Parent: [cloudflare](cloudflare.md).
 
 **Open questions / to verify** — Isolation guarantees of the agent code-sandbox offering for genuinely hostile code.
 
@@ -50,4 +50,4 @@ tags: [first-party, serverless, edge-compute, cloudflare]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched (light); confirmed Cloudflare (NYSE: NET) ownership → public, high. Positioned as ephemeral/serverless sandbox + egress chokepoint; cross-linked parent [[cloudflare]].
+- [2026-06-28] Researched (light); confirmed Cloudflare (NYSE: NET) ownership → public, high. Positioned as ephemeral/serverless sandbox + egress chokepoint; cross-linked parent [cloudflare](cloudflare.md).

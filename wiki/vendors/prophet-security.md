@@ -31,17 +31,17 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 **What it does** — Prophet's Agentic AI SOC Platform connects to your existing detection stack (SIEM, EDR, cloud, identity) and, when an alert fires, autonomously gathers evidence, builds an investigation, correlates across systems, and delivers a verdict with reasoning a human can audit. It ships three components: the **AI SOC Analyst** (alert investigation), an **AI Threat Hunter** (proactive pattern-finding), and an **AI Detection Advisor** (tunes detection coverage / reduces false positives from telemetry). The pitch is reducing mean-time-to-respond and analyst burnout, not replacing the SIEM.
 
-**Where it sits in the stack** — [[ai-soc-analysts]] in the Foundation layer; it sits on top of [[siem-soc]] and [[edr-xdr]] as an automation/decision layer. This is a SOC-operations tool, not an AI-application control: it does **not** break a leg of the lethal trifecta (trifecta_relevance: none). It lives in the green/trusted operations zone alongside your other security tooling.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md) in the Foundation layer; it sits on top of [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md) as an automation/decision layer. This is a SOC-operations tool, not an AI-application control: it does **not** break a leg of the lethal trifecta (trifecta_relevance: none). It lives in the green/trusted operations zone alongside your other security tooling.
 
 **Deployment & architecture** — SaaS, integrates via API into SIEM/EDR/cloud/identity sources. No inline data-path role; it reads telemetry and writes investigations back. Fast to stand up (read-only integrations).
 
-**Positioning & differentiators** — Founded by Kamal Shah (CEO) and Vibhav Sreekanti (CTO), both from StackRox (acquired by Red Hat), which lends cloud-native security credibility. Differentiates on autonomous, plain-language investigations plus the detection-tuning feedback loop. Nearest neighbors: [[dropzone-ai]], [[radiant-security]], [[7ai]], [[simbian]], and the hyperautomation-rooted [[torq]]; incumbents' built-in equivalents include CrowdStrike Charlotte AI and Palo Alto Cortex.
+**Positioning & differentiators** — Founded by Kamal Shah (CEO) and Vibhav Sreekanti (CTO), both from StackRox (acquired by Red Hat), which lends cloud-native security credibility. Differentiates on autonomous, plain-language investigations plus the detection-tuning feedback loop. Nearest neighbors: [dropzone-ai](dropzone-ai.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [simbian](simbian.md), and the hyperautomation-rooted [torq](torq.md); incumbents' built-in equivalents include CrowdStrike Charlotte AI and Palo Alto Cortex.
 
 **Ownership, funding & M&A** — Independent, VC-backed. $30M Series A led by Accel (announced 2025-07-29), with Bain Capital Ventures; subsequent strategic investments from Amex Ventures and Citi Ventures bring reported total to ~$41M. No M&A. No seed acquisition flag to verify. Confidence high on independence, medium on the exact total.
 
 **CTO / hedge-fund lens** — **Day-2.** This only makes sense once you already run a SIEM/EDR and have enough alert volume to justify automating triage. For a 50-person fund it is usually overkill unless you have a real SOC or MSSP relationship; mid-to-large asset managers with an in-house security team are the better fit. No direct SR 11-7 / model-risk angle — it's a security-ops efficiency play, though note you are introducing an LLM-driven agent into your investigation workflow (model-risk and data-handling diligence on the vendor applies).
 
-**Competitors / alternatives** — [[dropzone-ai]], [[radiant-security]], [[7ai]], [[simbian]], [[torq]].
+**Competitors / alternatives** — [dropzone-ai](dropzone-ai.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [simbian](simbian.md), [torq](torq.md).
 
 **Open questions / to verify** — Exact total funding and valuation; on-prem/self-hosted option for regulated data; how customer telemetry is used for model training/retention.
 

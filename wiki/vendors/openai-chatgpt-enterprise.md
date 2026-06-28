@@ -29,7 +29,7 @@ tags: [llm, assistant, frontier-model, openai]
 
 **One-liner** — The enterprise tier of ChatGPT: the frontier-model chat assistant most employees already want, wrapped with admin controls, a no-training-on-your-data default, audit/compliance logging, and data-residency options.
 
-**Categories** — [[enterprise-ai-assistant]]
+**Categories** — [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)
 
 ## What it does
 
@@ -37,16 +37,16 @@ ChatGPT Enterprise (and its smaller sibling ChatGPT Business/Team) is OpenAI's m
 
 ## Where it sits in the stack
 
-UX layer, [[enterprise-ai-assistant]]. This is the human-facing endpoint of the AI stack, the direct competitor to [[anthropic-claude-enterprise]], [[microsoft-365-copilot]], [[gemini-enterprise]], [[amazon-q-business]], [[perplexity-enterprise]] and [[glean]].
+UX layer, [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md). This is the human-facing endpoint of the AI stack, the direct competitor to [anthropic-claude-enterprise](anthropic-claude-enterprise.md), [microsoft-365-copilot](microsoft-365-copilot.md), [gemini-enterprise](gemini-enterprise.md), [amazon-q-business](amazon-q-business.md), [perplexity-enterprise](perplexity-enterprise.md) and [glean](glean.md).
 
-Lethal-trifecta role: an assistant by itself does not *break* a leg of the trifecta — it is the surface where the legs converge. Employees paste **sensitive data** in and the model can act as an **egress** path. ChatGPT Enterprise's governance features (no-training default, retention controls, audit/compliance export, DLP-partner integrations) are the mitigations on the sensitive-data and egress legs. The untrusted-input leg (prompt injection via tools/RAG/web browsing) is only partly addressed at this layer; that is why shops still layer [[ai-runtime-security]] / [[ai-access-governance]] / [[dlp]] in front of it. It lives across trust zones — a sanctioned green-zone tool whose whole point is to keep employees off shadow-AI in the red zone.
+Lethal-trifecta role: an assistant by itself does not *break* a leg of the trifecta — it is the surface where the legs converge. Employees paste **sensitive data** in and the model can act as an **egress** path. ChatGPT Enterprise's governance features (no-training default, retention controls, audit/compliance export, DLP-partner integrations) are the mitigations on the sensitive-data and egress legs. The untrusted-input leg (prompt injection via tools/RAG/web browsing) is only partly addressed at this layer; that is why shops still layer [ai-runtime-security](../categories/ai-runtime-security.md) / [ai-access-governance](../categories/ai-access-governance.md) / [dlp](../categories/dlp.md) in front of it. It lives across trust zones — a sanctioned green-zone tool whose whole point is to keep employees off shadow-AI in the red zone.
 
 ## Deployment & architecture
 
 - **SaaS** ChatGPT web/desktop/mobile app, administered through a workspace admin console. Also delivered as the **API** platform (separate commercial agreement, same privacy posture).
 - **Identity** SAML **SSO** and **SCIM** provisioning/deprovisioning against the customer's IdP (Entra, Okta, etc.); domain verification; role-based admin.
-- **Compliance / audit** an **Audit Logs API** and the **Enterprise Compliance API** (now part of OpenAI's unified "Compliance Logs Platform" exporting immutable, time-windowed JSONL log files). Records time-stamped interactions: conversations, uploaded files, workspace GPT configs + metadata, memories, and workspace users. This is the integration point for **comms-surveillance and archiving**: launch partners and connectors include **Global Relay**, **Smarsh**, **Theta Lake** and other eDiscovery/DLP vendors (see [[comms-surveillance]]). Global Relay's connector captures prompts, conversations and file attachments into Global Relay Archive for FINRA 3310 / SEC 17a-4 recordkeeping.
-- **Connectors / retrieval** connectors to SharePoint, Google Drive, etc., bringing it into [[content-sources]] / RAG territory (entitlement enforcement depends on the connector).
+- **Compliance / audit** an **Audit Logs API** and the **Enterprise Compliance API** (now part of OpenAI's unified "Compliance Logs Platform" exporting immutable, time-windowed JSONL log files). Records time-stamped interactions: conversations, uploaded files, workspace GPT configs + metadata, memories, and workspace users. This is the integration point for **comms-surveillance and archiving**: launch partners and connectors include **Global Relay**, **Smarsh**, **Theta Lake** and other eDiscovery/DLP vendors (see [comms-surveillance](../categories/comms-surveillance.md)). Global Relay's connector captures prompts, conversations and file attachments into Global Relay Archive for FINRA 3310 / SEC 17a-4 recordkeeping.
+- **Connectors / retrieval** connectors to SharePoint, Google Drive, etc., bringing it into [content-sources](../categories/content-sources.md) / RAG territory (entitlement enforcement depends on the connector).
 - **Data residency** at-rest storage in-region for Europe, UK, US, Canada, Japan, South Korea, Singapore, India, Australia, and UAE; included at no extra cost for Enterprise/Edu. Optional **inference residency** (in-region GPU) in the US or Europe.
 
 ## Positioning & differentiators
@@ -59,13 +59,13 @@ Enterprise governance posture a hedge-fund CTO cares about:
 - **Encryption** — AES-256 at rest, TLS 1.2+ in transit.
 - **Certifications** — SOC 2 Type 2 (ChatGPT Enterprise and API platform), ISO/IEC 27001 (and 27017/27018/27701), CSA STAR; DPA available; supports GDPR and CCPA. Documentation and subprocessor list on the OpenAI Trust Portal (trust.openai.com).
 
-vs nearest neighbors: [[microsoft-365-copilot]] wins on being *inside* the M365 tenant with existing Purview/Entra governance and per-user entitlement-aware Graph grounding; [[anthropic-claude-enterprise]] competes on similar enterprise posture and safety positioning; [[glean]] differentiates on entitlement-aware enterprise search/RAG. ChatGPT Enterprise's edge is model strength + adoption; its relative gap is that governance is bolted on via its own console/API rather than inheriting an existing enterprise control plane.
+vs nearest neighbors: [microsoft-365-copilot](microsoft-365-copilot.md) wins on being *inside* the M365 tenant with existing Purview/Entra governance and per-user entitlement-aware Graph grounding; [anthropic-claude-enterprise](anthropic-claude-enterprise.md) competes on similar enterprise posture and safety positioning; [glean](glean.md) differentiates on entitlement-aware enterprise search/RAG. ChatGPT Enterprise's edge is model strength + adoption; its relative gap is that governance is bolted on via its own console/API rather than inheriting an existing enterprise control plane.
 
 ## Ownership, funding & M&A
 
 - **Ownership: independent.** OpenAI operates as OpenAI Group PBC, controlled by the non-profit OpenAI Foundation (post October-2025 restructuring). **Microsoft holds a large minority equity stake (reported ~27%)** and a deep commercial/Azure partnership, but **does not own or control OpenAI**. No acquirer; the seed carried no M&A flag. `ownership_confidence: medium` — the Microsoft stake percentage and restructuring details are widely reported but volatile; verify the exact figure before relying on it. (as-of 2026-06-28)
 - **Funding:** OpenAI has raised on the order of $60B+ cumulatively, including a 2025 SoftBank-led round (~$40B announced). Figures vary by source and date.
-- **OpenAI as acquirer:** OpenAI has itself made acquisitions (e.g. [[promptfoo]] per the registry); not material to the Enterprise governance posture.
+- **OpenAI as acquirer:** OpenAI has itself made acquisitions (e.g. [promptfoo](promptfoo.md) per the registry); not material to the Enterprise governance posture.
 
 ## CTO / hedge-fund lens
 
@@ -73,13 +73,13 @@ vs nearest neighbors: [[microsoft-365-copilot]] wins on being *inside* the M365 
 - **Why the Enterprise tier specifically:** the no-training default + DPA + SOC 2/ISO + audit/Compliance API are the contractual and technical facts your risk and compliance teams will ask for. The consumer/Plus tier does **not** carry the same data-ownership and logging guarantees.
 - **Comms surveillance (MAR/MNPI/recordkeeping):** the Compliance API + archiving connectors (Global Relay, Smarsh, Theta Lake) let you pull ChatGPT interactions into the same surveillance/archive pipeline as email and chat — important for SEC 17a-4 / FINRA 3310 books-and-records and for catching MNPI leakage. This is a meaningful differentiator for a regulated fund and a reason to prefer Enterprise over ad-hoc usage.
 - **Data residency:** EU/UK/US/etc. in-region storage (and optional in-region inference) helps with GDPR and client/LP data-handling commitments.
-- **SR 11-7 / model risk:** as a third-party frontier model it falls under vendor/model risk — route it through [[vendor-risk]] TPRM and, if used for anything decision-relevant, [[ai-governance-platform]] controls. The assistant layer itself does not give you model-risk documentation.
-- **Residual gaps to cover elsewhere:** prompt-injection/untrusted-input and egress DLP at the assistant boundary are only partly handled here; pair with [[ai-access-governance]] / [[dlp]] / [[ai-runtime-security]] if those risks matter. Entitlement-aware grounding depends on how connectors are configured — don't assume per-user permission trimming for RAG.
+- **SR 11-7 / model risk:** as a third-party frontier model it falls under vendor/model risk — route it through [vendor-risk](../categories/vendor-risk.md) TPRM and, if used for anything decision-relevant, [ai-governance-platform](../categories/ai-governance-platform.md) controls. The assistant layer itself does not give you model-risk documentation.
+- **Residual gaps to cover elsewhere:** prompt-injection/untrusted-input and egress DLP at the assistant boundary are only partly handled here; pair with [ai-access-governance](../categories/ai-access-governance.md) / [dlp](../categories/dlp.md) / [ai-runtime-security](../categories/ai-runtime-security.md) if those risks matter. Entitlement-aware grounding depends on how connectors are configured — don't assume per-user permission trimming for RAG.
 - **Fit:** **high** for most funds as the sanctioned assistant; the main reasons to pick a neighbor are a Microsoft-first estate (Copilot) or an entitlement-aware-search-first need (Glean).
 
 ## Competitors / alternatives
 
-[[anthropic-claude-enterprise]] · [[microsoft-365-copilot]] · [[gemini-enterprise]] · [[amazon-q-business]] · [[perplexity-enterprise]] · [[glean]]
+[anthropic-claude-enterprise](anthropic-claude-enterprise.md) · [microsoft-365-copilot](microsoft-365-copilot.md) · [gemini-enterprise](gemini-enterprise.md) · [amazon-q-business](amazon-q-business.md) · [perplexity-enterprise](perplexity-enterprise.md) · [glean](glean.md)
 
 ## Open questions / to verify
 

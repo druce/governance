@@ -27,13 +27,13 @@ tags: [llm-eval, observability, guardrails, cisco]
 
 # Galileo
 
-> Primary category: [[ai-red-teaming]] (with heavy [[llm-observability]] overlap). Acquired by [[cisco]], folding into Splunk Observability.
+> Primary category: [ai-red-teaming](../categories/ai-red-teaming.md) (with heavy [llm-observability](../categories/llm-observability.md) overlap). Acquired by [cisco](cisco.md), folding into Splunk Observability.
 
 **One-liner** — An AI/agent **evaluation and observability** platform that measures LLM/agent output quality, catches failures (hallucination, bias, unsafe output) before they reach users, and enforces real-time guardrails across the agent development lifecycle.
 
 **What it does** — Galileo instruments the full **agent development lifecycle (ADLC)** — prompt optimization, model selection, offline evaluation, and production monitoring — and adds **real-time guardrails** for multi-agent systems. It scores responses for quality, hallucination, bias, safety and cost, so teams can both *evaluate* models pre-deployment and *watch* them in production. It straddles two jobs: evaluation/guardrails (red-teaming-adjacent) and observability (tracing/monitoring AI apps).
 
-**Where it sits in the stack** — Primary [[ai-red-teaming]]/guardrails with a strong [[llm-observability]] leg at the model/prompt layer. Trifecta role: mainly **untrusted-input** (guardrails catching jailbreaks/unsafe prompts and outputs); its bigger contribution is **trust/quality assurance** rather than blocking egress. Adjacent to [[langsmith]], [[arize-phoenix]], [[langfuse]], [[braintrust]] (observability/eval) and [[patronus-ai]], [[lakera]], [[promptfoo]] (eval/red-teaming).
+**Where it sits in the stack** — Primary [ai-red-teaming](../categories/ai-red-teaming.md)/guardrails with a strong [llm-observability](../categories/llm-observability.md) leg at the model/prompt layer. Trifecta role: mainly **untrusted-input** (guardrails catching jailbreaks/unsafe prompts and outputs); its bigger contribution is **trust/quality assurance** rather than blocking egress. Adjacent to [langsmith](langsmith.md), [arize-phoenix](arize-phoenix.md), [langfuse](langfuse.md), [braintrust](braintrust.md) (observability/eval) and [patronus-ai](patronus-ai.md), [lakera](lakera.md), [promptfoo](promptfoo.md) (eval/red-teaming).
 
 **Deployment & architecture** — SaaS with SDK/API instrumentation dropped into the AI app/agent pipeline; supports offline eval and live production monitoring. Post-acquisition, Cisco is integrating Galileo into **Splunk Observability Cloud**, extending Splunk's AI Agent Monitoring across the full ADLC with guardrails.
 
@@ -41,15 +41,15 @@ tags: [llm-eval, observability, guardrails, cisco]
 
 ## Ownership, funding & M&A
 
-**Acquired by [[cisco]]**. Galileo (Galileo Technologies, Inc. / galileo.ai; formerly Rungalileo) was founded **2021** in San Francisco by **Vikram Chatterji** (CEO), **Atindriyo Sanyal** and **Yash Sheth**, and raised **~$68M**, including a **$45M Series B (2024-10) led by Scale Venture Partners**. Cisco **announced intent 2026-04-09**; secondary press (Network World, Channel Insider) reports the deal **completed 2026-05-22**, while Cisco's own note said expected close in Q4 FY2026. Intent is high confidence; the exact **close date is medium** (no Cisco closing PR located). Terms undisclosed.
+**Acquired by [cisco](cisco.md)**. Galileo (Galileo Technologies, Inc. / galileo.ai; formerly Rungalileo) was founded **2021** in San Francisco by **Vikram Chatterji** (CEO), **Atindriyo Sanyal** and **Yash Sheth**, and raised **~$68M**, including a **$45M Series B (2024-10) led by Scale Venture Partners**. Cisco **announced intent 2026-04-09**; secondary press (Network World, Channel Insider) reports the deal **completed 2026-05-22**, while Cisco's own note said expected close in Q4 FY2026. Intent is high confidence; the exact **close date is medium** (no Cisco closing PR located). Terms undisclosed.
 
 ## CTO / hedge-fund lens
 
-**Day-2** for most funds: you need this once you're building or seriously evaluating LLM/agent applications and want quantitative quality/safety signals plus production monitoring. The evaluation output is genuinely useful **SR 11-7 / model-risk evidence** — documented, repeatable testing of model behavior over time. For a Splunk shop the integration is the draw; standalone, weigh it against [[arize-phoenix]], [[langsmith]], [[braintrust]] (eval/observability) and [[patronus-ai]] (eval). If you're not yet building AI apps, it's premature.
+**Day-2** for most funds: you need this once you're building or seriously evaluating LLM/agent applications and want quantitative quality/safety signals plus production monitoring. The evaluation output is genuinely useful **SR 11-7 / model-risk evidence** — documented, repeatable testing of model behavior over time. For a Splunk shop the integration is the draw; standalone, weigh it against [arize-phoenix](arize-phoenix.md), [langsmith](langsmith.md), [braintrust](braintrust.md) (eval/observability) and [patronus-ai](patronus-ai.md) (eval). If you're not yet building AI apps, it's premature.
 
 ## Competitors / alternatives
 
-[[langsmith]], [[arize-phoenix]], [[langfuse]], [[braintrust]], [[patronus-ai]], [[maxim-ai]], [[lakera]], [[promptfoo]].
+[langsmith](langsmith.md), [arize-phoenix](arize-phoenix.md), [langfuse](langfuse.md), [braintrust](braintrust.md), [patronus-ai](patronus-ai.md), [maxim-ai](maxim-ai.md), [lakera](lakera.md), [promptfoo](promptfoo.md).
 
 ## Open questions / to verify
 

@@ -30,20 +30,20 @@ Primarily the sensitive-data and egress legs. NHI decides what a workload or age
 
 Dedicated NHI / agent-identity platforms (the survey shortlist):
 
-- [[cyberark]] — PAM incumbent extending into NHI and secrets-less workload/agent identity; broadest enterprise footprint.
-- [[astrix-security]] — NHI discovery and governance for app-to-app connections, tokens, and OAuth grants.
-- [[token-security]] — NHI security and governance platform focused on machine-identity sprawl.
-- [[aembit]] — workload identity and access management; issues short-lived, policy-based credentials (secrets-less workload auth).
-- [[oasis-security]] — NHI lifecycle management and discovery/governance.
-- [[natoma]] — agent identity and access governance (also relevant to MCP/tool access).
-- [[entro-security]] — NHI and secrets security; discovery of non-human identities and exposed secrets.
-- [[clutch-security]] — NHI security platform.
+- [cyberark](../vendors/cyberark.md) — PAM incumbent extending into NHI and secrets-less workload/agent identity; broadest enterprise footprint.
+- [astrix-security](../vendors/astrix-security.md) — NHI discovery and governance for app-to-app connections, tokens, and OAuth grants.
+- [token-security](../vendors/token-security.md) — NHI security and governance platform focused on machine-identity sprawl.
+- [aembit](../vendors/aembit.md) — workload identity and access management; issues short-lived, policy-based credentials (secrets-less workload auth).
+- [oasis-security](../vendors/oasis-security.md) — NHI lifecycle management and discovery/governance.
+- [natoma](../vendors/natoma.md) — agent identity and access governance (also relevant to MCP/tool access).
+- [entro-security](../vendors/entro-security.md) — NHI and secrets security; discovery of non-human identities and exposed secrets.
+- [clutch-security](../vendors/clutch-security.md) — NHI security platform.
 
 Identity/governance platforms with NHI capabilities (cross-listed):
 
-- [[silverfort]] — identity security across human and non-human accounts; service-account discovery and MFA.
-- [[linx-security]] — AI-native IGA that explicitly covers NHI.
-- [[descope]] / [[stytch]] — agent/app auth (primary fit is tool-identity), relevant for issuing agent identities.
+- [silverfort](../vendors/silverfort.md) — identity security across human and non-human accounts; service-account discovery and MFA.
+- [linx-security](../vendors/linx-security.md) — AI-native IGA that explicitly covers NHI.
+- [descope](../vendors/descope.md) / [stytch](../vendors/stytch.md) — agent/app auth (primary fit is tool-identity), relevant for issuing agent identities.
 
 ## Consolidation / M&A dynamics
 
@@ -54,11 +54,11 @@ NHI is an active acquisition target: the platform players (Palo Alto, Cisco) app
 
 ## Adjacent categories
 
-- [[identity-access]] — the human-side IdP; NHI is the same discipline for machines and agents.
-- [[secrets-management]] — the vault for the credentials NHI governs; the two overlap heavily (Entro, CyberArk span both).
-- [[identity-governance]] — joiner/mover/leaver and access certs, increasingly extended to non-human accounts.
-- [[tool-identity-integration]] — how agents authenticate to SaaS tools; consumes NHI.
-- [[mcp-gateway]] — brokers which tools agents reach; pairs with agent identity.
+- [identity-access](identity-access.md) — the human-side IdP; NHI is the same discipline for machines and agents.
+- [secrets-management](secrets-management.md) — the vault for the credentials NHI governs; the two overlap heavily (Entro, CyberArk span both).
+- [identity-governance](identity-governance.md) — joiner/mover/leaver and access certs, increasingly extended to non-human accounts.
+- [tool-identity-integration](tool-identity-integration.md) — how agents authenticate to SaaS tools; consumes NHI.
+- [mcp-gateway](mcp-gateway.md) — brokers which tools agents reach; pairs with agent identity.
 
 ## Survey
 
@@ -72,5 +72,5 @@ NHI is an active acquisition target: the platform players (Palo Alto, Cisco) app
 
 ## Open taxonomy questions
 
-- Heavy overlap with [[secrets-management]] (Entro, CyberArk) and [[identity-governance]] (Silverfort, Linx) — where to draw NHI's boundary.
+- Heavy overlap with [secrets-management](secrets-management.md) (Entro, CyberArk) and [identity-governance](identity-governance.md) (Silverfort, Linx) — where to draw NHI's boundary.
 - Agent identity vs. workload identity may deserve splitting as agentic deployments mature.

@@ -27,7 +27,7 @@ tags: [deepfake, voice, call-center, fraud, authentication]
 
 # Pindrop
 
-> Primary category: [[anti-deepfake]].
+> Primary category: [anti-deepfake](../categories/anti-deepfake.md).
 
 **One-liner** — A long-established voice-security company that authenticates callers and detects fraud, spoofing, and AI voice-clone / audio deepfakes in contact centers and real-time communications.
 
@@ -35,7 +35,7 @@ tags: [deepfake, voice, call-center, fraud, authentication]
 Pindrop analyzes the audio, device, and behavioral signals of phone calls to (a) passively authenticate legitimate callers and (b) flag fraudsters, spoofing, and synthetic/cloned voices. Its newer **Pulse** capability targets audio deepfake detection for calls and meetings. The job it does: cut fraud and account-takeover in phone channels while reducing authentication friction for genuine customers — and increasingly, catch AI-generated voices used in social-engineering attacks.
 
 ## Where it sits in the stack
-Sits in [[anti-deepfake]] at the **foundation** layer, focused specifically on the **voice/telephony channel**. Lethal-trifecta relevance is **untrusted-input**-adjacent: it decides whether a caller/voice can be trusted before action is taken. It is a fraud / identity / authenticity control, not a model or data-governance control. Trust zone: the inbound call boundary (red→yellow), embedded in contact-center and IVR infrastructure.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, focused specifically on the **voice/telephony channel**. Lethal-trifecta relevance is **untrusted-input**-adjacent: it decides whether a caller/voice can be trusted before action is taken. It is a fraud / identity / authenticity control, not a model or data-governance control. Trust zone: the inbound call boundary (red→yellow), embedded in contact-center and IVR infrastructure.
 
 ## Deployment & architecture
 - Delivered as **SaaS / API** integrated into contact-center, IVR, and call platforms; on-prem/private options have historically been available for regulated enterprises.
@@ -43,7 +43,7 @@ Sits in [[anti-deepfake]] at the **foundation** layer, focused specifically on t
 - 300+ patents in audio analysis (vendor claim). Scale claims: 5.3B calls analyzed, 104M spoof calls detected, $2B fraud prevented (vendor/marketing).
 
 ## Positioning & differentiators
-The incumbent in **call-center voice security** — deepest in telephony voice biometrics, device fingerprinting, and call risk at scale, with a long track record in banking and insurance. Differs from [[reality-defender]] and [[getreal]] (broader multimodal media detection / forensics) by being voice/call-channel-specialized rather than media-agnostic; the deepfake-detection push (Pulse) is an extension of its voice franchise. Neighbors: [[reality-defender]], [[getreal]], [[adaptive-security]], [[doppel]].
+The incumbent in **call-center voice security** — deepest in telephony voice biometrics, device fingerprinting, and call risk at scale, with a long track record in banking and insurance. Differs from [reality-defender](reality-defender.md) and [getreal](getreal.md) (broader multimodal media detection / forensics) by being voice/call-channel-specialized rather than media-agnostic; the deepfake-detection push (Pulse) is an extension of its voice franchise. Neighbors: [reality-defender](reality-defender.md), [getreal](getreal.md), [adaptive-security](adaptive-security.md), [doppel](doppel.md).
 
 ## Ownership, funding & M&A
 - **Independent, VC-backed.** No acquisition found (no seed M&A flag).
@@ -55,7 +55,7 @@ The incumbent in **call-center voice security** — deepest in telephony voice b
 **Day-2, and channel-specific.** Most directly relevant if the firm runs (or outsources) a **phone channel where callers can move money or change instructions** — investor services, treasury/wire confirmation lines, client onboarding by phone. Pindrop's strongest, most proven value is contact-center fraud and caller authentication; the deepfake angle matters as voice-clone social engineering rises. Less relevant to a fund with little inbound call volume. Not a model-risk/SR 11-7 control. Mature, enterprise-grade — better matched to firms with real call-center operations than to a small back office.
 
 ## Competitors / alternatives
-[[reality-defender]], [[getreal]], [[adaptive-security]], [[doppel]]
+[reality-defender](reality-defender.md), [getreal](getreal.md), [adaptive-security](adaptive-security.md), [doppel](doppel.md)
 
 ## Open questions / to verify
 - Current cumulative equity total and latest valuation (only debt round dated here).

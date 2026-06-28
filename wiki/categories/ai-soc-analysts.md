@@ -14,7 +14,7 @@ last_updated: 2026-06-28
 
 ## Business objective
 
-The RoboCop watching the logs. AI SOC analysts (a.k.a. agentic SOC, AI SecOps) use LLM-driven agents to do the tier-1/tier-2 work a human security analyst does: triage alerts from the [[siem-soc]], investigate them, pull context, decide what is a false positive, and draft or execute a response. The objective is to clear the alert backlog and shrink mean-time-to-respond without hiring a larger SOC team.
+The RoboCop watching the logs. AI SOC analysts (a.k.a. agentic SOC, AI SecOps) use LLM-driven agents to do the tier-1/tier-2 work a human security analyst does: triage alerts from the [siem-soc](siem-soc.md), investigate them, pull context, decide what is a false positive, and draft or execute a response. The objective is to clear the alert backlog and shrink mean-time-to-respond without hiring a larger SOC team.
 
 This is distinct from classic SOAR (rule-based playbooks): these tools reason over alerts rather than just running fixed automations, though the line blurs as SOAR vendors add AI.
 
@@ -30,20 +30,20 @@ Detection/response automation, not prevention. Like the SIEM it sits behind, it 
 
 Independent AI SOC analyst startups (the survey shortlist):
 
-- [[prophet-security]] — agentic SOC analyst for autonomous alert triage and investigation.
-- [[dropzone-ai]] — AI SOC analyst that auto-investigates alerts end to end.
-- [[7ai]] — agentic security platform for SOC automation.
-- [[radiant-security]] — AI SOC analyst for triage, investigation, and response.
-- [[simbian]] — AI SOC agents / agentic security automation.
+- [prophet-security](../vendors/prophet-security.md) — agentic SOC analyst for autonomous alert triage and investigation.
+- [dropzone-ai](../vendors/dropzone-ai.md) — AI SOC analyst that auto-investigates alerts end to end.
+- [7ai](../vendors/7ai.md) — agentic security platform for SOC automation.
+- [radiant-security](../vendors/radiant-security.md) — AI SOC analyst for triage, investigation, and response.
+- [simbian](../vendors/simbian.md) — AI SOC agents / agentic security automation.
 
 Platform-embedded AI analysts (cross-listed; tied to a larger security stack):
 
-- [[crowdstrike]] — Charlotte AI; agentic SOC analyst embedded in the Falcon platform.
-- [[palo-alto-networks]] — Cortex AgentiX; agentic SOC built into the Cortex XSIAM platform.
+- [crowdstrike](../vendors/crowdstrike.md) — Charlotte AI; agentic SOC analyst embedded in the Falcon platform.
+- [palo-alto-networks](../vendors/palo-alto-networks.md) — Cortex AgentiX; agentic SOC built into the Cortex XSIAM platform.
 
 SOAR / automation that overlaps agentic SOC (cross-listed):
 
-- [[torq]] — hyperautomation/SOAR adding AI-driven SOC capabilities.
+- [torq](../vendors/torq.md) — hyperautomation/SOAR adding AI-driven SOC capabilities.
 
 ## Consolidation / M&A dynamics
 
@@ -51,10 +51,10 @@ No seed-flagged acquisitions in this row. The notable dynamic is build-vs-buy by
 
 ## Adjacent categories
 
-- [[siem-soc]] — the alert source and audit backbone these analysts sit on top of; tightly coupled.
-- [[edr-xdr]] — endpoint detection that generates much of the alert volume; CrowdStrike spans both.
-- [[ai-spm]] — governs the AI agents in the org, which would include the AI analyst itself.
-- [[ai-runtime-security]] — protects AI apps at runtime; the AI analyst is itself an AI app worth protecting.
+- [siem-soc](siem-soc.md) — the alert source and audit backbone these analysts sit on top of; tightly coupled.
+- [edr-xdr](edr-xdr.md) — endpoint detection that generates much of the alert volume; CrowdStrike spans both.
+- [ai-spm](ai-spm.md) — governs the AI agents in the org, which would include the AI analyst itself.
+- [ai-runtime-security](ai-runtime-security.md) — protects AI apps at runtime; the AI analyst is itself an AI app worth protecting.
 
 ## Survey
 
@@ -64,9 +64,9 @@ No seed-flagged acquisitions in this row. The notable dynamic is build-vs-buy by
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Early, fast-moving category — expect heavy "Interested/Considering/pilot" and little "in production." The platform-embedded options (Charlotte AI, Cortex AgentiX) will be "in use" mostly as a byproduct of owning CrowdStrike/Palo Alto, not as a deliberate AI-SOC purchase — worth disambiguating. Torq straddles [[siem-soc]] SOAR; respondents may report it under either question. (Jazz Security was reclassified to [[dlp]] after research — it is AI-native DLP, not a SOC analyst.) Ask about deployment mode (assist vs. autonomous) since trust levels vary widely.
+**Notes for survey design.** Early, fast-moving category — expect heavy "Interested/Considering/pilot" and little "in production." The platform-embedded options (Charlotte AI, Cortex AgentiX) will be "in use" mostly as a byproduct of owning CrowdStrike/Palo Alto, not as a deliberate AI-SOC purchase — worth disambiguating. Torq straddles [siem-soc](siem-soc.md) SOAR; respondents may report it under either question. (Jazz Security was reclassified to [dlp](dlp.md) after research — it is AI-native DLP, not a SOC analyst.) Ask about deployment mode (assist vs. autonomous) since trust levels vary widely.
 
 ## Open taxonomy questions
 
-- Overlap with [[siem-soc]] SOAR (Torq) — confirm which survey question owns it.
-- As incumbents embed AI analysts, this may collapse back into [[siem-soc]] / [[edr-xdr]] rather than remaining standalone.
+- Overlap with [siem-soc](siem-soc.md) SOAR (Torq) — confirm which survey question owns it.
+- As incumbents embed AI analysts, this may collapse back into [siem-soc](siem-soc.md) / [edr-xdr](edr-xdr.md) rather than remaining standalone.

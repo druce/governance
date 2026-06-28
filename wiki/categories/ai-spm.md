@@ -24,7 +24,7 @@ the tool that answers "what AI do we actually have running, who built it, what c
 reach, and where is it misconfigured?" before something goes wrong.
 
 It is mostly a **visibility and governance** plane, not an inline enforcement plane.
-Where [[ai-runtime-security]] sits in the request path and blocks a bad prompt in real
+Where [ai-runtime-security](ai-runtime-security.md) sits in the request path and blocks a bad prompt in real
 time, AI-SPM works more like CSPM/DSPM for AI: continuous discovery, configuration
 assessment, and risk scoring of the AI assets themselves.
 
@@ -33,7 +33,7 @@ assessment, and risk scoring of the AI assets themselves.
 Day-2 for most hedge funds — it earns its place **once AI usage sprawls**: multiple
 copilots, home-grown LLM apps, a handful of agents, model endpoints in more than one
 cloud. A 50-person fund running only ChatGPT/Claude Enterprise through a gateway doesn't
-need a dedicated AI-SPM tool yet; the gateway and [[ai-access-governance]] cover the
+need a dedicated AI-SPM tool yet; the gateway and [ai-access-governance](ai-access-governance.md) cover the
 visibility. The trigger to buy is **agent and shadow-AI proliferation** — when no single
 person can list every AI system and its blast radius. Under SR 11-7 model-risk
 expectations, an authoritative AI inventory also becomes useful evidence, which can pull
@@ -50,24 +50,24 @@ red/yellow/green assets and flags the ones that violate your zone design.
 ## Vendors
 
 **AI-native posture & agent inventory**
-- [[noma-security]] — discovery, posture, and runtime governance for AI/ML pipelines and agents; common AI-SPM shortlist anchor.
-- [[cranium]] — AI inventory, supply-chain/model risk, and posture aimed at governance/compliance teams.
-- [[quilr]] — AI discovery and posture with overlap into shadow-AI/data-governance (positioning straddles AI-SPM and access governance).
-- [[reco]] — SaaS-security-rooted AI discovery and posture across the SaaS estate; cross-listed with shadow-AI.
-- [[nudge-security]] — SaaS/AI discovery via email/OAuth telemetry; finds shadow AI and accounts org-wide.
+- [noma-security](../vendors/noma-security.md) — discovery, posture, and runtime governance for AI/ML pipelines and agents; common AI-SPM shortlist anchor.
+- [cranium](../vendors/cranium.md) — AI inventory, supply-chain/model risk, and posture aimed at governance/compliance teams.
+- [quilr](../vendors/quilr.md) — AI discovery and posture with overlap into shadow-AI/data-governance (positioning straddles AI-SPM and access governance).
+- [reco](../vendors/reco.md) — SaaS-security-rooted AI discovery and posture across the SaaS estate; cross-listed with shadow-AI.
+- [nudge-security](../vendors/nudge-security.md) — SaaS/AI discovery via email/OAuth telemetry; finds shadow AI and accounts org-wide.
 
 **Platform / cloud-security extensions (AI-SPM as a module)**
-- [[wiz]] — AI-SPM as an add-on to its cloud-security platform (model/endpoint discovery in cloud).
-- [[prisma-airs]] — Palo Alto's AI security platform; AI-SPM alongside runtime firewalling and an agent gateway.
-- [[prompt-security]] — AI security suite spanning posture, runtime, and shadow-AI (per seed, acq. by SentinelOne — unverified).
-- [[aim-security]] — enterprise AI security covering posture and runtime (per seed, acq. by Cato — unverified).
-- [[astrix-security]] — non-human-identity roots; posture over agent/app identities and their access (per seed, acq. by Cisco — unverified).
+- [wiz](../vendors/wiz.md) — AI-SPM as an add-on to its cloud-security platform (model/endpoint discovery in cloud).
+- [prisma-airs](../vendors/prisma-airs.md) — Palo Alto's AI security platform; AI-SPM alongside runtime firewalling and an agent gateway.
+- [prompt-security](../vendors/prompt-security.md) — AI security suite spanning posture, runtime, and shadow-AI (per seed, acq. by SentinelOne — unverified).
+- [aim-security](../vendors/aim-security.md) — enterprise AI security covering posture and runtime (per seed, acq. by Cato — unverified).
+- [astrix-security](../vendors/astrix-security.md) — non-human-identity roots; posture over agent/app identities and their access (per seed, acq. by Cisco — unverified).
 
 **Agent-governance / overlap**
-- [[zenity]] — governance and security for agents and low-code/copilot builders; primary in [[agent-runtime-security]], strong AI-SPM overlap.
-- [[torq]] — SOC automation vendor with an AI-governance posture offering; overlaps SecOps tooling.
-- [[hiddenlayer]] — model scanning and ML asset risk; posture angle overlaps with its runtime/red-teaming work.
-- [[pillar-security]] — AI app discovery and posture alongside runtime protection.
+- [zenity](../vendors/zenity.md) — governance and security for agents and low-code/copilot builders; primary in [agent-runtime-security](agent-runtime-security.md), strong AI-SPM overlap.
+- [torq](../vendors/torq.md) — SOC automation vendor with an AI-governance posture offering; overlaps SecOps tooling.
+- [hiddenlayer](../vendors/hiddenlayer.md) — model scanning and ML asset risk; posture angle overlaps with its runtime/red-teaming work.
+- [pillar-security](../vendors/pillar-security.md) — AI app discovery and posture alongside runtime protection.
 
 ## Consolidation / M&A dynamics
 
@@ -80,11 +80,11 @@ the AI-native independents (Noma, Cranium, Quilr).
 
 ## Adjacent categories
 
-- [[agent-runtime-security]] — the inline/runtime sibling; AI-SPM inventories agents, agent-runtime protects them as they act. Heavy vendor overlap (Zenity, Noma).
-- [[ai-runtime-security]] — the real-time firewall; AI-SPM finds the apps, runtime security guards their traffic.
-- [[ai-access-governance]] — shadow-AI discovery for *employee usage*; AI-SPM leans toward *systems/agents you build and run*. Reco/Nudge/Quilr span both.
-- [[ai-governance-platform]] — model-risk/compliance governance; AI-SPM feeds it the technical inventory and posture evidence.
-- [[dspm]] — same posture-management pattern applied to data rather than AI assets.
+- [agent-runtime-security](agent-runtime-security.md) — the inline/runtime sibling; AI-SPM inventories agents, agent-runtime protects them as they act. Heavy vendor overlap (Zenity, Noma).
+- [ai-runtime-security](ai-runtime-security.md) — the real-time firewall; AI-SPM finds the apps, runtime security guards their traffic.
+- [ai-access-governance](ai-access-governance.md) — shadow-AI discovery for *employee usage*; AI-SPM leans toward *systems/agents you build and run*. Reco/Nudge/Quilr span both.
+- [ai-governance-platform](ai-governance-platform.md) — model-risk/compliance governance; AI-SPM feeds it the technical inventory and posture evidence.
+- [dspm](dspm.md) — same posture-management pattern applied to data rather than AI assets.
 
 ## Survey
 
@@ -100,11 +100,11 @@ In production; Would recommend; Would not recommend.
 
 **Notes for survey design.**
 - **Table-stakes / most-recognized:** Noma, Wiz, Prisma AIRS. **Niche / specialised:** Cranium, Quilr, Torq.
-- **Overlap risk:** Zenity and Noma also appear under [[agent-runtime-security]]; Reco, Nudge, and Quilr also appear under [[ai-access-governance]]. Respondents may not distinguish "AI-SPM" from "agent security" or "shadow-AI" — consider a short definition line ("discovery/inventory/posture of your AI systems and agents") to disambiguate.
+- **Overlap risk:** Zenity and Noma also appear under [agent-runtime-security](agent-runtime-security.md); Reco, Nudge, and Quilr also appear under [ai-access-governance](ai-access-governance.md). Respondents may not distinguish "AI-SPM" from "agent security" or "shadow-AI" — consider a short definition line ("discovery/inventory/posture of your AI systems and agents") to disambiguate.
 - **M&A dates the options:** Wiz, Prompt Security, Aim, and Astrix may show up under acquirer brands (Google, SentinelOne, Cato, Cisco) — keep both names recognizable.
 
 ## Open taxonomy questions
 
-- **ai-spm vs [[agent-runtime-security]] is the messiest overlap in this layer.** The seed doc folds "Agent Security" into the "AI-SPM / Agent Governance" row; the CSV splits them into separate survey questions. We keep both as distinct categories (see Q1 in taxonomy-gaps.md) and accept that several vendors (Zenity, Noma, Lasso) legitimately span both. Rule of thumb used here: **AI-SPM = discover/inventory/assess posture (visibility plane); agent-runtime-security = protect agents while they act (enforcement plane).** Many products sell both and the line is marketing-driven, not architectural.
-- Quilr/Reco/Nudge also straddle [[ai-access-governance]] (shadow-AI). Whether "AI-SPM" should absorb shadow-AI discovery, or stay scoped to built/owned AI systems, is an open cut.
+- **ai-spm vs [agent-runtime-security](agent-runtime-security.md) is the messiest overlap in this layer.** The seed doc folds "Agent Security" into the "AI-SPM / Agent Governance" row; the CSV splits them into separate survey questions. We keep both as distinct categories (see Q1 in taxonomy-gaps.md) and accept that several vendors (Zenity, Noma, Lasso) legitimately span both. Rule of thumb used here: **AI-SPM = discover/inventory/assess posture (visibility plane); agent-runtime-security = protect agents while they act (enforcement plane).** Many products sell both and the line is marketing-driven, not architectural.
+- Quilr/Reco/Nudge also straddle [ai-access-governance](ai-access-governance.md) (shadow-AI). Whether "AI-SPM" should absorb shadow-AI discovery, or stay scoped to built/owned AI systems, is an open cut.
 - Candidate to revisit after research: whether "AI-SPM" and "AI governance platform" converge for regulated buyers who mainly want the inventory as compliance evidence.

@@ -31,7 +31,7 @@ tags: [authentication, ciam, oauth, mcp, agent-identity, non-human-identity, dev
 
 **One-liner** — An API-first authentication and fraud platform for developers that now also does AI-agent identity: letting your app issue scoped, revocable OAuth tokens to agents and MCP servers, and detecting agentic traffic.
 
-**Categories** — [[tool-identity-integration]], [[non-human-identity]]
+**Categories** — [tool-identity-integration](../categories/tool-identity-integration.md), [non-human-identity](../categories/non-human-identity.md)
 
 ## What it does
 
@@ -44,7 +44,7 @@ Since 2025 its center of gravity has shifted to **identity for AI agents**. Two 
 
 ## Where it sits in the stack
 
-Primary category: [[tool-identity-integration]] (the agent→app/SaaS authentication-and-connector slot in the model/prompt layer); secondary: [[non-human-identity]]. Stytch is **infrastructure a developer embeds**, not a control a CTO buys off-the-shelf to govern their own AI usage — that distinction matters for the hedge-fund lens below.
+Primary category: [tool-identity-integration](../categories/tool-identity-integration.md) (the agent→app/SaaS authentication-and-connector slot in the model/prompt layer); secondary: [non-human-identity](../categories/non-human-identity.md). Stytch is **infrastructure a developer embeds**, not a control a CTO buys off-the-shelf to govern their own AI usage — that distinction matters for the hedge-fund lens below.
 
 Lethal-trifecta role: it mainly helps on the **egress** leg (scoped, revocable tokens bound what an agent can read/write through your app, instead of handing it a user's full session) and partly on **untrusted-input** (IsAgent/fingerprinting + rate limiting filter malicious automated traffic, including prompt-injection-driven abuse). It does not classify or stop sensitive-data content itself. In trust-zone terms it governs the **authorization boundary** between an agent and a first-party application.
 
@@ -60,10 +60,10 @@ Lethal-trifecta role: it mainly helps on the **egress** leg (scoped, revocable t
 
 Stytch is known as a **developer-first, API-first auth** alternative to hosted CIAM, and in 2025 it moved early and aggressively on **agent/MCP authentication**, branding itself an "identity platform for AI agents." Versus nearest neighbors:
 
-- [[descope]] — the closest comparison: also a developer-centric CIAM that has leaned hard into agentic/non-human identity and MCP auth. Stytch differentiates on its device-fingerprinting fraud heritage and (now) Twilio's reputation data.
-- [[workos]] — more focused on **enterprise-readiness features** (SSO/SCIM/directory sync) that B2B SaaS bolt on to sell upmarket; overlapping but more "enterprise plumbing," less fraud/consumer-auth and (historically) less agent-fraud tooling.
-- [[okta]] (Auth0) — the incumbent identity/CIAM platform; broader and more enterprise, with its own agent-identity initiatives. Stytch positions as lighter-weight and more developer-native.
-- [[cyberark]] — comes at non-human/agent identity from the enterprise secrets/privileged-access side, governing workloads centrally, rather than embedding OAuth into an app a developer ships.
+- [descope](descope.md) — the closest comparison: also a developer-centric CIAM that has leaned hard into agentic/non-human identity and MCP auth. Stytch differentiates on its device-fingerprinting fraud heritage and (now) Twilio's reputation data.
+- [workos](workos.md) — more focused on **enterprise-readiness features** (SSO/SCIM/directory sync) that B2B SaaS bolt on to sell upmarket; overlapping but more "enterprise plumbing," less fraud/consumer-auth and (historically) less agent-fraud tooling.
+- [okta](okta.md) (Auth0) — the incumbent identity/CIAM platform; broader and more enterprise, with its own agent-identity initiatives. Stytch positions as lighter-weight and more developer-native.
+- [cyberark](cyberark.md) — comes at non-human/agent identity from the enterprise secrets/privileged-access side, governing workloads centrally, rather than embedding OAuth into an app a developer ships.
 
 ## Ownership, funding & M&A
 
@@ -79,7 +79,7 @@ It becomes relevant only if the fund **builds its own customer- or agent-facing 
 
 ## Competitors / alternatives
 
-[[descope]], [[workos]], [[okta]], [[cyberark]], [[composio]], [[arcade]], [[stackone]]
+[descope](descope.md), [workos](workos.md), [okta](okta.md), [cyberark](cyberark.md), [composio](composio.md), [arcade](arcade.md), [stackone](stackone.md)
 
 ## Open questions / to verify
 
@@ -98,4 +98,4 @@ It becomes relevant only if the fund **builds its own customer- or agent-facing 
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2020 (San Francisco), founders Reed McGinley-Stempel (CEO) & Julianna Lamb (CTO) (+ Mark Cunningham per aggregators), developer-first CIAM with $90M Series B (2021, Coatue, $1B valuation). **Corrected ownership from `independent` to `acquired`: Twilio acquired Stytch, announced 2025-10-30, completed 2025-11-14 (terms undisclosed), confirmed via Twilio's primary announcement — confidence high.** Documented the agent-identity angle (Connected Apps OAuth-for-agents, MCP-native auth, IsAgent/device-fingerprinting). Positioned vs [[descope]]/[[workos]]/[[okta]]/[[cyberark]]; set hedge_fund_fit low (developer infra, not a CTO buy). status: researched, confidence medium. 4 sources cached.
+- [2026-06-28] Researched; established founded 2020 (San Francisco), founders Reed McGinley-Stempel (CEO) & Julianna Lamb (CTO) (+ Mark Cunningham per aggregators), developer-first CIAM with $90M Series B (2021, Coatue, $1B valuation). **Corrected ownership from `independent` to `acquired`: Twilio acquired Stytch, announced 2025-10-30, completed 2025-11-14 (terms undisclosed), confirmed via Twilio's primary announcement — confidence high.** Documented the agent-identity angle (Connected Apps OAuth-for-agents, MCP-native auth, IsAgent/device-fingerprinting). Positioned vs [descope](descope.md)/[workos](workos.md)/[okta](okta.md)/[cyberark](cyberark.md); set hedge_fund_fit low (developer infra, not a CTO buy). status: researched, confidence medium. 4 sources cached.

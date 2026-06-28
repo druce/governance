@@ -27,7 +27,7 @@ tags: [mcp, open-source, oauth, audit, agent-platform]
 
 # Obot
 
-> Researched 2026-06-28. Primary category: [[mcp-gateway]].
+> Researched 2026-06-28. Primary category: [mcp-gateway](../categories/mcp-gateway.md).
 
 **One-liner** — An open-source MCP gateway and platform that puts a governed control plane between AI agents (Claude, Cursor, ChatGPT, internal bots) and the MCP servers they call, centralizing OAuth, per-tool access policy, a curated server catalog, and audit logging.
 
@@ -45,7 +45,7 @@ The broader Obot project also ships an MCP-standards chat client ("Obot Chat") w
 
 ## Where it sits in the stack
 
-Primary category: [[mcp-gateway]] — the **model/prompt → tool-access** layer. Obot is infrastructure that governs how agents reach tools and data, not a content guardrail or DLP product.
+Primary category: [mcp-gateway](../categories/mcp-gateway.md) — the **model/prompt → tool-access** layer. Obot is infrastructure that governs how agents reach tools and data, not a content guardrail or DLP product.
 
 Lethal-trifecta role: it touches two legs. By gating *which* MCP servers/tools an agent can invoke and brokering credentials, it constrains **egress** (what an agent can act on / exfiltrate to) and limits exposure to **untrusted input** from rogue or unvetted MCP servers (the curated catalog reduces supply-chain risk). It does not by itself inspect prompt/response content for sensitive-data leakage — pair it with a runtime guardrail / DLP layer for that.
 
@@ -64,13 +64,13 @@ Integrations: identity via Google, GitHub, Okta, Auth0, JumpCloud, Microsoft Ent
 Obot's pitch is "complete MCP platform" — not just a proxy but hosting + registry + gateway + client — with a strong open-source / self-host story (MIT, run it forever). Its credibility rests on the founding team's infrastructure pedigree (Rancher/SUSE, Cloud.com/Citrix), which signals it is built by people who ship enterprise platform software.
 
 Nearest neighbors:
-- [[mintmcp]] — the other half of the seed's "Obot / MintMCP" bundle; also an MCP gateway, more SaaS-leaning. Direct comparator.
-- [[docker-mcp-gateway]] — Docker's own gateway; strong on container packaging and the Docker MCP catalog, less on multi-user IdP governance.
-- [[ibm-contextforge]] — IBM's open-source MCP gateway/registry (ContextForge); enterprise-vendor-backed alternative with similar registry+gateway scope.
-- [[agentgateway]] — data-plane / proxy-oriented gateway (often paired with service-mesh thinking).
-- [[arcade]] — tool-calling / auth platform with a developer-SDK emphasis rather than admin control-plane.
-- [[pomerium]] — identity-aware access proxy extending into MCP; comes from the zero-trust access-proxy world.
-- [[natoma]] — managed MCP gateway / identity-for-agents, more SaaS/governance-as-a-service positioning.
+- [mintmcp](mintmcp.md) — the other half of the seed's "Obot / MintMCP" bundle; also an MCP gateway, more SaaS-leaning. Direct comparator.
+- [docker-mcp-gateway](docker-mcp-gateway.md) — Docker's own gateway; strong on container packaging and the Docker MCP catalog, less on multi-user IdP governance.
+- [ibm-contextforge](ibm-contextforge.md) — IBM's open-source MCP gateway/registry (ContextForge); enterprise-vendor-backed alternative with similar registry+gateway scope.
+- [agentgateway](agentgateway.md) — data-plane / proxy-oriented gateway (often paired with service-mesh thinking).
+- [arcade](arcade.md) — tool-calling / auth platform with a developer-SDK emphasis rather than admin control-plane.
+- [pomerium](pomerium.md) — identity-aware access proxy extending into MCP; comes from the zero-trust access-proxy world.
+- [natoma](natoma.md) — managed MCP gateway / identity-for-agents, more SaaS/governance-as-a-service positioning.
 
 Obot differentiates on breadth (catalog + hosting + gateway + client in one MIT-licensed package) and self-host control; it is less of a fit if you want a pure managed SaaS you never operate.
 
@@ -91,7 +91,7 @@ Caveats for a buyer: the company and product are **young** (gateway launched mid
 
 ## Competitors / alternatives
 
-[[mintmcp]], [[docker-mcp-gateway]], [[ibm-contextforge]], [[agentgateway]], [[arcade]], [[pomerium]], [[natoma]]
+[mintmcp](mintmcp.md), [docker-mcp-gateway](docker-mcp-gateway.md), [ibm-contextforge](ibm-contextforge.md), [agentgateway](agentgateway.md), [arcade](arcade.md), [pomerium](pomerium.md), [natoma](natoma.md)
 
 ## Open questions / to verify
 
@@ -109,4 +109,4 @@ Caveats for a buyer: the company and product are **young** (gateway launched mid
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established Obot = open-source MIT-licensed MCP gateway/platform (catalog + OAuth + per-tool RBAC + audit) from Obot AI, formerly Acorn Labs (founded 2022, Cupertino), rebranded 2025-09-23 with a $35M seed co-led by Mayfield and Nexus; founders are the Rancher/Cloud.com team; lineage GPTScript → Obot. Kept primary category [[mcp-gateway]]. Ownership high confidence (independent, no M&A); funding-history confidence medium. hedge_fund_fit set to medium (good self-host story, but young/OSS, IdP behind Enterprise tier). 4 sources cached.
+- [2026-06-28] Researched; established Obot = open-source MIT-licensed MCP gateway/platform (catalog + OAuth + per-tool RBAC + audit) from Obot AI, formerly Acorn Labs (founded 2022, Cupertino), rebranded 2025-09-23 with a $35M seed co-led by Mayfield and Nexus; founders are the Rancher/Cloud.com team; lineage GPTScript → Obot. Kept primary category [mcp-gateway](../categories/mcp-gateway.md). Ownership high confidence (independent, no M&A); funding-history confidence medium. hedge_fund_fit set to medium (good self-host story, but young/OSS, IdP behind Enterprise tier). 4 sources cached.

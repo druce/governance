@@ -27,11 +27,11 @@ tags: [sast, secret-scanning, sca, code-scanning, codeql, copilot-autofix, devse
 
 # GitHub Advanced Security
 
-> Primary category: [[software-supply-chain]] (foundation layer).
+> Primary category: [software-supply-chain](../categories/software-supply-chain.md) (foundation layer).
 
 **One-liner** — Platform-native application/code security built into GitHub: SAST (CodeQL), secret scanning, and dependency review/Dependabot, now sold as two purchasable products (GitHub Code Security and GitHub Secret Protection).
 
-**Categories** — [[software-supply-chain]]
+**Categories** — [software-supply-chain](../categories/software-supply-chain.md)
 
 ## What it does
 GitHub Advanced Security (GHAS) is the paid security layer that runs inside the GitHub source-control and CI/CD platform. It bundles the main classes of code-security scanning:
@@ -44,7 +44,7 @@ GitHub Advanced Security (GHAS) is the paid security layer that runs inside the 
 Because it lives in the repo and the CI pipeline, scanning happens where developers already work — findings appear as PR checks and in a security-overview dashboard rather than in a separate console.
 
 ## Where it sits in the stack
-This is a [[software-supply-chain]] / foundation-layer control: it secures the code and dependencies that flow into everything else, before runtime. It does not address the lethal trifecta directly (it is not an inline prompt/egress gate), hence `trifecta_relevance: none`.
+This is a [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures the code and dependencies that flow into everything else, before runtime. It does not address the lethal trifecta directly (it is not an inline prompt/egress gate), hence `trifecta_relevance: none`.
 
 **AI-generated-code relevance:** when developers accept code from Copilot, Cursor, or Claude, that code lands in the same repos GHAS already scans. CodeQL/SAST and secret scanning catch insecure or credential-leaking AI output at the PR gate, and **Copilot Autofix** proposes fixes inline — so for shops on GitHub this is often the lowest-friction way to put a guardrail under AI-assisted development.
 
@@ -54,7 +54,7 @@ This is a [[software-supply-chain]] / foundation-layer control: it secures the c
 - Code and secret scanning are enabled by default on public repos; private-repo scanning requires purchasing the relevant product.
 
 ## Positioning & differentiators
-GHAS's edge is that it is **platform-native**: nothing new to deploy, findings sit in the PR, and Copilot Autofix is tightly wired in. The tradeoff versus standalone scanners — [[snyk]], [[semgrep]] — is breadth and depth of engine, policy flexibility, and multi-SCM coverage; dedicated tools often go deeper on SCA/SAST and work across GitHub, GitLab and Bitbucket alike. Its closest platform-native peer is [[gitlab]] (GitLab Ultimate), which bundles a similar scanner set for teams on GitLab instead of GitHub.
+GHAS's edge is that it is **platform-native**: nothing new to deploy, findings sit in the PR, and Copilot Autofix is tightly wired in. The tradeoff versus standalone scanners — [snyk](snyk.md), [semgrep](semgrep.md) — is breadth and depth of engine, policy flexibility, and multi-SCM coverage; dedicated tools often go deeper on SCA/SAST and work across GitHub, GitLab and Bitbucket alike. Its closest platform-native peer is [gitlab](gitlab.md) (GitLab Ultimate), which bundles a similar scanner set for teams on GitLab instead of GitHub.
 
 **2025 repackaging (verify-worthy):** GitHub split GHAS into two separately purchasable products — **GitHub Secret Protection** ($19/active committer/mo) and **GitHub Code Security** ($30/active committer/mo) — announced 2025-03-04, available to Team-plan customers from 2025-04-01 via metered/pay-as-you-go billing. This lets teams buy secret scanning without paying for the full SAST/SCA suite, and extended these features below the Enterprise tier for the first time. The umbrella term "GitHub Advanced Security" still refers to the combined capability set.
 
@@ -65,10 +65,10 @@ GHAS is a product, not a company. It is part of **GitHub**, which **Microsoft ac
 - **Day-2 in general, Day-1 if you ship AI-generated code.** If your developers are already on GitHub and using Copilot/Cursor/Claude, turning on Code Security + Secret Protection is usually the path of least resistance for code-level guardrails — it is a **tier/product upgrade on tooling you already own, not a new vendor** to onboard, contract, and integrate.
 - Granular per-committer metered pricing makes it easy to start with just secret scanning (cheap, high-value) and add SAST/SCA later.
 - Relevant to SR 11-7-style model-risk hygiene only indirectly (it secures the code that builds AI systems; it is not a model-risk control itself).
-- Fit is **high** for GitHub-centric shops; near-zero if you are standardized on GitLab or Bitbucket (use [[gitlab]] Ultimate or [[snyk]]/[[semgrep]] instead).
+- Fit is **high** for GitHub-centric shops; near-zero if you are standardized on GitLab or Bitbucket (use [gitlab](gitlab.md) Ultimate or [snyk](snyk.md)/[semgrep](semgrep.md) instead).
 
 ## Competitors / alternatives
-[[gitlab]] · [[snyk]] · [[semgrep]]
+[gitlab](gitlab.md) · [snyk](snyk.md) · [semgrep](semgrep.md)
 
 ## Open questions / to verify
 - Exact current CodeQL language coverage and any 2026 pricing changes.

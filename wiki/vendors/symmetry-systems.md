@@ -27,7 +27,7 @@ tags: [dspm, data-access-governance, identity-graph, darpa]
 
 # Symmetry Systems
 
-> Data+AI security posture platform that fuses the data estate with the full identity graph. Primary category: [[dspm]]; also [[data-access-governance]].
+> Data+AI security posture platform that fuses the data estate with the full identity graph. Primary category: [dspm](../categories/dspm.md); also [data-access-governance](../categories/data-access-governance.md).
 
 **One-liner** — A DSPM platform that maps sensitive data to *who can reach it* — humans, service accounts, AI agents, third parties — and can automatically remediate over-permissioned or misconfigured access.
 
@@ -35,22 +35,22 @@ tags: [dspm, data-access-governance, identity-graph, darpa]
 Symmetry discovers and classifies sensitive data across clouds, SaaS, on-prem, legacy, and air-gapped stores, then joins that data map to a complete **identity graph** so you see not just what is exposed but exactly which identity could reach it and what they could do. **DataGuard** delivers the DSPM/data-access-governance view; **DataEnforce** acts on it — auto-remediating misconfigurations, revoking excess permissions, and enforcing policy without requiring a separate DLP or PAM tool. Increasingly positioned around exposure at the intersection of data and *agentic* identities.
 
 ## Where it sits in the stack
-Data layer — primary [[dspm]], secondary [[data-access-governance]]. Lethal-trifecta role: the **sensitive-data** leg — reduce blast radius by knowing and shrinking who/what can reach sensitive data, including AI agents. Adjacent to [[dlp]] and identity tooling ([[veza]], [[sailpoint]]).
+Data layer — primary [dspm](../categories/dspm.md), secondary [data-access-governance](../categories/data-access-governance.md). Lethal-trifecta role: the **sensitive-data** leg — reduce blast radius by knowing and shrinking who/what can reach sensitive data, including AI agents. Adjacent to [dlp](../categories/dlp.md) and identity tooling ([veza](veza.md), [sailpoint](sailpoint.md)).
 
 ## Deployment & architecture
 Flexible deployment — managed SaaS, customer-hosted, cloud, on-prem, legacy, and air-gapped — which is unusual in DSPM and matters for regulated/isolated environments. Builds an identity-to-data graph rather than only tagging data at rest. Included as a Representative Vendor in the 2025 Gartner Market Guide for DSPM.
 
 ## Positioning & differentiators
-Differentiator is the **identity-graph fusion** (data + identities + actions) and the active-remediation angle (DataEnforce), plus broad deployment reach including air-gapped. Origin: DARPA-funded research at UT Austin. Competes with [[cyera]], [[sentra]], [[bigid]], [[bedrock-security]], [[normalyze]], [[concentric-ai]], and [[varonis]] on the access-aware DSPM edge. Smaller/quieter than the best-funded DSPM players, so vendor-scale risk applies.
+Differentiator is the **identity-graph fusion** (data + identities + actions) and the active-remediation angle (DataEnforce), plus broad deployment reach including air-gapped. Origin: DARPA-funded research at UT Austin. Competes with [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [bedrock-security](bedrock-security.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), and [varonis](varonis.md) on the access-aware DSPM edge. Smaller/quieter than the best-funded DSPM players, so vendor-scale risk applies.
 
 ## Ownership, funding & M&A
-**Acquired by [[zscaler]]** — announced 2026-05-21 (terms undisclosed; Zscaler folds Symmetry's Data Access Graph into its Zero Trust platform to map/secure AI-agent identity↔data flows; close expected shortly after announcement). Prior funding: ~$15M Series A (2022) + $17.7M inside round (2023-08-09, ForgePoint + Prefix, W11, TSG) — ~$33M total (approximate). The seed had no M&A flag and an earlier research pass wrongly recorded it as independent; corrected via the Zscaler/Symmetry primary announcements. See [[ai-security-m-and-a-map]].
+**Acquired by [zscaler](zscaler.md)** — announced 2026-05-21 (terms undisclosed; Zscaler folds Symmetry's Data Access Graph into its Zero Trust platform to map/secure AI-agent identity↔data flows; close expected shortly after announcement). Prior funding: ~$15M Series A (2022) + $17.7M inside round (2023-08-09, ForgePoint + Prefix, W11, TSG) — ~$33M total (approximate). The seed had no M&A flag and an earlier research pass wrongly recorded it as independent; corrected via the Zscaler/Symmetry primary announcements. See [ai-security-m-and-a-map](../comparisons/ai-security-m-and-a-map.md).
 
 ## CTO / hedge-fund lens
 DSPM is **Day-1** for AI on internal data; Symmetry's identity-aware cut is appealing where the real question is "which account or agent could exfiltrate this." The flexible/air-gapped deployment suits funds unwilling to send sensitive data to a cloud scanner. Indirect SR 11-7 relevance (governs data feeding models). Weigh its smaller scale against bigger DSPM vendors; good shortlist candidate where identity-to-data lineage and on-prem/air-gapped coverage are priorities.
 
 ## Competitors / alternatives
-[[cyera]], [[sentra]], [[bigid]], [[bedrock-security]], [[normalyze]], [[concentric-ai]], [[varonis]], [[microsoft-purview]], [[wiz]].
+[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [bedrock-security](bedrock-security.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), [varonis](varonis.md), [microsoft-purview](microsoft-purview.md), [wiz](wiz.md).
 
 ## Open questions / to verify
 - Precise total funding and any round since the 2023 inside round.

@@ -27,7 +27,7 @@ tags: [data-security-platform, dag, dspm, dlp, data-classification]
 
 # Varonis
 
-> Researched 2026-06-28. Primary category: [[data-access-governance]]; also [[dspm]] and [[dlp]].
+> Researched 2026-06-28. Primary category: [data-access-governance](../categories/data-access-governance.md); also [dspm](../categories/dspm.md) and [dlp](../categories/dlp.md).
 
 **One-liner** — The original data-access-governance vendor: a Data Security Platform that maps who can access which sensitive files/data, flags over-permissioned and stale access, classifies the data, and watches for abnormal access across on-prem and SaaS stores.
 
@@ -37,7 +37,7 @@ Varonis answers the questions that underpin data access governance: *where is ou
 
 ## Where it sits in the stack
 
-Data layer. Primary fit is [[data-access-governance]] — the control plane for who/what can reach sensitive data — with strong overlap into [[dspm]] (data posture) and [[dlp]] (classification + egress monitoring). Lethal-trifecta role: **sensitive-data** leg. Varonis is the kind of tooling you lean on before pointing RAG/Copilot at file shares and SharePoint, because it tells you what an over-permissioned AI agent or user could actually reach. It lives in the data trust zone, governing access rather than inspecting prompts or model egress.
+Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) — the control plane for who/what can reach sensitive data — with strong overlap into [dspm](../categories/dspm.md) (data posture) and [dlp](../categories/dlp.md) (classification + egress monitoring). Lethal-trifecta role: **sensitive-data** leg. Varonis is the kind of tooling you lean on before pointing RAG/Copilot at file shares and SharePoint, because it tells you what an over-permissioned AI agent or user could actually reach. It lives in the data trust zone, governing access rather than inspecting prompts or model egress.
 
 ## Deployment & architecture
 
@@ -47,7 +47,7 @@ Data layer. Primary fit is [[data-access-governance]] — the control plane for 
 
 ## Positioning & differentiators
 
-Varonis is best known for deep, accurate **permissions and access mapping over unstructured data** (file shares, SharePoint, M365) — historically its strongest moat versus posture-only DSPM startups. It bundles classification, access governance, behavior analytics, and (now) DAM into one platform, and has shifted to selling outcomes via a managed service. Versus pure-play DSPM newcomers like [[cyera]] and [[sentra]], Varonis carries deeper on-prem/unstructured-data heritage but a heavier footprint; versus identity-governance players like [[sailpoint]] and access-graph vendors like [[veza]], Varonis is data-centric (it governs access *to data*) rather than identity-lifecycle-centric. Marketing positions it as "the data security leader" — treat the leadership framing as marketing.
+Varonis is best known for deep, accurate **permissions and access mapping over unstructured data** (file shares, SharePoint, M365) — historically its strongest moat versus posture-only DSPM startups. It bundles classification, access governance, behavior analytics, and (now) DAM into one platform, and has shifted to selling outcomes via a managed service. Versus pure-play DSPM newcomers like [cyera](cyera.md) and [sentra](sentra.md), Varonis carries deeper on-prem/unstructured-data heritage but a heavier footprint; versus identity-governance players like [sailpoint](sailpoint.md) and access-graph vendors like [veza](veza.md), Varonis is data-centric (it governs access *to data*) rather than identity-lifecycle-centric. Marketing positions it as "the data security leader" — treat the leadership framing as marketing.
 
 ## Ownership, funding & M&A
 
@@ -62,7 +62,7 @@ For a hedge fund this is **Day-1 if you are about to run RAG, Copilot, or any LL
 
 ## Competitors / alternatives
 
-[[cyera]], [[sentra]], [[veza]], [[sailpoint]], [[netwrix]]; adjacent [[dspm]] and [[dlp]] vendors.
+[cyera](cyera.md), [sentra](sentra.md), [veza](veza.md), [sailpoint](sailpoint.md), [netwrix](netwrix.md); adjacent [dspm](../categories/dspm.md) and [dlp](../categories/dlp.md) vendors.
 
 ## Open questions / to verify
 

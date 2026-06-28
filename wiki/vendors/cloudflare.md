@@ -30,10 +30,10 @@ tags: [ai-gateway, edge, sase, mcp, workers]
 > **Scope note.** This page is scoped to Cloudflare's **AI use case** — the **AI Gateway**
 > (part of the Workers AI / developer platform) and Cloudflare's **MCP / agents** support.
 > Cloudflare's general CDN/SASE business is enormous but only summarized here; for the
-> network-security angle see [[network-security-sase]], and for edge compute see
-> [[ephemeral-environments]] / [[cloudflare-workers]]. For this wiki's gateway shortlist the
-> relevant lens is [[ai-gateway]]; the company's primary category overall is
-> [[network-security-sase]].
+> network-security angle see [network-security-sase](../categories/network-security-sase.md), and for edge compute see
+> [ephemeral-environments](../categories/ephemeral-environments.md) / [cloudflare-workers](cloudflare-workers.md). For this wiki's gateway shortlist the
+> relevant lens is [ai-gateway](../categories/ai-gateway.md); the company's primary category overall is
+> [network-security-sase](../categories/network-security-sase.md).
 
 **One-liner** — Cloudflare runs an edge-hosted **AI Gateway** that you put in front of your
 LLM calls to get caching, rate limiting, spend caps, logging, model fallback, and content
@@ -66,13 +66,13 @@ traffic through AI Gateway for deeper prompt filtering.
 
 ## Where it sits in the stack
 
-Primary lens here is the [[ai-gateway]] layer (model/prompt) — the "single exit door" for
+Primary lens here is the [ai-gateway](../categories/ai-gateway.md) layer (model/prompt) — the "single exit door" for
 model traffic. Its lethal-trifecta role is mainly **egress control** (it is the chokepoint
 where outbound model/tool calls can be logged, capped, and blocked); the **Guardrails + DLP**
 features add an **untrusted-input** moderation leg. The MCP Portals piece lives in the
-governance/trust-zone space and ties into [[network-security-sase]] (Cloudflare One) and
-[[mcp-gateway]]. Edge hosting of agents/MCP servers on Workers connects to
-[[ephemeral-environments]] / [[cloudflare-workers]].
+governance/trust-zone space and ties into [network-security-sase](../categories/network-security-sase.md) (Cloudflare One) and
+[mcp-gateway](../categories/mcp-gateway.md). Edge hosting of agents/MCP servers on Workers connects to
+[ephemeral-environments](../categories/ephemeral-environments.md) / [cloudflare-workers](cloudflare-workers.md).
 
 ## Deployment & architecture
 
@@ -89,15 +89,15 @@ governance/trust-zone space and ties into [[network-security-sase]] (Cloudflare 
 - **Edge-native + free entry.** Unlike pure-software gateways, Cloudflare runs the proxy on
   its own network, so caching/latency/global PoPs come for free and the on-ramp is one line
   of code. This is its main wedge versus self-hosted options.
-- **vs [[litellm]] / [[portkey]] / [[truefoundry]] / [[kong]] / [[openrouter]]:**
-  - [[litellm]] is open-source/self-hosted, very broad provider normalization, you run it.
-  - [[portkey]] and [[truefoundry]] are AI-gateway-first platforms with richer
+- **vs [litellm](litellm.md) / [portkey](portkey.md) / [truefoundry](truefoundry.md) / [kong](kong.md) / [openrouter](openrouter.md):**
+  - [litellm](litellm.md) is open-source/self-hosted, very broad provider normalization, you run it.
+  - [portkey](portkey.md) and [truefoundry](truefoundry.md) are AI-gateway-first platforms with richer
     guardrails/governance and prompt management; Cloudflare's gateway is thinner on
     prompt-engineering/governance but stronger on edge performance and is bundled into a
     network the buyer may already own.
-  - [[kong]] comes from API-gateway heritage (and an MCP gateway); Cloudflare overlaps on the
+  - [kong](kong.md) comes from API-gateway heritage (and an MCP gateway); Cloudflare overlaps on the
     "gateway" framing but is delivered as edge SaaS rather than a deployable gateway.
-  - [[openrouter]] is a model-routing/marketplace aggregator; Cloudflare is
+  - [openrouter](openrouter.md) is a model-routing/marketplace aggregator; Cloudflare is
     infrastructure/control-plane, not a model reseller.
 - **Agents/MCP angle is differentiated:** few gateway vendors also host remote MCP servers
   and offer a zero-trust MCP portal on the same platform.
@@ -121,7 +121,7 @@ governance/trust-zone space and ties into [[network-security-sase]] (Cloudflare 
 - **Fit: medium.** Strong, cheap on-ramp for engineering teams and a clean egress chokepoint;
   but a regulated hedge fund will likely want deeper model-risk/governance and DLP than
   Cloudflare's gateway provides today, and may already standardize egress on its incumbent
-  SASE ([[network-security-sase]]: Palo Alto, Zscaler, Netskope) rather than route AI
+  SASE ([network-security-sase](../categories/network-security-sase.md): Palo Alto, Zscaler, Netskope) rather than route AI
   separately. Little direct SR 11-7 / model-risk tooling — this is plumbing and guardrails,
   not a model-governance platform.
 - Best where the shop is already a Cloudflare customer, ships its own AI features on Workers,
@@ -129,12 +129,12 @@ governance/trust-zone space and ties into [[network-security-sase]] (Cloudflare 
 
 ## Competitors / alternatives
 
-[[litellm]], [[portkey]], [[truefoundry]], [[kong]], [[openrouter]], and the cloud providers'
-own gateways. On the MCP side: [[mcp-gateway]] vendors. On egress/SASE: [[network-security-sase]].
+[litellm](litellm.md), [portkey](portkey.md), [truefoundry](truefoundry.md), [kong](kong.md), [openrouter](openrouter.md), and the cloud providers'
+own gateways. On the MCP side: [mcp-gateway](../categories/mcp-gateway.md) vendors. On egress/SASE: [network-security-sase](../categories/network-security-sase.md).
 
 ## Open questions / to verify
 
-- Depth of Guardrails/DLP vs dedicated [[ai-runtime-security]] firewalls — appears moderation-
+- Depth of Guardrails/DLP vs dedicated [ai-runtime-security](../categories/ai-runtime-security.md) firewalls — appears moderation-
   grade, not full prompt-injection defense. Verify current capability.
 - Maturity/GA status of routing MCP traffic through AI Gateway (was roadmap as of 2025).
 - Enterprise pricing for Guardrails/DLP and log retention tiers (not captured).

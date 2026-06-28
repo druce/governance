@@ -27,7 +27,7 @@ tags: [shadow-ai, ai-dlp, ai-visibility, prevention-first]
 
 # Aurascape
 
-> Researched 2026-06-28. Primary category: [[ai-access-governance]]; also [[ai-runtime-security]].
+> Researched 2026-06-28. Primary category: [ai-access-governance](../categories/ai-access-governance.md); also [ai-runtime-security](../categories/ai-runtime-security.md).
 
 **One-liner** — An AI-native security platform that gives enterprises visibility into and control over every employee/app interaction with AI tools (sanctioned and shadow), with prevention-first data protection across text, code, image, audio, and video.
 
@@ -37,8 +37,8 @@ Aurascape watches how people and applications in an organization actually use AI
 
 ## Where it sits in the stack
 
-- Primary: [[ai-access-governance]] — it governs who can use which AI tools and what data may flow to them, the classic shadow-AI discovery + access-control job. Layer: **model-prompt**.
-- Secondary: [[ai-runtime-security]] — because it inspects and can block prompt/response traffic inline, it overlaps with the AI-firewall/guardrail category.
+- Primary: [ai-access-governance](../categories/ai-access-governance.md) — it governs who can use which AI tools and what data may flow to them, the classic shadow-AI discovery + access-control job. Layer: **model-prompt**.
+- Secondary: [ai-runtime-security](../categories/ai-runtime-security.md) — because it inspects and can block prompt/response traffic inline, it overlaps with the AI-firewall/guardrail category.
 - **Lethal-trifecta role:** mainly **sensitive-data** exposure and **egress** control (stopping confidential data from leaving to external AI services); to a lesser degree **untrusted-input** screening on responses. It is fundamentally an egress/DLP-for-AI control sitting at the boundary between the corporate (green/yellow) zone and external AI services (red zone).
 
 ## Deployment & architecture
@@ -56,12 +56,12 @@ This proxy-plus-agent model is closer to a SASE/SSE data-protection architecture
 Aurascape positions as **AI-native and prevention-first**, arguing that legacy firewalls, regex DLP, and SASE tools can't parse the probabilistic, multimodal nature of AI traffic. Claimed differentiators (vendor/investor, treat as marketing): breadth of app coverage (1,500+), multimodal detection, low false positives, and 14 patents filed (2 approved as of the Menlo post).
 
 Versus neighbors:
-- vs [[witnessai]] — both do AI access governance/observability with inline enforcement; close competitor.
-- vs [[harmonic-security]] and [[wald-ai]] — overlap on preventing sensitive-data leakage to GenAI; Harmonic leans browser/data-centric.
-- vs [[prompt-security]] — Prompt leans toward runtime prompt-injection/guardrail firewalling; Aurascape leans access-governance + DLP.
-- vs [[lanai]] — both target shadow-AI discovery; Lanai is more endpoint/edge-discovery focused.
-- vs [[cyberhaven]] — Cyberhaven is data-lineage DLP extending into AI; Aurascape is AI-first.
-- vs [[nudge-security]] and [[reco]] — those lean SaaS-posture/identity discovery; Aurascape is deeper on inline AI-traffic control.
+- vs [witnessai](witnessai.md) — both do AI access governance/observability with inline enforcement; close competitor.
+- vs [harmonic-security](harmonic-security.md) and [wald-ai](wald-ai.md) — overlap on preventing sensitive-data leakage to GenAI; Harmonic leans browser/data-centric.
+- vs [prompt-security](prompt-security.md) — Prompt leans toward runtime prompt-injection/guardrail firewalling; Aurascape leans access-governance + DLP.
+- vs [lanai](lanai.md) — both target shadow-AI discovery; Lanai is more endpoint/edge-discovery focused.
+- vs [cyberhaven](cyberhaven.md) — Cyberhaven is data-lineage DLP extending into AI; Aurascape is AI-first.
+- vs [nudge-security](nudge-security.md) and [reco](reco.md) — those lean SaaS-posture/identity discovery; Aurascape is deeper on inline AI-traffic control.
 
 ## Ownership, funding & M&A
 
@@ -80,7 +80,7 @@ Caveats for a smaller shop: it's an early-stage (2024) company with a proxy + en
 
 ## Competitors / alternatives
 
-[[witnessai]] · [[harmonic-security]] · [[wald-ai]] · [[prompt-security]] · [[lanai]] · [[nudge-security]] · [[reco]] · [[cyberhaven]]
+[witnessai](witnessai.md) · [harmonic-security](harmonic-security.md) · [wald-ai](wald-ai.md) · [prompt-security](prompt-security.md) · [lanai](lanai.md) · [nudge-security](nudge-security.md) · [reco](reco.md) · [cyberhaven](cyberhaven.md)
 
 ## Open questions / to verify
 
@@ -99,4 +99,4 @@ Caveats for a smaller shop: it's an early-stage (2024) company with a proxy + en
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2024 (Santa Clara, CA), launched from stealth Apr 2025, $50M Series A (Mayfield + Menlo) + $12.8M seed (~$62.8M reported total), independent (no M&A) at high confidence, CEO Moinul Khan (ex-Zscaler/PAN/Netskope). Added [[ai-runtime-security]] as secondary category given inline prompt/response enforcement. 4 sources cached.
+- [2026-06-28] Researched; established founded 2024 (Santa Clara, CA), launched from stealth Apr 2025, $50M Series A (Mayfield + Menlo) + $12.8M seed (~$62.8M reported total), independent (no M&A) at high confidence, CEO Moinul Khan (ex-Zscaler/PAN/Netskope). Added [ai-runtime-security](../categories/ai-runtime-security.md) as secondary category given inline prompt/response enforcement. 4 sources cached.

@@ -27,7 +27,7 @@ tags: [ai-governance, grc, model-validation, eu-ai-act, nist-ai-rmf, iso-42001, 
 
 # Fairly AI
 
-> Now operating as **Asenion** (rebranded after acquiring anch.AI, 2025-06-20). Primary category: [[ai-governance-platform]].
+> Now operating as **Asenion** (rebranded after acquiring anch.AI, 2025-06-20). Primary category: [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **One-liner** — A small Canadian AI governance/compliance (GRC) platform that assesses, tests, and provides runtime "assurance" for AI models and agents against regulatory frameworks (EU AI Act, NIST AI RMF, ISO 42001), pitched as "AI compliance in a box."
 
@@ -43,7 +43,7 @@ The product is framed as turning weeks-long model audits into minutes, with "pol
 
 ## Where it sits in the stack
 
-This is a **[[ai-governance-platform]]** play at the **governance layer** — the documentation/policy/model-validation control plane that sits above the runtime stack, not in the data path. It is registry-, evidence-, and workflow-centric: inventory AI systems, run validation/red-team tests, map results to regulatory controls, and produce audit artifacts.
+This is a **[ai-governance-platform](../categories/ai-governance-platform.md)** play at the **governance layer** — the documentation/policy/model-validation control plane that sits above the runtime stack, not in the data path. It is registry-, evidence-, and workflow-centric: inventory AI systems, run validation/red-team tests, map results to regulatory controls, and produce audit artifacts.
 
 - **Lethal-trifecta role:** none directly. It does not break the untrusted-input / sensitive-data / egress chain inline; the "Assure" runtime-guardrail capability is adjacent to runtime security but the company's center of gravity is governance/assurance, not an inline AI firewall.
 - **Trust zone:** governance/oversight plane spanning all zones via evidence, rather than enforcement inside any one zone.
@@ -57,9 +57,9 @@ SaaS platform with API/connector-based assessment and testing; "Assure" adds run
 Fairly/Asenion positions on **breadth of regulatory mapping plus testing/red-teaming**, and leans on third-party validation (named in the IDC MarketScape for Worldwide AI Governance Platforms 2023–2026 and as a representative vendor across several Gartner AI TRiSM categories). The 2025 anch.AI acquisition added European ethical-AI/EU-AI-Act framing (anch.AI founder Anna Felländer is a known EU AI-ethics figure) and a Stockholm presence.
 
 Versus neighbors:
-- **[[credo-ai]]** and **[[holistic-ai]]** — larger, better-funded, more mature AI-GRC/governance platforms; Fairly is smaller and lower-profile.
-- **[[monitaur]]** — overlaps on model validation / model-risk documentation, with a stronger insurance/model-risk heritage.
-- **[[governgpt]]** — narrower; due-diligence/questionnaire automation rather than full lifecycle governance.
+- **[credo-ai](credo-ai.md)** and **[holistic-ai](holistic-ai.md)** — larger, better-funded, more mature AI-GRC/governance platforms; Fairly is smaller and lower-profile.
+- **[monitaur](monitaur.md)** — overlaps on model validation / model-risk documentation, with a stronger insurance/model-risk heritage.
+- **[governgpt](governgpt.md)** — narrower; due-diligence/questionnaire automation rather than full lifecycle governance.
 
 The honest read: Fairly AI is an early-stage, niche vendor whose differentiation (fast audits, agentic-AI assurance, EU coverage via anch.AI) is largely self-asserted and hard to corroborate independently.
 
@@ -79,7 +79,7 @@ The honest read: Fairly AI is an early-stage, niche vendor whose differentiation
 
 ## Competitors / alternatives
 
-[[credo-ai]] · [[holistic-ai]] · [[monitaur]] · [[governgpt]]
+[credo-ai](credo-ai.md) · [holistic-ai](holistic-ai.md) · [monitaur](monitaur.md) · [governgpt](governgpt.md)
 
 ## Open questions / to verify
 

@@ -31,17 +31,17 @@ tags: [vector-database, retrieval, independent]
 
 **What it does** — Pinecone stores embeddings and serves low-latency similarity search at scale without you running infrastructure. In a RAG pipeline it is the **vector-retrieval** layer: index document embeddings, retrieve top-k matches per query. Known for ease of use and a serverless model that scales to billions of vectors.
 
-**Where it sits in the stack** — [[vector-retrieval]], retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (embeddings of your corpus — which can leak content, so it is in scope for data governance). Namespaces/metadata filtering support tenant and entitlement separation, but entitlement-aware retrieval is your responsibility to wire.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (embeddings of your corpus — which can leak content, so it is in scope for data governance). Namespaces/metadata filtering support tenant and entitlement separation, but entitlement-aware retrieval is your responsibility to wire.
 
 **Deployment & architecture** — SaaS / fully-managed, API/SDK-driven (serverless and pod-based tiers). Cloud-hosted on AWS/GCP/Azure regions; not self-hostable. Integrates with LangChain/LlamaIndex and the usual embedding providers.
 
-**Positioning & differentiators** — Managed pure-play vector DB, lowest operational overhead. Contrast: [[weaviate]] / [[opensearch]] (open-source, self-hostable) and [[azure-ai-search]] (bundled with a cloud). Trade-off: convenience and managed scale vs. data residency / lock-in (your embeddings live in their cloud).
+**Positioning & differentiators** — Managed pure-play vector DB, lowest operational overhead. Contrast: [weaviate](weaviate.md) / [opensearch](opensearch.md) (open-source, self-hostable) and [azure-ai-search](azure-ai-search.md) (bundled with a cloud). Trade-off: convenience and managed scale vs. data residency / lock-in (your embeddings live in their cloud).
 
 **Ownership, funding & M&A** — Independent, VC-backed. Founded 2019 by Edo Liberty; HQ New York. $100M Series B led by Andreessen Horowitz (2023), ~$750M valuation; ~$138M total. No M&A; still independent as of 2026-06. Confidence: high.
 
-**CTO / hedge-fund lens** — Day-1 RAG infra *if* you want a managed vector DB and are comfortable with embeddings living in a third-party cloud — a real data-residency/MNPI consideration for a fund. If your data cannot leave your tenancy, prefer self-hostable [[weaviate]] / [[opensearch]] or your cloud's native [[azure-ai-search]].
+**CTO / hedge-fund lens** — Day-1 RAG infra *if* you want a managed vector DB and are comfortable with embeddings living in a third-party cloud — a real data-residency/MNPI consideration for a fund. If your data cannot leave your tenancy, prefer self-hostable [weaviate](weaviate.md) / [opensearch](opensearch.md) or your cloud's native [azure-ai-search](azure-ai-search.md).
 
-**Competitors / alternatives** — [[weaviate]], [[opensearch]], [[azure-ai-search]], Qdrant/Milvus (not in registry).
+**Competitors / alternatives** — [weaviate](weaviate.md), [opensearch](opensearch.md), [azure-ai-search](azure-ai-search.md), Qdrant/Milvus (not in registry).
 
 **Open questions / to verify** — Current enterprise data-residency / BYOC options for regulated buyers.
 

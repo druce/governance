@@ -27,7 +27,7 @@ tags: [ai-red-teaming, ai-runtime-security, prompt-injection, agentic-ai, zscale
 
 # SplxAI
 
-> Now **SPLX, a Zscaler company.** Acquired by [[zscaler]] — announced 2025-11-03, closed in Zscaler's Q1 FY2026. Primary category: [[ai-red-teaming]]; also [[ai-runtime-security]].
+> Now **SPLX, a Zscaler company.** Acquired by [zscaler](zscaler.md) — announced 2025-11-03, closed in Zscaler's Q1 FY2026. Primary category: [ai-red-teaming](../categories/ai-red-teaming.md); also [ai-runtime-security](../categories/ai-runtime-security.md).
 
 **One-liner** — Automated, continuous AI red-teaming ("Probe") plus runtime guardrails and prompt-hardening for conversational and agentic AI apps — now owned by Zscaler.
 
@@ -39,8 +39,8 @@ The pitch is economic as much as technical: automated red-teaming is positioned 
 
 ## Where it sits in the stack
 
-- Primary: [[ai-red-teaming]] (model/prompt layer) — the proactive, pre-deployment leg: find weaknesses in your AI app before go-live and on every change.
-- Secondary: [[ai-runtime-security]] (AI firewall) — runtime guardrails/threat inspection that block malicious prompts and unsafe responses in production.
+- Primary: [ai-red-teaming](../categories/ai-red-teaming.md) (model/prompt layer) — the proactive, pre-deployment leg: find weaknesses in your AI app before go-live and on every change.
+- Secondary: [ai-runtime-security](../categories/ai-runtime-security.md) (AI firewall) — runtime guardrails/threat inspection that block malicious prompts and unsafe responses in production.
 
 **Lethal-trifecta role.** Red-teaming is overwhelmingly about the **untrusted-input** leg — stress-testing how the app handles hostile prompts/content. The runtime guardrails extend coverage toward **sensitive-data** exposure and **egress** (blocking data leakage and unsafe tool/response paths). Net: it touches all three legs, but its center of gravity is untrusted-input/prompt-injection. Trust zone: wherever LLM-facing apps live (typically yellow/green app tiers).
 
@@ -56,13 +56,13 @@ The pitch is economic as much as technical: automated red-teaming is positioned 
 SplxAI is known for **automated, continuous** red-teaming (not a one-off manual engagement) with a research-driven, continually-updated attack database and multi-modal coverage (text/image/voice). Founders and team came out of AI red-teaming at Cisco, Zscaler, and Wiz, with CTF wins (Wiz, Black Hat) as credibility.
 
 Versus neighbors:
-- [[mindgard]] — closest pure-play automated AI red-teaming peer (research/academia roots); both target offensive testing of AI apps.
-- [[promptfoo]] — open-source/developer-first eval + red-teaming (acq. by OpenAI); SplxAI is the enterprise SaaS, governance-flavored counterpart.
-- [[enkrypt-ai]] — overlapping red-team + guardrails combo; both straddle testing and runtime.
-- [[lakera]] — strong on runtime prompt-injection guardrails (and red-teaming via Gandalf heritage); Lakera is more runtime-firewall-first, SplxAI more red-team-first.
-- [[pillar-security]] — runtime + posture for AI apps; overlaps on the runtime side.
-- [[hiddenlayer]] — model-centric security (model scanning + detection-response) and red-teaming; different emphasis (model artifacts vs app behavior).
-- [[prisma-airs]], [[witnessai]] — runtime AI firewall / access-governance incumbents; SplxAI's guardrails compete at the edges but its differentiator is the offensive testing side.
+- [mindgard](mindgard.md) — closest pure-play automated AI red-teaming peer (research/academia roots); both target offensive testing of AI apps.
+- [promptfoo](promptfoo.md) — open-source/developer-first eval + red-teaming (acq. by OpenAI); SplxAI is the enterprise SaaS, governance-flavored counterpart.
+- [enkrypt-ai](enkrypt-ai.md) — overlapping red-team + guardrails combo; both straddle testing and runtime.
+- [lakera](lakera.md) — strong on runtime prompt-injection guardrails (and red-teaming via Gandalf heritage); Lakera is more runtime-firewall-first, SplxAI more red-team-first.
+- [pillar-security](pillar-security.md) — runtime + posture for AI apps; overlaps on the runtime side.
+- [hiddenlayer](hiddenlayer.md) — model-centric security (model scanning + detection-response) and red-teaming; different emphasis (model artifacts vs app behavior).
+- [prisma-airs](prisma-airs.md), [witnessai](witnessai.md) — runtime AI firewall / access-governance incumbents; SplxAI's guardrails compete at the edges but its differentiator is the offensive testing side.
 
 The Zscaler acquisition mirrors the broader consolidation: network/SSE incumbents buying AI-security capability to bolt onto existing inline enforcement points.
 
@@ -78,13 +78,13 @@ The Zscaler acquisition mirrors the broader consolidation: network/SSE incumbent
 
 **Day-2, low direct fit for most hedge funds.** SplxAI/Probe is a tool you need when you are *building and shipping your own* LLM/agent applications and want to test them adversarially — a developer/AppSec capability. A typical 50-person fund consuming ChatGPT Enterprise or Copilot does not red-team its own models and gets little from this. It becomes relevant only if the fund builds customer- or analyst-facing AI agents that handle sensitive data, in which case automated red-teaming + runtime guardrails are a sensible Day-2 control once the basics (access governance, DLP, an AI gateway) are in place.
 
-Model-risk angle: the governance/compliance reporting can feed an SR 11-7-style model-risk file (evidence of adversarial testing), but SplxAI is a testing tool, not a governance platform — pair it with an [[ai-governance-platform]] vendor for that.
+Model-risk angle: the governance/compliance reporting can feed an SR 11-7-style model-risk file (evidence of adversarial testing), but SplxAI is a testing tool, not a governance platform — pair it with an [ai-governance-platform](../categories/ai-governance-platform.md) vendor for that.
 
 Practical note: because it is now part of **Zscaler**, shops that already run Zscaler SSE may eventually get this capability as a platform add-on rather than a standalone buy — worth tracking how the standalone product and pricing survive integration.
 
 ## Competitors / alternatives
 
-[[mindgard]], [[enkrypt-ai]], [[lakera]], [[pillar-security]], [[promptfoo]], [[hiddenlayer]], [[prisma-airs]], [[witnessai]]
+[mindgard](mindgard.md), [enkrypt-ai](enkrypt-ai.md), [lakera](lakera.md), [pillar-security](pillar-security.md), [promptfoo](promptfoo.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [witnessai](witnessai.md)
 
 ## Open questions / to verify
 

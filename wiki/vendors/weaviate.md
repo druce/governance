@@ -31,17 +31,17 @@ tags: [vector-database, retrieval, open-source, independent]
 
 **What it does** — Weaviate stores embeddings and serves vector, keyword, and hybrid search, with built-in modules for embedding generation and RAG. In a pipeline it is the **vector-retrieval** layer. Its differentiator versus managed pure-plays is that you can run it yourself (open source) or use Weaviate Cloud — useful when data cannot leave your tenancy.
 
-**Where it sits in the stack** — [[vector-retrieval]], retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (your corpus embeddings). Multi-tenancy and RBAC support tenant/entitlement separation; entitlement-aware retrieval is still your wiring.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (your corpus embeddings). Multi-tenancy and RBAC support tenant/entitlement separation; entitlement-aware retrieval is still your wiring.
 
 **Deployment & architecture** — Self-hostable open-source core (BSD-3) deployable in your own cloud/Kubernetes, plus Weaviate Cloud (managed SaaS) and a serverless option. API/SDK-driven; integrates with LangChain/LlamaIndex and major embedding providers.
 
-**Positioning & differentiators** — Open-source + self-host is the key contrast with managed-only [[pinecone]]; versus [[opensearch]] it is purpose-built as a vector DB rather than a search engine with vectors bolted on; versus [[azure-ai-search]] it is cloud-neutral. Trade-off: you own the operational burden if you self-host.
+**Positioning & differentiators** — Open-source + self-host is the key contrast with managed-only [pinecone](pinecone.md); versus [opensearch](opensearch.md) it is purpose-built as a vector DB rather than a search engine with vectors bolted on; versus [azure-ai-search](azure-ai-search.md) it is cloud-neutral. Trade-off: you own the operational burden if you self-host.
 
 **Ownership, funding & M&A** — Independent, VC-backed (company formerly SeMI Technologies). Founded 2019 by Bob van Luijt; HQ Amsterdam. $50M Series B led by Index Ventures (2023); ~$50M Series C led by Battery Ventures and Index Ventures (Oct 2025), reported ~$200M valuation; ~$118M total (reports vary). No M&A; independent as of 2026-06. Confidence: high.
 
 **CTO / hedge-fund lens** — Day-1 RAG infra and the stronger fit when **data residency / MNPI** rules mean embeddings must stay in your own environment — self-host gives you that. Cost is the ops burden of running a stateful DB yourself; Weaviate Cloud trades that back for third-party hosting.
 
-**Competitors / alternatives** — [[pinecone]], [[opensearch]], [[azure-ai-search]], Qdrant/Milvus (not in registry).
+**Competitors / alternatives** — [pinecone](pinecone.md), [opensearch](opensearch.md), [azure-ai-search](azure-ai-search.md), Qdrant/Milvus (not in registry).
 
 **Open questions / to verify** — Exact total-funding figure (sources range ~$67–118M); Series C valuation.
 

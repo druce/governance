@@ -27,23 +27,23 @@ tags: [grc, irm, risk-management, compliance]
 
 # ServiceNow GRC
 
-> Primary category: [[enterprise-grc]].
+> Primary category: [enterprise-grc](../categories/enterprise-grc.md).
 
 **One-liner** — The GRC / Integrated-Risk-Management module set bolted onto the Now Platform, so risk, compliance, audit and vendor-risk workflows live next to the ITSM/CMDB an enterprise already runs on ServiceNow.
 
 **What it does** — ServiceNow markets this family as Integrated Risk Management (IRM): policy & compliance, risk management, audit management, third-party/vendor risk, and business continuity. Its differentiator is platform gravity — if the firm already runs ITSM, HR, or security ops on ServiceNow, GRC inherits the same CMDB, workflow engine, and data model, so control evidence and remediation route through tooling staff already use. "Now Assist for IRM" adds GenAI for continuous monitoring, automated evidence collection, and auto-drafting of third-party assessments.
 
-**Where it sits in the stack** — [[enterprise-grc]], governance layer. A system of record for risk and control posture, not a data-flow control — it does not touch the lethal trifecta directly (`trifecta_relevance: none`). For AI governance it becomes the workflow backbone where model-risk, AI-use, and policy attestations are tracked, overlapping [[ai-governance-platform]] tools like [[credo-ai]] and [[onetrust]].
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. A system of record for risk and control posture, not a data-flow control — it does not touch the lethal trifecta directly (`trifecta_relevance: none`). For AI governance it becomes the workflow backbone where model-risk, AI-use, and policy attestations are tracked, overlapping [ai-governance-platform](../categories/ai-governance-platform.md) tools like [credo-ai](credo-ai.md) and [onetrust](onetrust.md).
 
 **Deployment & architecture** — SaaS on the Now Platform. Integrates with the broader ServiceNow estate (ITSM, SecOps, CMDB) and external connectors; configuration/workflow-driven rather than code.
 
-**Positioning & differentiators** — The heavyweight incumbent alongside [[archer]]. Chosen for breadth and platform consolidation, not for being lightweight. Forrester named it a GRC Leader (2023). Often criticized as expensive and implementation-heavy versus nimble rivals like [[logicgate]] or [[onspring]].
+**Positioning & differentiators** — The heavyweight incumbent alongside [archer](archer.md). Chosen for breadth and platform consolidation, not for being lightweight. Forrester named it a GRC Leader (2023). Often criticized as expensive and implementation-heavy versus nimble rivals like [logicgate](logicgate.md) or [onspring](onspring.md).
 
 **Ownership, funding & M&A** — Public (NYSE: NOW), IPO 2012; HQ Santa Clara. No acquisition. Stub said "independent"; corrected to `public`. (high confidence)
 
 **CTO / hedge-fund lens** — Day-1 governance plumbing, but mainly relevant to a fund that *already* standardized on ServiceNow — few sub-$5B funds buy ServiceNow GRC de novo just for AI governance. For SR 11-7 / model-risk programs it can host the attestation and control library, but a fund with no existing ServiceNow footprint will find lighter GRC tools cheaper to stand up.
 
-**Competitors / alternatives** — [[archer]], [[logicgate]], [[auditboard]], [[onspring]], [[onetrust]], [[ibm-watsonx-governance]].
+**Competitors / alternatives** — [archer](archer.md), [logicgate](logicgate.md), [auditboard](auditboard.md), [onspring](onspring.md), [onetrust](onetrust.md), [ibm-watsonx-governance](ibm-watsonx-governance.md).
 
 **Open questions / to verify** — Depth of Now Assist for IRM AI-governance features vs. dedicated AI-governance platforms; pricing posture for mid-size funds.
 

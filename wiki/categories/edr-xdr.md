@@ -47,26 +47,26 @@ compromised endpoint are highest.
 
 ## Vendors
 
-- [[crowdstrike]] — Falcon platform; market-leading cloud-native EDR/XDR, also a hub for the SOC stack (and owns [[crowdstrike-logscale]] for SIEM).
-- [[microsoft-defender]] — Defender XDR; bundled with M365 E5, the default for Microsoft-centric shops.
-- [[sentinelone]] — Singularity platform; autonomous EDR/XDR, also pushing into AI/runtime security.
-- [[palo-alto-networks]] — Cortex XDR; part of the broader Palo Alto platform (NGFW, Prisma, Cortex SIEM).
+- [crowdstrike](../vendors/crowdstrike.md) — Falcon platform; market-leading cloud-native EDR/XDR, also a hub for the SOC stack (and owns [crowdstrike-logscale](../vendors/crowdstrike-logscale.md) for SIEM).
+- [microsoft-defender](../vendors/microsoft-defender.md) — Defender XDR; bundled with M365 E5, the default for Microsoft-centric shops.
+- [sentinelone](../vendors/sentinelone.md) — Singularity platform; autonomous EDR/XDR, also pushing into AI/runtime security.
+- [palo-alto-networks](../vendors/palo-alto-networks.md) — Cortex XDR; part of the broader Palo Alto platform (NGFW, Prisma, Cortex SIEM).
 
 ## Consolidation / M&A dynamics
 
 The endpoint market is mature and consolidating into platform plays — each vendor
 above is bundling EDR/XDR with SIEM, identity, and now AI-security modules.
-[[sentinelone]] is reported to have acquired Prompt Security to move into AI
-runtime security (per seed; unverified — to confirm in research). [[crowdstrike]]
-and [[palo-alto-networks]] are both serial acquirers building out adjacent
+[sentinelone](../vendors/sentinelone.md) is reported to have acquired Prompt Security to move into AI
+runtime security (per seed; unverified — to confirm in research). [crowdstrike](../vendors/crowdstrike.md)
+and [palo-alto-networks](../vendors/palo-alto-networks.md) are both serial acquirers building out adjacent
 SOC/AI-security capabilities. The strategic question for a buyer is less "which
 EDR" and more "which platform do I want to standardize the rest of my SOC on."
 
 ## Adjacent categories
 
-- [[siem-soc]] — EDR/XDR telemetry feeds the SIEM; the lines blur as vendors sell both.
-- [[ai-soc-analysts]] — AI/agentic triage layered on top of EDR/XDR alerts.
-- [[network-security-sase]] — the network-side counterpart; XDR increasingly correlates network signals too.
+- [siem-soc](siem-soc.md) — EDR/XDR telemetry feeds the SIEM; the lines blur as vendors sell both.
+- [ai-soc-analysts](ai-soc-analysts.md) — AI/agentic triage layered on top of EDR/XDR alerts.
+- [network-security-sase](network-security-sase.md) — the network-side counterpart; XDR increasingly correlates network signals too.
 
 ## Survey
 
@@ -92,7 +92,7 @@ Not an AI-specific control; included for stack completeness.
 
 ## Open taxonomy questions
 
-- Overlap with [[siem-soc]] is increasing as XDR absorbs SIEM telemetry; worth
+- Overlap with [siem-soc](siem-soc.md) is increasing as XDR absorbs SIEM telemetry; worth
   watching whether respondents conflate the two.
 - Cortex XDR vs Cortex XSIAM (Palo Alto's SIEM) can confuse respondents who own
   the broader Palo Alto platform.

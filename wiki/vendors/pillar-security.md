@@ -27,13 +27,13 @@ tags: [ai-security, israel, runtime-guardrails, ai-spm, red-teaming, agent-secur
 
 # Pillar Security
 
-> Primary category: [[ai-runtime-security]]. Also [[ai-spm]].
+> Primary category: [ai-runtime-security](../categories/ai-runtime-security.md). Also [ai-spm](../categories/ai-spm.md).
 
 **One-liner** — An Israeli startup selling an end-to-end platform that discovers an
 organization's AI assets and agents, red-teams them, and then wraps them in adaptive
 runtime guardrails (an AI firewall) against prompt injection, data leakage, and tool abuse.
 
-**Categories** — [[ai-runtime-security]], [[ai-spm]]
+**Categories** — [ai-runtime-security](../categories/ai-runtime-security.md), [ai-spm](../categories/ai-spm.md)
 
 ## What it does
 
@@ -59,10 +59,10 @@ vendor marketing; the gateway integration below is independently documented.)
 
 ## Where it sits in the stack
 
-Primary home is [[ai-runtime-security]] (the AI-firewall layer, `model-prompt`), with a
-strong second foot in [[ai-spm]] (discovery/posture, `governance`-adjacent). Because it
-also red-teams models, it overlaps the [[ai-red-teaming]] category, and its agent-behavior
-monitoring overlaps [[agent-runtime-security]].
+Primary home is [ai-runtime-security](../categories/ai-runtime-security.md) (the AI-firewall layer, `model-prompt`), with a
+strong second foot in [ai-spm](../categories/ai-spm.md) (discovery/posture, `governance`-adjacent). Because it
+also red-teams models, it overlaps the [ai-red-teaming](../categories/ai-red-teaming.md) category, and its agent-behavior
+monitoring overlaps [agent-runtime-security](../categories/agent-runtime-security.md).
 
 Lethal-trifecta role: Pillar is one of the few single vendors that touches all three legs —
 it inspects **untrusted input** (prompt-injection / jailbreak detection on the way in),
@@ -74,12 +74,12 @@ relevant to the yellow (model/agent) zone where untrusted content meets privileg
 
 SaaS control plane. The runtime guardrail is consumed primarily as an **API** — Pillar
 exposes a guardrail API that AI gateways call on each request. It is natively integrated
-into [[litellm]]/LiteLLM Proxy (via the Generic Guardrail API, `api_base
+into [litellm](litellm.md)/LiteLLM Proxy (via the Generic Guardrail API, `api_base
 https://api.pillar.security/api/v1/integrations/litellm`, with `pre_call` / `post_call` /
 `during_call` modes) and into the TrueFoundry AI Gateway, so customers can turn protection
 on with a config change rather than re-architecting traffic. SDK / code-side hooks support
 the build-time discovery and red-teaming. It is *not* its own inline TLS-intercepting
-network proxy — it rides on top of an existing [[ai-gateway]]. Integrations span code
+network proxy — it rides on top of an existing [ai-gateway](../categories/ai-gateway.md). Integrations span code
 repos, AI/ML and data platforms, MCP servers (connection mapping + allowlisting), and
 audit/compliance logging; it also appears in the Wiz integration marketplace.
 
@@ -88,18 +88,18 @@ audit/compliance logging; it also appears in the Wiz integration marketplace.
 Pillar's pitch is **breadth across the lifecycle in one product** — discover, test, then
 protect — versus point tools that do only one. Against nearest neighbors:
 
-- vs [[lakera]], [[prompt-security]], [[enkrypt-ai]] — these center on the runtime guardrail
+- vs [lakera](lakera.md), [prompt-security](prompt-security.md), [enkrypt-ai](enkrypt-ai.md) — these center on the runtime guardrail
   / prompt-firewall; Pillar bundles that with discovery (AI-SPM) and red-teaming.
-- vs [[splxai]] — SplxAI leans red-teaming/testing-first; Pillar offers red-teaming plus
+- vs [splxai](splxai.md) — SplxAI leans red-teaming/testing-first; Pillar offers red-teaming plus
   production runtime in one.
-- vs [[prisma-airs]] and [[cisco-ai-defense]] — platform-scale incumbents (Palo Alto, Cisco)
+- vs [prisma-airs](prisma-airs.md) and [cisco-ai-defense](cisco-ai-defense.md) — platform-scale incumbents (Palo Alto, Cisco)
   with broader security portfolios and channel; Pillar is a focused startup competing on
   depth in AI-native, agent-aware protection.
-- vs [[witnessai]] — WitnessAI is more about employee/shadow-AI access governance (CASB-for-AI);
+- vs [witnessai](witnessai.md) — WitnessAI is more about employee/shadow-AI access governance (CASB-for-AI);
   Pillar targets the teams *building* AI apps/agents.
-- vs [[hiddenlayer]] — HiddenLayer's heritage is model/ML-supply-chain security (model
+- vs [hiddenlayer](hiddenlayer.md) — HiddenLayer's heritage is model/ML-supply-chain security (model
   scanning, MLDR); Pillar is more application/agent-runtime and prompt-centric.
-- vs [[pangea]] — Pangea sells composable AI-security API building blocks; Pillar sells a
+- vs [pangea](pangea.md) — Pangea sells composable AI-security API building blocks; Pillar sells a
   more opinionated, integrated platform.
 
 Differentiators it stresses: agent-centric behavioral monitoring (deviation from intended
@@ -121,19 +121,19 @@ This is a **Day-1** control *if you are building or running your own AI applicat
 (internal copilots over fund data, RAG assistants, agentic workflows) — it provides the
 prompt-injection / data-leak / egress guardrail you cannot safely launch without, plus an
 inventory of what AI you actually have. For a fund that only *consumes* SaaS AI
-(ChatGPT/Copilot) and isn't building, a CASB-for-AI like [[witnessai]] or a gateway-native
+(ChatGPT/Copilot) and isn't building, a CASB-for-AI like [witnessai](witnessai.md) or a gateway-native
 guardrail may matter more, and Pillar is closer to Day-2/optional. SR 11-7 / model-risk
 relevance is indirect: its red-teaming evidence and runtime logs can feed model-risk and
 audit, but it is a security tool, not a governance/attestation platform like
-[[ai-governance-platform]] vendors. Fit: medium for a hedge fund — high if you have an
+[ai-governance-platform](../categories/ai-governance-platform.md) vendors. Fit: medium for a hedge fund — high if you have an
 in-house AI build team, lower if you don't. Caveat: small, early-stage (seed) vendor —
 weigh vendor-risk and roadmap maturity against incumbents.
 
 ## Competitors / alternatives
 
-[[lakera]], [[prompt-security]], [[enkrypt-ai]], [[splxai]], [[prisma-airs]],
-[[cisco-ai-defense]], [[witnessai]], [[hiddenlayer]], [[pangea]], [[calypsoai]], [[trojai]],
-[[aim-security]]
+[lakera](lakera.md), [prompt-security](prompt-security.md), [enkrypt-ai](enkrypt-ai.md), [splxai](splxai.md), [prisma-airs](prisma-airs.md),
+[cisco-ai-defense](cisco-ai-defense.md), [witnessai](witnessai.md), [hiddenlayer](hiddenlayer.md), [pangea](pangea.md), [calypsoai](calypsoai.md), [trojai](trojai.md),
+[aim-security](aim-security.md)
 
 ## Open questions / to verify
 - Exact pricing / packaging (per-app, per-request, platform) — not public.

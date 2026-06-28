@@ -31,7 +31,7 @@ tags: [comms-surveillance, ecomms, market-abuse, mnpi, ediscovery, ai-detection]
 
 **One-liner** — A proactive e-comms surveillance product from the e-discovery vendor Relativity, leaning on the same review/search/ML stack lawyers use for litigation to catch market abuse and MNPI risk before it becomes an enforcement problem.
 
-**Categories** — [[comms-surveillance]]
+**Categories** — [comms-surveillance](../categories/comms-surveillance.md)
 
 ## What it does
 
@@ -39,7 +39,7 @@ Relativity Trace monitors employee electronic communications in (near) real time
 
 ## Where it sits in the stack
 
-Trace lives in the [[comms-surveillance]] category at the **governance** layer. It is a **detective** control — it does not sit inline in any AI request path, so its lethal-trifecta relevance is **none** (it neither breaks untrusted-input, sensitive-data, nor egress legs; it observes after the fact). In trust-zone terms it operates in the **green zone**, reviewing communications data that has already been captured and archived.
+Trace lives in the [comms-surveillance](../categories/comms-surveillance.md) category at the **governance** layer. It is a **detective** control — it does not sit inline in any AI request path, so its lethal-trifecta relevance is **none** (it neither breaks untrusted-input, sensitive-data, nor egress legs; it observes after the fact). In trust-zone terms it operates in the **green zone**, reviewing communications data that has already been captured and archived.
 
 Its distinguishing trait is **e-discovery heritage**: Trace is an application on the Relativity platform, so the same indexing, search, analytics, ML and document-review workflows that power litigation discovery are repurposed for ongoing surveillance. For a firm that already runs Relativity/RelativityOne for legal hold and e-discovery, surveillance and investigation share one data substrate and one review UI — an alert in Trace can flow into the same review/escalation tooling used for litigation.
 
@@ -53,7 +53,7 @@ Its distinguishing trait is **e-discovery heritage**: Trace is an application on
 
 ## Positioning & differentiators
 
-Trace's pitch is "surveillance from the people who do discovery." Versus the **markets-first** surveillance incumbents — [[behavox]], [[steeleye]], [[nice-actimize]], [[shield]] — which were built specifically around trade/e-comms surveillance and market-abuse models, Trace comes at the problem from the litigation/review side and emphasizes platform consolidation with e-discovery and investigations. Versus **collaboration-first** entrants like [[theta-lake]] (deep on Zoom/Teams/Slack capture and modern collaboration risk), Trace is more channel-broad and review-workflow-centric. The strongest case for Trace is shared infrastructure: one platform for e-discovery, legal hold, investigations and surveillance, rather than a standalone surveillance silo.
+Trace's pitch is "surveillance from the people who do discovery." Versus the **markets-first** surveillance incumbents — [behavox](behavox.md), [steeleye](steeleye.md), [nice-actimize](nice-actimize.md), [shield](shield.md) — which were built specifically around trade/e-comms surveillance and market-abuse models, Trace comes at the problem from the litigation/review side and emphasizes platform consolidation with e-discovery and investigations. Versus **collaboration-first** entrants like [theta-lake](theta-lake.md) (deep on Zoom/Teams/Slack capture and modern collaboration risk), Trace is more channel-broad and review-workflow-centric. The strongest case for Trace is shared infrastructure: one platform for e-discovery, legal hold, investigations and surveillance, rather than a standalone surveillance silo.
 
 Worth noting the inverse: a buyer who does *not* already use Relativity gets less of the consolidation benefit and is comparing Trace head-to-head with purpose-built surveillance vendors on detection quality, market-abuse model depth and channel coverage.
 
@@ -69,17 +69,17 @@ Comms surveillance is a **Day-2** capability for most funds but becomes **critic
 
 ## Competitors / alternatives
 
-- [[behavox]] — markets-first behavioral/e-comms surveillance with ML risk models.
-- [[steeleye]] — surveillance + recordkeeping/trade reconstruction, MAR-focused.
-- [[nice-actimize]] — incumbent financial-crime/surveillance suite.
-- [[shield]] — e-comms compliance/surveillance platform.
-- [[theta-lake]] — collaboration-first capture & compliance (Zoom/Teams/Slack).
+- [behavox](behavox.md) — markets-first behavioral/e-comms surveillance with ML risk models.
+- [steeleye](steeleye.md) — surveillance + recordkeeping/trade reconstruction, MAR-focused.
+- [nice-actimize](nice-actimize.md) — incumbent financial-crime/surveillance suite.
+- [shield](shield.md) — e-comms compliance/surveillance platform.
+- [theta-lake](theta-lake.md) — collaboration-first capture & compliance (Zoom/Teams/Slack).
 
 ## Open questions / to verify
 
 - kCura/Relativity founding year (2001 is widely cited; not verified here against a primary filing).
 - Exact Silver Lake stake size and whether the position has changed since 2021; whether any subsequent control transaction has occurred.
-- Channel coverage and market-abuse model depth relative to [[behavox]]/[[steeleye]] (independent benchmarks, not vendor claims).
+- Channel coverage and market-abuse model depth relative to [behavox](behavox.md)/[steeleye](steeleye.md) (independent benchmarks, not vendor claims).
 - Pricing model and whether Trace is sold standalone vs. bundled with RelativityOne.
 - Voice/audio surveillance maturity (native vs. partner transcription).
 
@@ -92,4 +92,4 @@ Comms surveillance is a **Day-2** capability for most funds but becomes **critic
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; refined ownership (Relativity, Silver Lake-backed strategic growth investment 2021-03, ~$3.6B valuation, significant minority, largest shareholder; ownership_confidence low→high). Added full body: Trace = proactive e-comms surveillance on RelativityOne (SaaS), launched 2018; e-discovery heritage as key differentiator; detective control, trifecta=none; positioned vs [[behavox]]/[[steeleye]]/[[nice-actimize]]/[[shield]]/[[theta-lake]]; hedge_fund_fit unclear→medium. Cached 2 source files (4 cited sources). status stub→researched, confidence low→medium.
+- [2026-06-28] Researched; refined ownership (Relativity, Silver Lake-backed strategic growth investment 2021-03, ~$3.6B valuation, significant minority, largest shareholder; ownership_confidence low→high). Added full body: Trace = proactive e-comms surveillance on RelativityOne (SaaS), launched 2018; e-discovery heritage as key differentiator; detective control, trifecta=none; positioned vs [behavox](behavox.md)/[steeleye](steeleye.md)/[nice-actimize](nice-actimize.md)/[shield](shield.md)/[theta-lake](theta-lake.md); hedge_fund_fit unclear→medium. Cached 2 source files (4 cited sources). status stub→researched, confidence low→medium.

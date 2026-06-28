@@ -27,7 +27,7 @@ tags: [sspm, ai-spm, shadow-ai, identity, saas-security]
 
 # Reco
 
-> Primary category: [[ai-spm]]. Also [[sspm]] and [[ai-access-governance]].
+> Primary category: [ai-spm](../categories/ai-spm.md). Also [sspm](../categories/sspm.md) and [ai-access-governance](../categories/ai-access-governance.md).
 
 **One-liner** — An agentless, AI-native SaaS security posture management (SSPM) platform that connects to your SaaS apps and IdP via API/OAuth, builds an identity graph, and discovers shadow SaaS and shadow-AI usage along with the access and misconfigurations around it.
 
@@ -37,9 +37,9 @@ Reco continuously monitors an organization's SaaS estate to find misconfiguratio
 
 ## Where it sits in the stack
 
-- Primary: [[ai-spm]] — AI security posture management, here delivered as a discovery/posture lens over the SaaS layer (which AI tools are connected, what they can reach).
-- [[sspm]] — its origin and core: classic SaaS security posture management.
-- [[ai-access-governance]] — the identity-graph view of who/what can access which data through SaaS and AI integrations.
+- Primary: [ai-spm](../categories/ai-spm.md) — AI security posture management, here delivered as a discovery/posture lens over the SaaS layer (which AI tools are connected, what they can reach).
+- [sspm](../categories/sspm.md) — its origin and core: classic SaaS security posture management.
+- [ai-access-governance](../categories/ai-access-governance.md) — the identity-graph view of who/what can access which data through SaaS and AI integrations.
 - Layer: model-prompt (per taxonomy), though Reco's actual control point is the **SaaS/identity/data layer around** the model, not inline on prompts.
 - Lethal-trifecta role: mainly **sensitive-data** exposure and **egress/connectivity** (risky third-party and AI OAuth grants that can exfiltrate data). It does **not** sit inline on untrusted input — it is a posture/visibility and access-governance tool, not a runtime prompt firewall.
 - Trust zones: spans the green/yellow zones (sanctioned SaaS + IdP) and surfaces yellow/red shadow-AI connections.
@@ -54,10 +54,10 @@ Reco continuously monitors an organization's SaaS estate to find misconfiguratio
 
 Reco's pitch is SSPM rebuilt for a dynamic, AI-heavy SaaS world: broad/fast app coverage plus an identity-graph correlation engine, now extended to shadow-AI and agent discovery.
 
-- vs [[appomni]] and [[obsidian-security]] — fellow SSPM/identity-threat platforms; the three are direct SSPM competitors, with Reco emphasizing speed of integration and the AI/agent narrative.
-- vs [[nudge-security]] — Nudge leans SaaS/identity governance with user-nudging workflows; overlapping shadow-SaaS discovery, lighter on deep posture detections.
-- vs [[grip-security]] — Grip centers on SaaS identity risk and shadow-SaaS sprawl; similar discovery goal, different emphasis (identity sprawl/offboarding).
-- vs [[harmonic-security]], [[aurascape]], [[witnessai]] — these are **runtime / inline** AI-usage governance (DLP on prompts, AI gateways/proxies). Reco is **out-of-band posture/discovery**, not an inline guardrail — complementary rather than directly competing on the same control point.
+- vs [appomni](appomni.md) and [obsidian-security](obsidian-security.md) — fellow SSPM/identity-threat platforms; the three are direct SSPM competitors, with Reco emphasizing speed of integration and the AI/agent narrative.
+- vs [nudge-security](nudge-security.md) — Nudge leans SaaS/identity governance with user-nudging workflows; overlapping shadow-SaaS discovery, lighter on deep posture detections.
+- vs [grip-security](grip-security.md) — Grip centers on SaaS identity risk and shadow-SaaS sprawl; similar discovery goal, different emphasis (identity sprawl/offboarding).
+- vs [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [witnessai](witnessai.md) — these are **runtime / inline** AI-usage governance (DLP on prompts, AI gateways/proxies). Reco is **out-of-band posture/discovery**, not an inline guardrail — complementary rather than directly competing on the same control point.
 
 ## Ownership, funding & M&A
 
@@ -72,7 +72,7 @@ Reco's pitch is SSPM rebuilt for a dynamic, AI-heavy SaaS world: broad/fast app 
 
 ## Competitors / alternatives
 
-[[appomni]], [[obsidian-security]], [[nudge-security]], [[grip-security]] (SSPM/SaaS-identity); complementary to inline AI-usage governance [[harmonic-security]], [[aurascape]], [[witnessai]].
+[appomni](appomni.md), [obsidian-security](obsidian-security.md), [nudge-security](nudge-security.md), [grip-security](grip-security.md) (SSPM/SaaS-identity); complementary to inline AI-usage governance [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [witnessai](witnessai.md).
 
 ## Open questions / to verify
 

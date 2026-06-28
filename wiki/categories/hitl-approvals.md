@@ -25,7 +25,7 @@ committing code to production, placing or amending an order. The agent proposes;
 human disposes.
 
 The design question is **which actions earn a human gate**, and the answer comes from
-[[risk-tiers]]: low-stakes, reversible actions run autonomously; high-stakes or
+[risk-tiers](risk-tiers.md): low-stakes, reversible actions run autonomously; high-stakes or
 irreversible ones pause for sign-off. Over-gating trains people to rubber-stamp (and
 defeats the point); under-gating lets an agent take an irreversible wrong action at
 machine speed. The craft is putting the checkpoint only where consequence is real.
@@ -42,7 +42,7 @@ a human gate on the high-stakes subset. For a hedge fund, the trigger is the shi
 from "AI that drafts" to "AI that does," and that line should be drawn explicitly
 before the agent is allowed to act.
 
-It complements [[promotion-gates]]: promotion gates approve **shipping the system**
+It complements [promotion-gates](promotion-gates.md): promotion gates approve **shipping the system**
 once; HITL approvals approve **specific actions** the live system proposes, again and
 again, at runtime.
 
@@ -59,25 +59,25 @@ irreversible effect. It backstops the automated controls rather than replacing t
 - **Workflow / approval engines** — ServiceNow approvals, custom workflow engines, or
   the interrupt/approval primitives built into agent frameworks (the agent pauses and
   requests sign-off before a designated tool call).
-- [[authorization-engine]] — externalized authz ("is this agent allowed to do this,
+- [authorization-engine](authorization-engine.md) — externalized authz ("is this agent allowed to do this,
   right now?") that can require a human approval as a condition of allowing an action.
-- [[mcp-gateway]] — brokers the tools an agent can call and is a natural place to
+- [mcp-gateway](mcp-gateway.md) — brokers the tools an agent can call and is a natural place to
   interpose an approval before a sensitive tool runs.
-- [[enterprise-grc]] — records the approval and its rationale for audit.
+- [enterprise-grc](enterprise-grc.md) — records the approval and its rationale for audit.
 
 ## Adjacent categories
 
-- [[promotion-gates]] — release-time sign-off on the system vs. runtime sign-off on an
+- [promotion-gates](promotion-gates.md) — release-time sign-off on the system vs. runtime sign-off on an
   action. The two are easy to conflate; keep distinct.
-- [[risk-tiers]] — decides which actions are consequential enough to gate.
-- [[authorization-engine]] / [[mcp-gateway]] — the runtime chokepoints where an
+- [risk-tiers](risk-tiers.md) — decides which actions are consequential enough to gate.
+- [authorization-engine](authorization-engine.md) / [mcp-gateway](mcp-gateway.md) — the runtime chokepoints where an
   approval requirement is actually enforced.
-- [[trust-zone-segmentation]] — HITL is the human checkpoint guarding entry to
+- [trust-zone-segmentation](trust-zone-segmentation.md) — HITL is the human checkpoint guarding entry to
   green-zone (production-acting) workloads.
 
 ## Open taxonomy questions
 
-- Primary confusion is with [[promotion-gates]] (system vs. action). Flag the
+- Primary confusion is with [promotion-gates](promotion-gates.md) (system vs. action). Flag the
   distinction wherever both appear.
 - Some agent platforms ship native HITL hooks; as that matures this practice may grow a
   thin tooling shortlist. For now it stays pure-process.

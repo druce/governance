@@ -21,12 +21,12 @@ compliant — as **version-controlled, testable, automatically-enforced code** e
 at decision points (CI/CD pipelines, Kubernetes admission, infrastructure provisioning,
 API/agent calls). Instead of a human checking a checklist, an engine returns
 allow/deny against a declarative policy. It is the automation substrate beneath
-[[promotion-gates]], [[trust-zone-segmentation]], and increasingly agent authorization.
+[promotion-gates](promotion-gates.md), [trust-zone-segmentation](trust-zone-segmentation.md), and increasingly agent authorization.
 
 ## When you need it
 
 **Day-2 — automate after manual policy.** You write the policy in English first
-([[acceptable-use-policies]], [[risk-tiers]]) and enforce it manually via review; you
+([acceptable-use-policies](acceptable-use-policies.md), [risk-tiers](risk-tiers.md)) and enforce it manually via review; you
 adopt policy-as-code when manual enforcement does not scale or when you need provable,
 consistent gating. For a hedge-fund CTO, the typical entry points are cloud/Kubernetes
 governance (a platform team already running OPA or Sentinel) and, newer, **agent/tool
@@ -42,21 +42,21 @@ Used for trust-zone admission and agent authorization it can help break **any** 
 denying egress, blocking access to sensitive data, or refusing an untrusted action — but
 only as configured. It lives in the **green (governed) zone** as the engine that turns
 zone and promotion rules into enforced decisions. Closely related to the
-[[authorization-engine]] category (same engines — OPA, Cerbos — applied to
+[authorization-engine](authorization-engine.md) category (same engines — OPA, Cerbos — applied to
 fine-grained agent/tool authz rather than infra policy).
 
 ## Vendors
 
 OSS projects and the general-purpose policy engines:
 
-- [[open-policy-agent]] — CNCF general-purpose policy engine (Rego); the de facto standard for cloud/K8s and externalized authz.
-- [[styra]] — commercial OPA: management, distribution, and control plane (DAS) for OPA at scale.
-- [[hashicorp-sentinel]] — policy-as-code embedded in the HashiCorp stack (Terraform/Vault), governing infrastructure provisioning.
-- [[kyverno]] — Kubernetes-native policy engine using YAML/CRDs instead of a dedicated policy language.
-- [[terraform-cloud]] — cross-listed: enforces Sentinel/OPA policy on infrastructure changes at provisioning time.
+- [open-policy-agent](../vendors/open-policy-agent.md) — CNCF general-purpose policy engine (Rego); the de facto standard for cloud/K8s and externalized authz.
+- [styra](../vendors/styra.md) — commercial OPA: management, distribution, and control plane (DAS) for OPA at scale.
+- [hashicorp-sentinel](../vendors/hashicorp-sentinel.md) — policy-as-code embedded in the HashiCorp stack (Terraform/Vault), governing infrastructure provisioning.
+- [kyverno](../vendors/kyverno.md) — Kubernetes-native policy engine using YAML/CRDs instead of a dedicated policy language.
+- [terraform-cloud](../vendors/terraform-cloud.md) — cross-listed: enforces Sentinel/OPA policy on infrastructure changes at provisioning time.
 
 For policy-as-code applied specifically to **agent and tool authorization**, see the
-[[authorization-engine]] vendors ([[cerbos]], [[permit-io]], [[authzed]], [[oso]]) —
+[authorization-engine](authorization-engine.md) vendors ([cerbos](../vendors/cerbos.md), [permit-io](../vendors/permit-io.md), [authzed](../vendors/authzed.md), [oso](../vendors/oso.md)) —
 the same idea pointed at runtime agent decisions.
 
 ## Consolidation / M&A dynamics
@@ -69,11 +69,11 @@ these engines being repurposed from infra governance toward **agent/MCP authoriz
 
 ## Adjacent categories
 
-- [[authorization-engine]] — the same policy engines applied to fine-grained agent/tool authz (the runtime cousin of infra policy-as-code).
-- [[promotion-gates]] — the CI/CD sign-off practice that policy-as-code automates.
-- [[trust-zone-segmentation]] — zone admission rules are a natural policy-as-code use case.
-- [[ephemeral-environments]] — Terraform Cloud / Sentinel govern what zone-scoped environments may be provisioned.
-- [[mcp-gateway]] — increasingly enforces policy-as-code on agent tool calls.
+- [authorization-engine](authorization-engine.md) — the same policy engines applied to fine-grained agent/tool authz (the runtime cousin of infra policy-as-code).
+- [promotion-gates](promotion-gates.md) — the CI/CD sign-off practice that policy-as-code automates.
+- [trust-zone-segmentation](trust-zone-segmentation.md) — zone admission rules are a natural policy-as-code use case.
+- [ephemeral-environments](ephemeral-environments.md) — Terraform Cloud / Sentinel govern what zone-scoped environments may be provisioned.
+- [mcp-gateway](mcp-gateway.md) — increasingly enforces policy-as-code on agent tool calls.
 
 ## Survey
 
@@ -89,14 +89,14 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 **Notes for survey design.** OPA is table-stakes / de facto standard; Styra is the
 commercial wrapper around it, so respondents may legitimately select both — not a
 contradiction. Sentinel selection usually tracks Terraform adoption; Kyverno tracks
-Kubernetes adoption. Heavy conceptual overlap with the [[authorization-engine]] survey
+Kubernetes adoption. Heavy conceptual overlap with the [authorization-engine](authorization-engine.md) survey
 (OPA, Cerbos appear in both) — clarify whether you are asking about infra policy vs
 agent/tool authz, or respondents will conflate them. HashiCorp's ownership (IBM, per
 seed) may date the Sentinel/Terraform options.
 
 ## Open taxonomy questions
 
-- Strong overlap with [[authorization-engine]]: OPA and Styra appear in both. The cut
+- Strong overlap with [authorization-engine](authorization-engine.md): OPA and Styra appear in both. The cut
   here is infra/CI/CD policy vs runtime agent/tool authorization — worth a comparison
   page rather than merging.
 - Is this a "governance" category or a "policy/process" enabler? Kept under governance

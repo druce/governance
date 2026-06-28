@@ -27,7 +27,7 @@ tags: [enterprise-search, rag, permissions-aware, work-ai, ai-assistant]
 
 # Glean
 
-> Primary category: [[entitlement-aware-rag]]. Secondary: [[enterprise-ai-assistant]].
+> Primary category: [entitlement-aware-rag](../categories/entitlement-aware-rag.md). Secondary: [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md).
 
 **One-liner** — Permission-aware enterprise search and a "Work AI" assistant/agent platform that connects to all your SaaS apps and answers questions over company data — while enforcing each source system's access controls so a user never sees a document they couldn't already open themselves.
 
@@ -39,8 +39,8 @@ The non-negotiable control underneath all of it: **document-level permission enf
 
 ## Where it sits in the stack
 
-- **Layer:** retrieval. Primary category [[entitlement-aware-rag]]; also [[enterprise-ai-assistant]].
-- **Lethal-trifecta leg:** **sensitive-data**. Glean's job is to make sure the model only ever retrieves data the user is entitled to, so the "access to private data" leg of the trifecta is scoped to per-user authorization rather than the whole corpus. It does *not* by itself break the untrusted-input or egress legs — those need a runtime/guardrail layer ([[ai-runtime-security]]) and DLP/egress controls.
+- **Layer:** retrieval. Primary category [entitlement-aware-rag](../categories/entitlement-aware-rag.md); also [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md).
+- **Lethal-trifecta leg:** **sensitive-data**. Glean's job is to make sure the model only ever retrieves data the user is entitled to, so the "access to private data" leg of the trifecta is scoped to per-user authorization rather than the whole corpus. It does *not* by itself break the untrusted-input or egress legs — those need a runtime/guardrail layer ([ai-runtime-security](../categories/ai-runtime-security.md)) and DLP/egress controls.
 - **Trust zone:** lives in the green/internal zone but reaches across every connected SaaS app; the permission-mirroring is precisely what keeps cross-app retrieval from collapsing trust boundaries.
 
 ## Deployment & architecture
@@ -54,7 +54,7 @@ The non-negotiable control underneath all of it: **document-level permission enf
 
 - **Permission-mirroring is the headline.** Glean built its reputation on getting enterprise-search ACL enforcement right at scale before "RAG" was a buzzword; the permissions story is its core moat versus point LLM tools.
 - **Horizontal Work AI platform**, not a single-app copilot — it spans all connected systems rather than being tied to one vendor's suite.
-- **Nearest neighbors:** [[microsoft-365-copilot]] (bundled with M365, leans on Microsoft Graph/[[microsoft-graph]] permissions but weaker on non-Microsoft sources), [[gemini-enterprise]] (Google's Agentspace, strong on Workspace), and [[microsoft-graph]] as the underlying permissioned-retrieval substrate for Copilot. Glean's pitch against the platform copilots is breadth of connectors and being suite-neutral; the copilots' pitch against Glean is "already in your license, no extra vendor." Knostic and others have published research probing whether *any* of these (Glean included) fully prevent oversharing when source-system permissions are themselves sloppy — the control is only as good as the upstream ACLs.
+- **Nearest neighbors:** [microsoft-365-copilot](microsoft-365-copilot.md) (bundled with M365, leans on Microsoft Graph/[microsoft-graph](microsoft-graph.md) permissions but weaker on non-Microsoft sources), [gemini-enterprise](gemini-enterprise.md) (Google's Agentspace, strong on Workspace), and [microsoft-graph](microsoft-graph.md) as the underlying permissioned-retrieval substrate for Copilot. Glean's pitch against the platform copilots is breadth of connectors and being suite-neutral; the copilots' pitch against Glean is "already in your license, no extra vendor." Knostic and others have published research probing whether *any* of these (Glean included) fully prevent oversharing when source-system permissions are themselves sloppy — the control is only as good as the upstream ACLs.
 
 ## Ownership, funding & M&A
 
@@ -72,9 +72,9 @@ The non-negotiable control underneath all of it: **document-level permission enf
 
 ## Competitors / alternatives
 
-- [[microsoft-365-copilot]] — bundled Microsoft-suite copilot; permissions via [[microsoft-graph]].
-- [[gemini-enterprise]] — Google Agentspace / Gemini Enterprise.
-- [[microsoft-graph]] — permissioned-retrieval substrate (build-vs-buy alternative for Microsoft-centric shops).
+- [microsoft-365-copilot](microsoft-365-copilot.md) — bundled Microsoft-suite copilot; permissions via [microsoft-graph](microsoft-graph.md).
+- [gemini-enterprise](gemini-enterprise.md) — Google Agentspace / Gemini Enterprise.
+- [microsoft-graph](microsoft-graph.md) — permissioned-retrieval substrate (build-vs-buy alternative for Microsoft-centric shops).
 - Other enterprise-search/RAG players (Sinequa, Coveo, Elastic-based builds) compete on retrieval but with varying assistant/agent maturity.
 
 ## Open questions / to verify

@@ -15,7 +15,7 @@ last_updated: 2026-06-28
 > This is a **practice**, not a product. It is the organizing idea behind the whole
 > stack — the architecture you design so that no single component failure becomes a
 > breach. There is no shortlist to buy; you implement it with tooling you already
-> have (network controls, identity, [[ephemeral-environments]], gateways).
+> have (network controls, identity, [ephemeral-environments](ephemeral-environments.md), gateways).
 
 ## Business objective
 
@@ -49,7 +49,7 @@ The seed doc's three-zone model:
   consequential action. Sensitive data + egress exist, so **untrusted input must be
   excluded**: no raw web content, no unvetted documents, no arbitrary user prompts.
   Everything entering is vetted, and the agents themselves go through heavy review
-  ([[promotion-gates]], [[hitl-approvals]]).
+  ([promotion-gates](promotion-gates.md), [hitl-approvals](hitl-approvals.md)).
 
 The discipline is simply: **for every workload, name its zone, then prove the missing
 trifecta leg is actually missing.** If you can't say which leg is removed, the
@@ -87,38 +87,38 @@ they fail. It is the meta-control the rest of the stack hangs off.
 
 Segmentation is a design realized through controls you already run:
 
-- **Isolation / disposability** — [[ephemeral-environments]] give you zone-scoped,
+- **Isolation / disposability** — [ephemeral-environments](ephemeral-environments.md) give you zone-scoped,
   short-lived compute that vanishes after use, so red-zone work leaves nothing sticky
   to compromise.
-- **Egress control** — [[network-security-sase]] and the [[ai-gateway]] (the single
+- **Egress control** — [network-security-sase](network-security-sase.md) and the [ai-gateway](ai-gateway.md) (the single
   exit door for model traffic) are how you actually cut or allowlist outbound paths
   for the yellow zone.
-- **Input/output inspection within a zone** — [[ai-runtime-security]] (the AI
-  firewall) and [[dlp]] catch what slips through at the prompt/response boundary.
-- **Identity & authorization** — [[identity-access]], [[authorization-engine]], and
-  [[mcp-gateway]] decide which agent may enter which zone and reach which tools.
-- **Retrieval scoping** — [[entitlement-aware-rag]] ensures even an in-zone agent
+- **Input/output inspection within a zone** — [ai-runtime-security](ai-runtime-security.md) (the AI
+  firewall) and [dlp](dlp.md) catch what slips through at the prompt/response boundary.
+- **Identity & authorization** — [identity-access](identity-access.md), [authorization-engine](authorization-engine.md), and
+  [mcp-gateway](mcp-gateway.md) decide which agent may enter which zone and reach which tools.
+- **Retrieval scoping** — [entitlement-aware-rag](entitlement-aware-rag.md) ensures even an in-zone agent
   only retrieves what its caller was already allowed to see.
 
 ## Adjacent categories
 
-- [[overview]] — the thesis page; trust zones and the lethal trifecta are its spine.
-- [[ephemeral-environments]] — the disposable compute that makes red/yellow isolation
+- [overview](../overview.md) — the thesis page; trust zones and the lethal trifecta are its spine.
+- [ephemeral-environments](ephemeral-environments.md) — the disposable compute that makes red/yellow isolation
   cheap and real.
-- [[ai-gateway]] / [[network-security-sase]] — the egress chokepoints that enforce the
+- [ai-gateway](ai-gateway.md) / [network-security-sase](network-security-sase.md) — the egress chokepoints that enforce the
   yellow-zone "no internet" rule.
-- [[ai-runtime-security]] — in-zone prompt/response inspection; the mitigation layer
+- [ai-runtime-security](ai-runtime-security.md) — in-zone prompt/response inspection; the mitigation layer
   segmentation backstops.
-- [[risk-tiers]] — sorts use cases by stakes; high-tier use cases get the strictest
+- [risk-tiers](risk-tiers.md) — sorts use cases by stakes; high-tier use cases get the strictest
   zone.
-- [[promotion-gates]] / [[hitl-approvals]] — the human checkpoints that gate entry to
+- [promotion-gates](promotion-gates.md) / [hitl-approvals](hitl-approvals.md) — the human checkpoints that gate entry to
   the green zone.
 
 ## Open taxonomy questions
 
-- Overlaps heavily with [[ephemeral-environments]]: that page is the *product*
+- Overlaps heavily with [ephemeral-environments](ephemeral-environments.md): that page is the *product*
   category (Codespaces, Dev Boxes, Workers); this is the *design discipline* that uses
   it. Keep separate — one is "what you buy," one is "how you arrange it."
-- Zone boundaries map cleanly onto [[risk-tiers]]; some shops may collapse the two
+- Zone boundaries map cleanly onto [risk-tiers](risk-tiers.md); some shops may collapse the two
   into a single "tier dictates zone" policy. Worth noting in survey design even though
   this page carries no survey.

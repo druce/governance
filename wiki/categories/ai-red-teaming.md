@@ -27,8 +27,8 @@ Two related jobs the CSV survey bundles together:
   leakage, hallucinated or off-policy responses.
 
 The pairing is natural: red-teaming discovers the failure modes; guardrails (and the
-[[ai-runtime-security]] firewall) block them. Many vendors sell both, and the
-"evaluation" half overlaps with [[llm-observability]].
+[ai-runtime-security](ai-runtime-security.md) firewall) block them. Many vendors sell both, and the
+"evaluation" half overlaps with [llm-observability](llm-observability.md).
 
 ## When you need it
 
@@ -37,7 +37,7 @@ then add systematic red-teaming and tuned guardrails as the app matters more. It
 moves earlier (toward Day-1) for higher-stakes deployments: anything customer-facing,
 anything touching MNPI or client data, or anything that must pass model-risk review.
 For a hedge-fund CTO, red-team reports are useful evidence for
-[[ai-governance-platform]] / SR 11-7 sign-off, and lightweight OSS guardrails
+[ai-governance-platform](ai-governance-platform.md) / SR 11-7 sign-off, and lightweight OSS guardrails
 (Guardrails AI, NeMo) can be adopted early at low cost.
 
 ## Lethal-trifecta role
@@ -52,43 +52,43 @@ testing activity; guardrails sit at the same red/yellow boundary as the AI firew
 ## Vendors
 
 **Red-teaming / adversarial testing-first**
-- [[mindgard]] — automated AI red-teaming / offensive security testing.
-- [[splxai]] — AI red-teaming and pentest; also offers runtime guardrails (cross-listed in [[ai-runtime-security]]).
-- [[promptfoo]] — open-source eval and red-team tooling (flagged acquired by OpenAI, per seed).
-- [[haize-labs]] — adversarial testing / automated red-teaming research.
-- [[hiddenlayer]] — model scanning plus red-teaming (primary in [[ai-runtime-security]]).
-- [[enkrypt-ai]] — red-teaming plus guardrails (cross-listed in [[ai-runtime-security]]).
-- [[trojai]] — model scanning and red-teaming (cross-listed in [[ai-runtime-security]]).
+- [mindgard](../vendors/mindgard.md) — automated AI red-teaming / offensive security testing.
+- [splxai](../vendors/splxai.md) — AI red-teaming and pentest; also offers runtime guardrails (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
+- [promptfoo](../vendors/promptfoo.md) — open-source eval and red-team tooling (flagged acquired by OpenAI, per seed).
+- [haize-labs](../vendors/haize-labs.md) — adversarial testing / automated red-teaming research.
+- [hiddenlayer](../vendors/hiddenlayer.md) — model scanning plus red-teaming (primary in [ai-runtime-security](ai-runtime-security.md)).
+- [enkrypt-ai](../vendors/enkrypt-ai.md) — red-teaming plus guardrails (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
+- [trojai](../vendors/trojai.md) — model scanning and red-teaming (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 
 **Guardrails / safety-filter-first**
-- [[guardrails-ai]] — open-source guardrails framework (validators for I/O).
-- [[nemo-guardrails]] — NVIDIA's open-source guardrails toolkit.
-- [[lakera]] — prompt-injection/guardrail detection with strong research (cross-listed in [[ai-runtime-security]]).
-- [[pangea]] — AI security guardrails / API-delivered controls (flagged acquired by CrowdStrike, per seed).
+- [guardrails-ai](../vendors/guardrails-ai.md) — open-source guardrails framework (validators for I/O).
+- [nemo-guardrails](../vendors/nemo-guardrails.md) — NVIDIA's open-source guardrails toolkit.
+- [lakera](../vendors/lakera.md) — prompt-injection/guardrail detection with strong research (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
+- [pangea](../vendors/pangea.md) — AI security guardrails / API-delivered controls (flagged acquired by CrowdStrike, per seed).
 
 **Eval-and-guardrail platforms (overlap with observability)**
-- [[galileo]] — safety/hallucination guardrails and evals (flagged acquired by Cisco, per seed).
-- [[patronus-ai]] — LLM evaluation and guardrails (cross-listed in [[llm-observability]]).
-- [[maxim-ai]] — eval + observability + red-teaming platform (cross-listed in [[llm-observability]]).
-- [[braintrust]] — eval/experimentation platform used for red-team-style testing (primary in [[llm-observability]]).
-- [[giskard]] — open-source testing/red-teaming for ML and LLMs (primary in [[llm-observability]]).
+- [galileo](../vendors/galileo.md) — safety/hallucination guardrails and evals (flagged acquired by Cisco, per seed).
+- [patronus-ai](../vendors/patronus-ai.md) — LLM evaluation and guardrails (cross-listed in [llm-observability](llm-observability.md)).
+- [maxim-ai](../vendors/maxim-ai.md) — eval + observability + red-teaming platform (cross-listed in [llm-observability](llm-observability.md)).
+- [braintrust](../vendors/braintrust.md) — eval/experimentation platform used for red-team-style testing (primary in [llm-observability](llm-observability.md)).
+- [giskard](../vendors/giskard.md) — open-source testing/red-teaming for ML and LLMs (primary in [llm-observability](llm-observability.md)).
 
 ## Consolidation / M&A dynamics
 
 Heavily consolidating. Per seed flags (unverified — to confirm in research):
 Promptfoo flagged as acquired by OpenAI; Lakera flagged as acquired by Check Point;
 Galileo flagged as acquired by Cisco; Pangea flagged as acquired by CrowdStrike. The
-pattern mirrors [[ai-runtime-security]]: platform vendors (Cisco, Check Point,
+pattern mirrors [ai-runtime-security](ai-runtime-security.md): platform vendors (Cisco, Check Point,
 CrowdStrike) and model labs (OpenAI) are buying the red-team/guardrail specialists.
 The result is that several survey options now sit inside larger security suites or
 model-provider stacks.
 
 ## Adjacent categories
 
-- [[ai-runtime-security]] — the production firewall that enforces what guardrails define and red-teaming uncovers; large overlap (HiddenLayer, Lakera, SplxAI, Enkrypt, TrojAI appear in both).
-- [[llm-observability]] — shares the "evaluation" surface; eval-platform vendors (Braintrust, Giskard, Patronus, Maxim, Galileo) span both.
-- [[ai-governance-platform]] — consumes red-team reports as model-risk evidence.
-- [[agent-runtime-security]] — red-teaming extends to multi-step agent behavior, not just single prompts.
+- [ai-runtime-security](ai-runtime-security.md) — the production firewall that enforces what guardrails define and red-teaming uncovers; large overlap (HiddenLayer, Lakera, SplxAI, Enkrypt, TrojAI appear in both).
+- [llm-observability](llm-observability.md) — shares the "evaluation" surface; eval-platform vendors (Braintrust, Giskard, Patronus, Maxim, Galileo) span both.
+- [ai-governance-platform](ai-governance-platform.md) — consumes red-team reports as model-risk evidence.
+- [agent-runtime-security](agent-runtime-security.md) — red-teaming extends to multi-step agent behavior, not just single prompts.
 
 ## Survey
 
@@ -104,12 +104,12 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 
 **Notes for survey design:**
 - This category bundles two distinct jobs (offensive red-teaming vs runtime guardrails). Consider splitting into two questions — respondents using NeMo Guardrails (a filter) and Mindgard (a pentest tool) are doing different things.
-- Heavy cross-listing with [[ai-runtime-security]] (HiddenLayer, Lakera, SplxAI, Enkrypt, TrojAI) and [[llm-observability]] (Braintrust, Giskard, Patronus, Maxim) will cause double-placement; lead with a definition.
+- Heavy cross-listing with [ai-runtime-security](ai-runtime-security.md) (HiddenLayer, Lakera, SplxAI, Enkrypt, TrojAI) and [llm-observability](llm-observability.md) (Braintrust, Giskard, Patronus, Maxim) will cause double-placement; lead with a definition.
 - OSS options (Guardrails AI, NeMo, Promptfoo, Giskard) will skew toward "in production" via low-friction adoption; commercial red-team platforms skew "evaluating."
 - M&A dates several options: if confirmed, Promptfoo→OpenAI, Lakera→Check Point, Galileo→Cisco, Pangea→CrowdStrike. Show recognizable names.
 
 ## Open taxonomy questions
 
 - Should this split into `ai-red-teaming` (offensive testing) and `ai-guardrails` (runtime filters)? The seed CSV merged them but they serve different buyers and lifecycle stages.
-- Guardrails overlap so much with [[ai-runtime-security]] that the boundary is mostly "delivered as a framework/library" (here) vs "delivered as an inline firewall product" (there). Worth a stated rule.
-- This is a CSV-only cut folded out of [[llm-observability]] in the doc; confirm the split survives the final taxonomy pass.
+- Guardrails overlap so much with [ai-runtime-security](ai-runtime-security.md) that the boundary is mostly "delivered as a framework/library" (here) vs "delivered as an inline firewall product" (there). Worth a stated rule.
+- This is a CSV-only cut folded out of [llm-observability](llm-observability.md) in the doc; confirm the split survives the final taxonomy pass.

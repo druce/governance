@@ -35,7 +35,7 @@ tags: [tool-identity-integration, identity-access, agent-identity, mcp, oauth, a
 RBAC, audit logs, fine-grained authorization), now extended to give AI agents their own scoped
 identities and to secure MCP servers.
 
-**Categories** — [[tool-identity-integration]], [[identity-access]]
+**Categories** — [tool-identity-integration](../categories/tool-identity-integration.md), [identity-access](../categories/identity-access.md)
 
 ## What it does
 
@@ -55,8 +55,8 @@ agent can only call the specific tools its permissions map to.
 
 ## Where it sits in the stack
 
-Primary category: [[tool-identity-integration]] (Model/Prompt layer) — the "managed agent→app
-connectors + agent auth" slot — with a secondary tag of [[identity-access]] because the core
+Primary category: [tool-identity-integration](../categories/tool-identity-integration.md) (Model/Prompt layer) — the "managed agent→app
+connectors + agent auth" slot — with a secondary tag of [identity-access](../categories/identity-access.md) because the core
 business is the identity/SSO front door for applications. Note: WorkOS is fundamentally a
 **developer/builder** tool (you embed it in the app *you* ship), not a control a CTO buys to govern
 their own employees' AI use.
@@ -92,13 +92,13 @@ neighbors is breadth across **authn + authz + auditability** in one developer pl
 aggressive move into agent/MCP auth.
 
 Versus nearest neighbors:
-- [[stytch]] and [[descope]] — also developer-first auth platforms that have pivoted hard into agent
+- [stytch](stytch.md) and [descope](descope.md) — also developer-first auth platforms that have pivoted hard into agent
   identity / MCP auth; the three are the closest comparison set in this category. Stytch leans into
   device/fraud and "Connected Apps"; Descope is a no-code/drag-and-drop auth flow builder.
-- [[okta]] (and Auth0, which Okta owns) — the incumbent IdP/CIAM giant WorkOS/AuthKit displaces for
+- [okta](okta.md) (and Auth0, which Okta owns) — the incumbent IdP/CIAM giant WorkOS/AuthKit displaces for
   startups; Okta is an employee/workforce IdP and a buyer-side control, whereas WorkOS is something
   you embed in the product you sell.
-- [[composio]] — comes at agent→SaaS connectivity from the **integration/tool-catalog** side
+- [composio](composio.md) — comes at agent→SaaS connectivity from the **integration/tool-catalog** side
   (managed connectors + auth to hundreds of SaaS APIs) rather than from the identity-provider side.
   WorkOS gives you the authorization-server primitives; Composio gives you the pre-built tool
   connectors.
@@ -127,15 +127,15 @@ hedge-fund CTO would encounter WorkOS primarily as (a) infrastructure inside Saa
 (many of their AI tools likely run on it), or (b) a build-side choice if an in-house dev team is
 standing up an internal agentic app and wants ready-made SSO + agent/MCP authorization rather than
 rolling their own. For governing *consumed* AI, the relevant controls live in other categories
-([[ai-access-governance]], [[ai-runtime-security]], [[mcp-gateway]], [[authorization-engine]]).
-Where it does matter: if your team builds agents, WorkOS (or [[stytch]]/[[descope]]) gives agents
+([ai-access-governance](../categories/ai-access-governance.md), [ai-runtime-security](../categories/ai-runtime-security.md), [mcp-gateway](../categories/mcp-gateway.md), [authorization-engine](../categories/authorization-engine.md)).
+Where it does matter: if your team builds agents, WorkOS (or [stytch](stytch.md)/[descope](descope.md)) gives agents
 scoped, revocable, least-privilege credentials — a genuinely useful pattern for the agent **egress**
 leg.
 
 ## Competitors / alternatives
 
-[[stytch]], [[descope]], [[okta]], [[composio]], [[arcade]], [[cyberark]] (agent/non-human identity
-from the enterprise security side), [[permit-io]] / [[authzed]] (FGA/authorization-engine
+[stytch](stytch.md), [descope](descope.md), [okta](okta.md), [composio](composio.md), [arcade](arcade.md), [cyberark](cyberark.md) (agent/non-human identity
+from the enterprise security side), [permit-io](permit-io.md) / [authzed](authzed.md) (FGA/authorization-engine
 alternatives to WorkOS FGA).
 
 ## Open questions / to verify
@@ -156,4 +156,4 @@ alternatives to WorkOS FGA).
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2019 (Michael Grinich, ex-Nylas), HQ San Francisco, independent venture-backed, $100M Series C 2026-03-02 at $2B valuation (Meritech/Sapphire), ~$180M cumulative. Confirmed WorkOS-as-acquirer of Warrant (FGA/Zanzibar) ~2024-04-23. Documented developer-platform (API/SDK) model, AuthKit, and the agent-identity/MCP OAuth-2.1 angle (scoped revocable agent tokens, tool-level FGA). Positioned vs [[stytch]], [[descope]], [[okta]], [[composio]]. Set hedge_fund_fit low (builder-side tool, not a buyer-side AI-governance control), status researched, confidence medium. Fixed frontmatter (was independent/low → independent/high with detail). 4 sources cached.
+- [2026-06-28] Researched; established founded 2019 (Michael Grinich, ex-Nylas), HQ San Francisco, independent venture-backed, $100M Series C 2026-03-02 at $2B valuation (Meritech/Sapphire), ~$180M cumulative. Confirmed WorkOS-as-acquirer of Warrant (FGA/Zanzibar) ~2024-04-23. Documented developer-platform (API/SDK) model, AuthKit, and the agent-identity/MCP OAuth-2.1 angle (scoped revocable agent tokens, tool-level FGA). Positioned vs [stytch](stytch.md), [descope](descope.md), [okta](okta.md), [composio](composio.md). Set hedge_fund_fit low (builder-side tool, not a buyer-side AI-governance control), status researched, confidence medium. Fixed frontmatter (was independent/low → independent/high with detail). 4 sources cached.

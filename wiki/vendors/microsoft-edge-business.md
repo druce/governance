@@ -43,7 +43,7 @@ A notable operational detail: once you save a Purview policy targeting Edge for 
 
 ## Where it sits in the stack
 
-Primary (and only) category: [[enterprise-browser]] (layer: ux). It addresses the **sensitive-data** and **egress** legs of the lethal trifecta — controlling what corporate data can leave through the browser (uploads, copy/paste, downloads, prints) and gating access to resources by device/identity posture. Like [[chrome-enterprise]], it does little for the prompt-injection **untrusted-input** leg directly; its AI relevance is governing human use of GenAI sites.
+Primary (and only) category: [enterprise-browser](../categories/enterprise-browser.md) (layer: ux). It addresses the **sensitive-data** and **egress** legs of the lethal trifecta — controlling what corporate data can leave through the browser (uploads, copy/paste, downloads, prints) and gating access to resources by device/identity posture. Like [chrome-enterprise](chrome-enterprise.md), it does little for the prompt-injection **untrusted-input** leg directly; its AI relevance is governing human use of GenAI sites.
 
 ## Deployment & architecture
 
@@ -54,10 +54,10 @@ Primary (and only) category: [[enterprise-browser]] (layer: ux). It addresses th
 
 The differentiator is **deep integration with the Microsoft estate** plus **zero incremental browser cost** for M365/Windows shops. Contrast with neighbors:
 
-- **Dedicated enterprise browsers** — [[island]] and [[prisma-access-browser]] ship a purpose-built Chromium browser with deeper, browser-native last-mile controls and isolation; more control, but a new browser to adopt and a separate purchase.
-- **Remote isolation** — [[menlo-security]] isolates page rendering in the cloud; a different architecture.
-- **Extension/overlay** — [[layerx]] adds a browser-agnostic security extension over any existing browser.
-- **First-party peer** — [[chrome-enterprise]] is the direct analog for Google/Chrome shops; the choice between them usually follows whether you are a Microsoft or Google tenant. Edge for Business folds in much of what Chrome Enterprise Premium charges for, but the advanced controls depend on your Purview/M365 licensing tier.
+- **Dedicated enterprise browsers** — [island](island.md) and [prisma-access-browser](prisma-access-browser.md) ship a purpose-built Chromium browser with deeper, browser-native last-mile controls and isolation; more control, but a new browser to adopt and a separate purchase.
+- **Remote isolation** — [menlo-security](menlo-security.md) isolates page rendering in the cloud; a different architecture.
+- **Extension/overlay** — [layerx](layerx.md) adds a browser-agnostic security extension over any existing browser.
+- **First-party peer** — [chrome-enterprise](chrome-enterprise.md) is the direct analog for Google/Chrome shops; the choice between them usually follows whether you are a Microsoft or Google tenant. Edge for Business folds in much of what Chrome Enterprise Premium charges for, but the advanced controls depend on your Purview/M365 licensing tier.
 
 ## Ownership, funding & M&A
 
@@ -65,11 +65,11 @@ First-party product of **Microsoft Corporation** (NASDAQ: MSFT) — a **public**
 
 ## CTO / hedge-fund lens
 
-**Optional / baseline.** For a fund already on Microsoft 365 and Windows, Edge for Business is the lowest-friction way to get browser DLP, sensitivity-label enforcement, Conditional Access, and SmartScreen — effectively "free" with the licenses you hold (though the richer Purview DLP and labeling features require specific M365/E5/Purview tiers, so "free" has an asterisk). Fit is **medium**: strong baseline for Microsoft shops, weaker if you are a Google/Chrome shop (where [[chrome-enterprise]] is the parallel) or if you need the deeper isolation/last-mile controls of a dedicated enterprise browser. No direct SR 11-7 / model-risk role; relevance is data-exfiltration control and governing employee GenAI use. Worth a hard look before buying a separate enterprise browser, since much of the value may already be paid for.
+**Optional / baseline.** For a fund already on Microsoft 365 and Windows, Edge for Business is the lowest-friction way to get browser DLP, sensitivity-label enforcement, Conditional Access, and SmartScreen — effectively "free" with the licenses you hold (though the richer Purview DLP and labeling features require specific M365/E5/Purview tiers, so "free" has an asterisk). Fit is **medium**: strong baseline for Microsoft shops, weaker if you are a Google/Chrome shop (where [chrome-enterprise](chrome-enterprise.md) is the parallel) or if you need the deeper isolation/last-mile controls of a dedicated enterprise browser. No direct SR 11-7 / model-risk role; relevance is data-exfiltration control and governing employee GenAI use. Worth a hard look before buying a separate enterprise browser, since much of the value may already be paid for.
 
 ## Competitors / alternatives
 
-[[chrome-enterprise]], [[island]], [[prisma-access-browser]], [[menlo-security]], [[layerx]].
+[chrome-enterprise](chrome-enterprise.md), [island](island.md), [prisma-access-browser](prisma-access-browser.md), [menlo-security](menlo-security.md), [layerx](layerx.md).
 
 ## Open questions / to verify
 

@@ -27,21 +27,21 @@ tags: [authorization, pdp, authorization-as-a-service, opal, agent-authz, mcp]
 
 # Permit.io
 
-> **Researched 2026-06-28.** Primary category: [[authorization-engine]]. Independent, VC-backed (Series A).
+> **Researched 2026-06-28.** Primary category: [authorization-engine](../categories/authorization-engine.md). Independent, VC-backed (Series A).
 
 **One-liner** — Developer-first authorization-as-a-service: a hosted policy decision point plus SDKs and a no-code policy editor, so engineers add fine-grained access control (RBAC/ReBAC/ABAC) without building it from scratch — increasingly aimed at AI agents and MCP.
 
 ## What it does
-Permit.io wraps proven open-source engines ([[open-policy-agent]] / OPA and AWS **Cedar**) behind a managed control plane and SDKs. You model roles, resources, and relationships in a UI or as code; Permit distributes policy to PDPs you run or it hosts, and your app/agent calls a simple `permit.check()` for allow/deny. It also maintains **OPAL** (Open Policy Administration Layer), its open-source project for real-time policy/data sync to OPA. Newer products (Approval Flows, agent authorization) target **AI bots and agents** asking for fine-grained, identity-aware tool access.
+Permit.io wraps proven open-source engines ([open-policy-agent](open-policy-agent.md) / OPA and AWS **Cedar**) behind a managed control plane and SDKs. You model roles, resources, and relationships in a UI or as code; Permit distributes policy to PDPs you run or it hosts, and your app/agent calls a simple `permit.check()` for allow/deny. It also maintains **OPAL** (Open Policy Administration Layer), its open-source project for real-time policy/data sync to OPA. Newer products (Approval Flows, agent authorization) target **AI bots and agents** asking for fine-grained, identity-aware tool access.
 
 ## Where it sits in the stack
-Primary [[authorization-engine]]; cross-listed to [[mcp-gateway]] because it pitches agent/MCP tool-access authorization. Layer: model-prompt. Lethal-trifecta role: constrains **sensitive-data** and **egress** by deciding whether an agent's action is permitted per request; not prompt-content inspection (that's [[ai-runtime-security]] / [[agent-runtime-security]]). Building block of [[trust-zone-segmentation]]; yellow/green zones.
+Primary [authorization-engine](../categories/authorization-engine.md); cross-listed to [mcp-gateway](../categories/mcp-gateway.md) because it pitches agent/MCP tool-access authorization. Layer: model-prompt. Lethal-trifecta role: constrains **sensitive-data** and **egress** by deciding whether an agent's action is permitted per request; not prompt-content inspection (that's [ai-runtime-security](../categories/ai-runtime-security.md) / [agent-runtime-security](../categories/agent-runtime-security.md)). Building block of [trust-zone-segmentation](../categories/trust-zone-segmentation.md); yellow/green zones.
 
 ## Deployment & architecture
 Hybrid: Permit hosts the control plane (policy authoring, audit) while the **PDP can run locally** (sidecar/container) so authorization decisions and sensitive data stay in your environment — useful for regulated shops. SDKs across major languages; REST API for policy management. Built on OPA/Cedar + OPAL. Integrates with existing auth/IdP (it authorizes, it doesn't authenticate).
 
 ## Positioning & differentiators
-Known for **developer experience and speed-to-implement** — no-code editor plus code, and "don't write your own authz." Versus [[open-policy-agent]] (raw engine, write your own Rego), [[styra]] (enterprise OPA management), [[cerbos]] (stateless OSS engine, also hosted), [[oso]] (Polar DSL), [[authzed]] (Zanzibar/ReBAC graph). Permit's hedge is engine-agnostic (OPA *and* Cedar) with a managed wrapper; its agent/MCP messaging is early but active.
+Known for **developer experience and speed-to-implement** — no-code editor plus code, and "don't write your own authz." Versus [open-policy-agent](open-policy-agent.md) (raw engine, write your own Rego), [styra](styra.md) (enterprise OPA management), [cerbos](cerbos.md) (stateless OSS engine, also hosted), [oso](oso.md) (Polar DSL), [authzed](authzed.md) (Zanzibar/ReBAC graph). Permit's hedge is engine-agnostic (OPA *and* Cedar) with a managed wrapper; its agent/MCP messaging is early but active.
 
 ## Ownership, funding & M&A
 Founded **2021** (originally "Authorizon") by **Or Weis** (CEO) and **Asaf Cohen**; HQ **Tel Aviv**. Raised **~$14M**: ~$6M early round then **Series A $8M** (**2024-02**, led by Scale Venture Partners, with NFX, Firestreak, Roosh, Verissimo). **No M&A** — independent (no seed flag). Confidence high.
@@ -50,7 +50,7 @@ Founded **2021** (originally "Authorizon") by **Or Weis** (CEO) and **Asaf Cohen
 Day-2. Good fit when you want externalized, fine-grained agent/tool authz **without** standing up and operating OPA+Styra yourself — the local-PDP model keeps decisions and data in-house, which matters for a fund. Lower engineering lift than raw OPA; more opinionated than Cerbos. Diligence the maturity of the agent/MCP features (newer than the core authz product) before betting an agent program on them. Series-A vendor — weigh vendor-risk for a core control.
 
 ## Competitors / alternatives
-[[open-policy-agent]], [[styra]], [[cerbos]], [[oso]], [[authzed]], [[pomerium]].
+[open-policy-agent](open-policy-agent.md), [styra](styra.md), [cerbos](cerbos.md), [oso](oso.md), [authzed](authzed.md), [pomerium](pomerium.md).
 
 ## Open questions / to verify
 - Maturity/production references for the **agent / MCP authorization** features specifically (vs core app authz).

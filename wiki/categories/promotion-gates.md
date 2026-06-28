@@ -24,10 +24,10 @@ defined approval (and the evidence to support it) at each step.
 
 In practice a gate bundles a few things to check before promotion:
 
-- the use case has a [[risk-tiers|risk tier]] assigned and its tier-appropriate
+- the use case has a [risk tier](risk-tiers.md) assigned and its tier-appropriate
   controls are in place;
-- evals / red-team results meet a bar ([[llm-observability]], [[ai-red-teaming]]);
-- the workload is in the right [[trust-zone-segmentation|trust zone]] with egress and
+- evals / red-team results meet a bar ([llm-observability](llm-observability.md), [ai-red-teaming](ai-red-teaming.md));
+- the workload is in the right [trust zone](trust-zone-segmentation.md) with egress and
   data access scoped;
 - logging, archival, and rollback exist before it goes live;
 - a named owner accepts the residual risk.
@@ -44,7 +44,7 @@ client-facing decisions on Monday. For a small fund, this can be as simple as: n
 reaches production without a PR review plus a one-line sign-off from a designated owner
 against a short checklist. Heavier, tier-driven gates come as the estate grows.
 
-Gates are the *automated/procedural* counterpart to [[hitl-approvals]]: promotion
+Gates are the *automated/procedural* counterpart to [hitl-approvals](hitl-approvals.md): promotion
 gates govern **releasing the system**; HITL approvals govern **individual high-stakes
 actions** the system then takes at runtime.
 
@@ -61,24 +61,24 @@ shipping.
 - **CI/CD + change management** — branch protection, required reviewers, deployment
   approvals in GitHub/GitLab and your release pipeline. This is where the gate
   actually lives.
-- [[policy-as-code]] — encode promotion rules as software (OPA, Sentinel, Kyverno) so
+- [policy-as-code](policy-as-code.md) — encode promotion rules as software (OPA, Sentinel, Kyverno) so
   the gate enforces itself instead of relying on a human remembering the checklist.
-- [[enterprise-grc]] — the change/approval record and audit trail (ServiceNow and
+- [enterprise-grc](enterprise-grc.md) — the change/approval record and audit trail (ServiceNow and
   peers, usually already owned).
-- [[llm-observability]] / [[ai-red-teaming]] — supply the eval and red-team evidence a
+- [llm-observability](llm-observability.md) / [ai-red-teaming](ai-red-teaming.md) — supply the eval and red-team evidence a
   gate checks against.
 
 ## Adjacent categories
 
-- [[hitl-approvals]] — runtime human sign-off on actions, vs. release-time sign-off on
+- [hitl-approvals](hitl-approvals.md) — runtime human sign-off on actions, vs. release-time sign-off on
   the system. Easy to conflate; keep distinct.
-- [[risk-tiers]] — sets how strict the gate is for a given use case.
-- [[policy-as-code]] — automates the gate.
-- [[ai-governance-platform]] / [[enterprise-grc]] — where approvals and evidence are
+- [risk-tiers](risk-tiers.md) — sets how strict the gate is for a given use case.
+- [policy-as-code](policy-as-code.md) — automates the gate.
+- [ai-governance-platform](ai-governance-platform.md) / [enterprise-grc](enterprise-grc.md) — where approvals and evidence are
   recorded for audit.
 
 ## Open taxonomy questions
 
-- Boundary with [[hitl-approvals]] is the main source of confusion: "gate" (promote the
+- Boundary with [hitl-approvals](hitl-approvals.md) is the main source of confusion: "gate" (promote the
   system) vs. "approval" (authorize an action). Worth an explicit note wherever both
   appear so survey respondents don't blur them.

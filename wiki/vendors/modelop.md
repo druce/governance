@@ -27,7 +27,7 @@ tags: [model-risk, sr-11-7, modelops, ai-governance, financial-services]
 
 # ModelOp
 
-> Primary category: [[ai-governance-platform]] · Layer: governance
+> Primary category: [ai-governance-platform](../categories/ai-governance-platform.md) · Layer: governance
 
 **One-liner** — An enterprise AI/ML governance and ModelOps platform that acts as a centralized "system of record" for every model, enforcing inventory, validation, approval, and monitoring controls — built around bank-grade model-risk management (SR 11-7).
 
@@ -39,7 +39,7 @@ The company frames adoption around a "Minimum Viable Governance" / right-sizing 
 
 ## Where it sits in the stack
 
-This is a [[ai-governance-platform]] at the **governance** layer — the oversight/system-of-record tier that sits above the models and the runtime/data tooling, not in the request path.
+This is a [ai-governance-platform](../categories/ai-governance-platform.md) at the **governance** layer — the oversight/system-of-record tier that sits above the models and the runtime/data tooling, not in the request path.
 
 - **Lethal-trifecta role:** none directly. ModelOp is an out-of-band governance and documentation control plane; it does not break the untrusted-input / sensitive-data / egress legs at runtime the way an inline guardrail or DLP tool does. Its value is process assurance, inventory, and evidence, not interception.
 - **Trust zone:** spans the governance/oversight plane across all zones — it inventories and tracks models regardless of where they run, and integrates with the MLOps/monitoring stack to pull signals back.
@@ -55,9 +55,9 @@ This is a [[ai-governance-platform]] at the **governance** layer — the oversig
 ModelOp's distinguishing angle is **depth on regulated model-risk management**, not breadth of trust-and-safety features. It grew out of work with major global banks, and leans into SR 11-7 (Fed/OCC model-risk guidance) as a first-class framework alongside EU AI Act, NIST AI RMF, and ISO/IEC 42001. It was named a Visionary in the 2026 Gartner Magic Quadrant for AI Governance Platforms.
 
 Versus neighbors:
-- **[[ibm-watsonx-governance]]** — closest large competitor on model-risk + inventory for regulated enterprises; ModelOp is the focused independent vs. IBM's broader platform/stack play.
-- **[[credo-ai]]** and **[[holistic-ai]]** — more policy/responsible-AI and EU-AI-Act-compliance oriented; ModelOp is heavier on quantitative model lifecycle/ModelOps and SR 11-7 evidence.
-- **[[monitaur]]** — also targets regulated FS/insurance model governance and assurance; a direct overlap, with ModelOp positioned more on enterprise-scale operationalization.
+- **[ibm-watsonx-governance](ibm-watsonx-governance.md)** — closest large competitor on model-risk + inventory for regulated enterprises; ModelOp is the focused independent vs. IBM's broader platform/stack play.
+- **[credo-ai](credo-ai.md)** and **[holistic-ai](holistic-ai.md)** — more policy/responsible-AI and EU-AI-Act-compliance oriented; ModelOp is heavier on quantitative model lifecycle/ModelOps and SR 11-7 evidence.
+- **[monitaur](monitaur.md)** — also targets regulated FS/insurance model governance and assurance; a direct overlap, with ModelOp positioned more on enterprise-scale operationalization.
 
 ## Ownership, funding & M&A
 
@@ -75,7 +75,7 @@ Versus neighbors:
 
 ## Competitors / alternatives
 
-[[ibm-watsonx-governance]] · [[credo-ai]] · [[holistic-ai]] · [[monitaur]]
+[ibm-watsonx-governance](ibm-watsonx-governance.md) · [credo-ai](credo-ai.md) · [holistic-ai](holistic-ai.md) · [monitaur](monitaur.md)
 
 ## Open questions / to verify
 - Confirm current deployment SKUs (true on-prem / air-gapped vs. SaaS vs. private-cloud) from primary docs.

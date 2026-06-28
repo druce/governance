@@ -37,23 +37,23 @@ Wing combines three jobs in one platform: (1) **SSPM** — continuous discovery 
 
 ## Where it sits in the stack
 
-Primary category [[sspm]]; with its AI-governance guardrails and shadow-AI discovery it also overlaps [[ai-access-governance]]. Layer: foundation.
+Primary category [sspm](../categories/sspm.md); with its AI-governance guardrails and shadow-AI discovery it also overlaps [ai-access-governance](../categories/ai-access-governance.md). Layer: foundation.
 
 Lethal-trifecta role: **sensitive-data** and **egress** — it governs which SaaS/AI apps can access corporate data and constrains OAuth-granted data flow; the ITDR side adds detection of compromised-identity abuse. Not an inline model/prompt firewall.
 
 ## Deployment & architecture
 
-**Agentless, API-first**; connects to IdP and SaaS apps via API/OAuth and is designed to scale from ~1,000 to 50,000+ employees without endpoint agents. No browser extension component (contrast [[grip-security]]). Integrates with identity providers for discovery and threat signals.
+**Agentless, API-first**; connects to IdP and SaaS apps via API/OAuth and is designed to scale from ~1,000 to 50,000+ employees without endpoint agents. No browser extension component (contrast [grip-security](grip-security.md)). Integrates with identity providers for discovery and threat signals.
 
 ## Positioning & differentiators
 
-Known for a **multi-layer SSPM + ITDR** combination and, since late 2025, an AI-security emphasis. Nearest neighbors: [[grip-security]] (adds a browser extension and leans identity-discovery), [[appomni]] and [[obsidian-security]] (deeper config-posture + ITDR for major SaaS estates), [[valence-security]] and [[reco]] (SaaS posture + remediation), [[nudge-security]] (OAuth-discovery and offboarding). Differentiation claims are vendor marketing.
+Known for a **multi-layer SSPM + ITDR** combination and, since late 2025, an AI-security emphasis. Nearest neighbors: [grip-security](grip-security.md) (adds a browser extension and leans identity-discovery), [appomni](appomni.md) and [obsidian-security](obsidian-security.md) (deeper config-posture + ITDR for major SaaS estates), [valence-security](valence-security.md) and [reco](reco.md) (SaaS posture + remediation), [nudge-security](nudge-security.md) (OAuth-discovery and offboarding). Differentiation claims are vendor marketing.
 
 ## Ownership, funding & M&A
 
 Founded 2020 by Noam Shaar and Galit Lubetzky Sharon (IDF cyber veterans); HQ Tel Aviv, Israel. Total funding ~$26M; most recent disclosed round a $20M Series A (March 2022) led by GGV Capital, with S-Capital, Harmony Partners, and Silicon Valley CISO Investments Group. CEO: Galit Lubetzky Sharon.
 
-**M&A — seed hint NOT confirmed.** The seed flagged a possible acquisition by [[zscaler]]. I could not confirm this against any Zscaler press release, reputable press, or aggregator record as of 2026-06-28. Wing issued its OWN press release as an independent company on 2025-09-30, and no acquisition appears in Crunchbase/Tracxn. Zscaler's actual recent SaaS/AI-security acquisitions are **different** companies (SPLX, Symmetry Systems, Red Canary, SquareX) — none is Wing. Because there is no competing acquirer claim, this is an **unconfirmed hint, not a hard contradiction**. Possible seed confusion with one of Zscaler's other buys. Ownership left **independent / low confidence** pending a primary source.
+**M&A — seed hint NOT confirmed.** The seed flagged a possible acquisition by [zscaler](zscaler.md). I could not confirm this against any Zscaler press release, reputable press, or aggregator record as of 2026-06-28. Wing issued its OWN press release as an independent company on 2025-09-30, and no acquisition appears in Crunchbase/Tracxn. Zscaler's actual recent SaaS/AI-security acquisitions are **different** companies (SPLX, Symmetry Systems, Red Canary, SquareX) — none is Wing. Because there is no competing acquirer claim, this is an **unconfirmed hint, not a hard contradiction**. Possible seed confusion with one of Zscaler's other buys. Ownership left **independent / low confidence** pending a primary source.
 
 ## CTO / hedge-fund lens
 
@@ -61,7 +61,7 @@ Founded 2020 by Noam Shaar and Galit Lubetzky Sharon (IDF cyber veterans); HQ Te
 
 ## Competitors / alternatives
 
-[[grip-security]], [[appomni]], [[obsidian-security]], [[valence-security]], [[reco]], [[docontrol]], [[nudge-security]].
+[grip-security](grip-security.md), [appomni](appomni.md), [obsidian-security](obsidian-security.md), [valence-security](valence-security.md), [reco](reco.md), [docontrol](docontrol.md), [nudge-security](nudge-security.md).
 
 ## Open questions / to verify
 

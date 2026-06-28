@@ -27,7 +27,7 @@ tags: [deepfake, social-engineering, security-awareness-training, phishing-simul
 
 # Adaptive Security
 
-> Primary category: [[anti-deepfake]].
+> Primary category: [anti-deepfake](../categories/anti-deepfake.md).
 
 **One-liner** — AI-native security awareness training and social-engineering attack simulation (phishing, vishing, smishing, and deepfake voice/video) that drills employees against the kind of AI-generated impersonation attacks they now actually face.
 
@@ -37,7 +37,7 @@ Adaptive Security is a human-layer defense vendor. It runs simulated social-engi
 
 ## Where it sits in the stack
 
-Sits in [[anti-deepfake]] at the foundation layer. This is a **people-and-process** control, not an inline technical guardrail: it does not sit in the model/prompt path or inspect application traffic. Its lethal-trifecta relevance is, at most, **untrusted-input adjacent** — it hardens the human against malicious inbound social-engineering content, but it does not break any of the three legs at the system level. Trust-zone relevance: the human perimeter (red zone / external untrusted contact), not the AI application data path.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. This is a **people-and-process** control, not an inline technical guardrail: it does not sit in the model/prompt path or inspect application traffic. Its lethal-trifecta relevance is, at most, **untrusted-input adjacent** — it hardens the human against malicious inbound social-engineering content, but it does not break any of the three legs at the system level. Trust-zone relevance: the human perimeter (red zone / external untrusted contact), not the AI application data path.
 
 ## Deployment & architecture
 
@@ -45,7 +45,7 @@ SaaS platform. Delivers simulated attacks across email, SMS, voice, and video ch
 
 ## Positioning & differentiators
 
-Known for being the OpenAI-backed, AI-native entrant in security awareness training, explicitly targeting deepfake and multi-channel (voice/video/SMS) social engineering rather than email-only phishing. Differs from digital-risk-protection peers like [[doppel]] (which scans the external internet for impersonation of your brand/executives) — Adaptive points inward at your own employees, training them. Differs from media-authentication vendors [[reality-defender]], [[getreal]], and [[pindrop]], which detect whether a given piece of media or a call is synthetic; Adaptive instead uses synthetic media offensively to test and train staff. Named customers (vendor-stated): PayPal, Xerox, Bose, NHL, PGA, Figma, Ramp, Vimeo, Perplexity.
+Known for being the OpenAI-backed, AI-native entrant in security awareness training, explicitly targeting deepfake and multi-channel (voice/video/SMS) social engineering rather than email-only phishing. Differs from digital-risk-protection peers like [doppel](doppel.md) (which scans the external internet for impersonation of your brand/executives) — Adaptive points inward at your own employees, training them. Differs from media-authentication vendors [reality-defender](reality-defender.md), [getreal](getreal.md), and [pindrop](pindrop.md), which detect whether a given piece of media or a call is synthetic; Adaptive instead uses synthetic media offensively to test and train staff. Named customers (vendor-stated): PayPal, Xerox, Bose, NHL, PGA, Figma, Ramp, Vimeo, Perplexity.
 
 ## Ownership, funding & M&A
 
@@ -64,8 +64,8 @@ Funding trajectory, all confirmed against primary releases:
 
 ## Competitors / alternatives
 
-- [[doppel]] — external digital-risk protection / impersonation detection (outward-facing vs Adaptive's inward training).
-- [[reality-defender]], [[getreal]], [[pindrop]] — deepfake/synthetic-media detection (detection vs training).
+- [doppel](doppel.md) — external digital-risk protection / impersonation detection (outward-facing vs Adaptive's inward training).
+- [reality-defender](reality-defender.md), [getreal](getreal.md), [pindrop](pindrop.md) — deepfake/synthetic-media detection (detection vs training).
 - Incumbent security-awareness-training vendors (e.g. KnowBe4, Proofpoint) — not yet covered here; the legacy category Adaptive is attacking.
 
 ## Open questions / to verify

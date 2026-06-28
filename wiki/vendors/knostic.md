@@ -27,7 +27,7 @@ tags: [need-to-know, copilot-security, oversharing, llm-access-control]
 
 # Knostic
 
-> Primary category: [[entitlement-aware-rag]]. Also: [[enterprise-ai-assistant]].
+> Primary category: [entitlement-aware-rag](../categories/entitlement-aware-rag.md). Also: [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md).
 
 **One-liner** — A "need-to-know" access-control and oversharing-detection layer that sits *above* document ACLs to stop enterprise AI assistants (Microsoft 365 Copilot, Glean, Gemini) from surfacing answers a user can technically reach but has no business seeing.
 
@@ -45,22 +45,22 @@ Its central argument: **mirroring document ACLs is not enough**, because the ACL
 
 ## Where it sits in the stack
 
-Primary category [[entitlement-aware-rag]] (retrieval layer); also relevant to [[enterprise-ai-assistant]] governance. Lethal-trifecta role: it addresses the **sensitive-data** leg — it does not break untrusted input or egress, it narrows *what private knowledge the model is allowed to surface* to a given user. Trust zone: the green/yellow boundary inside the enterprise, governing internal knowledge exposure rather than external exfiltration.
+Primary category [entitlement-aware-rag](../categories/entitlement-aware-rag.md) (retrieval layer); also relevant to [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) governance. Lethal-trifecta role: it addresses the **sensitive-data** leg — it does not break untrusted input or egress, it narrows *what private knowledge the model is allowed to surface* to a given user. Trust zone: the green/yellow boundary inside the enterprise, governing internal knowledge exposure rather than external exfiltration.
 
 ## Deployment & architecture
 
-- SaaS, integrated read-only/advisory. It analyzes oversharing exposure and **hands findings to the enforcement plane rather than enforcing inline** — e.g. "Purview Manages Data Access, Knostic Manages AI Exposure," delivering "Copilot risk insights in days, not months, pinpointing precise permission or labeling issues for [[microsoft-purview|Purview]] to act on."
+- SaaS, integrated read-only/advisory. It analyzes oversharing exposure and **hands findings to the enforcement plane rather than enforcing inline** — e.g. "Purview Manages Data Access, Knostic Manages AI Exposure," delivering "Copilot risk insights in days, not months, pinpointing precise permission or labeling issues for [Purview](microsoft-purview.md) to act on."
 - Detection is AI-native (simulating inference/reconstruction risk) rather than simple content scanning, because "LLMs don't just retrieve data — they infer and reconstruct hidden insights."
-- Integrations: Microsoft 365 Copilot, [[glean]], Google Gemini; Microsoft [[microsoft-purview|Purview]] for remediation. Also markets shadow-AI discovery, prompt-injection and MCP-server risk checks.
+- Integrations: Microsoft 365 Copilot, [glean](glean.md), Google Gemini; Microsoft [Purview](microsoft-purview.md) for remediation. Also markets shadow-AI discovery, prompt-injection and MCP-server risk checks.
 - *To verify:* exact API surface (Graph scope, whether it reads production traffic vs only simulates), and whether any runtime/inline enforcement exists vs advisory-only. Vendor pages do not specify.
 
 ## Positioning & differentiators
 
 Knostic's wedge is the **gap between ACL-mirroring and need-to-know**. Contrast the neighbors:
 
-- [[microsoft-graph]] / native Copilot — enforces the *raw* SharePoint/Graph ACLs. Knostic's whole pitch is that those ACLs are themselves over-permissioned, so faithful ACL enforcement still overshares.
-- [[glean]] — permission-mirroring enterprise search; same critique: mirroring loose permissions faithfully still leaks.
-- [[microsoft-purview]] — labels and DLP on the data plane; Knostic positions as complementary, feeding Purview the AI-specific exposure findings it can't see on its own.
+- [microsoft-graph](microsoft-graph.md) / native Copilot — enforces the *raw* SharePoint/Graph ACLs. Knostic's whole pitch is that those ACLs are themselves over-permissioned, so faithful ACL enforcement still overshares.
+- [glean](glean.md) — permission-mirroring enterprise search; same critique: mirroring loose permissions faithfully still leaks.
+- [microsoft-purview](microsoft-purview.md) — labels and DLP on the data plane; Knostic positions as complementary, feeding Purview the AI-specific exposure findings it can't see on its own.
 
 Differentiator claims (vendor marketing): "world's first need-to-know access controls for LLMs"; the discover-by-simulation approach; recognition sweep (RSA Launch Pad 2024 + Black Hat Startup Spotlight 2024 winner; RSAC 2025 Innovation Sandbox Top-10 finalist).
 
@@ -79,10 +79,10 @@ Caveats for a smaller shop: it is an *added* control on top of Copilot + Purview
 
 ## Competitors / alternatives
 
-- [[glean]] — permission-mirroring search/assistant (a target it secures, and a philosophical foil).
-- [[microsoft-graph]] / native Copilot ACL enforcement.
-- [[microsoft-purview]] — data labeling/DLP; complementary remediation plane.
-- Broader [[entitlement-aware-rag]] approaches.
+- [glean](glean.md) — permission-mirroring search/assistant (a target it secures, and a philosophical foil).
+- [microsoft-graph](microsoft-graph.md) / native Copilot ACL enforcement.
+- [microsoft-purview](microsoft-purview.md) — data labeling/DLP; complementary remediation plane.
+- Broader [entitlement-aware-rag](../categories/entitlement-aware-rag.md) approaches.
 
 ## Open questions / to verify
 

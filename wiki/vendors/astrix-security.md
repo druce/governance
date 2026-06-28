@@ -27,17 +27,17 @@ tags: [non-human-identity, nhi, agentic-identity, cisco]
 
 # Astrix Security
 
-> Primary category: [[non-human-identity]]. Pending acquisition by [[cisco]].
+> Primary category: [non-human-identity](../categories/non-human-identity.md). Pending acquisition by [cisco](cisco.md).
 
 **One-liner** — Non-human identity (NHI) security: discover, govern and protect the API keys, service accounts, OAuth tokens and AI-agent credentials that machines and agents use to access enterprise systems.
 
 **What it does** — Inventories every non-human identity and its connections across SaaS, cloud and internal systems, then scores risk (over-privileged, stale, leaked, or anomalous credentials), enforces least-privilege and lifecycle policy, and detects/responds to NHI-based threats. As agentic AI proliferates, Astrix extends this to **AI agents** — an "AI Agent Control Plane" governing what credentials agents hold and how they're used. The job it does: stop the sprawl of machine credentials from becoming an unmonitored attack surface.
 
-**Where it sits in the stack** — [[non-human-identity]] at the foundation layer, with an [[ai-spm]] angle (governing agent identities is part of AI security posture). Trifecta role: guards **sensitive-data** access (least-privilege on machine credentials) and constrains **egress**/lateral movement by reining in over-scoped tokens. Adjacent to [[identity-access]] (human IdP) and [[tool-identity-integration]] (agent→SaaS auth).
+**Where it sits in the stack** — [non-human-identity](../categories/non-human-identity.md) at the foundation layer, with an [ai-spm](../categories/ai-spm.md) angle (governing agent identities is part of AI security posture). Trifecta role: guards **sensitive-data** access (least-privilege on machine credentials) and constrains **egress**/lateral movement by reining in over-scoped tokens. Adjacent to [identity-access](../categories/identity-access.md) (human IdP) and [tool-identity-integration](../categories/tool-identity-integration.md) (agent→SaaS auth).
 
-**Deployment & architecture** — SaaS, integrating via API/OAuth connectors into SaaS apps, cloud providers, IdPs and secrets stores to map NHIs without agents on every box. Post-acquisition, Cisco plans to fold capabilities into **Cisco Identity Intelligence, Secure Access and Duo**, with telemetry feeding **[[splunk]]** for SOC detection/response.
+**Deployment & architecture** — SaaS, integrating via API/OAuth connectors into SaaS apps, cloud providers, IdPs and secrets stores to map NHIs without agents on every box. Post-acquisition, Cisco plans to fold capabilities into **Cisco Identity Intelligence, Secure Access and Duo**, with telemetry feeding **[splunk](splunk.md)** for SOC detection/response.
 
-**Positioning & differentiators** — One of the early, well-funded NHI pure-plays, now leaning hard into the agentic-identity narrative. Differentiates on breadth of integrations and the agent-control-plane framing. Nearest neighbors: [[token-security]], [[aembit]], [[oasis-security]], [[entro-security]], [[clutch-security]], [[natoma]], and the NHI capabilities inside [[cyberark]].
+**Positioning & differentiators** — One of the early, well-funded NHI pure-plays, now leaning hard into the agentic-identity narrative. Differentiates on breadth of integrations and the agent-control-plane framing. Nearest neighbors: [token-security](token-security.md), [aembit](aembit.md), [oasis-security](oasis-security.md), [entro-security](entro-security.md), [clutch-security](clutch-security.md), [natoma](natoma.md), and the NHI capabilities inside [cyberark](cyberark.md).
 
 ## Ownership, funding & M&A
 
@@ -51,7 +51,7 @@ NHI governance is generally **Day-2** for a fund — you stand up human IdP/SSO 
 
 ## Competitors / alternatives
 
-[[token-security]], [[aembit]], [[oasis-security]], [[entro-security]], [[clutch-security]], [[natoma]], [[cyberark]].
+[token-security](token-security.md), [aembit](aembit.md), [oasis-security](oasis-security.md), [entro-security](entro-security.md), [clutch-security](clutch-security.md), [natoma](natoma.md), [cyberark](cyberark.md).
 
 ## Open questions / to verify
 

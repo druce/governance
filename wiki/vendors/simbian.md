@@ -31,17 +31,17 @@ tags: [agentic-soc, ai-soc, alert-triage, grc-agent]
 
 **What it does** — Simbian's **SOC AI Agent** triages alerts from SIEMs/XDRs by applying institutional knowledge and the organization's own playbooks, processes threat advisories, hunts the environment for related compromise, and proposes/executes remediation. Alongside it, a **GRC Agent** automates security-review questionnaires, and a **Security Accelerator Platform** hosts the agents and feeds them context. The differentiator the founder pushes (marketing): "fully autonomous AI Agents that... actually go eliminate" issues, not just surface them.
 
-**Where it sits in the stack** — [[ai-soc-analysts]], Foundation layer; automation layer over [[siem-soc]] / [[edr-xdr]], with a GRC sidecar that brushes against [[enterprise-grc]]. SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation layer over [siem-soc](../categories/siem-soc.md) / [edr-xdr](../categories/edr-xdr.md), with a GRC sidecar that brushes against [enterprise-grc](../categories/enterprise-grc.md). SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
 
 **Deployment & architecture** — SaaS agent platform; integrates with SIEM/XDR and cloud security tooling. Named user Axelar Labs (financial-services) uses it for cloud-security tool automation.
 
-**Positioning & differentiators** — Founded 2023 by Ambuj Kumar (CEO, co-founder/ex-CEO of Fortanix, where he helped create the confidential-computing category) and Alankrit Chona (CTO). Seed backers are notable operators — Olivier Pomel (Datadog CEO), Diogo Monica (Anchorage), Pankaj Patel (Nile), Bharat Shah (ex-Microsoft) — plus Firebolt Ventures, Cota Capital, Icon Ventures. Smallest funded of the agentic-SOC cohort here; differentiates on the multi-agent suite (SOC + GRC) and "act, don't just alert" autonomy. Nearest neighbors: [[prophet-security]], [[dropzone-ai]], [[radiant-security]], [[7ai]], [[torq]].
+**Positioning & differentiators** — Founded 2023 by Ambuj Kumar (CEO, co-founder/ex-CEO of Fortanix, where he helped create the confidential-computing category) and Alankrit Chona (CTO). Seed backers are notable operators — Olivier Pomel (Datadog CEO), Diogo Monica (Anchorage), Pankaj Patel (Nile), Bharat Shah (ex-Microsoft) — plus Firebolt Ventures, Cota Capital, Icon Ventures. Smallest funded of the agentic-SOC cohort here; differentiates on the multi-agent suite (SOC + GRC) and "act, don't just alert" autonomy. Nearest neighbors: [prophet-security](prophet-security.md), [dropzone-ai](dropzone-ai.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [torq](torq.md).
 
 **Ownership, funding & M&A** — Independent. $10M+ seed, emerged from stealth 2024-04. No later round confirmed as of research date; no M&A; no seed acquisition flag. Confidence high on independence; the firm is early-stage/seed.
 
 **CTO / hedge-fund lens** — **Day-2**, and early-stage. The SOC + GRC combination is interesting for a lean security team that wants to automate both alert triage and the endless security-questionnaire grind. But it is seed-stage — weigh maturity and runway. The GRC-questionnaire automation could be the more immediately useful piece for a hedge fund fielding investor/counterparty due-diligence requests. No direct SR 11-7 angle. Diligence autonomous-remediation scope and data handling carefully given the early stage.
 
-**Competitors / alternatives** — [[prophet-security]], [[dropzone-ai]], [[radiant-security]], [[7ai]], [[torq]]; for the GRC-agent angle, adjacency to [[vanta]] / [[enterprise-grc]] tooling.
+**Competitors / alternatives** — [prophet-security](prophet-security.md), [dropzone-ai](dropzone-ai.md), [radiant-security](radiant-security.md), [7ai](7ai.md), [torq](torq.md); for the GRC-agent angle, adjacency to [vanta](vanta.md) / [enterprise-grc](../categories/enterprise-grc.md) tooling.
 
 **Open questions / to verify** — Any post-seed funding; current employee/customer scale; how the GRC agent overlaps with dedicated GRC/TPRM tools; default autonomy of remediation actions.
 

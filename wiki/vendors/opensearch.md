@@ -31,17 +31,17 @@ tags: [vector-database, retrieval, open-source, linux-foundation, aws]
 
 **What it does** — OpenSearch indexes documents and serves keyword, vector (k-NN), and hybrid search. For RAG it is the **vector-retrieval** layer; it is also widely used for logging/SIEM-style analytics, so some shops reuse one platform for both. Originated in 2021 when AWS forked Elasticsearch/Kibana 7.10 after Elastic's license change.
 
-**Where it sits in the stack** — [[vector-retrieval]], retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (indexed corpus + embeddings). Document-level/field-level security supports entitlement-aware retrieval if configured.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (indexed corpus + embeddings). Document-level/field-level security supports entitlement-aware retrieval if configured.
 
 **Deployment & architecture** — Self-hostable open-source (Apache-2.0), or the managed **Amazon OpenSearch Service** (SaaS) on AWS; also offered by other providers. API/SDK-driven; k-NN plugin for vectors.
 
-**Positioning & differentiators** — The open, self-hostable, dual-purpose (search + vectors + logs) option. Contrast: [[pinecone]] (managed pure-play), [[weaviate]] (purpose-built vector DB), [[azure-ai-search]] (Azure-native). Governance note: as of 2024-09 the project is **Linux-Foundation-governed**, not AWS-controlled — a vendor-neutrality plus.
+**Positioning & differentiators** — The open, self-hostable, dual-purpose (search + vectors + logs) option. Contrast: [pinecone](pinecone.md) (managed pure-play), [weaviate](weaviate.md) (purpose-built vector DB), [azure-ai-search](azure-ai-search.md) (Azure-native). Governance note: as of 2024-09 the project is **Linux-Foundation-governed**, not AWS-controlled — a vendor-neutrality plus.
 
 **Ownership, funding & M&A** — Open-source project; AWS **transferred OpenSearch to the Linux Foundation (OpenSearch Software Foundation) on 2024-09-16**. Apache-2.0, community-governed; AWS, SAP, Uber are premier members. No M&A. Confidence: high.
 
 **CTO / hedge-fund lens** — Day-1 RAG infra if you want open-source, self-hostable retrieval with full data residency, or already run OpenSearch for logs/SIEM and want to reuse it. Cost is operational (running and tuning a cluster). The Linux Foundation move reduces single-vendor lock-in risk.
 
-**Competitors / alternatives** — [[pinecone]], [[weaviate]], [[azure-ai-search]], [[elastic]] (the upstream it forked from), Qdrant/Milvus (not in registry).
+**Competitors / alternatives** — [pinecone](pinecone.md), [weaviate](weaviate.md), [azure-ai-search](azure-ai-search.md), [elastic](elastic.md) (the upstream it forked from), Qdrant/Milvus (not in registry).
 
 **Open questions / to verify** — Vector-search performance/scale vs. purpose-built vector DBs for large RAG workloads.
 

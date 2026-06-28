@@ -27,11 +27,11 @@ tags: [sast, dast, sca, secret-detection, container-scanning, license-compliance
 
 # GitLab (Ultimate)
 
-> Primary category: [[software-supply-chain]] (foundation layer).
+> Primary category: [software-supply-chain](../categories/software-supply-chain.md) (foundation layer).
 
 **One-liner** — The DevSecOps platform whose top tier, **GitLab Ultimate**, bundles platform-native application security — SAST, DAST, dependency scanning, secret detection, container scanning, and license compliance — directly into the SCM and CI/CD pipeline.
 
-**Categories** — [[software-supply-chain]]
+**Categories** — [software-supply-chain](../categories/software-supply-chain.md)
 
 ## What it does
 GitLab is an end-to-end software-development platform (source control, CI/CD, issue tracking, registry). Its security scanning is gated behind the **Ultimate** tier and runs as pipeline jobs:
@@ -46,7 +46,7 @@ GitLab is an end-to-end software-development platform (source control, CI/CD, is
 Findings surface in the merge-request UI and in a security dashboard, so review happens where developers already work rather than in a separate console.
 
 ## Where it sits in the stack
-A [[software-supply-chain]] / foundation-layer control: it secures code, dependencies and container images before runtime. It is not an inline prompt/egress gate, so `trifecta_relevance: none`.
+A [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures code, dependencies and container images before runtime. It is not an inline prompt/egress gate, so `trifecta_relevance: none`.
 
 **AI-generated-code relevance:** code accepted from Copilot, Cursor, or Claude lands in the same GitLab repos and pipelines. Ultimate's SAST/SCA/secret detection inspect that code at the merge-request gate — for GitLab-standardized shops this is usually the least-friction way to put a guardrail under AI-assisted development (the scanners are already in the CI).
 
@@ -56,7 +56,7 @@ A [[software-supply-chain]] / foundation-layer control: it secures code, depende
 - All-remote company; product spans the full DevSecOps lifecycle in one platform.
 
 ## Positioning & differentiators
-GitLab's pitch is the **single integrated platform**: SCM + CI/CD + security in one tool, versus stitching together point products. Its scanner suite is **platform-native** — the direct analog to [[github-advanced-security]] but for teams on GitLab. The tradeoff versus standalone scanners — [[snyk]], [[semgrep]] — is engine depth, policy flexibility and cross-SCM reach; dedicated tools often go deeper on SAST/SCA and run across multiple platforms, whereas GitLab's security is most compelling when you have already committed to GitLab as your DevOps platform.
+GitLab's pitch is the **single integrated platform**: SCM + CI/CD + security in one tool, versus stitching together point products. Its scanner suite is **platform-native** — the direct analog to [github-advanced-security](github-advanced-security.md) but for teams on GitLab. The tradeoff versus standalone scanners — [snyk](snyk.md), [semgrep](semgrep.md) — is engine depth, policy flexibility and cross-SCM reach; dedicated tools often go deeper on SAST/SCA and run across multiple platforms, whereas GitLab's security is most compelling when you have already committed to GitLab as your DevOps platform.
 
 ## Ownership, funding & M&A
 GitLab Inc. is an **independent public company** (NASDAQ: **GTLB**), founded 2014 by Dmytro Zaporozhets and Sytse "Sid" Sijbrandij, IPO'd 2021-10-14 at roughly a $10B valuation; HQ San Francisco, all-remote. Ownership (public): high confidence.
@@ -65,13 +65,13 @@ GitLab Inc. is an **independent public company** (NASDAQ: **GTLB**), founded 201
 
 ## CTO / hedge-fund lens
 - **Day-2 in general, Day-1 if you ship AI-generated code.** If your developers are on GitLab and using Copilot/Cursor/Claude, enabling Ultimate's scanners is typically the path of least resistance for code-level guardrails — a **tier upgrade on a platform you already run, not a new vendor** to procure and integrate.
-- Watch the pricing model: security is bundled into the **Ultimate** tier, so adopting it can mean a platform-wide seat upgrade rather than a metered add-on (contrast with [[github-advanced-security]]'s per-committer product split).
+- Watch the pricing model: security is bundled into the **Ultimate** tier, so adopting it can mean a platform-wide seat upgrade rather than a metered add-on (contrast with [github-advanced-security](github-advanced-security.md)'s per-committer product split).
 - Indirectly relevant to SR 11-7-style hygiene (it secures the code that builds AI systems; not a model-risk control itself).
 - **Keep the Datadog acquisition rumor on the radar** for vendor-concentration/continuity diligence, but do not treat it as decided.
-- Fit is **high** for GitLab-centric shops; low if you are standardized on GitHub (use [[github-advanced-security]]) or want a cross-SCM scanner ([[snyk]], [[semgrep]]).
+- Fit is **high** for GitLab-centric shops; low if you are standardized on GitHub (use [github-advanced-security](github-advanced-security.md)) or want a cross-SCM scanner ([snyk](snyk.md), [semgrep](semgrep.md)).
 
 ## Competitors / alternatives
-[[github-advanced-security]] · [[snyk]] · [[semgrep]]
+[github-advanced-security](github-advanced-security.md) · [snyk](snyk.md) · [semgrep](semgrep.md)
 
 ## Open questions / to verify
 - Resolution of the Datadog acquisition rumor (watch for an 8-K / definitive agreement).

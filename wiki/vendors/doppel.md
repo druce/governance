@@ -27,25 +27,25 @@ tags: [deepfake, digital-risk-protection, impersonation, brand-protection, execu
 
 # Doppel
 
-> Primary category: [[anti-deepfake]].
+> Primary category: [anti-deepfake](../categories/anti-deepfake.md).
 
 **One-liner** — AI-driven digital risk protection / "social engineering defense": continuously scans the open web, social media, app stores, paid ads, domains, and the dark web for impersonation of your brand and executives — fake accounts, lookalike domains, phishing pages, deepfakes — and drives takedowns.
 
 ## What it does
 
-Doppel hunts external impersonation. Autonomous AI agents (the platform is branded "Doppel Vision") crawl social networks, messaging apps, paid ad networks, domain registrations, and dark-web sources to find fake profiles, spoofed brands, fraudulent ads, phishing infrastructure, and deepfake content impersonating a company or its leaders, then prioritizes and pursues takedowns. The company frames the broader category as "social engineering defense (SED)," spanning brand protection, executive protection, phishing-page detection, and — via integration — deepfake media verification. It has also extended into phishing simulation, security awareness training, and email security with deepfake-driven simulations (vendor-stated). Deepfake media authentication is delivered partly through a partnership with [[getreal]] (GetReal Security) to verify videos/images/audio.
+Doppel hunts external impersonation. Autonomous AI agents (the platform is branded "Doppel Vision") crawl social networks, messaging apps, paid ad networks, domain registrations, and dark-web sources to find fake profiles, spoofed brands, fraudulent ads, phishing infrastructure, and deepfake content impersonating a company or its leaders, then prioritizes and pursues takedowns. The company frames the broader category as "social engineering defense (SED)," spanning brand protection, executive protection, phishing-page detection, and — via integration — deepfake media verification. It has also extended into phishing simulation, security awareness training, and email security with deepfake-driven simulations (vendor-stated). Deepfake media authentication is delivered partly through a partnership with [getreal](getreal.md) (GetReal Security) to verify videos/images/audio.
 
 ## Where it sits in the stack
 
-Sits in [[anti-deepfake]] at the foundation layer. Like [[adaptive-security]], this is a **perimeter / brand-and-people** control rather than an inline AI-application guardrail — it doesn't sit in the model/prompt path. Lethal-trifecta relevance is **untrusted-input adjacent**: it reduces exposure to externally-originated impersonation and phishing aimed at staff and customers, but does not break a trifecta leg inside an AI system. Trust-zone relevance: the external untrusted internet (red zone), monitoring how your identity is abused outside your perimeter.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. Like [adaptive-security](adaptive-security.md), this is a **perimeter / brand-and-people** control rather than an inline AI-application guardrail — it doesn't sit in the model/prompt path. Lethal-trifecta relevance is **untrusted-input adjacent**: it reduces exposure to externally-originated impersonation and phishing aimed at staff and customers, but does not break a trifecta leg inside an AI system. Trust-zone relevance: the external untrusted internet (red zone), monitoring how your identity is abused outside your perimeter.
 
 ## Deployment & architecture
 
-SaaS. The product is a monitoring + takedown service: AI agents continuously scan external channels, surface impersonation/deepfake threats in a console, and handle takedown workflows. Deepfake media verification via the [[getreal]] partnership. Integration details (SIEM/SOAR, ticketing, brand/IP feeds) not fully confirmed from the primary sources cited here.
+SaaS. The product is a monitoring + takedown service: AI agents continuously scan external channels, surface impersonation/deepfake threats in a console, and handle takedown workflows. Deepfake media verification via the [getreal](getreal.md) partnership. Integration details (SIEM/SOAR, ticketing, brand/IP feeds) not fully confirmed from the primary sources cited here.
 
 ## Positioning & differentiators
 
-Positioned as the AI-native digital-risk-protection (DRP) / social-engineering-defense platform, distinguished by autonomous-agent scanning breadth (social, ads, domains, dark web) and Fortune 500 traction in financial services, energy, tech, healthcare, and media (vendor-stated). Differs from [[adaptive-security]], which points inward (training your own employees) — Doppel points outward (finding others impersonating you). Differs from pure media-authentication vendors [[reality-defender]], [[getreal]], and [[pindrop]]: Doppel is a monitoring-and-takedown service that *consumes* deepfake detection (partnering with GetReal) rather than being primarily a detection engine. CrowdStrike CEO George Kurtz invested personally in the Series C (vendor-stated).
+Positioned as the AI-native digital-risk-protection (DRP) / social-engineering-defense platform, distinguished by autonomous-agent scanning breadth (social, ads, domains, dark web) and Fortune 500 traction in financial services, energy, tech, healthcare, and media (vendor-stated). Differs from [adaptive-security](adaptive-security.md), which points inward (training your own employees) — Doppel points outward (finding others impersonating you). Differs from pure media-authentication vendors [reality-defender](reality-defender.md), [getreal](getreal.md), and [pindrop](pindrop.md): Doppel is a monitoring-and-takedown service that *consumes* deepfake detection (partnering with GetReal) rather than being primarily a detection engine. CrowdStrike CEO George Kurtz invested personally in the Series C (vendor-stated).
 
 ## Ownership, funding & M&A
 
@@ -61,9 +61,9 @@ Funding, confirmed against primary/reputable sources:
 
 ## Competitors / alternatives
 
-- [[adaptive-security]] — inward employee training/simulation vs Doppel's outward impersonation monitoring.
-- [[getreal]] — deepfake media authentication; a Doppel *partner* for media verification as well as a category neighbor.
-- [[reality-defender]], [[pindrop]] — deepfake/synthetic-media and voice detection.
+- [adaptive-security](adaptive-security.md) — inward employee training/simulation vs Doppel's outward impersonation monitoring.
+- [getreal](getreal.md) — deepfake media authentication; a Doppel *partner* for media verification as well as a category neighbor.
+- [reality-defender](reality-defender.md), [pindrop](pindrop.md) — deepfake/synthetic-media and voice detection.
 - Incumbent DRP vendors (ZeroFox, Netcraft, Recorded Future) — not yet covered here.
 
 ## Open questions / to verify

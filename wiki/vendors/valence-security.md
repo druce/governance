@@ -27,23 +27,23 @@ tags: [sspm, saas-security, ai-security, itdr]
 
 # Valence Security
 
-> Primary category: [[sspm]].
+> Primary category: [sspm](../categories/sspm.md).
 
 **One-liner** — A SaaS (and increasingly AI) security platform that discovers SaaS/AI app usage, finds and prioritizes posture risk, and emphasizes collaborative, business-user-driven remediation so security teams aren't the only ones fixing misconfigurations.
 
-**Categories** — [[sspm]]
+**Categories** — [sspm](../categories/sspm.md)
 
 ## What it does
 Valence connects via API to an organization's SaaS apps, inventories SaaS and AI usage (including shadow apps and OAuth integrations), and identifies risks across misconfigurations, identities, third-party integrations, and data sharing. Its signature angle is **remediation workflow**: routing fixes to the relevant app owners/business users (not just dumping findings on the security team) to actually close risks. It now layers in AI Security Posture Management (governing AI tools and agents) and ITDR (identity-based threat detection/response across SaaS).
 
 ## Where it sits in the stack
-Sits in [[sspm]] (foundation layer), spanning SaaS discovery, SSPM, AI-SPM, and ITDR. Trifecta-wise it primarily addresses the **sensitive-data** leg (reducing SaaS/AI data exposure and over-broad integrations). The newer AI-SPM/discovery features make it directly relevant to **shadow-AI** inventory — a growing reason a fund might look at this layer.
+Sits in [sspm](../categories/sspm.md) (foundation layer), spanning SaaS discovery, SSPM, AI-SPM, and ITDR. Trifecta-wise it primarily addresses the **sensitive-data** leg (reducing SaaS/AI data exposure and over-broad integrations). The newer AI-SPM/discovery features make it directly relevant to **shadow-AI** inventory — a growing reason a fund might look at this layer.
 
 ## Deployment & architecture
 SaaS-delivered; API/OAuth integrations into target SaaS and AI apps (no inline proxy or endpoint agent for core function). Supports 175+ SaaS/AI applications (vendor claim). Remediation routing integrates with collaboration/ticketing so app owners receive and action fixes.
 
 ## Positioning & differentiators
-Known for the "collaborative remediation" / SaaS-mesh-risk framing (third-party app-to-app integration risk) and an early pivot to AI/agentic-era security messaging (treat "Leader in SaaS and AI Security" as marketing). Smaller and later-stage-funded than [[appomni]] and [[obsidian-security]]. Nearest neighbors: [[appomni]] (enterprise posture/data-access depth), [[obsidian-security]] (identity threat detection), [[grip-security]] (SaaS/identity discovery-led), [[adaptive-shield]] (CrowdStrike), [[wing-security]], [[reco]], [[nudge-security]], [[docontrol]].
+Known for the "collaborative remediation" / SaaS-mesh-risk framing (third-party app-to-app integration risk) and an early pivot to AI/agentic-era security messaging (treat "Leader in SaaS and AI Security" as marketing). Smaller and later-stage-funded than [appomni](appomni.md) and [obsidian-security](obsidian-security.md). Nearest neighbors: [appomni](appomni.md) (enterprise posture/data-access depth), [obsidian-security](obsidian-security.md) (identity threat detection), [grip-security](grip-security.md) (SaaS/identity discovery-led), [adaptive-shield](adaptive-shield.md) (CrowdStrike), [wing-security](wing-security.md), [reco](reco.md), [nudge-security](nudge-security.md), [docontrol](docontrol.md).
 
 ## Ownership, funding & M&A
 Independent, venture-backed. Founded 2021 (exited stealth 2021) by Yoni Shohet (CEO) and Shlomi Matichin (CTO); Israeli R&D roots (Tel Aviv) with a US presence (South San Francisco, CA — per third-party profiles; not stated on the vendor company page). Funding: $7M Seed (2021, led by YL Ventures) and a $25M Series A led by M12 (Microsoft's venture fund), announced 2022-10-26, with YL Ventures, Porsche Ventures, Akamai, Alumni Ventures, and angel Michael Fey — **~$32M total**. No acquisition found as of 2026-06-28 — `ownership_confidence: high` that it remains independent. (Seed registry asked to confirm "independent?" — confirmed independent.)
@@ -52,7 +52,7 @@ Independent, venture-backed. Founded 2021 (exited stealth 2021) by Yoni Shohet (
 **Day-2.** Like its peers, it secures SaaS a fund already runs; the differentiated draw for a lean shop is the remediation routing (less security-team toil) and the shadow-SaaS/AI discovery. Fit is **medium**: a smaller, SaaS-heavy fund worried about ungoverned third-party app and AI-tool connections may find the discovery + delegated-remediation model a good match; deep-pocketed enterprises may prefer the larger incumbents. Supports data-governance/access-review evidence; not directly an SR 11-7 model-risk control, though AI-SPM features touch AI-tool governance.
 
 ## Competitors / alternatives
-[[appomni]], [[obsidian-security]], [[grip-security]], [[adaptive-shield]], [[wing-security]], [[reco]], [[nudge-security]], [[docontrol]]
+[appomni](appomni.md), [obsidian-security](obsidian-security.md), [grip-security](grip-security.md), [adaptive-shield](adaptive-shield.md), [wing-security](wing-security.md), [reco](reco.md), [nudge-security](nudge-security.md), [docontrol](docontrol.md)
 
 ## Open questions / to verify
 - Whether any funding round has closed since the 2022 Series A; current total beyond ~$32M.

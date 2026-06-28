@@ -27,7 +27,7 @@ tags: [agent-security, ai-spm, copilots, low-code, red-teaming]
 
 # Zenity
 
-> Primary category: [[agent-runtime-security]]. Also spans [[ai-spm]].
+> Primary category: [agent-runtime-security](../categories/agent-runtime-security.md). Also spans [ai-spm](../categories/ai-spm.md).
 
 **One-liner** — An end-to-end security and governance platform for AI agents, enterprise copilots, and low-code/no-code apps — giving security teams visibility into and control over what agents can do.
 
@@ -35,13 +35,13 @@ tags: [agent-security, ai-spm, copilots, low-code, red-teaming]
 Zenity discovers and inventories the sprawl of AI agents, copilots, and low-code/no-code automations across an enterprise (it cites large enterprises averaging ~80,000 of them), assesses their risk and misconfigurations, and governs/protects their behavior at runtime. It made its name finding that a large share of copilots and low-code apps ship with security vulnerabilities, and on offensive research showing how agents can be hijacked (prompt injection, "living off AI," AgentFlayer). The product combines **AI-SPM** (discovery + posture for agents/copilots) with **agent runtime** protection and governance.
 
 ## Where it sits in the stack
-Primary [[agent-runtime-security]] (runtime visibility + control over agent behavior), with deep overlap into [[ai-spm]] (inventory + posture of the agent/copilot estate). Layer: model/prompt. It addresses all three lethal-trifecta legs for agents — detects **untrusted input** (prompt injection into copilots/agents), watches **sensitive data** agents can reach, and constrains agent **actions/egress**. The Zenity/Noma pair is the canonical example of the **AI-SPM ↔ agent-runtime overlap** in this taxonomy.
+Primary [agent-runtime-security](../categories/agent-runtime-security.md) (runtime visibility + control over agent behavior), with deep overlap into [ai-spm](../categories/ai-spm.md) (inventory + posture of the agent/copilot estate). Layer: model/prompt. It addresses all three lethal-trifecta legs for agents — detects **untrusted input** (prompt injection into copilots/agents), watches **sensitive data** agents can reach, and constrains agent **actions/egress**. The Zenity/Noma pair is the canonical example of the **AI-SPM ↔ agent-runtime overlap** in this taxonomy.
 
 ## Deployment & architecture
 SaaS control plane with API integrations into the agent/copilot platforms it secures — Microsoft Copilot Studio / Power Platform, Salesforce, ServiceNow, OpenAI/Anthropic-based agents, and other low-code/agent ecosystems — plus connectors for posture scanning and runtime monitoring of agent activity. Findings export to SIEM/SOC. Strong Microsoft alignment (M12 is an investor; CEO is ex-Microsoft).
 
 ## Positioning & differentiators
-Known as an early, research-forward leader in **AI agent and copilot security** — CTO Michael Bargury's offensive research (Black Hat / DEF CON talks on copilot and agent exploitation) is core to the brand. Differs from [[noma-security]] (which came up via ML/data-pipeline AI-SPM) by its origin in **low-code/copilot** security and its runtime-governance emphasis. Differs from runtime AI-firewall players like [[prisma-airs]], [[straiker]], and [[operant-ai]] by focusing on the agent/copilot control plane (what agents are configured to do and access) rather than just inline prompt/response filtering.
+Known as an early, research-forward leader in **AI agent and copilot security** — CTO Michael Bargury's offensive research (Black Hat / DEF CON talks on copilot and agent exploitation) is core to the brand. Differs from [noma-security](noma-security.md) (which came up via ML/data-pipeline AI-SPM) by its origin in **low-code/copilot** security and its runtime-governance emphasis. Differs from runtime AI-firewall players like [prisma-airs](prisma-airs.md), [straiker](straiker.md), and [operant-ai](operant-ai.md) by focusing on the agent/copilot control plane (what agents are configured to do and access) rather than just inline prompt/response filtering.
 
 ## Ownership, funding & M&A
 Independent, VC-backed. Founded 2021 by Ben Kliger (CEO, ex-Microsoft cloud workload protection product leader) and Michael Bargury (CTO). **$38M Series B (Oct 29, 2024) co-led by Third Point Ventures and DTCP**, with Microsoft's M12, Intel Capital, and Vertex Ventures; total raised over $55M. No M&A; no seed acquisition flag. Ownership confidence: high.
@@ -50,7 +50,7 @@ Independent, VC-backed. Founded 2021 by Ben Kliger (CEO, ex-Microsoft cloud work
 **Day-2**, becoming Day-1 fast for shops deploying Microsoft Copilot / Copilot Studio, Power Platform, or other low-code agents at scale — exactly the "citizen developer builds an agent that can touch sensitive data" risk. For a hedge fund running M365 Copilot or building internal agents, Zenity is one of the more relevant agent-security names; it gives the SOC an inventory and guardrails over agent behavior, useful for both security and SR 11-7-style model/agent oversight. Less relevant if you have essentially no agent/copilot footprint.
 
 ## Competitors / alternatives
-[[noma-security]], [[straiker]], [[operant-ai]], [[lasso-security]], [[prisma-airs]], [[reco]], [[apex-security]].
+[noma-security](noma-security.md), [straiker](straiker.md), [operant-ai](operant-ai.md), [lasso-security](lasso-security.md), [prisma-airs](prisma-airs.md), [reco](reco.md), [apex-security](apex-security.md).
 
 ## Open questions / to verify
 - Runtime enforcement depth — does it block agent actions inline, or mostly detect + govern via the platform APIs?

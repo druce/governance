@@ -33,17 +33,17 @@ tags: [crowdstrike, humio, siem, soc, next-gen-siem, incumbent]
 
 **What it does** — LogScale is a streaming, index-free log management technology: fast ingest and search at low storage cost. Inside CrowdStrike it is the foundation of **Falcon Next-Gen SIEM**, extending the Falcon platform from endpoint EDR/XDR into full SIEM by ingesting third-party logs alongside native CrowdStrike telemetry. Charlotte AI (CrowdStrike's genAI assistant) sits on top for triage.
 
-**Where it sits in the stack** — [[siem-soc]] (and [[edr-xdr]] via the broader Falcon platform), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. The central log/data plane that an [[ai-soc-analysts]]-style layer (here, Charlotte AI) draws on.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md) (and [edr-xdr](../categories/edr-xdr.md) via the broader Falcon platform), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. The central log/data plane that an [ai-soc-analysts](../categories/ai-soc-analysts.md)-style layer (here, Charlotte AI) draws on.
 
-**Deployment & architecture** — Primarily SaaS as part of Falcon; LogScale/Humio also available self-hosted for log management. Priced per-GB ingested without indexing surcharges (positioned against [[splunk]]). Charlotte AI Agentic Detection Triage is benchmarked against Falcon Complete MDR analyst decisions. Strongest when CrowdStrike Falcon is already the EDR ([[crowdstrike]]).
+**Deployment & architecture** — Primarily SaaS as part of Falcon; LogScale/Humio also available self-hosted for log management. Priced per-GB ingested without indexing surcharges (positioned against [splunk](splunk.md)). Charlotte AI Agentic Detection Triage is benchmarked against Falcon Complete MDR analyst decisions. Strongest when CrowdStrike Falcon is already the EDR ([crowdstrike](crowdstrike.md)).
 
-**Positioning & differentiators** — Cost/performance of index-free ingest plus tight coupling to Falcon EDR/XDR — the consolidation pitch is "your endpoint vendor is now your SIEM." Competes with [[microsoft-sentinel]], [[google-secops]], [[splunk]], [[elastic]], [[sumo-logic]].
+**Positioning & differentiators** — Cost/performance of index-free ingest plus tight coupling to Falcon EDR/XDR — the consolidation pitch is "your endpoint vendor is now your SIEM." Competes with [microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [splunk](splunk.md), [elastic](elastic.md), [sumo-logic](sumo-logic.md).
 
 **Ownership, funding & M&A** — Product of **CrowdStrike Holdings, Inc. (NASDAQ: CRWD)**, public, high confidence. **Humio acquisition confirmed**: announced Feb 2021, ~$400M, closed March 2021; rebranded to Falcon LogScale in 2022. Seed flag "(CrowdStrike)" verified. Stub previously `ownership: independent` with unverified detail — corrected to `public`.
 
 **CTO / hedge-fund lens** — **Day-1** for funds already standardized on CrowdStrike Falcon for endpoint: Next-Gen SIEM avoids running a separate SIEM vendor and the index-free model controls cost as log volume grows. Less compelling if you are not a Falcon shop. Not an SR 11-7 tool; central store for security/AI audit logs.
 
-**Competitors / alternatives** — [[microsoft-sentinel]], [[google-secops]], [[splunk]], [[elastic]], [[sumo-logic]].
+**Competitors / alternatives** — [microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [splunk](splunk.md), [elastic](elastic.md), [sumo-logic](sumo-logic.md).
 
 **Open questions / to verify** — Standalone (non-Falcon) LogScale availability/pricing today; current Charlotte AI agentic feature GA status.
 

@@ -36,7 +36,7 @@ tags: [ddq-automation, rfp-automation, investor-relations, mismatch-flag]
 pulling from the firm's own approved content so an IR team responds in minutes instead
 of days.
 
-**Categories** — [[ai-governance-platform]] (tag is a likely mismatch — see below)
+**Categories** — [ai-governance-platform](../categories/ai-governance-platform.md) (tag is a likely mismatch — see below)
 
 ## What it does
 GovernGPT automates the response side of institutional **due-diligence questionnaires
@@ -58,8 +58,8 @@ LP disclosure consistency) — **not** governance of AI models, datasets, or alg
 risk.
 
 ## Where it sits in the stack
-Tagged under [[ai-governance-platform]] (governance layer), but the fit is weak. True
-AI-governance platforms ([[credo-ai]], [[fairly-ai]], [[holistic-ai]]) inventory AI
+Tagged under [ai-governance-platform](../categories/ai-governance-platform.md) (governance layer), but the fit is weak. True
+AI-governance platforms ([credo-ai](credo-ai.md), [fairly-ai](fairly-ai.md), [holistic-ai](holistic-ai.md)) inventory AI
 systems, manage model risk, and map controls to frameworks like the **EU AI Act**,
 **NIST AI RMF**, or **SR 11-7**. GovernGPT does none of that — it is itself an *applied
 LLM productivity app* for IR teams. If anything it is a *consumer* of AI governance, not
@@ -97,7 +97,7 @@ fund handing it confidential fund documents.
 ## CTO / hedge-fund lens
 - **This is not an SR 11-7 model-risk tool.** A CTO looking for an AI inventory,
   model-risk register, or EU AI Act / NIST AI RMF control mapping should look at
-  [[credo-ai]], [[fairly-ai]], or [[holistic-ai]], not here.
+  [credo-ai](credo-ai.md), [fairly-ai](fairly-ai.md), or [holistic-ai](holistic-ai.md), not here.
 - Where it *is* relevant: a fund's **IR / fundraising / capital-formation team** that
   drowns in repetitive LP DDQs. It is a productivity play, **Day-2 / optional**, owned
   by IR or marketing-compliance rather than the security/model-risk function.
@@ -110,11 +110,11 @@ fund handing it confidential fund documents.
 - **DDQ/RFP automation (its real market):** Responsive (RFPIO), Loopio, DiligenceVault,
   AutoRFP.ai, Arphie. (Not yet wiki pages — outside this wiki's governance scope.)
 - **AI-governance platforms (the category it's tagged under, for contrast):**
-  [[credo-ai]], [[fairly-ai]], [[holistic-ai]].
+  [credo-ai](credo-ai.md), [fairly-ai](fairly-ai.md), [holistic-ai](holistic-ai.md).
 
 ## Open questions / to verify
 - **Category fit (taxonomy):** GovernGPT is a DDQ/RFP-automation tool, not an
-  AI-governance platform. Recommend re-tagging out of [[ai-governance-platform]] (e.g. to
+  AI-governance platform. Recommend re-tagging out of [ai-governance-platform](../categories/ai-governance-platform.md) (e.g. to
   an "AI productivity / vertical LLM apps" or "out-of-scope" bucket) — flagged as a
   taxonomy question; **not** re-categorized here without a taxonomy decision. Logged in
   History.
@@ -131,4 +131,4 @@ fund handing it confidential fund documents.
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established GovernGPT is an AI **DDQ/RFP-response automation tool for asset-manager IR/fundraising teams** (YC W24, Montreal, founded 2023, ~$500K pre-seed, ~6 staff, independent — no M&A), **not** an AI model-risk/SR 11-7 governance platform. Flagged the [[ai-governance-platform]] tag as a likely mismatch (taxonomy question; not re-categorized). Set hedge_fund_fit: low, status: researched, confidence: low. Cached 3 sources.
+- [2026-06-28] Researched; established GovernGPT is an AI **DDQ/RFP-response automation tool for asset-manager IR/fundraising teams** (YC W24, Montreal, founded 2023, ~$500K pre-seed, ~6 staff, independent — no M&A), **not** an AI model-risk/SR 11-7 governance platform. Flagged the [ai-governance-platform](../categories/ai-governance-platform.md) tag as a likely mismatch (taxonomy question; not re-categorized). Set hedge_fund_fit: low, status: researched, confidence: low. Cached 3 sources.

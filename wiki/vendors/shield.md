@@ -29,13 +29,13 @@ tags: [comms-surveillance, regtech, mar, mnpi, ecomms, conduct, ai-nlp]
 
 > Communications-compliance / e-comms surveillance SaaS for regulated financial
 > firms, with AI/NLP analytics layered over the usual lexicon rules. Primary
-> category: [[comms-surveillance]].
+> category: [comms-surveillance](../categories/comms-surveillance.md).
 
 **One-liner** — An end-to-end communications-surveillance platform that captures,
 correlates, and analyzes employees' electronic comms (and voice) to detect market
 abuse, MNPI leakage, and misconduct for regulated financial institutions.
 
-**Categories** — [[comms-surveillance]]
+**Categories** — [comms-surveillance](../categories/comms-surveillance.md)
 
 ## What it does
 
@@ -54,7 +54,7 @@ after the fact.
 
 ## Where it sits in the stack
 
-This is a [[comms-surveillance]] tool in the **governance** layer. In trust-zone
+This is a [comms-surveillance](../categories/comms-surveillance.md) tool in the **governance** layer. In trust-zone
 terms it lives in the **green zone** — a back-office oversight system reading
 copies of communications, not an inline control on untrusted input, sensitive
 data, or egress. Its lethal-trifecta role is **none** (detective oversight, not a
@@ -81,15 +81,15 @@ is reducing the false-positive noise that plagues legacy lexicon-only surveillan
 and unifying capture+analytics in one platform.
 
 How it differs from nearest neighbors:
-- [[behavox]] — also AI-first conduct surveillance; Behavox leans hard on
+- [behavox](behavox.md) — also AI-first conduct surveillance; Behavox leans hard on
   behavioral/voice AI and risk scoring. Closest direct competitor.
-- [[steeleye]] — combines comms surveillance with trade surveillance and
+- [steeleye](steeleye.md) — combines comms surveillance with trade surveillance and
   consolidated record-keeping; broader "RegTech data" framing.
-- [[nice-actimize]] — incumbent enterprise surveillance suite (trade + comms),
+- [nice-actimize](nice-actimize.md) — incumbent enterprise surveillance suite (trade + comms),
   large-bank installed base; heavier, less AI-native-branded.
-- [[theta-lake]] — specializes in modern collaboration/UC channels (Zoom, Teams,
+- [theta-lake](theta-lake.md) — specializes in modern collaboration/UC channels (Zoom, Teams,
   Webex) capture and risk; more channel-coverage focused.
-- [[relativity-trace]] — proactive comms surveillance built on the Relativity
+- [relativity-trace](relativity-trace.md) — proactive comms surveillance built on the Relativity
   e-discovery platform; strong e-discovery DNA.
 
 Differentiation claims here are vendor-stated and not independently benchmarked.
@@ -127,8 +127,8 @@ Differentiation claims here are vendor-stated and not independently benchmarked.
 
 ## Competitors / alternatives
 
-[[behavox]] · [[steeleye]] · [[nice-actimize]] · [[theta-lake]] ·
-[[relativity-trace]]
+[behavox](behavox.md) · [steeleye](steeleye.md) · [nice-actimize](nice-actimize.md) · [theta-lake](theta-lake.md) ·
+[relativity-trace](relativity-trace.md)
 
 ## Open questions / to verify
 - Exact channel coverage (which chat/collaboration/AI-assistant channels) and

@@ -27,7 +27,7 @@ tags: [identity, idp, sso, mfa]
 
 # Okta
 
-> Researched 2026-06-28. Primary category: [[identity-access]].
+> Researched 2026-06-28. Primary category: [identity-access](../categories/identity-access.md).
 
 **One-liner** — The leading independent (vendor-neutral) identity provider: SSO, MFA, and lifecycle for the workforce, plus Auth0 for customer/developer identity.
 
@@ -35,13 +35,13 @@ tags: [identity, idp, sso, mfa]
 Okta authenticates users and apps and brokers access to SaaS and on-prem resources. Two clouds: **Workforce Identity** (SSO, adaptive MFA, lifecycle/provisioning, Identity Governance, and a growing privileged-access and device-access set) for employees/contractors/partners; and **Customer Identity (Auth0)** for developers building login into their own products (CIAM). Its pitch is being a neutral hub that integrates with everything rather than favoring one cloud vendor.
 
 ## Where it sits in the stack
-The [[identity-access]] foundation — the front door. It governs the **sensitive-data** leg of the lethal trifecta by deciding authentication/authorization before access to data, apps, or models. For AI deployments it's the IdP that gateways, assistants, and [[entitlement-aware-rag]] federate against.
+The [identity-access](../categories/identity-access.md) foundation — the front door. It governs the **sensitive-data** leg of the lethal trifecta by deciding authentication/authorization before access to data, apps, or models. For AI deployments it's the IdP that gateways, assistants, and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) federate against.
 
 ## Deployment & architecture
-SaaS, multi-tenant; standards-based (SAML, OIDC, OAuth2, SCIM). Large pre-built integration network (the Okta Integration Network). Feeds and consumes from SIEM ([[microsoft-sentinel]], [[splunk]]), and is commonly paired with governance tools. Auth0 is delivered as developer-facing APIs/SDKs.
+SaaS, multi-tenant; standards-based (SAML, OIDC, OAuth2, SCIM). Large pre-built integration network (the Okta Integration Network). Feeds and consumes from SIEM ([microsoft-sentinel](microsoft-sentinel.md), [splunk](splunk.md)), and is commonly paired with governance tools. Auth0 is delivered as developer-facing APIs/SDKs.
 
 ## Positioning & differentiators
-Best-of-breed, cloud-neutral alternative to [[microsoft-entra]]: preferred where the estate is heterogeneous (not all-Microsoft) or where Auth0-grade CIAM is needed. Strong integration breadth and a mature governance/PAM expansion. Trade-offs: it's a separately purchased product (Entra is bundled with M365), and Okta's security reputation took hits from breaches (notably the 2023 support-system breach), which buyers weigh. Heavier IGA still goes to [[sailpoint]]/[[saviynt]].
+Best-of-breed, cloud-neutral alternative to [microsoft-entra](microsoft-entra.md): preferred where the estate is heterogeneous (not all-Microsoft) or where Auth0-grade CIAM is needed. Strong integration breadth and a mature governance/PAM expansion. Trade-offs: it's a separately purchased product (Entra is bundled with M365), and Okta's security reputation took hits from breaches (notably the 2023 support-system breach), which buyers weigh. Heavier IGA still goes to [sailpoint](sailpoint.md)/[saviynt](saviynt.md).
 
 ## Ownership, funding & M&A
 Independent public company, Nasdaq: OKTA, IPO April 2017. Founded 2009 by Todd McKinnon and Frederic Kerrest (ex-Salesforce). Acquired **Auth0** in 2021 (~$6.5B all-stock) for customer identity. Ownership confidence high.
@@ -50,7 +50,7 @@ Independent public company, Nasdaq: OKTA, IPO April 2017. Founded 2009 by Todd M
 **Day-1.** A fund not standardized on Microsoft — or one wanting a neutral IdP across mixed SaaS — often picks Okta. It's the same Day-1 control surface as Entra: stand up SSO/MFA/Conditional-Access before go-live, and make your AI gateway and RAG layer authenticate against it. Cost is a real consideration versus "free with M365" Entra; the offset is neutrality and integration depth. Auth0 matters only if the fund builds customer-facing apps.
 
 ## Competitors / alternatives
-[[microsoft-entra]], [[ping-identity]]. Governance neighbors: [[sailpoint]], [[saviynt]], [[veza]], [[conductorone]], [[lumos]].
+[microsoft-entra](microsoft-entra.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md).
 
 ## Open questions / to verify
 - Current depth/maturity of Okta Privileged Access and Identity Governance vs dedicated IGA/PAM tools.

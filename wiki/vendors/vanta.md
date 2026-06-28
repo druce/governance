@@ -27,7 +27,7 @@ tags: [grc, compliance-automation, iso-42001, soc2, ai-governance]
 
 # Vanta
 
-> Primary category: [[ai-governance-platform]]. Also: [[enterprise-grc]].
+> Primary category: [ai-governance-platform](../categories/ai-governance-platform.md). Also: [enterprise-grc](../categories/enterprise-grc.md).
 
 **One-liner** — Automated security-and-compliance certification (SOC 2, ISO 27001, etc.) that has added an AI-governance module (ISO 42001, EU AI Act, NIST AI RMF mapping); strong on continuous control evidence, light on true model-risk testing.
 
@@ -41,7 +41,7 @@ Important framing for a model-risk reader: this is **compliance automation, not 
 
 ## Where it sits in the stack
 
-- Layer: **governance** — the [[ai-governance-platform]] and [[enterprise-grc]] categories.
+- Layer: **governance** — the [ai-governance-platform](../categories/ai-governance-platform.md) and [enterprise-grc](../categories/enterprise-grc.md) categories.
 - **Lethal-trifecta role: none.** Vanta is a documentation/attestation layer, not a runtime control. It does not sit in the path of untrusted input, sensitive data, or egress; it does not break any leg of the trifecta. It evidences that controls elsewhere exist.
 - Trust zone: governance/oversight plane, not the data/model path.
 
@@ -52,8 +52,8 @@ SaaS, agentless-leaning, integration-driven. It pulls evidence via API from clou
 ## Positioning & differentiators
 
 - **Compliance automation first.** Vanta's strength is breadth of framework coverage and speed-to-audit (claims ~50% faster audits), not depth of AI risk analysis. Its AI governance is an extension of the same continuous-monitoring engine that does SOC 2.
-- **vs [[onetrust]]** — OneTrust is a broader enterprise GRC/privacy/AI-governance suite aimed at large regulated enterprises with deeper policy/privacy/inventory tooling; Vanta is leaner, faster to deploy, and historically SMB/mid-market.
-- **vs [[credo-ai]] and [[holistic-ai]]** — these are purpose-built AI-governance vendors that go deeper on model inventory, risk assessment, policy-to-control mapping for AI, and (Holistic AI) technical model testing/auditing. Vanta covers the *certification/attestation* slice (ISO 42001, EU AI Act evidence) but not technical model evaluation.
+- **vs [onetrust](onetrust.md)** — OneTrust is a broader enterprise GRC/privacy/AI-governance suite aimed at large regulated enterprises with deeper policy/privacy/inventory tooling; Vanta is leaner, faster to deploy, and historically SMB/mid-market.
+- **vs [credo-ai](credo-ai.md) and [holistic-ai](holistic-ai.md)** — these are purpose-built AI-governance vendors that go deeper on model inventory, risk assessment, policy-to-control mapping for AI, and (Holistic AI) technical model testing/auditing. Vanta covers the *certification/attestation* slice (ISO 42001, EU AI Act evidence) but not technical model evaluation.
 - Net: Vanta is the "get certified and prove it" tool, not the "interrogate the model" tool.
 
 ## Ownership, funding & M&A
@@ -66,13 +66,13 @@ SaaS, agentless-leaning, integration-driven. It pulls evidence via API from clou
 ## CTO / hedge-fund lens
 
 - **Day-2, and low fit for a fund's *model-risk* needs.** For an asset manager, Vanta's natural pull is the security-certification side (SOC 2/ISO 27001), often as something you *demand of your vendors* rather than run yourself.
-- **SR 11-7 coverage: minimal.** SR 11-7 is about model validation, effective challenge, ongoing monitoring of model performance — Vanta does essentially none of that. ISO 42001/EU AI Act modules give you an *AI governance management system and audit evidence*, which is useful for showing regulators/clients you have a program, but it is not model validation. A fund treating AI as a model-risk problem needs a validation framework (internal or a [[credo-ai]]/[[holistic-ai]]-type tool), not Vanta.
+- **SR 11-7 coverage: minimal.** SR 11-7 is about model validation, effective challenge, ongoing monitoring of model performance — Vanta does essentially none of that. ISO 42001/EU AI Act modules give you an *AI governance management system and audit evidence*, which is useful for showing regulators/clients you have a program, but it is not model validation. A fund treating AI as a model-risk problem needs a validation framework (internal or a [credo-ai](credo-ai.md)/[holistic-ai](holistic-ai.md)-type tool), not Vanta.
 - **Size fit:** Vanta skews **startup/SMB/mid-market**. A large fund with an established GRC/model-risk function will likely find it thin; a small fund might use it to stand up SOC 2 / basic AI-governance attestation quickly.
 - When you actually need it: if you must *get certified* (ISO 42001, SOC 2, EU AI Act readiness) fast and cheaply with continuous evidence, not when you need to *evaluate model risk*.
 
 ## Competitors / alternatives
 
-[[onetrust]], [[credo-ai]], [[holistic-ai]]; in the security-certification niche, Drata, Secureframe, Sprinto (not yet pages).
+[onetrust](onetrust.md), [credo-ai](credo-ai.md), [holistic-ai](holistic-ai.md); in the security-certification niche, Drata, Secureframe, Sprinto (not yet pages).
 
 ## Open questions / to verify
 

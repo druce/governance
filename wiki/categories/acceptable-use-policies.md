@@ -27,9 +27,9 @@ unsure, and the consequences for ignoring it.
 A useful AI AUP for a fund typically covers:
 
 - **Sanctioned vs. prohibited tools** — what's approved, and that everything else
-  routes through the [[ai-gateway]] or gets reviewed first.
+  routes through the [ai-gateway](ai-gateway.md) or gets reviewed first.
 - **Data handling** — what classes of data are forbidden in AI tools, tied to your
-  [[dspm|data classification]] labels (MNPI, client-confidential, legal-privileged,
+  [data classification](dspm.md) labels (MNPI, client-confidential, legal-privileged,
   PII).
 - **Disclosure & review** — when AI output must be checked by a human before it's
   used or sent, and when AI involvement must be disclosed.
@@ -45,7 +45,7 @@ technical control defensible (you can't enforce a rule nobody was told).
 any tooling. Employees are already using AI (sanctioned or not), so the policy is what
 turns "we never said you could" into an enforceable standard. For a small fund it's a
 one-to-two-page document plus a sign-off; it grows teeth as you add the technical
-controls ([[ai-access-governance]], [[dlp]]) that detect and enforce what the policy
+controls ([ai-access-governance](ai-access-governance.md), [dlp](dlp.md)) that detect and enforce what the policy
 declares.
 
 ## Lethal-trifecta role
@@ -60,22 +60,22 @@ the people who ignore the floor.
 
 A policy is only as good as the controls that observe and enforce it:
 
-- [[ai-access-governance]] — discovers shadow AI and enforces inline policy on what
+- [ai-access-governance](ai-access-governance.md) — discovers shadow AI and enforces inline policy on what
   data flows to which model; turns the AUP from words into enforcement.
-- [[dlp]] — stops sanctioned-data classes from leaving via prompts, backing the
+- [dlp](dlp.md) — stops sanctioned-data classes from leaving via prompts, backing the
   data-handling clauses.
-- [[dspm]] — the data classification the AUP's "don't put X in AI" rules reference.
-- [[enterprise-grc]] — where the policy, its versions, and attestations are recorded
+- [dspm](dspm.md) — the data classification the AUP's "don't put X in AI" rules reference.
+- [enterprise-grc](enterprise-grc.md) — where the policy, its versions, and attestations are recorded
   and audited.
 
 ## Adjacent categories
 
-- [[risk-tiers]] — the AUP is the floor everyone agrees to; tiers add graduated
+- [risk-tiers](risk-tiers.md) — the AUP is the floor everyone agrees to; tiers add graduated
   scrutiny above it.
-- [[ai-access-governance]] / [[dlp]] — the detective/preventive controls that enforce
+- [ai-access-governance](ai-access-governance.md) / [dlp](dlp.md) — the detective/preventive controls that enforce
   the policy.
-- [[enterprise-grc]] — system of record for the policy and sign-offs.
-- [[ai-governance-platform]] — maps the policy to external frameworks (NIST AI RMF,
+- [enterprise-grc](enterprise-grc.md) — system of record for the policy and sign-offs.
+- [ai-governance-platform](ai-governance-platform.md) — maps the policy to external frameworks (NIST AI RMF,
   EU AI Act, SR 11-7) for regulators.
 
 ## Open taxonomy questions

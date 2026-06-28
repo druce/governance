@@ -30,18 +30,18 @@ The sensitive-data leg, indirectly. IGA does not inspect traffic — it shrinks 
 
 IGA / ISPM platforms:
 
-- [[sailpoint]] — the enterprise IGA incumbent; broad, mature, heavy. Also strong in data access (SailPoint DAS).
-- [[saviynt]] — converged identity-governance and cloud-PAM platform; enterprise scale.
-- [[veza]] — access-graph / authorization visibility ("who can do what to which data"); strong on entitlements across SaaS and data.
-- [[conductorone]] — AI-native, modern IGA focused on access requests and certifications.
-- [[lumos]] — AI-native identity/access governance with an app-store/self-service access model.
-- [[linx-security]] — AI-native IGA that also covers non-human identity.
-- [[hydden]] — identity visibility/discovery layer that feeds IGA tools (competes with Silverfort/Sharelock/Andromeda per seed).
-- [[silverfort]] — identity security and posture across human and non-human accounts; discovery and MFA enforcement.
+- [sailpoint](../vendors/sailpoint.md) — the enterprise IGA incumbent; broad, mature, heavy. Also strong in data access (SailPoint DAS).
+- [saviynt](../vendors/saviynt.md) — converged identity-governance and cloud-PAM platform; enterprise scale.
+- [veza](../vendors/veza.md) — access-graph / authorization visibility ("who can do what to which data"); strong on entitlements across SaaS and data.
+- [conductorone](../vendors/conductorone.md) — AI-native, modern IGA focused on access requests and certifications.
+- [lumos](../vendors/lumos.md) — AI-native identity/access governance with an app-store/self-service access model.
+- [linx-security](../vendors/linx-security.md) — AI-native IGA that also covers non-human identity.
+- [hydden](../vendors/hydden.md) — identity visibility/discovery layer that feeds IGA tools (competes with Silverfort/Sharelock/Andromeda per seed).
+- [silverfort](../vendors/silverfort.md) — identity security and posture across human and non-human accounts; discovery and MFA enforcement.
 
 Cross-listed:
 
-- [[cyberark]] — PAM-first incumbent extending into IGA (per seed, acquired by Palo Alto).
+- [cyberark](../vendors/cyberark.md) — PAM-first incumbent extending into IGA (per seed, acquired by Palo Alto).
 
 ## Consolidation / M&A dynamics
 
@@ -51,10 +51,10 @@ Two dynamics: incumbents (SailPoint, Saviynt, CyberArk) defending the enterprise
 
 ## Adjacent categories
 
-- [[identity-access]] — the IdP IGA governs on top of.
-- [[non-human-identity]] — IGA extended to service accounts and agents; Linx/Silverfort straddle both.
-- [[data-access-governance]] — strongly overlapping: Veza, SailPoint, ConductorOne, Silverfort appear in both; IGA governs identity entitlements, DAG governs data permissions, and they meet at "who can open which file."
-- [[secrets-management]] — governs machine credentials; complementary.
+- [identity-access](identity-access.md) — the IdP IGA governs on top of.
+- [non-human-identity](non-human-identity.md) — IGA extended to service accounts and agents; Linx/Silverfort straddle both.
+- [data-access-governance](data-access-governance.md) — strongly overlapping: Veza, SailPoint, ConductorOne, Silverfort appear in both; IGA governs identity entitlements, DAG governs data permissions, and they meet at "who can open which file."
+- [secrets-management](secrets-management.md) — governs machine credentials; complementary.
 
 ## Survey
 
@@ -64,9 +64,9 @@ Two dynamics: incumbents (SailPoint, Saviynt, CyberArk) defending the enterprise
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** SailPoint and Saviynt are the table-stakes incumbents; the AI-native group (ConductorOne, Lumos, Linx) will skew toward "evaluating/pilot." Veza and Silverfort overlap [[data-access-governance]] — respondents may report them under either question, so the two surveys should be cross-referenced. CyberArk is PAM-first and may be reported here for the wrong reason; the CyberArk→Palo Alto deal (per seed) dates that option. Hydden is a visibility layer, not full IGA — niche.
+**Notes for survey design.** SailPoint and Saviynt are the table-stakes incumbents; the AI-native group (ConductorOne, Lumos, Linx) will skew toward "evaluating/pilot." Veza and Silverfort overlap [data-access-governance](data-access-governance.md) — respondents may report them under either question, so the two surveys should be cross-referenced. CyberArk is PAM-first and may be reported here for the wrong reason; the CyberArk→Palo Alto deal (per seed) dates that option. Hydden is a visibility layer, not full IGA — niche.
 
 ## Open taxonomy questions
 
-- Large overlap with [[data-access-governance]] (Veza, SailPoint, ConductorOne, Silverfort) — confirm the IGA-vs-DAG boundary stays clean for survey mapping.
+- Large overlap with [data-access-governance](data-access-governance.md) (Veza, SailPoint, ConductorOne, Silverfort) — confirm the IGA-vs-DAG boundary stays clean for survey mapping.
 - ISPM (posture) vs. IGA (lifecycle) could split as posture-only vendors (Hydden) differentiate.

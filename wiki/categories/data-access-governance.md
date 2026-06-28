@@ -19,11 +19,11 @@ last_updated: 2026-06-28
 Data Access Governance (DAG) audits and right-sizes *who can open which data*, and
 monitors how data is actually accessed. The seed's metaphor: the **audit of who can
 open which file** — the control that finds the folder where "Everyone" accidentally
-has access. Where [[dspm]] tells you *what* sensitive data exists and *where*, DAG
+has access. Where [dspm](dspm.md) tells you *what* sensitive data exists and *where*, DAG
 tells you *who can reach it* and whether that access is justified, then helps you
 remediate over-permissioned access.
 
-This is the data-layer cousin of identity governance ([[identity-governance]]): IGA
+This is the data-layer cousin of identity governance ([identity-governance](identity-governance.md)): IGA
 governs access to *applications/systems*, DAG governs access to *data* (files,
 shares, warehouse tables, SaaS objects).
 
@@ -34,7 +34,7 @@ assistant retrieves on a user's behalf, every over-permissioned folder becomes a
 data-leak surface. RAG inherits the permissions mess; if "Everyone" can see a
 sensitive folder, the chatbot will happily surface it to anyone who asks. So for a
 hedge fund standing up an enterprise assistant or RAG pipeline, DAG (alongside
-[[entitlement-aware-rag]]) moves to Day-1. Absent RAG, it is a Day-2 hygiene project.
+[entitlement-aware-rag](entitlement-aware-rag.md)) moves to Day-1. Absent RAG, it is a Day-2 hygiene project.
 
 ## Lethal-trifecta role
 
@@ -48,23 +48,23 @@ not block at runtime; it reduces standing exposure.
 
 Data-access-specialist:
 
-- [[varonis]] — the category archetype; permissions analysis, sensitive-data
+- [varonis](../vendors/varonis.md) — the category archetype; permissions analysis, sensitive-data
   monitoring, and remediation across file shares, SaaS, and cloud.
-- [[netwrix]] — permissions auditing and data-access governance for files/AD.
+- [netwrix](../vendors/netwrix.md) — permissions auditing and data-access governance for files/AD.
 
 DSPM vendors extending into access context:
 
-- [[cyera]] — classification plus who-can-access analysis (also [[dspm]], [[dlp]]).
-- [[sentra]] — cloud DSPM with data-access governance.
-- [[concentric-ai]] — unstructured-data classification with access right-sizing.
-- [[immuta]] — policy-based access control for analytic data platforms.
+- [cyera](../vendors/cyera.md) — classification plus who-can-access analysis (also [dspm](dspm.md), [dlp](dlp.md)).
+- [sentra](../vendors/sentra.md) — cloud DSPM with data-access governance.
+- [concentric-ai](../vendors/concentric-ai.md) — unstructured-data classification with access right-sizing.
+- [immuta](../vendors/immuta.md) — policy-based access control for analytic data platforms.
 
 Identity-governance vendors extending into data:
 
-- [[sailpoint]] — SailPoint Data Access Security extends IGA to unstructured data.
-- [[veza]] — access-graph across systems and data; "who can do what" visibility.
-- [[conductorone]] — AI-native IGA extending into data-access right-sizing.
-- [[silverfort]] — identity-security platform with data-access controls.
+- [sailpoint](../vendors/sailpoint.md) — SailPoint Data Access Security extends IGA to unstructured data.
+- [veza](../vendors/veza.md) — access-graph across systems and data; "who can do what" visibility.
+- [conductorone](../vendors/conductorone.md) — AI-native IGA extending into data-access right-sizing.
+- [silverfort](../vendors/silverfort.md) — identity-security platform with data-access controls.
 
 ## Consolidation / M&A dynamics
 
@@ -76,13 +76,13 @@ standalone market.
 
 ## Adjacent categories
 
-- [[dspm]] — supplies the classification DAG right-sizes access against; heavy vendor
+- [dspm](dspm.md) — supplies the classification DAG right-sizes access against; heavy vendor
   overlap (Cyera, Sentra, Concentric, Immuta on both).
-- [[identity-governance]] — IGA governs app/system access; DAG governs data access.
+- [identity-governance](identity-governance.md) — IGA governs app/system access; DAG governs data access.
   The CSV's IGA/ISPM question is where survey respondents may place these vendors.
-- [[entitlement-aware-rag]] — the RAG-time enforcement that depends on access being
+- [entitlement-aware-rag](entitlement-aware-rag.md) — the RAG-time enforcement that depends on access being
   correctly governed first; DAG is the cleanup, entitlement-aware RAG is the guardrail.
-- [[dlp]] — DAG limits standing access; DLP catches data on the way out.
+- [dlp](dlp.md) — DAG limits standing access; DLP catches data on the way out.
 
 ## Survey
 
@@ -99,8 +99,8 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - This is **doc-only** — the seed CSV has no dedicated DAG question; these vendors
   appear under the CSV's `Identity Governance & Visibility (IGA / ISPM)` and
   `DSPM / Data Governance / DLP` questions. Expect overlap: SailPoint, Veza,
-  ConductorOne, Silverfort will also be ticked on the [[identity-governance]] survey;
-  Cyera, Sentra, Concentric, Immuta on the [[dspm]] survey.
+  ConductorOne, Silverfort will also be ticked on the [identity-governance](identity-governance.md) survey;
+  Cyera, Sentra, Concentric, Immuta on the [dspm](dspm.md) survey.
 - Table-stakes anchor: Varonis (the recognized incumbent). Most others are extensions
   of an adjacent platform a respondent may already own.
 - Consider framing the question around the RAG trigger ("if you are deploying AI
@@ -109,7 +109,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 
 ## Open taxonomy questions
 
-- Strong overlap with both [[dspm]] and [[identity-governance]]; DAG may be better
+- Strong overlap with both [dspm](dspm.md) and [identity-governance](identity-governance.md); DAG may be better
   modeled as a *capability* spanning those two than as a standalone category — flag
   for the final taxonomy pass.
 - Several vendors (Cyera, Sentra, Concentric, Immuta, SailPoint, Veza, ConductorOne,

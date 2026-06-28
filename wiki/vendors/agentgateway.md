@@ -41,9 +41,9 @@ The pitch is to give platform teams one consistent control point — auth, polic
 
 ## Where it sits in the stack
 
-Primary category: [[mcp-gateway]] (model/prompt layer). It also overlaps the [[authorization-engine]] register because it enforces fine-grained RBAC via a policy engine (CEL policies on the homepage feature list; OPA-evaluated policies also referenced) over tool/agent calls.
+Primary category: [mcp-gateway](../categories/mcp-gateway.md) (model/prompt layer). It also overlaps the [authorization-engine](../categories/authorization-engine.md) register because it enforces fine-grained RBAC via a policy engine (CEL policies on the homepage feature list; OPA-evaluated policies also referenced) over tool/agent calls.
 
-**Lethal-trifecta role.** As a tool-call broker it primarily controls the **egress** leg (what tools/data an agent is allowed to reach, with rate limits and audit) and touches the **untrusted-input** leg by sitting between the model and external MCP tool servers. It does not, on its own, do content inspection / prompt-injection scanning the way a dedicated runtime firewall ([[prisma-airs]]) does — it is connectivity + access control, not a semantic firewall.
+**Lethal-trifecta role.** As a tool-call broker it primarily controls the **egress** leg (what tools/data an agent is allowed to reach, with rate limits and audit) and touches the **untrusted-input** leg by sitting between the model and external MCP tool servers. It does not, on its own, do content inspection / prompt-injection scanning the way a dedicated runtime firewall ([prisma-airs](prisma-airs.md)) does — it is connectivity + access control, not a semantic firewall.
 
 **Trust zones.** Designed to sit at the boundary between an agent/LLM (untrusted-ish) and the tools, data sources, and other agents it wants to reach — i.e. a chokepoint between trust zones.
 
@@ -58,7 +58,7 @@ Primary category: [[mcp-gateway]] (model/prompt layer). It also overlaps the [[a
 
 - **Open-source + neutral governance.** Unlike most MCP-gateway entrants, agentgateway is Apache-2.0 and lives under the Linux Foundation's Agentic AI Foundation (AAIF), with contributors from AWS, Microsoft, Red Hat, IBM, Cisco, Huawei, Shell, and Zayo. That neutrality is its main differentiator versus single-vendor tools.
 - **Three-in-one data plane (LLM + MCP + A2A)** in one Rust binary, rather than just an MCP proxy.
-- **Versus single-vendor / product gateways:** [[kong]] and [[truefoundry]] approach AI/MCP gateways from existing API-gateway products; [[docker-mcp-gateway]] focuses on running MCP servers in containers locally; [[ibm-contextforge]] (MCP Context Forge) is another OSS MCP gateway/registry; [[obot]], [[mintmcp]], [[arcade]], and [[natoma]] are more managed/SaaS MCP-access plays; [[pomerium]] comes from identity-aware access proxying. agentgateway's claim to fame is being the broad, foundation-governed, performance-focused OSS data plane.
+- **Versus single-vendor / product gateways:** [kong](kong.md) and [truefoundry](truefoundry.md) approach AI/MCP gateways from existing API-gateway products; [docker-mcp-gateway](docker-mcp-gateway.md) focuses on running MCP servers in containers locally; [ibm-contextforge](ibm-contextforge.md) (MCP Context Forge) is another OSS MCP gateway/registry; [obot](obot.md), [mintmcp](mintmcp.md), [arcade](arcade.md), and [natoma](natoma.md) are more managed/SaaS MCP-access plays; [pomerium](pomerium.md) comes from identity-aware access proxying. agentgateway's claim to fame is being the broad, foundation-governed, performance-focused OSS data plane.
 - Note Solo.io ships sibling OSS projects (kagent, agentregistry, agentevals) around it.
 
 > Marketing claims (flagged): "first complete connectivity solution for Agentic AI," "zero-config TLS." Treat as vendor framing.
@@ -76,7 +76,7 @@ Primary category: [[mcp-gateway]] (model/prompt layer). It also overlaps the [[a
 
 ## Competitors / alternatives
 
-[[docker-mcp-gateway]], [[ibm-contextforge]], [[mintmcp]], [[obot]], [[arcade]], [[pomerium]], [[kong]], [[truefoundry]], [[natoma]], [[prisma-airs]]
+[docker-mcp-gateway](docker-mcp-gateway.md), [ibm-contextforge](ibm-contextforge.md), [mintmcp](mintmcp.md), [obot](obot.md), [arcade](arcade.md), [pomerium](pomerium.md), [kong](kong.md), [truefoundry](truefoundry.md), [natoma](natoma.md), [prisma-airs](prisma-airs.md)
 
 ## Open questions / to verify
 
@@ -84,7 +84,7 @@ Primary category: [[mcp-gateway]] (model/prompt layer). It also overlaps the [[a
 - Real-world maturity/production adoption beyond GitHub metrics (~3.6k stars, v1.x at time of fetch); how many shops run it in prod.
 - CEL vs OPA: homepage lists a CEL policy engine; project site references OPA-evaluated policies — confirm the actual policy engine(s) supported.
 - Division of labor between OSS agentgateway and the commercial "Solo Enterprise for agentgateway" (what's gated).
-- Whether [[authorization-engine]] should be added as a secondary category (it enforces RBAC but isn't a standalone policy engine).
+- Whether [authorization-engine](../categories/authorization-engine.md) should be added as a secondary category (it enforces RBAC but isn't a standalone policy engine).
 
 ## Sources
 

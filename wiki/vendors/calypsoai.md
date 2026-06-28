@@ -9,7 +9,7 @@ website: https://calypsoai.com
 founded: 2018
 hq: Dublin, Ireland
 ownership: acquired
-ownership_detail: "Acquired by [[f5]] for ~$180M — announced 2025-09-11, completed 2025-10-08; now F5 AI Guardrails / F5 AI Red Team"
+ownership_detail: "Acquired by [f5](f5.md) for ~$180M — announced 2025-09-11, completed 2025-10-08; now F5 AI Guardrails / F5 AI Red Team"
 ownership_confidence: high
 funding_total: ~$40M+ (pre-acquisition)
 last_funding: "$23M round announced 2023-06-27 (Paladin Capital Group + strategic investors)"
@@ -27,30 +27,30 @@ tags: [acquired, ai-firewall, ai-guardrails, red-teaming]
 
 # CalypsoAI
 
-> **Researched 2026-06-28.** Primary category: [[ai-runtime-security]]. **Acquired by [[f5]]** (completed 2025-10-08).
+> **Researched 2026-06-28.** Primary category: [ai-runtime-security](../categories/ai-runtime-security.md). **Acquired by [f5](f5.md)** (completed 2025-10-08).
 
-**One-liner** — An AI runtime-security / "guardrails" pure-play (real-time threat defense + automated red teaming for model traffic), now the AI-security core of [[f5]]'s platform.
+**One-liner** — An AI runtime-security / "guardrails" pure-play (real-time threat defense + automated red teaming for model traffic), now the AI-security core of [f5](f5.md)'s platform.
 
 ## What it does
 CalypsoAI builds model-agnostic security for generative and agentic AI: an inline guardrails layer that screens prompts and responses in real time (prompt-injection defense, data-loss prevention, content/abuse controls) plus **red teaming at scale** that continuously attacks your AI systems to surface vulnerabilities. The pitch is consistent protection across whatever models an enterprise uses, decoupled from any single model provider.
 
 ## Where it sits in the stack
-Primary [[ai-runtime-security]] (the "AI firewall" inline control) with a secondary [[ai-governance-platform]] tag (its reporting/red-team posture supports AI governance). Layer: model-prompt. Lethal-trifecta role: addresses all three legs at the inference boundary — **untrusted input** (prompt injection), **sensitive data** (DLP on prompts/responses), and **egress** (policy on what model traffic is allowed). Sits at the green↔red boundary.
+Primary [ai-runtime-security](../categories/ai-runtime-security.md) (the "AI firewall" inline control) with a secondary [ai-governance-platform](../categories/ai-governance-platform.md) tag (its reporting/red-team posture supports AI governance). Layer: model-prompt. Lethal-trifecta role: addresses all three legs at the inference boundary — **untrusted input** (prompt injection), **sensitive data** (DLP on prompts/responses), and **egress** (policy on what model traffic is allowed). Sits at the green↔red boundary.
 
 ## Deployment & architecture
 SaaS and self-hosted; API-driven and deployable inline in front of model endpoints (model-agnostic across proprietary + open-source LLMs). Post-acquisition it is delivered as **F5 AI Guardrails** (runtime protection) and **F5 AI Red Team** (autonomous attack simulation, advertised >10,000 new attack patterns/month), integrated into the F5 Application Delivery and Security Platform (ADSP).
 
 ## Positioning & differentiators
-Known for pairing inline guardrails with continuous automated red teaming in one product — defense + offense — and for model-agnostic coverage. It was a Top-Two Finalist in the 2025 RSAC Innovation Sandbox and named to Fast Company's Most Innovative Companies in AI (2025) (vendor/press accolades, noted as such). Nearest neighbors: [[lakera]], [[prompt-security]], [[witnessai]], [[aim-security]], [[hiddenlayer]], [[prisma-airs]], [[enkrypt-ai]], [[splxai]].
+Known for pairing inline guardrails with continuous automated red teaming in one product — defense + offense — and for model-agnostic coverage. It was a Top-Two Finalist in the 2025 RSAC Innovation Sandbox and named to Fast Company's Most Innovative Companies in AI (2025) (vendor/press accolades, noted as such). Nearest neighbors: [lakera](lakera.md), [prompt-security](prompt-security.md), [witnessai](witnessai.md), [aim-security](aim-security.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [enkrypt-ai](enkrypt-ai.md), [splxai](splxai.md).
 
 ## Ownership, funding & M&A
-Founded **2018**; principal operations in **Dublin, Ireland** (with US roots/Silicon Valley presence). Pre-acquisition funding reported at **over $40M** (Series A $13M led by [[Paladin Capital Group]] in 2020; a $23M round announced 2023-06-27; investors incl. Paladin, Lockheed Martin Ventures, Hakluyt Capital). **Acquired by [[f5]]** for ~$180M — announced **2025-09-11**, **completed 2025-10-08**. This confirms the seed flag ("acq by F5"). Verified against F5's press release/blog and CalypsoAI/Paladin sources. **Confidence: high.**
+Founded **2018**; principal operations in **Dublin, Ireland** (with US roots/Silicon Valley presence). Pre-acquisition funding reported at **over $40M** (Series A $13M led by [[Paladin Capital Group]] in 2020; a $23M round announced 2023-06-27; investors incl. Paladin, Lockheed Martin Ventures, Hakluyt Capital). **Acquired by [f5](f5.md)** for ~$180M — announced **2025-09-11**, **completed 2025-10-08**. This confirms the seed flag ("acq by F5"). Verified against F5's press release/blog and CalypsoAI/Paladin sources. **Confidence: high.**
 
 ## CTO / hedge-fund lens
 Day-1 control type (runtime AI firewall) but, as a now-absorbed product, you'd evaluate it as **F5 AI Guardrails** rather than standalone CalypsoAI. Relevant if you're an F5 shop or want guardrails + red-teaming bundled. The red-team capability has mild SR 11-7 / model-validation value (evidence that AI systems were adversarially tested). Best fit: enterprises standardizing on F5; smaller funds would weigh it against lighter SaaS guardrails.
 
 ## Competitors / alternatives
-[[lakera]], [[prompt-security]], [[witnessai]], [[aim-security]], [[hiddenlayer]], [[prisma-airs]], [[cisco-ai-defense]], [[enkrypt-ai]], [[splxai]], [[trojai]].
+[lakera](lakera.md), [prompt-security](prompt-security.md), [witnessai](witnessai.md), [aim-security](aim-security.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md), [enkrypt-ai](enkrypt-ai.md), [splxai](splxai.md), [trojai](trojai.md).
 
 ## Open questions / to verify
 - Whether the CalypsoAI brand survives or is fully retired into F5 product naming.
@@ -63,5 +63,5 @@ Day-1 control type (runtime AI firewall) but, as a now-absorbed product, you'd e
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; **confirmed acquired by [[f5]]** (~$180M; announced 2025-09-11, completed 2025-10-08). Seed flag verified. Filled founding (2018), Dublin HQ, funding (~$40M+), product (now F5 AI Guardrails / AI Red Team). Confidence raised to high.
+- [2026-06-28] Researched; **confirmed acquired by [f5](f5.md)** (~$180M; announced 2025-09-11, completed 2025-10-08). Seed flag verified. Filled founding (2018), Dublin HQ, funding (~$40M+), product (now F5 AI Guardrails / AI Red Team). Confidence raised to high.
 </content>

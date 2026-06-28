@@ -29,7 +29,7 @@ tags: [microsoft, m365, copilot, retrieval, semantic-index, graph-connectors]
 
 **One-liner** — The unified API and semantic index over your Microsoft 365 data (SharePoint, OneDrive, Exchange, Teams) that makes Microsoft 365 Copilot permission-aware: Copilot grounding only retrieves content the asking user already has rights to.
 
-**Categories** — [[entitlement-aware-rag]]
+**Categories** — [entitlement-aware-rag](../categories/entitlement-aware-rag.md)
 
 ## What it does
 
@@ -41,10 +41,10 @@ Graph also covers **external data** via Copilot connectors (Graph connectors), s
 
 ## Where it sits in the stack
 
-- **Category:** [[entitlement-aware-rag]] (primary). **Layer:** retrieval.
+- **Category:** [entitlement-aware-rag](../categories/entitlement-aware-rag.md) (primary). **Layer:** retrieval.
 - **Lethal-trifecta role:** addresses the **sensitive-data** leg. It is the access-control plane for what an LLM is allowed to retrieve — it constrains the "private data" the model can see to the user's existing entitlements. It does not, by itself, address untrusted-input (prompt injection) or egress/exfiltration; those need a runtime AI firewall, DLP, or browser/egress controls layered on top.
 - **Trust zone:** lives inside the M365 tenant (green/trusted zone), enforcing the identity boundary at retrieval time.
-- It is the engine underneath [[microsoft-365-copilot]]; the two are best read together (Copilot is the assistant UX, Graph + semantic index is the retrieval/entitlement substrate).
+- It is the engine underneath [microsoft-365-copilot](microsoft-365-copilot.md); the two are best read together (Copilot is the assistant UX, Graph + semantic index is the retrieval/entitlement substrate).
 
 ## Deployment & architecture
 
@@ -58,13 +58,13 @@ Graph also covers **external data** via Copilot connectors (Graph connectors), s
 ## Positioning & differentiators
 
 - **Default, first-party entitlement-aware RAG for the Microsoft estate.** If a fund runs M365 + Copilot, Graph is the retrieval and permission-trimming layer — there is no separate purchase decision; it's the substrate Copilot already uses. Its differentiator over third-party RAG/assistant vendors is that it reuses the *exact same* M365/SharePoint access-control checks the rest of the tenant uses, in real time, rather than maintaining a parallel permissions copy.
-- **Versus [[glean]] and other enterprise-AI-assistants:** Glean and similar build their own unified index across SaaS apps with their own permission-mirroring; Graph is Microsoft-native and strongest where the data already lives in M365. Glean is the cross-stack alternative when the center of gravity isn't Microsoft.
-- **Versus [[knostic]] and [[microsoft-purview]]:** these are *complements*, not substitutes. Graph faithfully enforces whatever permissions exist — which is exactly why **oversharing** is its well-known weakness (below). Knostic adds a need-to-know/knowledge-level control on top of Copilot answers; Purview adds DSPM-for-AI, sensitivity-label-based trimming, and DLP that can block Copilot from processing labeled content.
+- **Versus [glean](glean.md) and other enterprise-AI-assistants:** Glean and similar build their own unified index across SaaS apps with their own permission-mirroring; Graph is Microsoft-native and strongest where the data already lives in M365. Glean is the cross-stack alternative when the center of gravity isn't Microsoft.
+- **Versus [knostic](knostic.md) and [microsoft-purview](microsoft-purview.md):** these are *complements*, not substitutes. Graph faithfully enforces whatever permissions exist — which is exactly why **oversharing** is its well-known weakness (below). Knostic adds a need-to-know/knowledge-level control on top of Copilot answers; Purview adds DSPM-for-AI, sensitivity-label-based trimming, and DLP that can block Copilot from processing labeled content.
 - The retrieval mechanics are a documented Microsoft platform, not a marketing claim; the permission-trimming behavior is stated explicitly in Microsoft Learn.
 
 ### The oversharing caveat (important)
 
-Graph's security trimming is only as good as the underlying ACLs. Because SharePoint "by default sets sharing settings to the most permissive option," many tenants have over-permissioned content (org-wide "Everyone except external users" links, broken inheritance, ownerless sites). Copilot then makes that latent exposure trivially discoverable via natural-language prompts — it surfaces nothing the user couldn't already reach, but it removes the friction that previously hid it. Indexing itself does **not** change permissions. Microsoft's own remediation path is **SharePoint Advanced Management (Syntex)**: Content Management Assessment, Data Access Governance reports (site-permissions baseline, EEEU, sharing-links activity), Restricted Access Control, and **Restricted Content Discovery** (keeps content out of Copilot/search without changing permissions) — plus Purview sensitivity labels and DLP. This is the gap that [[knostic]], [[microsoft-purview]], and [[varonis]]-style data-access-governance tools sell against.
+Graph's security trimming is only as good as the underlying ACLs. Because SharePoint "by default sets sharing settings to the most permissive option," many tenants have over-permissioned content (org-wide "Everyone except external users" links, broken inheritance, ownerless sites). Copilot then makes that latent exposure trivially discoverable via natural-language prompts — it surfaces nothing the user couldn't already reach, but it removes the friction that previously hid it. Indexing itself does **not** change permissions. Microsoft's own remediation path is **SharePoint Advanced Management (Syntex)**: Content Management Assessment, Data Access Governance reports (site-permissions baseline, EEEU, sharing-links activity), Restricted Access Control, and **Restricted Content Discovery** (keeps content out of Copilot/search without changing permissions) — plus Purview sensitivity labels and DLP. This is the gap that [knostic](knostic.md), [microsoft-purview](microsoft-purview.md), and [varonis](varonis.md)-style data-access-governance tools sell against.
 
 ## Ownership, funding & M&A
 
@@ -77,15 +77,15 @@ Graph's security trimming is only as good as the underlying ACLs. Because ShareP
 - **Day-1 if you run Microsoft 365 + Copilot.** For a Microsoft-centric fund, Graph isn't optional or even separately bought — it's the retrieval/entitlement engine you get the moment you license Copilot. The Day-1 work is not "deploy Graph," it's **govern what Graph will faithfully expose**: run the oversharing assessment and tighten SharePoint/OneDrive permissions *before* turning Copilot loose, or Copilot becomes a fast index into your worst-permissioned content.
 - **Why it matters for a regulated shop:** the permission-aware grounding gives you a defensible "Copilot only sees what the user already could" story, and indexed data stays in-tenant and out of model training — both useful for compliance and information-barrier posture. It is **not** an information-barrier or MNPI control by itself; ethical-wall enforcement still needs Purview information barriers + correctly scoped SharePoint permissions.
 - **SR 11-7 / model risk:** not a model-risk tool. It's data-access plumbing; relevant to data-governance and access-control controls, not model validation.
-- **Fit:** **high** for any fund standardized on Microsoft 365. Low/irrelevant for shops whose knowledge lives outside M365 (there, look at [[glean]] or building on a different RAG stack), though Graph connectors can pull external sources in.
+- **Fit:** **high** for any fund standardized on Microsoft 365. Low/irrelevant for shops whose knowledge lives outside M365 (there, look at [glean](glean.md) or building on a different RAG stack), though Graph connectors can pull external sources in.
 
 ## Competitors / alternatives
 
-- [[glean]] — cross-SaaS enterprise search/assistant with its own permission-mirroring index (the main non-Microsoft alternative).
-- [[microsoft-365-copilot]] — the assistant that consumes Graph; read together, not a competitor.
-- [[knostic]] — adds need-to-know / knowledge-level controls on top of Copilot to curb oversharing.
-- [[microsoft-purview]] — DSPM for AI, sensitivity-label trimming, DLP for Copilot; complement.
-- [[varonis]] — data-access-governance / least-privilege remediation that reduces the oversharing surface Graph would otherwise expose.
+- [glean](glean.md) — cross-SaaS enterprise search/assistant with its own permission-mirroring index (the main non-Microsoft alternative).
+- [microsoft-365-copilot](microsoft-365-copilot.md) — the assistant that consumes Graph; read together, not a competitor.
+- [knostic](knostic.md) — adds need-to-know / knowledge-level controls on top of Copilot to curb oversharing.
+- [microsoft-purview](microsoft-purview.md) — DSPM for AI, sensitivity-label trimming, DLP for Copilot; complement.
+- [varonis](varonis.md) — data-access-governance / least-privilege remediation that reduces the oversharing surface Graph would otherwise expose.
 
 ## Open questions / to verify
 

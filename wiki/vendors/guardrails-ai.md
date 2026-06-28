@@ -34,7 +34,7 @@ tags: [ai-red-teaming, guardrails, open-source, validators]
 inputs and outputs against composable rules (no PII, on-topic, no hallucination,
 structured-output schemas).
 
-**Categories** — [[ai-red-teaming]]
+**Categories** — [ai-red-teaming](../categories/ai-red-teaming.md)
 
 ## What it does
 Guardrails AI provides a programmable safety/reliability layer that "surrounds" an
@@ -47,8 +47,8 @@ developer tool (open-source, pip-installable) with a commercial/hosted offering 
 top.
 
 ## Where it sits in the stack
-[[ai-red-teaming]] / guardrails in the model/prompt layer; overlaps with
-[[ai-runtime-security]] because output/input validation is exactly what an AI
+[ai-red-teaming](../categories/ai-red-teaming.md) / guardrails in the model/prompt layer; overlaps with
+[ai-runtime-security](../categories/ai-runtime-security.md) because output/input validation is exactly what an AI
 firewall does — the difference is Guardrails AI is an SDK you build into your app
 rather than an inline network proxy. Lethal-trifecta role: the **untrusted-input**
 leg (input validators block injection/jailbreak patterns) and the **sensitive-data**
@@ -62,11 +62,11 @@ building their own LLM apps, not a network-level control for shadow AI.
 
 ## Positioning & differentiators
 The best-known **open-source guardrails framework** alongside NVIDIA's
-[[nemo-guardrails]] — the two are the reference OSS options and even interoperate.
-Guardrails AI leans toward a marketplace of composable validators; [[nemo-guardrails]]
+[nemo-guardrails](nemo-guardrails.md) — the two are the reference OSS options and even interoperate.
+Guardrails AI leans toward a marketplace of composable validators; [nemo-guardrails](nemo-guardrails.md)
 leans toward programmable dialogue rails (Colang). Commercial neighbors that sell
-managed guardrails/firewalls include [[lakera]], [[prompt-security]], [[pillar-security]],
-and [[prisma-airs]]. Eval-platform neighbors: [[patronus-ai]], [[maxim-ai]].
+managed guardrails/firewalls include [lakera](lakera.md), [prompt-security](prompt-security.md), [pillar-security](pillar-security.md),
+and [prisma-airs](prisma-airs.md). Eval-platform neighbors: [patronus-ai](patronus-ai.md), [maxim-ai](maxim-ai.md).
 
 ## Ownership, funding & M&A
 Independent, VC-backed. Founded 2023; CEO/co-founder Shreya Rajpal (ex-Drive.ai,
@@ -82,11 +82,11 @@ code** and wants programmable input/output validation. For a fund consuming
 off-the-shelf AI assistants it is not a control you operate. If you do build, the
 open-source framework is a cheap way to enforce PII/grounding rules and can support an
 SR 11-7 model-risk story (documented output controls). Most funds will get guardrails
-bundled inside an [[ai-runtime-security]] product instead of wiring this themselves.
+bundled inside an [ai-runtime-security](../categories/ai-runtime-security.md) product instead of wiring this themselves.
 
 ## Competitors / alternatives
-[[nemo-guardrails]], [[lakera]], [[prompt-security]], [[pillar-security]],
-[[prisma-airs]], [[patronus-ai]].
+[nemo-guardrails](nemo-guardrails.md), [lakera](lakera.md), [prompt-security](prompt-security.md), [pillar-security](pillar-security.md),
+[prisma-airs](prisma-airs.md), [patronus-ai](patronus-ai.md).
 
 ## Open questions / to verify
 - Commercial/hosted product traction and pricing vs. the OSS project.

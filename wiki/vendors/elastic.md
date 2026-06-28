@@ -33,17 +33,17 @@ tags: [elastic, elk, siem, soc, open-source, incumbent]
 
 **What it does** — Elasticsearch is the search/analytics engine; Logstash ingests, Kibana visualizes (together "ELK"). Elastic Security layers SIEM, endpoint/XDR, and SOAR-style automation on top. The draw for cost-sensitive shops is deployment flexibility: run it yourself on your own infra, or buy it as a managed cloud service. Detection rules are developed in public repos on a ~two-week cadence.
 
-**Where it sits in the stack** — [[siem-soc]], foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. Also widely used as a general log/observability store, so it often already holds the data an AI-oversight program needs.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. Also widely used as a general log/observability store, so it often already holds the data an AI-oversight program needs.
 
-**Deployment & architecture** — SaaS (Elastic Cloud) or self-hosted/on-prem — a key differentiator vs cloud-only SIEMs. The **Elastic AI Assistant** is built on the Elasticsearch Relevance Engine (ESRE) and gives context-aware alert-triage/IR guidance; it exposes a reasoning trace (prompts, tool calls, responses) and lets customers connect multiple LLMs and pick per workflow. The **Elastic AI SOC Engine (EASE)** targets alert fatigue and can work alongside [[splunk]] / [[microsoft-sentinel]].
+**Deployment & architecture** — SaaS (Elastic Cloud) or self-hosted/on-prem — a key differentiator vs cloud-only SIEMs. The **Elastic AI Assistant** is built on the Elasticsearch Relevance Engine (ESRE) and gives context-aware alert-triage/IR guidance; it exposes a reasoning trace (prompts, tool calls, responses) and lets customers connect multiple LLMs and pick per workflow. The **Elastic AI SOC Engine (EASE)** targets alert fatigue and can work alongside [splunk](splunk.md) / [microsoft-sentinel](microsoft-sentinel.md).
 
-**Positioning & differentiators** — Open-source heritage and self-host option keep data-plane costs controllable; bring-your-own-LLM and a transparent reasoning trace are differentiators on the AI side. Named a Leader in IDC MarketScape Worldwide SIEM 2026. Competes with [[splunk]], [[microsoft-sentinel]], [[google-secops]], [[crowdstrike-logscale]], [[sumo-logic]]. Note: AWS's [[opensearch]] is a fork of Elasticsearch (relicensing dispute, 2021).
+**Positioning & differentiators** — Open-source heritage and self-host option keep data-plane costs controllable; bring-your-own-LLM and a transparent reasoning trace are differentiators on the AI side. Named a Leader in IDC MarketScape Worldwide SIEM 2026. Competes with [splunk](splunk.md), [microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [crowdstrike-logscale](crowdstrike-logscale.md), [sumo-logic](sumo-logic.md). Note: AWS's [opensearch](opensearch.md) is a fork of Elasticsearch (relicensing dispute, 2021).
 
 **Ownership, funding & M&A** — **Elastic N.V., public (NYSE: ESTC)**; IPO 2018. Founded 2012 (Elasticsearch created 2010 by Shay Banon); HQ Mountain View, incorporated in the Netherlands. No M&A flag. Stub previously `ownership: independent` — corrected to `public`.
 
 **CTO / hedge-fund lens** — **Day-1**-capable, and attractive to funds that want to control SIEM data costs by self-hosting or that already run Elasticsearch for other workloads. More engineering ownership than a fully managed Sentinel/SecOps. Not an SR 11-7 tool; serves as the searchable log store underpinning AI/security audit.
 
-**Competitors / alternatives** — [[splunk]], [[microsoft-sentinel]], [[google-secops]], [[crowdstrike-logscale]], [[sumo-logic]], [[opensearch]].
+**Competitors / alternatives** — [splunk](splunk.md), [microsoft-sentinel](microsoft-sentinel.md), [google-secops](google-secops.md), [crowdstrike-logscale](crowdstrike-logscale.md), [sumo-logic](sumo-logic.md), [opensearch](opensearch.md).
 
 **Open questions / to verify** — Licensing nuances (Elastic License / SSPL vs AGPL re-add 2024) for self-hosters; managed-vs-self-host TCO for a small SOC.
 

@@ -29,7 +29,7 @@ tags: [dlp, ddr, data-lineage, shadow-ai, insider-risk, dspm]
 
 > **One-liner** — An endpoint-based, AI-powered data-loss-prevention / "data detection and response" (DDR) platform that tracks the *lineage* of data — where it came from, how it moved, and where it's going — so it can stop sensitive data (including data pasted into ChatGPT and other shadow-AI tools) from leaking.
 
-**Categories** — [[dlp]] (primary), [[ai-access-governance]]
+**Categories** — [dlp](../categories/dlp.md) (primary), [ai-access-governance](../categories/ai-access-governance.md)
 
 ## What it does
 
@@ -41,7 +41,7 @@ A large part of its current pitch is **shadow AI / GenAI data protection**: show
 
 ## Where it sits in the stack
 
-Primary home is the [[dlp]] category in the **data layer**, with a strong secondary footprint in [[ai-access-governance]] (CASB-for-AI / shadow-AI). In lethal-trifecta terms it controls the **sensitive-data** and **egress** legs: it watches sensitive data at the endpoint and blocks/controls its exfiltration to untrusted destinations (including AI tools). It does *not* address untrusted-input/prompt-injection — that is the job of [[ai-runtime-security]]. Trust-zone relevance: it instruments the endpoint (the boundary between green/internal and red/external), making it a data-egress control point rather than a model-traffic inspector.
+Primary home is the [dlp](../categories/dlp.md) category in the **data layer**, with a strong secondary footprint in [ai-access-governance](../categories/ai-access-governance.md) (CASB-for-AI / shadow-AI). In lethal-trifecta terms it controls the **sensitive-data** and **egress** legs: it watches sensitive data at the endpoint and blocks/controls its exfiltration to untrusted destinations (including AI tools). It does *not* address untrusted-input/prompt-injection — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md). Trust-zone relevance: it instruments the endpoint (the boundary between green/internal and red/external), making it a data-egress control point rather than a model-traffic inspector.
 
 ## Deployment & architecture
 
@@ -51,9 +51,9 @@ Primary home is the [[dlp]] category in the **data layer**, with a strong second
 
 ## Positioning & differentiators
 
-- **Lineage vs. pattern-matching.** The core claim that sets it apart from legacy content-inspection DLP ([[nightfall-ai]], Microsoft Purview DLP, Netskope DLP): it tracks data provenance across transformations, so it catches sensitive data even after it's been copied, renamed, or reformatted, and reduces false positives.
-- **DDR framing + LLiM.** "Data detection and response" and a purpose-built lineage foundation model are its marketing wedge against both classic DLP and newer AI-era DLP entrants ([[mind]], [[prompt-security]], [[lasso-security]]).
-- **Shadow-AI overlap.** On the [[ai-access-governance]] side it competes with [[witnessai]], [[harmonic-security]], Nudge, Aurascape and others — but Cyberhaven comes at shadow-AI from the *endpoint/data* direction (what data left the device) rather than the network/proxy direction.
+- **Lineage vs. pattern-matching.** The core claim that sets it apart from legacy content-inspection DLP ([nightfall-ai](nightfall-ai.md), Microsoft Purview DLP, Netskope DLP): it tracks data provenance across transformations, so it catches sensitive data even after it's been copied, renamed, or reformatted, and reduces false positives.
+- **DDR framing + LLiM.** "Data detection and response" and a purpose-built lineage foundation model are its marketing wedge against both classic DLP and newer AI-era DLP entrants ([mind](mind.md), [prompt-security](prompt-security.md), [lasso-security](lasso-security.md)).
+- **Shadow-AI overlap.** On the [ai-access-governance](../categories/ai-access-governance.md) side it competes with [witnessai](witnessai.md), [harmonic-security](harmonic-security.md), Nudge, Aurascape and others — but Cyberhaven comes at shadow-AI from the *endpoint/data* direction (what data left the device) rather than the network/proxy direction.
 
 ## Ownership, funding & M&A
 
@@ -73,9 +73,9 @@ Primary home is the [[dlp]] category in the **data layer**, with a strong second
 
 ## Competitors / alternatives
 
-- DLP / data layer: [[nightfall-ai]], [[mind]], [[prompt-security]], [[lasso-security]], plus Microsoft Purview DLP and Netskope DLP.
-- DSPM neighbors: [[cyera]], [[sentra]], [[bigid]], [[varonis]].
-- Shadow-AI / [[ai-access-governance]]: [[witnessai]], [[harmonic-security]], Aurascape, Nudge.
+- DLP / data layer: [nightfall-ai](nightfall-ai.md), [mind](mind.md), [prompt-security](prompt-security.md), [lasso-security](lasso-security.md), plus Microsoft Purview DLP and Netskope DLP.
+- DSPM neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [varonis](varonis.md).
+- Shadow-AI / [ai-access-governance](../categories/ai-access-governance.md): [witnessai](witnessai.md), [harmonic-security](harmonic-security.md), Aurascape, Nudge.
 
 ## Open questions / to verify
 

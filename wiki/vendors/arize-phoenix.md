@@ -27,23 +27,23 @@ tags: [open-source, observability, evals, ml-monitoring]
 
 # Arize Phoenix
 
-> **Researched 2026-06-28.** Primary category: [[llm-observability]].
+> **Researched 2026-06-28.** Primary category: [llm-observability](../categories/llm-observability.md).
 
 **One-liner** — Open-source AI observability and evaluation library (Phoenix) from Arize AI, with a commercial enterprise platform (Arize AX) alongside.
 
 **What it does** — Phoenix traces LLM and agent applications, runs evaluations, surfaces failures (hallucinations, retrieval problems, regressions), and helps teams debug and improve output quality. Arize's heritage is classic ML observability (drift, performance monitoring), and Phoenix extended that into the LLM/agent world. Phoenix is OSS and self-hostable; Arize AX is the managed, enterprise-scale commercial product.
 
-**Where it sits in the stack** — The [[llm-observability]] layer of the model/prompt tier. Dev/ops-time tracing and eval, not an inline guardrail, so it does not directly break a leg of the lethal trifecta — but its eval/monitoring helps detect data-leak or injection symptoms. Complements [[ai-runtime-security]] and [[ai-red-teaming]].
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Dev/ops-time tracing and eval, not an inline guardrail, so it does not directly break a leg of the lethal trifecta — but its eval/monitoring helps detect data-leak or injection symptoms. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-red-teaming](../categories/ai-red-teaming.md).
 
 **Deployment & architecture** — OpenTelemetry/OpenInference-based SDK instrumentation; Phoenix runs locally or self-hosted, Arize AX is SaaS. Integrations include Azure AI Foundry / AI Studio and most major model and framework providers. Reported >2M monthly downloads for Phoenix (company claim).
 
-**Positioning & differentiators** — Among the strongest OSS-plus-commercial combos in the category, with deeper roots in production ML monitoring than LLM-native startups. Versus [[langfuse]] both are OSS-first and overlap on tracing/evals; Arize brings more mature ML-monitoring lineage. Versus [[braintrust]] it is observability-and-monitoring-led rather than eval-first; versus [[datadog]] it is AI-specialized rather than a general observability suite. Notably, [[datadog]] is itself an investor in Arize's Series C.
+**Positioning & differentiators** — Among the strongest OSS-plus-commercial combos in the category, with deeper roots in production ML monitoring than LLM-native startups. Versus [langfuse](langfuse.md) both are OSS-first and overlap on tracing/evals; Arize brings more mature ML-monitoring lineage. Versus [braintrust](braintrust.md) it is observability-and-monitoring-led rather than eval-first; versus [datadog](datadog.md) it is AI-specialized rather than a general observability suite. Notably, [datadog](datadog.md) is itself an investor in Arize's Series C.
 
 **Ownership, funding & M&A** — Independent, VC-backed. **Series C $70M announced 2025-02-20**, led by Adams Street Partners (with M12/Microsoft, Datadog, PagerDuty, OMERS, Sinewave, Industry Ventures, and returning Foundation Capital, Battery, TCV, Swift). ~$135M total across 5 rounds. Founded 2020; HQ Berkeley, CA. No M&A. Confidence: high.
 
-**CTO / hedge-fund lens** — Day-1 for a shop doing RAG or agents that wants both LLM observability and an upgrade path to production ML monitoring. Phoenix OSS lets you keep traces (potential MNPI) self-hosted; Arize AX is the route when you need scale/support. Strong funding and strategic investors lower continuity risk. Not a governance/SR 11-7 system itself — pair with [[ai-governance-platform]].
+**CTO / hedge-fund lens** — Day-1 for a shop doing RAG or agents that wants both LLM observability and an upgrade path to production ML monitoring. Phoenix OSS lets you keep traces (potential MNPI) self-hosted; Arize AX is the route when you need scale/support. Strong funding and strategic investors lower continuity risk. Not a governance/SR 11-7 system itself — pair with [ai-governance-platform](../categories/ai-governance-platform.md).
 
-**Competitors / alternatives** — [[langfuse]], [[langsmith]], [[braintrust]], [[helicone]], [[datadog]], [[comet]], [[fiddler-ai]], [[whylabs]].
+**Competitors / alternatives** — [langfuse](langfuse.md), [langsmith](langsmith.md), [braintrust](braintrust.md), [helicone](helicone.md), [datadog](datadog.md), [comet](comet.md), [fiddler-ai](fiddler-ai.md), [whylabs](whylabs.md).
 
 **Open questions / to verify**
 - Phoenix OSS vs Arize AX feature boundary (what's gated to commercial).

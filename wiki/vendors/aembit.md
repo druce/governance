@@ -34,7 +34,7 @@ tags: [non-human-identity, workload-iam, secretless, agent-identity, mcp, nhi]
 to workloads and AI agents at request time, so apps stop hardcoding secrets to reach the services
 they depend on.
 
-**Categories** — [[non-human-identity]]
+**Categories** — [non-human-identity](../categories/non-human-identity.md)
 
 ## What it does
 
@@ -53,9 +53,9 @@ issuance, least-privilege policy, and centralized auditing of every machine-to-m
 
 ## Where it sits in the stack
 
-Primary category: [[non-human-identity]] (Foundation layer). Aembit is the "access management"
-pole of NHI, as distinct from the "posture/discovery/governance" pole occupied by [[oasis-security]],
-[[token-security]], [[astrix-security]], and [[clutch-security]]. In lethal-trifecta terms it works
+Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Aembit is the "access management"
+pole of NHI, as distinct from the "posture/discovery/governance" pole occupied by [oasis-security](oasis-security.md),
+[token-security](token-security.md), [astrix-security](astrix-security.md), and [clutch-security](clutch-security.md). In lethal-trifecta terms it works
 the **sensitive-data** and **egress** legs: by gating which workload/agent can reach which resource,
 with short-lived scoped credentials, it constrains an agent's ability to reach sensitive data and to
 exfiltrate via over-broad service-to-service access. It does not inspect prompts or untrusted input.
@@ -81,13 +81,13 @@ one zone may call a resource in another.
 
 ## Positioning & differentiators
 
-Aembit's differentiator is that it is *enforcement-first*, not inventory-first. [[oasis-security]],
-[[token-security]], [[astrix-security]], and [[clutch-security]] largely lead with discovering NHIs,
+Aembit's differentiator is that it is *enforcement-first*, not inventory-first. [oasis-security](oasis-security.md),
+[token-security](token-security.md), [astrix-security](astrix-security.md), and [clutch-security](clutch-security.md) largely lead with discovering NHIs,
 mapping their entitlements and ownership, scoring risk, and helping rotate/clean up — a posture and
 governance motion that overlays existing identity providers and secrets stores. Aembit instead
 inserts itself in the access path and *brokers* the credential, aiming to make long-lived secrets
 unnecessary in the first place. That makes its closest conceptual neighbor the workload-identity
-/ machine-auth lineage (SPIFFE/SPIRE, and the secretless side of [[cyberark]]'s machine-identity /
+/ machine-auth lineage (SPIFFE/SPIRE, and the secretless side of [cyberark](cyberark.md)'s machine-identity /
 Conjur portfolio) rather than the NHI posture startups. It also moved early and visibly on **agent
 identity / MCP**, shipping GA "IAM for Agentic AI" in April 2026 and MCP governance for Copilot
 Studio agents at Identiverse in June 2026.
@@ -127,8 +127,8 @@ a watch-list item, not a Day-1 buy.
 
 ## Competitors / alternatives
 
-[[oasis-security]], [[token-security]], [[astrix-security]], [[clutch-security]], [[cyberark]]
-(machine identity / Conjur), [[entro-security]], [[natoma]]; conceptually also SPIFFE/SPIRE for
+[oasis-security](oasis-security.md), [token-security](token-security.md), [astrix-security](astrix-security.md), [clutch-security](clutch-security.md), [cyberark](cyberark.md)
+(machine identity / Conjur), [entro-security](entro-security.md), [natoma](natoma.md); conceptually also SPIFFE/SPIRE for
 open-source workload identity.
 
 ## Open questions / to verify

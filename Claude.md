@@ -69,6 +69,11 @@ papering over it.
 - **Markdown + Obsidian-style `[[wikilinks]]`.** Link by page filename without
   extension, e.g. `[[witnessai]]`, `[[ai-runtime-security]]`. Wikilinks resolve by
   filename regardless of folder, so nesting is fine.
+  - **NOTE (2026-06-28, decision logged):** the published GitHub repo converts all
+    `[[wikilinks]]` to **relative markdown links** (`[slug](../vendors/slug.md)`) so they
+    render as clickable links in GitHub's repo view (which does not understand `[[ ]]`).
+    Author new content in either form; re-run the wikilink→relative-link conversion before
+    pushing (see `log.md`). `[[slug|alias]]` → `[alias](path)`.
 - **Slugs are kebab-case.** Vendor slug = the company, not the product, e.g.
   `palo-alto-networks` with the product noted in the page (Prisma AIRS, Cortex,
   etc.). When a product is the unit people shop for, you may slug the product

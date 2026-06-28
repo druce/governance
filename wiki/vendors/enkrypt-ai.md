@@ -27,7 +27,7 @@ tags: [llm-security, red-teaming, guardrails, ai-firewall, agent-security, mcp]
 
 # Enkrypt AI
 
-> Primary category: [[ai-runtime-security]]. Also [[ai-red-teaming]].
+> Primary category: [ai-runtime-security](../categories/ai-runtime-security.md). Also [ai-red-teaming](../categories/ai-red-teaming.md).
 
 **One-liner** — A full-lifecycle LLM/agent security startup that pairs automated red-teaming (find the holes) with runtime guardrails (an AI firewall that blocks them), wrapped in compliance/risk reporting mapped to frameworks like the EU AI Act and NIST.
 
@@ -39,7 +39,7 @@ Recent product expansion is heavily **agentic**: Agent Red Teaming, Agent Guardr
 
 ## Where it sits in the stack
 
-Primary home is [[ai-runtime-security]] (the AI firewall / runtime guardrail layer, model-prompt layer, Day-1 if you put GenAI in front of users or data). Its testing side belongs to [[ai-red-teaming]], and its MCP/agent tooling reaches into [[mcp-gateway]] and agent security territory.
+Primary home is [ai-runtime-security](../categories/ai-runtime-security.md) (the AI firewall / runtime guardrail layer, model-prompt layer, Day-1 if you put GenAI in front of users or data). Its testing side belongs to [ai-red-teaming](../categories/ai-red-teaming.md), and its MCP/agent tooling reaches into [mcp-gateway](../categories/mcp-gateway.md) and agent security territory.
 
 Lethal-trifecta role: the runtime guardrail is one of the few controls that touches **all three legs** — it screens **untrusted input** (prompt-injection/jailbreak detection), watches for **sensitive-data** exposure in prompts/outputs (PII/leakage filtering), and can block unsafe **egress** (tool calls / outbound content). Trust zones: it lives at the boundary between the untrusted user/web zone and the model.
 
@@ -51,9 +51,9 @@ SaaS platform consumed via **API and SDK**, with the guardrail deployable as an 
 
 Enkrypt's angle is **breadth across the lifecycle** — red-teaming, runtime guardrails, and compliance reporting in one place — versus point players. Compared to neighbors:
 
-- vs [[lakera]] and [[prompt-security]] — Enkrypt leans harder into the red-teaming + compliance-reporting story, not just inline guardrails.
-- vs [[splxai]], [[mindgard]], [[promptfoo]] — those are more red-teaming/eval-first; Enkrypt also ships the production firewall.
-- vs [[pillar-security]], [[hiddenlayer]], [[witnessai]], [[prisma-airs]], [[calypsoai]] — these overlap on runtime/AI-firewall; Enkrypt is a smaller, independent, research-forward startup rather than a platform or acquirer.
+- vs [lakera](lakera.md) and [prompt-security](prompt-security.md) — Enkrypt leans harder into the red-teaming + compliance-reporting story, not just inline guardrails.
+- vs [splxai](splxai.md), [mindgard](mindgard.md), [promptfoo](promptfoo.md) — those are more red-teaming/eval-first; Enkrypt also ships the production firewall.
+- vs [pillar-security](pillar-security.md), [hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md), [prisma-airs](prisma-airs.md), [calypsoai](calypsoai.md) — these overlap on runtime/AI-firewall; Enkrypt is a smaller, independent, research-forward startup rather than a platform or acquirer.
 - Known for visible research output (CBRN red-teaming study, guardrail-bypass reports on Azure/AWS/Meta, agent risk taxonomy) and the LLM Safety Leaderboard.
 
 ## Ownership, funding & M&A
@@ -64,11 +64,11 @@ Independent, VC-backed. Confirmed **$2.35M seed (Feb 2024), led by Boldcap**, wi
 
 ## CTO / hedge-fund lens
 
-The runtime-guardrail function is **Day-1** for any fund putting an LLM or agent in front of users or sensitive data; the red-teaming and compliance-reporting functions are **Day-2** maturity but become Day-1 under a model-risk regime. For an asset manager, the **compliance-mapping and audit-evidence** angle (EU AI Act / NIST, and by extension SR 11-7-style model-risk documentation) is the most differentiated reason to look here — it turns guardrail enforcement into auditable evidence. Caveat: Enkrypt is an **early-stage, small independent** vendor, so vendor-risk/longevity diligence matters more than with a Palo Alto ([[prisma-airs]]) or Cisco. Fit: **medium** — attractive capability set and compliance framing, tempered by startup maturity and the fact that larger platforms now bundle similar guardrails.
+The runtime-guardrail function is **Day-1** for any fund putting an LLM or agent in front of users or sensitive data; the red-teaming and compliance-reporting functions are **Day-2** maturity but become Day-1 under a model-risk regime. For an asset manager, the **compliance-mapping and audit-evidence** angle (EU AI Act / NIST, and by extension SR 11-7-style model-risk documentation) is the most differentiated reason to look here — it turns guardrail enforcement into auditable evidence. Caveat: Enkrypt is an **early-stage, small independent** vendor, so vendor-risk/longevity diligence matters more than with a Palo Alto ([prisma-airs](prisma-airs.md)) or Cisco. Fit: **medium** — attractive capability set and compliance framing, tempered by startup maturity and the fact that larger platforms now bundle similar guardrails.
 
 ## Competitors / alternatives
 
-[[lakera]], [[splxai]], [[pillar-security]], [[hiddenlayer]], [[prisma-airs]], [[witnessai]], [[mindgard]], [[promptfoo]], [[calypsoai]], [[prompt-security]].
+[lakera](lakera.md), [splxai](splxai.md), [pillar-security](pillar-security.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [witnessai](witnessai.md), [mindgard](mindgard.md), [promptfoo](promptfoo.md), [calypsoai](calypsoai.md), [prompt-security](prompt-security.md).
 
 ## Open questions / to verify
 

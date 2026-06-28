@@ -27,17 +27,17 @@ tags: [observability, model-monitoring, data-monitoring, open-source, wound-down
 
 # WhyLabs
 
-> Researched 2026-06-28. Primary category: [[llm-observability]]. **Note: product effectively wound down after Apple acquisition (2025).**
+> Researched 2026-06-28. Primary category: [llm-observability](../categories/llm-observability.md). **Note: product effectively wound down after Apple acquisition (2025).**
 
 **One-liner** — A data-and-ML monitoring / AI observability platform (now acquired by Apple and discontinued as a standalone product).
 
 **What it does** — WhyLabs let teams monitor data pipelines and ML models at scale — detecting data drift, data-quality problems, and model performance degradation — built around its open-source `whylogs` data-logging library that computes lightweight statistical profiles without moving raw data. It later added LangKit (LLM metrics) and real-time GenAI security/quality monitoring (toxicity, hallucination, prompt-injection signals).
 
-**Where it sits in the stack** — [[llm-observability]] (model/prompt layer), with strong roots in data/ML monitoring. The GenAI monitoring touched the **untrusted-input** leg (flagging toxic/injection-driven outputs), but as an observe-and-alert tool, not an inline blocker.
+**Where it sits in the stack** — [llm-observability](../categories/llm-observability.md) (model/prompt layer), with strong roots in data/ML monitoring. The GenAI monitoring touched the **untrusted-input** leg (flagging toxic/injection-driven outputs), but as an observe-and-alert tool, not an inline blocker.
 
 **Deployment & architecture** — SaaS observatory fed by the `whylogs` SDK (privacy-preserving profiles, so raw data stays in your environment); API and self-hosted options. Integrated with common ML pipelines and notebooks.
 
-**Positioning & differentiators** — Known for the **privacy-preserving, profile-based** approach (`whylogs`) and for scaling to large data/ML monitoring rather than per-request LLM tracing. Incubated at the Allen Institute for AI (AI2) by ex-Amazon ML engineers; backed by Andrew Ng's AI Fund and Jeff Bezos. Nearest neighbors were [[arize-phoenix]], [[fiddler-ai]], [[arthur-ai]] (all ML-monitoring lineage).
+**Positioning & differentiators** — Known for the **privacy-preserving, profile-based** approach (`whylogs`) and for scaling to large data/ML monitoring rather than per-request LLM tracing. Incubated at the Allen Institute for AI (AI2) by ex-Amazon ML engineers; backed by Andrew Ng's AI Fund and Jeff Bezos. Nearest neighbors were [arize-phoenix](arize-phoenix.md), [fiddler-ai](fiddler-ai.md), [arthur-ai](arthur-ai.md) (all ML-monitoring lineage).
 
 **Ownership, funding & M&A** — **M&A CONFIRMED (medium confidence).** Apple acquired WhyLabs in **2025** in an under-the-radar deal; the founders (CEO Alessya Visnjic and co-founders) joined Apple in AI roles. There is no official Apple announcement (Apple rarely confirms acquisitions), but it is corroborated by GeekWire's reporting, AI Fund's portfolio page listing WhyLabs as "acquired in 2025," LinkedIn ("ACQ BY APPLE"), and European Commission Digital Markets Act filings. The WhyLabs site now states the company is **discontinuing operations** and open-sourcing its platform. Funded 2019; ~$14M total ($4M Madrona seed + $10M Series A in 2021 co-led by AI Fund and Defy Partners, with Bezos Expeditions). HQ Seattle.
 
@@ -45,7 +45,7 @@ tags: [observability, model-monitoring, data-monitoring, open-source, wound-down
 
 **CTO / hedge-fund lens** — **Low fit going forward: do not select for new builds.** The standalone product is being wound down; only the open-source `whylogs`/LangKit code remains usable. Listed here for completeness and because the seed/registry carried it as an active observability option — flag it as M&A-dated in any survey. If you liked the profile-based monitoring approach, the OSS libraries persist but without a vendor behind them.
 
-**Competitors / alternatives** — [[arize-phoenix]], [[fiddler-ai]], [[arthur-ai]], [[langfuse]], [[datadog]], [[comet]].
+**Competitors / alternatives** — [arize-phoenix](arize-phoenix.md), [fiddler-ai](fiddler-ai.md), [arthur-ai](arthur-ai.md), [langfuse](langfuse.md), [datadog](datadog.md), [comet](comet.md).
 
 **Open questions / to verify**
 - Exact close date and any disclosed terms of the Apple deal (likely never officially confirmed).

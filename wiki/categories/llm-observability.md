@@ -35,8 +35,8 @@ cheaper to instrument early than to retrofit. Even a single RAG app or copilot
 benefits immediately from traces (to debug) and evals (to avoid regressions). For a
 hedge-fund CTO the trace log doubles as an audit and cost-control artifact, and the
 eval harness is the evidence trail that supports model-risk review under
-[[ai-governance-platform]] / SR 11-7. This is monitoring, not enforcement — pair it
-with [[ai-runtime-security]] for blocking.
+[ai-governance-platform](ai-governance-platform.md) / SR 11-7. This is monitoring, not enforcement — pair it
+with [ai-runtime-security](ai-runtime-security.md) for blocking.
 
 ## Lethal-trifecta role
 
@@ -50,23 +50,23 @@ bouncer.
 ## Vendors
 
 **Tracing / observability-first (often OSS or OSS-core)**
-- [[langfuse]] — open-source LLM observability + prompt management; a common default.
-- [[langsmith]] — LangChain's tracing/eval platform, tightly coupled to that ecosystem.
-- [[arize-phoenix]] — Arize's open-source tracing/eval (OpenTelemetry-based); pairs with its enterprise monitoring.
-- [[helicone]] — lightweight proxy-based observability and cost tracking.
-- [[comet]] — Opik, Comet's open-source LLM eval/observability alongside its ML-experiment heritage.
-- [[trulens]] — open-source RAG/agent evaluation framework (TruEra/Snowflake lineage).
+- [langfuse](../vendors/langfuse.md) — open-source LLM observability + prompt management; a common default.
+- [langsmith](../vendors/langsmith.md) — LangChain's tracing/eval platform, tightly coupled to that ecosystem.
+- [arize-phoenix](../vendors/arize-phoenix.md) — Arize's open-source tracing/eval (OpenTelemetry-based); pairs with its enterprise monitoring.
+- [helicone](../vendors/helicone.md) — lightweight proxy-based observability and cost tracking.
+- [comet](../vendors/comet.md) — Opik, Comet's open-source LLM eval/observability alongside its ML-experiment heritage.
+- [trulens](../vendors/trulens.md) — open-source RAG/agent evaluation framework (TruEra/Snowflake lineage).
 
 **Evaluation / testing-first**
-- [[braintrust]] — eval-and-experimentation platform for LLM apps (cross-listed in [[ai-red-teaming]]).
-- [[giskard]] — open-source testing/eval for ML and LLMs (cross-listed in [[ai-red-teaming]]).
+- [braintrust](../vendors/braintrust.md) — eval-and-experimentation platform for LLM apps (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
+- [giskard](../vendors/giskard.md) — open-source testing/eval for ML and LLMs (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
 
 **Enterprise monitoring / explainability / model-risk-leaning**
-- [[datadog]] — LLM observability inside the broader Datadog APM/monitoring suite.
-- [[weights-and-biases]] — Weave, W&B's LLM tracing/eval alongside its experiment-tracking platform.
-- [[fiddler-ai]] — model monitoring and explainability (cross-listed in [[ai-governance-platform]]).
-- [[arthur-ai]] — model/LLM monitoring and guardrails (cross-listed in [[ai-governance-platform]]).
-- [[whylabs]] — data/ML and LLM monitoring (drift, quality).
+- [datadog](../vendors/datadog.md) — LLM observability inside the broader Datadog APM/monitoring suite.
+- [weights-and-biases](../vendors/weights-and-biases.md) — Weave, W&B's LLM tracing/eval alongside its experiment-tracking platform.
+- [fiddler-ai](../vendors/fiddler-ai.md) — model monitoring and explainability (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
+- [arthur-ai](../vendors/arthur-ai.md) — model/LLM monitoring and guardrails (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
+- [whylabs](../vendors/whylabs.md) — data/ML and LLM monitoring (drift, quality).
 
 ## Consolidation / M&A dynamics
 
@@ -74,16 +74,16 @@ Per seed flags (unverified — to confirm in research): Weights & Biases flagged
 acquired by CoreWeave. Broader dynamics: observability is bifurcating — OSS-core
 startups (Langfuse, Phoenix, Helicone, Opik) competing on developer adoption, while
 incumbents fold LLM observability into existing suites (Datadog into APM, W&B into
-its ML platform). Evaluation increasingly bleeds into [[ai-red-teaming]] (Braintrust,
+its ML platform). Evaluation increasingly bleeds into [ai-red-teaming](ai-red-teaming.md) (Braintrust,
 Giskard, Galileo, Patronus, Maxim all do "evals") and monitoring bleeds into
-[[ai-governance-platform]] (Fiddler, Arthur).
+[ai-governance-platform](ai-governance-platform.md) (Fiddler, Arthur).
 
 ## Adjacent categories
 
-- [[ai-red-teaming]] — shares the "evaluation" surface; offline evals and red-team tests overlap heavily, and several vendors (Braintrust, Giskard, Galileo, Patronus, Maxim) sit in both.
-- [[ai-gateway]] — emits the traces/logs observability consumes; some gateways ship their own observability.
-- [[ai-governance-platform]] — consumes eval/monitoring evidence for model-risk and regulator reporting; explainability vendors (Fiddler, Arthur) straddle both.
-- [[ai-runtime-security]] — the enforcement layer that acts on what observability reveals.
+- [ai-red-teaming](ai-red-teaming.md) — shares the "evaluation" surface; offline evals and red-team tests overlap heavily, and several vendors (Braintrust, Giskard, Galileo, Patronus, Maxim) sit in both.
+- [ai-gateway](ai-gateway.md) — emits the traces/logs observability consumes; some gateways ship their own observability.
+- [ai-governance-platform](ai-governance-platform.md) — consumes eval/monitoring evidence for model-risk and regulator reporting; explainability vendors (Fiddler, Arthur) straddle both.
+- [ai-runtime-security](ai-runtime-security.md) — the enforcement layer that acts on what observability reveals.
 
 ## Survey
 
@@ -100,10 +100,10 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 **Notes for survey design:**
 - Table-stakes / highest adoption: Langfuse, LangSmith, Arize Phoenix; Datadog for shops already on Datadog.
 - Strong split between observability-first (Langfuse, Helicone, Datadog) and eval-first (Braintrust, Giskard) tools — respondents using both may answer twice; the question stem should make clear it's multi-select.
-- Overlap with [[ai-red-teaming]] (Braintrust, Giskard) and [[ai-governance-platform]] (Fiddler, Arthur) will confuse some respondents about where to place a tool.
-- Promptfoo (an OSS eval/red-team tool, flagged → OpenAI) is filed under [[ai-red-teaming]] but some respondents will expect it here.
+- Overlap with [ai-red-teaming](ai-red-teaming.md) (Braintrust, Giskard) and [ai-governance-platform](ai-governance-platform.md) (Fiddler, Arthur) will confuse some respondents about where to place a tool.
+- Promptfoo (an OSS eval/red-team tool, flagged → OpenAI) is filed under [ai-red-teaming](ai-red-teaming.md) but some respondents will expect it here.
 
 ## Open taxonomy questions
 
-- Observability vs evaluation vs red-teaming: the seed CSV split observability/eval from red-teaming/guardrails, but the vendor lists overlap heavily. Are these one category or three? Currently kept as observability+eval here and guardrails+red-team in [[ai-red-teaming]].
-- Do explainability/monitoring vendors (Fiddler, Arthur) belong primarily here or in [[ai-governance-platform]]?
+- Observability vs evaluation vs red-teaming: the seed CSV split observability/eval from red-teaming/guardrails, but the vendor lists overlap heavily. Are these one category or three? Currently kept as observability+eval here and guardrails+red-team in [ai-red-teaming](ai-red-teaming.md).
+- Do explainability/monitoring vendors (Fiddler, Arthur) belong primarily here or in [ai-governance-platform](ai-governance-platform.md)?

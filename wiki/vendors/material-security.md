@@ -37,7 +37,7 @@ Material Security protects the cloud workspace — primarily the mailbox and the
 
 ## Where it sits in the stack
 
-Tagged here under [[browser-security-extension]] (layer: `ux`) **but this is a category-fit stretch** — Material is email/cloud-workspace security, delivered by API, with no browser extension. In lethal-trifecta terms its strongest legs are **untrusted-input** (malicious inbound email as the attack vector) and **sensitive-data** (protecting content at rest in the workspace). Its shadow-AI relevance is indirect: OAuth/third-party app visibility can surface unsanctioned AI apps connected to the workspace, not in-browser GenAI usage. It lives in the SaaS/workspace trust zone, not the endpoint/browser.
+Tagged here under [browser-security-extension](../categories/browser-security-extension.md) (layer: `ux`) **but this is a category-fit stretch** — Material is email/cloud-workspace security, delivered by API, with no browser extension. In lethal-trifecta terms its strongest legs are **untrusted-input** (malicious inbound email as the attack vector) and **sensitive-data** (protecting content at rest in the workspace). Its shadow-AI relevance is indirect: OAuth/third-party app visibility can surface unsanctioned AI apps connected to the workspace, not in-browser GenAI usage. It lives in the SaaS/workspace trust zone, not the endpoint/browser.
 
 ## Deployment & architecture
 
@@ -45,7 +45,7 @@ SaaS control plane with **API-based** integration into Microsoft 365 and Google 
 
 ## Positioning & differentiators
 
-Known for the original insight that a breached mailbox is a data-exfiltration goldmine, so it selectively protects/redacts sensitive historical email and content rather than only blocking inbound threats. It competes with cloud email security / ICES vendors (Abnormal Security, Proofpoint, Mimecast) and with Google/Microsoft native controls, more than with browser-security vendors. It is **not** a close neighbor of [[island]], [[chrome-enterprise]], [[grip-security]], or [[menlo-security]] — those are endpoint/browser controls, whereas Material is a workspace API platform. (Email-security peers are not yet pages in this wiki — see open questions.)
+Known for the original insight that a breached mailbox is a data-exfiltration goldmine, so it selectively protects/redacts sensitive historical email and content rather than only blocking inbound threats. It competes with cloud email security / ICES vendors (Abnormal Security, Proofpoint, Mimecast) and with Google/Microsoft native controls, more than with browser-security vendors. It is **not** a close neighbor of [island](island.md), [chrome-enterprise](chrome-enterprise.md), [grip-security](grip-security.md), or [menlo-security](menlo-security.md) — those are endpoint/browser controls, whereas Material is a workspace API platform. (Email-security peers are not yet pages in this wiki — see open questions.)
 
 ## Ownership, funding & M&A
 
@@ -55,11 +55,11 @@ Known for the original insight that a breached mailbox is a data-exfiltration go
 
 ## CTO / hedge-fund lens
 
-Priority: **optional** (and arguably mis-filed under browser security — see below). For a hedge fund on Microsoft 365 or Google Workspace, Material is a credible *email/workspace* security layer: it adds detection/response and data protection on top of native Microsoft/Google controls. That's a real Day-2 consideration — but as an *email-security* decision, not a *browser-security* one. If a CTO is shopping the browser-security-extension category (last-mile GenAI/DLP via the browser), Material does not fill that slot; [[layerx]], [[island]], or [[chrome-enterprise]] do. No direct SR 11-7 / model-risk role. Note its customer list skews to tech (OpenAI, Anthropic, Reddit, Figma), not finance — fit for a regulated fund is plausible but unverified.
+Priority: **optional** (and arguably mis-filed under browser security — see below). For a hedge fund on Microsoft 365 or Google Workspace, Material is a credible *email/workspace* security layer: it adds detection/response and data protection on top of native Microsoft/Google controls. That's a real Day-2 consideration — but as an *email-security* decision, not a *browser-security* one. If a CTO is shopping the browser-security-extension category (last-mile GenAI/DLP via the browser), Material does not fill that slot; [layerx](layerx.md), [island](island.md), or [chrome-enterprise](chrome-enterprise.md) do. No direct SR 11-7 / model-risk role. Note its customer list skews to tech (OpenAI, Anthropic, Reddit, Figma), not finance — fit for a regulated fund is plausible but unverified.
 
 ## Competitors / alternatives
 
-Within its real category (cloud email/workspace security): Abnormal Security, Proofpoint, Mimecast, plus Microsoft/Google native controls (none are wiki pages yet). Within the tagged browser category it is not a true substitute for [[layerx]] / [[island]] / [[chrome-enterprise]].
+Within its real category (cloud email/workspace security): Abnormal Security, Proofpoint, Mimecast, plus Microsoft/Google native controls (none are wiki pages yet). Within the tagged browser category it is not a true substitute for [layerx](layerx.md) / [island](island.md) / [chrome-enterprise](chrome-enterprise.md).
 
 ## Open questions / to verify
 

@@ -31,7 +31,7 @@ tags: [comms-surveillance, market-abuse, mar, mnpi, conduct-risk, voice-surveill
 
 **One-liner** — Behavox is a compliance-surveillance vendor that scans a firm's e-comms and voice traffic with its own purpose-built financial-services LLM to surface market abuse, conduct risk, and insider/MNPI signals.
 
-**Categories** — [[comms-surveillance]]
+**Categories** — [comms-surveillance](../categories/comms-surveillance.md)
 
 ## What it does
 
@@ -41,7 +41,7 @@ The job for a buyer: meet regulatory obligations to monitor employee communicati
 
 ## Where it sits in the stack
 
-Primary category: [[comms-surveillance]], in the **governance** layer. This is a **detective control** — it observes and alerts on activity after the fact; it does not block prompts, redact data, or gate egress. In lethal-trifecta terms it breaks **no leg directly** (`trifecta_relevance: none`); it is a **green-zone detective backstop** that helps you *discover* that something bad (MNPI in a chat, collusion on a call) already happened. It complements, rather than replaces, preventive controls like DLP, information barriers, and AI runtime guardrails.
+Primary category: [comms-surveillance](../categories/comms-surveillance.md), in the **governance** layer. This is a **detective control** — it observes and alerts on activity after the fact; it does not block prompts, redact data, or gate egress. In lethal-trifecta terms it breaks **no leg directly** (`trifecta_relevance: none`); it is a **green-zone detective backstop** that helps you *discover* that something bad (MNPI in a chat, collusion on a call) already happened. It complements, rather than replaces, preventive controls like DLP, information barriers, and AI runtime guardrails.
 
 ## Deployment & architecture
 
@@ -54,13 +54,13 @@ Primary category: [[comms-surveillance]], in the **governance** layer. This is a
 Behavox's distinguishing bet is a **vendor-owned, finance-specific LLM** rather than rules/lexicons or wrapping a third-party foundation model — claiming better precision, multilingual voice+text alerting, and low per-day compute cost. It is known for an AI-first, "controls platform" ambition spanning surveillance, archiving, and (newer) trade surveillance.
 
 Versus nearest neighbors:
-- [[steeleye]] — combines comms surveillance with trade surveillance and record-keeping in one data layer; strong on holistic/trade-comms correlation.
-- [[nice-actimize]] — incumbent, broad financial-crime and surveillance suite; deep in large banks.
-- [[theta-lake]] — specialist in modern collaboration channels (Zoom, Teams, voice/video) capture + compliance.
-- [[shield]] — AI-centric comms surveillance, a direct philosophical competitor on ML-driven detection.
-- [[relativity-trace]] — surveillance built on the Relativity e-discovery/data platform.
+- [steeleye](steeleye.md) — combines comms surveillance with trade surveillance and record-keeping in one data layer; strong on holistic/trade-comms correlation.
+- [nice-actimize](nice-actimize.md) — incumbent, broad financial-crime and surveillance suite; deep in large banks.
+- [theta-lake](theta-lake.md) — specialist in modern collaboration channels (Zoom, Teams, voice/video) capture + compliance.
+- [shield](shield.md) — AI-centric comms surveillance, a direct philosophical competitor on ML-driven detection.
+- [relativity-trace](relativity-trace.md) — surveillance built on the Relativity e-discovery/data platform.
 
-Behavox overlaps most with [[shield]] and [[steeleye]] on the "AI-driven surveillance" message; its differentiator claim is the proprietary in-house LLM and voice multilingual coverage. (All capability claims here are vendor marketing and not independently benchmarked.)
+Behavox overlaps most with [shield](shield.md) and [steeleye](steeleye.md) on the "AI-driven surveillance" message; its differentiator claim is the proprietary in-house LLM and voice multilingual coverage. (All capability claims here are vendor marketing and not independently benchmarked.)
 
 ## Ownership, funding & M&A
 
@@ -83,7 +83,7 @@ No specific **SR 11-7 / model-risk** tie-in for the *buyer* beyond the general p
 
 ## Competitors / alternatives
 
-[[steeleye]] · [[nice-actimize]] · [[theta-lake]] · [[shield]] · [[relativity-trace]]
+[steeleye](steeleye.md) · [nice-actimize](nice-actimize.md) · [theta-lake](theta-lake.md) · [shield](shield.md) · [relativity-trace](relativity-trace.md)
 
 ## Open questions / to verify
 

@@ -27,7 +27,7 @@ tags: [sast, sca, secrets-detection, appsec, open-source]
 
 # Semgrep
 
-> Primary category: [[software-supply-chain]]. Formerly **r2c**.
+> Primary category: [software-supply-chain](../categories/software-supply-chain.md). Formerly **r2c**.
 
 **One-liner** — Fast, customizable static analysis (SAST) with a popular open-source engine, extended into a commercial platform covering dependencies (SCA) and secrets — known for low-noise, rule-driven scanning that developers actually run.
 
@@ -41,7 +41,7 @@ The **Semgrep OSS** engine (released end of 2020) is free and widely used; it dr
 
 ## Where it sits in the stack
 
-[[software-supply-chain]], foundation layer. Relevance to **AI-generated code**: LLM-authored code is effectively **untrusted input** — Semgrep's custom rules can encode org-specific guardrails (banned APIs, insecure patterns, missing authz checks) that catch the kinds of mistakes AI assistants reproduce at scale, and its SCA leg flags vulnerable dependencies the model may pull in. Reachability helps keep the AI-amplified volume of findings actionable.
+[software-supply-chain](../categories/software-supply-chain.md), foundation layer. Relevance to **AI-generated code**: LLM-authored code is effectively **untrusted input** — Semgrep's custom rules can encode org-specific guardrails (banned APIs, insecure patterns, missing authz checks) that catch the kinds of mistakes AI assistants reproduce at scale, and its SCA leg flags vulnerable dependencies the model may pull in. Reachability helps keep the AI-amplified volume of findings actionable.
 
 ## Deployment & architecture
 
@@ -49,7 +49,7 @@ Open-source CLI engine (run locally or in CI). Commercial SaaS platform (self-ho
 
 ## Positioning & differentiators
 
-Best known for **customizable, low-false-positive SAST** and its open-source engine — the easiest of the [[software-supply-chain]] tools to tailor with your own rules. Versus [[snyk]]: narrower than Snyk's full suite (less container/IaC depth) but lighter, cheaper, and more transparent/hackable; strong where teams want to write their own policy-as-code checks. Versus [[socket]]: Semgrep SCA is CVE/known-vuln + reachability oriented, whereas Socket targets *malicious* packages — complementary. Versus [[endor-labs]]: both emphasize reachability/SCA, but Semgrep leads with SAST and OSS adoption while Endor leads with dependency/reachability depth. Versus [[aikido-security]]: Aikido bundles many scanners for SMBs; Semgrep is more of a best-of-breed SAST engine.
+Best known for **customizable, low-false-positive SAST** and its open-source engine — the easiest of the [software-supply-chain](../categories/software-supply-chain.md) tools to tailor with your own rules. Versus [snyk](snyk.md): narrower than Snyk's full suite (less container/IaC depth) but lighter, cheaper, and more transparent/hackable; strong where teams want to write their own policy-as-code checks. Versus [socket](socket.md): Semgrep SCA is CVE/known-vuln + reachability oriented, whereas Socket targets *malicious* packages — complementary. Versus [endor-labs](endor-labs.md): both emphasize reachability/SCA, but Semgrep leads with SAST and OSS adoption while Endor leads with dependency/reachability depth. Versus [aikido-security](aikido-security.md): Aikido bundles many scanners for SMBs; Semgrep is more of a best-of-breed SAST engine.
 
 ## Ownership, funding & M&A
 
@@ -57,16 +57,16 @@ Independent, private, venture-backed. Founded 2017 as **r2c** by Isaac Evans (CE
 
 ## CTO / hedge-fund lens
 
-**Day-2 baseline, Day-1 if your devs ship AI-generated code.** Semgrep is a strong fit for a fund's engineering team that wants policy-as-code: encode your own rules (no eval of untrusted data, required authz, banned crypto) and run them in CI against both human- and AI-written code. The free OSS engine plus per-contributor pricing makes it cost-effective for small teams (sub-50 eng), and self-hosting suits regulated/air-gapped environments. Often paired with [[socket]] for malicious-package coverage. Model-risk relevance is light/indirect — it governs code quality/security, not model behavior or SR 11-7 model risk.
+**Day-2 baseline, Day-1 if your devs ship AI-generated code.** Semgrep is a strong fit for a fund's engineering team that wants policy-as-code: encode your own rules (no eval of untrusted data, required authz, banned crypto) and run them in CI against both human- and AI-written code. The free OSS engine plus per-contributor pricing makes it cost-effective for small teams (sub-50 eng), and self-hosting suits regulated/air-gapped environments. Often paired with [socket](socket.md) for malicious-package coverage. Model-risk relevance is light/indirect — it governs code quality/security, not model behavior or SR 11-7 model risk.
 
 ## Competitors / alternatives
 
-[[snyk]], [[socket]], [[endor-labs]], [[aikido-security]]; GitHub Advanced Security / CodeQL (not yet a page).
+[snyk](snyk.md), [socket](socket.md), [endor-labs](endor-labs.md), [aikido-security](aikido-security.md); GitHub Advanced Security / CodeQL (not yet a page).
 
 ## Open questions / to verify
 
 - Current ARR / customer count (not established here).
-- Depth of container/IaC coverage relative to [[snyk]] (Semgrep is primarily code + dependencies + secrets).
+- Depth of container/IaC coverage relative to [snyk](snyk.md) (Semgrep is primarily code + dependencies + secrets).
 
 ## Sources
 - [Semgrep Business Breakdown & Founding Story — Contrary Research](https://research.contrary.com/company/semgrep) — fetched 2026-06-28 — supports: founded 2017 (r2c), founders, SF HQ, ~$193M total, Series D $100M Feb 2025 (Menlo), product modules, per-contributor pricing; confidence: high

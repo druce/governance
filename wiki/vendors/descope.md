@@ -34,7 +34,7 @@ tags: [ciam, authentication, passwordless, agentic-identity, mcp, non-human-iden
 as an "identity provider for AI agents," handing agents short-lived OAuth credentials to reach
 tools and MCP servers.
 
-**Categories** — [[tool-identity-integration]] (primary), [[non-human-identity]]
+**Categories** — [tool-identity-integration](../categories/tool-identity-integration.md) (primary), [non-human-identity](../categories/non-human-identity.md)
 
 ## What it does
 
@@ -56,9 +56,9 @@ third-party SaaS tools; audit events stream to a SIEM.
 
 ## Where it sits in the stack
 
-Primary category: [[tool-identity-integration]] (the Tool Identity & Integration layer of the
+Primary category: [tool-identity-integration](../categories/tool-identity-integration.md) (the Tool Identity & Integration layer of the
 model/prompt stack) — the layer that gives agents a managed way to authenticate to SaaS tools
-and MCP servers. It also tags into [[non-human-identity]] because it treats agents as managed
+and MCP servers. It also tags into [non-human-identity](../categories/non-human-identity.md) because it treats agents as managed
 identities with their own scoped credentials and lifecycle.
 
 Lethal-trifecta role: it primarily constrains the **egress / action** leg — by scoping and
@@ -75,7 +75,7 @@ between the agent and the tools/zones it calls.
 - **Agent/MCP path:** OAuth 2.1 + PKCE, Dynamic Client Registration (DCR) and CIMD support to
   put protocol-compliant auth in front of internal and external **MCP servers**; per-agent
   tool-level scopes; native hooks for FastMCP, Vercel, and Reflex.
-- **Bring Your Own Auth (BYOA):** layers on top of an existing IdP ([[okta]], Microsoft Entra)
+- **Bring Your Own Auth (BYOA):** layers on top of an existing IdP ([okta](okta.md), Microsoft Entra)
   rather than replacing it — Descope handles the MCP/agent-specific OAuth flows.
 - **Credential vault** for outbound tokens/keys; **SIEM export** of audit events; multi-tenant
   gateway architectures.
@@ -85,15 +85,15 @@ between the agent and the tools/zones it calls.
 Descope's calling card is the **visual, developer-first** approach to auth, and a credible
 **agentic-identity** story shipped early relative to incumbents. Versus nearest neighbors:
 
-- [[stytch]] — the closest comparison: another developer-first auth/CIAM company that also moved
+- [stytch](stytch.md) — the closest comparison: another developer-first auth/CIAM company that also moved
   into agent/MCP auth and "Connected Apps." Descope leans on its no-code flow builder; both
   target the same MCP-auth use case.
-- [[workos]] — developer auth aimed at making apps **enterprise-ready** (SSO/SCIM/directory
+- [workos](workos.md) — developer auth aimed at making apps **enterprise-ready** (SSO/SCIM/directory
   sync); more B2B-enterprise-readiness, less drag-and-drop journey building.
-- [[okta]] — the incumbent workforce/customer IdP (Auth0 for developers). Bigger, broader, but
+- [okta](okta.md) — the incumbent workforce/customer IdP (Auth0 for developers). Bigger, broader, but
   heavier; Descope positions as lighter and as a layer that can sit on top of Okta for the
   agent/MCP piece.
-- [[aembit]] — a pure **non-human / workload identity** play (secretless workload-to-workload
+- [aembit](aembit.md) — a pure **non-human / workload identity** play (secretless workload-to-workload
   access). Aembit comes at agent identity from the NHI/workload side; Descope comes at it from
   the CIAM/app-auth side. Overlap is the agent-to-tool credentialing problem.
 
@@ -120,15 +120,15 @@ need Descope if you are **building your own customer-facing app or internal agen
 and want to outsource the auth layer — or specifically if you are **standing up MCP servers /
 agents** and need to put OAuth-based, least-privilege, revocable access in front of the tools
 they call. For a fund that is mainly a **buyer** of AI assistants (ChatGPT/Claude Enterprise,
-Copilot) and SaaS, identity needs are met by the workforce IdP ([[okta]] / Microsoft Entra) and
+Copilot) and SaaS, identity needs are met by the workforce IdP ([okta](okta.md) / Microsoft Entra) and
 this layer is not required. No direct SR 11-7 / model-risk relevance. If/when the fund's
 engineers do build agents that take actions against internal systems, the agent-identity and
 audit-trail capabilities become relevant — but evaluate it against the workforce-IdP's own
-emerging agent features and against NHI specialists ([[aembit]]) before adding a new vendor.
+emerging agent features and against NHI specialists ([aembit](aembit.md)) before adding a new vendor.
 
 ## Competitors / alternatives
 
-[[stytch]], [[workos]], [[okta]], [[aembit]], [[cyberark]], [[arcade]], [[composio]]
+[stytch](stytch.md), [workos](workos.md), [okta](okta.md), [aembit](aembit.md), [cyberark](cyberark.md), [arcade](arcade.md), [composio](composio.md)
 
 ## Open questions / to verify
 

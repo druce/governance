@@ -27,7 +27,7 @@ tags: [mcp, agent-governance, gateway, soc2]
 
 # MintMCP
 
-> Researched 2026-06-28. Primary category: [[mcp-gateway]]. Young (publicly launched Feb 2026), venture-backed; product detail is good, financials are thin.
+> Researched 2026-06-28. Primary category: [mcp-gateway](../categories/mcp-gateway.md). Young (publicly launched Feb 2026), venture-backed; product detail is good, financials are thin.
 
 **One-liner** — A managed enterprise gateway that sits between AI clients (Claude, Cursor, custom agents) and MCP servers, hosting the servers, handling SSO/credentials, enforcing per-role tool access, and logging every tool call.
 
@@ -43,7 +43,7 @@ The pitch is closing the "shadow AI" gap — developers running unmonitored loca
 
 ## Where it sits in the stack
 
-Primary category: [[mcp-gateway]] (layer: model-prompt / agent tool-access control). It's a **policy and identity layer for agent→tool calls**, not a model firewall.
+Primary category: [mcp-gateway](../categories/mcp-gateway.md) (layer: model-prompt / agent tool-access control). It's a **policy and identity layer for agent→tool calls**, not a model firewall.
 
 Lethal-trifecta role — it touches all three legs, though as a control point rather than deep content inspection:
 - **Egress / sensitive-data exfiltration** — granular authorization (read-only DB access, blocking CRM bulk exports), plus PII/credential-leak detection on tool outputs; can hand off to Bedrock Guardrails, GCP DLP, or Microsoft Purview.
@@ -65,11 +65,11 @@ Trust zones: it's the broker between the agent (yellow) and internal systems / S
 
 MintMCP positions as **managed-and-compliant first**: you get governed MCP access without operating connector infrastructure yourself. That's the main axis separating it from neighbors:
 
-- vs [[ibm-contextforge]] — ContextForge is self-hosted, Apache-2.0 open source you run and customize; MintMCP is the hosted, SOC-2/SSO/SCIM-out-of-the-box alternative (vendor's own comparison; read as marketing).
-- vs [[docker-mcp-gateway]] — Docker's gateway is a developer/runtime packaging-and-isolation tool; MintMCP is an org-level governance/identity layer.
-- vs [[obot]] — the seed bundled "Obot / MintMCP"; both are MCP-gateway plays, but they are **separate companies** (Obot is its own project/vendor). MintMCP leans managed-SaaS + agent monitoring; confirm Obot's posture on its own page.
-- vs [[agentgateway]] — agentgateway is open-source data-plane proxy tech; MintMCP is a managed product with a console, store, and monitoring.
-- vs [[natoma]], [[arcade]], [[pomerium]] — overlapping MCP access-control / agent-identity space; differentiators are managed hosting, Virtual MCP Bundles, and the bundled Agent Monitor.
+- vs [ibm-contextforge](ibm-contextforge.md) — ContextForge is self-hosted, Apache-2.0 open source you run and customize; MintMCP is the hosted, SOC-2/SSO/SCIM-out-of-the-box alternative (vendor's own comparison; read as marketing).
+- vs [docker-mcp-gateway](docker-mcp-gateway.md) — Docker's gateway is a developer/runtime packaging-and-isolation tool; MintMCP is an org-level governance/identity layer.
+- vs [obot](obot.md) — the seed bundled "Obot / MintMCP"; both are MCP-gateway plays, but they are **separate companies** (Obot is its own project/vendor). MintMCP leans managed-SaaS + agent monitoring; confirm Obot's posture on its own page.
+- vs [agentgateway](agentgateway.md) — agentgateway is open-source data-plane proxy tech; MintMCP is a managed product with a console, store, and monitoring.
+- vs [natoma](natoma.md), [arcade](arcade.md), [pomerium](pomerium.md) — overlapping MCP access-control / agent-identity space; differentiators are managed hosting, Virtual MCP Bundles, and the bundled Agent Monitor.
 
 Differentiator to highlight: **Virtual MCP Bundles + SCIM-driven role bundles**, and the **bundled agent-behavior monitor** (not just a gateway).
 
@@ -90,7 +90,7 @@ Differentiator to highlight: **Virtual MCP Bundles + SCIM-driven role bundles**,
 
 ## Competitors / alternatives
 
-[[obot]], [[ibm-contextforge]], [[docker-mcp-gateway]], [[agentgateway]], [[natoma]], [[arcade]], [[pomerium]]
+[obot](obot.md), [ibm-contextforge](ibm-contextforge.md), [docker-mcp-gateway](docker-mcp-gateway.md), [agentgateway](agentgateway.md), [natoma](natoma.md), [arcade](arcade.md), [pomerium](pomerium.md)
 
 ## Open questions / to verify
 
@@ -98,7 +98,7 @@ Differentiator to highlight: **Virtual MCP Bundles + SCIM-driven role bundles**,
 - Founding year and exact incorporation (Dependable AI, Inc.).
 - Self-hosted deployment details — is it full feature parity, and where do credentials live?
 - Native vs delegated guardrails: which detections are MintMCP's own vs Purview/GCP DLP/Bedrock.
-- Relationship/overlap with [[obot]] beyond the seed's bundling — confirm they are unrelated companies.
+- Relationship/overlap with [obot](obot.md) beyond the seed's bundling — confirm they are unrelated companies.
 - SOC 2 Type II report scope and any independent corroboration of compliance claims.
 
 ## Sources
@@ -109,4 +109,4 @@ Differentiator to highlight: **Virtual MCP Bundles + SCIM-driven role bundles**,
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established MintMCP as an independent venture-backed enterprise MCP gateway + agent monitor (managed SaaS, self-host optional), legal name Dependable AI Inc., SF, founders Jiquan Ngiam/Vijay Vasudevan/Bozhi See, publicly launched 2026-02-05, backers Coatue/Hustle Fund/Maven/WVV (amount undisclosed). Set ownership_confidence medium, hedge_fund_fit medium, status researched. Kept category [[mcp-gateway]]. Cached 4 sources.
+- [2026-06-28] Researched; established MintMCP as an independent venture-backed enterprise MCP gateway + agent monitor (managed SaaS, self-host optional), legal name Dependable AI Inc., SF, founders Jiquan Ngiam/Vijay Vasudevan/Bozhi See, publicly launched 2026-02-05, backers Coatue/Hustle Fund/Maven/WVV (amount undisclosed). Set ownership_confidence medium, hedge_fund_fit medium, status researched. Kept category [mcp-gateway](../categories/mcp-gateway.md). Cached 4 sources.

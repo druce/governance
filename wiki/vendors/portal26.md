@@ -46,7 +46,7 @@ The forensic-vault and analytics angle is what separates Portal26's pitch from p
 
 ## Where it sits in the stack
 
-Primary category: [[ai-access-governance]] (model-prompt layer). Portal26 governs the **employee-to-AI-app boundary** — discovering tool usage, applying policy, and recording transactions. It touches all three legs of the lethal trifecta: it sees **untrusted input** (prompts), **sensitive data** (what employees paste in), and **egress** (data leaving to third-party AI tools), though its differentiated strength is the visibility/forensics record rather than deep inline content inspection. Trust zones: it sits at the **yellow/red boundary**, between the trusted enterprise (green) and third-party SaaS AI tools (red).
+Primary category: [ai-access-governance](../categories/ai-access-governance.md) (model-prompt layer). Portal26 governs the **employee-to-AI-app boundary** — discovering tool usage, applying policy, and recording transactions. It touches all three legs of the lethal trifecta: it sees **untrusted input** (prompts), **sensitive data** (what employees paste in), and **egress** (data leaving to third-party AI tools), though its differentiated strength is the visibility/forensics record rather than deep inline content inspection. Trust zones: it sits at the **yellow/red boundary**, between the trusted enterprise (green) and third-party SaaS AI tools (red).
 
 ## Deployment & architecture
 
@@ -57,10 +57,10 @@ Primary category: [[ai-access-governance]] (model-prompt layer). Portal26 govern
 
 ## Positioning & differentiators
 
-- **vs. [[witnessai]]** — WitnessAI is built around an inline proxy/observability-and-control plane; Portal26 leans harder on discovery, forensic audit (FIPS vault), and adoption analytics.
-- **vs. [[harmonic-security]]** — Harmonic focuses on inline data-protection/DLP for GenAI; Portal26 is broader-governance + forensics, less a pure data-leak inspector.
-- **vs. [[aurascape]] / [[nudge-security]]** — Aurascape and Nudge emphasize discovery of AI/SaaS usage; Portal26 overlaps on Shadow-AI discovery but adds the audit-vault and ROI/strategy modules.
-- **vs. [[reco]]** — Reco is SaaS-security-posture-centric; Portal26 is GenAI-usage-centric.
+- **vs. [witnessai](witnessai.md)** — WitnessAI is built around an inline proxy/observability-and-control plane; Portal26 leans harder on discovery, forensic audit (FIPS vault), and adoption analytics.
+- **vs. [harmonic-security](harmonic-security.md)** — Harmonic focuses on inline data-protection/DLP for GenAI; Portal26 is broader-governance + forensics, less a pure data-leak inspector.
+- **vs. [aurascape](aurascape.md) / [nudge-security](nudge-security.md)** — Aurascape and Nudge emphasize discovery of AI/SaaS usage; Portal26 overlaps on Shadow-AI discovery but adds the audit-vault and ROI/strategy modules.
+- **vs. [reco](reco.md)** — Reco is SaaS-security-posture-centric; Portal26 is GenAI-usage-centric.
 - Distinctive claim: the **NIST FIPS 140-2 certified encrypted forensic vault** for complete GenAI transaction storage. (Vendor marketing claim — verify the certification scope before relying on it.)
 
 ## Ownership, funding & M&A
@@ -81,7 +81,7 @@ Primary category: [[ai-access-governance]] (model-prompt layer). Portal26 govern
 
 ## Competitors / alternatives
 
-[[witnessai]] · [[harmonic-security]] · [[aurascape]] · [[nudge-security]] · [[reco]] — plus broader SSE/CASB players adding AI controls, and incumbents like CrowdStrike (which acquired Pangea, Sept 2025) moving into AI prompt security.
+[witnessai](witnessai.md) · [harmonic-security](harmonic-security.md) · [aurascape](aurascape.md) · [nudge-security](nudge-security.md) · [reco](reco.md) — plus broader SSE/CASB players adding AI controls, and incumbents like CrowdStrike (which acquired Pangea, Sept 2025) moving into AI prompt security.
 
 ## Open questions / to verify
 

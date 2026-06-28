@@ -27,32 +27,32 @@ tags: [edr, xdr, singularity, purple-ai, ai-security, genai]
 
 # SentinelOne
 
-> Primary category: [[edr-xdr]]. Also [[ai-runtime-security]] and [[ai-spm]] (via the Prompt Security acquisition).
+> Primary category: [edr-xdr](../categories/edr-xdr.md). Also [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-spm](../categories/ai-spm.md) (via the Prompt Security acquisition).
 
-**One-liner** — The main publicly traded EDR/XDR challenger to [[crowdstrike]] and [[microsoft-defender]], whose Singularity platform now extends into GenAI security after acquiring [[prompt-security]].
+**One-liner** — The main publicly traded EDR/XDR challenger to [crowdstrike](crowdstrike.md) and [microsoft-defender](microsoft-defender.md), whose Singularity platform now extends into GenAI security after acquiring [prompt-security](prompt-security.md).
 
 ## What it does
-SentinelOne's Singularity is an autonomous, AI-driven endpoint/extended detection and response platform ([[edr-xdr]]), spanning endpoint, cloud, identity, and data/SIEM (via the Scalyr acquisition), with **Purple AI** as its agentic SOC analyst. In 2025 it moved into AI security by acquiring **Prompt Security**, adding GenAI runtime protection — shadow-AI discovery, prompt-injection defense, and data-leakage prevention across browsers, desktop apps, and APIs — which maps to [[ai-runtime-security]] and [[ai-spm]].
+SentinelOne's Singularity is an autonomous, AI-driven endpoint/extended detection and response platform ([edr-xdr](../categories/edr-xdr.md)), spanning endpoint, cloud, identity, and data/SIEM (via the Scalyr acquisition), with **Purple AI** as its agentic SOC analyst. In 2025 it moved into AI security by acquiring **Prompt Security**, adding GenAI runtime protection — shadow-AI discovery, prompt-injection defense, and data-leakage prevention across browsers, desktop apps, and APIs — which maps to [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-spm](../categories/ai-spm.md).
 
 ## Where it sits in the stack
-Foundation layer for its core ([[edr-xdr]], with SIEM/[[siem-soc]] and agentic SOC adjacency). With Prompt Security folded in, it reaches the model/prompt layer ([[ai-runtime-security]], [[ai-spm]], [[ai-access-governance]]), addressing the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta. Spans green (managed endpoints) into yellow (AI app usage) trust zones.
+Foundation layer for its core ([edr-xdr](../categories/edr-xdr.md), with SIEM/[siem-soc](../categories/siem-soc.md) and agentic SOC adjacency). With Prompt Security folded in, it reaches the model/prompt layer ([ai-runtime-security](../categories/ai-runtime-security.md), [ai-spm](../categories/ai-spm.md), [ai-access-governance](../categories/ai-access-governance.md)), addressing the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta. Spans green (managed endpoints) into yellow (AI app usage) trust zones.
 
 ## Deployment & architecture
 SaaS control plane with a single autonomous endpoint agent; API-first. Prompt Security's protection runs across browser, desktop, and API channels — relevant for governing workforce GenAI use without an inline network proxy. Integrates with SIEM/SOC, IdP, and cloud platforms.
 
 ## Positioning & differentiators
-- Positions as the autonomous/AI-native EDR alternative to [[crowdstrike]]; usually the #2 considered in EDR bake-offs alongside [[microsoft-defender]].
-- Its AI-security M&A mirrors CrowdStrike's almost beat-for-beat: SentinelOne bought [[prompt-security]] (GenAI runtime) the way CrowdStrike bought [[pangea]].
-- For the AI-security overlap, nearest neighbors are [[prompt-security]] (now itself), [[prisma-airs]], [[cisco-ai-defense]], [[hiddenlayer]], [[witnessai]].
+- Positions as the autonomous/AI-native EDR alternative to [crowdstrike](crowdstrike.md); usually the #2 considered in EDR bake-offs alongside [microsoft-defender](microsoft-defender.md).
+- Its AI-security M&A mirrors CrowdStrike's almost beat-for-beat: SentinelOne bought [prompt-security](prompt-security.md) (GenAI runtime) the way CrowdStrike bought [pangea](pangea.md).
+- For the AI-security overlap, nearest neighbors are [prompt-security](prompt-security.md) (now itself), [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md), [hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md).
 
 ## Ownership, funding & M&A
-Public company, NYSE: S, IPO June 2021; HQ Mountain View, CA; founded 2013 (Tomer Weingarten et al.). The seed flagged "acq Prompt Security" — **CONFIRMED**: announced 2025-08-05, combination of cash and stock, reported ~$250M (Calcalist; not officially disclosed), expected to close in fiscal Q3 FY2026 (SentinelOne later announced completion). Same announcement also covered the **Observo AI** (data pipeline) acquisition. See [[prompt-security]]. Confidence: high on the deal; medium on price.
+Public company, NYSE: S, IPO June 2021; HQ Mountain View, CA; founded 2013 (Tomer Weingarten et al.). The seed flagged "acq Prompt Security" — **CONFIRMED**: announced 2025-08-05, combination of cash and stock, reported ~$250M (Calcalist; not officially disclosed), expected to close in fiscal Q3 FY2026 (SentinelOne later announced completion). Same announcement also covered the **Observo AI** (data pipeline) acquisition. See [prompt-security](prompt-security.md). Confidence: high on the deal; medium on price.
 
 ## CTO / hedge-fund lens
 Day-1 foundational as an EDR/XDR option — the leading independent alternative if you don't want CrowdStrike or Defender. The GenAI-security additions (Prompt Security, Purple AI) are a Day-2 consolidation benefit attractive to existing SentinelOne shops wanting AI runtime guardrails from their EDR vendor. Not an SR 11-7/model-risk governance tool; it's security infrastructure. Fits enterprise and mid-market.
 
 ## Competitors / alternatives
-[[crowdstrike]], [[microsoft-defender]], [[palo-alto-networks]] (Cortex), [[cisco]]. AI-security overlap: [[prisma-airs]], [[cisco-ai-defense]], [[hiddenlayer]], [[witnessai]], [[pangea]].
+[crowdstrike](crowdstrike.md), [microsoft-defender](microsoft-defender.md), [palo-alto-networks](palo-alto-networks.md) (Cortex), [cisco](cisco.md). AI-security overlap: [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md), [hiddenlayer](hiddenlayer.md), [witnessai](witnessai.md), [pangea](pangea.md).
 
 ## Open questions / to verify
 - Final Prompt Security purchase price (press-reported ~$250M) and confirmed close date.

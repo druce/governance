@@ -31,11 +31,11 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 **What it does** — Radiant ingests alerts from your existing tooling and uses generative AI / LLMs to triage, investigate, and decide on each one, then automates containment, remediation, and escalation approvals. It markets itself as handling **every alert type across all sources with no playbooks required**, deployed via API in minutes, claiming up to ~95% reduction in analyst workload. The job is the same as its peers: collapse the Tier-1 triage burden and speed response.
 
-**Where it sits in the stack** — [[ai-soc-analysts]], Foundation layer; automation/decision layer over [[siem-soc]] and [[edr-xdr]]. SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation/decision layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
 
 **Deployment & architecture** — SaaS, API-deployed; reads from SIEM/EDR/cloud/identity sources and writes investigations/actions back. Emerged from stealth at Black Hat 2023.
 
-**Positioning & differentiators** — Leadership drawn from former Imperva and Exabeam executives (SIEM/SOC pedigree). Differentiates on the "no-playbook, every-alert-type" claim and tight investigation→response automation. Nearest neighbors: [[prophet-security]], [[dropzone-ai]], [[7ai]], [[simbian]], [[torq]].
+**Positioning & differentiators** — Leadership drawn from former Imperva and Exabeam executives (SIEM/SOC pedigree). Differentiates on the "no-playbook, every-alert-type" claim and tight investigation→response automation. Nearest neighbors: [prophet-security](prophet-security.md), [dropzone-ai](dropzone-ai.md), [7ai](7ai.md), [simbian](simbian.md), [torq](torq.md).
 
 **Ownership, funding & M&A** — Independent, VC-backed. $15M Series A (Nov 2023) led by Next47 (Siemens' venture arm), with Lightspeed Venture Partners, Acrew Capital, Uncorrelated Ventures, Jibe Ventures; total ~$22.5M. No M&A; no seed acquisition flag.
 
@@ -43,9 +43,9 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 HQ: SecurityWeek lists San Francisco; CB Insights lists Milpitas, CA — both SF Bay Area (soft discrepancy, recorded as "SF Bay Area").
 
-**CTO / hedge-fund lens** — **Day-2.** Standard for this category: needs an existing SIEM/EDR and real alert volume. Smaller raise / older vintage than [[7ai]] or [[torq]] — evaluate runway and roadmap. Fits a mid-to-large shop with an in-house SOC; a 50-person fund would more likely get this via an MDR. No direct SR 11-7 angle; diligence autonomous-action scope and data handling.
+**CTO / hedge-fund lens** — **Day-2.** Standard for this category: needs an existing SIEM/EDR and real alert volume. Smaller raise / older vintage than [7ai](7ai.md) or [torq](torq.md) — evaluate runway and roadmap. Fits a mid-to-large shop with an in-house SOC; a 50-person fund would more likely get this via an MDR. No direct SR 11-7 angle; diligence autonomous-action scope and data handling.
 
-**Competitors / alternatives** — [[prophet-security]], [[dropzone-ai]], [[7ai]], [[simbian]], [[torq]].
+**Competitors / alternatives** — [prophet-security](prophet-security.md), [dropzone-ai](dropzone-ai.md), [7ai](7ai.md), [simbian](simbian.md), [torq](torq.md).
 
 **Open questions / to verify** — Exact HQ city; precise total funding (profiles vary $15M–$22.5M); any 2024-2025 raise; founder names; how autonomous the remediation actions are by default.
 

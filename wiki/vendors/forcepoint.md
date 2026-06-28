@@ -34,7 +34,7 @@ tags: [dlp, sase, sse, data-first-sase, private-equity]
 ex-Raytheon) that wraps data classification and DLP into a cloud-delivered SASE platform;
 its commercial arm is owned by Francisco Partners.
 
-**Categories** — [[network-security-sase]] (primary), [[dlp]]
+**Categories** — [network-security-sase](../categories/network-security-sase.md) (primary), [dlp](../categories/dlp.md)
 
 ## What it does
 Forcepoint's core is data security — enterprise DLP across endpoint, network, cloud, email
@@ -44,7 +44,7 @@ adaptive protection that adjusts enforcement to user behavior. For AI, the relev
 its DLP heritage: classifying and blocking sensitive data before it leaves to cloud or AI apps.
 
 ## Where it sits in the stack
-Foundation-layer [[network-security-sase]] with a strong [[dlp]] role. On the lethal
+Foundation-layer [network-security-sase](../categories/network-security-sase.md) with a strong [dlp](../categories/dlp.md) role. On the lethal
 trifecta it addresses the **sensitive-data** leg (classification + DLP) and the **egress**
 leg (controlling data flow to cloud/AI destinations). Data-control layer, not a model guardrail.
 
@@ -52,14 +52,14 @@ leg (controlling data flow to cloud/AI destinations). Data-control layer, not a 
 Mixed: cloud-delivered SASE/SSE plus mature on-prem and endpoint DLP agents (a longer
 on-prem/self-hosted heritage than cloud-native peers). Inline proxy for web/CASB, API for
 SaaS, endpoint agents for data-in-use. Integrations: IdP, SIEM, classification engines.
-AI-specific access-governance features are less prominently marketed than [[zscaler]] /
-[[netskope]]; its pitch is data protection that incidentally covers AI egress.
+AI-specific access-governance features are less prominently marketed than [zscaler](zscaler.md) /
+[netskope](netskope.md); its pitch is data protection that incidentally covers AI egress.
 
 ## Positioning & differentiators
 Known for deep, enterprise-grade DLP and data classification — often chosen by data-
-protection-led and regulated/government-adjacent buyers. Differs from [[zscaler]] /
-[[netskope]] by leading with data security rather than network scale. Nearest neighbors:
-[[zscaler]], [[netskope]], [[palo-alto-networks]], [[cisco]], [[cato-networks]]. As a PE-
+protection-led and regulated/government-adjacent buyers. Differs from [zscaler](zscaler.md) /
+[netskope](netskope.md) by leading with data security rather than network scale. Nearest neighbors:
+[zscaler](zscaler.md), [netskope](netskope.md), [palo-alto-networks](palo-alto-networks.md), [cisco](cisco.md), [cato-networks](cato-networks.md). As a PE-
 owned business it is less in the public eye than its newly/long-public rivals.
 
 ## Ownership, funding & M&A
@@ -79,16 +79,16 @@ Day-1 if data protection / DLP is your driving requirement (preventing sensitive
 regulated data from leaving, including into AI prompts and unsanctioned SaaS) and you want
 it bundled with SASE. Its DLP depth and classification suit compliance-heavy shops. As a
 PE-owned vendor, weigh roadmap/independence considerations vs the publicly-traded
-[[zscaler]]/[[netskope]]. No SR 11-7 / model-risk role; this is data-egress control. For a
+[zscaler](zscaler.md)/[netskope](netskope.md). No SR 11-7 / model-risk role; this is data-egress control. For a
 small fund, full Forcepoint DLP+SASE may be more than needed.
 
 ## Competitors / alternatives
-[[zscaler]], [[netskope]], [[palo-alto-networks]], [[cisco]], [[cato-networks]].
+[zscaler](zscaler.md), [netskope](netskope.md), [palo-alto-networks](palo-alto-networks.md), [cisco](cisco.md), [cato-networks](cato-networks.md).
 
 ## Open questions / to verify
 - Current product depth of Forcepoint's AI-specific access governance vs DLP-by-proxy.
 - Any change of ownership / sale of the commercial business since 2023 (none found as of 2026-06-28).
-- Strength of its DSPM/data-classification vs [[dspm]] specialists.
+- Strength of its DSPM/data-classification vs [dspm](../categories/dspm.md) specialists.
 
 ## Sources
 - [TPG Completes Acquisition of Forcepoint G2CI from Francisco Partners — Forcepoint newsroom](https://www.forcepoint.com/newsroom/2023/tpg-completes-acquisition-forcepoint-global-governments-and-critical-infrastructure) — fetched 2026-06-28 — supports: 2023-10-02 G2CI sale to TPG; Francisco Partners retains commercial business; confidence: high.

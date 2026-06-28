@@ -34,7 +34,7 @@ tags: [sase, sse, casb, dlp, dspm, shadow-ai, inline-proxy]
 data-loss prevention, giving it strong visibility into cloud and AI app usage and the
 sensitive data flowing into them; it IPO'd on Nasdaq in September 2025.
 
-**Categories** — [[network-security-sase]] (primary), [[dlp]], [[dspm]], [[ai-access-governance]]
+**Categories** — [network-security-sase](../categories/network-security-sase.md) (primary), [dlp](../categories/dlp.md), [dspm](../categories/dspm.md), [ai-access-governance](../categories/ai-access-governance.md)
 
 ## What it does
 Netskope One is a unified, cloud-delivered platform combining secure web gateway,
@@ -45,8 +45,8 @@ policies per user, and running inline DLP on prompts to stop sensitive data leav
 ChatGPT-style interactions. It markets DSPM-style data discovery/classification alongside.
 
 ## Where it sits in the stack
-Foundation-layer [[network-security-sase]], with [[dlp]], [[dspm]], and
-[[ai-access-governance]] roles served from the same platform. On the lethal trifecta it
+Foundation-layer [network-security-sase](../categories/network-security-sase.md), with [dlp](../categories/dlp.md), [dspm](../categories/dspm.md), and
+[ai-access-governance](../categories/ai-access-governance.md) roles served from the same platform. On the lethal trifecta it
 covers the **egress** leg (where data can flow / blocking unsanctioned AI) and the
 **sensitive-data** leg (inline + API DLP, data classification). Perimeter/data-control,
 not a model-prompt guardrail.
@@ -59,11 +59,11 @@ discovery, user/group access policies, prompt DLP, plus DSPM data classification
 Integrations: IdP/SSO, SIEM/SOC, and SaaS APIs.
 
 ## Positioning & differentiators
-Closest peer to [[zscaler]]; Netskope is generally seen as more CASB/DLP/data-centric
+Closest peer to [zscaler](zscaler.md); Netskope is generally seen as more CASB/DLP/data-centric
 (its origin), Zscaler as more secure-web-gateway/proxy-scale-centric — though both now
-converge on full SSE/SASE plus AI access. Differs from pure [[dspm]] tools by bundling
-data posture into an inline enforcement platform. Other neighbors: [[palo-alto-networks]],
-[[cisco]], [[cato-networks]], [[forcepoint]]. Against dedicated AI-runtime guardrail
+converge on full SSE/SASE plus AI access. Differs from pure [dspm](../categories/dspm.md) tools by bundling
+data posture into an inline enforcement platform. Other neighbors: [palo-alto-networks](palo-alto-networks.md),
+[cisco](cisco.md), [cato-networks](cato-networks.md), [forcepoint](forcepoint.md). Against dedicated AI-runtime guardrail
 vendors, its AI governance is access/data-flow control, not deep prompt-injection defense.
 
 ## Ownership, funding & M&A
@@ -78,17 +78,17 @@ net losses (~$170M over six months). IPO verified against IPO-tracker and press 
 Day-1 if you want an SSE/SASE layer with especially strong CASB/DLP and data-classification
 for controlling cloud and AI app usage; the data-centric heritage makes it attractive where
 preventing sensitive data egress (into AI prompts, unsanctioned SaaS) is the priority. Like
-[[zscaler]], it's an enterprise-scale platform — powerful but heavier than a 50-person fund
+[zscaler](zscaler.md), it's an enterprise-scale platform — powerful but heavier than a 50-person fund
 typically needs; smaller shops may prefer a lighter SSE plus a focused DLP/browser control.
 No SR 11-7 / model-risk validation role; governs access to and data flow around AI.
 
 ## Competitors / alternatives
-[[zscaler]], [[palo-alto-networks]], [[cisco]], [[cato-networks]], [[forcepoint]].
+[zscaler](zscaler.md), [palo-alto-networks](palo-alto-networks.md), [cisco](cisco.md), [cato-networks](cato-networks.md), [forcepoint](forcepoint.md).
 
 ## Open questions / to verify
 - Independent benchmarking of AI-prompt DLP and DSPM classification accuracy.
 - Post-IPO financial trajectory / path to profitability (as of mid-2026).
-- Depth of DSPM vs dedicated [[dspm]] specialists.
+- Depth of DSPM vs dedicated [dspm](../categories/dspm.md) specialists.
 
 ## Sources
 - [Netskope prices IPO at $19 (NTSK) — IPOScoop](https://www.iposcoop.com/the-ipo-buzz-netskope-ntsk-prices-ipo-at-19-top-of-range/) — fetched 2026-06-28 — supports: IPO date/price/shares/raise/ticker NTSK; confidence: high.

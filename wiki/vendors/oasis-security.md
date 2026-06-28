@@ -35,7 +35,7 @@ last_updated: 2026-06-28
 (service accounts, API keys, tokens, bots, workloads), and has extended that into purpose-built
 identity governance for autonomous AI agents.
 
-**Categories** — [[non-human-identity]]
+**Categories** — [non-human-identity](../categories/non-human-identity.md)
 
 ## What it does
 
@@ -57,13 +57,13 @@ full audit trail).
 
 ## Where it sits in the stack
 
-Primary category: [[non-human-identity]] (Foundation layer). Oasis governs the identities that
+Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Oasis governs the identities that
 machines and agents use, which is upstream plumbing rather than an AI-specific control. In
 lethal-trifecta terms it mainly hardens the **sensitive-data** and **egress** legs indirectly: by
 enforcing least privilege and just-in-time, short-lived credentials it limits what a compromised
 workload or a misbehaving agent can reach and exfiltrate. It does not inspect prompts or model
 output, so it does not address the untrusted-input leg. Its AAM line reaches into agent-governance
-territory adjacent to [[ai-spm]] and authorization layers ([[authorization-engine]]), but its
+territory adjacent to [ai-spm](../categories/ai-spm.md) and authorization layers ([authorization-engine](../categories/authorization-engine.md)), but its
 spine remains identity governance, not runtime prompt security.
 
 ## Deployment & architecture
@@ -85,14 +85,14 @@ Oasis is one of the category-defining NHI startups and is known for an agentless
 discovery+remediation platform and an early, aggressive pivot to **agent identity** (AAM). It
 competes with a crowded NHI field:
 
-- [[token-security]] and [[entro-security]] — NHI discovery/posture and secrets-security peers;
+- [token-security](token-security.md) and [entro-security](entro-security.md) — NHI discovery/posture and secrets-security peers;
   Entro leans secrets-centric, Token leans machine-identity-centric.
-- [[clutch-security]] — NHI lifecycle/security peer.
-- [[astrix-security]] — closest direct rival on NHI + agent identity (note Astrix carries a seed
+- [clutch-security](clutch-security.md) — NHI lifecycle/security peer.
+- [astrix-security](astrix-security.md) — closest direct rival on NHI + agent identity (note Astrix carries a seed
   flag of acquisition by Cisco — verify on its own page).
-- [[aembit]] — adjacent but architecturally different: a workload IAM / access "broker" that brokers
+- [aembit](aembit.md) — adjacent but architecturally different: a workload IAM / access "broker" that brokers
   credentials at access time, vs Oasis's discover/govern/posture model.
-- [[cyberark]] — the incumbent identity-security platform (secrets via Conjur, plus NHI and machine
+- [cyberark](cyberark.md) — the incumbent identity-security platform (secrets via Conjur, plus NHI and machine
   identity); the big-vendor consolidation threat to point NHI startups.
 
 Oasis's differentiator pitch is intent-aware, lifecycle-wide governance ("access control that
@@ -133,21 +133,21 @@ model-risk mapping here; this is a security/identity control, not a model-govern
 
 Fit caveats: Oasis sells primarily to **Fortune 500 / large enterprise**, so a 50-person fund may
 find it heavier and pricier than needed, and may get partial NHI coverage from an existing
-[[cyberark]] footprint or cloud-native IAM. The agentless SaaS model is the friendliest part of the
+[cyberark](cyberark.md) footprint or cloud-native IAM. The agentless SaaS model is the friendliest part of the
 deployment story. A mid/large asset manager already running many service accounts across
 Snowflake/Databricks/GitHub and piloting agents is the natural buyer.
 
 ## Competitors / alternatives
 
-[[astrix-security]], [[token-security]], [[entro-security]], [[clutch-security]], [[aembit]],
-[[cyberark]], [[silverfort]], [[natoma]]
+[astrix-security](astrix-security.md), [token-security](token-security.md), [entro-security](entro-security.md), [clutch-security](clutch-security.md), [aembit](aembit.md),
+[cyberark](cyberark.md), [silverfort](silverfort.md), [natoma](natoma.md)
 
 ## Open questions / to verify
 
 - Exact cumulative funding ($190M vs ~$195M) and precise structure of the May-2024 $35M extension.
 - Founding year 2022 vs 2023 (use 2022 per vendor; TechCrunch implied later).
 - Real-world maturity/adoption of AAM (launched 2025-11) vs marketing; whether "first" agentic
-  identity product holds up against [[astrix-security]] and others.
+  identity product holds up against [astrix-security](astrix-security.md) and others.
 - Whether any on-prem/self-hosted option exists or it is SaaS-only.
 - Pricing model and minimum viable deployment for a mid-market shop.
 

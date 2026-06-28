@@ -24,7 +24,7 @@ Employee confidential, Legal privileged, IP, MNPI, PII — and *how exposed* it 
 
 You cannot protect, or decide what an AI model is allowed to retrieve, data you
 have not found and classified. DSPM is the map that every downstream data control
-([[dlp]], [[data-access-governance]], [[entitlement-aware-rag]]) reads from.
+([dlp](dlp.md), [data-access-governance](data-access-governance.md), [entitlement-aware-rag](entitlement-aware-rag.md)) reads from.
 
 ## When you need it
 
@@ -48,36 +48,36 @@ in the data layer works well without it.
 
 Broad-platform / data-governance-led:
 
-- [[microsoft-purview]] — native classification + labeling across the Microsoft
-  estate; default for M365/Azure-heavy shops (also does [[dlp]]).
-- [[bigid]] — discovery and classification breadth across structured/unstructured;
+- [microsoft-purview](../vendors/microsoft-purview.md) — native classification + labeling across the Microsoft
+  estate; default for M365/Azure-heavy shops (also does [dlp](dlp.md)).
+- [bigid](../vendors/bigid.md) — discovery and classification breadth across structured/unstructured;
   privacy and data-governance heritage.
-- [[securiti]] — data command-center spanning DSPM, privacy, and AI governance.
-- [[collibra]] — data-catalog/governance lineage; more cataloging than security posture.
-- [[immuta]] — data-access policy and governance for analytic data platforms.
+- [securiti](../vendors/securiti.md) — data command-center spanning DSPM, privacy, and AI governance.
+- [collibra](../vendors/collibra.md) — data-catalog/governance lineage; more cataloging than security posture.
+- [immuta](../vendors/immuta.md) — data-access policy and governance for analytic data platforms.
 
 Cloud-native DSPM:
 
-- [[cyera]] — AI-driven data classification; spans DSPM, [[dlp]], and
-  [[data-access-governance]].
-- [[sentra]] — cloud DSPM with data-access context.
-- [[normalyze]] — cloud-data security posture (seed flags acquisition — see below).
-- [[wiz]] — DSPM as part of a broader cloud-security platform (also [[ai-spm]]).
-- [[bedrock-security]] — data-store discovery and posture.
-- [[symmetry-systems]] — data-store-centric posture and access analysis.
-- [[concentric-ai]] — AI-based classification of unstructured data (also
-  [[data-access-governance]]).
-- [[rubrik]] — DSPM bolted onto data-resilience/backup footprint.
+- [cyera](../vendors/cyera.md) — AI-driven data classification; spans DSPM, [dlp](dlp.md), and
+  [data-access-governance](data-access-governance.md).
+- [sentra](../vendors/sentra.md) — cloud DSPM with data-access context.
+- [normalyze](../vendors/normalyze.md) — cloud-data security posture (seed flags acquisition — see below).
+- [wiz](../vendors/wiz.md) — DSPM as part of a broader cloud-security platform (also [ai-spm](ai-spm.md)).
+- [bedrock-security](../vendors/bedrock-security.md) — data-store discovery and posture.
+- [symmetry-systems](../vendors/symmetry-systems.md) — data-store-centric posture and access analysis.
+- [concentric-ai](../vendors/concentric-ai.md) — AI-based classification of unstructured data (also
+  [data-access-governance](data-access-governance.md)).
+- [rubrik](../vendors/rubrik.md) — DSPM bolted onto data-resilience/backup footprint.
 
 Cross-listed:
 
-- [[onetrust]] — data discovery/classification within a broader GRC/privacy suite.
-- [[netskope]] — DSPM as part of its SSE/data-protection platform.
+- [onetrust](../vendors/onetrust.md) — data discovery/classification within a broader GRC/privacy suite.
+- [netskope](../vendors/netskope.md) — DSPM as part of its SSE/data-protection platform.
 
 ## Consolidation / M&A dynamics
 
-- [[normalyze]] — acquired by Proofpoint (per seed; unverified — to confirm in research).
-- [[wiz]] — acquired by Google (per seed; unverified — to confirm in research).
+- [normalyze](../vendors/normalyze.md) — acquired by Proofpoint (per seed; unverified — to confirm in research).
+- [wiz](../vendors/wiz.md) — acquired by Google (per seed; unverified — to confirm in research).
 
 Beyond the specific flags, DSPM is consolidating in two directions: cloud-security
 platforms (Wiz, Netskope) absorbing it as a feature, and data-governance/privacy
@@ -85,13 +85,13 @@ suites (OneTrust, Securiti, Collibra) folding it in alongside cataloging.
 
 ## Adjacent categories
 
-- [[dlp]] — DSPM finds and labels data at rest; DLP enforces at the egress moment.
+- [dlp](dlp.md) — DSPM finds and labels data at rest; DLP enforces at the egress moment.
   The CSV merges them; we keep them split (see Survey notes).
-- [[data-access-governance]] — consumes DSPM classification to right-size *who can
+- [data-access-governance](data-access-governance.md) — consumes DSPM classification to right-size *who can
   reach* the sensitive data; several vendors do both.
-- [[entitlement-aware-rag]] — relies on classification/labels so an AI assistant
+- [entitlement-aware-rag](entitlement-aware-rag.md) — relies on classification/labels so an AI assistant
   never retrieves data the user could not see.
-- [[ai-spm]] — posture management for AI assets, conceptually parallel to DSPM for data.
+- [ai-spm](ai-spm.md) — posture management for AI assets, conceptually parallel to DSPM for data.
 
 ## Survey
 
@@ -107,7 +107,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 
 **Notes for survey design.**
 - The seed CSV asks one merged question (`DSPM / Data Governance / DLP`). Per
-  taxonomy gap **D2** we split it into DSPM (this page) and [[dlp]]. Several
+  taxonomy gap **D2** we split it into DSPM (this page) and [dlp](dlp.md). Several
   vendors — Cyera, Sentra, Concentric AI, Microsoft Purview, Netskope — legitimately
   answer *both* questions; expect respondents to tick the same vendor on both pages,
   and note that on the DLP page too.
@@ -122,7 +122,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 
 - Where does data *cataloging/governance* (Collibra, Immuta) end and security *posture*
   begin? They sit on this page for now but lean toward a governance cut.
-- Overlap with [[data-access-governance]] is heavy (Cyera, Sentra, Concentric, Immuta
+- Overlap with [data-access-governance](data-access-governance.md) is heavy (Cyera, Sentra, Concentric, Immuta
   appear on both) — candidate for a future merge or explicit primary/secondary split.
 - The CSV merge (DSPM+DLP+governance) vs the doc's split is the core open tension;
   resolved here in favor of the doc spine but flagged for survey design.

@@ -29,15 +29,15 @@ tags: [aws, enterprise-assistant, rag, generative-ai]
 
 **One-liner** — AWS's managed enterprise AI assistant: a generative-AI chat/RAG layer over your enterprise content, with retrieval that honors each user's existing source-system permissions and a contractual no-training commitment, delivered as a SaaS service inside your AWS account boundary.
 
-**Categories** — [[enterprise-ai-assistant]] (primary), [[entitlement-aware-rag]]
+**Categories** — [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) (primary), [entitlement-aware-rag](../categories/entitlement-aware-rag.md)
 
 ## What it does
 
-Amazon Q Business is a fully managed generative-AI assistant for the workforce. Employees ask questions in natural language and get synthesized answers, summaries, and actions grounded in the company's own documents and applications — wikis, file shares, ticketing, CRM, email, and 40+ connectors. It is AWS's answer to Microsoft 365 Copilot, [[gemini-enterprise]], [[glean]], and [[openai-chatgpt-enterprise]]. The draw for an AWS-centric shop is that the index, the retrieval, and the model inference all run as an AWS service governed by IAM, CloudTrail, and AWS's compliance envelope, rather than a third-party SaaS you have to onboard through vendor risk from scratch.
+Amazon Q Business is a fully managed generative-AI assistant for the workforce. Employees ask questions in natural language and get synthesized answers, summaries, and actions grounded in the company's own documents and applications — wikis, file shares, ticketing, CRM, email, and 40+ connectors. It is AWS's answer to Microsoft 365 Copilot, [gemini-enterprise](gemini-enterprise.md), [glean](glean.md), and [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md). The draw for an AWS-centric shop is that the index, the retrieval, and the model inference all run as an AWS service governed by IAM, CloudTrail, and AWS's compliance envelope, rather than a third-party SaaS you have to onboard through vendor risk from scratch.
 
 ## Where it sits in the stack
 
-UX layer — the chatbot people actually use ([[enterprise-ai-assistant]]) — but its defining governance feature is entitlement-aware retrieval ([[entitlement-aware-rag]]), so it spans both. Lethal-trifecta role: its main exposure is the **sensitive-data** leg — it ingests and surfaces internal documents, so the controls that matter are (a) not leaking content to a user who shouldn't see it, and (b) not leaking content to a model trainer. Q Business's permission-aware retrieval and no-training stance are aimed squarely at both. It is not a network/egress control and not an untrusted-input firewall; pair it with [[ai-access-governance]] / [[dlp]] for shadow-AI and exfiltration concerns.
+UX layer — the chatbot people actually use ([enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)) — but its defining governance feature is entitlement-aware retrieval ([entitlement-aware-rag](../categories/entitlement-aware-rag.md)), so it spans both. Lethal-trifecta role: its main exposure is the **sensitive-data** leg — it ingests and surfaces internal documents, so the controls that matter are (a) not leaking content to a user who shouldn't see it, and (b) not leaking content to a model trainer. Q Business's permission-aware retrieval and no-training stance are aimed squarely at both. It is not a network/egress control and not an untrusted-input firewall; pair it with [ai-access-governance](../categories/ai-access-governance.md) / [dlp](../categories/dlp.md) for shadow-AI and exfiltration concerns.
 
 ## Deployment & architecture
 
@@ -51,7 +51,7 @@ UX layer — the chatbot people actually use ([[enterprise-ai-assistant]]) — b
 ## Positioning & differentiators
 
 - **No-training commitment (the headline for a CTO).** Per AWS docs: *"Amazon Q Business does not use customer data for service improvement or for improving underlying LLMs."* Unambiguous and primary-sourced.
-- **Native permission-aware RAG.** Unlike a bare ChatGPT/Claude deployment where you bolt on retrieval, Q Business's connectors enforce source ACLs out of the box — its closest peers here are [[glean]] and [[microsoft-365-copilot]] (Graph), not the raw frontier-model assistants.
+- **Native permission-aware RAG.** Unlike a bare ChatGPT/Claude deployment where you bolt on retrieval, Q Business's connectors enforce source ACLs out of the box — its closest peers here are [glean](glean.md) and [microsoft-365-copilot](microsoft-365-copilot.md) (Graph), not the raw frontier-model assistants.
 - **AWS compliance envelope.** Q Business itself is attested for HIPAA (HIPAA-eligible since Oct 2024), SOC 1/2/3, PCI, and **ISO 42001** (the AI-management-system standard — relatively rare and notable). It rides AWS's broader SOC/ISO 27001/FedRAMP posture.
 - **Tradeoff vs. frontier assistants.** Buyers generally rate its raw answer quality and model choice below ChatGPT Enterprise / Claude Enterprise; the value is governance and AWS-native integration, not best-in-class reasoning. Model is AWS-selected (Bedrock-family), not user-pickable to the same degree.
 
@@ -63,13 +63,13 @@ Amazon Q Business is a product of **Amazon Web Services**, a segment of **Amazon
 
 - **Day-1** if the firm is already AWS-centric and wants an internal assistant grounded in its own content without standing up third-party SaaS or a self-built RAG stack. The IAM/CloudTrail/KMS familiarity shortens the security review.
 - **No-training + in-account + permission-aware retrieval** is a clean story for an investment firm worried about MNPI/research leaking into a model or across Chinese walls. The ACL-honoring retrieval is the control that maps to information-barrier requirements.
-- **SR 11-7 / model risk:** Q Business is a productivity assistant, not a model that prices or trades, so it's largely outside core model-risk scope — but its outputs informing analysts may fall under your AI governance policy; log usage via CloudTrail and govern it through [[ai-governance-platform]] / [[enterprise-grc]].
-- **Comms surveillance / eDiscovery gap (verify).** Conversations are accessible via API, but Q Business is **not** a purpose-built comms-surveillance archive. A regulated fund treating the assistant as a monitored communications channel (MAR/MNPI, SEC/FINRA books-and-records) would need to build export into an archive and feed a [[comms-surveillance]] tool ([[behavox]], [[steeleye]], [[theta-lake]]); native retention/legal-hold controls for chat are limited. Treat this as an open item, not a solved one.
+- **SR 11-7 / model risk:** Q Business is a productivity assistant, not a model that prices or trades, so it's largely outside core model-risk scope — but its outputs informing analysts may fall under your AI governance policy; log usage via CloudTrail and govern it through [ai-governance-platform](../categories/ai-governance-platform.md) / [enterprise-grc](../categories/enterprise-grc.md).
+- **Comms surveillance / eDiscovery gap (verify).** Conversations are accessible via API, but Q Business is **not** a purpose-built comms-surveillance archive. A regulated fund treating the assistant as a monitored communications channel (MAR/MNPI, SEC/FINRA books-and-records) would need to build export into an archive and feed a [comms-surveillance](../categories/comms-surveillance.md) tool ([behavox](behavox.md), [steeleye](steeleye.md), [theta-lake](theta-lake.md)); native retention/legal-hold controls for chat are limited. Treat this as an open item, not a solved one.
 - **Fit:** strongest for mid/large AWS shops; a 50-person fund with no AWS footprint gets a simpler path from ChatGPT Enterprise, Claude Enterprise, or Glean. Hence **medium** fit overall.
 
 ## Competitors / alternatives
 
-[[microsoft-365-copilot]], [[gemini-enterprise]], [[glean]], [[openai-chatgpt-enterprise]], [[anthropic-claude-enterprise]], [[perplexity-enterprise]]. For the permission-aware-RAG dimension specifically: [[glean]], [[microsoft-graph]], [[knostic]].
+[microsoft-365-copilot](microsoft-365-copilot.md), [gemini-enterprise](gemini-enterprise.md), [glean](glean.md), [openai-chatgpt-enterprise](openai-chatgpt-enterprise.md), [anthropic-claude-enterprise](anthropic-claude-enterprise.md), [perplexity-enterprise](perplexity-enterprise.md). For the permission-aware-RAG dimension specifically: [glean](glean.md), [microsoft-graph](microsoft-graph.md), [knostic](knostic.md).
 
 ## Open questions / to verify
 

@@ -27,7 +27,7 @@ tags: [data-access-governance, dag, iam, pam, identity-governance, active-direct
 
 # Netwrix
 
-> Researched 2026-06-28. Primary category: [[data-access-governance]]; also [[identity-governance]].
+> Researched 2026-06-28. Primary category: [data-access-governance](../categories/data-access-governance.md); also [identity-governance](../categories/identity-governance.md).
 
 **One-liner** — A data-and-identity security vendor (rooted in Active Directory auditing) that does data access governance, change/access auditing, and identity/privileged-access management for mid-market and enterprise shops, assembled largely through acquisition.
 
@@ -37,7 +37,7 @@ Netwrix started as Active Directory change-auditing software and grew — by acq
 
 ## Where it sits in the stack
 
-Data layer. Primary fit is [[data-access-governance]] (who can reach sensitive data), with a strong second foot in [[identity-governance]] (IGA/PAM from the Usercube and Stealthbits lines). Lethal-trifecta role: **sensitive-data** leg — it governs and audits access to the data an AI agent or user could reach. It lives in the data/identity trust zone, not in prompt or egress inspection.
+Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) (who can reach sensitive data), with a strong second foot in [identity-governance](../categories/identity-governance.md) (IGA/PAM from the Usercube and Stealthbits lines). Lethal-trifecta role: **sensitive-data** leg — it governs and audits access to the data an AI agent or user could reach. It lives in the data/identity trust zone, not in prompt or egress inspection.
 
 ## Deployment & architecture
 
@@ -47,7 +47,7 @@ Data layer. Primary fit is [[data-access-governance]] (who can reach sensitive d
 
 ## Positioning & differentiators
 
-Netwrix's heritage and strongest pull is **Active Directory / Windows-estate auditing and security** for mid-market and lean-IT enterprises — strong in regulated, on-prem-heavy shops that want one vendor across data access *and* identity. It is a multi-product roll-up rather than a single unified platform, so breadth comes with some product-line seams. Versus [[varonis]], Netwrix is broader across identity/PAM but generally lighter/cheaper and less deep on large-scale unstructured-data permission analytics; versus identity-first players like [[sailpoint]] and [[veza]], Netwrix is more AD-/audit-centric; versus DSPM pure-plays like [[cyera]] and [[sentra]], it is more on-prem and compliance-audit oriented than cloud-data-posture oriented.
+Netwrix's heritage and strongest pull is **Active Directory / Windows-estate auditing and security** for mid-market and lean-IT enterprises — strong in regulated, on-prem-heavy shops that want one vendor across data access *and* identity. It is a multi-product roll-up rather than a single unified platform, so breadth comes with some product-line seams. Versus [varonis](varonis.md), Netwrix is broader across identity/PAM but generally lighter/cheaper and less deep on large-scale unstructured-data permission analytics; versus identity-first players like [sailpoint](sailpoint.md) and [veza](veza.md), Netwrix is more AD-/audit-centric; versus DSPM pure-plays like [cyera](cyera.md) and [sentra](sentra.md), it is more on-prem and compliance-audit oriented than cloud-data-posture oriented.
 
 ## Ownership, funding & M&A
 
@@ -61,7 +61,7 @@ Netwrix's heritage and strongest pull is **Active Directory / Windows-estate aud
 
 ## Competitors / alternatives
 
-[[varonis]], [[sailpoint]], [[veza]], [[cyera]], [[sentra]]; adjacent [[identity-governance]] and [[dlp]] vendors.
+[varonis](varonis.md), [sailpoint](sailpoint.md), [veza](veza.md), [cyera](cyera.md), [sentra](sentra.md); adjacent [identity-governance](../categories/identity-governance.md) and [dlp](../categories/dlp.md) vendors.
 
 ## Open questions / to verify
 

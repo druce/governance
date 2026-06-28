@@ -34,7 +34,7 @@ tags: [tool-identity-integration, agent-tooling, managed-auth, oauth, mcp, tool-
 through one API, with Composio managing the authentication (OAuth flows, API keys, tokens) so the
 builder doesn't have to.
 
-**Categories** — [[tool-identity-integration]]
+**Categories** — [tool-identity-integration](../categories/tool-identity-integration.md)
 
 ## What it does
 
@@ -54,15 +54,15 @@ core, shippable value today is **managed agent→SaaS connectivity with auth han
 
 ## Where it sits in the stack
 
-Primary category: [[tool-identity-integration]] (Model/Prompt layer, Day-2). This is the plumbing
+Primary category: [tool-identity-integration](../categories/tool-identity-integration.md) (Model/Prompt layer, Day-2). This is the plumbing
 that connects agents to the tools they act on. Composio's relevance to the **lethal trifecta** is
 indirect but real: by brokering an agent's authenticated access to external SaaS systems, it governs
 two legs — **sensitive-data** access (the agent can now read your Gmail/Drive/Salesforce) and
 **egress** (the agent can now *write* — send mail, post to Slack, open GitHub PRs). It does **not**
 itself filter untrusted input or inspect prompts; a compromised or prompt-injected agent with broad
 Composio scopes is a meaningful blast-radius concern. Composio is therefore a capability enabler that
-needs to be paired with authorization/guardrail controls ([[ai-runtime-security]],
-[[authorization-engine]], [[mcp-gateway]]) rather than a security control in its own right. Trust-zone
+needs to be paired with authorization/guardrail controls ([ai-runtime-security](../categories/ai-runtime-security.md),
+[authorization-engine](../categories/authorization-engine.md), [mcp-gateway](../categories/mcp-gateway.md)) rather than a security control in its own right. Trust-zone
 wise it lives at the boundary between the agent runtime and third-party SaaS.
 
 ## Deployment & architecture
@@ -72,7 +72,7 @@ wise it lives at the boundary between the agent runtime and third-party SaaS.
 - **Managed auth** — handles OAuth 2.0 consent flows, token storage/refresh, and API-key management
   per end-user (`user_id`-scoped credentials).
 - **MCP support** — exposes tools via the Model Context Protocol in addition to native provider
-  packages, so it doubles as an MCP server layer (overlaps [[mcp-gateway]]).
+  packages, so it doubles as an MCP server layer (overlaps [mcp-gateway](../categories/mcp-gateway.md)).
 - **Deployment models** — primarily SaaS/cloud; docs reference self-hosted options as well.
 - **Integrations** — the catalog itself is the integration surface (SaaS apps); on the consuming side
   it plugs into agent frameworks and LLM providers.
@@ -83,12 +83,12 @@ Composio's pitch is "auth + tools for agents, batteries included" — a broad pr
 catalog plus managed authentication, aimed at developers who don't want to hand-roll OAuth for every
 SaaS an agent touches. It is developer/SDK-first and integration-breadth-led.
 
-Nearest neighbors differ in emphasis: [[arcade]] is the closest comparable (tool-calling + agent auth,
-also MCP-oriented) and competes head-on; [[stackone]] focuses on managed, enterprise-grade SaaS
-integrations (often HR/ATS/CRM) delivered as agent tools; [[descope]], [[stytch]] and [[workos]] come
+Nearest neighbors differ in emphasis: [arcade](arcade.md) is the closest comparable (tool-calling + agent auth,
+also MCP-oriented) and competes head-on; [stackone](stackone.md) focuses on managed, enterprise-grade SaaS
+integrations (often HR/ATS/CRM) delivered as agent tools; [descope](descope.md), [stytch](stytch.md) and [workos](workos.md) come
 at the same problem from the **identity** side — they provide agent/app auth, OAuth token vaulting and
 "connect to third-party APIs on a user's behalf" primitives, but with less of a pre-built *tool
-catalog*. [[cyberark]] addresses the adjacent non-human/secrets angle for enterprises. Composio's
+catalog*. [cyberark](cyberark.md) addresses the adjacent non-human/secrets angle for enterprises. Composio's
 differentiation is breadth of ready-made tools + the managed-auth convenience; its weaker story
 (for a security buyer) is governance — fine-grained authorization, audit and least-privilege scoping
 are not its headline.
@@ -112,19 +112,19 @@ funding figures from the Series A announcement + vendor blog).
 **Day-2, and niche** for a hedge fund. Composio is builder infrastructure: you'd only care about it if
 your firm is **building its own AI agents** that need to act inside SaaS systems (e.g. an internal
 agent that triages email, files in Jira, or pulls from GitHub). For a shop that mostly *buys* AI
-assistants ([[enterprise-ai-assistant]]) rather than building agents, it is not on the critical path.
+assistants ([enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)) rather than building agents, it is not on the critical path.
 Where it is relevant, the governance questions dominate: handing a third-party platform brokered OAuth
 access to your Gmail/Slack/GitHub means Composio holds (or mediates) tokens to sensitive systems — a
-vendor-risk, data-residency and least-privilege review item ([[vendor-risk]]), and an SR 11-7 concern
+vendor-risk, data-residency and least-privilege review item ([vendor-risk](../categories/vendor-risk.md)), and an SR 11-7 concern
 only insofar as such an agent feeds a model-driven process. It is **not** a control you deploy for
-safety; if you use it, wrap it with authorization ([[authorization-engine]]), runtime guardrails
-([[ai-runtime-security]]) and human-in-the-loop approvals on consequential actions. Best fit: a
+safety; if you use it, wrap it with authorization ([authorization-engine](../categories/authorization-engine.md)), runtime guardrails
+([ai-runtime-security](../categories/ai-runtime-security.md)) and human-in-the-loop approvals on consequential actions. Best fit: a
 fund with a real internal-engineering / agent-building effort, not a 50-person shop standing up basic
 AI hygiene.
 
 ## Competitors / alternatives
 
-[[arcade]], [[stackone]], [[descope]], [[stytch]], [[workos]], [[cyberark]]; adjacent: [[mcp-gateway]]
+[arcade](arcade.md), [stackone](stackone.md), [descope](descope.md), [stytch](stytch.md), [workos](workos.md), [cyberark](cyberark.md); adjacent: [mcp-gateway](../categories/mcp-gateway.md)
 tooling and DIY (hand-rolled OAuth + per-tool integrations).
 
 ## Open questions / to verify
@@ -145,4 +145,4 @@ tooling and DIY (hand-rolled OAuth + per-tool integrations).
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2023 (legal entity Sampark Inc.), HQ San Francisco, founders Soham Ganatra (CEO) & Karan Vaidya, $25M Series A led by Lightspeed (~July 2025) / ~$29M total, independent (no M&A). Documented managed-auth + tool-calling product, Python/TS SDKs, MCP support, SaaS/API/SDK/self-hosted deployment; positioned vs [[arcade]]/[[stackone]]/[[descope]]/[[stytch]]/[[workos]]; framed as Day-2/low hedge-fund fit (builder infra, governance-light). Set status: researched, confidence medium. 3 sources cached.
+- [2026-06-28] Researched; established founded 2023 (legal entity Sampark Inc.), HQ San Francisco, founders Soham Ganatra (CEO) & Karan Vaidya, $25M Series A led by Lightspeed (~July 2025) / ~$29M total, independent (no M&A). Documented managed-auth + tool-calling product, Python/TS SDKs, MCP support, SaaS/API/SDK/self-hosted deployment; positioned vs [arcade](arcade.md)/[stackone](stackone.md)/[descope](descope.md)/[stytch](stytch.md)/[workos](workos.md); framed as Day-2/low hedge-fund fit (builder infra, governance-light). Set status: researched, confidence medium. 3 sources cached.

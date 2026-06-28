@@ -27,23 +27,23 @@ tags: [security-ratings, vendor-risk, tprm, cyber-ratings]
 
 # Bitsight
 
-> Primary category: [[vendor-risk]].
+> Primary category: [vendor-risk](../categories/vendor-risk.md).
 
 **One-liner** — The other major outside-in security-ratings provider, scoring organizations and their third parties on externally observable cyber posture; Moody's is its largest shareholder.
 
 **What it does** — Bitsight continuously gathers external security telemetry (compromised systems, patching, configuration hygiene, exposed assets) and produces a numeric security rating per organization, used to assess and monitor supplier/third-party risk, benchmark posture, and (via the Moody's tie) inform cyber-risk quantification and insurance. The 2024 Cybersixgill acquisition added real-time/dark-web threat intelligence.
 
-**Where it sits in the stack** — [[vendor-risk]], governance layer. An external risk-signal source for TPRM, not a runtime data control (`trifecta_relevance: none`). Peer of [[securityscorecard]], [[black-kite]], [[upguard]]; feeds assessment-workflow tools like [[processunity]] / [[onetrust]].
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. An external risk-signal source for TPRM, not a runtime data control (`trifecta_relevance: none`). Peer of [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md); feeds assessment-workflow tools like [processunity](processunity.md) / [onetrust](onetrust.md).
 
 **Deployment & architecture** — SaaS. Outside-in ratings portal/API + threat intelligence (Cybersixgill); integrations with GRC/TPRM, SIEM, and cyber-insurance workflows.
 
-**Positioning & differentiators** — One of the two best-known ratings brands with [[securityscorecard]]. Differentiators: the Moody's relationship (financial-grade risk framing, cyber-risk quantification) and now integrated threat intel. Same external-signal-accuracy caveats as all ratings.
+**Positioning & differentiators** — One of the two best-known ratings brands with [securityscorecard](securityscorecard.md). Differentiators: the Moody's relationship (financial-grade risk framing, cyber-risk quantification) and now integrated threat intel. Same external-signal-accuracy caveats as all ratings.
 
 **Ownership, funding & M&A** — `independent` but strategically tied: **Moody's Corporation** invested $250M in 2021 (~$2.4B valuation) and became Bitsight's **largest shareholder** — a large minority/strategic stake, not a full acquisition, so Bitsight remains a private, independently operated company (not a Moody's subsidiary). Founded 2011, HQ Boston; surpassed $200M ARR (2025). Itself an acquirer: bought **Cybersixgill** for ~$115M (signed 2024-11-14, closed 2024-12-11). (high confidence)
 
 **CTO / hedge-fund lens** — Day-1-ish for third-party risk: low-effort external screening/monitoring of vendors (incl. AI/SaaS). The Moody's link makes it attractive where the fund wants cyber risk expressed in financial terms. Use as a triage signal alongside real assessments, not as sole control.
 
-**Competitors / alternatives** — [[securityscorecard]], [[black-kite]], [[upguard]], [[processunity]], [[onetrust]].
+**Competitors / alternatives** — [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md), [processunity](processunity.md), [onetrust](onetrust.md).
 
 **Open questions / to verify** — Whether Moody's stake has changed since 2021; Cybersixgill integration depth.
 
