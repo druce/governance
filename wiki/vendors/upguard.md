@@ -5,7 +5,7 @@ slug: upguard
 categories: [vendor-risk]
 layer: governance
 aliases: [ScriptRock]
-website: https://www.upguard.com/
+website: "https://www.upguard.com/"
 founded: 2012
 hq: Mountain View, California, USA
 ownership: independent

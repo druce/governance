@@ -5,7 +5,7 @@ slug: apex-security
 categories: [agent-runtime-security]
 layer: model-prompt
 aliases: [Apex, Apex AI Security]
-website: https://www.apexsec.com
+website: "https://www.apexsec.com"
 founded: 2023
 hq: Tel Aviv, Israel
 ownership: acquired

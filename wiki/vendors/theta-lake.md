@@ -5,7 +5,7 @@ slug: theta-lake
 categories: [comms-surveillance]
 layer: governance
 aliases: []
-website: https://thetalake.com
+website: "https://thetalake.com"
 founded: 2017
 hq: Santa Barbara, California, USA
 ownership: independent

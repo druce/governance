@@ -5,7 +5,7 @@ slug: 1password
 categories: [secrets-management]
 layer: foundation
 aliases: [AgileBits, 1Password Extended Access Management]
-website: https://1password.com/
+website: "https://1password.com/"
 founded: 2005
 hq: Toronto, Canada
 ownership: independent

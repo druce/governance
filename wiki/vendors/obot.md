@@ -5,7 +5,7 @@ slug: obot
 categories: [mcp-gateway]
 layer: model-prompt
 aliases: [Obot AI, Acorn Labs, GPTScript]
-website: https://obot.ai
+website: "https://obot.ai"
 founded: 2022
 hq: Cupertino, California, USA
 ownership: independent

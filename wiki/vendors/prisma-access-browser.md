@@ -5,9 +5,9 @@ slug: prisma-access-browser
 categories: [enterprise-browser]
 layer: ux
 aliases: [Talon, Talon Cyber Security, Talon Enterprise Browser]
-website: https://www.paloaltonetworks.com/sase/access-browser
+website: "https://www.paloaltonetworks.com/sase/access-browser"
 founded: 2021
-hq: Santa Clara, California, USA (Palo Alto Networks); Talon origin: Tel Aviv, Israel
+hq: "Santa Clara, California, USA (Palo Alto Networks); Talon origin: Tel Aviv, Israel"
 ownership: subsidiary
 ownership_detail: "Former Talon Cyber Security, acquired by Palo Alto Networks (closed 2023-12-28, reported ~$625M); rebranded Prisma Access Browser within the Prisma SASE portfolio."
 ownership_confidence: high

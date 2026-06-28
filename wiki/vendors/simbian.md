@@ -5,7 +5,7 @@ slug: simbian
 categories: [ai-soc-analysts]
 layer: foundation
 aliases: [Simbian.AI]
-website: https://www.simbian.ai
+website: "https://www.simbian.ai"
 founded: 2023
 hq: Mountain View, CA, USA
 ownership: independent

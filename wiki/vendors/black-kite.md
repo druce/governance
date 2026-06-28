@@ -5,7 +5,7 @@ slug: black-kite
 categories: [vendor-risk]
 layer: governance
 aliases: []
-website: https://blackkite.com/
+website: "https://blackkite.com/"
 founded: 2016
 hq: Boston, Massachusetts, USA
 ownership: independent

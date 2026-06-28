@@ -5,7 +5,7 @@ slug: patronus-ai
 categories: [ai-red-teaming, llm-observability]
 layer: model-prompt
 aliases: [Patronus, Lynx, Glider]
-website: https://www.patronus.ai
+website: "https://www.patronus.ai"
 founded: 2023
 hq: San Francisco, CA
 ownership: independent

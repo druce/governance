@@ -5,11 +5,11 @@ slug: cloudflare-workers
 categories: [ephemeral-environments]
 layer: governance
 aliases: [Workers, Cloudflare Workers AI]
-website: https://workers.cloudflare.com/
+website: "https://workers.cloudflare.com/"
 founded: 2017
 hq: San Francisco, CA, USA
 ownership: public
-ownership_detail: Product of Cloudflare, Inc. (public, NYSE: NET); Workers launched 2017
+ownership_detail: "Product of Cloudflare, Inc. (public, NYSE: NET); Workers launched 2017"
 ownership_confidence: high
 funding_total:
 last_funding:

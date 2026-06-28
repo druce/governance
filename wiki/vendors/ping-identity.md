@@ -5,7 +5,7 @@ slug: ping-identity
 categories: [identity-access]
 layer: foundation
 aliases: [Ping, ForgeRock]
-website: https://www.pingidentity.com
+website: "https://www.pingidentity.com"
 founded: 2002
 hq: Denver, Colorado, USA
 ownership: acquired

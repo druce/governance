@@ -5,7 +5,7 @@ slug: linx-security
 categories: [identity-governance, non-human-identity]
 layer: foundation
 aliases: []
-website: https://www.linx.security/
+website: "https://www.linx.security/"
 founded: 2023
 hq: New York, NY
 ownership: independent

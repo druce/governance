@@ -5,7 +5,7 @@ slug: cerbos
 categories: [authorization-engine, mcp-gateway]
 layer: model-prompt
 aliases: [Cerbos PDP, Cerbos Hub, Cerbos Cloud]
-website: https://www.cerbos.dev
+website: "https://www.cerbos.dev"
 founded: 2021
 hq: London, UK (remote-first)
 ownership: independent

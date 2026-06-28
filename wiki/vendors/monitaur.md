@@ -5,7 +5,7 @@ slug: monitaur
 categories: [ai-governance-platform]
 layer: governance
 aliases: [monitaur.ai, "ML Assurance Platform"]
-website: https://www.monitaur.ai/
+website: "https://www.monitaur.ai/"
 founded: 2019
 hq: Boston, MA, USA
 ownership: independent

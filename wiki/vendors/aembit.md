@@ -5,7 +5,7 @@ slug: aembit
 categories: [non-human-identity]
 layer: foundation
 aliases: [Aembit Workload IAM]
-website: https://aembit.io
+website: "https://aembit.io"
 founded: 2021
 hq: Silver Spring, Maryland, USA
 ownership: independent

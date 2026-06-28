@@ -5,7 +5,7 @@ slug: docker-mcp-gateway
 categories: [mcp-gateway]
 layer: model-prompt
 aliases: [Docker MCP Toolkit, Docker MCP Catalog, docker mcp gateway]
-website: https://github.com/docker/mcp-gateway
+website: "https://github.com/docker/mcp-gateway"
 founded: 2025-07-09   # MCP Gateway project launch/open-source date; parent Docker, Inc. founded 2013
 hq: Palo Alto, California, US   # Docker, Inc.
 ownership: independent

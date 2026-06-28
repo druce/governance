@@ -5,7 +5,7 @@ slug: openai-chatgpt-enterprise
 categories: [enterprise-ai-assistant]
 layer: ux
 aliases: [ChatGPT Enterprise, ChatGPT Business, ChatGPT Team, OpenAI Enterprise]
-website: https://openai.com/enterprise/
+website: "https://openai.com/enterprise/"
 founded: 2015
 hq: San Francisco, California, USA
 ownership: independent

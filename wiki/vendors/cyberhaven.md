@@ -5,7 +5,7 @@ slug: cyberhaven
 categories: [dlp, ai-access-governance]
 layer: data
 aliases: [Linea AI, LLiM, Data Detection and Response]
-website: https://www.cyberhaven.com
+website: "https://www.cyberhaven.com"
 founded: 2016
 hq: Palo Alto, California, USA (founded in Lausanne, Switzerland)
 ownership: independent

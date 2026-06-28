@@ -5,11 +5,11 @@ slug: elastic
 categories: [siem-soc]
 layer: foundation
 aliases: [Elasticsearch, ELK Stack, Elastic Security]
-website: https://www.elastic.co/security
+website: "https://www.elastic.co/security"
 founded: 2012
 hq: Mountain View, CA, USA (incorporated in the Netherlands as Elastic N.V.)
 ownership: public
-ownership_detail: Elastic N.V., public (NYSE: ESTC)
+ownership_detail: "Elastic N.V., public (NYSE: ESTC)"
 ownership_confidence: high
 funding_total:
 last_funding:

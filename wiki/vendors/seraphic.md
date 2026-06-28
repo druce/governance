@@ -5,9 +5,9 @@ slug: seraphic
 categories: [enterprise-browser]
 layer: ux
 aliases: [Seraphic, Seraphic Algorithms]
-website: https://seraphicsecurity.com/
+website: "https://seraphicsecurity.com/"
 founded: 2020
-hq: Herzliya, Israel (US office: Wilmington, MA)
+hq: "Herzliya, Israel (US office: Wilmington, MA)"
 ownership: acquired
 ownership_detail: "Definitive agreement to be acquired by CrowdStrike for $420M announced 2026-01-13; expected to close in CrowdStrike's Q1 FY'27 (pending close as of 2026-06-28). CrowdStrike Falcon Fund was a prior Series A investor."
 ownership_confidence: high

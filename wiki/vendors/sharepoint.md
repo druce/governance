@@ -5,11 +5,11 @@ slug: sharepoint
 categories: [content-sources]
 layer: retrieval
 aliases: [SharePoint Online, OneDrive for Business]
-website: https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration
+website: "https://www.microsoft.com/en-us/microsoft-365/sharepoint/collaboration"
 founded: 2001
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: First-party Microsoft 365 service (Microsoft Corp, NASDAQ: MSFT)
+ownership_detail: "First-party Microsoft 365 service (Microsoft Corp, NASDAQ: MSFT)"
 ownership_confidence: high
 funding_total:
 last_funding:

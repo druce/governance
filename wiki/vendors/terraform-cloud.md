@@ -5,7 +5,7 @@ slug: terraform-cloud
 categories: [ephemeral-environments, policy-as-code]
 layer: governance
 aliases: [HCP Terraform, Terraform Enterprise]
-website: https://www.hashicorp.com/products/terraform
+website: "https://www.hashicorp.com/products/terraform"
 founded: 2012
 hq: San Francisco, CA, USA
 ownership: subsidiary

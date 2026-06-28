@@ -5,7 +5,7 @@ slug: token-security
 categories: [non-human-identity]
 layer: foundation
 aliases: [Token, token.security]
-website: https://www.token.security
+website: "https://www.token.security"
 founded: 2023
 hq: Tel Aviv, Israel & New York, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: splunk
 categories: [siem-soc]
 layer: foundation
 aliases: [Splunk Enterprise Security, Splunk ES]
-website: https://www.splunk.com
+website: "https://www.splunk.com"
 founded: 2003
 hq: San Francisco, California, USA
 ownership: subsidiary

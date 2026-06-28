@@ -5,7 +5,7 @@ slug: lakera
 categories: [ai-runtime-security, ai-red-teaming]
 layer: model-prompt
 aliases: [Lakera AI, Lakera Guard]
-website: https://www.lakera.ai
+website: "https://www.lakera.ai"
 founded: 2021
 hq: Zurich, Switzerland (and San Francisco, USA)
 ownership: acquired

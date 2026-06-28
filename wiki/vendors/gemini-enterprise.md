@@ -5,7 +5,7 @@ slug: gemini-enterprise
 categories: [enterprise-ai-assistant, entitlement-aware-rag]
 layer: ux
 aliases: [Google Agentspace, Gemini Enterprise app, Gemini for Google Cloud, Gemini Enterprise Standard, Gemini Enterprise Plus]
-website: https://cloud.google.com/gemini-enterprise
+website: "https://cloud.google.com/gemini-enterprise"
 founded:
 hq: Mountain View, California, USA
 ownership: public

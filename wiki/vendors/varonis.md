@@ -5,14 +5,14 @@ slug: varonis
 categories: [data-access-governance, dspm, dlp]
 layer: data
 aliases: [Varonis Systems, VRNS]
-website: https://www.varonis.com
+website: "https://www.varonis.com"
 founded: 2005
 hq: Miami, Florida, US (relocated from New York, Q1 2025)
 ownership: public
 ownership_detail: "Publicly traded, NASDAQ: VRNS (IPO 2014-02-28). Acquired Cyral (database activity monitoring) 2025-03-17."
 ownership_confidence: high
 funding_total: n/a (public company)
-last_funding: IPO 2014-02-28 (NASDAQ: VRNS)
+last_funding: "IPO 2014-02-28 (NASDAQ: VRNS)"
 deployment: [saas, self-hosted, on-prem, api]
 target_customer: enterprise / regulated
 hedge_fund_fit: high

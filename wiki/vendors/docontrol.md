@@ -5,7 +5,7 @@ slug: docontrol
 categories: [sspm]
 layer: foundation
 aliases: []
-website: https://www.docontrol.io
+website: "https://www.docontrol.io"
 founded: 2020
 hq: New York, NY
 ownership: independent

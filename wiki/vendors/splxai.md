@@ -5,7 +5,7 @@ slug: splxai
 categories: [ai-red-teaming, ai-runtime-security]
 layer: model-prompt
 aliases: [SPLX, SPLX AI, SplxAI Inc.]
-website: https://splx.ai
+website: "https://splx.ai"
 founded: 2023
 hq: Dover, Delaware, US (Croatian engineering roots; NYC US presence)
 ownership: subsidiary

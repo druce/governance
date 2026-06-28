@@ -5,14 +5,14 @@ slug: crowdstrike
 categories: [edr-xdr, siem-soc, ai-soc-analysts, ai-red-teaming]
 layer: foundation
 aliases: [Falcon, CrowdStrike Holdings]
-website: https://www.crowdstrike.com
+website: "https://www.crowdstrike.com"
 founded: 2011
 hq: Austin, Texas, USA
 ownership: public
 ownership_detail: "Public — NASDAQ: CRWD (IPO 2019). Acquirer: Adaptive Shield (SSPM, closed ~Jan 2025) and Pangea (AI prompt-layer/AIDR, completed ~Sept 2025)."
 ownership_confidence: high
 funding_total: n/a (public)
-last_funding: IPO June 2019 (NASDAQ: CRWD)
+last_funding: "IPO June 2019 (NASDAQ: CRWD)"
 deployment: [saas, api]
 target_customer: enterprise / mid-market / regulated
 hedge_fund_fit: high

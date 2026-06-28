@@ -5,7 +5,7 @@ slug: reco
 categories: [ai-spm, ai-access-governance, sspm]
 layer: model-prompt
 aliases: [Reco AI, Reco Labs, recolabs]
-website: https://www.reco.ai
+website: "https://www.reco.ai"
 founded: 2020
 hq: New York, NY, US (also Tel Aviv, Israel)
 ownership: independent

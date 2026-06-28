@@ -5,7 +5,7 @@ slug: pangea
 categories: [ai-red-teaming, ai-runtime-security]
 layer: model-prompt
 aliases: [Pangea Cyber, Pangea AI Guardrail Platform]
-website: https://pangea.cloud
+website: "https://pangea.cloud"
 founded: 2021
 hq: Palo Alto, California, USA
 ownership: acquired

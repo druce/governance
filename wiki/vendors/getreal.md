@@ -5,7 +5,7 @@ slug: getreal
 categories: [anti-deepfake]
 layer: foundation
 aliases: [GetReal Labs, GetReal]
-website: https://www.getrealsecurity.com
+website: "https://www.getrealsecurity.com"
 founded: 2022
 hq: San Mateo, CA, USA
 ownership: independent

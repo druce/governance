@@ -5,7 +5,7 @@ slug: permit-io
 categories: [authorization-engine, mcp-gateway]
 layer: model-prompt
 aliases: [Permit, Authorizon, OPAL]
-website: https://www.permit.io
+website: "https://www.permit.io"
 founded: 2021
 hq: Tel Aviv, Israel
 ownership: independent

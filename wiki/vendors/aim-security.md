@@ -5,7 +5,7 @@ slug: aim-security
 categories: [ai-runtime-security, ai-spm]
 layer: model-prompt
 aliases: [Aim, Aim Labs]
-website: https://www.aim.security
+website: "https://www.aim.security"
 founded: 2022
 hq: Tel Aviv, Israel
 ownership: acquired

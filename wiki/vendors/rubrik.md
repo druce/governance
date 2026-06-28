@@ -5,14 +5,14 @@ slug: rubrik
 categories: [dspm]
 layer: data
 aliases: []
-website: https://www.rubrik.com
+website: "https://www.rubrik.com"
 founded: 2014
 hq: Palo Alto, California, USA
 ownership: public
 ownership_detail: Public on NYSE (ticker RBRK) since IPO 2024-04-25 ($752M raised). Stub's "independent" corrected to "public".
 ownership_confidence: high
 funding_total: N/A (public; raised $752M at IPO)
-last_funding: IPO 2024-04-25 (NYSE: RBRK)
+last_funding: "IPO 2024-04-25 (NYSE: RBRK)"
 deployment: [saas, on-prem]
 target_customer: enterprise
 hedge_fund_fit: medium

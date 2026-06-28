@@ -5,7 +5,7 @@ slug: styra
 categories: [authorization-engine, policy-as-code]
 layer: model-prompt
 aliases: [Styra DAS, Declarative Authorization Service, Enterprise OPA]
-website: https://www.styra.com
+website: "https://www.styra.com"
 founded: 2015
 hq: Redwood City, CA, USA
 ownership: acquired

@@ -5,7 +5,7 @@ slug: infisical
 categories: [secrets-management]
 layer: foundation
 aliases: []
-website: https://infisical.com/
+website: "https://infisical.com/"
 founded: 2022
 hq: San Francisco, CA
 ownership: independent

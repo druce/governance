@@ -5,11 +5,11 @@ slug: aws-secrets-manager
 categories: [secrets-management]
 layer: foundation
 aliases: [Secrets Manager]
-website: https://aws.amazon.com/secrets-manager/
+website: "https://aws.amazon.com/secrets-manager/"
 founded: 2018
 hq: Seattle, WA
 ownership: public
-ownership_detail: First-party AWS service. Amazon.com, Inc. (NASDAQ: AMZN).
+ownership_detail: "First-party AWS service. Amazon.com, Inc. (NASDAQ: AMZN)."
 ownership_confidence: high
 funding_total:
 last_funding:

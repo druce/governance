@@ -5,13 +5,13 @@ slug: cyberark
 categories: [non-human-identity, secrets-management, identity-governance, tool-identity-integration]
 layer: foundation
 aliases: [CyberArk Software, CYBR]
-website: https://www.cyberark.com
+website: "https://www.cyberark.com"
 founded: 1999
-hq: Petah Tikva, Israel (US ops: Newton, Massachusetts)
+hq: "Petah Tikva, Israel (US ops: Newton, Massachusetts)"
 ownership: acquired
 ownership_detail: "Acquired by Palo Alto Networks — announced 2025-07-30 (~$25B: $45 cash + 2.2005 PANW shares per CYBR share), closed 2026-02-11. Was public (NASDAQ: CYBR, IPO 2014) until close."
 ownership_confidence: high
-funding_total: n/a (was public, NASDAQ: CYBR)
+funding_total: "n/a (was public, NASDAQ: CYBR)"
 last_funding: IPO 2014; acquired by Palo Alto Networks 2026-02-11
 deployment: [saas, self-hosted, on-prem, api]
 target_customer: enterprise

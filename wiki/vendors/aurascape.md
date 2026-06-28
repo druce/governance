@@ -5,7 +5,7 @@ slug: aurascape
 categories: [ai-access-governance, ai-runtime-security]
 layer: model-prompt
 aliases: ["AI Activity Control"]
-website: https://aurascape.ai
+website: "https://aurascape.ai"
 founded: 2024
 hq: Santa Clara, CA, USA
 ownership: independent

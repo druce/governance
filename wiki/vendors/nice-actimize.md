@@ -5,9 +5,9 @@ slug: nice-actimize
 categories: [comms-surveillance]
 layer: governance
 aliases: [Actimize, SURVEIL-X]
-website: https://www.niceactimize.com
+website: "https://www.niceactimize.com"
 founded: 1999
-hq: Hoboken, New Jersey, USA (parent NICE Ltd: Ra'anana, Israel)
+hq: "Hoboken, New Jersey, USA (parent NICE Ltd: Ra'anana, Israel)"
 ownership: public
 ownership_detail: "Business unit/division of NICE Ltd (publicly traded NASDAQ & Tel Aviv: NICE). Not separately financed; reported within NICE Ltd."
 ownership_confidence: high

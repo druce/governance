@@ -5,7 +5,7 @@ slug: mintmcp
 categories: [mcp-gateway]
 layer: model-prompt
 aliases: ["Dependable AI, Inc."]
-website: https://www.mintmcp.com
+website: "https://www.mintmcp.com"
 founded:
 hq: San Francisco, CA, USA
 ownership: independent

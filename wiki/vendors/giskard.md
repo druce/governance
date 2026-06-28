@@ -5,7 +5,7 @@ slug: giskard
 categories: [llm-observability, ai-red-teaming]
 layer: model-prompt
 aliases: []
-website: https://www.giskard.ai
+website: "https://www.giskard.ai"
 founded: 2021
 hq: Paris, France
 ownership: independent

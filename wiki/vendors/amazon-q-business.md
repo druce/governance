@@ -5,7 +5,7 @@ slug: amazon-q-business
 categories: [enterprise-ai-assistant, entitlement-aware-rag]
 layer: ux
 aliases: [Amazon Q, AWS Q Business, Q Business]
-website: https://aws.amazon.com/q/business/
+website: "https://aws.amazon.com/q/business/"
 founded: 2023
 hq: Seattle, WA, USA
 ownership: public

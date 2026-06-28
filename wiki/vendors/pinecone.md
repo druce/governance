@@ -5,7 +5,7 @@ slug: pinecone
 categories: [vector-retrieval]
 layer: retrieval
 aliases: [Pinecone Systems]
-website: https://www.pinecone.io/
+website: "https://www.pinecone.io/"
 founded: 2019
 hq: New York, NY, USA
 ownership: independent

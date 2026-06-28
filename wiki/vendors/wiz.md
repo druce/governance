@@ -5,7 +5,7 @@ slug: wiz
 categories: [dspm, ai-spm]
 layer: data
 aliases: []
-website: https://www.wiz.io
+website: "https://www.wiz.io"
 founded: 2020
 hq: New York City, USA (R&D Tel Aviv, Israel)
 ownership: acquired

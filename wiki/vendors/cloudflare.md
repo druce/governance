@@ -5,7 +5,7 @@ slug: cloudflare
 categories: [ai-gateway, network-security-sase, ephemeral-environments]
 layer: model-prompt
 aliases: [NET, "Cloudflare One", "Workers AI", "AI Gateway"]
-website: https://www.cloudflare.com/products/ai-gateway/
+website: "https://www.cloudflare.com/products/ai-gateway/"
 founded: 2009
 hq: San Francisco, California, USA
 ownership: public

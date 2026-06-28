@@ -5,7 +5,7 @@ slug: quilr
 categories: [ai-spm, ai-access-governance]
 layer: model-prompt
 aliases: [Quilr AI]
-website: https://www.quilr.ai
+website: "https://www.quilr.ai"
 founded: 2023
 hq: Austin, Texas, USA (some profiles list San Francisco — unconfirmed)
 ownership: independent

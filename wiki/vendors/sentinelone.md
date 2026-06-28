@@ -5,14 +5,14 @@ slug: sentinelone
 categories: [edr-xdr, ai-runtime-security, ai-spm]
 layer: foundation
 aliases: [Singularity, SentinelOne Inc.]
-website: https://www.sentinelone.com
+website: "https://www.sentinelone.com"
 founded: 2013
 hq: Mountain View, California, USA
 ownership: public
 ownership_detail: "Public — NYSE: S (IPO June 2021). Acquirer: Prompt Security (GenAI runtime/DLP, announced 2025-08-05, ~$250M) and Observo AI (data pipeline)."
 ownership_confidence: high
 funding_total: n/a (public)
-last_funding: IPO June 2021 (NYSE: S)
+last_funding: "IPO June 2021 (NYSE: S)"
 deployment: [saas, api]
 target_customer: enterprise / mid-market
 hedge_fund_fit: high

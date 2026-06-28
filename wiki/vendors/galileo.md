@@ -5,7 +5,7 @@ slug: galileo
 categories: [ai-red-teaming, llm-observability]
 layer: model-prompt
 aliases: [Galileo Technologies, Rungalileo, galileo.ai]
-website: https://galileo.ai
+website: "https://galileo.ai"
 founded: 2021
 hq: San Francisco, California, USA
 ownership: acquired

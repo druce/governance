@@ -5,7 +5,7 @@ slug: servicenow
 categories: [enterprise-grc]
 layer: governance
 aliases: [ServiceNow IRM, Now Platform GRC, Integrated Risk Management]
-website: https://www.servicenow.com/products/governance-risk-and-compliance.html
+website: "https://www.servicenow.com/products/governance-risk-and-compliance.html"
 founded: 2004
 hq: Santa Clara, California, USA
 ownership: public

@@ -5,7 +5,7 @@ slug: red-access
 categories: [enterprise-browser]
 layer: ux
 aliases: [RedAccess]
-website: https://redaccess.io/
+website: "https://redaccess.io/"
 founded: 2021
 hq: Tel Aviv, Israel
 ownership: independent

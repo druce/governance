@@ -5,7 +5,7 @@ slug: hashicorp-sentinel
 categories: [policy-as-code]
 layer: governance
 aliases: [Sentinel]
-website: https://docs.hashicorp.com/sentinel
+website: "https://docs.hashicorp.com/sentinel"
 founded: 2017
 hq: San Francisco, CA, USA
 ownership: subsidiary

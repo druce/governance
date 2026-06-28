@@ -5,7 +5,7 @@ slug: fiddler-ai
 categories: [llm-observability, ai-governance-platform]
 layer: model-prompt
 aliases: [Fiddler Labs]
-website: https://www.fiddler.ai
+website: "https://www.fiddler.ai"
 founded: 2018
 hq: Palo Alto, California, USA
 ownership: independent

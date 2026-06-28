@@ -5,7 +5,7 @@ slug: knostic
 categories: [entitlement-aware-rag, enterprise-ai-assistant]
 layer: retrieval
 aliases: []
-website: https://www.knostic.ai
+website: "https://www.knostic.ai"
 founded: 2023
 hq: Herndon, Virginia, US (R&D in Tel Aviv, Israel)
 ownership: independent

@@ -5,11 +5,11 @@ slug: azure-key-vault
 categories: [secrets-management]
 layer: foundation
 aliases: [Key Vault, Azure Managed HSM]
-website: https://azure.microsoft.com/products/key-vault
+website: "https://azure.microsoft.com/products/key-vault"
 founded: 2015
 hq: Redmond, WA
 ownership: public
-ownership_detail: First-party Microsoft Azure service. Microsoft Corporation (NASDAQ: MSFT).
+ownership_detail: "First-party Microsoft Azure service. Microsoft Corporation (NASDAQ: MSFT)."
 ownership_confidence: high
 funding_total:
 last_funding:

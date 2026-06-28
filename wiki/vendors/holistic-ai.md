@@ -5,7 +5,7 @@ slug: holistic-ai
 categories: [ai-governance-platform]
 layer: governance
 aliases: [Holistic AI Limited]
-website: https://www.holisticai.com
+website: "https://www.holisticai.com"
 founded: 2020
 hq: London, UK (US presence in Palo Alto, CA)
 ownership: independent

@@ -5,7 +5,7 @@ slug: arize-phoenix
 categories: [llm-observability]
 layer: model-prompt
 aliases: [Arize AI, Phoenix, Arize AX]
-website: https://arize.com
+website: "https://arize.com"
 founded: 2020
 hq: Berkeley, CA
 ownership: independent

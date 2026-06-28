@@ -5,11 +5,11 @@ slug: google-drive
 categories: [content-sources]
 layer: retrieval
 aliases: [Google Workspace Drive, Shared Drives]
-website: https://workspace.google.com/products/drive/
+website: "https://workspace.google.com/products/drive/"
 founded: 2012
 hq: Mountain View, CA, USA
 ownership: public
-ownership_detail: Product of Google LLC / Alphabet Inc. (public, NASDAQ: GOOGL)
+ownership_detail: "Product of Google LLC / Alphabet Inc. (public, NASDAQ: GOOGL)"
 ownership_confidence: high
 funding_total:
 last_funding:

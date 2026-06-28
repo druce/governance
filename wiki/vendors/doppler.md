@@ -5,7 +5,7 @@ slug: doppler
 categories: [secrets-management]
 layer: foundation
 aliases: [DopplerHQ]
-website: https://www.doppler.com/
+website: "https://www.doppler.com/"
 founded: 2018
 hq: San Francisco, CA
 ownership: independent

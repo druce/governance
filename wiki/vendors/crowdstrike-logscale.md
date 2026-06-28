@@ -5,11 +5,11 @@ slug: crowdstrike-logscale
 categories: [siem-soc, edr-xdr]
 layer: foundation
 aliases: [Humio, Falcon LogScale, Falcon Next-Gen SIEM]
-website: https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/
+website: "https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/"
 founded: 2016
 hq: Austin, TX, USA
 ownership: public
-ownership_detail: Product of CrowdStrike Holdings, Inc. (NASDAQ: CRWD); formerly Humio, acq. 2021 (~$400M)
+ownership_detail: "Product of CrowdStrike Holdings, Inc. (NASDAQ: CRWD); formerly Humio, acq. 2021 (~$400M)"
 ownership_confidence: high
 funding_total:
 last_funding:

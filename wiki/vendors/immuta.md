@@ -5,7 +5,7 @@ slug: immuta
 categories: [data-access-governance, dspm]
 layer: data
 aliases: []
-website: https://www.immuta.com
+website: "https://www.immuta.com"
 founded: 2015
 hq: Boston, Massachusetts, USA
 ownership: independent

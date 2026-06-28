@@ -5,7 +5,7 @@ slug: hydden
 categories: [identity-governance]
 layer: foundation
 aliases: []
-website: https://www.hydden.com/
+website: "https://www.hydden.com/"
 founded: 2022
 hq: New York, NY
 ownership: independent

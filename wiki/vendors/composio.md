@@ -5,7 +5,7 @@ slug: composio
 categories: [tool-identity-integration]
 layer: model-prompt
 aliases: [Sampark Inc.]
-website: https://composio.dev
+website: "https://composio.dev"
 founded: 2023
 hq: San Francisco, California, USA
 ownership: independent

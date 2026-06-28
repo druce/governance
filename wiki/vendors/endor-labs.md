@@ -5,7 +5,7 @@ slug: endor-labs
 categories: [software-supply-chain]
 layer: foundation
 aliases: []
-website: https://www.endorlabs.com
+website: "https://www.endorlabs.com"
 founded: 2021
 hq: Palo Alto, California, USA (also Bangalore, India)
 ownership: independent

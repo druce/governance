@@ -5,7 +5,7 @@ slug: operant-ai
 categories: [agent-runtime-security]
 layer: model-prompt
 aliases: [Operant]
-website: https://www.operant.ai
+website: "https://www.operant.ai"
 founded: 2020
 hq: San Francisco, California, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: helicone
 categories: [llm-observability]
 layer: model-prompt
 aliases: []
-website: https://www.helicone.ai
+website: "https://www.helicone.ai"
 founded: 2023
 hq: San Francisco, CA
 ownership: acquired

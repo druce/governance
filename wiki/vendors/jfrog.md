@@ -5,7 +5,7 @@ slug: jfrog
 categories: [software-supply-chain]
 layer: foundation
 aliases: [Artifactory, Xray, JFrog Platform, JFrog ML]
-website: https://jfrog.com
+website: "https://jfrog.com"
 founded: 2008
 hq: Sunnyvale, California, USA (dual HQ with Netanya, Israel)
 ownership: public

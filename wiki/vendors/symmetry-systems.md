@@ -5,7 +5,7 @@ slug: symmetry-systems
 categories: [dspm, data-access-governance]
 layer: data
 aliases: []
-website: https://www.symmetry-systems.com
+website: "https://www.symmetry-systems.com"
 founded: 2021
 hq: San Jose, California, USA
 ownership: acquired

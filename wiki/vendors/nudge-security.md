@@ -5,7 +5,7 @@ slug: nudge-security
 categories: [ai-access-governance, ai-spm, sspm]
 layer: model-prompt
 aliases: []
-website: https://www.nudgesecurity.com
+website: "https://www.nudgesecurity.com"
 founded: 2021
 hq: Austin, TX, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: cisco
 categories: [network-security-sase, ai-runtime-security, ai-red-teaming, non-human-identity, siem-soc]
 layer: foundation
 aliases: [Cisco Systems]
-website: https://www.cisco.com
+website: "https://www.cisco.com"
 founded: 1984
 hq: San Jose, California, USA
 ownership: public

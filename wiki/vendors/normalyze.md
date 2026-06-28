@@ -5,7 +5,7 @@ slug: normalyze
 categories: [dspm]
 layer: data
 aliases: []
-website: https://normalyze.ai
+website: "https://normalyze.ai"
 founded: 2020
 hq: San Francisco, USA
 ownership: acquired

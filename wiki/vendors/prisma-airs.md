@@ -5,7 +5,7 @@ slug: prisma-airs
 categories: [ai-runtime-security, ai-spm, mcp-gateway, ai-gateway]
 layer: model-prompt
 aliases: [Prisma AIRS, Palo Alto AI Runtime Security]
-website: https://www.paloaltonetworks.com/prisma/prisma-airs
+website: "https://www.paloaltonetworks.com/prisma/prisma-airs"
 founded: 2025
 hq: Santa Clara, California, USA (Palo Alto Networks)
 ownership: subsidiary

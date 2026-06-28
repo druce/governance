@@ -5,7 +5,7 @@ slug: mind
 categories: [dlp]
 layer: data
 aliases: [mind.io]
-website: https://mind.io
+website: "https://mind.io"
 founded: 2023
 hq: Seattle, Washington, USA (R&D in Israel)
 ownership: independent

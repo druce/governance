@@ -5,7 +5,7 @@ slug: haize-labs
 categories: [ai-red-teaming]
 layer: model-prompt
 aliases: [Haize, j1]
-website: https://www.haizelabs.com
+website: "https://www.haizelabs.com"
 founded: 2023
 hq: New York, NY
 ownership: independent

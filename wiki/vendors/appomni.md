@@ -5,7 +5,7 @@ slug: appomni
 categories: [sspm]
 layer: foundation
 aliases: []
-website: https://appomni.com
+website: "https://appomni.com"
 founded: 2018
 hq: San Mateo, California, USA
 ownership: independent

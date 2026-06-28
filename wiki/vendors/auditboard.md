@@ -5,7 +5,7 @@ slug: auditboard
 categories: [enterprise-grc]
 layer: governance
 aliases: []
-website: https://www.auditboard.com/
+website: "https://www.auditboard.com/"
 founded: 2014
 hq: Cerritos, California, USA
 ownership: acquired

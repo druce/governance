@@ -5,7 +5,7 @@ slug: prompt-security
 categories: [dlp, ai-runtime-security, ai-spm, ai-access-governance]
 layer: data
 aliases: [Prompt, Prompt Security (SentinelOne)]
-website: https://prompt.security
+website: "https://prompt.security"
 founded: 2023
 hq: Tel Aviv, Israel
 ownership: acquired

@@ -5,7 +5,7 @@ slug: steeleye
 categories: [comms-surveillance]
 layer: governance
 aliases: []
-website: https://www.steel-eye.com
+website: "https://www.steel-eye.com"
 founded: 2017
 hq: London, UK
 ownership: independent

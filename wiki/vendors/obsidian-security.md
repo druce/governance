@@ -5,7 +5,7 @@ slug: obsidian-security
 categories: [sspm]
 layer: foundation
 aliases: []
-website: https://www.obsidiansecurity.com
+website: "https://www.obsidiansecurity.com"
 founded: 2017
 hq: Newport Beach, California, USA
 ownership: independent

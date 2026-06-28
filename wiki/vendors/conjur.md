@@ -5,7 +5,7 @@ slug: conjur
 categories: [secrets-management]
 layer: foundation
 aliases: [Conjur, Conjur Open Source, CyberArk Secrets Manager]
-website: https://www.conjur.org
+website: "https://www.conjur.org"
 founded: 2011
 hq: Newton/Waltham, Massachusetts, USA (origin)
 ownership: subsidiary

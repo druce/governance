@@ -5,7 +5,7 @@ slug: authzed
 categories: [authorization-engine]
 layer: model-prompt
 aliases: [SpiceDB, Zanzibar]
-website: https://authzed.com
+website: "https://authzed.com"
 founded: 2020
 hq: New York, NY, USA
 ownership: independent

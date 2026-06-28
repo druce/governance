@@ -5,7 +5,7 @@ slug: doppel
 categories: [anti-deepfake]
 layer: foundation
 aliases: [Doppel Vision]
-website: https://www.doppel.com
+website: "https://www.doppel.com"
 founded: 2022
 hq: San Francisco, CA, USA
 ownership: independent

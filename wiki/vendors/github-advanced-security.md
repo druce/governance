@@ -5,7 +5,7 @@ slug: github-advanced-security
 categories: [software-supply-chain]
 layer: foundation
 aliases: [GHAS, GitHub Code Security, GitHub Secret Protection]
-website: https://github.com/security/advanced-security
+website: "https://github.com/security/advanced-security"
 founded: 2008                       # GitHub, the parent product; GHAS launched later
 hq: San Francisco, CA, USA
 ownership: subsidiary

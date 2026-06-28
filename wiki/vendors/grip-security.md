@@ -5,7 +5,7 @@ slug: grip-security
 categories: [sspm, browser-security-extension, ai-access-governance]
 layer: foundation
 aliases: []
-website: https://www.grip.security
+website: "https://www.grip.security"
 founded: 2021
 hq: Tel Aviv, Israel (US office Boston, MA)
 ownership: independent

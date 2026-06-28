@@ -5,7 +5,7 @@ slug: github-codespaces
 categories: [ephemeral-environments]
 layer: governance
 aliases: [Codespaces]
-website: https://github.com/features/codespaces
+website: "https://github.com/features/codespaces"
 founded: 2020
 hq: San Francisco, CA, USA
 ownership: subsidiary

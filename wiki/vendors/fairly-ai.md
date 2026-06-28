@@ -5,7 +5,7 @@ slug: fairly-ai
 categories: [ai-governance-platform]
 layer: governance
 aliases: [Asenion, anch.AI]
-website: https://www.asenion.ai/
+website: "https://www.asenion.ai/"
 founded: 2020
 hq: Kitchener-Waterloo, Ontario, Canada
 ownership: independent

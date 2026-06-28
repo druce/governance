@@ -5,7 +5,7 @@ slug: bedrock-security
 categories: [dspm]
 layer: data
 aliases: [Bedrock Data]
-website: https://www.bedrock.security
+website: "https://www.bedrock.security"
 founded: 2021
 hq: Menlo Park, California, USA
 ownership: independent

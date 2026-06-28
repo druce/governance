@@ -5,7 +5,7 @@ slug: wing-security
 categories: [sspm]
 layer: foundation
 aliases: []
-website: https://wing.security
+website: "https://wing.security"
 founded: 2020
 hq: Tel Aviv, Israel
 ownership: independent

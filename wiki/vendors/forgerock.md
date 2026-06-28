@@ -5,13 +5,13 @@ slug: forgerock
 categories: [identity-access]
 layer: foundation
 aliases: [ForgeRock Identity Platform]
-website: https://www.pingidentity.com
+website: "https://www.pingidentity.com"
 founded: 2010
 hq: San Francisco, USA (origins in Norway)
 ownership: acquired
 ownership_detail: "Acquired by Thoma Bravo (~$2.3B, $23.25/share) and merged into Ping Identity; announced 2022-10-11, closed 2023-08-23. No longer an independent brand."
 ownership_confidence: high
-funding_total: n/a (was public, NYSE: FORG, before take-private)
+funding_total: "n/a (was public, NYSE: FORG, before take-private)"
 last_funding: IPO Sep 2021
 deployment: [saas, self-hosted, on-prem]
 target_customer: enterprise / regulated (workforce + CIAM)

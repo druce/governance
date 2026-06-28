@@ -5,7 +5,7 @@ slug: stytch
 categories: [tool-identity-integration, non-human-identity]
 layer: model-prompt
 aliases: [Stytch Inc]
-website: https://stytch.com
+website: "https://stytch.com"
 founded: 2020
 hq: San Francisco, California, USA
 ownership: acquired

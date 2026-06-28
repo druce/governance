@@ -5,7 +5,7 @@ slug: portal26
 categories: [ai-access-governance]
 layer: model-prompt
 aliases: [Titaniam]
-website: https://portal26.ai
+website: "https://portal26.ai"
 founded: 2019
 hq: Los Gatos, California, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: datadog
 categories: [llm-observability]
 layer: model-prompt
 aliases: [Datadog, DDOG]
-website: https://www.datadoghq.com/product/ai/llm-observability/
+website: "https://www.datadoghq.com/product/ai/llm-observability/"
 founded: 2010
 hq: New York, NY
 ownership: public

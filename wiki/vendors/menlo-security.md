@@ -5,7 +5,7 @@ slug: menlo-security
 categories: [enterprise-browser]
 layer: ux
 aliases: [Menlo]
-website: https://www.menlosecurity.com
+website: "https://www.menlosecurity.com"
 founded: 2013
 hq: Mountain View, California, USA
 ownership: independent

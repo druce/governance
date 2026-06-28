@@ -5,7 +5,7 @@ slug: modelop
 categories: [ai-governance-platform]
 layer: governance
 aliases: [ModelOp Center]
-website: https://www.modelop.com
+website: "https://www.modelop.com"
 founded: 2018
 hq: Chicago, IL, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: zscaler
 categories: [network-security-sase, ai-access-governance]
 layer: foundation
 aliases: [ZS, Zero Trust Exchange]
-website: https://www.zscaler.com
+website: "https://www.zscaler.com"
 founded: 2007
 hq: San Jose, California, USA
 ownership: public

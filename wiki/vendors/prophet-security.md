@@ -5,7 +5,7 @@ slug: prophet-security
 categories: [ai-soc-analysts]
 layer: foundation
 aliases: []
-website: https://www.prophetsecurity.ai
+website: "https://www.prophetsecurity.ai"
 founded: 2023
 hq: San Francisco, CA, USA
 ownership: independent

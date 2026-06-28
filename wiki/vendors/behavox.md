@@ -5,7 +5,7 @@ slug: behavox
 categories: [comms-surveillance]
 layer: governance
 aliases: [Behavox Quantum, Behavox LLM]
-website: https://www.behavox.com/
+website: "https://www.behavox.com/"
 founded: 2014
 hq: London, UK (major hubs in Montreal, New York, Belfast)
 ownership: independent

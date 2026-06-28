@@ -5,7 +5,7 @@ slug: sailpoint
 categories: [identity-governance, data-access-governance]
 layer: foundation
 aliases: [SailPoint Technologies, IdentityNow, IdentityIQ, Atlas]
-website: https://www.sailpoint.com
+website: "https://www.sailpoint.com"
 founded: 2005
 hq: Austin, Texas, USA
 ownership: public

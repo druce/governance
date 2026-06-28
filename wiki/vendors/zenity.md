@@ -5,7 +5,7 @@ slug: zenity
 categories: [agent-runtime-security, ai-spm]
 layer: model-prompt
 aliases: [Zenity.io]
-website: https://zenity.io
+website: "https://zenity.io"
 founded: 2021
 hq: Tel Aviv-Yafo, Israel
 ownership: independent

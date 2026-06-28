@@ -5,7 +5,7 @@ slug: langsmith
 categories: [llm-observability]
 layer: model-prompt
 aliases: [LangChain]
-website: https://www.langchain.com/langsmith
+website: "https://www.langchain.com/langsmith"
 founded: 2023
 hq: San Francisco, CA
 ownership: independent

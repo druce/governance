@@ -5,7 +5,7 @@ slug: anthropic-claude-enterprise
 categories: [enterprise-ai-assistant]
 layer: ux
 aliases: [Claude for Work, Claude Enterprise, Anthropic Claude]
-website: https://claude.com/solutions/enterprise
+website: "https://claude.com/solutions/enterprise"
 founded: 2021
 hq: San Francisco, CA, USA
 ownership: independent

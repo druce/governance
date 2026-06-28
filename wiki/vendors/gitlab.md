@@ -5,14 +5,14 @@ slug: gitlab
 categories: [software-supply-chain]
 layer: foundation
 aliases: [GitLab Ultimate, GitLab Inc., GTLB]
-website: https://about.gitlab.com
+website: "https://about.gitlab.com"
 founded: 2014
 hq: San Francisco, CA, USA (all-remote company)
 ownership: public
-ownership_detail: Public, NASDAQ: GTLB (IPO 2021-10-14). Datadog acquisition reported/rumored (Reuters 2024-07; renewed buzz Oct 2025) but UNCONFIRMED — no definitive agreement as of 2026-06-28.
+ownership_detail: "Public, NASDAQ: GTLB (IPO 2021-10-14). Datadog acquisition reported/rumored (Reuters 2024-07; renewed buzz Oct 2025) but UNCONFIRMED — no definitive agreement as of 2026-06-28."
 ownership_confidence: high
 funding_total:                      # n/a — public; IPO at ~$10B valuation (2021)
-last_funding: IPO 2021-10-14 (NASDAQ: GTLB), ~$10B valuation
+last_funding: "IPO 2021-10-14 (NASDAQ: GTLB), ~$10B valuation"
 deployment: [saas, self-hosted, on-prem]   # GitLab.com SaaS + self-managed (Dedicated/self-hosted)
 target_customer: enterprise / mid-market (DevSecOps platform buyers)
 hedge_fund_fit: high

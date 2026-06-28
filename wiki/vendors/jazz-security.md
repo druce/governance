@@ -5,7 +5,7 @@ slug: jazz-security
 categories: [dlp]
 layer: data
 aliases: [Jazz]
-website: https://www.jazz.security
+website: "https://www.jazz.security"
 founded: 2024
 hq: Tel Aviv, Israel (US presence in New York)
 ownership: independent

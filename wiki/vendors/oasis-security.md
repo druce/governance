@@ -5,7 +5,7 @@ slug: oasis-security
 categories: [non-human-identity]
 layer: foundation
 aliases: [Oasis, Oasis NHI, Oasis Agentic Access Management, AAM]
-website: https://www.oasis.security
+website: "https://www.oasis.security"
 founded: 2022
 hq: New York, NY, USA (R&D roots in Tel Aviv, Israel)
 ownership: independent

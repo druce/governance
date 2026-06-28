@@ -5,7 +5,7 @@ slug: maxim-ai
 categories: [ai-red-teaming, llm-observability]
 layer: model-prompt
 aliases: [Maxim, getmaxim]
-website: https://www.getmaxim.ai
+website: "https://www.getmaxim.ai"
 founded: 2023
 hq: San Francisco, CA (US) & India
 ownership: independent

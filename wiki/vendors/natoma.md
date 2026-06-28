@@ -5,7 +5,7 @@ slug: natoma
 categories: [non-human-identity, mcp-gateway]
 layer: foundation
 aliases: [Natoma Labs]
-website: https://natoma.ai
+website: "https://natoma.ai"
 founded: 2024
 hq: San Francisco, California, USA
 ownership: acquired

@@ -5,7 +5,7 @@ slug: weights-and-biases
 categories: [llm-observability]
 layer: model-prompt
 aliases: [W&B, wandb, Weave]
-website: https://wandb.ai
+website: "https://wandb.ai"
 founded: 2017
 hq: San Francisco, USA
 ownership: acquired

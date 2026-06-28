@@ -5,7 +5,7 @@ slug: pomerium
 categories: [mcp-gateway, authorization-engine]
 layer: model-prompt
 aliases: [Pomerium Inc]
-website: https://www.pomerium.com
+website: "https://www.pomerium.com"
 founded: 2019
 hq: California, US
 ownership: independent

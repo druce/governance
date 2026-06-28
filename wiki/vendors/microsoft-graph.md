@@ -5,7 +5,7 @@ slug: microsoft-graph
 categories: [entitlement-aware-rag]
 layer: retrieval
 aliases: [Microsoft Graph API, Microsoft Search semantic index, Graph connectors, Copilot connectors]
-website: https://developer.microsoft.com/graph
+website: "https://developer.microsoft.com/graph"
 founded:                            # N/A — Microsoft platform/API, not a standalone company
 hq: Redmond, WA (Microsoft)
 ownership: public

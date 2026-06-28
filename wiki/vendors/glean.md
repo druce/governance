@@ -5,7 +5,7 @@ slug: glean
 categories: [entitlement-aware-rag, enterprise-ai-assistant]
 layer: retrieval
 aliases: [Glean Technologies, Glean Assistant, Glean Work AI]
-website: https://www.glean.com
+website: "https://www.glean.com"
 founded: 2019
 hq: Palo Alto, California, USA
 ownership: independent

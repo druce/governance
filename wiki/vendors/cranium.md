@@ -5,7 +5,7 @@ slug: cranium
 categories: [ai-spm, ai-governance-platform]
 layer: model-prompt
 aliases: [Cranium AI]
-website: https://cranium.ai
+website: "https://cranium.ai"
 founded: 2023
 hq: Short Hills, New Jersey, USA
 ownership: independent

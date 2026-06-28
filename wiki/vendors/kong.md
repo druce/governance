@@ -5,7 +5,7 @@ slug: kong
 categories: [ai-gateway, mcp-gateway]
 layer: model-prompt
 aliases: [Kong Inc., Mashape, Kong AI Gateway, Kong Konnect]
-website: https://konghq.com
+website: "https://konghq.com"
 founded: 2009
 hq: San Francisco, CA, USA
 ownership: independent

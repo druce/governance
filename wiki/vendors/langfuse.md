@@ -5,7 +5,7 @@ slug: langfuse
 categories: [llm-observability]
 layer: model-prompt
 aliases: []
-website: https://langfuse.com
+website: "https://langfuse.com"
 founded: 2022
 hq: Berlin, Germany (+ San Francisco)
 ownership: acquired

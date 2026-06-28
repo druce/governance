@@ -5,7 +5,7 @@ slug: openrouter
 categories: [ai-gateway]
 layer: model-prompt
 aliases: []
-website: https://openrouter.ai
+website: "https://openrouter.ai"
 founded: 2023
 hq: New York, NY (US)
 ownership: independent

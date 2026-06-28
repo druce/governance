@@ -5,7 +5,7 @@ slug: netskope
 categories: [network-security-sase, dlp, dspm, ai-access-governance]
 layer: foundation
 aliases: [NTSK, Netskope One]
-website: https://www.netskope.com
+website: "https://www.netskope.com"
 founded: 2012
 hq: Santa Clara, California, USA
 ownership: public

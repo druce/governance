@@ -5,7 +5,7 @@ slug: legit-security
 categories: [software-supply-chain]
 layer: foundation
 aliases: []
-website: https://www.legitsecurity.com
+website: "https://www.legitsecurity.com"
 founded: 2020
 hq: Palo Alto, California, USA (R&D in Israel)
 ownership: independent

@@ -5,7 +5,7 @@ slug: promptfoo
 categories: [ai-red-teaming, llm-observability]
 layer: model-prompt
 aliases: [promptfoo]
-website: https://www.promptfoo.dev
+website: "https://www.promptfoo.dev"
 founded: 2024
 hq: San Francisco, CA (US)
 ownership: acquired

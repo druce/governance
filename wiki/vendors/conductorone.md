@@ -5,7 +5,7 @@ slug: conductorone
 categories: [identity-governance, data-access-governance]
 layer: foundation
 aliases: [C1]
-website: https://www.conductorone.com
+website: "https://www.conductorone.com"
 founded: 2020
 hq: San Francisco, California, USA
 ownership: independent

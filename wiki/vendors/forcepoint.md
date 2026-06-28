@@ -5,7 +5,7 @@ slug: forcepoint
 categories: [network-security-sase, dlp]
 layer: foundation
 aliases: [Websense, Raytheon Forcepoint, Forcepoint Commercial]
-website: https://www.forcepoint.com
+website: "https://www.forcepoint.com"
 founded: 2016
 hq: Austin, Texas, USA
 ownership: acquired

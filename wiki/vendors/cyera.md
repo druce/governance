@@ -5,7 +5,7 @@ slug: cyera
 categories: [dspm, data-access-governance, dlp]
 layer: data
 aliases: []
-website: https://www.cyera.com
+website: "https://www.cyera.com"
 founded: 2021
 hq: New York, NY, USA (R&D in Israel)
 ownership: independent

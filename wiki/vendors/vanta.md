@@ -5,7 +5,7 @@ slug: vanta
 categories: [ai-governance-platform, enterprise-grc]
 layer: governance
 aliases: []
-website: https://www.vanta.com
+website: "https://www.vanta.com"
 founded: 2018
 hq: San Francisco, CA, USA
 ownership: independent

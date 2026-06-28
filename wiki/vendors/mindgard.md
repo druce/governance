@@ -5,7 +5,7 @@ slug: mindgard
 categories: [ai-red-teaming]
 layer: model-prompt
 aliases: []
-website: https://mindgard.ai
+website: "https://mindgard.ai"
 founded: 2022
 hq: London, UK & Boston, MA
 ownership: independent

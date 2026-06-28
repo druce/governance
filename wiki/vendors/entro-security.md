@@ -5,7 +5,7 @@ slug: entro-security
 categories: [non-human-identity, secrets-management]
 layer: foundation
 aliases: []
-website: https://entro.security
+website: "https://entro.security"
 founded: 2022
 hq: Boston, Massachusetts, USA (R&D Tel Aviv)
 ownership: independent

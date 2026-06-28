@@ -5,7 +5,7 @@ slug: workos
 categories: [tool-identity-integration, identity-access]
 layer: model-prompt
 aliases: [AuthKit]
-website: https://workos.com
+website: "https://workos.com"
 founded: 2019
 hq: San Francisco, California, USA
 ownership: independent

@@ -5,11 +5,11 @@ slug: google-secops
 categories: [siem-soc]
 layer: foundation
 aliases: [Chronicle, Chronicle Security Operations, Google Security Operations]
-website: https://cloud.google.com/security/products/security-operations
+website: "https://cloud.google.com/security/products/security-operations"
 founded: 2018
 hq: Mountain View, CA, USA
 ownership: public
-ownership_detail: Google Cloud product line of Alphabet Inc. (NASDAQ: GOOGL/GOOG); incl. Mandiant (acq. completed 2022-09-12, ~$5.4B)
+ownership_detail: "Google Cloud product line of Alphabet Inc. (NASDAQ: GOOGL/GOOG); incl. Mandiant (acq. completed 2022-09-12, ~$5.4B)"
 ownership_confidence: high
 funding_total:
 last_funding:

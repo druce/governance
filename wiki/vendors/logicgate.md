@@ -5,7 +5,7 @@ slug: logicgate
 categories: [enterprise-grc]
 layer: governance
 aliases: [Risk Cloud]
-website: https://www.logicgate.com/
+website: "https://www.logicgate.com/"
 founded: 2015
 hq: Chicago, Illinois, USA
 ownership: independent

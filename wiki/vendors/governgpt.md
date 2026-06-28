@@ -5,7 +5,7 @@ slug: governgpt
 categories: [ai-governance-platform]
 layer: governance
 aliases: [GovernGPT.ai]
-website: https://www.governgpt.com
+website: "https://www.governgpt.com"
 founded: 2023
 hq: Montreal, Canada
 ownership: independent

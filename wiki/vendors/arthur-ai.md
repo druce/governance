@@ -5,7 +5,7 @@ slug: arthur-ai
 categories: [llm-observability, ai-governance-platform]
 layer: model-prompt
 aliases: [Arthur]
-website: https://www.arthur.ai
+website: "https://www.arthur.ai"
 founded: 2018
 hq: New York City, New York, USA
 ownership: independent

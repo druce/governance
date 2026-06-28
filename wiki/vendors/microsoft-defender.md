@@ -5,11 +5,11 @@ slug: microsoft-defender
 categories: [edr-xdr]
 layer: foundation
 aliases: [Microsoft 365 Defender, Defender for Endpoint, Microsoft Defender for Endpoint]
-website: https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint
+website: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
 founded: 2019
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: Product line of Microsoft Corporation (NASDAQ: MSFT)
+ownership_detail: "Product line of Microsoft Corporation (NASDAQ: MSFT)"
 ownership_confidence: high
 funding_total:
 last_funding:

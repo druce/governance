@@ -5,7 +5,7 @@ slug: veza
 categories: [identity-governance, data-access-governance]
 layer: foundation
 aliases: [Veza Access Platform, Access Graph]
-website: https://veza.com
+website: "https://veza.com"
 founded: 2020
 hq: Los Gatos, California, USA
 ownership: acquired

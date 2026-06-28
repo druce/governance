@@ -5,7 +5,7 @@ slug: material-security
 categories: [browser-security-extension]
 layer: ux
 aliases: [Material]
-website: https://material.security
+website: "https://material.security"
 founded: 2017
 hq: Redwood City, California, USA
 ownership: independent

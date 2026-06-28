@@ -5,11 +5,11 @@ slug: microsoft-edge-business
 categories: [enterprise-browser]
 layer: ux
 aliases: [Edge for Business, Microsoft Edge]
-website: https://www.microsoft.com/en-us/edge/business/
+website: "https://www.microsoft.com/en-us/edge/business/"
 founded:
 hq: Redmond, Washington, USA
 ownership: public
-ownership_detail: First-party product of Microsoft Corporation (NASDAQ: MSFT). Edge for Business is the enterprise mode/profile of Microsoft Edge, included with Windows and Microsoft 365.
+ownership_detail: "First-party product of Microsoft Corporation (NASDAQ: MSFT). Edge for Business is the enterprise mode/profile of Microsoft Edge, included with Windows and Microsoft 365."
 ownership_confidence: high
 funding_total:
 last_funding:

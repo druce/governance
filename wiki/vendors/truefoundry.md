@@ -5,7 +5,7 @@ slug: truefoundry
 categories: [ai-gateway, mcp-gateway]
 layer: model-prompt
 aliases: []
-website: https://www.truefoundry.com
+website: "https://www.truefoundry.com"
 founded: 2021
 hq: San Francisco, US + Bengaluru, India (dual HQ)
 ownership: independent

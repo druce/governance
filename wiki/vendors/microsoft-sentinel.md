@@ -5,11 +5,11 @@ slug: microsoft-sentinel
 categories: [siem-soc]
 layer: foundation
 aliases: [Azure Sentinel]
-website: https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel
+website: "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel"
 founded: 2019
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: Product line of Microsoft Corporation (NASDAQ: MSFT)
+ownership_detail: "Product line of Microsoft Corporation (NASDAQ: MSFT)"
 ownership_confidence: high
 funding_total:
 last_funding:

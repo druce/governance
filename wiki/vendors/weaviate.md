@@ -5,7 +5,7 @@ slug: weaviate
 categories: [vector-retrieval]
 layer: retrieval
 aliases: [SeMI Technologies]
-website: https://weaviate.io/
+website: "https://weaviate.io/"
 founded: 2019
 hq: Amsterdam, Netherlands
 ownership: independent

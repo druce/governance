@@ -5,7 +5,7 @@ slug: trulens
 categories: [llm-observability]
 layer: model-prompt
 aliases: [TruEra]
-website: https://www.trulens.org
+website: "https://www.trulens.org"
 founded: 2021
 hq: Redwood City, California, USA (TruEra; now part of Snowflake)
 ownership: acquired

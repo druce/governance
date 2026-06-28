@@ -5,7 +5,7 @@ slug: ibm-contextforge
 categories: [mcp-gateway]
 layer: model-prompt
 aliases: [MCP Context Forge, IBM mcp-context-forge, ContextForge AI Gateway]
-website: https://github.com/IBM/mcp-context-forge
+website: "https://github.com/IBM/mcp-context-forge"
 founded: 2025
 hq: Armonk, NY (IBM)
 ownership: public

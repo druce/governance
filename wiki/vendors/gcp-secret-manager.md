@@ -5,11 +5,11 @@ slug: gcp-secret-manager
 categories: [secrets-management]
 layer: foundation
 aliases: [Google Cloud Secret Manager, Secret Manager]
-website: https://cloud.google.com/secret-manager
+website: "https://cloud.google.com/secret-manager"
 founded: 2020
 hq: Mountain View, CA
 ownership: public
-ownership_detail: First-party Google Cloud service. Alphabet Inc. / Google LLC (NASDAQ: GOOGL).
+ownership_detail: "First-party Google Cloud service. Alphabet Inc. / Google LLC (NASDAQ: GOOGL)."
 ownership_confidence: high
 funding_total:
 last_funding:

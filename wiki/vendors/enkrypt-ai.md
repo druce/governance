@@ -5,7 +5,7 @@ slug: enkrypt-ai
 categories: [ai-runtime-security, ai-red-teaming]
 layer: model-prompt
 aliases: [Enkrypt, Sentry]
-website: https://www.enkryptai.com/
+website: "https://www.enkryptai.com/"
 founded: 2022
 hq: Boston, MA, USA
 ownership: independent

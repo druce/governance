@@ -5,7 +5,7 @@ slug: wald-ai
 categories: [ai-access-governance]
 layer: model-prompt
 aliases: [Wald, "Wald, Inc."]
-website: https://wald.ai
+website: "https://wald.ai"
 founded: 2023
 hq: Palo Alto, California, USA
 ownership: independent

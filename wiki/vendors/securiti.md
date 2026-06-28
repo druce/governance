@@ -5,7 +5,7 @@ slug: securiti
 categories: [dspm, ai-governance-platform, data-access-governance]
 layer: data
 aliases: [Securiti AI, Securiti.ai]
-website: https://securiti.ai
+website: "https://securiti.ai"
 founded: 2019
 hq: San Jose, CA, USA
 ownership: subsidiary

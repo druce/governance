@@ -5,7 +5,7 @@ slug: 7ai
 categories: [ai-soc-analysts]
 layer: foundation
 aliases: [7 AI, Seven AI]
-website: https://7ai.com
+website: "https://7ai.com"
 founded: 2024
 hq: Boston, MA, USA
 ownership: independent

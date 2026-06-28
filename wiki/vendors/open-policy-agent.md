@@ -5,7 +5,7 @@ slug: open-policy-agent
 categories: [authorization-engine, policy-as-code]
 layer: model-prompt
 aliases: [OPA, Rego]
-website: https://www.openpolicyagent.org
+website: "https://www.openpolicyagent.org"
 founded: 2016
 hq: "CNCF project (originated at Styra, Redwood City, CA)"
 ownership: independent

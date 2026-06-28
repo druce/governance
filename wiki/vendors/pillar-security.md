@@ -5,7 +5,7 @@ slug: pillar-security
 categories: [ai-runtime-security, ai-spm]
 layer: model-prompt
 aliases: []
-website: https://www.pillar.security
+website: "https://www.pillar.security"
 founded: 2023
 hq: Tel Aviv, Israel (US presence in Miami)
 ownership: independent

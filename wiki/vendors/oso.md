@@ -5,7 +5,7 @@ slug: oso
 categories: [authorization-engine, agent-runtime-security]
 layer: model-prompt
 aliases: [Oso Cloud, Polar, Oso for Agents, osohq]
-website: https://www.osohq.com
+website: "https://www.osohq.com"
 founded: 2018
 hq: New York, NY, USA (remote)
 ownership: independent

@@ -5,7 +5,7 @@ slug: lumos
 categories: [identity-governance]
 layer: foundation
 aliases: []
-website: https://www.lumos.com
+website: "https://www.lumos.com"
 founded: 2020
 hq: San Francisco, California, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: sonatype
 categories: [software-supply-chain]
 layer: foundation
 aliases: [Nexus Repository, Sonatype Lifecycle, Sonatype Repository Firewall, Nexus IQ]
-website: https://www.sonatype.com
+website: "https://www.sonatype.com"
 founded: 2008
 hq: Fulton, Maryland, USA
 ownership: acquired

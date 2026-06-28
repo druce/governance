@@ -5,11 +5,11 @@ slug: nemo-guardrails
 categories: [ai-red-teaming]
 layer: model-prompt
 aliases: [NVIDIA NeMo Guardrails, Colang]
-website: https://github.com/NVIDIA-NeMo/Guardrails
+website: "https://github.com/NVIDIA-NeMo/Guardrails"
 founded: 2023
 hq: Santa Clara, CA (NVIDIA)
 ownership: public
-ownership_detail: Open-source project (Apache 2.0) maintained by NVIDIA (NASDAQ: NVDA); not a standalone company
+ownership_detail: "Open-source project (Apache 2.0) maintained by NVIDIA (NASDAQ: NVDA); not a standalone company"
 ownership_confidence: high
 funding_total: n/a (NVIDIA-funded OSS project)
 last_funding: n/a

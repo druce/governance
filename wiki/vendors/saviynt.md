@@ -5,7 +5,7 @@ slug: saviynt
 categories: [identity-governance]
 layer: foundation
 aliases: [Saviynt Enterprise Identity Cloud, EIC]
-website: https://saviynt.com
+website: "https://saviynt.com"
 founded: 2010
 hq: El Segundo, California, USA
 ownership: independent

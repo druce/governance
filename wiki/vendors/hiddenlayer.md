@@ -5,7 +5,7 @@ slug: hiddenlayer
 categories: [ai-runtime-security, ai-red-teaming, ai-spm]
 layer: model-prompt
 aliases: []
-website: https://www.hiddenlayer.com
+website: "https://www.hiddenlayer.com"
 founded: 2022
 hq: Austin, Texas (US)
 ownership: independent

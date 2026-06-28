@@ -5,7 +5,7 @@ slug: securityscorecard
 categories: [vendor-risk]
 layer: governance
 aliases: []
-website: https://securityscorecard.com/
+website: "https://securityscorecard.com/"
 founded: 2013
 hq: New York, New York, USA
 ownership: independent

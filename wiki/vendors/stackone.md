@@ -5,7 +5,7 @@ slug: stackone
 categories: [tool-identity-integration]
 layer: model-prompt
 aliases: [StackOne Technologies]
-website: https://www.stackone.com
+website: "https://www.stackone.com"
 founded: 2023
 hq: London, UK (registered office Newbury, Berkshire; team across Europe and US)
 ownership: independent

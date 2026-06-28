@@ -5,7 +5,7 @@ slug: agentgateway
 categories: [mcp-gateway]
 layer: model-prompt
 aliases: [agent gateway]
-website: https://agentgateway.dev
+website: "https://agentgateway.dev"
 founded: 2025
 hq: # n/a — OSS project; sponsor Solo.io is HQ'd in Cambridge, MA
 ownership: independent

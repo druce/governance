@@ -5,7 +5,7 @@ slug: island
 categories: [enterprise-browser]
 layer: ux
 aliases: [Island.io, The Enterprise Browser]
-website: https://www.island.io
+website: "https://www.island.io"
 founded: 2020
 hq: Dallas, Texas, USA (R&D in Tel Aviv)
 ownership: independent

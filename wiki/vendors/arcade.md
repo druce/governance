@@ -5,7 +5,7 @@ slug: arcade
 categories: [mcp-gateway, tool-identity-integration]
 layer: model-prompt
 aliases: [Arcade AI, ArcadeAI]
-website: https://www.arcade.dev
+website: "https://www.arcade.dev"
 founded: 2024
 hq: San Francisco, CA, USA
 ownership: independent

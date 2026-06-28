@@ -5,7 +5,7 @@ slug: aikido-security
 categories: [software-supply-chain]
 layer: foundation
 aliases: [Aikido]
-website: https://www.aikido.dev
+website: "https://www.aikido.dev"
 founded: 2022
 hq: Ghent, Belgium
 ownership: independent

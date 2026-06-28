@@ -5,11 +5,11 @@ slug: azure-ai-search
 categories: [vector-retrieval]
 layer: retrieval
 aliases: [Azure Cognitive Search, Azure Search]
-website: https://azure.microsoft.com/en-us/products/ai-services/ai-search
+website: "https://azure.microsoft.com/en-us/products/ai-services/ai-search"
 founded: 2014
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); renamed from Azure Cognitive Search in 2023
+ownership_detail: "First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); renamed from Azure Cognitive Search in 2023"
 ownership_confidence: high
 funding_total:
 last_funding:

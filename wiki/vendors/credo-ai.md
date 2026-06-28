@@ -5,14 +5,14 @@ slug: credo-ai
 categories: [ai-governance-platform]
 layer: governance
 aliases: [Credo.ai]
-website: https://www.credo.ai
+website: "https://www.credo.ai"
 founded: 2020
 hq: Palo Alto, CA, USA
 ownership: independent
 ownership_detail: Private, VC-backed. ~$41.3M raised across 3 rounds; latest $21M round announced 2024-07-30 (commonly reported as Series B). No acquisition found.
 ownership_confidence: high
 funding_total: ~$41.3M (as of 2024-07-30)
-last_funding: $21M, 2024-07-30 (lead: CrimsoNox Capital, Mozilla Ventures, FPV Ventures)
+last_funding: "$21M, 2024-07-30 (lead: CrimsoNox Capital, Mozilla Ventures, FPV Ventures)"
 deployment: [saas, api]
 target_customer: enterprise (Global 2000 / regulated)
 hedge_fund_fit: low

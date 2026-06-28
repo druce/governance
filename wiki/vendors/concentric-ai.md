@@ -5,7 +5,7 @@ slug: concentric-ai
 categories: [dspm, data-access-governance]
 layer: data
 aliases: [Concentric]
-website: https://concentric.ai
+website: "https://concentric.ai"
 founded: 2018
 hq: San Mateo, CA, USA
 ownership: independent

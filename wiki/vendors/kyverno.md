@@ -5,7 +5,7 @@ slug: kyverno
 categories: [policy-as-code]
 layer: governance
 aliases: []
-website: https://kyverno.io/
+website: "https://kyverno.io/"
 founded: 2019
 hq: (open-source project; commercial backer Nirmata, San Jose, CA)
 ownership: independent

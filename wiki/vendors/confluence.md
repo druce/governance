@@ -5,11 +5,11 @@ slug: confluence
 categories: [content-sources]
 layer: retrieval
 aliases: [Atlassian Confluence]
-website: https://www.atlassian.com/software/confluence
+website: "https://www.atlassian.com/software/confluence"
 founded: 2004
 hq: Sydney, Australia
 ownership: public
-ownership_detail: Product of Atlassian Corp (public, NASDAQ: TEAM)
+ownership_detail: "Product of Atlassian Corp (public, NASDAQ: TEAM)"
 ownership_confidence: high
 funding_total:
 last_funding:

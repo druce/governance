@@ -5,7 +5,7 @@ slug: cato-networks
 categories: [network-security-sase, ai-spm]
 layer: foundation
 aliases: [Cato]
-website: https://www.catonetworks.com
+website: "https://www.catonetworks.com"
 founded: 2015
 hq: Tel Aviv, Israel
 ownership: independent

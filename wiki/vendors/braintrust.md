@@ -5,7 +5,7 @@ slug: braintrust
 categories: [llm-observability, ai-red-teaming]
 layer: model-prompt
 aliases: [Braintrust Data]
-website: https://www.braintrust.dev
+website: "https://www.braintrust.dev"
 founded: 2023
 hq: San Francisco, CA
 ownership: independent

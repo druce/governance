@@ -5,11 +5,11 @@ slug: microsoft-entra
 categories: [identity-access]
 layer: foundation
 aliases: [Azure AD, Azure Active Directory, AAD, Entra ID]
-website: https://www.microsoft.com/security/business/identity-access/microsoft-entra-id
+website: "https://www.microsoft.com/security/business/identity-access/microsoft-entra-id"
 founded: 2000
 hq: Redmond, Washington, USA
 ownership: public
-ownership_detail: Product of Microsoft (Nasdaq: MSFT); part of the Microsoft Entra family
+ownership_detail: "Product of Microsoft (Nasdaq: MSFT); part of the Microsoft Entra family"
 ownership_confidence: high
 funding_total:
 last_funding:

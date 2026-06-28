@@ -5,7 +5,7 @@ slug: ibm-watsonx-governance
 categories: [ai-governance-platform]
 layer: governance
 aliases: [watsonx.governance, Watson OpenScale, OpenScale, AI FactSheets, OpenPages Model Risk Governance]
-website: https://www.ibm.com/products/watsonx-governance
+website: "https://www.ibm.com/products/watsonx-governance"
 founded:                            # N/A — product, not a company; watsonx.governance GA early Dec 2023. Parent IBM founded 1911.
 hq: Armonk, NY (IBM)
 ownership: subsidiary

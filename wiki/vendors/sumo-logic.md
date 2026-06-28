@@ -5,13 +5,13 @@ slug: sumo-logic
 categories: [siem-soc]
 layer: foundation
 aliases: []
-website: https://www.sumologic.com
+website: "https://www.sumologic.com"
 founded: 2010
 hq: Redwood City, USA
 ownership: acquired
 ownership_detail: "Taken private by Francisco Partners (PE) for ~$1.7B ($12.05/share); announced 2023-02-09, closed 2023-05-12. Delisted from Nasdaq."
 ownership_confidence: high
-funding_total: n/a (was public, Nasdaq: SUMO, before take-private)
+funding_total: "n/a (was public, Nasdaq: SUMO, before take-private)"
 last_funding: IPO Sep 2020
 deployment: [saas]
 target_customer: enterprise / cloud-native ops & security teams

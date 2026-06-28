@@ -5,11 +5,11 @@ slug: azure-dev-boxes
 categories: [ephemeral-environments]
 layer: governance
 aliases: [Microsoft Dev Box, Azure Dev Boxes]
-website: https://azure.microsoft.com/en-us/products/dev-box
+website: "https://azure.microsoft.com/en-us/products/dev-box"
 founded: 2023
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); GA July 2023
+ownership_detail: "First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); GA July 2023"
 ownership_confidence: high
 funding_total:
 last_funding:

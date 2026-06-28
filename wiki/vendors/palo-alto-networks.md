@@ -5,14 +5,14 @@ slug: palo-alto-networks
 categories: [network-security-sase, siem-soc, edr-xdr, ai-runtime-security, ai-soc-analysts, enterprise-browser, ai-gateway, non-human-identity]
 layer: foundation
 aliases: [PANW, Prisma, Cortex, Strata]
-website: https://www.paloaltonetworks.com
+website: "https://www.paloaltonetworks.com"
 founded: 2005
 hq: Santa Clara, California, USA
 ownership: public
 ownership_detail: "Public (NASDAQ: PANW). Acquirer, not target — AI-security roll-up: Talon (closed 2023-12-28), Protect AI (2025-07-22), CyberArk incl. Conjur (closed 2026-02-11, ~$25B), Portkey (2026-05-29)."
 ownership_confidence: high
 funding_total: n/a (public)
-last_funding: IPO 2012 (NYSE; now NASDAQ: PANW)
+last_funding: "IPO 2012 (NYSE; now NASDAQ: PANW)"
 deployment: [saas, inline-proxy, api, on-prem, sdk]
 target_customer: enterprise
 hedge_fund_fit: high

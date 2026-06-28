@@ -5,7 +5,7 @@ slug: valence-security
 categories: [sspm]
 layer: foundation
 aliases: []
-website: https://www.valencesecurity.com
+website: "https://www.valencesecurity.com"
 founded: 2021
 hq: Tel Aviv, Israel (R&D); US presence in South San Francisco, California
 ownership: independent

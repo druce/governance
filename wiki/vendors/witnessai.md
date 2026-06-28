@@ -5,7 +5,7 @@ slug: witnessai
 categories: [ai-access-governance, ai-runtime-security]
 layer: model-prompt
 aliases: [Witness AI]
-website: https://witness.ai
+website: "https://witness.ai"
 founded: 2023
 hq: Mountain View, California (US)
 ownership: independent

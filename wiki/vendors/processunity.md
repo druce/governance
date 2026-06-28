@@ -5,7 +5,7 @@ slug: processunity
 categories: [vendor-risk]
 layer: governance
 aliases: [ProcessUnity + CyberGRX]
-website: https://www.processunity.com/
+website: "https://www.processunity.com/"
 founded: 2003
 hq: Concord, Massachusetts, USA
 ownership: acquired

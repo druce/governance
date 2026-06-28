@@ -5,7 +5,7 @@ slug: straiker
 categories: [agent-runtime-security, ai-runtime-security]
 layer: model-prompt
 aliases: [Straiker AI]
-website: https://www.straiker.ai
+website: "https://www.straiker.ai"
 founded: 2024
 hq: Sunnyvale, California, USA
 ownership: independent

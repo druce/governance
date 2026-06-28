@@ -5,7 +5,7 @@ slug: onspring
 categories: [enterprise-grc]
 layer: governance
 aliases: [Onspring Technologies]
-website: https://onspring.com/
+website: "https://onspring.com/"
 founded: 2010
 hq: Overland Park, Kansas, USA
 ownership: independent

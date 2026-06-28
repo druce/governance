@@ -5,7 +5,7 @@ slug: dropzone-ai
 categories: [ai-soc-analysts]
 layer: foundation
 aliases: []
-website: https://www.dropzone.ai
+website: "https://www.dropzone.ai"
 founded: 2023
 hq: Seattle, WA, USA
 ownership: independent

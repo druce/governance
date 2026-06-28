@@ -5,7 +5,7 @@ slug: adaptive-shield
 categories: [sspm]
 layer: foundation
 aliases: [CrowdStrike Falcon Shield]
-website: https://www.adaptive-shield.com
+website: "https://www.adaptive-shield.com"
 founded: 2019
 hq: Tel Aviv, Israel
 ownership: acquired

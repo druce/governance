@@ -5,7 +5,7 @@ slug: descope
 categories: [tool-identity-integration, non-human-identity]
 layer: model-prompt
 aliases: [Descope Agentic Identity Hub]
-website: https://www.descope.com
+website: "https://www.descope.com"
 founded: 2022
 hq: Los Altos, California, USA
 ownership: independent

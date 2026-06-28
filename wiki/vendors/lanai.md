@@ -5,7 +5,7 @@ slug: lanai
 categories: [ai-access-governance]
 layer: model-prompt
 aliases: [Lanai AI, Lanai Software, withlanai]
-website: https://www.withlanai.com/
+website: "https://www.withlanai.com/"
 founded:                            # not confirmed; stealth until 2025-01; ~2023-2024 inferred
 hq: San Francisco, California, USA
 ownership: independent

@@ -5,7 +5,7 @@ slug: whylabs
 categories: [llm-observability]
 layer: model-prompt
 aliases: [WhyLabs AI Observatory, WhyLogs]
-website: https://whylabs.ai
+website: "https://whylabs.ai"
 founded: 2019
 hq: Seattle, Washington, USA
 ownership: acquired

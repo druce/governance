@@ -5,7 +5,7 @@ slug: pindrop
 categories: [anti-deepfake]
 layer: foundation
 aliases: []
-website: https://www.pindrop.com
+website: "https://www.pindrop.com"
 founded: 2011
 hq: Atlanta, GA, USA
 ownership: independent

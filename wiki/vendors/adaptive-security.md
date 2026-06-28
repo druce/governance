@@ -5,7 +5,7 @@ slug: adaptive-security
 categories: [anti-deepfake]
 layer: foundation
 aliases: []
-website: https://www.adaptivesecurity.com
+website: "https://www.adaptivesecurity.com"
 founded: 2025
 hq: New York, NY, USA
 ownership: independent

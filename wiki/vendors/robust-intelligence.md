@@ -5,7 +5,7 @@ slug: robust-intelligence
 categories: [ai-runtime-security]
 layer: model-prompt
 aliases: [Cisco AI Defense]
-website: https://www.cisco.com/site/us/en/products/security/ai-defense/
+website: "https://www.cisco.com/site/us/en/products/security/ai-defense/"
 founded: 2019
 hq: San Francisco, California, USA
 ownership: subsidiary

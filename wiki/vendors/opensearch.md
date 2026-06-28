@@ -5,7 +5,7 @@ slug: opensearch
 categories: [vector-retrieval]
 layer: retrieval
 aliases: [Amazon OpenSearch Service]
-website: https://opensearch.org/
+website: "https://opensearch.org/"
 founded: 2021
 hq: (open-source project; OpenSearch Software Foundation under the Linux Foundation)
 ownership: independent

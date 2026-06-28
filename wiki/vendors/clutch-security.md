@@ -5,7 +5,7 @@ slug: clutch-security
 categories: [non-human-identity]
 layer: foundation
 aliases: []
-website: https://www.clutch.security
+website: "https://www.clutch.security"
 founded: 2023
 hq: Tel Aviv, Israel
 ownership: independent

@@ -5,7 +5,7 @@ slug: socket
 categories: [software-supply-chain]
 layer: foundation
 aliases: [Socket.dev]
-website: https://socket.dev
+website: "https://socket.dev"
 founded: 2020
 hq: San Francisco, California, USA
 ownership: independent

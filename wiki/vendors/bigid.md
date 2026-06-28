@@ -5,7 +5,7 @@ slug: bigid
 categories: [dspm, dlp, data-access-governance]
 layer: data
 aliases: []
-website: https://bigid.com
+website: "https://bigid.com"
 founded: 2016
 hq: New York, NY, USA
 ownership: independent

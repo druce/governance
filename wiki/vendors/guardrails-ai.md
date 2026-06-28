@@ -5,7 +5,7 @@ slug: guardrails-ai
 categories: [ai-red-teaming]
 layer: model-prompt
 aliases: [Guardrails Hub]
-website: https://www.guardrailsai.com
+website: "https://www.guardrailsai.com"
 founded: 2023
 hq: San Francisco, CA
 ownership: independent

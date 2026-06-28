@@ -5,7 +5,7 @@ slug: sentra
 categories: [dspm, data-access-governance]
 layer: data
 aliases: []
-website: https://www.sentra.io
+website: "https://www.sentra.io"
 founded: 2021
 hq: Tel Aviv, Israel (offices in New York, NY)
 ownership: independent

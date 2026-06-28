@@ -5,7 +5,7 @@ slug: reality-defender
 categories: [anti-deepfake]
 layer: foundation
 aliases: []
-website: https://www.realitydefender.com
+website: "https://www.realitydefender.com"
 founded: 2021
 hq: New York, NY, USA
 ownership: independent

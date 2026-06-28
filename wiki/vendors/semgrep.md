@@ -5,7 +5,7 @@ slug: semgrep
 categories: [software-supply-chain]
 layer: foundation
 aliases: [r2c]
-website: https://semgrep.dev
+website: "https://semgrep.dev"
 founded: 2017
 hq: San Francisco, California, USA
 ownership: independent

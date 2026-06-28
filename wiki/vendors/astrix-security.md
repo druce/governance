@@ -5,7 +5,7 @@ slug: astrix-security
 categories: [non-human-identity, ai-spm]
 layer: foundation
 aliases: [Astrix]
-website: https://astrix.security
+website: "https://astrix.security"
 founded: 2021
 hq: Boston, Massachusetts, USA (R&D in Tel Aviv, Israel)
 ownership: acquired

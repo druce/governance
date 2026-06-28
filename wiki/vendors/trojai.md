@@ -5,7 +5,7 @@ slug: trojai
 categories: [ai-runtime-security, ai-red-teaming]
 layer: model-prompt
 aliases: [Troj.AI]
-website: https://troj.ai
+website: "https://troj.ai"
 founded: 2019
 hq: Saint John, New Brunswick, Canada (Boston office)
 ownership: acquired

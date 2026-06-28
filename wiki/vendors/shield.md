@@ -5,7 +5,7 @@ slug: shield
 categories: [comms-surveillance]
 layer: governance
 aliases: ["Shield FC", "Shield Financial Compliance"]
-website: https://www.shieldfc.com
+website: "https://www.shieldfc.com"
 founded: 2018
 hq: Tel Aviv, Israel (offices in New York and London)
 ownership: independent

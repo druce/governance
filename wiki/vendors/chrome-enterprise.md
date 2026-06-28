@@ -5,11 +5,11 @@ slug: chrome-enterprise
 categories: [enterprise-browser, browser-security-extension]
 layer: ux
 aliases: [Chrome Enterprise, BeyondCorp Enterprise, Chrome Enterprise Core]
-website: https://chromeenterprise.google/products/chrome-enterprise-premium/
+website: "https://chromeenterprise.google/products/chrome-enterprise-premium/"
 founded:
 hq: Mountain View, California, USA
 ownership: public
-ownership_detail: Product of Google (Google Cloud / Chrome), a subsidiary of Alphabet Inc. (NASDAQ: GOOGL/GOOG). Chrome Enterprise Premium is the rebrand/evolution of BeyondCorp Enterprise.
+ownership_detail: "Product of Google (Google Cloud / Chrome), a subsidiary of Alphabet Inc. (NASDAQ: GOOGL/GOOG). Chrome Enterprise Premium is the rebrand/evolution of BeyondCorp Enterprise."
 ownership_confidence: high
 funding_total:
 last_funding:

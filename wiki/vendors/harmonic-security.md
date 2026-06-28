@@ -5,7 +5,7 @@ slug: harmonic-security
 categories: [ai-access-governance]
 layer: model-prompt
 aliases: [Harmonic]
-website: https://www.harmonic.security
+website: "https://www.harmonic.security"
 founded: 2023
 hq: San Francisco, CA and London, UK
 ownership: independent

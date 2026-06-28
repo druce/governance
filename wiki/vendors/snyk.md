@@ -5,7 +5,7 @@ slug: snyk
 categories: [software-supply-chain]
 layer: foundation
 aliases: []
-website: https://snyk.io
+website: "https://snyk.io"
 founded: 2015
 hq: Boston, Massachusetts, USA (founded Tel Aviv / London)
 ownership: independent

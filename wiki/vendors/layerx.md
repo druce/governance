@@ -5,7 +5,7 @@ slug: layerx
 categories: [browser-security-extension]
 layer: ux
 aliases: [LayerX Security]
-website: https://layerxsecurity.com
+website: "https://layerxsecurity.com"
 founded: 2022
 hq: Tel Aviv, Israel
 ownership: acquired

@@ -5,7 +5,7 @@ slug: noma-security
 categories: [ai-spm, agent-runtime-security]
 layer: model-prompt
 aliases: [Noma]
-website: https://noma.security
+website: "https://noma.security"
 founded: 2023
 hq: Tel Aviv, Israel (R&D); New York, USA (operations)
 ownership: independent

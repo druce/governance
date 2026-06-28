@@ -5,7 +5,7 @@ slug: radiant-security
 categories: [ai-soc-analysts]
 layer: foundation
 aliases: []
-website: https://radiantsecurity.ai
+website: "https://radiantsecurity.ai"
 founded: 2021
 hq: San Francisco Bay Area, CA, USA
 ownership: independent

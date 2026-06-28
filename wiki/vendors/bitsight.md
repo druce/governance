@@ -5,7 +5,7 @@ slug: bitsight
 categories: [vendor-risk]
 layer: governance
 aliases: [BitSight Technologies]
-website: https://www.bitsight.com/
+website: "https://www.bitsight.com/"
 founded: 2011
 hq: Boston, Massachusetts, USA
 ownership: independent

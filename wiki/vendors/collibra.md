@@ -5,7 +5,7 @@ slug: collibra
 categories: [ai-governance-platform, dspm]
 layer: data
 aliases: []
-website: https://www.collibra.com
+website: "https://www.collibra.com"
 founded: 2008
 hq: Brussels, Belgium + New York, NY, USA
 ownership: independent

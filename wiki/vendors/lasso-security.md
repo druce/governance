@@ -5,7 +5,7 @@ slug: lasso-security
 categories: [dlp, ai-runtime-security, agent-runtime-security, ai-access-governance]
 layer: data
 aliases: [Lasso]
-website: https://www.lasso.security
+website: "https://www.lasso.security"
 founded: 2023
 hq: Tel Aviv, Israel
 ownership: independent

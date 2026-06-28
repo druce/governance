@@ -5,9 +5,9 @@ slug: silverfort
 categories: [identity-governance, non-human-identity, data-access-governance]
 layer: foundation
 aliases: []
-website: https://www.silverfort.com/
+website: "https://www.silverfort.com/"
 founded: 2016
-hq: Tel Aviv, Israel (US presence: Boston / Texas)
+hq: "Tel Aviv, Israel (US presence: Boston / Texas)"
 ownership: independent
 ownership_detail: VC-backed unicorn; ~$222M raised. Series D $116M (Jan 2024) led by Brighton Park Capital at ~$1B valuation.
 ownership_confidence: high

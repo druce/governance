@@ -5,7 +5,7 @@ slug: litellm
 categories: [ai-gateway]
 layer: model-prompt
 aliases: [BerriAI]
-website: https://www.litellm.ai/
+website: "https://www.litellm.ai/"
 founded: 2023
 hq: San Francisco, CA, USA
 ownership: independent

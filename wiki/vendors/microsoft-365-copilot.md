@@ -5,7 +5,7 @@ slug: microsoft-365-copilot
 categories: [enterprise-ai-assistant]
 layer: ux
 aliases: [M365 Copilot, Office Copilot, Copilot for Microsoft 365]
-website: https://www.microsoft.com/microsoft-365/copilot
+website: "https://www.microsoft.com/microsoft-365/copilot"
 founded: 1975
 hq: Redmond, Washington, USA
 ownership: public

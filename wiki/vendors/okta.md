@@ -5,11 +5,11 @@ slug: okta
 categories: [identity-access]
 layer: foundation
 aliases: [Auth0]
-website: https://www.okta.com
+website: "https://www.okta.com"
 founded: 2009
 hq: San Francisco, California, USA
 ownership: public
-ownership_detail: Independent public company (Nasdaq: OKTA); IPO April 2017
+ownership_detail: "Independent public company (Nasdaq: OKTA); IPO April 2017"
 ownership_confidence: high
 funding_total:
 last_funding:

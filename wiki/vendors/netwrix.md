@@ -5,7 +5,7 @@ slug: netwrix
 categories: [data-access-governance, identity-governance, dlp]
 layer: data
 aliases: [Netwrix Corporation]
-website: https://www.netwrix.com
+website: "https://www.netwrix.com"
 founded: 2006
 hq: Frisco, Texas, US
 ownership: acquired

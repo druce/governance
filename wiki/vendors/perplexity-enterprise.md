@@ -5,7 +5,7 @@ slug: perplexity-enterprise
 categories: [enterprise-ai-assistant]
 layer: ux
 aliases: [Perplexity Enterprise Pro, Perplexity for Enterprise, Enterprise Max]
-website: https://www.perplexity.ai/enterprise
+website: "https://www.perplexity.ai/enterprise"
 founded: 2022
 hq: San Francisco, California, USA
 ownership: independent

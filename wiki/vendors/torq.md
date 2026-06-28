@@ -5,7 +5,7 @@ slug: torq
 categories: [ai-soc-analysts, siem-soc, ai-spm]
 layer: foundation
 aliases: [Torq HyperSOC]
-website: https://torq.io
+website: "https://torq.io"
 founded: 2020
 hq: Denver, CO, USA (also New York; R&D in Israel)
 ownership: independent

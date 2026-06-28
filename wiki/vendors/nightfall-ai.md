@@ -5,7 +5,7 @@ slug: nightfall-ai
 categories: [dlp]
 layer: data
 aliases: [Nightfall, Nightfall DLP]
-website: https://www.nightfall.ai
+website: "https://www.nightfall.ai"
 founded: 2018
 hq: San Francisco, California, USA
 ownership: independent

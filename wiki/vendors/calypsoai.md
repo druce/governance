@@ -5,7 +5,7 @@ slug: calypsoai
 categories: [ai-runtime-security, ai-governance-platform]
 layer: model-prompt
 aliases: [Calypso AI]
-website: https://calypsoai.com
+website: "https://calypsoai.com"
 founded: 2018
 hq: Dublin, Ireland
 ownership: acquired

@@ -5,11 +5,11 @@ slug: microsoft-purview
 categories: [dspm, dlp]
 layer: data
 aliases: [Purview, Microsoft 365 Compliance, Azure Purview]
-website: https://www.microsoft.com/en-us/security/business/microsoft-purview
+website: "https://www.microsoft.com/en-us/security/business/microsoft-purview"
 founded: 2022
 hq: Redmond, WA, USA
 ownership: public
-ownership_detail: Product of Microsoft Corporation (NASDAQ: MSFT); not a standalone company. "Purview" brand consolidated the former Microsoft 365 Compliance + Azure Purview in 2022.
+ownership_detail: "Product of Microsoft Corporation (NASDAQ: MSFT); not a standalone company. \"Purview\" brand consolidated the former Microsoft 365 Compliance + Azure Purview in 2022."
 ownership_confidence: high
 funding_total:
 last_funding:

@@ -5,7 +5,7 @@ slug: comet
 categories: [llm-observability]
 layer: model-prompt
 aliases: [Comet ML, Opik]
-website: https://www.comet.com
+website: "https://www.comet.com"
 founded: 2017
 hq: New York, NY
 ownership: independent
