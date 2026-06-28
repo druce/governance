@@ -68,3 +68,16 @@ Researched Sonatype. CORRECTION to seed brief: Vista Equity Partners majority in
 
 ## [2026-06-28] research | aikido-security
 Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (Delbare/Delrue/Garriau). Funding ~$84M total: pre-seed €2M (Jan 2023), seed €5M (Nov 2023), Series A $17M (May 2024, Singular), Series B $60M (Jan 2026, $1B unicorn, led by DST Global w/ PSG Equity/Notion/Singular) — fastest EU cyber unicorn. Consolidated dev-first all-in-one AppSec (SCA/SAST/secrets/IaC/container/DAST/cloud); SaaS, no binary repo. ownership=independent, confidence high. hedge_fund_fit medium (Day-1 candidate for small fund shipping AI-gen code). 2 sources cached. status stub -> researched.
+
+## [2026-06-28] research | Phase 3 complete — all 222 vendors researched (Waves 1–4)
+- Wave 1 (M&A core), Wave 2 (Day-1 AI-native), Wave 3 (Day-2 agent/AI + governance), Wave 4 (foundation/infra). ~378 sources cached to raw/sources/.
+- ~30 seed M&A flags verified against primary sources; ~20 NEW deals discovered (not in seed) — see [[ai-security-m-and-a-map]].
+
+## [2026-06-28] compare | Phase 4 — overview thesis + 6 comparison pages
+- Built: ai-security-m-and-a-map, ai-gateways-head-to-head, runtime-ai-firewalls, entitlement-aware-rag-options, day-1-for-a-50-person-fund, survey-blueprint. Fleshed overview.md into full thesis.
+
+## [2026-06-28] decision | Phase 5 taxonomy pass — 42-category spine held; vendor moves R1–R9
+- jazz-security→dlp; immuta→data-access-governance primary; collibra→ai-governance-platform primary; aurascape +ai-runtime-security; symmetry-systems ownership corrected (Zscaler). See taxonomy-gaps.md "Phase 5".
+
+## [2026-06-28] lint | clean pass
+- 0 broken wikilinks, 0 orphans, 0 stubs (222/222 researched), 0 "Status: Unresolved", 0 unverified-M&A (acquired+low). Both commit gates pass. 6 zero-vendor categories are intentional (process + third-party-ai-apps). Regenerated index.md.

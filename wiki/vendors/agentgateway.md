@@ -51,7 +51,7 @@ Primary category: [[mcp-gateway]] (model/prompt layer). It also overlaps the [[a
 
 - **Form factor:** standalone single binary, Docker container, or Kubernetes (Helm charts). It is an inline **data plane** proxy; you self-host it. No SaaS offering from the project itself.
 - **Built in Rust** (with Go and TypeScript components), derived from lessons building Istio's ztunnel zero-trust tunnel.
-- **Control plane / k8s:** agentgateway is positioned as the AI-native data plane; Solo.io's [[kgateway]]-style Kubernetes Gateway-API control plane can manage it (and Solo.io ships a commercial "Solo Enterprise for agentgateway" with its own docs/versioning).
+- **Control plane / k8s:** agentgateway is positioned as the AI-native data plane; Solo.io's kgateway-style Kubernetes Gateway-API control plane can manage it (and Solo.io ships a commercial "Solo Enterprise for agentgateway" with its own docs/versioning).
 - **Integrations:** MCP, A2A, OpenAI-compatible LLM APIs, OpenAPI, OIDC/JWT/API-keys/OAuth for auth, mTLS/TLS, OpenTelemetry for metrics/logs/tracing (so it can feed a SIEM/observability stack).
 
 ## Positioning & differentiators

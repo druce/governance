@@ -8,8 +8,8 @@ aliases: []
 website: https://www.symmetry-systems.com
 founded: 2021
 hq: San Jose, California, USA
-ownership: independent
-ownership_detail: VC-backed private; $17.7M inside round (2023, ForgePoint + Prefix). No M&A.
+ownership: acquired
+ownership_detail: "Acquired by Zscaler — announced 2026-05-21, terms undisclosed, close expected days after announcement (Access Graph for AI-agent identity/data mapping). Prior: VC-backed, $17.7M inside round 2023 (ForgePoint + Prefix)."
 ownership_confidence: high
 funding_total: ~$33M (approx; disclosed rounds)
 last_funding: $17.7M inside round (2023-08-09, ForgePoint Capital + Prefix Capital)
@@ -44,7 +44,7 @@ Flexible deployment — managed SaaS, customer-hosted, cloud, on-prem, legacy, a
 Differentiator is the **identity-graph fusion** (data + identities + actions) and the active-remediation angle (DataEnforce), plus broad deployment reach including air-gapped. Origin: DARPA-funded research at UT Austin. Competes with [[cyera]], [[sentra]], [[bigid]], [[bedrock-security]], [[normalyze]], [[concentric-ai]], and [[varonis]] on the access-aware DSPM edge. Smaller/quieter than the best-funded DSPM players, so vendor-scale risk applies.
 
 ## Ownership, funding & M&A
-Independent, VC-backed. Disclosed funding includes a ~$15M Series A (2022) and a $17.7M inside round announced 2023-08-09 with ForgePoint Capital and Prefix Capital (repeat), plus W11 Capital Management and TSG (The Syndicate Group) — total roughly ~$33M (treat as approximate; not cleanly disclosed). No seed M&A flag; none found. Ownership confidence high; total-funding figure med.
+**Acquired by [[zscaler]]** — announced 2026-05-21 (terms undisclosed; Zscaler folds Symmetry's Data Access Graph into its Zero Trust platform to map/secure AI-agent identity↔data flows; close expected shortly after announcement). Prior funding: ~$15M Series A (2022) + $17.7M inside round (2023-08-09, ForgePoint + Prefix, W11, TSG) — ~$33M total (approximate). The seed had no M&A flag and an earlier research pass wrongly recorded it as independent; corrected via the Zscaler/Symmetry primary announcements. See [[ai-security-m-and-a-map]].
 
 ## CTO / hedge-fund lens
 DSPM is **Day-1** for AI on internal data; Symmetry's identity-aware cut is appealing where the real question is "which account or agent could exfiltrate this." The flexible/air-gapped deployment suits funds unwilling to send sensitive data to a cloud scanner. Indirect SR 11-7 relevance (governs data feeding models). Weigh its smaller scale against bigger DSPM vendors; good shortlist candidate where identity-to-data lineage and on-prem/air-gapped coverage are priorities.
@@ -65,3 +65,5 @@ DSPM is **Day-1** for AI on internal data; Symmetry's identity-aware cut is appe
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established independent (private), San Jose, DARPA/UT-Austin origin, ~$33M raised incl. $17.7M (2023). Product = DataGuard (DSPM) + DataEnforce (remediation), identity-graph differentiator. No M&A. Set ownership_confidence high.
+
+- [2026-06-28] CORRECTION (lint cross-check): ownership independent→acquired. Zscaler acquisition confirmed (announced 2026-05-21); earlier research missed it. Source cached.

@@ -43,7 +43,6 @@ Platform-embedded AI analysts (cross-listed; tied to a larger security stack):
 
 SOAR / automation that overlaps agentic SOC (cross-listed):
 
-- [[jazz-security]] — security automation feeding/overlapping the AI-SOC workflow.
 - [[torq]] — hyperautomation/SOAR adding AI-driven SOC capabilities.
 
 ## Consolidation / M&A dynamics
@@ -61,13 +60,13 @@ No seed-flagged acquisitions in this row. The notable dynamic is build-vs-buy by
 
 **Question.** Which AI SOC analyst / agentic SecOps tool(s) is your firm currently using or evaluating?
 
-**Answer options.** Prophet Security; Dropzone AI; 7AI; Radiant Security; Simbian; CrowdStrike Charlotte AI; Palo Alto Cortex AgentiX; Jazz Security; Torq; Other (Please Specify).
+**Answer options.** Prophet Security; Dropzone AI; 7AI; Radiant Security; Simbian; CrowdStrike Charlotte AI; Palo Alto Cortex AgentiX; Torq; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Early, fast-moving category — expect heavy "Interested/Considering/pilot" and little "in production." The platform-embedded options (Charlotte AI, Cortex AgentiX) will be "in use" mostly as a byproduct of owning CrowdStrike/Palo Alto, not as a deliberate AI-SOC purchase — worth disambiguating. Jazz and Torq straddle [[siem-soc]] SOAR; respondents may report them under either question. Ask about deployment mode (assist vs. autonomous) since trust levels vary widely.
+**Notes for survey design.** Early, fast-moving category — expect heavy "Interested/Considering/pilot" and little "in production." The platform-embedded options (Charlotte AI, Cortex AgentiX) will be "in use" mostly as a byproduct of owning CrowdStrike/Palo Alto, not as a deliberate AI-SOC purchase — worth disambiguating. Torq straddles [[siem-soc]] SOAR; respondents may report it under either question. (Jazz Security was reclassified to [[dlp]] after research — it is AI-native DLP, not a SOC analyst.) Ask about deployment mode (assist vs. autonomous) since trust levels vary widely.
 
 ## Open taxonomy questions
 
-- Overlap with [[siem-soc]] SOAR (Jazz, Torq) — confirm which survey question owns them.
+- Overlap with [[siem-soc]] SOAR (Torq) — confirm which survey question owns it.
 - As incumbents embed AI analysts, this may collapse back into [[siem-soc]] / [[edr-xdr]] rather than remaining standalone.

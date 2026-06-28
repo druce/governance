@@ -73,6 +73,37 @@ PANW is assembling identity ([[cyberark]]) + AI gateway ([[portkey]]) + AI runti
 > **TrojAI→A10 Networks was NOT in the seed CSV** — surfaced during research. A recent (2026-06-15)
 > deal; confirm completion.
 
+## Deals surfaced *during research* — NOT in the seed CSV
+
+These were not flagged in the seed; the research pass found and verified them. They materially
+date several survey answer options.
+
+| Target | Acquirer | What/why | Status | Date |
+|---|---|---|---|---|
+| [[veza]] | ServiceNow | Identity/data-access governance | **Closed** | 2026-03-02 (~$1B) |
+| [[securiti]] | Veeam | DSPM / data+AI governance | **Closed** | 2025-12-11 ($1.725B) |
+| [[symmetry-systems]] | [[zscaler]] | DSPM / data-access graph for AI agents | Announced | 2026-05-21 |
+| [[splxai]] | [[zscaler]] | AI red-team + runtime | Closed | 2025-11-03 (Q1 FY26) |
+| [[stytch]] | Twilio | Agent/auth identity | **Closed** | 2025-11-14 |
+| [[natoma]] | Snowflake | MCP-native NHI/agent governance | Announced (intent) | 2026-05-27 |
+| [[trulens]] (TruEra) | Snowflake | LLM eval (TruLens stays OSS) | **Closed** | 2024-05-22 |
+| [[langfuse]] | ClickHouse | LLM observability (core stays OSS) | Announced | 2026-01-26 |
+| [[helicone]] | Mintlify | LLM observability (now maintenance mode) | Announced | 2026-03-03 |
+| [[whylabs]] | Apple | ML monitoring (acqui-hire; product wound down) | ~2025 (med conf.) | — |
+| [[seraphic]] | CrowdStrike | Enterprise browser security | Announced | 2026-01-13 ($420M) |
+| [[layerx]] | Akamai | Browser security extension | Announced | 2026-05-14 (~$205M) |
+| [[styra]] / OPA team | Apple | Authorization (acqui-hire; OPA stays CNCF) | ~2025-08 (med conf.) | — |
+
+> **Snowflake and Zscaler are each running two-deal AI roll-ups** here (Snowflake: TruEra +
+> Natoma; Zscaler: SplxAI + Symmetry Systems). Apple quietly absorbed two open-source-adjacent
+> teams (WhyLabs, Styra/OPA) as acqui-hires.
+
+### Independents that are themselves *acquirers* (consolidating, not consolidated)
+[[1password]] → Apono (2026-06, JIT/agent access); [[cranium]] → Aiceberg (2026-05);
+[[varonis]] → Cyral (2025-03); [[menlo-security]] → Votiro (2025-02); [[bitsight]] → Cybersixgill
+(2024); [[securityscorecard]] → HyperComply (2025); [[workos]] → Warrant/FGA (2024); [[snyk]] →
+Probely + Invariant Labs (2024–25); [[okta]] → Auth0 (2021). These remain independent.
+
 ## Big-platform / infrastructure M&A (context, not AI-native)
 | Target | Acquirer | Status | Date | Value |
 |---|---|---|---|---|

@@ -104,3 +104,35 @@ stubs. **Default: stubs unless you want full pages.**
 a survey can't ask 42 questions. Should I produce a separate `comparisons/survey-blueprint.md`
 that collapses the 42 into a ~15-question survey (the real instrument), keeping the wiki
 fine-grained? I think yes and will build it in Phase 4 unless told otherwise.
+
+---
+
+## Phase 5 — final taxonomy pass (2026-06-28, post-research)
+
+**Outcome: the 42-category spine held.** Research did not argue for renames/merges/splits of
+categories; the changes were **vendor moves** and ownership corrections. Decisions:
+
+- **R1 — jazz-security moved `ai-soc-analysts` → `dlp`.** Research showed Jazz is AI-native DLP, not
+  a SOC analyst/SOAR tool. Removed from ai-soc-analysts + siem-soc pages; added to dlp.
+- **R2 — immuta primary → `data-access-governance`** (was dspm): it's access-enforcement, not posture.
+- **R3 — collibra primary → `ai-governance-platform`** (was dspm): catalog/governance, not security DSPM.
+  (Layer field left as data on the page — minor cosmetic residual.)
+- **R4 — aurascape +`ai-runtime-security`** (hybrid inline+endpoint, not pure access-governance).
+- **R5 — silverfort** noted: real center of gravity is ITDR/NHI runtime protection, not classic IGA
+  (kept identity-governance primary; flagged on page).
+- **R6 — material-security**: flagged as a likely mis-fit in `browser-security-extension` (it's
+  email/workspace security; true peers Abnormal/Proofpoint). **Kept** there — the taxonomy has no
+  email-security category and it does some workspace DLP. Open question if the taxonomy should add one.
+- **R7 — governgpt**: it's a DDQ/RFP-response automation tool for IR/fundraising, **not** an SR 11-7
+  model-risk platform. Left tagged `ai-governance-platform` with an inline caveat; candidate to drop
+  from the survey shortlist. Open question.
+- **R8 — fairly-ai** rebranded to **Asenion** (acquired anch.AI 2025-06). Alias noted on page; slug
+  kept as `fairly-ai`.
+- **R9 — symmetry-systems ownership corrected** independent → acquired (Zscaler, 2026-05-21) after a
+  lint cross-check caught a research miss. Verified against Zscaler/Symmetry primary announcements.
+- **robust-intelligence** kept as a thin alias of `cisco-ai-defense` (dedupe; both = same asset).
+
+**Residual (documented, low-impact):** a few category-page *prose* vendor lists may still list a
+vendor under a category it was re-tagged out of during research (frontmatter + `index.md` are
+authoritative and correct). The 6 zero-vendor categories (5 process pages + `third-party-ai-apps`)
+are intentionally vendorless.

@@ -55,6 +55,8 @@ AI-native / prompt-aware DLP:
   [[ai-runtime-security]], [[ai-spm]]); seed flags acquisition (see below).
 - [[lasso-security]] — DLP/guardrails for LLM and agent traffic (also
   [[ai-runtime-security]], [[agent-runtime-security]]).
+- [[jazz-security]] — AI-native DLP (reclassified here from AI-SOC after research; it is a
+  data-protection product, not a SOC analyst).
 
 Platform / incumbent DLP:
 

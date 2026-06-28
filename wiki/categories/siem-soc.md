@@ -40,7 +40,6 @@ Enterprise SIEM / SecOps platforms:
 
 SOAR / automation cross-listed (modern, AI-leaning automation that overlaps the SOC):
 
-- [[jazz-security]] — security automation / SOC tooling.
 - [[torq]] — hyperautomation/SOAR platform (also relevant to AI-SPM and AI SOC).
 
 ## Consolidation / M&A dynamics
@@ -61,13 +60,13 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Question.** Which SIEM / SOAR / SecOps platform(s) is your firm currently using or evaluating?
 
-**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Jazz Security; Torq; Other (Please Specify).
+**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Torq; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Jazz and Torq are SOAR/automation rather than full SIEM — they overlap [[ai-soc-analysts]] and may confuse respondents; consider moving them to that question or labeling them clearly. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
+**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Torq is SOAR/automation rather than full SIEM — it overlaps [[ai-soc-analysts]] and may confuse respondents; consider moving them to that question or labeling them clearly. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
 
 ## Open taxonomy questions
 
-- SOAR/automation (Jazz, Torq) straddles this and [[ai-soc-analysts]] — decide whether they belong in the SIEM survey question or the AI-SOC one.
+- SOAR/automation (Torq) straddles this and [[ai-soc-analysts]]. (Jazz Security reclassified to [[dlp]] post-research.)
 - As SIEM folds into "SecOps platforms," confirm whether this stays a distinct category or merges with [[ai-soc-analysts]] and [[edr-xdr]].

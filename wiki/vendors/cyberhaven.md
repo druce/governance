@@ -51,9 +51,9 @@ Primary home is the [[dlp]] category in the **data layer**, with a strong second
 
 ## Positioning & differentiators
 
-- **Lineage vs. pattern-matching.** The core claim that sets it apart from legacy content-inspection DLP ([[nightfall]], Microsoft Purview DLP, Netskope DLP): it tracks data provenance across transformations, so it catches sensitive data even after it's been copied, renamed, or reformatted, and reduces false positives.
-- **DDR framing + LLiM.** "Data detection and response" and a purpose-built lineage foundation model are its marketing wedge against both classic DLP and newer AI-era DLP entrants ([[mind]], [[prompt-security]], [[lasso]]).
-- **Shadow-AI overlap.** On the [[ai-access-governance]] side it competes with [[witnessai]], [[harmonic]], Nudge, Aurascape and others — but Cyberhaven comes at shadow-AI from the *endpoint/data* direction (what data left the device) rather than the network/proxy direction.
+- **Lineage vs. pattern-matching.** The core claim that sets it apart from legacy content-inspection DLP ([[nightfall-ai]], Microsoft Purview DLP, Netskope DLP): it tracks data provenance across transformations, so it catches sensitive data even after it's been copied, renamed, or reformatted, and reduces false positives.
+- **DDR framing + LLiM.** "Data detection and response" and a purpose-built lineage foundation model are its marketing wedge against both classic DLP and newer AI-era DLP entrants ([[mind]], [[prompt-security]], [[lasso-security]]).
+- **Shadow-AI overlap.** On the [[ai-access-governance]] side it competes with [[witnessai]], [[harmonic-security]], Nudge, Aurascape and others — but Cyberhaven comes at shadow-AI from the *endpoint/data* direction (what data left the device) rather than the network/proxy direction.
 
 ## Ownership, funding & M&A
 
@@ -73,9 +73,9 @@ Primary home is the [[dlp]] category in the **data layer**, with a strong second
 
 ## Competitors / alternatives
 
-- DLP / data layer: [[nightfall]], [[mind]], [[prompt-security]], [[lasso]], plus Microsoft Purview DLP and Netskope DLP.
+- DLP / data layer: [[nightfall-ai]], [[mind]], [[prompt-security]], [[lasso-security]], plus Microsoft Purview DLP and Netskope DLP.
 - DSPM neighbors: [[cyera]], [[sentra]], [[bigid]], [[varonis]].
-- Shadow-AI / [[ai-access-governance]]: [[witnessai]], [[harmonic]], Aurascape, Nudge.
+- Shadow-AI / [[ai-access-governance]]: [[witnessai]], [[harmonic-security]], Aurascape, Nudge.
 
 ## Open questions / to verify
 
