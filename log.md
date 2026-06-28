@@ -22,6 +22,10 @@ Append-only, chronological. Each entry: `## [YYYY-MM-DD] <op> | <subject>` where
 - D8: split bundled vendor cells (1Password/Doppler/Infisical, OPA/Styra, Immuta/Collibra, Obot/MintMCP); `Other (Please Specify)` excluded as vendors.
 - Flagged Q1 (agent-security granularity), Q2 (process pages), Q3 (retrieval depth), Q4 (survey blueprint) for the human.
 
+## [2026-06-28] decision | human sign-off on taxonomy + Q1–Q4 resolved
+- Human approved the 42-category spine. Answers: Q1 = keep all 5 agent categories, note multi-category coverage. Q2 = 5 thin process pages. Q3 = stubs for `content-sources`/`vector-retrieval` pointing at `entitlement-aware-rag`. Q4 = build `comparisons/survey-blueprint.md` in Phase 4.
+- Proceeding to Phase 1 (category pages) → 2 (vendor stubs) → 3 (research) → 4 (comparisons) → 5 (taxonomy pass + lint).
+
 ## [2026-06-28] setup | skeleton index.md + overview.md stub
 - Created `index.md` content catalog (sections only; populated in Phase 1+).
 - Created `wiki/overview.md` thesis stub from the layer-cake doc.
