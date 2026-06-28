@@ -5,40 +5,61 @@ slug: wiz
 categories: [dspm, ai-spm]
 layer: data
 aliases: []
-website:
-founded:
-hq:
+website: https://www.wiz.io
+founded: 2020
+hq: New York City, USA (R&D Tel Aviv, Israel)
 ownership: acquired
-ownership_detail: acq by Google (verify) (per seed; UNVERIFIED — confirm in research)
-ownership_confidence: low
-funding_total:
-last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+ownership_detail: "Acquired by Google (Alphabet) for $32B all-cash; announced 2025-03, closed 2026-03-11. Joins Google Cloud, keeps brand."
+ownership_confidence: high
+funding_total: ~$1.9B (pre-acquisition)
+last_funding: Series E $1B (2024-05) at ~$12B valuation
+deployment: [saas, api]
+target_customer: enterprise / cloud-native / regulated
+hedge_fund_fit: medium
 priority: day-1
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [sensitive-data]
+status: researched
+confidence: high
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [cnapp, cspm, dspm, ai-spm, cloud-security, google]
 ---
 
 # Wiz
 
-> **Stub.** Researched in Phase 3. Primary category: [[dspm]].
+> **One-liner** — The agentless cloud security platform (CNAPP) that maps risk across your cloud estate; now a Google company, with a DSPM and AI-SPM module relevant to AI data and model exposure.
 
-**One-liner** — _TODO (research)._
+**Categories** — [[dspm]] (primary), [[ai-spm]]
 
-**Categories** — [[dspm]], [[ai-spm]]
+## What it does
+Wiz scans cloud environments (AWS, Azure, GCP, Oracle, Kubernetes) agentlessly and builds a graph of resources, identities, vulnerabilities, exposures and data, then correlates them into prioritized "attack paths." Its core is CNAPP (cloud-native application protection), but the relevant modules here are **Wiz DSPM** (discovers and classifies sensitive data across cloud stores and flags toxic combinations of exposure + access) and **Wiz AI-SPM** (inventories AI services, models, training data and pipelines, and finds misconfigurations/exposures in them). The pitch is one connected graph rather than a stack of point tools.
+
+## Where it sits in the stack
+Primarily the **data** layer ([[dspm]]) with an [[ai-spm]] extension at the model/prompt layer. Lethal-trifecta leg: **sensitive-data** — it tells you where regulated/sensitive data lives in cloud and whether AI services can reach it. It is posture/visibility (find and prioritize), not an inline runtime control; it does not sit in the prompt path the way an [[ai-runtime-security]] firewall does.
+
+## Deployment & architecture
+SaaS console; connects to cloud accounts via agentless API scanning (read-only roles) with optional lightweight sensors for runtime. Integrates with SIEM/SOC ([[siem-soc]]), ticketing, CI/CD and IdP. Not an inline proxy.
+
+## Positioning & differentiators
+Known for fast agentless deployment, the security graph, and attack-path prioritization that reduced alert noise versus legacy CSPM. Nearest neighbors in DSPM: [[cyera]], [[sentra]], [[normalyze]], [[bigid]], [[securiti]], [[concentric-ai]] — most of those are data-first specialists, whereas Wiz comes at data from a broad cloud-security posture angle (DSPM as a module of CNAPP). For AI-SPM it overlaps [[noma-security]], [[prisma-airs]].
+
+## Ownership, funding & M&A
+**Verified.** Acquired by **Google (Alphabet)** for **$32B all-cash** — Google's largest-ever acquisition. Announced March 2025; **closed 2026-03-11** after a long regulatory path (US DOJ clearance Oct 2025; EU + Australia Feb 2026; Singapore + Japan Mar 2026). Wiz joins Google Cloud but keeps its brand and multi-cloud support. Founded January 2020 by the ex-Adallom team (Assaf Rappaport et al.); raised ~$1.9B pre-deal (Series E $1B, May 2024, ~$12B valuation); crossed $1B ARR in 2025. Ownership confidence **high**.
+
+## CTO / hedge-fund lens
+**Day-1 if you run meaningful workloads in public cloud**; less central for a shop that is mostly SaaS-only. For a fund, the draw is one tool for cloud misconfig + data exposure + (increasingly) AI asset posture, which maps to data-protection and model-risk diligence. Watch the Google ownership: neutral-multi-cloud messaging is the stated commitment, but a Google-owned control plane may be a governance question for some shops. Pricing is enterprise-tier.
+
+## Competitors / alternatives
+[[cyera]], [[sentra]], [[normalyze]], [[bigid]], [[securiti]], [[concentric-ai]], [[bedrock-security]] (DSPM); [[noma-security]], [[prisma-airs]] (AI-SPM); [[microsoft-purview]] (data security in Microsoft estates).
 
 ## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- Verify seed M&A flag: acq by Google (verify)
+- Exact total funding figure (sources range ~$1.9B); confirm against Crunchbase/filings.
+- How Wiz DSPM/AI-SPM roadmap and pricing change under Google Cloud post-close.
 
 ## Sources
-- _none yet_
+- [Google wraps up $32B acquisition of Wiz](https://techcrunch.com/2026/03/11/google-completes-32b-acquisition-of-wiz/) — fetched 2026-06-28 — supports: acquirer, $32B, close date 2026-03-11, regulatory path, integration; confidence: high
+- [Wiz, Inc. — Wikipedia](https://en.wikipedia.org/wiki/Wiz,_Inc.) — fetched 2026-06-28 — supports: founding 2020, founders, funding rounds, HQ; confidence: med
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched; verified Google acquisition ($32B all-cash, closed 2026-03-11), raised ownership_confidence low→high; filled founding/HQ/funding, DSPM + AI-SPM positioning.

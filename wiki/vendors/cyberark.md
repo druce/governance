@@ -4,41 +4,55 @@ name: CyberArk
 slug: cyberark
 categories: [non-human-identity, secrets-management, identity-governance, tool-identity-integration]
 layer: foundation
-aliases: []
-website:
-founded:
-hq:
+aliases: [CyberArk Software, CYBR]
+website: https://www.cyberark.com
+founded: 1999
+hq: Petah Tikva, Israel (US ops: Newton, Massachusetts)
 ownership: acquired
-ownership_detail: acq by Palo Alto (verify) (per seed; UNVERIFIED — confirm in research)
-ownership_confidence: low
-funding_total:
-last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+ownership_detail: "Acquired by Palo Alto Networks — announced 2025-07-30 (~$25B: $45 cash + 2.2005 PANW shares per CYBR share), closed 2026-02-11. Was public (NASDAQ: CYBR, IPO 2014) until close."
+ownership_confidence: high
+funding_total: n/a (was public, NASDAQ: CYBR)
+last_funding: IPO 2014; acquired by Palo Alto Networks 2026-02-11
+deployment: [saas, self-hosted, on-prem, api]
+target_customer: enterprise
+hedge_fund_fit: high
 priority: day-2
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [sensitive-data, egress]
+status: researched
+confidence: high
+sources_count: 2
 last_updated: 2026-06-28
-tags: []
+tags: [pam, identity, secrets, machine-identity, acquired]
 ---
 
 # CyberArk
 
-> **Stub.** Researched in Phase 3. Primary category: [[non-human-identity]].
+> Primary category: [[non-human-identity]]. The privileged-access-management (PAM) incumbent, now Palo Alto Networks' Identity Security pillar.
 
-**One-liner** — _TODO (research)._
+**One-liner** — The market-leading privileged access management vendor — vaults, rotates, and brokers access to the most powerful human, machine, and (increasingly) AI-agent credentials — acquired by [[palo-alto-networks]] in a ~$25B deal that closed February 2026.
 
-**Categories** — [[non-human-identity]], [[secrets-management]], [[identity-governance]], [[tool-identity-integration]]
+**What it does** — CyberArk started in privileged access management (vaulting admin/root credentials, session isolation and recording, just-in-time elevation) and expanded across the identity spectrum: secrets management for DevOps/cloud ([[conjur]]), machine/non-human identity, workforce and customer identity, and identity governance. For an AI buyer, the relevant frontier is **identity security for agentic AI** — treating autonomous agents as a new class of privileged identity that needs least-privilege, just-in-time access and credential governance. That framing is the explicit rationale for the PANW acquisition.
 
-## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- Verify seed M&A flag: acq by Palo Alto (verify)
+**Where it sits in the stack** — Foundation-layer identity. Tagged [[non-human-identity]] (primary), [[secrets-management]] (via [[conjur]] and CyberArk Secrets Manager), [[identity-governance]] (access certs / lifecycle), and [[tool-identity-integration]] (brokering agent->tool credentials). Lethal-trifecta role: limits the blast radius on the **sensitive-data** and **egress** legs by controlling which identities can reach which secrets/systems.
 
-## Sources
-- _none yet_
+**Deployment & architecture** — Self-hosted vault, SaaS (Privilege Cloud / Identity Security Platform), and hybrid. Conjur provides API-driven secrets injection for CI/CD and cloud-native workloads. Integrates with IdPs, SIEM, cloud providers, and Kubernetes.
+
+**Positioning & differentiators** — Known as the PAM gold standard for regulated enterprises (banks, funds, governments). Differentiator vs. cloud-native secrets ([[hashicorp-vault]], [[aws-secrets-manager]], [[azure-key-vault]]) is breadth: session controls, recording, and an enterprise governance wrapper rather than just key storage. Vs. NHI startups ([[astrix-security]], [[aembit]], [[oasis-security]], [[token-security]]) it is the incumbent with the install base. Post-acquisition, identity becomes a fourth PANW platform pillar alongside Strata/Cortex/Prisma.
+
+**Ownership, funding & M&A** — Founded 1999 (Udi Mokady, Alon N. Cohen); HQ Petah Tikva, Israel, with major US ops in Newton, MA. Public on NASDAQ (CYBR) from its 2014 IPO. **Acquired by [[palo-alto-networks]] — VERIFIED:** announced 2025-07-30 at ~$25B equity value ($45.00 cash + 2.2005 PANW shares per CyberArk share, 26% premium); transaction **closed 2026-02-11** after US/EU/UK/Israel regulatory clearance and shareholder approval. The seed flag "acq by Palo Alto" is **confirmed against PANW's own press release and corroborating SEC filings (PANW 8-K, CyberArk 6-K/425).** CyberArk itself was an acquirer: it bought Conjur (2017, ~$42M), Idaptive, Venafi (machine identity), and Zilla Security among others.
+
+**CTO / hedge-fund lens** — Day-2 in this taxonomy, but effectively Day-1 for a regulated fund that already needs PAM for its privileged human admins; AI/agent governance is an extension of controls you should already have. SR 11-7 relevance is indirect (credential governance for model-serving and agent infrastructure). The ownership change matters for procurement: a CyberArk renewal now routes through Palo Alto Networks and may be bundled with Strata/Cortex.
+
+**Competitors / alternatives** — [[astrix-security]], [[aembit]], [[oasis-security]], [[token-security]], [[entro-security]], [[silverfort]] (NHI/identity); [[sailpoint]], [[saviynt]], [[veza]] (IGA); [[hashicorp-vault]] (secrets).
+
+**Open questions / to verify**
+- Integration roadmap of CyberArk into Cortex/Strata and how licensing is repackaged.
+- Whether Conjur remains separately marketed or is folded into a unified Secrets Manager SKU.
+
+**Sources**
+- [Palo Alto Networks to Acquire CyberArk](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-agreement-to-acquire-cyberark--the-identity-security-leader) — fetched 2026-06-28 — supports: acquirer, $25B terms, 2025-07-30 announce, agentic-identity rationale; confidence: high
+- [CyberArk Acquires Conjur (CyberArk press)](https://www.cyberark.com/press/cyberark-acquires-conjur-revolutionizing-devops-security-drive-greater-business-agility/) — fetched 2026-06-28 — supports: Conjur acq 2017, founding, HQ; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched; **CONFIRMED** seed M&A flag: acquired by Palo Alto Networks (announced 2025-07-30, ~$25B; closed 2026-02-11) against PANW press release + SEC filings. Raised ownership_confidence low->high. Established founded 1999, HQ Petah Tikva (US: Newton MA), formerly NASDAQ: CYBR. Noted CyberArk's own acquisitions (Conjur 2017, Venafi, Idaptive, Zilla).

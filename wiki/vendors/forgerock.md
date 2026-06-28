@@ -4,41 +4,62 @@ name: ForgeRock
 slug: forgerock
 categories: [identity-access]
 layer: foundation
-aliases: []
-website:
-founded:
-hq:
+aliases: [ForgeRock Identity Platform]
+website: https://www.pingidentity.com
+founded: 2010
+hq: San Francisco, USA (origins in Norway)
 ownership: acquired
-ownership_detail: acq by Thoma Bravo/Ping (verify) (per seed; UNVERIFIED — confirm in research)
-ownership_confidence: low
-funding_total:
-last_funding:
-deployment: []
-target_customer:
-hedge_fund_fit: unclear
+ownership_detail: "Acquired by Thoma Bravo (~$2.3B, $23.25/share) and merged into Ping Identity; announced 2022-10-11, closed 2023-08-23. No longer an independent brand."
+ownership_confidence: high
+funding_total: n/a (was public, NYSE: FORG, before take-private)
+last_funding: IPO Sep 2021
+deployment: [saas, self-hosted, on-prem]
+target_customer: enterprise / regulated (workforce + CIAM)
+hedge_fund_fit: low
 priority: day-1
-trifecta_relevance: []
-status: stub
-confidence: low
-sources_count: 0
+trifecta_relevance: [none]
+status: researched
+confidence: high
+sources_count: 1
 last_updated: 2026-06-28
-tags: []
+tags: [iam, ciam, identity-access, thoma-bravo, ping-identity]
 ---
 
 # ForgeRock
 
-> **Stub.** Researched in Phase 3. Primary category: [[identity-access]].
-
-**One-liner** — _TODO (research)._
+> **One-liner** — An enterprise identity & access management platform (workforce + customer IAM, governance, orchestration); acquired by Thoma Bravo and folded into [[ping-identity]] — effectively no longer a standalone brand.
 
 **Categories** — [[identity-access]]
 
+## What it does
+ForgeRock provided a full IAM platform: access management/SSO, customer identity (CIAM), identity governance, and identity orchestration — built originally on the open-source OpenAM/OpenIDM lineage. The job: be the front door that authenticates and authorizes humans (and increasingly workloads) into applications, including AI assistants. It served 1,300+ organizations at acquisition.
+
+## Where it sits in the stack
+Foundation layer, [[identity-access]] — the human/agent front door that everything else gates on. Lethal-trifecta leg: **none directly**, but it is the identity substrate that access governance, [[entitlement-aware-rag]] and agent authz all depend on. Adjacent to [[identity-governance]] and [[non-human-identity]].
+
+## Deployment & architecture
+SaaS (ForgeRock Identity Cloud) plus self-managed/on-prem deployments — historically stronger than pure-SaaS rivals at complex on-prem/hybrid and CIAM scenarios. Standards-based (OIDC, SAML, OAuth2, SCIM).
+
+## Positioning & differentiators
+Was known for deployment flexibility (self-managed + cloud), heavy-duty CIAM, and identity orchestration. Nearest neighbors: [[ping-identity]] (now the parent brand), [[okta]], [[microsoft-entra]]. Post-merger, ForgeRock capabilities are being consolidated into the Ping Identity portfolio, so it is increasingly a feature set under Ping rather than a separate product to shop.
+
+## Ownership, funding & M&A
+**Verified — both seed flags confirmed.** Acquired by **Thoma Bravo** in an all-cash deal (~**$2.3B**, **$23.25/share**) and **merged into Ping Identity** (also Thoma Bravo-owned). Announced **2022-10-11**; stockholder approval 2023-01-12; **closed 2023-08-23**. Delisted from NYSE (was FORG). Founded 2010 (origins in Norway, ex-Sun Microsystems team); HQ San Francisco; previously public (IPO Sep 2021). Ownership confidence **high**.
+
+## CTO / hedge-fund lens
+**Day-1 in the sense that an IdP is table-stakes — but you would not buy "ForgeRock" net-new today**; you would evaluate [[ping-identity]] (the surviving brand), [[microsoft-entra]] or [[okta]]. ForgeRock remains relevant mainly to existing customers managing the migration/consolidation into Ping. For a typical fund already on Entra or Okta, this is not a fresh buying decision. Note the Thoma Bravo identity roll-up (Ping + ForgeRock + others) as a market-concentration trend.
+
+## Competitors / alternatives
+[[ping-identity]], [[okta]], [[microsoft-entra]], [[sailpoint]] (governance overlap), [[saviynt]].
+
 ## Open questions / to verify
-- Confirm ownership, funding, HQ, founding year against primary sources.
-- Verify seed M&A flag: acq by Thoma Bravo/Ping (verify)
+- Long-term product roadmap: which ForgeRock components survive vs are sunset under Ping.
+- Migration path/timeline pushed to existing ForgeRock customers.
 
 ## Sources
-- _none yet_
+- [Thoma Bravo Completes Acquisition of ForgeRock; Combines into Ping Identity](https://www.thomabravo.com/press-releases/thoma-bravo-completes-acquisition-of-forgerock-combines-forgerock-into-ping-identity) — fetched 2026-06-28 — supports: acquirer Thoma Bravo, $2.3B, $23.25/share, close 2023-08-23, merge into Ping; confidence: high
+- [Thoma Bravo Completes Acquisition of ForgeRock (PR Newswire)](https://www.prnewswire.com/news-releases/thoma-bravo-completes-acquisition-of-forgerock-combines-forgerock-into-ping-identity-301908059.html) — fetched 2026-06-28 — supports: deal terms, 1,300+ orgs, IAM positioning; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-06-28] Researched; verified BOTH seed flags — Thoma Bravo acquisition (~$2.3B, closed 2023-08-23) AND merger into Ping Identity; raised ownership_confidence low→high; filled founding/HQ, noted brand consolidation under Ping.
