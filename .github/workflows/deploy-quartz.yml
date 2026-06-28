@@ -1,0 +1,72 @@
+name: Deploy Quartz wiki to GitHub Pages
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout wiki content
+        uses: actions/checkout@v4
+        with:
+          path: site
+          fetch-depth: 0
+
+      - name: Checkout Quartz
+        uses: actions/checkout@v4
+        with:
+          repository: jackyzha0/quartz
+          ref: v4
+          path: quartz
+          fetch-depth: 1
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Assemble content (preserve repo layout so relative links resolve)
+        run: |
+          rm -rf quartz/content
+          mkdir -p quartz/content
+          cp site/index.md site/taxonomy.md site/taxonomy-gaps.md site/log.md quartz/content/
+          cp site/proposed-ai-stack-table-2026-06-28.md quartz/content/ 2>/dev/null || true
+          cp -r site/wiki quartz/content/wiki
+          cp site/quartz.config.ts quartz/quartz.config.ts
+          cp site/quartz.layout.ts quartz/quartz.layout.ts
+          echo "----- assembled content tree -----"
+          find quartz/content -name '*.md' | wc -l
+
+      - name: Build site
+        working-directory: quartz
+        run: |
+          npm ci
+          npx quartz build
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: quartz/public
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

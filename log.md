@@ -84,3 +84,6 @@ Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (
 
 ## [2026-06-28] decision | converted [[wikilinks]] -> relative markdown links (Option A)
 - Converted 5,415 `[[slug]]` / `[[slug|alias]]` links across 275 md files to relative `[text](path.md)` links so they render as clickable in GitHub's repo view (GHFM does not resolve `[[ ]]`). 0 unresolved, 0 broken targets, 0 wikilinks remaining. Excluded Claude.md (convention examples) and conversation.txt (transcript). Updated Claude.md §3 note.
+
+## [2026-06-28] decision | Quartz published site on GitHub Pages
+- Added .github/workflows/deploy-quartz.yml (clones Quartz v4 at build time, assembles repo md as content preserving layout so relative links resolve, builds, deploys to Pages). quartz.config.ts + quartz.layout.ts at root. Site: https://druce.ai/governance/ . Excludes raw/, conversation.txt, prompts, Claude.md from the published site. CustomOgImages disabled for build speed.

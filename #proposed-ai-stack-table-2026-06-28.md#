@@ -1,0 +1,24 @@
+# PROPOSED revision of the layer-cake table (2026-06-28)
+
+Drop-in replacement for the table in `2026-06-19-AI-stack.md`, updated from the wiki's verified
+research. **The seed file is left untouched (immutable).** Changes vs. the original:
+
+- **M&A labelled inline** — `→ Acquirer, year` (or `→ Acquirer, announced` for pending deals). ~1/3 of
+  named options are now acquired. Sources cached under `raw/sources/`; map: see the AI-security M&A map.
+- **3 new rows** the original folded away: **Non-Human / Agent Identity**, **Identity Governance (IGA)**,
+  **AI Red-Teaming / Guardrails**.
+- **Corrections**: Jazz Security moved to **DLP** (it's AI-native DLP, not a SOC tool); **Robust
+  Intelligence** renamed **Cisco AI Defense**; **GovernGPT** removed from AI Governance (it's a DDQ/RFP
+  tool); **Material Security** removed from Browser Extension (it's email/workspace security);
+  **WitnessAI** spelling normalised; **Comply.com** dropped (unverified).
+- **Additions**: TrojAI, 7AI, Stytch, Natoma, Aembit/Oasis/Token/Entro/Clutch, etc.
+
+Bold = the sensible default / most-shopped option in that row.
+
+---
+
+### Notes for the author
+- **Pending deals** (`announced`): Astrix→Cisco, Seraphic→CrowdStrike, LayerX→Akamai, Natoma→Snowflake, Symmetry→Zscaler — all announced but not confirmed closed as of 2026-06-28; verify before publishing.
+- **Acqui-hires** (team, not company): WhyLabs→Apple and Styra/OPA→Apple — OPA itself stays under the CNCF.
+- Consider an intro sentence on the **consolidation wave** (Palo Alto, Cisco, Zscaler, CrowdStrike, F5, Snowflake, Apple each running multi-deal AI roll-ups) and linking to the wiki's `ai-security-m-and-a-map` as the kept-current companion.
+- **Open items to confirm before publishing:** "Comply.com" (could not verify); GovernGPT's true category (DDQ/RFP tool); Material Security's slot (email security, not browser).

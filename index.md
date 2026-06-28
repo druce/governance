@@ -1,12 +1,21 @@
-# Index — content catalog
+# AI Governance & Security Vendor Wiki
 
-Read this first when answering a query. Every page, grouped by section, with status + last_updated.
+A map of the enterprise **AI governance / security vendor landscape**, written for a **hedge-fund /
+asset-manager CTO**: what each category is for, when you need it (Day-1 vs Day-2), who fills each
+slot, who owns whom, and how to tell neighbors apart. **42 categories · 222 researched vendors · 6
+comparisons**, every dated claim anchored to a cited source. *As of 2026-06-28 — verify M&A before relying on it.*
 
-**Counts:** 42 categories · 222 vendors. Build phase: 3 (vendor research) in progress.
+**Start here:** [The thesis (overview)](wiki/overview.md) ·
+[What's actually Day-1 for a ~50-person fund](wiki/comparisons/day-1-for-a-50-person-fund.md) ·
+[The AI-security M&A map](wiki/comparisons/ai-security-m-and-a-map.md) ·
+[Taxonomy](taxonomy.md)
+
+> Below is the full content catalog — every page, grouped, with status. Use the left sidebar
+> (Explorer) and search to navigate; the right sidebar shows the link graph and backlinks.
 
 ## Overview
 
-- [overview](wiki/overview.md) — the thesis: layer cake, red/yellow/green trust zones, the lethal trifecta — (stub, 2026-06-28)
+- [overview](wiki/overview.md) — the thesis: layer cake, red/yellow/green trust zones, the lethal trifecta — (drafted, 2026-06-28)
 
 ## Categories
 
