@@ -1,4 +1,5 @@
 ---
+title: Monitaur
 type: vendor
 name: Monitaur
 slug: monitaur

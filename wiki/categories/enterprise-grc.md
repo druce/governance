@@ -1,4 +1,5 @@
 ---
+title: Enterprise GRC
 type: category
 name: Enterprise GRC
 slug: enterprise-grc

@@ -1,4 +1,5 @@
 ---
+title: Okta
 type: vendor
 name: Okta
 slug: okta

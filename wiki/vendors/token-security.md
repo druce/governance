@@ -1,4 +1,5 @@
 ---
+title: Token Security
 type: vendor
 name: Token Security
 slug: token-security

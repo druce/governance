@@ -1,4 +1,5 @@
 ---
+title: Oso
 type: vendor
 name: Oso
 slug: oso

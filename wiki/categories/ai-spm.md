@@ -1,4 +1,5 @@
 ---
+title: AI-SPM (AI Security Posture Management)
 type: category
 name: AI-SPM (AI Security Posture Management)
 slug: ai-spm

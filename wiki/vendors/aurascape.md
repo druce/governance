@@ -1,4 +1,5 @@
 ---
+title: Aurascape
 type: vendor
 name: Aurascape
 slug: aurascape

@@ -1,4 +1,5 @@
 ---
+title: Agent Security (runtime)
 type: category
 name: Agent Security (runtime)
 slug: agent-runtime-security

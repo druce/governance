@@ -1,4 +1,5 @@
 ---
+title: Credo AI
 type: vendor
 name: Credo AI
 slug: credo-ai

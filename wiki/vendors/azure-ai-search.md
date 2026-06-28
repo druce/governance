@@ -1,4 +1,5 @@
 ---
+title: Azure AI Search
 type: vendor
 name: Azure AI Search
 slug: azure-ai-search

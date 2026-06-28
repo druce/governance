@@ -1,4 +1,5 @@
 ---
+title: Weaviate
 type: vendor
 name: Weaviate
 slug: weaviate

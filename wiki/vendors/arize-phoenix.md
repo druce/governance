@@ -1,4 +1,5 @@
 ---
+title: Arize Phoenix
 type: vendor
 name: Arize Phoenix
 slug: arize-phoenix

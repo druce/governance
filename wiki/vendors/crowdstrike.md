@@ -1,4 +1,5 @@
 ---
+title: CrowdStrike
 type: vendor
 name: CrowdStrike
 slug: crowdstrike

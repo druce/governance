@@ -1,4 +1,5 @@
 ---
+title: ConductorOne
 type: vendor
 name: ConductorOne
 slug: conductorone

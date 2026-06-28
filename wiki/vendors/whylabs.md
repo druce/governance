@@ -1,4 +1,5 @@
 ---
+title: WhyLabs
 type: vendor
 name: WhyLabs
 slug: whylabs

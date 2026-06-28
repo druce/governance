@@ -1,4 +1,5 @@
 ---
+title: AI-Security M&A Map (2023–2026)
 type: comparison
 name: AI-Security M&A Map (2023–2026)
 slug: ai-security-m-and-a-map

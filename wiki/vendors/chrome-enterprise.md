@@ -1,4 +1,5 @@
 ---
+title: Chrome Enterprise Premium (Google)
 type: vendor
 name: Chrome Enterprise Premium (Google)
 slug: chrome-enterprise

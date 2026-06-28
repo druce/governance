@@ -1,4 +1,5 @@
 ---
+title: Google Drive
 type: vendor
 name: Google Drive
 slug: google-drive

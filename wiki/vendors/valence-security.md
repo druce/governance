@@ -1,4 +1,5 @@
 ---
+title: Valence Security
 type: vendor
 name: Valence Security
 slug: valence-security

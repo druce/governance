@@ -1,4 +1,5 @@
 ---
+title: Docker MCP Gateway
 type: vendor
 name: Docker MCP Gateway
 slug: docker-mcp-gateway

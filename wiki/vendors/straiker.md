@@ -1,4 +1,5 @@
 ---
+title: Straiker
 type: vendor
 name: Straiker
 slug: straiker

@@ -1,4 +1,5 @@
 ---
+title: Obsidian Security
 type: vendor
 name: Obsidian Security
 slug: obsidian-security

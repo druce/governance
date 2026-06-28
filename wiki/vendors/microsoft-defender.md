@@ -1,4 +1,5 @@
 ---
+title: Microsoft Defender XDR
 type: vendor
 name: Microsoft Defender XDR
 slug: microsoft-defender

@@ -1,4 +1,5 @@
 ---
+title: Legit Security
 type: vendor
 name: Legit Security
 slug: legit-security

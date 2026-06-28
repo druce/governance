@@ -1,4 +1,5 @@
 ---
+title: Braintrust
 type: vendor
 name: Braintrust
 slug: braintrust

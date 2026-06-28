@@ -1,4 +1,5 @@
 ---
+title: Island
 type: vendor
 name: Island
 slug: island

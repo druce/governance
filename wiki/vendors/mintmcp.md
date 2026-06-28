@@ -1,4 +1,5 @@
 ---
+title: MintMCP
 type: vendor
 name: MintMCP
 slug: mintmcp

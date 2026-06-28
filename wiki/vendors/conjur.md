@@ -1,4 +1,5 @@
 ---
+title: CyberArk Conjur
 type: vendor
 name: CyberArk Conjur
 slug: conjur

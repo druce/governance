@@ -1,4 +1,5 @@
 ---
+title: UpGuard
 type: vendor
 name: UpGuard
 slug: upguard

@@ -1,4 +1,5 @@
 ---
+title: ModelOp
 type: vendor
 name: ModelOp
 slug: modelop

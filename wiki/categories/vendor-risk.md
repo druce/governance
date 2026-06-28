@@ -1,4 +1,5 @@
 ---
+title: Third-Party / Vendor Risk + Cyber Ratings
 type: category
 name: Third-Party / Vendor Risk + Cyber Ratings
 slug: vendor-risk

@@ -1,4 +1,5 @@
 ---
+title: Enterprise Content Sources
 type: category
 name: Enterprise Content Sources
 slug: content-sources

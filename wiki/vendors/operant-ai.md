@@ -1,4 +1,5 @@
 ---
+title: Operant AI
 type: vendor
 name: Operant AI
 slug: operant-ai

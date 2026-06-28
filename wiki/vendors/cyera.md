@@ -1,4 +1,5 @@
 ---
+title: Cyera
 type: vendor
 name: Cyera
 slug: cyera

@@ -1,4 +1,5 @@
 ---
+title: Robust Intelligence
 type: vendor
 name: Robust Intelligence
 slug: robust-intelligence

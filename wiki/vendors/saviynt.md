@@ -1,4 +1,5 @@
 ---
+title: Saviynt
 type: vendor
 name: Saviynt
 slug: saviynt

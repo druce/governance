@@ -1,4 +1,5 @@
 ---
+title: Arthur AI
 type: vendor
 name: Arthur AI
 slug: arthur-ai

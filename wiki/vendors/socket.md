@@ -1,4 +1,5 @@
 ---
+title: Socket
 type: vendor
 name: Socket
 slug: socket

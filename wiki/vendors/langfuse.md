@@ -1,4 +1,5 @@
 ---
+title: Langfuse
 type: vendor
 name: Langfuse
 slug: langfuse

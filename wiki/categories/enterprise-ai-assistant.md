@@ -1,4 +1,5 @@
 ---
+title: Enterprise AI Assistant
 type: category
 name: Enterprise AI Assistant
 slug: enterprise-ai-assistant

@@ -1,4 +1,5 @@
 ---
+title: Cranium
 type: vendor
 name: Cranium
 slug: cranium

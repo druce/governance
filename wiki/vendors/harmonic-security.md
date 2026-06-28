@@ -1,4 +1,5 @@
 ---
+title: Harmonic Security
 type: vendor
 name: Harmonic Security
 slug: harmonic-security

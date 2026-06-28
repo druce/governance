@@ -1,4 +1,5 @@
 ---
+title: Zscaler
 type: vendor
 name: Zscaler
 slug: zscaler

@@ -1,4 +1,5 @@
 ---
+title: Patronus AI
 type: vendor
 name: Patronus AI
 slug: patronus-ai

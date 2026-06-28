@@ -1,4 +1,5 @@
 ---
+title: Cloudflare
 type: vendor
 name: Cloudflare
 slug: cloudflare

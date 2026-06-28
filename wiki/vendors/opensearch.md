@@ -1,4 +1,5 @@
 ---
+title: OpenSearch
 type: vendor
 name: OpenSearch
 slug: opensearch

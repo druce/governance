@@ -1,4 +1,5 @@
 ---
+title: Linx Security
 type: vendor
 name: Linx Security
 slug: linx-security

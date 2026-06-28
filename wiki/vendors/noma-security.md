@@ -1,4 +1,5 @@
 ---
+title: Noma Security
 type: vendor
 name: Noma Security
 slug: noma-security

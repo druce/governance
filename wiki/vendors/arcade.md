@@ -1,4 +1,5 @@
 ---
+title: Arcade.dev
 type: vendor
 name: Arcade.dev
 slug: arcade

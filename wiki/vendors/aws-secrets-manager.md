@@ -1,4 +1,5 @@
 ---
+title: AWS Secrets Manager
 type: vendor
 name: AWS Secrets Manager
 slug: aws-secrets-manager

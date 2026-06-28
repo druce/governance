@@ -1,4 +1,5 @@
 ---
+title: WorkOS
 type: vendor
 name: WorkOS
 slug: workos

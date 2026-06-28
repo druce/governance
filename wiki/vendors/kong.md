@@ -1,4 +1,5 @@
 ---
+title: Kong
 type: vendor
 name: Kong
 slug: kong

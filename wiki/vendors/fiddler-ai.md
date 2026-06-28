@@ -1,4 +1,5 @@
 ---
+title: Fiddler AI
 type: vendor
 name: Fiddler AI
 slug: fiddler-ai

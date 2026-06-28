@@ -1,4 +1,5 @@
 ---
+title: Doppler
 type: vendor
 name: Doppler
 slug: doppler

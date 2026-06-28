@@ -1,4 +1,5 @@
 ---
+title: Elastic (ELK)
 type: vendor
 name: Elastic (ELK)
 slug: elastic

@@ -1,4 +1,5 @@
 ---
+title: Doppel
 type: vendor
 name: Doppel
 slug: doppel

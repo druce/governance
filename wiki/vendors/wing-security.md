@@ -1,4 +1,5 @@
 ---
+title: Wing Security
 type: vendor
 name: Wing Security
 slug: wing-security

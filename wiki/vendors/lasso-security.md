@@ -1,4 +1,5 @@
 ---
+title: Lasso Security
 type: vendor
 name: Lasso Security
 slug: lasso-security

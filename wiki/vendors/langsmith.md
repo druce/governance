@@ -1,4 +1,5 @@
 ---
+title: LangSmith (LangChain)
 type: vendor
 name: LangSmith (LangChain)
 slug: langsmith

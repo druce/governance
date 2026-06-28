@@ -1,4 +1,5 @@
 ---
+title: Policy-as-Code
 type: category
 name: Policy-as-Code
 slug: policy-as-code

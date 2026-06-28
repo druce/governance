@@ -1,4 +1,5 @@
 ---
+title: Reality Defender
 type: vendor
 name: Reality Defender
 slug: reality-defender

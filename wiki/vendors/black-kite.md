@@ -1,4 +1,5 @@
 ---
+title: Black Kite
 type: vendor
 name: Black Kite
 slug: black-kite

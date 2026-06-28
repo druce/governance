@@ -1,4 +1,5 @@
 ---
+title: Adaptive Security
 type: vendor
 name: Adaptive Security
 slug: adaptive-security

@@ -1,4 +1,5 @@
 ---
+title: TruLens
 type: vendor
 name: TruLens
 slug: trulens

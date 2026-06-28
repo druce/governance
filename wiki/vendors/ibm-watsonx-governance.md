@@ -1,4 +1,5 @@
 ---
+title: IBM watsonx.governance
 type: vendor
 name: IBM watsonx.governance
 slug: ibm-watsonx-governance

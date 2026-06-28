@@ -1,4 +1,5 @@
 ---
+title: Prisma AIRS (Palo Alto)
 type: vendor
 name: Prisma AIRS (Palo Alto)
 slug: prisma-airs

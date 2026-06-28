@@ -1,4 +1,5 @@
 ---
+title: Trust Zone Segmentation
 type: category
 name: Trust Zone Segmentation
 slug: trust-zone-segmentation

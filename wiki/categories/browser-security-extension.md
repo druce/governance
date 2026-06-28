@@ -1,4 +1,5 @@
 ---
+title: Browser Security Extension
 type: category
 name: Browser Security Extension
 slug: browser-security-extension

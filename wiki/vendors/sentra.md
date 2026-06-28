@@ -1,4 +1,5 @@
 ---
+title: Sentra
 type: vendor
 name: Sentra
 slug: sentra

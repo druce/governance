@@ -1,4 +1,5 @@
 ---
+title: Aim Security
 type: vendor
 name: Aim Security
 slug: aim-security

@@ -1,4 +1,5 @@
 ---
+title: Azure Key Vault
 type: vendor
 name: Azure Key Vault
 slug: azure-key-vault

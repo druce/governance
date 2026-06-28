@@ -1,4 +1,5 @@
 ---
+title: agentgateway (Solo.io / AAIF)
 type: vendor
 name: agentgateway (Solo.io / AAIF)
 slug: agentgateway

@@ -1,4 +1,5 @@
 ---
+title: Snyk
 type: vendor
 name: Snyk
 slug: snyk

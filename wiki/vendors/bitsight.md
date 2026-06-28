@@ -1,4 +1,5 @@
 ---
+title: Bitsight
 type: vendor
 name: Bitsight
 slug: bitsight

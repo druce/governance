@@ -1,4 +1,5 @@
 ---
+title: Gemini Enterprise / Agentspace (Google)
 type: vendor
 name: Gemini Enterprise / Agentspace (Google)
 slug: gemini-enterprise

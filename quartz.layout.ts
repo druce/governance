@@ -20,7 +20,8 @@ export const defaultContentPageLayout: PageLayout = {
       component: Component.Breadcrumbs(),
       condition: (page) => page.fileData.slug !== "index",
     }),
-    Component.ArticleTitle(),
+    // ArticleTitle omitted: every page already starts with an `# H1`; the `title`
+    // frontmatter still drives the browser <title>, breadcrumbs, graph, and search.
     Component.ContentMeta(),
     Component.TagList(),
   ],

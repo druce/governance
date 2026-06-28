@@ -1,4 +1,5 @@
 ---
+title: Silverfort
 type: vendor
 name: Silverfort
 slug: silverfort

@@ -1,4 +1,5 @@
 ---
+title: Risk Tiers
 type: category
 name: Risk Tiers
 slug: risk-tiers

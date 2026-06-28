@@ -1,4 +1,5 @@
 ---
+title: Behavox
 type: vendor
 name: Behavox
 slug: behavox

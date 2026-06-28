@@ -1,4 +1,5 @@
 ---
+title: AppOmni
 type: vendor
 name: AppOmni
 slug: appomni

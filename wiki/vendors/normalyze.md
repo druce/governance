@@ -1,4 +1,5 @@
 ---
+title: Normalyze
 type: vendor
 name: Normalyze
 slug: normalyze

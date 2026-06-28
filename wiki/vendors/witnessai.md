@@ -1,4 +1,5 @@
 ---
+title: WitnessAI
 type: vendor
 name: WitnessAI
 slug: witnessai

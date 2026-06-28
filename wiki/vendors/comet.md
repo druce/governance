@@ -1,4 +1,5 @@
 ---
+title: Comet (Opik)
 type: vendor
 name: Comet (Opik)
 slug: comet

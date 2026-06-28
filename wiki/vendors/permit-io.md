@@ -1,4 +1,5 @@
 ---
+title: Permit.io
 type: vendor
 name: Permit.io
 slug: permit-io

@@ -1,4 +1,5 @@
 ---
+title: ForgeRock
 type: vendor
 name: ForgeRock
 slug: forgerock

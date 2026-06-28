@@ -1,4 +1,5 @@
 ---
+title: Semgrep
 type: vendor
 name: Semgrep
 slug: semgrep

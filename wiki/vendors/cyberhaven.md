@@ -1,4 +1,5 @@
 ---
+title: Cyberhaven
 type: vendor
 name: Cyberhaven
 slug: cyberhaven

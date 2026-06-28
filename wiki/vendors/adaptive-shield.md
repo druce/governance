@@ -1,4 +1,5 @@
 ---
+title: Adaptive Shield
 type: vendor
 name: Adaptive Shield
 slug: adaptive-shield

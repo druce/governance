@@ -1,4 +1,5 @@
 ---
+title: TrojAI
 type: vendor
 name: TrojAI
 slug: trojai

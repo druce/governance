@@ -1,4 +1,5 @@
 ---
+title: Quilr
 type: vendor
 name: Quilr
 slug: quilr

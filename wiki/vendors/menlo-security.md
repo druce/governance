@@ -1,4 +1,5 @@
 ---
+title: Menlo Security
 type: vendor
 name: Menlo Security
 slug: menlo-security

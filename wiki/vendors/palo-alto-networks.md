@@ -1,4 +1,5 @@
 ---
+title: Palo Alto Networks
 type: vendor
 name: Palo Alto Networks
 slug: palo-alto-networks

@@ -1,4 +1,5 @@
 ---
+title: JFrog
 type: vendor
 name: JFrog
 slug: jfrog

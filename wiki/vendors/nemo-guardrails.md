@@ -1,4 +1,5 @@
 ---
+title: NeMo Guardrails (NVIDIA)
 type: vendor
 name: NeMo Guardrails (NVIDIA)
 slug: nemo-guardrails

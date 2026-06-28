@@ -1,4 +1,5 @@
 ---
+title: AI Red Teaming / Guardrails
 type: category
 name: AI Red Teaming / Guardrails
 slug: ai-red-teaming

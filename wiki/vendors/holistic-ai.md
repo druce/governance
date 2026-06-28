@@ -1,4 +1,5 @@
 ---
+title: Holistic AI
 type: vendor
 name: Holistic AI
 slug: holistic-ai

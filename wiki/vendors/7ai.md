@@ -1,4 +1,5 @@
 ---
+title: 7AI
 type: vendor
 name: 7AI
 slug: 7ai

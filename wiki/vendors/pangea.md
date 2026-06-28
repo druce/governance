@@ -1,4 +1,5 @@
 ---
+title: Pangea
 type: vendor
 name: Pangea
 slug: pangea

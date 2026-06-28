@@ -1,4 +1,5 @@
 ---
+title: Amazon Q Business
 type: vendor
 name: Amazon Q Business
 slug: amazon-q-business

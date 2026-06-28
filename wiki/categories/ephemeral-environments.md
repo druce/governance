@@ -1,4 +1,5 @@
 ---
+title: Ephemeral Environments
 type: category
 name: Ephemeral Environments
 slug: ephemeral-environments

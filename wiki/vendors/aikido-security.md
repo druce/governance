@@ -1,4 +1,5 @@
 ---
+title: Aikido Security
 type: vendor
 name: Aikido Security
 slug: aikido-security

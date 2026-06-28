@@ -1,4 +1,5 @@
 ---
+title: Apex Security
 type: vendor
 name: Apex Security
 slug: apex-security

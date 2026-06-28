@@ -1,4 +1,5 @@
 ---
+title: LLM Observability & Evaluation
 type: category
 name: LLM Observability & Evaluation
 slug: llm-observability

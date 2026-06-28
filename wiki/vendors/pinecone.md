@@ -1,4 +1,5 @@
 ---
+title: Pinecone
 type: vendor
 name: Pinecone
 slug: pinecone

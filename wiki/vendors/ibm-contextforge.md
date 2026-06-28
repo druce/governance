@@ -1,4 +1,5 @@
 ---
+title: IBM ContextForge MCP Gateway
 type: vendor
 name: IBM ContextForge MCP Gateway
 slug: ibm-contextforge

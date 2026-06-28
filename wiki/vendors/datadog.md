@@ -1,4 +1,5 @@
 ---
+title: Datadog LLM Observability
 type: vendor
 name: Datadog LLM Observability
 slug: datadog

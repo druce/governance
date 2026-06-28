@@ -1,4 +1,5 @@
 ---
+title: Enterprise Browser
 type: category
 name: Enterprise Browser
 slug: enterprise-browser

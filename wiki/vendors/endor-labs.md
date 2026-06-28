@@ -1,4 +1,5 @@
 ---
+title: Endor Labs
 type: vendor
 name: Endor Labs
 slug: endor-labs

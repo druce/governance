@@ -1,4 +1,5 @@
 ---
+title: SplxAI
 type: vendor
 name: SplxAI
 slug: splxai

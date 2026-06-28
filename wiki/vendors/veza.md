@@ -1,4 +1,5 @@
 ---
+title: Veza
 type: vendor
 name: Veza
 slug: veza

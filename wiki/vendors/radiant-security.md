@@ -1,4 +1,5 @@
 ---
+title: Radiant Security
 type: vendor
 name: Radiant Security
 slug: radiant-security

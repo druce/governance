@@ -1,4 +1,5 @@
 ---
+title: Reco
 type: vendor
 name: Reco
 slug: reco

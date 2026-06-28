@@ -1,4 +1,5 @@
 ---
+title: Bedrock Security
 type: vendor
 name: Bedrock Security
 slug: bedrock-security

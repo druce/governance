@@ -1,4 +1,5 @@
 ---
+title: AI Access Governance (CASB for AI) / Shadow-AI
 type: category
 name: AI Access Governance (CASB for AI) / Shadow-AI
 slug: ai-access-governance

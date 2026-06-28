@@ -1,4 +1,5 @@
 ---
+title: Seraphic Security
 type: vendor
 name: Seraphic Security
 slug: seraphic

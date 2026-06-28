@@ -1,4 +1,5 @@
 ---
+title: LiteLLM
 type: vendor
 name: LiteLLM
 slug: litellm

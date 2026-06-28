@@ -1,4 +1,5 @@
 ---
+title: SaaS Security Posture Management
 type: category
 name: SaaS Security Posture Management
 slug: sspm

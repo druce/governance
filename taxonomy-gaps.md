@@ -1,3 +1,7 @@
+---
+title: "Taxonomy gaps & decisions"
+---
+
 # Taxonomy gaps, decisions & open questions
 
 Mismatches between the two seeds, the decisions taken to reconcile them, and questions

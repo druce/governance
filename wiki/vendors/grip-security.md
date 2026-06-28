@@ -1,4 +1,5 @@
 ---
+title: Grip Security
 type: vendor
 name: Grip Security
 slug: grip-security

@@ -1,4 +1,5 @@
 ---
+title: Survey Blueprint — 42 categories → ~16 questions
 type: comparison
 name: Survey Blueprint — 42 categories → ~16 questions
 slug: survey-blueprint

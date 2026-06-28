@@ -1,4 +1,5 @@
 ---
+title: Dropzone AI
 type: vendor
 name: Dropzone AI
 slug: dropzone-ai

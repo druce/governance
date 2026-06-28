@@ -1,4 +1,5 @@
 ---
+title: EDR / XDR
 type: category
 name: EDR / XDR
 slug: edr-xdr

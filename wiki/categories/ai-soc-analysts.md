@@ -1,4 +1,5 @@
 ---
+title: AI SecOps / Agentic SOC Analysts
 type: category
 name: AI SecOps / Agentic SOC Analysts
 slug: ai-soc-analysts

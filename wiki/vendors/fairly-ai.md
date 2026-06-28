@@ -1,4 +1,5 @@
 ---
+title: Fairly AI
 type: vendor
 name: Fairly AI
 slug: fairly-ai

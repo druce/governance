@@ -1,4 +1,5 @@
 ---
+title: Data Loss Prevention (DLP)
 type: category
 name: Data Loss Prevention (DLP)
 slug: dlp

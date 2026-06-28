@@ -1,4 +1,5 @@
 ---
+title: Sumo Logic
 type: vendor
 name: Sumo Logic
 slug: sumo-logic

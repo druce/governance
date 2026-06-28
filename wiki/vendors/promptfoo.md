@@ -1,4 +1,5 @@
 ---
+title: Promptfoo
 type: vendor
 name: Promptfoo
 slug: promptfoo

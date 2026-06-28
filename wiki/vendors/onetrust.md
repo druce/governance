@@ -1,4 +1,5 @@
 ---
+title: OneTrust
 type: vendor
 name: OneTrust
 slug: onetrust

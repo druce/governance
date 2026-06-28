@@ -1,4 +1,5 @@
 ---
+title: Enterprise Logging / SIEM / SOC
 type: category
 name: Enterprise Logging / SIEM / SOC
 slug: siem-soc

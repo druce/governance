@@ -1,4 +1,5 @@
 ---
+title: Promotion Gates
 type: category
 name: Promotion Gates
 slug: promotion-gates

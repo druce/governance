@@ -1,4 +1,5 @@
 ---
+title: Identity Governance & Visibility (IGA / ISPM)
 type: category
 name: Identity Governance & Visibility (IGA / ISPM)
 slug: identity-governance

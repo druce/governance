@@ -1,4 +1,5 @@
 ---
+title: Collibra
 type: vendor
 name: Collibra
 slug: collibra

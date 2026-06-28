@@ -1,4 +1,5 @@
 ---
+title: Authorization Engine (Agent / Tool)
 type: category
 name: Authorization Engine (Agent / Tool)
 slug: authorization-engine

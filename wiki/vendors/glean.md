@@ -1,4 +1,5 @@
 ---
+title: Glean
 type: vendor
 name: Glean
 slug: glean

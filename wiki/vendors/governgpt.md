@@ -1,4 +1,5 @@
 ---
+title: GovernGPT
 type: vendor
 name: GovernGPT
 slug: governgpt

@@ -1,4 +1,5 @@
 ---
+title: Prophet Security
 type: vendor
 name: Prophet Security
 slug: prophet-security

@@ -1,4 +1,5 @@
 ---
+title: Pillar Security
 type: vendor
 name: Pillar Security
 slug: pillar-security

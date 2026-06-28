@@ -1,4 +1,5 @@
 ---
+title: Maxim AI
 type: vendor
 name: Maxim AI
 slug: maxim-ai

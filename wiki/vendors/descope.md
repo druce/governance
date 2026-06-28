@@ -1,4 +1,5 @@
 ---
+title: Descope
 type: vendor
 name: Descope
 slug: descope

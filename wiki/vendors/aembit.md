@@ -1,4 +1,5 @@
 ---
+title: Aembit
 type: vendor
 name: Aembit
 slug: aembit

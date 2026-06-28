@@ -1,4 +1,5 @@
 ---
+title: Archer
 type: vendor
 name: Archer
 slug: archer

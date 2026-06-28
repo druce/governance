@@ -1,4 +1,5 @@
 ---
+title: HiddenLayer
 type: vendor
 name: HiddenLayer
 slug: hiddenlayer

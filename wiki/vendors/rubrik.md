@@ -1,4 +1,5 @@
 ---
+title: Rubrik
 type: vendor
 name: Rubrik
 slug: rubrik

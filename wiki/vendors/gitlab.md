@@ -1,4 +1,5 @@
 ---
+title: GitLab (Ultimate)
 type: vendor
 name: GitLab (Ultimate)
 slug: gitlab

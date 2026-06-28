@@ -1,4 +1,5 @@
 ---
+title: Clutch Security
 type: vendor
 name: Clutch Security
 slug: clutch-security

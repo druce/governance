@@ -1,4 +1,5 @@
 ---
+title: LayerX
 type: vendor
 name: LayerX
 slug: layerx

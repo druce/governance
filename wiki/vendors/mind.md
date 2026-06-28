@@ -1,4 +1,5 @@
 ---
+title: MIND
 type: vendor
 name: MIND
 slug: mind

@@ -1,4 +1,5 @@
 ---
+title: HashiCorp Sentinel
 type: vendor
 name: HashiCorp Sentinel
 slug: hashicorp-sentinel

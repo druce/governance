@@ -1,4 +1,5 @@
 ---
+title: Terraform Cloud (HCP Terraform)
 type: vendor
 name: Terraform Cloud (HCP Terraform)
 slug: terraform-cloud

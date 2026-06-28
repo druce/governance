@@ -1,4 +1,5 @@
 ---
+title: Microsoft Entra ID
 type: vendor
 name: Microsoft Entra ID
 slug: microsoft-entra

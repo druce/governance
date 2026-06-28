@@ -1,4 +1,5 @@
 ---
+title: ChatGPT Enterprise (OpenAI)
 type: vendor
 name: ChatGPT Enterprise (OpenAI)
 slug: openai-chatgpt-enterprise

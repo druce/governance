@@ -1,4 +1,5 @@
 ---
+title: SentinelOne
 type: vendor
 name: SentinelOne
 slug: sentinelone

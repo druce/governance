@@ -1,4 +1,5 @@
 ---
+title: Immuta
 type: vendor
 name: Immuta
 slug: immuta

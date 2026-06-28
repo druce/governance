@@ -1,4 +1,5 @@
 ---
+title: Torq
 type: vendor
 name: Torq
 slug: torq

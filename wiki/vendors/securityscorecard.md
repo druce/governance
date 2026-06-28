@@ -1,4 +1,5 @@
 ---
+title: SecurityScorecard
 type: vendor
 name: SecurityScorecard
 slug: securityscorecard

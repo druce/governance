@@ -1,4 +1,5 @@
 ---
+title: Composio
 type: vendor
 name: Composio
 slug: composio

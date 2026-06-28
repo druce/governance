@@ -1,4 +1,5 @@
 ---
+title: BigID
 type: vendor
 name: BigID
 slug: bigid

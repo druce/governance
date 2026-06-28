@@ -1,4 +1,5 @@
 ---
+title: Perplexity Enterprise
 type: vendor
 name: Perplexity Enterprise
 slug: perplexity-enterprise

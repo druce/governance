@@ -1,4 +1,5 @@
 ---
+title: Open Policy Agent (OPA)
 type: vendor
 name: Open Policy Agent (OPA)
 slug: open-policy-agent

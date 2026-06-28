@@ -1,4 +1,5 @@
 ---
+title: Kyverno
 type: vendor
 name: Kyverno
 slug: kyverno

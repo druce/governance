@@ -1,4 +1,5 @@
 ---
+title: Styra
 type: vendor
 name: Styra
 slug: styra

@@ -1,4 +1,5 @@
 ---
+title: Knostic
 type: vendor
 name: Knostic
 slug: knostic

@@ -1,4 +1,5 @@
 ---
+title: 1Password
 type: vendor
 name: 1Password
 slug: 1password

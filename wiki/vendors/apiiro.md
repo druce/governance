@@ -1,4 +1,5 @@
 ---
+title: Apiiro
 type: vendor
 name: Apiiro
 slug: apiiro

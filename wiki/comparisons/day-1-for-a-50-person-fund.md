@@ -1,4 +1,5 @@
 ---
+title: What's actually Day-1 for a ~50-person hedge fund
 type: comparison
 name: What's actually Day-1 for a ~50-person hedge fund
 slug: day-1-for-a-50-person-fund

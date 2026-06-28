@@ -1,4 +1,5 @@
 ---
+title: AuthZed (SpiceDB)
 type: vendor
 name: AuthZed (SpiceDB)
 slug: authzed

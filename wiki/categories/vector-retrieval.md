@@ -1,4 +1,5 @@
 ---
+title: Vector Retrieval
 type: category
 name: Vector Retrieval
 slug: vector-retrieval

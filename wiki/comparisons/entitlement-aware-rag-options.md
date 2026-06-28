@@ -1,4 +1,5 @@
 ---
+title: Entitlement-Aware RAG — options
 type: comparison
 name: Entitlement-Aware RAG — options
 slug: entitlement-aware-rag-options

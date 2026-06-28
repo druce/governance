@@ -1,4 +1,5 @@
 ---
+title: Entitlement-Aware RAG
 type: category
 name: Entitlement-Aware RAG
 slug: entitlement-aware-rag

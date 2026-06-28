@@ -1,4 +1,5 @@
 ---
+title: GetReal Security
 type: vendor
 name: GetReal Security
 slug: getreal

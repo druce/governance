@@ -1,4 +1,5 @@
 ---
+title: Runtime AI Firewalls — comparison
 type: comparison
 name: Runtime AI Firewalls — comparison
 slug: runtime-ai-firewalls

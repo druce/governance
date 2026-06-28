@@ -1,4 +1,5 @@
 ---
+title: Identity & Access (IdP/SSO)
 type: category
 name: Identity & Access (IdP/SSO)
 slug: identity-access

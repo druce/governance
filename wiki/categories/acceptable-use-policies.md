@@ -1,4 +1,5 @@
 ---
+title: Acceptable Use Policies
 type: category
 name: Acceptable Use Policies
 slug: acceptable-use-policies

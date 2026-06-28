@@ -1,4 +1,5 @@
 ---
+title: GitHub Advanced Security
 type: vendor
 name: GitHub Advanced Security
 slug: github-advanced-security

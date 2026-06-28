@@ -1,4 +1,5 @@
 ---
+title: MCP Gateway / Tool Access Control
 type: category
 name: MCP Gateway / Tool Access Control
 slug: mcp-gateway

@@ -1,3 +1,7 @@
+---
+title: "Build log"
+---
+
 # Op log
 
 Append-only, chronological. Each entry: `## [YYYY-MM-DD] <op> | <subject>` where

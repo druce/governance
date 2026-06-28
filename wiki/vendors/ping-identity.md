@@ -1,4 +1,5 @@
 ---
+title: Ping Identity
 type: vendor
 name: Ping Identity
 slug: ping-identity

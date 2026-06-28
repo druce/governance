@@ -1,4 +1,5 @@
 ---
+title: Cato Networks
 type: vendor
 name: Cato Networks
 slug: cato-networks

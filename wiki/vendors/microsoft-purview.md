@@ -1,4 +1,5 @@
 ---
+title: Microsoft Purview
 type: vendor
 name: Microsoft Purview
 slug: microsoft-purview

@@ -1,4 +1,5 @@
 ---
+title: CrowdStrike Falcon LogScale
 type: vendor
 name: CrowdStrike Falcon LogScale
 slug: crowdstrike-logscale

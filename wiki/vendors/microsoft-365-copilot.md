@@ -1,4 +1,5 @@
 ---
+title: Microsoft 365 Copilot
 type: vendor
 name: Microsoft 365 Copilot
 slug: microsoft-365-copilot

@@ -1,4 +1,5 @@
 ---
+title: CalypsoAI
 type: vendor
 name: CalypsoAI
 slug: calypsoai

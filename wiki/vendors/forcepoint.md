@@ -1,4 +1,5 @@
 ---
+title: Forcepoint
 type: vendor
 name: Forcepoint
 slug: forcepoint

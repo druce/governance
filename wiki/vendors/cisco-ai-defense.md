@@ -1,4 +1,5 @@
 ---
+title: Cisco AI Defense
 type: vendor
 name: Cisco AI Defense
 slug: cisco-ai-defense

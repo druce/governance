@@ -1,4 +1,5 @@
 ---
+title: Guardrails AI
 type: vendor
 name: Guardrails AI
 slug: guardrails-ai

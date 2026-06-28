@@ -1,4 +1,5 @@
 ---
+title: OpenRouter
 type: vendor
 name: OpenRouter
 slug: openrouter

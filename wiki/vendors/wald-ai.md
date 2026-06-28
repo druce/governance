@@ -1,4 +1,5 @@
 ---
+title: Wald.ai
 type: vendor
 name: Wald.ai
 slug: wald-ai

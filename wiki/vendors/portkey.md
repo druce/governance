@@ -1,4 +1,5 @@
 ---
+title: Portkey
 type: vendor
 name: Portkey
 slug: portkey

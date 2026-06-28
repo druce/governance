@@ -1,4 +1,5 @@
 ---
+title: Giskard
 type: vendor
 name: Giskard
 slug: giskard

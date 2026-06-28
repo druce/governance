@@ -1,4 +1,5 @@
 ---
+title: Lakera
 type: vendor
 name: Lakera
 slug: lakera

@@ -1,4 +1,5 @@
 ---
+title: AI Governance / Model Risk & Compliance
 type: category
 name: AI Governance / Model Risk & Compliance
 slug: ai-governance-platform

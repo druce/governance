@@ -1,4 +1,5 @@
 ---
+title: Portal26
 type: vendor
 name: Portal26
 slug: portal26

@@ -1,4 +1,5 @@
 ---
+title: Enkrypt AI
 type: vendor
 name: Enkrypt AI
 slug: enkrypt-ai

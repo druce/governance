@@ -1,4 +1,5 @@
 ---
+title: Simbian
 type: vendor
 name: Simbian
 slug: simbian

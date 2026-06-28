@@ -1,4 +1,5 @@
 ---
+title: Secrets Manager
 type: category
 name: Secrets Manager
 slug: secrets-management

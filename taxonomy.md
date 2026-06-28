@@ -1,3 +1,7 @@
+---
+title: "Taxonomy"
+---
+
 # Taxonomy — canonical category set
 
 Source of truth for category **slugs**, layer mapping, and priority. The

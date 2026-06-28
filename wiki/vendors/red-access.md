@@ -1,4 +1,5 @@
 ---
+title: Red Access
 type: vendor
 name: Red Access
 slug: red-access

@@ -1,4 +1,5 @@
 ---
+title: Helicone
 type: vendor
 name: Helicone
 slug: helicone

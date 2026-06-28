@@ -1,4 +1,5 @@
 ---
+title: Cisco
 type: vendor
 name: Cisco
 slug: cisco

@@ -1,4 +1,5 @@
 ---
+title: AI Gateway
 type: category
 name: AI Gateway
 slug: ai-gateway

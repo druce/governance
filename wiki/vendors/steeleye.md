@@ -1,4 +1,5 @@
 ---
+title: SteelEye
 type: vendor
 name: SteelEye
 slug: steeleye

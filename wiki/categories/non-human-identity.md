@@ -1,4 +1,5 @@
 ---
+title: Non-Human / Agent Identity Governance
 type: category
 name: Non-Human / Agent Identity Governance
 slug: non-human-identity

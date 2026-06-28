@@ -1,4 +1,5 @@
 ---
+title: Jazz Security
 type: vendor
 name: Jazz Security
 slug: jazz-security

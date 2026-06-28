@@ -1,4 +1,5 @@
 ---
+title: Azure Dev Box
 type: vendor
 name: Azure Dev Box
 slug: azure-dev-boxes

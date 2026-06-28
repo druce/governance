@@ -1,4 +1,5 @@
 ---
+title: Prisma Access Browser (Palo Alto/Talon)
 type: vendor
 name: Prisma Access Browser (Palo Alto/Talon)
 slug: prisma-access-browser

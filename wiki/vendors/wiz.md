@@ -1,4 +1,5 @@
 ---
+title: Wiz
 type: vendor
 name: Wiz
 slug: wiz

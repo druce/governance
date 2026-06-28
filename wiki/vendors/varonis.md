@@ -1,4 +1,5 @@
 ---
+title: Varonis
 type: vendor
 name: Varonis
 slug: varonis

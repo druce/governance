@@ -1,4 +1,5 @@
 ---
+title: Sonatype
 type: vendor
 name: Sonatype
 slug: sonatype

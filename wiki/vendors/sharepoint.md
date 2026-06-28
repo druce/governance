@@ -1,4 +1,5 @@
 ---
+title: SharePoint / OneDrive (Microsoft)
 type: vendor
 name: SharePoint / OneDrive (Microsoft)
 slug: sharepoint

@@ -1,4 +1,5 @@
 ---
+title: Material Security
 type: vendor
 name: Material Security
 slug: material-security

@@ -1,4 +1,5 @@
 ---
+title: Data Classification & DSPM
 type: category
 name: Data Classification & DSPM
 slug: dspm

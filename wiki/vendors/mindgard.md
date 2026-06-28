@@ -1,4 +1,5 @@
 ---
+title: Mindgard
 type: vendor
 name: Mindgard
 slug: mindgard

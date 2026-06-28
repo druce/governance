@@ -1,4 +1,5 @@
 ---
+title: Haize Labs
 type: vendor
 name: Haize Labs
 slug: haize-labs

@@ -1,4 +1,5 @@
 ---
+title: NICE Actimize
 type: vendor
 name: NICE Actimize
 slug: nice-actimize

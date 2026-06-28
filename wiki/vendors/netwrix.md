@@ -1,4 +1,5 @@
 ---
+title: Netwrix
 type: vendor
 name: Netwrix
 slug: netwrix

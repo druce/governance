@@ -1,4 +1,5 @@
 ---
+title: Vanta
 type: vendor
 name: Vanta
 slug: vanta

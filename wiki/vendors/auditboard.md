@@ -1,4 +1,5 @@
 ---
+title: AuditBoard
 type: vendor
 name: AuditBoard
 slug: auditboard

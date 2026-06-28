@@ -1,4 +1,5 @@
 ---
+title: Prompt Security
 type: vendor
 name: Prompt Security
 slug: prompt-security

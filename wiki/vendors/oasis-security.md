@@ -1,4 +1,5 @@
 ---
+title: Oasis Security
 type: vendor
 name: Oasis Security
 slug: oasis-security

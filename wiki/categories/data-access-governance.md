@@ -1,4 +1,5 @@
 ---
+title: Data Access Governance
 type: category
 name: Data Access Governance
 slug: data-access-governance

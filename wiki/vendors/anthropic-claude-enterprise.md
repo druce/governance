@@ -1,4 +1,5 @@
 ---
+title: Claude Enterprise (Anthropic)
 type: vendor
 name: Claude Enterprise (Anthropic)
 slug: anthropic-claude-enterprise

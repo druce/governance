@@ -1,4 +1,5 @@
 ---
+title: Galileo
 type: vendor
 name: Galileo
 slug: galileo

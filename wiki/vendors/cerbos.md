@@ -1,4 +1,5 @@
 ---
+title: Cerbos
 type: vendor
 name: Cerbos
 slug: cerbos

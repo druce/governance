@@ -1,4 +1,5 @@
 ---
+title: ServiceNow GRC
 type: vendor
 name: ServiceNow GRC
 slug: servicenow

@@ -1,4 +1,5 @@
 ---
+title: Securiti
 type: vendor
 name: Securiti
 slug: securiti

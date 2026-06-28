@@ -1,4 +1,5 @@
 ---
+title: Netskope
 type: vendor
 name: Netskope
 slug: netskope

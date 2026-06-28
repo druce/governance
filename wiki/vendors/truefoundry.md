@@ -1,4 +1,5 @@
 ---
+title: TrueFoundry
 type: vendor
 name: TrueFoundry
 slug: truefoundry

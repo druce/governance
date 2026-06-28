@@ -1,4 +1,5 @@
 ---
+title: Lanai
 type: vendor
 name: Lanai
 slug: lanai

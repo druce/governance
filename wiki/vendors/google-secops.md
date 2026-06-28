@@ -1,4 +1,5 @@
 ---
+title: Google SecOps (Chronicle)
 type: vendor
 name: Google SecOps (Chronicle)
 slug: google-secops

@@ -1,4 +1,5 @@
 ---
+title: StackOne
 type: vendor
 name: StackOne
 slug: stackone

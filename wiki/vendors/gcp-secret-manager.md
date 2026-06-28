@@ -1,4 +1,5 @@
 ---
+title: GCP Secret Manager
 type: vendor
 name: GCP Secret Manager
 slug: gcp-secret-manager

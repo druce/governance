@@ -1,4 +1,5 @@
 ---
+title: Microsoft Edge for Business
 type: vendor
 name: Microsoft Edge for Business
 slug: microsoft-edge-business

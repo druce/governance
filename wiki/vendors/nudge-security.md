@@ -1,4 +1,5 @@
 ---
+title: Nudge Security
 type: vendor
 name: Nudge Security
 slug: nudge-security

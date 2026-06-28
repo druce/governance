@@ -1,4 +1,5 @@
 ---
+title: Shield
 type: vendor
 name: Shield
 slug: shield

@@ -1,4 +1,5 @@
 ---
+title: Onspring
 type: vendor
 name: Onspring
 slug: onspring

@@ -1,4 +1,5 @@
 ---
+title: Tool Identity & Integration
 type: category
 name: Tool Identity & Integration
 slug: tool-identity-integration

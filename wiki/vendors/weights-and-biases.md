@@ -1,4 +1,5 @@
 ---
+title: Weights & Biases (Weave)
 type: vendor
 name: Weights & Biases (Weave)
 slug: weights-and-biases

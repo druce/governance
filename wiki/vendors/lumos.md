@@ -1,4 +1,5 @@
 ---
+title: Lumos
 type: vendor
 name: Lumos
 slug: lumos

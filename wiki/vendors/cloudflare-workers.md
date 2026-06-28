@@ -1,4 +1,5 @@
 ---
+title: Cloudflare Workers
 type: vendor
 name: Cloudflare Workers
 slug: cloudflare-workers

@@ -1,4 +1,5 @@
 ---
+title: Symmetry Systems
 type: vendor
 name: Symmetry Systems
 slug: symmetry-systems

@@ -1,4 +1,5 @@
 ---
+title: Relativity Trace
 type: vendor
 name: Relativity Trace
 slug: relativity-trace

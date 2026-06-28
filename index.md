@@ -1,3 +1,7 @@
+---
+title: "AI Governance & Security Vendor Wiki"
+---
+
 # AI Governance & Security Vendor Wiki
 
 A map of the enterprise **AI governance / security vendor landscape**, written for a **hedge-fund /

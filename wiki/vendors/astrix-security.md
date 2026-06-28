@@ -1,4 +1,5 @@
 ---
+title: Astrix Security
 type: vendor
 name: Astrix Security
 slug: astrix-security

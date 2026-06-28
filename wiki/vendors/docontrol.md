@@ -1,4 +1,5 @@
 ---
+title: DoControl
 type: vendor
 name: DoControl
 slug: docontrol

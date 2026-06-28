@@ -1,4 +1,5 @@
 ---
+title: Security Awareness / Anti-Deepfake
 type: category
 name: Security Awareness / Anti-Deepfake
 slug: anti-deepfake

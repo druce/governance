@@ -1,4 +1,5 @@
 ---
+title: Zenity
 type: vendor
 name: Zenity
 slug: zenity

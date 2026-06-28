@@ -1,4 +1,5 @@
 ---
+title: Microsoft Sentinel
 type: vendor
 name: Microsoft Sentinel
 slug: microsoft-sentinel

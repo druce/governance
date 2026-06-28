@@ -1,4 +1,5 @@
 ---
+title: AI Gateways — head to head
 type: comparison
 name: AI Gateways — head to head
 slug: ai-gateways-head-to-head

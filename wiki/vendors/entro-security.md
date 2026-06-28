@@ -1,4 +1,5 @@
 ---
+title: Entro Security
 type: vendor
 name: Entro Security
 slug: entro-security

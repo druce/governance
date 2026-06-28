@@ -1,4 +1,5 @@
 ---
+title: CyberArk
 type: vendor
 name: CyberArk
 slug: cyberark

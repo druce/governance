@@ -1,4 +1,5 @@
 ---
+title: Theta Lake
 type: vendor
 name: Theta Lake
 slug: theta-lake

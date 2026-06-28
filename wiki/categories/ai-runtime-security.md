@@ -1,4 +1,5 @@
 ---
+title: AI Runtime Security (AI Firewall)
 type: category
 name: AI Runtime Security (AI Firewall)
 slug: ai-runtime-security

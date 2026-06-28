@@ -1,4 +1,5 @@
 ---
+title: SailPoint
 type: vendor
 name: SailPoint
 slug: sailpoint

@@ -1,4 +1,5 @@
 ---
+title: Concentric AI
 type: vendor
 name: Concentric AI
 slug: concentric-ai

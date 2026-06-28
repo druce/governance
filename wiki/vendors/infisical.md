@@ -1,4 +1,5 @@
 ---
+title: Infisical
 type: vendor
 name: Infisical
 slug: infisical

@@ -1,4 +1,5 @@
 ---
+title: Stytch
 type: vendor
 name: Stytch
 slug: stytch

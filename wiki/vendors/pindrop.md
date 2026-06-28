@@ -1,4 +1,5 @@
 ---
+title: Pindrop
 type: vendor
 name: Pindrop
 slug: pindrop

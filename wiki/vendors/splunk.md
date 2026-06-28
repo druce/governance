@@ -1,4 +1,5 @@
 ---
+title: Splunk
 type: vendor
 name: Splunk
 slug: splunk

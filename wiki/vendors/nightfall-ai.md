@@ -1,4 +1,5 @@
 ---
+title: Nightfall AI
 type: vendor
 name: Nightfall AI
 slug: nightfall-ai

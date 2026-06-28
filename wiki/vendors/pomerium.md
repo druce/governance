@@ -1,4 +1,5 @@
 ---
+title: Pomerium
 type: vendor
 name: Pomerium
 slug: pomerium

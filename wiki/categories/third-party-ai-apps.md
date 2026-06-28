@@ -1,4 +1,5 @@
 ---
+title: Third-Party AI Apps
 type: category
 name: Third-Party AI Apps
 slug: third-party-ai-apps

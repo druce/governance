@@ -1,4 +1,5 @@
 ---
+title: Hydden
 type: vendor
 name: Hydden
 slug: hydden

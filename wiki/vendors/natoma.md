@@ -1,4 +1,5 @@
 ---
+title: Natoma
 type: vendor
 name: Natoma
 slug: natoma

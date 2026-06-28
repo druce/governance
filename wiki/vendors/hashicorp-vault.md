@@ -1,4 +1,5 @@
 ---
+title: HashiCorp Vault
 type: vendor
 name: HashiCorp Vault
 slug: hashicorp-vault

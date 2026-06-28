@@ -1,4 +1,5 @@
 ---
+title: Microsoft Graph
 type: vendor
 name: Microsoft Graph
 slug: microsoft-graph

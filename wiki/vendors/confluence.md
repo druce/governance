@@ -1,4 +1,5 @@
 ---
+title: Confluence (Atlassian)
 type: vendor
 name: Confluence (Atlassian)
 slug: confluence

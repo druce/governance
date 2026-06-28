@@ -1,4 +1,5 @@
 ---
+title: Software Supply Chain & Coding Security
 type: category
 name: Software Supply Chain & Coding Security
 slug: software-supply-chain

@@ -1,4 +1,5 @@
 ---
+title: Network Security / SASE (SSE)
 type: category
 name: Network Security / SASE (SSE)
 slug: network-security-sase

@@ -1,4 +1,5 @@
 ---
+title: LogicGate
 type: vendor
 name: LogicGate
 slug: logicgate

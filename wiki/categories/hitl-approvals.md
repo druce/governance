@@ -1,4 +1,5 @@
 ---
+title: HITL Approvals
 type: category
 name: HITL Approvals
 slug: hitl-approvals

@@ -1,4 +1,5 @@
 ---
+title: Obot
 type: vendor
 name: Obot
 slug: obot

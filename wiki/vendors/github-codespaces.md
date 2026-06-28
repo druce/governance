@@ -1,4 +1,5 @@
 ---
+title: GitHub Codespaces
 type: vendor
 name: GitHub Codespaces
 slug: github-codespaces
