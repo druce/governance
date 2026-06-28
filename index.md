@@ -274,7 +274,7 @@ Read this first when answering a query. Every page, grouped by section, with sta
 - [[agentgateway]] — agentgateway (Solo.io) — (stub, 2026-06-28)
 - [[arcade]] — Arcade.dev — (stub, 2026-06-28)
 - [[docker-mcp-gateway]] — Docker MCP Gateway — (stub, 2026-06-28)
-- [[ibm-contextforge]] — IBM ContextForge MCP Gateway — (stub, 2026-06-28)
+- [[ibm-contextforge]] — IBM's Apache-2.0 open-source MCP/A2A/REST gateway + registry (self-hosted) — (researched, 2026-06-28)
 - [[mintmcp]] — MintMCP — (stub, 2026-06-28)
 - [[obot]] — Obot — (stub, 2026-06-28)
 - [[pomerium]] — Pomerium — (stub, 2026-06-28)
