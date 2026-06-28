@@ -1,26 +1,370 @@
 # Index — content catalog
 
-Read this first when answering a query. Every page, grouped by section, one-line summary,
-`(status, last_updated)`. Updated on every ingest.
+Read this first when answering a query. Every page, grouped by section, with status + last_updated.
 
-**Build status:** Phase 0 complete (scaffold + taxonomy). Awaiting human sign-off on
-`taxonomy.md` before Phase 1 (category pages). See `log.md` for the resume point.
-
----
+**Counts:** 42 categories · 223 vendors. Build phase: 3 (vendor research) in progress.
 
 ## Overview
 
-- [[overview]] — the thesis: layer cake, red/yellow/green trust zones, the lethal trifecta, minimal vs full hedge-fund stack — (stub, 2026-06-28)
+- [[overview]] — the thesis: layer cake, red/yellow/green trust zones, the lethal trifecta — (stub, 2026-06-28)
 
 ## Categories
 
-_42 canonical categories defined in [taxonomy.md](taxonomy.md). Pages built in Phase 1._
+### Foundation
+- [[ai-soc-analysts]] — AI SecOps / Agentic SOC Analysts · priority day-2 — (drafted, 2026-06-28)
+- [[anti-deepfake]] — Security Awareness / Anti-Deepfake · priority day-2 — (drafted, 2026-06-28)
+- [[edr-xdr]] — EDR / XDR · priority day-1 — (drafted, 2026-06-28)
+- [[identity-access]] — Identity & Access (IdP/SSO) · priority day-1 — (drafted, 2026-06-28)
+- [[identity-governance]] — Identity Governance & Visibility (IGA / ISPM) · priority day-2 — (drafted, 2026-06-28)
+- [[network-security-sase]] — Network Security / SASE (SSE) · priority day-1 — (drafted, 2026-06-28)
+- [[non-human-identity]] — Non-Human / Agent Identity Governance · priority day-2 — (drafted, 2026-06-28)
+- [[secrets-management]] — Secrets Manager · priority day-1 — (drafted, 2026-06-28)
+- [[siem-soc]] — Enterprise Logging / SIEM / SOC · priority day-1 — (drafted, 2026-06-28)
+- [[software-supply-chain]] — Software Supply Chain & Coding Security · priority day-2 — (drafted, 2026-06-28)
+- [[sspm]] — SaaS Security Posture Management · priority day-2 — (drafted, 2026-06-28)
+
+### Data
+- [[data-access-governance]] — Data Access Governance · priority day-2 — (drafted, 2026-06-28)
+- [[dlp]] — Data Loss Prevention (DLP) · priority day-1 — (drafted, 2026-06-28)
+- [[dspm]] — Data Classification & DSPM · priority day-1 — (drafted, 2026-06-28)
+
+### AI Model & Prompt
+- [[agent-runtime-security]] — Agent Security (runtime) · priority day-2 — (drafted, 2026-06-28)
+- [[ai-access-governance]] — AI Access Governance (CASB for AI) / Shadow-AI · priority day-1 — (drafted, 2026-06-28)
+- [[ai-gateway]] — AI Gateway · priority day-1 — (drafted, 2026-06-28)
+- [[ai-red-teaming]] — AI Red Teaming / Guardrails · priority day-2 — (drafted, 2026-06-28)
+- [[ai-runtime-security]] — AI Runtime Security (AI Firewall) · priority day-1 — (drafted, 2026-06-28)
+- [[ai-spm]] — AI-SPM (AI Security Posture Management) · priority day-2 — (drafted, 2026-06-28)
+- [[authorization-engine]] — Authorization Engine (Agent / Tool) · priority day-2 — (drafted, 2026-06-28)
+- [[llm-observability]] — LLM Observability & Evaluation · priority day-1 — (drafted, 2026-06-28)
+- [[mcp-gateway]] — MCP Gateway / Tool Access Control · priority day-2 — (drafted, 2026-06-28)
+- [[tool-identity-integration]] — Tool Identity & Integration · priority day-2 — (drafted, 2026-06-28)
+
+### Retrieval
+- [[content-sources]] — Enterprise Content Sources · priority day-1 — (drafted, 2026-06-28)
+- [[entitlement-aware-rag]] — Entitlement-Aware RAG · priority day-1 — (drafted, 2026-06-28)
+- [[vector-retrieval]] — Vector Retrieval · priority day-1 — (drafted, 2026-06-28)
+
+### User Experience
+- [[browser-security-extension]] — Browser Security Extension · priority optional — (drafted, 2026-06-28)
+- [[enterprise-ai-assistant]] — Enterprise AI Assistant · priority day-1 — (drafted, 2026-06-28)
+- [[enterprise-browser]] — Enterprise Browser · priority optional — (drafted, 2026-06-28)
+- [[third-party-ai-apps]] — Third-Party AI Apps · priority optional — (drafted, 2026-06-28)
+
+### Governance
+- [[ai-governance-platform]] — AI Governance / Model Risk & Compliance · priority day-2 — (drafted, 2026-06-28)
+- [[comms-surveillance]] — Comms Surveillance · priority day-2 — (drafted, 2026-06-28)
+- [[enterprise-grc]] — Enterprise GRC · priority day-1 — (drafted, 2026-06-28)
+- [[ephemeral-environments]] — Ephemeral Environments · priority day-2 — (drafted, 2026-06-28)
+- [[policy-as-code]] — Policy-as-Code · priority day-2 — (drafted, 2026-06-28)
+- [[vendor-risk]] — Third-Party / Vendor Risk + Cyber Ratings · priority day-1 — (drafted, 2026-06-28)
+
+### Policy / Process
+- [[acceptable-use-policies]] — Acceptable Use Policies · priority process — (drafted, 2026-06-28)
+- [[hitl-approvals]] — HITL Approvals · priority process — (drafted, 2026-06-28)
+- [[promotion-gates]] — Promotion Gates · priority process — (drafted, 2026-06-28)
+- [[risk-tiers]] — Risk Tiers · priority process — (drafted, 2026-06-28)
+- [[trust-zone-segmentation]] — Trust Zone Segmentation · priority process — (drafted, 2026-06-28)
 
 ## Vendors
 
-_Built as stubs in Phase 2, researched in Phase 3._
+### Agent Security (runtime) (`agent-runtime-security`)
+- [[apex-security]] — Apex Security — (stub, 2026-06-28)
+- [[operant-ai]] — Operant AI — (stub, 2026-06-28)
+- [[straiker]] — Straiker — (stub, 2026-06-28)
+- [[zenity]] — Zenity — (stub, 2026-06-28)
+
+### AI Access Governance (CASB for AI) / Shadow-AI (`ai-access-governance`)
+- [[aurascape]] — Aurascape — (stub, 2026-06-28)
+- [[harmonic-security]] — Harmonic Security — (stub, 2026-06-28)
+- [[lanai]] — Lanai — (stub, 2026-06-28)
+- [[nudge-security]] — Nudge Security — (stub, 2026-06-28)
+- [[portal26]] — Portal26 — (stub, 2026-06-28)
+- [[wald-ai]] — Wald.ai — (stub, 2026-06-28)
+- [[witnessai]] — WitnessAI — (stub, 2026-06-28)
+
+### AI Gateway (`ai-gateway`)
+- [[f5]] — F5 — (stub, 2026-06-28)
+- [[kong]] — Kong — (stub, 2026-06-28)
+- [[litellm]] — LiteLLM — (stub, 2026-06-28)
+- [[openrouter]] — OpenRouter — (stub, 2026-06-28)
+- [[portkey]] — Portkey — (stub, 2026-06-28)
+- [[truefoundry]] — TrueFoundry — (stub, 2026-06-28)
+
+### AI Governance / Model Risk & Compliance (`ai-governance-platform`)
+- [[credo-ai]] — Credo AI — (stub, 2026-06-28)
+- [[fairly-ai]] — Fairly AI — (stub, 2026-06-28)
+- [[governgpt]] — GovernGPT — (stub, 2026-06-28)
+- [[holistic-ai]] — Holistic AI — (stub, 2026-06-28)
+- [[ibm-watsonx-governance]] — IBM watsonx.governance — (stub, 2026-06-28)
+- [[modelop]] — ModelOp — (stub, 2026-06-28)
+- [[monitaur]] — Monitaur — (stub, 2026-06-28)
+- [[vanta]] — Vanta — (stub, 2026-06-28)
+
+### AI Red Teaming / Guardrails (`ai-red-teaming`)
+- [[galileo]] — Galileo — (stub, 2026-06-28)
+- [[guardrails-ai]] — Guardrails AI — (stub, 2026-06-28)
+- [[haize-labs]] — Haize Labs — (stub, 2026-06-28)
+- [[maxim-ai]] — Maxim AI — (stub, 2026-06-28)
+- [[mindgard]] — Mindgard — (stub, 2026-06-28)
+- [[nemo-guardrails]] — NeMo Guardrails (NVIDIA) — (stub, 2026-06-28)
+- [[pangea]] — Pangea — (stub, 2026-06-28)
+- [[patronus-ai]] — Patronus AI — (stub, 2026-06-28)
+- [[promptfoo]] — Promptfoo — (stub, 2026-06-28)
+- [[splxai]] — SplxAI — (stub, 2026-06-28)
+
+### AI Runtime Security (AI Firewall) (`ai-runtime-security`)
+- [[aim-security]] — Aim Security — (stub, 2026-06-28)
+- [[calypsoai]] — CalypsoAI — (stub, 2026-06-28)
+- [[cisco-ai-defense]] — Cisco AI Defense — (stub, 2026-06-28)
+- [[enkrypt-ai]] — Enkrypt AI — (stub, 2026-06-28)
+- [[hiddenlayer]] — HiddenLayer — (stub, 2026-06-28)
+- [[lakera]] — Lakera — (stub, 2026-06-28)
+- [[pillar-security]] — Pillar Security — (stub, 2026-06-28)
+- [[prisma-airs]] — Prisma AIRS (Palo Alto) — (stub, 2026-06-28)
+- [[robust-intelligence]] — Robust Intelligence — (stub, 2026-06-28)
+- [[trojai]] — TrojAI — (stub, 2026-06-28)
+
+### AI SecOps / Agentic SOC Analysts (`ai-soc-analysts`)
+- [[7ai]] — 7AI — (stub, 2026-06-28)
+- [[dropzone-ai]] — Dropzone AI — (stub, 2026-06-28)
+- [[jazz-security]] — Jazz Security — (stub, 2026-06-28)
+- [[prophet-security]] — Prophet Security — (stub, 2026-06-28)
+- [[radiant-security]] — Radiant Security — (stub, 2026-06-28)
+- [[simbian]] — Simbian — (stub, 2026-06-28)
+- [[torq]] — Torq — (stub, 2026-06-28)
+
+### AI-SPM (AI Security Posture Management) (`ai-spm`)
+- [[cranium]] — Cranium — (stub, 2026-06-28)
+- [[noma-security]] — Noma Security — (stub, 2026-06-28)
+- [[quilr]] — Quilr — (stub, 2026-06-28)
+- [[reco]] — Reco — (stub, 2026-06-28)
+
+### Security Awareness / Anti-Deepfake (`anti-deepfake`)
+- [[adaptive-security]] — Adaptive Security — (stub, 2026-06-28)
+- [[doppel]] — Doppel — (stub, 2026-06-28)
+- [[getreal]] — GetReal — (stub, 2026-06-28)
+- [[pindrop]] — Pindrop — (stub, 2026-06-28)
+- [[reality-defender]] — Reality Defender — (stub, 2026-06-28)
+
+### Authorization Engine (Agent / Tool) (`authorization-engine`)
+- [[authzed]] — AuthZed (SpiceDB) — (stub, 2026-06-28)
+- [[cerbos]] — Cerbos — (stub, 2026-06-28)
+- [[open-policy-agent]] — Open Policy Agent (OPA) — (stub, 2026-06-28)
+- [[oso]] — Oso — (stub, 2026-06-28)
+- [[permit-io]] — Permit.io — (stub, 2026-06-28)
+- [[styra]] — Styra — (stub, 2026-06-28)
+
+### Browser Security Extension (`browser-security-extension`)
+- [[layerx]] — LayerX — (stub, 2026-06-28)
+- [[material-security]] — Material Security — (stub, 2026-06-28)
+
+### Comms Surveillance (`comms-surveillance`)
+- [[behavox]] — Behavox — (stub, 2026-06-28)
+- [[nice-actimize]] — NICE Actimize — (stub, 2026-06-28)
+- [[relativity-trace]] — Relativity Trace — (stub, 2026-06-28)
+- [[shield]] — Shield — (stub, 2026-06-28)
+- [[steeleye]] — SteelEye — (stub, 2026-06-28)
+- [[theta-lake]] — Theta Lake — (stub, 2026-06-28)
+
+### Enterprise Content Sources (`content-sources`)
+- [[confluence]] — Confluence (Atlassian) — (stub, 2026-06-28)
+- [[google-drive]] — Google Drive — (stub, 2026-06-28)
+- [[sharepoint]] — SharePoint / OneDrive (Microsoft) — (stub, 2026-06-28)
+
+### Data Access Governance (`data-access-governance`)
+- [[netwrix]] — Netwrix — (stub, 2026-06-28)
+- [[varonis]] — Varonis — (stub, 2026-06-28)
+
+### Data Loss Prevention (DLP) (`dlp`)
+- [[cyberhaven]] — Cyberhaven — (stub, 2026-06-28)
+- [[lasso-security]] — Lasso Security — (stub, 2026-06-28)
+- [[mind]] — MIND — (stub, 2026-06-28)
+- [[nightfall-ai]] — Nightfall AI — (stub, 2026-06-28)
+- [[prompt-security]] — Prompt Security — (stub, 2026-06-28)
+
+### Data Classification & DSPM (`dspm`)
+- [[bedrock-security]] — Bedrock Security — (stub, 2026-06-28)
+- [[bigid]] — BigID — (stub, 2026-06-28)
+- [[collibra]] — Collibra — (stub, 2026-06-28)
+- [[concentric-ai]] — Concentric AI — (stub, 2026-06-28)
+- [[cyera]] — Cyera — (stub, 2026-06-28)
+- [[immuta]] — Immuta — (stub, 2026-06-28)
+- [[microsoft-purview]] — Microsoft Purview — (stub, 2026-06-28)
+- [[normalyze]] — Normalyze — (stub, 2026-06-28)
+- [[rubrik]] — Rubrik — (stub, 2026-06-28)
+- [[securiti]] — Securiti — (stub, 2026-06-28)
+- [[sentra]] — Sentra — (stub, 2026-06-28)
+- [[symmetry-systems]] — Symmetry Systems — (stub, 2026-06-28)
+- [[wiz]] — Wiz — (stub, 2026-06-28)
+
+### EDR / XDR (`edr-xdr`)
+- [[crowdstrike]] — CrowdStrike — (stub, 2026-06-28)
+- [[microsoft-defender]] — Microsoft Defender XDR — (stub, 2026-06-28)
+- [[sentinelone]] — SentinelOne — (stub, 2026-06-28)
+
+### Enterprise AI Assistant (`enterprise-ai-assistant`)
+- [[amazon-q-business]] — Amazon Q Business — (stub, 2026-06-28)
+- [[anthropic-claude-enterprise]] — Claude Enterprise (Anthropic) — (stub, 2026-06-28)
+- [[gemini-enterprise]] — Gemini Enterprise / Agentspace (Google) — (stub, 2026-06-28)
+- [[microsoft-365-copilot]] — Microsoft 365 Copilot — (stub, 2026-06-28)
+- [[openai-chatgpt-enterprise]] — ChatGPT Enterprise (OpenAI) — (stub, 2026-06-28)
+- [[perplexity-enterprise]] — Perplexity Enterprise — (stub, 2026-06-28)
+
+### Enterprise Browser (`enterprise-browser`)
+- [[chrome-enterprise]] — Chrome Enterprise Premium (Google) — (stub, 2026-06-28)
+- [[island]] — Island — (stub, 2026-06-28)
+- [[menlo-security]] — Menlo Security — (stub, 2026-06-28)
+- [[microsoft-edge-business]] — Microsoft Edge for Business — (stub, 2026-06-28)
+- [[prisma-access-browser]] — Prisma Access Browser (Palo Alto/Talon) — (stub, 2026-06-28)
+- [[red-access]] — Red Access — (stub, 2026-06-28)
+- [[seraphic]] — Seraphic Security — (stub, 2026-06-28)
+
+### Enterprise GRC (`enterprise-grc`)
+- [[archer]] — Archer — (stub, 2026-06-28)
+- [[auditboard]] — AuditBoard — (stub, 2026-06-28)
+- [[logicgate]] — LogicGate — (stub, 2026-06-28)
+- [[onetrust]] — OneTrust — (stub, 2026-06-28)
+- [[onspring]] — Onspring — (stub, 2026-06-28)
+- [[servicenow]] — ServiceNow GRC — (stub, 2026-06-28)
+
+### Entitlement-Aware RAG (`entitlement-aware-rag`)
+- [[glean]] — Glean — (stub, 2026-06-28)
+- [[knostic]] — Knostic — (stub, 2026-06-28)
+- [[microsoft-graph]] — Microsoft Graph — (stub, 2026-06-28)
+
+### Ephemeral Environments (`ephemeral-environments`)
+- [[azure-dev-boxes]] — Azure Dev Boxes — (stub, 2026-06-28)
+- [[cloudflare-workers]] — Cloudflare Workers — (stub, 2026-06-28)
+- [[github-codespaces]] — GitHub Codespaces — (stub, 2026-06-28)
+- [[terraform-cloud]] — Terraform Cloud — (stub, 2026-06-28)
+
+### Identity & Access (IdP/SSO) (`identity-access`)
+- [[forgerock]] — ForgeRock — (stub, 2026-06-28)
+- [[microsoft-entra]] — Microsoft Entra ID — (stub, 2026-06-28)
+- [[okta]] — Okta — (stub, 2026-06-28)
+- [[ping-identity]] — Ping Identity — (stub, 2026-06-28)
+
+### Identity Governance & Visibility (IGA / ISPM) (`identity-governance`)
+- [[conductorone]] — ConductorOne — (stub, 2026-06-28)
+- [[hydden]] — Hydden — (stub, 2026-06-28)
+- [[linx-security]] — Linx Security — (stub, 2026-06-28)
+- [[lumos]] — Lumos — (stub, 2026-06-28)
+- [[sailpoint]] — SailPoint — (stub, 2026-06-28)
+- [[saviynt]] — Saviynt — (stub, 2026-06-28)
+- [[silverfort]] — Silverfort — (stub, 2026-06-28)
+- [[veza]] — Veza — (stub, 2026-06-28)
+
+### LLM Observability & Evaluation (`llm-observability`)
+- [[arize-phoenix]] — Arize Phoenix — (stub, 2026-06-28)
+- [[arthur-ai]] — Arthur AI — (stub, 2026-06-28)
+- [[braintrust]] — Braintrust — (stub, 2026-06-28)
+- [[comet]] — Comet (Opik) — (stub, 2026-06-28)
+- [[datadog]] — Datadog LLM Observability — (stub, 2026-06-28)
+- [[fiddler-ai]] — Fiddler AI — (stub, 2026-06-28)
+- [[giskard]] — Giskard — (stub, 2026-06-28)
+- [[helicone]] — Helicone — (stub, 2026-06-28)
+- [[langfuse]] — Langfuse — (stub, 2026-06-28)
+- [[langsmith]] — LangSmith (LangChain) — (stub, 2026-06-28)
+- [[trulens]] — TruLens — (stub, 2026-06-28)
+- [[weights-and-biases]] — Weights & Biases (Weave) — (stub, 2026-06-28)
+- [[whylabs]] — WhyLabs — (stub, 2026-06-28)
+
+### MCP Gateway / Tool Access Control (`mcp-gateway`)
+- [[agentgateway]] — agentgateway (Solo.io) — (stub, 2026-06-28)
+- [[arcade]] — Arcade.dev — (stub, 2026-06-28)
+- [[docker-mcp-gateway]] — Docker MCP Gateway — (stub, 2026-06-28)
+- [[ibm-contextforge]] — IBM ContextForge MCP Gateway — (stub, 2026-06-28)
+- [[mintmcp]] — MintMCP — (stub, 2026-06-28)
+- [[obot]] — Obot — (stub, 2026-06-28)
+- [[pomerium]] — Pomerium — (stub, 2026-06-28)
+
+### Network Security / SASE (SSE) (`network-security-sase`)
+- [[cato-networks]] — Cato Networks — (stub, 2026-06-28)
+- [[cisco]] — Cisco — (stub, 2026-06-28)
+- [[cloudflare]] — Cloudflare — (stub, 2026-06-28)
+- [[forcepoint]] — Forcepoint — (stub, 2026-06-28)
+- [[netskope]] — Netskope — (stub, 2026-06-28)
+- [[palo-alto-networks]] — Palo Alto Networks — (stub, 2026-06-28)
+- [[zscaler]] — Zscaler — (stub, 2026-06-28)
+
+### Non-Human / Agent Identity Governance (`non-human-identity`)
+- [[aembit]] — Aembit — (stub, 2026-06-28)
+- [[astrix-security]] — Astrix Security — (stub, 2026-06-28)
+- [[clutch-security]] — Clutch Security — (stub, 2026-06-28)
+- [[cyberark]] — CyberArk — (stub, 2026-06-28)
+- [[entro-security]] — Entro Security — (stub, 2026-06-28)
+- [[natoma]] — Natoma — (stub, 2026-06-28)
+- [[oasis-security]] — Oasis Security — (stub, 2026-06-28)
+- [[token-security]] — Token Security — (stub, 2026-06-28)
+
+### Policy-as-Code (`policy-as-code`)
+- [[hashicorp-sentinel]] — HashiCorp Sentinel — (stub, 2026-06-28)
+- [[kyverno]] — Kyverno — (stub, 2026-06-28)
+
+### Secrets Manager (`secrets-management`)
+- [[1password]] — 1Password — (stub, 2026-06-28)
+- [[aws-secrets-manager]] — AWS Secrets Manager — (stub, 2026-06-28)
+- [[azure-key-vault]] — Azure Key Vault — (stub, 2026-06-28)
+- [[conjur]] — CyberArk Conjur — (stub, 2026-06-28)
+- [[doppler]] — Doppler — (stub, 2026-06-28)
+- [[gcp-secret-manager]] — GCP Secret Manager — (stub, 2026-06-28)
+- [[hashicorp-vault]] — HashiCorp Vault — (stub, 2026-06-28)
+- [[infisical]] — Infisical — (stub, 2026-06-28)
+
+### Enterprise Logging / SIEM / SOC (`siem-soc`)
+- [[crowdstrike-logscale]] — CrowdStrike Falcon LogScale — (stub, 2026-06-28)
+- [[elastic]] — Elastic (ELK) — (stub, 2026-06-28)
+- [[google-secops]] — Google SecOps (Chronicle) — (stub, 2026-06-28)
+- [[microsoft-sentinel]] — Microsoft Sentinel — (stub, 2026-06-28)
+- [[splunk]] — Splunk — (stub, 2026-06-28)
+- [[sumo-logic]] — Sumo Logic — (stub, 2026-06-28)
+
+### Software Supply Chain & Coding Security (`software-supply-chain`)
+- [[aikido-security]] — Aikido Security — (stub, 2026-06-28)
+- [[apiiro]] — Apiiro — (stub, 2026-06-28)
+- [[endor-labs]] — Endor Labs — (stub, 2026-06-28)
+- [[github-advanced-security]] — GitHub Advanced Security — (stub, 2026-06-28)
+- [[gitlab]] — GitLab Ultimate — (stub, 2026-06-28)
+- [[jfrog]] — JFrog — (stub, 2026-06-28)
+- [[legit-security]] — Legit Security — (stub, 2026-06-28)
+- [[semgrep]] — Semgrep — (stub, 2026-06-28)
+- [[snyk]] — Snyk — (stub, 2026-06-28)
+- [[socket]] — Socket — (stub, 2026-06-28)
+- [[sonatype]] — Sonatype — (stub, 2026-06-28)
+
+### SaaS Security Posture Management (`sspm`)
+- [[adaptive-shield]] — Adaptive Shield — (stub, 2026-06-28)
+- [[appomni]] — AppOmni — (stub, 2026-06-28)
+- [[docontrol]] — DoControl — (stub, 2026-06-28)
+- [[grip-security]] — Grip Security — (stub, 2026-06-28)
+- [[obsidian-security]] — Obsidian Security — (stub, 2026-06-28)
+- [[valence-security]] — Valence Security — (stub, 2026-06-28)
+- [[wing-security]] — Wing Security — (stub, 2026-06-28)
+
+### Tool Identity & Integration (`tool-identity-integration`)
+- [[composio]] — Composio — (stub, 2026-06-28)
+- [[descope]] — Descope — (stub, 2026-06-28)
+- [[stackone]] — StackOne — (stub, 2026-06-28)
+- [[stytch]] — Stytch — (stub, 2026-06-28)
+- [[workos]] — WorkOS — (stub, 2026-06-28)
+
+### uncategorized (`uncategorized`)
+- [[log]] —  — (?, ?)
+
+### Vector Retrieval (`vector-retrieval`)
+- [[azure-ai-search]] — Azure AI Search — (stub, 2026-06-28)
+- [[opensearch]] — OpenSearch — (stub, 2026-06-28)
+- [[pinecone]] — Pinecone — (stub, 2026-06-28)
+- [[weaviate]] — Weaviate — (stub, 2026-06-28)
+
+### Third-Party / Vendor Risk + Cyber Ratings (`vendor-risk`)
+- [[bitsight]] — BitSight — (stub, 2026-06-28)
+- [[black-kite]] — Black Kite — (stub, 2026-06-28)
+- [[processunity]] — ProcessUnity — (stub, 2026-06-28)
+- [[securityscorecard]] — SecurityScorecard — (stub, 2026-06-28)
+- [[upguard]] — UpGuard — (stub, 2026-06-28)
 
 ## Comparisons
 
-_Built in Phase 4: AI gateways head-to-head; runtime AI firewalls; AI-security M&A map;
-"what's actually Day-1 for a ~50-person fund"; entitlement-aware RAG options; survey blueprint._
+_Built in Phase 4: AI gateways; runtime AI firewalls; AI-security M&A map; Day-1 for a ~50-person fund; entitlement-aware RAG; survey blueprint._

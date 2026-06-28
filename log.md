@@ -30,3 +30,10 @@ Append-only, chronological. Each entry: `## [YYYY-MM-DD] <op> | <subject>` where
 - Created `index.md` content catalog (sections only; populated in Phase 1+).
 - Created `wiki/overview.md` thesis stub from the layer-cake doc.
 - **PAUSED for human sign-off on taxonomy before building pages (Phase 0 step 5).**
+
+## [2026-06-28] stub | Phase 1 complete — 42 category pages (8 parallel agents)
+- All 42 category pages drafted by 8 parallel subagents (by layer), each with frontmatter, body sections, exact-slug wikilinks, and `## Survey` scaffolding (skipped for pure-process pages). content-sources/vector-retrieval are stubs pointing at entitlement-aware-rag.
+- Regenerated `index.md` from frontmatter (42 categories + 222 vendors, grouped by layer / primary category).
+
+## [2026-06-28] research | Phase 3 Wave 1 launched — M&A verification (6 parallel agents)
+- Priority wave: ~30 M&A-flagged + anchor vendors grouped by acquirer (Palo Alto, Cisco, CrowdStrike/SentinelOne, F5/Cato/CheckPoint/Tenable, big-infra, OpenAI/misc). Each verifies seed acquisition claims against primary sources, caches to raw/sources/, fills the vendor page.
