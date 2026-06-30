@@ -8,9 +8,9 @@ priority: day-2
 trifecta_role: none-detection (automates triage/response on top of detection — not a preventive leg of the trifecta)
 maps_to_seed_doc: AI SecOps, Security Automation
 maps_to_seed_csv: AI SOC analysts
-vendor_count: 9
+vendor_count: 10
 status: drafted
-last_updated: 2026-06-28
+last_updated: 2026-06-30
 ---
 
 ## Business objective
@@ -36,6 +36,7 @@ Independent AI SOC analyst startups (the survey shortlist):
 - [7ai](../vendors/7ai.md) — agentic security platform for SOC automation.
 - [radiant-security](../vendors/radiant-security.md) — AI SOC analyst for triage, investigation, and response.
 - [simbian](../vendors/simbian.md) — AI SOC agents / agentic security automation.
+- [artemis-security](../vendors/artemis-security.md) — AI-native SecOps that bundles a SIEM-replacement data layer (federated query) *with* the agentic analyst; NYC, emerged from stealth 2026 with $70M.
 
 Platform-embedded AI analysts (cross-listed; tied to a larger security stack):
 
@@ -61,7 +62,7 @@ No seed-flagged acquisitions in this row. The notable dynamic is build-vs-buy by
 
 **Question.** Which AI SOC analyst / agentic SecOps tool(s) is your firm currently using or evaluating?
 
-**Answer options.** Prophet Security; Dropzone AI; 7AI; Radiant Security; Simbian; CrowdStrike Charlotte AI; Palo Alto Cortex AgentiX; Torq; Other (Please Specify).
+**Answer options.** Prophet Security; Dropzone AI; 7AI; Radiant Security; Simbian; Artemis Security; CrowdStrike Charlotte AI; Palo Alto Cortex AgentiX; Torq; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

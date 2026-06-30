@@ -8,9 +8,9 @@ priority: day-1
 trifecta_role: all
 maps_to_seed_doc: Enterprise AI Assistant
 maps_to_seed_csv: Enterprise Chat & RAG
-vendor_count: 8
+vendor_count: 9
 status: drafted
-last_updated: 2026-06-28
+last_updated: 2026-06-30
 ---
 
 ## Business objective
@@ -50,6 +50,9 @@ Three rough groups: frontier-lab assistants, suite-native copilots, and cross-so
 **Cross-source work assistant** (search-grounded, source-agnostic)
 - [glean](../vendors/glean.md) — connects across SaaS and document stores with a permissions-mirroring index; for many buyers Glean is simultaneously the assistant and the [entitlement-aware-rag](entitlement-aware-rag.md) layer. Cross-listed there.
 
+**Vertical / in-tenant (regulated finance)** (a niche alternative to the horizontal players)
+- [audition-ai](../vendors/audition-ai.md) — compliance-first AI assistant + agent platform purpose-built for hedge funds, deployed inside the customer's own Azure tenant with DLP, permission-aware retrieval, and audit baked in. Cross-listed in [ai-governance-platform](ai-governance-platform.md) and [dlp](dlp.md).
+
 **Entitlement overlay** (not an assistant, but bought alongside one)
 - [knostic](../vendors/knostic.md) — knowledge-boundary guardrail over Copilot/Glean-class assistants; see [entitlement-aware-rag](entitlement-aware-rag.md).
 
@@ -79,6 +82,7 @@ No startup-roll-up dynamic here — the field is anchored by the largest tech an
 - Amazon Q Business
 - Perplexity Enterprise
 - Glean
+- Audition AI (finance-vertical, in-tenant)
 - Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -88,6 +92,7 @@ No startup-roll-up dynamic here — the field is anchored by the largest tech an
 - **Suite-native vs standalone** is the real axis: Copilot/Gemini/Q come "free" with the platform, so adoption may reflect existing vendor lock-in more than preference. Consider asking *why* (bundled vs chosen).
 - **Glean straddles** assistant and [entitlement-aware-rag](entitlement-aware-rag.md) — some respondents think of it as search, others as their assistant. The cross-listing is intentional; a short clarifier helps.
 - Don't merge this with the [entitlement-aware-rag](entitlement-aware-rag.md) question — keep "which assistant" separate from "how you enforce who-sees-what," or you'll double-count.
+- **Audition AI is niche/vertical** — purpose-built for regulated finance and far smaller than the incumbents. Useful as an explicit option for this survey's hedge-fund audience (it competes on data-residency + compliance, not breadth), but expect low penetration; most "Other" write-ins for a fund-specific assistant belong here.
 
 ## Open taxonomy questions
 

@@ -10,7 +10,7 @@ maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 vendor_count: 9
 status: drafted
-last_updated: 2026-06-28
+last_updated: 2026-06-30
 ---
 
 # Data Loss Prevention (DLP)
@@ -58,6 +58,9 @@ AI-native / prompt-aware DLP:
   [ai-runtime-security](ai-runtime-security.md), [agent-runtime-security](agent-runtime-security.md)).
 - [jazz-security](../vendors/jazz-security.md) — AI-native DLP (reclassified here from AI-SOC after research; it is a
   data-protection product, not a SOC analyst).
+- [audition-ai](../vendors/audition-ai.md) — in-tenant finance-vertical AI platform with built-in DLP
+  (PII/SSN/PCI pattern matching) + behavioral "Generative Rules" applied to its assistant/agent
+  traffic. Cross-listed; primary home [enterprise-ai-assistant](enterprise-ai-assistant.md), also [ai-governance-platform](ai-governance-platform.md).
 
 Platform / incumbent DLP:
 

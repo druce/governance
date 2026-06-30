@@ -6,8 +6,8 @@ title: "AI Governance & Security Vendor Wiki"
 
 A map of the enterprise **AI governance / security vendor landscape**, written for a **hedge-fund /
 asset-manager CTO**: what each category is for, when you need it (Day-1 vs Day-2), who fills each
-slot, who owns whom, and how to tell neighbors apart. **42 categories · 222 researched vendors · 6
-comparisons**, every dated claim anchored to a cited source. *As of 2026-06-28 — verify M&A before relying on it.*
+slot, who owns whom, and how to tell neighbors apart. **42 categories · 224 researched vendors · 6
+comparisons**, every dated claim anchored to a cited source. *As of 2026-06-30 — verify M&A before relying on it.*
 
 **Start here:** [The thesis (overview)](wiki/overview.md) ·
 [What's actually Day-1 for a ~50-person fund](wiki/comparisons/day-1-for-a-50-person-fund.md) ·
@@ -142,6 +142,7 @@ comparisons**, every dated claim anchored to a cited source. *As of 2026-06-28 �
 
 ### AI SecOps / Agentic SOC Analysts (`ai-soc-analysts`)
 - [7ai](wiki/vendors/7ai.md) — 7AI — (researched, 2026-06-28)
+- [artemis-security](wiki/vendors/artemis-security.md) — Artemis Security — (researched, 2026-06-30)
 - [dropzone-ai](wiki/vendors/dropzone-ai.md) — Dropzone AI — (researched, 2026-06-28)
 - [prophet-security](wiki/vendors/prophet-security.md) — Prophet Security — (researched, 2026-06-28)
 - [radiant-security](wiki/vendors/radiant-security.md) — Radiant Security — (researched, 2026-06-28)
@@ -219,6 +220,7 @@ comparisons**, every dated claim anchored to a cited source. *As of 2026-06-28 �
 
 ### Enterprise AI Assistant (`enterprise-ai-assistant`)
 - [amazon-q-business](wiki/vendors/amazon-q-business.md) — Amazon Q Business — (researched, 2026-06-28)
+- [audition-ai](wiki/vendors/audition-ai.md) — Audition AI (finance-vertical, in-tenant; also AI-governance + DLP) — (researched, 2026-06-30)
 - [anthropic-claude-enterprise](wiki/vendors/anthropic-claude-enterprise.md) — Claude Enterprise (Anthropic) — (researched, 2026-06-28)
 - [gemini-enterprise](wiki/vendors/gemini-enterprise.md) — Gemini Enterprise / Agentspace (Google) — (researched, 2026-06-28)
 - [microsoft-365-copilot](wiki/vendors/microsoft-365-copilot.md) — Microsoft 365 Copilot — (researched, 2026-06-28)

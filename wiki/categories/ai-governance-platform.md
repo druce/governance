@@ -10,7 +10,7 @@ maps_to_seed_doc: AI Governance Platform
 maps_to_seed_csv: AI Governance, Model Risk & Compliance
 vendor_count: 13
 status: drafted
-last_updated: 2026-06-28
+last_updated: 2026-06-30
 ---
 
 ## Business objective
@@ -68,6 +68,7 @@ Adjacent platforms that also carry an AI-governance module (cross-listed):
 - [securiti](../vendors/securiti.md) — data + AI governance, anchored in DSPM and data lineage.
 - [collibra](../vendors/collibra.md) — data governance/catalog extending to AI/model registry.
 - [calypsoai](../vendors/calypsoai.md) — runtime AI security vendor with governance/reporting framing (per seed; acq. by F5 — unverified).
+- [audition-ai](../vendors/audition-ai.md) — finance-vertical [enterprise-ai-assistant](enterprise-ai-assistant.md) platform whose GRC console enforces usage policy, tracks violations, and produces compliance dashboards over its own in-tenant AI workspace (usage governance, not a model-risk register). Primary home is [enterprise-ai-assistant](enterprise-ai-assistant.md); also [dlp](dlp.md).
 
 Observability vendors with governance reporting also overlap here: [fiddler-ai](../vendors/fiddler-ai.md),
 [arthur-ai](../vendors/arthur-ai.md).
