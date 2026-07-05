@@ -28,9 +28,9 @@ The job is right-sizing standing privilege: finding the dormant admin account, t
 
 Day-2 for most funds — you need an IdP first, then governance on top. It becomes pressing under regulatory/audit pressure, at headcount scale where manual access reviews break down, and when agents and service accounts add a flood of new entitlements no human is reviewing. A 50-person fund may run light IGA out of Entra; a larger or heavily regulated shop will want a dedicated platform for certification and audit evidence.
 
-## Lethal-trifecta role
+## Security role
 
-The sensitive-data leg, indirectly. IGA does not inspect traffic — it shrinks the blast radius by ensuring fewer identities (human or non-human) hold standing access to sensitive systems, so a compromised account or rogue agent has less to reach. Lives across all zones as a governance overlay rather than an inline control.
+Controls access to sensitive data, indirectly. IGA is preventive but out-of-band — it does not inspect traffic; it shrinks the blast radius by ensuring fewer identities (human or non-human) hold standing access to sensitive systems, so a compromised account or rogue agent has less to reach. Lives across all zones as a governance overlay rather than an inline control.
 
 ## Vendors
 

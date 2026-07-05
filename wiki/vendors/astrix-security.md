@@ -9,10 +9,10 @@ also_listed_in: [ai-spm]
 website: https://astrix.security
 founded: 2021
 hq: Boston, Massachusetts, USA (R&D in Tel Aviv, Israel)
-ownership_state: acquired-closed
-owner: null
+ownership_state: acquired-pending
+owner: Cisco
 ownership_note: 'Cisco announced INTENT to acquire Astrix 2026-05-04; deal PENDING (not closed) as of 2026-06-28. Terms undisclosed (press cites ~$400M, unconfirmed). Prior to deal: independent, $85M+ raised.'
-acquisition: {announced: 2026-05-04, closed: 2026-06-28, price: null}
+acquisition: {announced: 2026-05-04, closed: null, price: null}
 funding_total: $85M+ (pre-acquisition)
 last_funding: Series B $45M led by Menlo Ventures
 market_position: null
@@ -26,7 +26,7 @@ pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
 last_verified: 2026-06-28
-verify_after: null
+verify_after: 2026-09-03
 tags: [non-human-identity, nhi, agentic-identity, cisco]
 ---
 
@@ -38,7 +38,7 @@ tags: [non-human-identity, nhi, agentic-identity, cisco]
 
 **What it does** — Inventories every non-human identity and its connections across SaaS, cloud and internal systems, then scores risk (over-privileged, stale, leaked, or anomalous credentials), enforces least-privilege and lifecycle policy, and detects/responds to NHI-based threats. As agentic AI proliferates, Astrix extends this to **AI agents** — an "AI Agent Control Plane" governing what credentials agents hold and how they're used. The job it does: stop the sprawl of machine credentials from becoming an unmonitored attack surface.
 
-**Where it sits in the stack** — [non-human-identity](../categories/non-human-identity.md) at the foundation layer, with an [ai-spm](../categories/ai-spm.md) angle (governing agent identities is part of AI security posture). Trifecta role: guards **sensitive-data** access (least-privilege on machine credentials) and constrains **egress**/lateral movement by reining in over-scoped tokens. Adjacent to [identity-access](../categories/identity-access.md) (human IdP) and [tool-identity-integration](../categories/tool-identity-integration.md) (agent→SaaS auth).
+**Where it sits in the stack** — [non-human-identity](../categories/non-human-identity.md) at the foundation layer, with an [ai-spm](../categories/ai-spm.md) angle (governing agent identities is part of AI security posture). Its risk role: controls access to sensitive data (least-privilege on machine credentials) and constrains outbound data flows/lateral movement by reining in over-scoped tokens. Adjacent to [identity-access](../categories/identity-access.md) (human IdP) and [tool-identity-integration](../categories/tool-identity-integration.md) (agent→SaaS auth).
 
 **Deployment & architecture** — SaaS, integrating via API/OAuth connectors into SaaS apps, cloud providers, IdPs and secrets stores to map NHIs without agents on every box. Post-acquisition, Cisco plans to fold capabilities into **Cisco Identity Intelligence, Secure Access and Duo**, with telemetry feeding **[splunk](splunk.md)** for SOC detection/response.
 

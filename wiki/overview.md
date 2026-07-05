@@ -52,20 +52,25 @@ Segment where agents run so the dangerous combination never lines up:
 [trust-zone-segmentation](categories/trust-zone-segmentation.md) is the architectural control that makes the next idea impossible by
 construction. [ephemeral-environments](categories/ephemeral-environments.md) are how you implement disposable, zone-scoped compute.
 
-### 3. The lethal trifecta
+### 3. The lethal trifecta — the core agent-security threat model
 From [Simon Willison](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/): three ingredients
-that are individually fine but catastrophic together —
+that are individually fine but catastrophic when they combine **in one agent context** —
 1. **Untrusted input** (a prompt/content an attacker controls),
 2. **Access to sensitive data**, and
 3. **An egress path** to exfiltrate it.
 
-Most of this stack exists to **break one leg** at each layer:
+A governed chatbot behind a login rarely assembles all three. An agent that reads external
+content, holds credentials, and calls tools assembles them by default — which is why the
+trifecta is the organizing threat model for the **agent-security** slice of the stack
+(runtime firewalls, MCP gateways, agent authorization, tool identity, browsers, trust
+zones), while the rest of the stack is better described in plain risk terms. Each
+agent-facing control removes one ingredient:
 - **Untrusted input** → [ai-runtime-security](categories/ai-runtime-security.md), [ai-red-teaming](categories/ai-red-teaming.md), [anti-deepfake](categories/anti-deepfake.md).
 - **Sensitive data** → [dspm](categories/dspm.md), [data-access-governance](categories/data-access-governance.md), [entitlement-aware-rag](categories/entitlement-aware-rag.md),
   [non-human-identity](categories/non-human-identity.md).
 - **Egress** → [dlp](categories/dlp.md), [ai-gateway](categories/ai-gateway.md), [ai-access-governance](categories/ai-access-governance.md), [network-security-sase](categories/network-security-sase.md),
   [mcp-gateway](categories/mcp-gateway.md).
-Trust-zone segmentation guarantees the three never co-occur.
+Trust-zone segmentation guarantees the three never co-occur in the same agent context.
 
 ## What's actually Day-1 vs Day-2
 - **Day-1 (before go-live):** identity/SASE you already own; a governed [enterprise-ai-assistant](categories/enterprise-ai-assistant.md);

@@ -28,9 +28,9 @@ The AI's card catalog: turns documents into searchable "meaning" (embeddings) so
 
 Day-1 *if you are doing RAG*; otherwise N/A. It is a build choice (which vector database / search service), not a security control. Many assistants ship their own retrieval and you never touch a standalone vector store. The governance question is not "which vector DB" but "does retrieval respect the user's permissions" — and that lives in [entitlement-aware-rag](entitlement-aware-rag.md).
 
-## Lethal-trifecta role
+## Security role
 
-The **sensitive-data** leg, as a store. A vector index is a *copy* of your sensitive content, often stripped of the source system's ACLs — which is the classic RAG failure mode: the permissions lived on the SharePoint folder, not on the embedding. Whether the index re-checks entitlements at query time is the whole game. Lives in the yellow/green zone.
+A **sensitive-data store**, not a control. A vector index is a *copy* of your sensitive content, often stripped of the source system's ACLs — which is the classic RAG failure mode: the permissions lived on the SharePoint folder, not on the embedding. Whether the index re-checks entitlements at query time is the whole game. Lives in the yellow/green zone.
 
 ## Vendors
 

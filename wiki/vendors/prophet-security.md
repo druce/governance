@@ -36,7 +36,7 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 **What it does** — Prophet's Agentic AI SOC Platform connects to your existing detection stack (SIEM, EDR, cloud, identity) and, when an alert fires, autonomously gathers evidence, builds an investigation, correlates across systems, and delivers a verdict with reasoning a human can audit. It ships three components: the **AI SOC Analyst** (alert investigation), an **AI Threat Hunter** (proactive pattern-finding), and an **AI Detection Advisor** (tunes detection coverage / reduces false positives from telemetry). The pitch is reducing mean-time-to-respond and analyst burnout, not replacing the SIEM.
 
-**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md) in the Foundation layer; it sits on top of [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md) as an automation/decision layer. This is a SOC-operations tool, not an AI-application control: it does **not** break a leg of the lethal trifecta (trifecta_relevance: none). It lives in the green/trusted operations zone alongside your other security tooling.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md) in the Foundation layer; it sits on top of [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md) as an automation/decision layer. This is a SOC-operations tool, not an AI-application control: it is not an inline prompt/egress control. It lives in the green/trusted operations zone alongside your other security tooling.
 
 **Deployment & architecture** — SaaS, integrates via API into SIEM/EDR/cloud/identity sources. No inline data-path role; it reads telemetry and writes investigations back. Fast to stand up (read-only integrations).
 
@@ -56,4 +56,4 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established 2023 founding, SF HQ, founders ex-StackRox, $30M Series A (Accel) + Amex/Citi strategic = ~$41M total, independent. Set ownership_confidence high. trifecta=none (SOC-ops tool). hedge_fund_fit=medium (Day-2).
+- [2026-06-28] Researched; established 2023 founding, SF HQ, founders ex-StackRox, $30M Series A (Accel) + Amex/Citi strategic = ~$41M total, independent. Set ownership_confidence high. not an inline prompt/egress control (SOC-ops tool). hedge_fund_fit=medium (Day-2).

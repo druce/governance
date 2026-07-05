@@ -52,13 +52,14 @@ It complements [promotion-gates](promotion-gates.md): promotion gates approve **
 once; HITL approvals approve **specific actions** the live system proposes, again and
 again, at runtime.
 
-## Lethal-trifecta role
+## Security role
 
-None directly — HITL doesn't remove a trifecta leg. It is the **last-resort
-containment** for the green zone, where sensitive data and egress both exist: when an
-agent that *can* act proposes something harmful (whether from a prompt injection that
-slipped through or its own error), a human is the circuit-breaker between proposal and
-irreversible effect. It backstops the automated controls rather than replacing them.
+A preventive, inline **last-resort containment** for the green zone, where sensitive
+data and outbound paths both exist: when an agent that *can* act proposes something
+harmful (whether from a prompt injection that slipped through or its own error), a
+human is the circuit-breaker between proposal and irreversible effect. It doesn't
+screen input or block exfiltration itself; it backstops the automated controls rather
+than replacing them.
 
 ## How it gets enforced (tooling, not a shortlist)
 

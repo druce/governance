@@ -45,13 +45,14 @@ cases get folded into that or into a dedicated AI-governance platform — most f
 start with the GRC tool they already own and add an AI module or a specialist
 platform once the AI footprint grows.
 
-## Lethal-trifecta role
+## Security role
 
-**None-detection / oversight.** This layer does not sit inline and does not break a
-leg of the lethal trifecta itself. It is the documentation, attestation, and
-audit-trail layer that records *which* controls break the trifecta and proves they
-exist. It lives in the **green (governed) zone** as a system of record, consuming
-evidence from the inline controls rather than enforcing at runtime.
+**Oversight, not enforcement.** This layer does not sit inline and blocks nothing
+itself — it mitigates no threat directly. It is the documentation, attestation, and
+audit-trail layer that records *which* preventive and detective controls exist
+(input screening, data-access limits, egress controls) and proves they are in place
+and tested. It lives in the **green (governed) zone** as a system of record,
+consuming evidence from the inline controls rather than enforcing at runtime.
 
 ## Vendors
 

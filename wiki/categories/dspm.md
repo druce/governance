@@ -41,14 +41,14 @@ internal content, you need to know what is sensitive and where it is. DSPM is al
 the precondition for credible model-risk and regulatory conversations (you can show
 where regulated data lives and who can touch it).
 
-## Lethal-trifecta role
+## Security role
 
-DSPM addresses the **sensitive-data** leg, in **detection** mode — it does not block
-anything at runtime, it *finds and labels* the sensitive data so other controls can
-act. It mostly inventories data sitting in the **green zone** (internal stores) and
-flags where that data is over-exposed to yellow/red paths. It is the discovery layer
-underneath the enforcement controls; on its own it breaks no leg, but nothing else
-in the data layer works well without it.
+A **detective, out-of-band** control against sensitive-data exposure — it does not
+block anything at runtime, it *finds and labels* the sensitive data so other controls
+can act. It mostly inventories data sitting in the **green zone** (internal stores)
+and flags where that data is over-exposed to yellow/red paths. It is the discovery
+layer underneath the enforcement controls; on its own it prevents nothing, but
+nothing else in the data layer works well without it.
 
 ## Vendors
 

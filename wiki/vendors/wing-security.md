@@ -44,7 +44,7 @@ Wing combines three jobs in one platform: (1) **SSPM** — continuous discovery 
 
 Primary category [sspm](../categories/sspm.md); with its AI-governance guardrails and shadow-AI discovery it also overlaps [ai-access-governance](../categories/ai-access-governance.md). Layer: foundation.
 
-Lethal-trifecta role: **sensitive-data** and **egress** — it governs which SaaS/AI apps can access corporate data and constrains OAuth-granted data flow; the ITDR side adds detection of compromised-identity abuse. Not an inline model/prompt firewall.
+It controls sensitive-data access and outbound data flow — governing which SaaS/AI apps can access corporate data and constraining OAuth-granted flows; the ITDR side adds detection of compromised-identity abuse. Not an inline model/prompt firewall.
 
 ## Deployment & architecture
 

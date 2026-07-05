@@ -40,7 +40,7 @@ tags: [identity-governance, iga, access-reviews, jit-access, ispm]
 ConductorOne automates the access lifecycle: self-service access requests with policy-based approvals, just-in-time (JIT) and time-bound grants, automated access reviews/certifications, least-privilege analysis, and identity security posture management (ISPM). It increasingly targets non-human and agent identity governance. The pitch is a lighter, faster, more automated alternative to legacy IGA for cloud-forward companies.
 
 ## Where it sits in the stack
-The [identity-governance](../categories/identity-governance.md) foundation plus [data-access-governance](../categories/data-access-governance.md). Addresses the **sensitive-data** leg of the lethal trifecta by controlling and certifying entitlements (and shrinking standing privilege via JIT) — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) inherit.
+The [identity-governance](../categories/identity-governance.md) foundation plus [data-access-governance](../categories/data-access-governance.md). Governs access to sensitive data by controlling and certifying entitlements (and shrinking standing privilege via JIT) — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) inherit.
 
 ## Deployment & architecture
 SaaS. Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md)), cloud platforms, and SaaS apps to collect entitlements, drive reviews, and provision JIT access. Workflow/automation-centric (Slack-native approvals, etc.) rather than the heavy connector-and-config model of incumbents.

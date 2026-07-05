@@ -40,7 +40,7 @@ tags: [dspm, data-security, proofpoint, thoma-bravo]
 Normalyze is **Data Security Posture Management**: it scans data stores across SaaS, PaaS, public/multi-cloud, on-prem and hybrid, discovers and classifies sensitive data, maps who/what can access it, and surfaces the riskiest exposures. Its differentiator was **in-place scanning** (no copying data out) and **quantified, dollar-value risk** scoring to prioritize remediation. The job: know where regulated/sensitive data is and whether it is over-exposed — including to AI tools and RAG pipelines.
 
 ## Where it sits in the stack
-Data layer, [dspm](../categories/dspm.md). Lethal-trifecta leg: **sensitive-data** — find and reduce sensitive-data exposure before AI systems can reach it. Posture/visibility, not an inline runtime control. Adjacent to [dlp](../categories/dlp.md) (Proofpoint's core) and [data-access-governance](../categories/data-access-governance.md).
+Data layer, [dspm](../categories/dspm.md). Risk focus: **sensitive data** — find and reduce sensitive-data exposure before AI systems can reach it. Posture/visibility, not an inline runtime control. Adjacent to [dlp](../categories/dlp.md) (Proofpoint's core) and [data-access-governance](../categories/data-access-governance.md).
 
 ## Deployment & architecture
 SaaS console with agentless, in-place scanning of connected data stores via cloud APIs/roles. Integrates with cloud providers and security tooling. Post-acquisition it is being folded into the Proofpoint platform alongside Proofpoint DLP.

@@ -175,11 +175,11 @@ def rule3_schema(pages, tax):
 
 def rule4_ma_state(pages):
     for p, (fm, body) in pages.items():
-        if not fm or fm.get("type") != "vendor":
+        if not fm or fm.get("type") != "vendor" or fm.get("alias_of"):
             continue
         state = fm.get("ownership_state")
         acq = fm.get("acquisition") or {}
-        has_sources = bool(fm.get("sources")) or bool(re.search(r"^## Sources\s*\n+\s*- ", body, re.M))
+        has_sources = bool(fm.get("sources")) or bool(re.search(r"^(?:## Sources|\*\*Sources\*\*)\s*\n+\s*- ", body, re.M))
         if state == "acquired-pending":
             va = as_date(fm.get("verify_after"))
             if va is None:
@@ -234,7 +234,7 @@ def rule6_urls(pages):
 def rule7_staleness(pages, tax):
     cats = cat_index(tax)
     for p, (fm, _) in pages.items():
-        if not fm or fm.get("type") not in ("vendor", "category"):
+        if not fm or fm.get("type") not in ("vendor", "category") or fm.get("alias_of"):
             continue
         lv = as_date(fm.get("last_verified"))
         if lv is None:
@@ -254,11 +254,11 @@ def rule7_staleness(pages, tax):
 def rule8_dated_claims(pages):
     dated = re.compile(r"\$\s?\d|\b20\d{2}-\d{2}\b")
     for p, (fm, body) in pages.items():
-        if not fm or fm.get("type") != "vendor":
+        if not fm or fm.get("type") != "vendor" or fm.get("alias_of"):
             continue
-        prose = re.split(r"^## Sources", body, flags=re.M)[0]
+        prose = re.split(r"^## Sources|^\*\*Sources\*\*", body, flags=re.M)[0]
         if dated.search(prose):
-            has_sources = bool(fm.get("sources")) or bool(re.search(r"^## Sources\s*\n+\s*- ", body, re.M))
+            has_sources = bool(fm.get("sources")) or bool(re.search(r"^(?:## Sources|\*\*Sources\*\*)\s*\n+\s*- ", body, re.M))
             if not has_sources:
                 add("error", 8, p, "body contains dated/dollar claims but page has no Sources entries")
 

@@ -28,9 +28,9 @@ The systems of record an AI assistant reads from: where your knowledge actually 
 
 Day-1 *if you are doing RAG* — but only in the trivial sense that you already have these systems. You are not buying a "content source"; you are deciding which existing repositories an assistant is allowed to index, and confirming their permission models are clean before you connect them. The real Day-1 work is the entitlement layer on top, not the repositories themselves.
 
-## Lethal-trifecta role
+## Security role
 
-This is the **sensitive-data** leg — it *is* the sensitive data. Content sources sit in the green/yellow zone (internal systems of record). Connecting an assistant to them without an entitlement-aware retrieval layer is how the sensitive-data leg gets exposed to an untrusted prompt.
+This layer *is* the sensitive data — not a control, but the asset the controls protect. Content sources sit in the green/yellow zone (internal systems of record). Connecting an assistant to them without an entitlement-aware retrieval layer is how internal documents end up exposed to an untrusted prompt; the preventive control lives in the retrieval layer, not here.
 
 ## Vendors
 

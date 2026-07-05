@@ -68,7 +68,7 @@ AI-governance platforms ([credo-ai](credo-ai.md), [fairly-ai](fairly-ai.md), [ho
 systems, manage model risk, and map controls to frameworks like the **EU AI Act**,
 **NIST AI RMF**, or **SR 11-7**. GovernGPT does none of that — it is itself an *applied
 LLM productivity app* for IR teams. If anything it is a *consumer* of AI governance, not
-a provider of it. Lethal-trifecta relevance: **none** at the governance-control level
+a provider of it. It is **not** an inline prompt/egress control
 (though, like any LLM app touching confidential fund documents, a buyer should vet its
 own data-handling — sensitive-data exposure is a normal vendor-risk question, not a
 governance feature it sells).

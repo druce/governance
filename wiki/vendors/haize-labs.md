@@ -49,8 +49,8 @@ modes, and feeds them back for hardening. It also builds evaluation/**judge mode
 Anthropic is named among its customers.
 
 ## Where it sits in the stack
-[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Lethal-trifecta role: the
-**untrusted-input** leg — it specializes in finding adversarial inputs that break the
+[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Its focus is
+**untrusted input** — it specializes in finding adversarial inputs that break the
 model. It is a pre-production/assurance tool and a source of evaluators, not an inline
 runtime firewall, so it complements [ai-runtime-security](../categories/ai-runtime-security.md) rather than replacing it.
 

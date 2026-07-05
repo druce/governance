@@ -45,7 +45,7 @@ The non-negotiable control underneath all of it: **document-level permission enf
 ## Where it sits in the stack
 
 - **Layer:** retrieval. Primary category [entitlement-aware-rag](../categories/entitlement-aware-rag.md); also [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md).
-- **Lethal-trifecta leg:** **sensitive-data**. Glean's job is to make sure the model only ever retrieves data the user is entitled to, so the "access to private data" leg of the trifecta is scoped to per-user authorization rather than the whole corpus. It does *not* by itself break the untrusted-input or egress legs — those need a runtime/guardrail layer ([ai-runtime-security](../categories/ai-runtime-security.md)) and DLP/egress controls.
+- **Risk role:** controls access to sensitive data. Glean's job is to make sure the model only ever retrieves data the user is entitled to, so access to private data is scoped to per-user authorization rather than the whole corpus. It does *not* by itself screen untrusted input or control outbound data flows — those need a runtime/guardrail layer ([ai-runtime-security](../categories/ai-runtime-security.md)) and DLP/egress controls.
 - **Trust zone:** lives in the green/internal zone but reaches across every connected SaaS app; the permission-mirroring is precisely what keeps cross-app retrieval from collapsing trust boundaries.
 
 ## Deployment & architecture

@@ -40,7 +40,7 @@ tags: [identity, idp, sso, mfa]
 Okta authenticates users and apps and brokers access to SaaS and on-prem resources. Two clouds: **Workforce Identity** (SSO, adaptive MFA, lifecycle/provisioning, Identity Governance, and a growing privileged-access and device-access set) for employees/contractors/partners; and **Customer Identity (Auth0)** for developers building login into their own products (CIAM). Its pitch is being a neutral hub that integrates with everything rather than favoring one cloud vendor.
 
 ## Where it sits in the stack
-The [identity-access](../categories/identity-access.md) foundation — the front door. It governs the **sensitive-data** leg of the lethal trifecta by deciding authentication/authorization before access to data, apps, or models. For AI deployments it's the IdP that gateways, assistants, and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) federate against.
+The [identity-access](../categories/identity-access.md) foundation — the front door. It controls access to sensitive data, deciding authentication/authorization before anything reaches data, apps, or models. For AI deployments it's the IdP that gateways, assistants, and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) federate against.
 
 ## Deployment & architecture
 SaaS, multi-tenant; standards-based (SAML, OIDC, OAuth2, SCIM). Large pre-built integration network (the Okta Integration Network). Feeds and consumes from SIEM ([microsoft-sentinel](microsoft-sentinel.md), [splunk](splunk.md)), and is commonly paired with governance tools. Auth0 is delivered as developer-facing APIs/SDKs.

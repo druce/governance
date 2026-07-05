@@ -36,7 +36,7 @@ tags: [open-source, cncf, policy-as-code, kubernetes]
 
 **What it does** — Kyverno runs as a Kubernetes admission controller. You write policies as native Kubernetes YAML (no separate language), and it validates incoming resources against them (e.g. "no privileged containers," "images must come from approved registries," "every namespace gets these defaults"), mutates resources to enforce defaults, and generates required objects. Extended to image verification, and policies for resources beyond core Kubernetes. It is the "guardrails as software" layer for anything running on Kubernetes — which, for an AI stack, includes most self-hosted model-serving, agent, and RAG infrastructure.
 
-**Where it sits in the stack** — [policy-as-code](../categories/policy-as-code.md), governance layer. Lethal-trifecta role: indirect/meta — it governs the Kubernetes substrate, enforcing the cluster-level controls behind [trust-zone-segmentation](../categories/trust-zone-segmentation.md) and [promotion-gates](../categories/promotion-gates.md). Not in the prompt/data path.
+**Where it sits in the stack** — [policy-as-code](../categories/policy-as-code.md), governance layer. Its risk role is indirect: it governs the Kubernetes substrate, enforcing the cluster-level controls behind [trust-zone-segmentation](../categories/trust-zone-segmentation.md) and [promotion-gates](../categories/promotion-gates.md). Not in the prompt/data path.
 
 **Deployment & architecture** — Self-hosted; deployed into your Kubernetes clusters as an admission controller plus policy CRDs. GitOps-friendly (policies live in Git). Pairs with CI/CD promotion gates. Apache-2.0 licensed; commercial support and a management plane available from Nirmata.
 

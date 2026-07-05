@@ -42,7 +42,7 @@ Pangea provides a set of composable **AI security guardrails** that developers d
 (Pangea began life in 2021 as a broader developer-first security-services API platform — auth, audit logging, secure-by-design building blocks — and pivoted to AI guardrails as that market emerged.)
 
 ## Where it sits in the stack
-Model/prompt layer. It breaks the **untrusted-input** (prompt injection) and **egress/sensitive-data** legs of the lethal trifecta, sitting in the yellow (AI application) trust zone. Functionally it overlaps [ai-runtime-security](../categories/ai-runtime-security.md) (AI firewall) and [ai-red-teaming](../categories/ai-red-teaming.md)/guardrails; it is more an embeddable guardrail toolkit than a standalone inline proxy.
+Model/prompt layer. It screens untrusted input (prompt injection) and prevents sensitive-data leakage on outbound flows, sitting in the yellow (AI application) trust zone. Functionally it overlaps [ai-runtime-security](../categories/ai-runtime-security.md) (AI firewall) and [ai-red-teaming](../categories/ai-red-teaming.md)/guardrails; it is more an embeddable guardrail toolkit than a standalone inline proxy.
 
 ## Deployment & architecture
 API/SDK-first, cloud-delivered. Guardrails are invoked from application code or fronted by an AI gateway. Vendor claims prompt-injection blocking at ~99% efficacy and sub-30ms latency (marketing — unverified). Post-acquisition, capabilities are being folded into [crowdstrike](crowdstrike.md) Falcon as AIDR.

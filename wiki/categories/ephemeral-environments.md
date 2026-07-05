@@ -40,14 +40,14 @@ agent from establishing persistence or reaching across zones. For a CTO, this is
 infrastructure that makes the red/yellow/green zone design enforceable rather than
 aspirational — you adopt it alongside, not before, agentic AI.
 
-## Lethal-trifecta role
+## Security role
 
-**Egress / isolation (and sensitive-data containment).** Ephemeral environments are how
-trust zones are physically realized, and the trifecta is broken by **constraining
-network egress and data reach per zone**: a red-zone agent gets internet but no internal
-data; a yellow-zone agent gets data-warehouse access but no internet to exfiltrate to.
-Because the environment is short-lived and rebuilt from config, there is no accumulated
-sensitive state to leak. It underpins [trust-zone-segmentation](trust-zone-segmentation.md) directly and spans the
+**Preventive isolation: constrains outbound data flows and data reach per zone.**
+Ephemeral environments are how trust zones are physically realized: a red-zone agent
+gets internet but no internal data; a yellow-zone agent gets data-warehouse access
+but no internet to exfiltrate to. Because the environment is short-lived and rebuilt
+from config, there is no accumulated sensitive state to leak. It underpins
+[trust-zone-segmentation](trust-zone-segmentation.md) directly and spans the
 red and yellow zones by design.
 
 ## Vendors

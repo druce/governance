@@ -36,7 +36,7 @@ tags: [first-party, vector-database, retrieval, microsoft, azure]
 
 **What it does** — Azure AI Search (formerly Azure Cognitive Search) indexes your content and serves keyword, vector, and hybrid search with semantic ranking. In a RAG pipeline it is the **vector-retrieval** layer: store embeddings, retrieve top-k relevant chunks at query time. Supports security trimming (filtering results by the caller's permissions), which is the hook for entitlement-aware retrieval.
 
-**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (the indexed corpus + embeddings). The natural Azure pairing for [sharepoint](sharepoint.md) content and [microsoft-365-copilot](microsoft-365-copilot.md)-adjacent custom RAG.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Risk-wise, it holds sensitive data (the indexed corpus + embeddings), so access controls on the index matter. The natural Azure pairing for [sharepoint](sharepoint.md) content and [microsoft-365-copilot](microsoft-365-copilot.md)-adjacent custom RAG.
 
 **Deployment & architecture** — SaaS / managed Azure service, API-driven. Integrates with Azure OpenAI, Microsoft Entra (RBAC), and supports document-level security filters for entitlement-aware results.
 

@@ -26,14 +26,16 @@ last_verified: 2026-06-28
 ## Business objective
 
 The job is to **break the exfiltration chain** before it can form. Simon Willison's
-[lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) says
-an AI system becomes dangerous only when three things line up at once:
+[lethal trifecta](https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/) is the
+core threat model for agent security — the failure mode zone design exists to defend
+against. It says an agentic system becomes dangerous only when three things line up
+at once in a single agent context:
 
-1. **Untrusted input** — the model reads attacker-controlled text (a web page, an
+1. **Untrusted input** — the agent reads attacker-controlled text (a web page, an
    email, a document, a tool result) that can carry hidden instructions.
-2. **Sensitive data** — the model has access to data you care about (MNPI, PII,
+2. **Sensitive data** — the agent has access to data you care about (MNPI, PII,
    positions, client files, source code).
-3. **Egress** — the model can send data somewhere it shouldn't (the open internet,
+3. **Egress** — the agent can send data somewhere it shouldn't (the open internet,
    an arbitrary API, an attacker's endpoint).
 
 Any two of these are survivable. **All three together** means a prompt-injection
@@ -75,9 +77,11 @@ The practice scales down. A 50-person fund doesn't need three Kubernetes cluster
 needs a clear rule that the agent allowed to browse the web is **not** the agent
 allowed to read the trade blotter, and that neither can do both.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-This is the **only** category that addresses all three legs at once — not by
+Zone design is the architectural response to agent security's core threat model —
+the lethal trifecta of untrusted input, sensitive data, and egress converging in one
+agent context. This is the **only** category that addresses all three legs at once — not by
 inspecting traffic but by **architecturally guaranteeing** the three never align.
 Every other control (runtime firewalls, DLP, gateways) is a mitigation *within* a
 zone; segmentation is the containment that makes those mitigations survivable when

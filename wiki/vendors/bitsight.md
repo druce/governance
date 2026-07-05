@@ -38,7 +38,7 @@ tags: [security-ratings, vendor-risk, tprm, cyber-ratings]
 
 **What it does** — Bitsight continuously gathers external security telemetry (compromised systems, patching, configuration hygiene, exposed assets) and produces a numeric security rating per organization, used to assess and monitor supplier/third-party risk, benchmark posture, and (via the Moody's tie) inform cyber-risk quantification and insurance. The 2024 Cybersixgill acquisition added real-time/dark-web threat intelligence.
 
-**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. An external risk-signal source for TPRM, not a runtime data control (`trifecta_relevance: none`). Peer of [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md); feeds assessment-workflow tools like [processunity](processunity.md) / [onetrust](onetrust.md).
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. An external risk-signal source for TPRM, not a runtime data control. Peer of [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md); feeds assessment-workflow tools like [processunity](processunity.md) / [onetrust](onetrust.md).
 
 **Deployment & architecture** — SaaS. Outside-in ratings portal/API + threat intelligence (Cybersixgill); integrations with GRC/TPRM, SIEM, and cyber-insurance workflows.
 

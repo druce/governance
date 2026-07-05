@@ -42,7 +42,7 @@ Varonis answers the questions that underpin data access governance: *where is ou
 
 ## Where it sits in the stack
 
-Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) — the control plane for who/what can reach sensitive data — with strong overlap into [dspm](../categories/dspm.md) (data posture) and [dlp](../categories/dlp.md) (classification + egress monitoring). Lethal-trifecta role: **sensitive-data** leg. Varonis is the kind of tooling you lean on before pointing RAG/Copilot at file shares and SharePoint, because it tells you what an over-permissioned AI agent or user could actually reach. It lives in the data trust zone, governing access rather than inspecting prompts or model egress.
+Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) — the control plane for who/what can reach sensitive data — with strong overlap into [dspm](../categories/dspm.md) (data posture) and [dlp](../categories/dlp.md) (classification + egress monitoring). Its risk role is controlling access to sensitive data. Varonis is the kind of tooling you lean on before pointing RAG/Copilot at file shares and SharePoint, because it tells you what an over-permissioned AI agent or user could actually reach. It lives in the data trust zone, governing access rather than inspecting prompts or model egress.
 
 ## Deployment & architecture
 
@@ -82,4 +82,4 @@ For a hedge fund this is **Day-1 if you are about to run RAG, Copilot, or any LL
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; corrected ownership from independent/low to public/high (NASDAQ: VRNS, IPO 2014). Confirmed Cyral acquisition (2025-03-17) via primary press release. Established founding (2005), founders, HQ (Miami, relocated Q1 2025), data-security-platform scope, SaaS/ARR pivot. Added dspm + dlp categories; set sensitive-data trifecta leg, hedge_fund_fit high. Cached 2 sources.
+- [2026-06-28] Researched; corrected ownership from independent/low to public/high (NASDAQ: VRNS, IPO 2014). Confirmed Cyral acquisition (2025-03-17) via primary press release. Established founding (2005), founders, HQ (Miami, relocated Q1 2025), data-security-platform scope, SaaS/ARR pivot. Added dspm + dlp categories; noted sensitive-data protection role, hedge_fund_fit high. Cached 2 sources.

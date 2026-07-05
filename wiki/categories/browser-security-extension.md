@@ -28,9 +28,9 @@ A bolt-on guard for your existing Chrome (or Edge) — browser-level DLP and mon
 
 Practical CTO read: start here if your fleet is managed and you mainly need *visibility + DLP on AI usage*; escalate to an enterprise browser for the high-risk/unmanaged slice. Running both is redundant for the same population.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-Same as the enterprise browser but lighter-weight: chiefly the **egress** leg (catching sensitive data on its way into an AI site via paste/upload) with a **sensitive-data** hand. It also surfaces risky inbound vectors — malicious extensions, OAuth over-grants, phishing pages. Sits at the yellow/red edge, on the trusted endpoint but watching untrusted web/AI destinations. Weaker isolation guarantees than a full browser since it runs *inside* the browser it's protecting.
+Agent security's core threat model — the lethal trifecta of untrusted input, sensitive-data access, and external egress meeting in one agent context — plays out in the browser tab too, since that's where employees hand data to AI tools. The extension's contribution is the same as the enterprise browser's but lighter-weight: chiefly the **egress** leg (catching sensitive data on its way into an AI site via paste/upload) with a **sensitive-data** hand. It also surfaces risky inbound vectors — malicious extensions, OAuth over-grants, phishing pages. Sits at the yellow/red edge, on the trusted endpoint but watching untrusted web/AI destinations. Weaker isolation guarantees than a full browser since it runs *inside* the browser it's protecting.
 
 ## Vendors
 

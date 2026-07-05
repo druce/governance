@@ -38,7 +38,7 @@ tags: [observability, apm, enterprise, public-company]
 
 **What it does** — End-to-end tracing of LLM and agent chains (root-cause errors and hallucinations), operational metrics (latency, token usage, cost), and out-of-the-box quality + safety evaluations (topic relevance, toxicity) plus sensitive-data scanning. Adds prompt/response clustering, datasets, experiments, a testing playground, offline + online evals, and human review/annotation — all stitched into Datadog APM and the rest of the Datadog platform. GA since 2024-06-26.
 
-**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Mostly dev/ops visibility, but its built-in sensitive-data scanning and safety evals give it a light touch on the **sensitive-data** leg of the lethal trifecta (detecting leakage in prompts/outputs). Not an inline firewall — complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-gateway](../categories/ai-gateway.md).
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Mostly dev/ops visibility, but its built-in sensitive-data scanning and safety evals help detect sensitive-data leakage in prompts/outputs. Not an inline firewall — complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-gateway](../categories/ai-gateway.md).
 
 **Deployment & architecture** — SaaS only (Datadog's hosted platform); SDK/auto-instrumentation for OpenAI, Anthropic, Gemini, Vertex AI, Bedrock, LangChain, CrewAI, Pydantic, [litellm](litellm.md), Strands Agents, plus an MCP server. Its key differentiator is native correlation with existing Datadog APM traces, infra metrics, logs, and security signals.
 

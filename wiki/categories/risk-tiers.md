@@ -54,11 +54,11 @@ It pairs with [acceptable-use-policies](acceptable-use-policies.md) (which sets 
 and feeds [promotion-gates](promotion-gates.md) and [hitl-approvals](hitl-approvals.md) (which enforce more rigor as the
 tier rises).
 
-## Lethal-trifecta role
+## Security role
 
-None directly — risk tiers don't break any leg of the trifecta. They are the
-**triage layer** that decides how hard the trifecta-breaking controls get applied:
-a high tier mandates the strictest [zone](trust-zone-segmentation.md), the tightest
+No direct enforcement — risk tiers neither prevent nor detect anything themselves.
+They are the **triage layer** that decides how hard the technical controls get
+applied: a high tier mandates the strictest [zone](trust-zone-segmentation.md), the tightest
 [runtime](ai-runtime-security.md) policy, and mandatory [human
 sign-off](hitl-approvals.md); a low tier rides on lightweight defaults. It governs *how much* control,
 not *which* control.

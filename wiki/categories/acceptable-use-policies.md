@@ -54,13 +54,13 @@ one-to-two-page document plus a sign-off; it grows teeth as you add the technica
 controls ([ai-access-governance](ai-access-governance.md), [dlp](dlp.md)) that detect and enforce what the policy
 declares.
 
-## Lethal-trifecta role
+## Security role
 
-None directly — a policy doesn't break a trifecta leg. It's the **human-layer
-baseline** that sets expectations and reduces the easy, accidental leaks (someone
-pasting positions into a consumer chatbot) that no firewall should have to catch in
-the first place. Think of it as the floor; the technical controls are the net under
-the people who ignore the floor.
+No direct technical enforcement — a policy neither blocks nor detects anything on
+its own. It's the **human-layer baseline** that sets expectations and reduces the
+easy, accidental leaks (someone pasting positions into a consumer chatbot) that no
+firewall should have to catch in the first place. Think of it as the floor; the
+technical controls are the net under the people who ignore the floor.
 
 ## How it gets backed by tooling (not a shortlist)
 

@@ -51,9 +51,9 @@ ChatGPT-style interactions. It markets DSPM-style data discovery/classification 
 
 ## Where it sits in the stack
 Foundation-layer [network-security-sase](../categories/network-security-sase.md), with [dlp](../categories/dlp.md), [dspm](../categories/dspm.md), and
-[ai-access-governance](../categories/ai-access-governance.md) roles served from the same platform. On the lethal trifecta it
-covers the **egress** leg (where data can flow / blocking unsanctioned AI) and the
-**sensitive-data** leg (inline + API DLP, data classification). Perimeter/data-control,
+[ai-access-governance](../categories/ai-access-governance.md) roles served from the same platform. It controls outbound
+data flows (where data can flow / blocking unsanctioned AI) and prevents sensitive-data
+leakage (inline + API DLP, data classification). Perimeter/data-control,
 not a model-prompt guardrail.
 
 ## Deployment & architecture

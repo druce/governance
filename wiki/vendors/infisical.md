@@ -40,7 +40,7 @@ tags: [secrets, open-source, self-hosted, developer-first, certificates, pam]
 Infisical centralizes secrets, app config, and credentials and injects them into dev workflows, CI/CD pipelines, and cloud infrastructure instead of leaving them in `.env` files or code. It adds secrets versioning, point-in-time recovery, audit logging, and automatic rotation, and has expanded toward certificate management and privileged access management. The differentiator is the **open-source core** with a **self-hosted, end-to-end-encrypted** deployment option, for teams that don't want a third party holding their secrets.
 
 ## Where it sits in the stack
-Foundation layer, [secrets-management](../categories/secrets-management.md), at the developer-workflow end. Lethal-trifecta leg: **sensitive-data** — keeps secrets out of code, repos, and prompts. Its newer secrets-for-agents framing makes it relevant to agentic/[non-human-identity](../categories/non-human-identity.md) deployments, though the core job is classic app/CI secrets.
+Foundation layer, [secrets-management](../categories/secrets-management.md), at the developer-workflow end. It prevents sensitive-data leakage by keeping secrets out of code, repos, and prompts. Its newer secrets-for-agents framing makes it relevant to agentic/[non-human-identity](../categories/non-human-identity.md) deployments, though the core job is classic app/CI secrets.
 
 ## Deployment & architecture
 Available as managed SaaS **or** self-hosted (the draw for regulated/air-gapped shops); web UI, CLI, SDKs, Kubernetes operator, and broad platform integrations. Large open-source footprint (tens of millions of downloads claimed; very active GitHub repo). End-to-end encryption.
@@ -68,4 +68,4 @@ Day-1 *if* you want a cloud-agnostic or self-hosted secrets manager and value op
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; confirmed independent VC-backed (YC W23), founded 2022 SF by Matsiiako/Dang/Islam, $16M Series A led by Elad Gil. Open-source/self-hostable challenger to Doppler. Set ownership independent, trifecta=sensitive-data, confidence high.
+- [2026-06-28] Researched; confirmed independent VC-backed (YC W23), founded 2022 SF by Matsiiako/Dang/Islam, $16M Series A led by Elad Gil. Open-source/self-hostable challenger to Doppler. Set ownership independent, risk role sensitive-data-leakage prevention, confidence high.

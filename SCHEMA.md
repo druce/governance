@@ -211,6 +211,11 @@ last_verified: 2026-07-05
 Null/`unverified` values are legal — they mean "not yet researched" and feed
 the research queue. They are never silently guessed.
 
+Optional field `alias_of: <slug>` marks a redirect/alias stub (e.g. a company
+absorbed post-acquisition whose canonical profile lives elsewhere). Alias pages
+are exempt from the M&A state machine, dated-claim sourcing, and staleness
+rules — the canonical page carries the sources.
+
 ---
 
 ## 5. Lint rules

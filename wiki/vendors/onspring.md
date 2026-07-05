@@ -38,7 +38,7 @@ tags: [grc, no-code, risk-management, compliance]
 
 **What it does** — Onspring is a configurable platform for GRC and adjacent process automation: risk management, compliance, internal audit, policy management, third-party/vendor risk, and business continuity, plus general no-code workflow apps. The founding team's RSA Archer background shows in a similar configure-your-own-app model with a more modern delivery.
 
-**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for risk/compliance workflows, not a runtime data control (`trifecta_relevance: none`). Can carry AI-use-case risk and policy attestations, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for risk/compliance workflows, not a runtime data control or inline prompt/egress control. Can carry AI-use-case risk and policy attestations, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **Deployment & architecture** — SaaS. No-code app/workflow builder with reporting/dashboards; integrations via API and connectors; questionnaire automation for third-party risk.
 

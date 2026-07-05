@@ -45,11 +45,11 @@ person can list every AI system and its blast radius. Under SR 11-7 model-risk
 expectations, an authoritative AI inventory also becomes useful evidence, which can pull
 this earlier for a regulated shop.
 
-## Lethal-trifecta role
+## Security role
 
-AI-SPM doesn't *break* a specific leg inline — it **maps where all three legs line up**.
+Detective and out-of-band, not an inline gate — AI-SPM **maps where risk concentrates**.
 It surfaces the AI systems that simultaneously take untrusted input, can reach sensitive
-data, and have an egress path, so you can prioritise controls (segmentation, runtime
+data, and have an outbound path, so you can prioritise controls (segmentation, runtime
 firewalling, authz). It spans trust zones rather than living in one: it inventories
 red/yellow/green assets and flags the ones that violate your zone design.
 

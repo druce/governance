@@ -51,7 +51,7 @@ Its AI layer, **Compliance CoPilot** (launched 2023-11), uses LLMs to triage and
 
 - Category: [comms-surveillance](../categories/comms-surveillance.md), in the **governance** layer.
 - This is a **detective control**, not a preventive one — it does "none-detection" (catching abuse/MNPI/conduct after the fact in logged comms and trades). It is a **green-zone backstop**: it watches the trusted internal environment for misconduct rather than blocking untrusted input or egress.
-- It does **not** break a leg of the lethal trifecta (`trifecta_relevance: none`); its value is regulatory and conduct oversight, not data-exfiltration prevention.
+- It is not an inline prompt/egress control; its value is regulatory and conduct oversight, not data-exfiltration prevention.
 
 ## Deployment & architecture
 

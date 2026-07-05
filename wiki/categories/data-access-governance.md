@@ -42,13 +42,14 @@ sensitive folder, the chatbot will happily surface it to anyone who asks. So for
 hedge fund standing up an enterprise assistant or RAG pipeline, DAG (alongside
 [entitlement-aware-rag](entitlement-aware-rag.md)) moves to Day-1. Absent RAG, it is a Day-2 hygiene project.
 
-## Lethal-trifecta role
+## Security role
 
-DAG works the **sensitive-data** leg: by shrinking who can reach sensitive data, it
-limits how easily that data can be lined up with untrusted input and egress. It is a
-**green-zone** control — it governs access inside your trusted internal stores — and
-it is the precondition that makes entitlement-aware retrieval trustworthy. It does
-not block at runtime; it reduces standing exposure.
+DAG **controls access to sensitive data**: by shrinking who can reach it, it bounds
+the blast radius of any leak — accidental, malicious, or AI-surfaced. It is a
+preventive but out-of-band, **green-zone** control — it governs access inside your
+trusted internal stores — and it is the precondition that makes entitlement-aware
+retrieval trustworthy. It does not block at runtime; it reduces standing exposure.
+Pair with runtime controls for prompt-injection and exfiltration coverage.
 
 ## Vendors
 

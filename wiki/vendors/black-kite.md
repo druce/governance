@@ -38,7 +38,7 @@ tags: [security-ratings, vendor-risk, tprm, cyber-ratings, fair]
 
 **What it does** — Black Kite does outside-in assessment and continuous monitoring of third parties, but differentiates by translating cyber posture into three lenses: a technical rating, a **FAIR-based financial** estimate of probable breach impact (dollars), and a compliance/standards mapping. The dollar-risk framing is its signature pitch to TPRM teams who need to prioritize vendors by business impact.
 
-**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. External risk-signal source for TPRM, not a runtime data control (`trifecta_relevance: none`). Peer of [bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [upguard](upguard.md); feeds assessment workflows like [processunity](processunity.md) / [onetrust](onetrust.md).
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. External risk-signal source for TPRM, not a runtime data control. Peer of [bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [upguard](upguard.md); feeds assessment workflows like [processunity](processunity.md) / [onetrust](onetrust.md).
 
 **Deployment & architecture** — SaaS. Outside-in scanning + ratings/portal + FAIR quantification + compliance mapping; integrations with GRC/TPRM tooling.
 

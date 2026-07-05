@@ -40,7 +40,7 @@ tags: [sspm, saas-security, itdr, shadow-ai, crowdstrike]
 Adaptive Shield continuously checks SaaS applications (Microsoft 365, Salesforce, Google Workspace, etc.) for misconfigurations, over-broad entitlements, risky third-party app connections, and identity exposures, for both human and non-human identities. It adds SaaS identity threat detection and response (ITDR) and **GenAI app security** — monitoring AI SaaS apps for config drift and surfacing **shadow AI** adoption. The job: keep your SaaS estate configured securely and spot risky/unsanctioned (AI) apps before they leak data.
 
 ## Where it sits in the stack
-Foundation layer, [sspm](../categories/sspm.md). It primarily addresses the **sensitive-data** leg of the lethal trifecta (data exposure via SaaS misconfiguration and shadow apps), in the green/yellow trust zones. Its shadow-AI discovery overlaps the [ai-access-governance](../categories/ai-access-governance.md) story, but its core is posture management of SaaS, not inline AI traffic control.
+Foundation layer, [sspm](../categories/sspm.md). It primarily addresses sensitive-data exposure (via SaaS misconfiguration and shadow apps), in the green/yellow trust zones. Its shadow-AI discovery overlaps the [ai-access-governance](../categories/ai-access-governance.md) story, but its core is posture management of SaaS, not inline AI traffic control.
 
 ## Deployment & architecture
 SaaS, API-based — connects to SaaS apps via their admin APIs/OAuth; agentless. Post-acquisition it is integrated into [crowdstrike](crowdstrike.md) Falcon (branded Falcon Shield / Falcon for SaaS), feeding the same identity and exposure telemetry.

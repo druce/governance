@@ -44,7 +44,7 @@ MIND is a next-generation DLP / insider-risk platform pitched as putting DLP and
 A distinguishing angle is GenAI coverage: MIND treats GenAI interactions as a live data source, classifying each prompt, upload, and paste at the moment of risk to stop sensitive content (PHI, CUI, credentials) from going into tools like ChatGPT or Copilot.
 
 ## Where it sits in the stack
-Data layer — [dlp](../categories/dlp.md). MIND breaks the **egress** leg of the lethal trifecta (stopping sensitive data from leaving via uploads, pastes, email, or GenAI prompts) and is anchored on the **sensitive-data** leg (discovery + classification of what's worth protecting). It lives at the boundary between the green/trusted zone and untrusted external destinations. Functionally adjacent to DSPM (data-at-rest posture) and to AI-access-governance / CASB-for-AI, since its GenAI-prompt inspection overlaps with shadow-AI controls.
+Data layer — [dlp](../categories/dlp.md). MIND blocks exfiltration (stopping sensitive data from leaving via uploads, pastes, email, or GenAI prompts) and is anchored in sensitive-data discovery + classification (knowing what's worth protecting). It lives at the boundary between the green/trusted zone and untrusted external destinations. Functionally adjacent to DSPM (data-at-rest posture) and to AI-access-governance / CASB-for-AI, since its GenAI-prompt inspection overlaps with shadow-AI controls.
 
 ## Deployment & architecture
 - **SaaS control plane** with a **lightweight endpoint agent** and a **browser extension**. The agent maintains a real-time inventory of local files, browser activity, and app data; the browser extension is what enables prompt-to-response GenAI inspection.

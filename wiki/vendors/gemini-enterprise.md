@@ -50,7 +50,7 @@ For a hedge fund the draw is that it sits natively on top of Google Workspace if
 
 ## Where it sits in the stack
 
-UX layer — the [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) people interact with — riding on a [entitlement-aware-rag](../categories/entitlement-aware-rag.md) retrieval layer. It pulls from [google-drive](google-drive.md) / Workspace and other [content-sources](../categories/content-sources.md). Lethal-trifecta role: its main job is to control the **sensitive-data** leg — retrieval is permission-filtered so the model never grounds on data the user can't see. It does **not** by itself break the untrusted-input or egress legs; pair it with [ai-runtime-security](../categories/ai-runtime-security.md) / [ai-access-governance](../categories/ai-access-governance.md) for those. Trust zone: handles green/yellow-zone enterprise data under enterprise controls.
+UX layer — the [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) people interact with — riding on a [entitlement-aware-rag](../categories/entitlement-aware-rag.md) retrieval layer. It pulls from [google-drive](google-drive.md) / Workspace and other [content-sources](../categories/content-sources.md). Its main risk job is controlling access to sensitive data — retrieval is permission-filtered so the model never grounds on data the user can't see. It does **not** by itself screen untrusted input or control outbound data flows; pair it with [ai-runtime-security](../categories/ai-runtime-security.md) / [ai-access-governance](../categories/ai-access-governance.md) for those. Trust zone: handles green/yellow-zone enterprise data under enterprise controls.
 
 ## Deployment & architecture
 

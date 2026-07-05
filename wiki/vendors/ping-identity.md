@@ -40,7 +40,7 @@ tags: [identity, idp, sso, mfa, ciam, thoma-bravo]
 Ping provides identity and access management: SSO, MFA, access management/authorization, directory, and strong customer identity (CIAM) with orchestration ("DaVinci" no-code identity flows). It competes with [okta](okta.md) and [microsoft-entra](microsoft-entra.md) but differentiates on deployment flexibility (SaaS, software, hybrid, on-prem) and customizable orchestration for complex enterprise and B2C use cases. The ForgeRock merger added a heavy-duty access-management and directory lineage popular in telco/finance/government.
 
 ## Where it sits in the stack
-The [identity-access](../categories/identity-access.md) foundation — the front door. Governs the **sensitive-data** leg of the lethal trifecta via authentication/authorization. Same Day-1 role as its IdP peers; the AI gateway and RAG layer federate to it.
+The [identity-access](../categories/identity-access.md) foundation — the front door. Controls access to sensitive data via authentication/authorization. Same Day-1 role as its IdP peers; the AI gateway and RAG layer federate to it.
 
 ## Deployment & architecture
 Unusually flexible for this tier: fully managed SaaS (PingOne), self-managed software, hybrid, or on-prem — which is why regulated buyers that can't go cloud-only choose it. Standards-based (SAML, OIDC, OAuth2, SCIM, FIDO2). Orchestration via PingOne DaVinci.

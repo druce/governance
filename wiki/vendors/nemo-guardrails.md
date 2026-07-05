@@ -52,8 +52,8 @@ models.
 
 ## Where it sits in the stack
 [ai-red-teaming](../categories/ai-red-teaming.md) / guardrails in the model/prompt layer, overlapping
-[ai-runtime-security](../categories/ai-runtime-security.md). Lethal-trifecta role: **untrusted-input** (input/jailbreak
-rails) and **sensitive-data** (output moderation/PII rails); execution rails also
+[ai-runtime-security](../categories/ai-runtime-security.md). Risk role: screening untrusted input (input/jailbreak
+rails) and preventing sensitive-data leakage (output moderation/PII rails); execution rails also
 touch the tool-call surface relevant to [mcp-gateway](../categories/mcp-gateway.md) / agent control. It is an
 in-app library, not a network proxy.
 

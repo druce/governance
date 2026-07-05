@@ -40,16 +40,16 @@ authorization** — deciding in code whether an agent may invoke a given tool or
 given zone. It is plumbing: valuable, but adopted by platform/security engineering once
 the manual process exists and the scale justifies codifying it.
 
-## Lethal-trifecta role
+## Security role
 
-**None-detection / enforcement substrate (potentially all).** Policy-as-code is not
-itself a trifecta control; it is the **mechanism** by which other controls are enforced.
-Used for trust-zone admission and agent authorization it can help break **any** leg —
-denying egress, blocking access to sensitive data, or refusing an untrusted action — but
-only as configured. It lives in the **green (governed) zone** as the engine that turns
-zone and promotion rules into enforced decisions. Closely related to the
-[authorization-engine](authorization-engine.md) category (same engines — OPA, Cerbos — applied to
-fine-grained agent/tool authz rather than infra policy).
+**Enforcement substrate, not a control in itself.** Policy-as-code is the **mechanism**
+by which other controls are enforced — preventive and inline at its decision points.
+Used for trust-zone admission and agent authorization it can deny outbound flows, block
+access to sensitive data, or refuse an untrusted action — but only as configured. It
+lives in the **green (governed) zone** as the engine that turns zone and promotion
+rules into enforced decisions. Closely related to the [authorization-engine](authorization-engine.md) category
+(same engines — OPA, Cerbos — applied to fine-grained agent/tool authz rather than
+infra policy).
 
 ## Vendors
 

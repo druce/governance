@@ -46,14 +46,17 @@ you build your own RAG app, agent, or copilot on top of an API, an AI firewall
 becomes Day-1. Distinct from [ai-access-governance](ai-access-governance.md), which governs *employees
 using* third-party AI — runtime security protects *the AI apps you build and run*.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-Breaks two legs at the choke point. On the inbound side it neutralizes **untrusted
-input** (prompt-injection / jailbreak detection); on the outbound side it controls
-**egress** (blocking sensitive-data leakage and unsafe responses). It lives at the
-boundary between the red/yellow zone (where untrusted prompts arrive) and the
-data/tooling the model can reach — the enforcement point that keeps the three legs
-from lining up. It is detection-and-block, not just observation.
+Agent security's core threat model is the lethal trifecta: untrusted input, access
+to sensitive data, and external egress meeting in a single agent context. The AI
+firewall breaks two of those legs at the choke point. On the inbound side it
+neutralizes **untrusted input** (prompt-injection / jailbreak detection); on the
+outbound side it controls **egress** (blocking sensitive-data leakage and unsafe
+responses). It lives at the boundary between the red/yellow zone (where untrusted
+prompts arrive) and the data/tooling the agentic app can reach — the enforcement
+point that keeps the three legs from lining up. It is detection-and-block, not just
+observation.
 
 ## Vendors
 

@@ -36,7 +36,7 @@ tags: [hyperautomation, soar, ai-soc, agentic-ai, alert-triage]
 
 **What it does** — Torq started as no/low-code security **hyperautomation** — the SOAR job of stitching together security tools and automating response workflows — and has layered an AI SOC ("HyperSOC") on top. Three pillars today: **Hyperautomation** (claims teams can handle ~100x more alerts without added headcount), **Agentic AI** (a self-service builder to spin up SOC agents), and **AI alert triage/investigation** (up to ~90% reduction in investigation time on low-fidelity alerts). It is the workflow/automation backbone as much as an analyst-replacement.
 
-**Where it sits in the stack** — Primary [ai-soc-analysts](../categories/ai-soc-analysts.md); also tagged [siem-soc](../categories/siem-soc.md) (it's the SOAR/automation layer many SOCs run alongside the SIEM) and [ai-spm](../categories/ai-spm.md). SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — Primary [ai-soc-analysts](../categories/ai-soc-analysts.md); also tagged [siem-soc](../categories/siem-soc.md) (it's the SOAR/automation layer many SOCs run alongside the SIEM) and [ai-spm](../categories/ai-spm.md). SOC-ops tooling — not an inline prompt/egress control. Trusted security-ops zone.
 
 **Deployment & architecture** — Cloud-based SaaS platform with self-service agent/workflow building; broad integrations across security and IT tooling (its SOAR heritage means it's integration-heavy by design). Named customers include Marriott, PepsiCo, P&G, Siemens, Uber, Virgin Atlantic, Valvoline.
 
@@ -56,4 +56,4 @@ tags: [hyperautomation, soar, ai-soc, agentic-ai, alert-triage]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established 2020 founding, Denver HQ, CEO Ofer Smadari, hyperautomation/SOAR→AI SOC, $140M Series D (Merlin, 2026-01) at $1.2B, $332M total, independent. Set ownership_confidence high. trifecta=none. hedge_fund_fit=medium (Day-2, large-enterprise/SOAR). Kept categories ai-soc-analysts/siem-soc/ai-spm as-is.
+- [2026-06-28] Researched; established 2020 founding, Denver HQ, CEO Ofer Smadari, hyperautomation/SOAR→AI SOC, $140M Series D (Merlin, 2026-01) at $1.2B, $332M total, independent. Set ownership_confidence high. Not an inline prompt/egress control. hedge_fund_fit=medium (Day-2, large-enterprise/SOAR). Kept categories ai-soc-analysts/siem-soc/ai-spm as-is.

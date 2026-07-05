@@ -41,15 +41,15 @@ program specifically, EDR/XDR matters because agentic and developer workloads ru
 dependency, or an exfiltration tool actually executes. Treat it as a prerequisite
 you confirm, not a new purchase you scope.
 
-## Lethal-trifecta role
+## Security role
 
-Not a direct trifecta control — it doesn't sit on the prompt/data/egress path the
-way an AI firewall or DLP does. Its job is **detection and response** on the
-machines where AI workloads run. It backstops the trifecta: if a green-zone host
-running an agent is compromised, EDR/XDR is what notices the malicious process and
-contains it. Relevant across all trust zones, but most load-bearing in the
-**green zone** (internal production systems) where the consequences of a
-compromised endpoint are highest.
+Detective and responsive rather than inline — it doesn't sit on the prompt or data
+path the way an AI firewall or DLP does. Its job is **detection and response** on
+the machines where AI workloads run: if a green-zone host running an agent is
+compromised, EDR/XDR is what notices the malicious process and contains it — the
+backstop when preventive controls fail. Relevant across all trust zones, but most
+load-bearing in the **green zone** (internal production systems) where the
+consequences of a compromised endpoint are highest.
 
 ## Vendors
 

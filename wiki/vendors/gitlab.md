@@ -51,7 +51,7 @@ GitLab is an end-to-end software-development platform (source control, CI/CD, is
 Findings surface in the merge-request UI and in a security dashboard, so review happens where developers already work rather than in a separate console.
 
 ## Where it sits in the stack
-A [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures code, dependencies and container images before runtime. It is not an inline prompt/egress gate, so `trifecta_relevance: none`.
+A [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures code, dependencies and container images before runtime. It is not an inline prompt/egress gate.
 
 **AI-generated-code relevance:** code accepted from Copilot, Cursor, or Claude lands in the same GitLab repos and pipelines. Ultimate's SAST/SCA/secret detection inspect that code at the merge-request gate — for GitLab-standardized shops this is usually the least-friction way to put a guardrail under AI-assisted development (the scanners are already in the CI).
 

@@ -40,7 +40,7 @@ tags: [secrets, iam, cmek, rotation, google-cloud, first-party-cloud]
 Central place to store secrets as named objects with immutable, versioned payloads, so apps fetch them at runtime instead of embedding them in code or config. Access is governed by Google Cloud IAM at the project or per-secret level; every access is logged via Cloud Audit Logs; secrets can be encrypted with customer-managed keys (CMEK). It supports rotation schedules with Pub/Sub notifications and regional or automatic (multi-region) replication. Workloads authenticate via Google Cloud service accounts / Workload Identity, avoiding a bootstrap secret.
 
 ## Where it sits in the stack
-Foundation layer, [secrets-management](../categories/secrets-management.md) — the Google-Cloud-native building block, the counterpart of Cloud IAM (identity) and Cloud KMS (encryption). Lethal-trifecta role: none directly; it is plumbing that keeps long-lived credentials out of code, prompts, and repos.
+Foundation layer, [secrets-management](../categories/secrets-management.md) — the Google-Cloud-native building block, the counterpart of Cloud IAM (identity) and Cloud KMS (encryption). Not an inline prompt/egress control; it is plumbing that keeps long-lived credentials out of code, prompts, and repos.
 
 ## Deployment & architecture
 Fully managed, multi-tenant service within Google Cloud, accessed via API/SDK/CLI/Terraform. IAM for access; Cloud KMS/CMEK for encryption; Cloud Audit Logs for audit; Pub/Sub for rotation events. Versioning with explicit enable/disable/destroy of versions. (Note: rotation here means scheduled notifications/automation hooks rather than the fully-managed DB-credential rotation AWS offers out of the box.)

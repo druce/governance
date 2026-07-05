@@ -68,7 +68,7 @@ the [siem-soc](../categories/siem-soc.md) backbone. Unlike the independent AI-SO
 an existing SIEM, Artemis pitches itself as the SIEM-replacement data layer *and* the AI
 analyst in one.
 
-Lethal-trifecta role: **none** for the LLM-app trifecta. Artemis is green-zone defensive
+Artemis is not an inline prompt/egress control. It is green-zone defensive
 operational tooling — it monitors enterprise telemetry rather than sitting in the path of
 an LLM application's prompts, retrieval, or model egress. Its only tangential relevance is
 detecting *post-compromise* behavior (anomalous exfiltration, identity misuse) at the
@@ -156,4 +156,4 @@ and mostly via your MDR/MSSP rather than a direct buy.
 - [Artemis Security homepage](https://artemissecurity.com/) — fetched 2026-06-30 — supports: product description, federated-query architecture, integrations, customer logos, claimed metrics (vendor marketing); confidence: med
 
 ## History
-- [2026-06-30] Created and researched from vendor request. Established AI-native SecOps / agentic-SOC category fit ([ai-soc-analysts](../categories/ai-soc-analysts.md)); $70M stealth exit 2026-04-15 (Felicis-led Series A), NYC HQ, founders Hirshberg (ex-Demisto/AWS GuardDuty) & Shiebler (ex-Abnormal); federated-query SIEM-replacement architecture; trifecta = none (AI-for-security, not security-for-AI), flagged as soft scope note. Cached 1 source file.
+- [2026-06-30] Created and researched from vendor request. Established AI-native SecOps / agentic-SOC category fit ([ai-soc-analysts](../categories/ai-soc-analysts.md)); $70M stealth exit 2026-04-15 (Felicis-led Series A), NYC HQ, founders Hirshberg (ex-Demisto/AWS GuardDuty) & Shiebler (ex-Abnormal); federated-query SIEM-replacement architecture; noted it is AI-for-security, not security-for-AI (not an inline prompt/egress control), flagged as soft scope note. Cached 1 source file.

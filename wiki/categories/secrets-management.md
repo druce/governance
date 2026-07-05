@@ -28,9 +28,9 @@ The seed metaphor is exactly right: the locked drawer, with a record of who open
 
 Day-1, required. Any firm running code, cloud infrastructure, or AI agents has secrets to manage; the only question is whether they are vaulted or scattered. For most shops the slot is already filled by the cloud-native option that ships with their platform (Key Vault on Azure, Secrets Manager on AWS, Secret Manager on GCP). The AI-era upgrade is rotation discipline and making sure agents pull short-lived secrets from the vault rather than holding standing keys.
 
-## Lethal-trifecta role
+## Security role
 
-The sensitive-data leg, at its root. Secrets are the keys to sensitive data and systems; a leaked credential is often the first domino in an exfiltration chain. Vaulting + rotation + scoping shrinks that exposure. Lives across all zones — anything that authenticates needs the drawer.
+A preventive control on access to sensitive data, at its root. Secrets are the keys to sensitive data and systems; a leaked credential is often the first domino in an exfiltration chain. Vaulting + rotation + scoping shrinks that exposure and bounds the blast radius of any single stolen key; pair with runtime and egress controls for the rest of the chain. Lives across all zones — anything that authenticates needs the drawer.
 
 ## Vendors
 

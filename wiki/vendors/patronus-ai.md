@@ -53,10 +53,10 @@ simulation/reliability tooling for autonomous AI systems.
 
 ## Where it sits in the stack
 Straddles [ai-red-teaming](../categories/ai-red-teaming.md) (adversarial/failure testing) and [llm-observability](../categories/llm-observability.md)
-(production evaluation/monitoring) in the model/prompt layer. Lethal-trifecta role:
-**untrusted-input** (adversarial eval, jailbreak/safety testing) and **sensitive-data**
-(PII-leakage and copyright detection on outputs). It is an offline/async evaluation
-and monitoring layer, not an inline blocking firewall.
+(production evaluation/monitoring) in the model/prompt layer. Its risk focus: testing
+how models handle untrusted input (adversarial eval, jailbreak/safety testing) and
+detecting sensitive-data exposure (PII-leakage and copyright detection on outputs). It
+is an offline/async evaluation and monitoring layer, not an inline blocking firewall.
 
 ## Deployment & architecture
 SaaS with an API; evaluator models callable as judges in CI/CD and in production

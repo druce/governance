@@ -51,7 +51,7 @@ The forensic-vault and analytics angle is what separates Portal26's pitch from p
 
 ## Where it sits in the stack
 
-Primary category: [ai-access-governance](../categories/ai-access-governance.md) (model-prompt layer). Portal26 governs the **employee-to-AI-app boundary** — discovering tool usage, applying policy, and recording transactions. It touches all three legs of the lethal trifecta: it sees **untrusted input** (prompts), **sensitive data** (what employees paste in), and **egress** (data leaving to third-party AI tools), though its differentiated strength is the visibility/forensics record rather than deep inline content inspection. Trust zones: it sits at the **yellow/red boundary**, between the trusted enterprise (green) and third-party SaaS AI tools (red).
+Primary category: [ai-access-governance](../categories/ai-access-governance.md) (model-prompt layer). Portal26 governs the **employee-to-AI-app boundary** — discovering tool usage, applying policy, and recording transactions. It sees untrusted input (prompts), sensitive data (what employees paste in), and outbound flows (data leaving to third-party AI tools), though its differentiated strength is the visibility/forensics record rather than deep inline content inspection. Trust zones: it sits at the **yellow/red boundary**, between the trusted enterprise (green) and third-party SaaS AI tools (red).
 
 ## Deployment & architecture
 

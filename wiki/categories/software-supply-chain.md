@@ -40,15 +40,15 @@ vulnerabilities — jumps. AI both *raises* the risk (more code, faster, less hu
 review) and is the input these tools must vet. If your fund builds and deploys
 software, treat this as Day 1; if you only consume SaaS, it's a lower priority.
 
-## Lethal-trifecta role
+## Security role
 
-Best mapped to **untrusted input**: AI-generated code and the open-source
-dependencies it reaches for are untrusted content entering your trusted build and
-runtime environments. Supply-chain security is where that input gets vetted before
-it can execute — catching a poisoned package or an injected vulnerability before it
-becomes a foothold an attacker (or a rogue agent) can chain into data access or
-egress. Sits at the boundary of the **green zone** (production/build systems);
-also reinforces [promotion-gates](promotion-gates.md) between experiment and production.
+Screens untrusted input into the build: AI-generated code and the open-source
+dependencies it reaches for are unvetted content entering your trusted build and
+runtime environments. Supply-chain security is the preventive checkpoint where that
+input gets vetted before it can execute — catching a poisoned package or an
+injected vulnerability before it becomes a foothold an attacker (or a rogue agent)
+can chain into data access or exfiltration. Sits at the boundary of the **green
+zone** (production/build systems); also reinforces [promotion-gates](promotion-gates.md) between experiment and production.
 
 ## Vendors
 

@@ -49,9 +49,9 @@ adaptive protection that adjusts enforcement to user behavior. For AI, the relev
 its DLP heritage: classifying and blocking sensitive data before it leaves to cloud or AI apps.
 
 ## Where it sits in the stack
-Foundation-layer [network-security-sase](../categories/network-security-sase.md) with a strong [dlp](../categories/dlp.md) role. On the lethal
-trifecta it addresses the **sensitive-data** leg (classification + DLP) and the **egress**
-leg (controlling data flow to cloud/AI destinations). Data-control layer, not a model guardrail.
+Foundation-layer [network-security-sase](../categories/network-security-sase.md) with a strong [dlp](../categories/dlp.md) role. It prevents
+sensitive-data leakage (classification + DLP) and controls outbound data flows to
+cloud/AI destinations. Data-control layer, not a model guardrail.
 
 ## Deployment & architecture
 Mixed: cloud-delivered SASE/SSE plus mature on-prem and endpoint DLP agents (a longer

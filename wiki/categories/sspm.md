@@ -40,14 +40,14 @@ SSPM is the control that answers "what AI did our SaaS vendors quietly enable, a
 who can it see?" The need scales with the size and sprawl of the SaaS estate; a
 small shop on a handful of apps may defer it.
 
-## Lethal-trifecta role
+## Security role
 
-Not a direct trifecta control — it's **posture and detection**, not an inline
-gate. Its trifecta relevance is indirect but real: misconfigured SaaS sharing and
-default-on AI features are a common way **sensitive data** becomes reachable by an
-AI feature or an over-permissioned integration. SSPM reduces that exposure surface
-before it can be chained into an exfiltration path. Relevant wherever SaaS holds
-sensitive data — effectively the **yellow/green** boundary inside SaaS apps.
+**Posture and detection**, out-of-band — not an inline gate. Its security relevance
+is indirect but real: misconfigured SaaS sharing and default-on AI features are a
+common way **sensitive data** becomes reachable by an AI feature or an
+over-permissioned integration. SSPM reduces that exposure surface before it can be
+chained into an exfiltration path. Relevant wherever SaaS holds sensitive data —
+effectively the **yellow/green** boundary inside SaaS apps.
 
 ## Vendors
 

@@ -34,9 +34,9 @@ The governance to stand up alongside it:
 - If it retrieves internal data (Copilot, Glean, Q Business), [entitlement-aware-rag](entitlement-aware-rag.md) is a hard prerequisite — see that page; an assistant pointed at unclean permissions is a leak engine.
 - Capture prompts/responses for [comms-surveillance](comms-surveillance.md) — for a regulated fund, assistant chats are in-scope communications.
 
-## Lethal-trifecta role
+## Security role
 
-The assistant is where **all three legs can converge**, which is exactly why it's the focal point. It takes **untrusted input** (a user paste, a retrieved document carrying an injected instruction), touches **sensitive data** (via RAG, file uploads, connected tools), and has **egress** (it can summarize-and-send, call tools, or simply be screenshotted). On its own a raw assistant lights up the whole trifecta. The job of the surrounding stack — [ai-runtime-security](ai-runtime-security.md) on the prompt path, [entitlement-aware-rag](entitlement-aware-rag.md) on retrieval, [ai-access-governance](ai-access-governance.md) on what data flows to which model, trust-zone design underneath — is to ensure the three legs never line up inside it. The assistant sits in the yellow zone: trusted UX, untrusted content flowing through it.
+The assistant is where the major AI risks converge, which is exactly why it's the focal point. It ingests untrusted input (a user paste, a retrieved document carrying an injected instruction), touches sensitive data (via RAG, file uploads, connected tools), and has outbound paths (it can summarize-and-send, call tools, or simply be screenshotted). On its own a raw assistant is exposed on all three fronts — it is the risk surface, not a control. The job of the surrounding stack — [ai-runtime-security](ai-runtime-security.md) on the prompt path, [entitlement-aware-rag](entitlement-aware-rag.md) on retrieval, [ai-access-governance](ai-access-governance.md) on what data flows to which model, trust-zone design underneath — is to keep prompt injection, over-broad data access, and exfiltration from chaining together inside it. The assistant sits in the yellow zone: trusted UX, untrusted content flowing through it.
 
 ## Vendors
 

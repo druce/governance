@@ -46,7 +46,7 @@ It is consumer/developer-facing in origin (it also ships a web chat UI) and has 
 
 [ai-gateway](../categories/ai-gateway.md) (AI model & prompt layer). An AI gateway is the **single exit door for model traffic** — the choke point where an org centralizes keys, spend, routing and policy for outbound LLM calls. OpenRouter occupies that slot but as a **hosted aggregator** rather than infrastructure you run.
 
-Lethal-trifecta role: **egress**. The gateway is exactly where outbound model traffic (potentially carrying sensitive data) leaves your control. The critical nuance for a regulated buyer: with OpenRouter the egress endpoint is *OpenRouter's own cloud*, and from there to whichever downstream provider it routes to — so it adds a hop and a counterparty rather than being a control you own. It does not address untrusted-input or sensitive-data legs.
+Risk role: egress control. The gateway is exactly where outbound model traffic (potentially carrying sensitive data) leaves your control. The critical nuance for a regulated buyer: with OpenRouter the egress endpoint is *OpenRouter's own cloud*, and from there to whichever downstream provider it routes to — so it adds a hop and a counterparty rather than being a control you own. It does not screen untrusted input or control access to sensitive data.
 
 ## Deployment & architecture
 
@@ -103,4 +103,4 @@ AI gateways are a **Day-1** control (single exit door for model traffic), but Op
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2023 (Atallah/Vichy), NY HQ, independent VC-backed (a16z seed → Menlo Series A ~$500M → CapitalG Series B $113M ~$1.3B, 2026-05-26), hosted SaaS/API aggregator (no self-host), egress trifecta leg, hedge_fund_fit=low due to third-party data-path/residency risk. 3 sources cached. No M&A. No hard contradictions (HQ NY/SF is a soft mismatch).
+- [2026-06-28] Researched; established founded 2023 (Atallah/Vichy), NY HQ, independent VC-backed (a16z seed → Menlo Series A ~$500M → CapitalG Series B $113M ~$1.3B, 2026-05-26), hosted SaaS/API aggregator (no self-host), egress-control role, hedge_fund_fit=low due to third-party data-path/residency risk. 3 sources cached. No M&A. No hard contradictions (HQ NY/SF is a soft mismatch).

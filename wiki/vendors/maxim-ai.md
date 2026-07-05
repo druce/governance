@@ -52,7 +52,7 @@ bringing test-driven development discipline to GenAI.
 ## Where it sits in the stack
 Straddles [llm-observability](../categories/llm-observability.md) (eval + production monitoring, its center of gravity)
 and [ai-red-teaming](../categories/ai-red-teaming.md) (agent simulation/adversarial testing) in the model/prompt
-layer. Lethal-trifecta role: mainly **untrusted-input** via adversarial simulation;
+layer. Its main security relevance is adversarial simulation — stress-testing how systems handle untrusted input (prompt injection, hostile content);
 otherwise it is an assurance/observability layer rather than an inline control.
 
 ## Deployment & architecture

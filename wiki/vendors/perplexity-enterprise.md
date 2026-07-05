@@ -43,7 +43,7 @@ Note the center of gravity differs from [openai-chatgpt-enterprise](openai-chatg
 
 ## Where it sits in the stack
 - Category: [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) (UX layer) — the chatbot end-users actually touch.
-- Lethal-trifecta exposure: as a research assistant it pulls **untrusted web content** into the model (prompt-injection surface), can be pointed at **sensitive internal data** via connectors, and has an inherent **egress** path (it sends queries to the web and to third-party model providers). All three legs are in play, which is exactly why the enterprise controls below matter.
+- Risk exposure: as a research assistant it pulls **untrusted web content** into the model (prompt-injection surface), can be pointed at **sensitive internal data** via connectors, and has an inherent **egress** path (it sends queries to the web and to third-party model providers). All three risks are in play at once, which is exactly why the enterprise controls below matter.
 - It is a consumer of, not a substitute for, perimeter controls like an [ai-gateway](../categories/ai-gateway.md), [ai-access-governance](../categories/ai-access-governance.md) (shadow-AI / CASB-for-AI), and [dlp](../categories/dlp.md). A fund would typically still want shadow-AI discovery to see who's using the *consumer* Perplexity vs. the sanctioned enterprise tenant.
 
 ## Deployment & architecture

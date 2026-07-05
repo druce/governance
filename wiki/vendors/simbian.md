@@ -36,7 +36,7 @@ tags: [agentic-soc, ai-soc, alert-triage, grc-agent]
 
 **What it does** — Simbian's **SOC AI Agent** triages alerts from SIEMs/XDRs by applying institutional knowledge and the organization's own playbooks, processes threat advisories, hunts the environment for related compromise, and proposes/executes remediation. Alongside it, a **GRC Agent** automates security-review questionnaires, and a **Security Accelerator Platform** hosts the agents and feeds them context. The differentiator the founder pushes (marketing): "fully autonomous AI Agents that... actually go eliminate" issues, not just surface them.
 
-**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation layer over [siem-soc](../categories/siem-soc.md) / [edr-xdr](../categories/edr-xdr.md), with a GRC sidecar that brushes against [enterprise-grc](../categories/enterprise-grc.md). SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation layer over [siem-soc](../categories/siem-soc.md) / [edr-xdr](../categories/edr-xdr.md), with a GRC sidecar that brushes against [enterprise-grc](../categories/enterprise-grc.md). SOC-ops tooling — not an inline prompt/egress control. Trusted security-ops zone.
 
 **Deployment & architecture** — SaaS agent platform; integrates with SIEM/XDR and cloud security tooling. Named user Axelar Labs (financial-services) uses it for cloud-security tool automation.
 
@@ -56,4 +56,4 @@ tags: [agentic-soc, ai-soc, alert-triage, grc-agent]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established 2023 founding, Mountain View HQ, founders Ambuj Kumar (ex-Fortanix) / Alankrit Chona, $10M+ seed (2024-04), independent/seed-stage. Noted SOC + GRC agent suite. Set ownership_confidence high. trifecta=none. hedge_fund_fit=medium (Day-2, early-stage).
+- [2026-06-28] Researched; established 2023 founding, Mountain View HQ, founders Ambuj Kumar (ex-Fortanix) / Alankrit Chona, $10M+ seed (2024-04), independent/seed-stage. Noted SOC + GRC agent suite. Set ownership_confidence high. Not an inline prompt/egress control. hedge_fund_fit=medium (Day-2, early-stage).

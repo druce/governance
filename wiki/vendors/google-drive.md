@@ -36,7 +36,7 @@ tags: [first-party, content-source, rag-source, google]
 
 **What it does** — Drive holds the documents and shared files Workspace users create. In an AI stack it is a **content source** for RAG and for [gemini-enterprise](gemini-enterprise.md) / Agentspace. Its retrieval safety hinges on Drive sharing settings (link-sharing, "anyone in domain") which are notoriously permissive — the classic RAG over-sharing risk.
 
-**Where it sits in the stack** — [content-sources](../categories/content-sources.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: **sensitive-data** leg. Requires [entitlement-aware-rag](../categories/entitlement-aware-rag.md) plus classification/DLP before assistant exposure.
+**Where it sits in the stack** — [content-sources](../categories/content-sources.md), retrieval layer (Day-1 if doing RAG). Its main risk is sensitive-data leakage. Requires [entitlement-aware-rag](../categories/entitlement-aware-rag.md) plus classification/DLP before assistant exposure.
 
 **Deployment & architecture** — SaaS (Google Workspace). Surfaced to AI via Workspace APIs, Gemini/Agentspace connectors, Glean and similar, or custom ingestion.
 

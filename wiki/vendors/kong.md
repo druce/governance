@@ -55,7 +55,7 @@ You'd want it when you already run, or are willing to run, an API gateway and wa
 - Primary: [ai-gateway](../categories/ai-gateway.md) (model-prompt layer) — the single governed egress point for model traffic.
 - Secondary: [mcp-gateway](../categories/mcp-gateway.md) — tool/agent access control for MCP and A2A.
 
-**Lethal-trifecta role:** primarily controls the **egress** leg — it is the chokepoint where outbound model calls (and now MCP/agent calls) are routed, logged, rate-limited, and cost-controlled. Its guardrail and prompt-guard plugins also touch the **untrusted-input** leg (blocking/inspecting malicious prompts and moderating content). PII sanitization touches the sensitive-data leg but is redaction, not full DLP. Lives at the boundary between the application/agent zone and external model/tool providers.
+**Risk role:** primarily controls outbound data flows — it is the chokepoint where outbound model calls (and now MCP/agent calls) are routed, logged, rate-limited, and cost-controlled. Its guardrail and prompt-guard plugins also screen untrusted input (blocking/inspecting malicious prompts and moderating content). PII sanitization reduces sensitive-data leakage but is redaction, not full DLP. Lives at the boundary between the application/agent zone and external model/tool providers.
 
 ## Deployment & architecture
 
@@ -103,4 +103,4 @@ You'd want it when you already run, or are willing to run, an API gateway and wa
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; scoped page to Kong AI Gateway + MCP/agent gateway. Established founding 2009 (as Mashape), SF HQ, independent private VC-backed unicorn, Series E $175M at $2B valuation (2024-11-19), ~$345M total raised, no M&A (ownership_confidence high). Set deployment, trifecta_relevance [egress, untrusted-input], hedge_fund_fit medium; status researched, 3 sources cached.
+- [2026-06-28] Researched; scoped page to Kong AI Gateway + MCP/agent gateway. Established founding 2009 (as Mashape), SF HQ, independent private VC-backed unicorn, Series E $175M at $2B valuation (2024-11-19), ~$345M total raised, no M&A (ownership_confidence high). Set deployment, noted egress + untrusted-input controls, hedge_fund_fit medium; status researched, 3 sources cached.

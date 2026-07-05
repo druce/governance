@@ -40,7 +40,7 @@ tags: [secrets, password-manager, extended-access-management, device-trust, acqu
 1Password started as a consumer/business password manager (the AgileBits product) and is now pitched to enterprises as **Extended Access Management**: securing the credentials, passkeys, SSH keys, and developer secrets that flow through unmanaged apps and devices that traditional IAM/MDM doesn't cover. For engineering teams it offers a **Secrets Automation / Developer** product — a vault plus CLI, SDKs, and CI/CD integrations to inject secrets at runtime instead of hard-coding them — which is why it sits in [secrets-management](../categories/secrets-management.md). With the 2026 Apono acquisition it is moving toward just-in-time, auto-revoked access governance and a "Credential Broker" that releases short-lived credentials on demand.
 
 ## Where it sits in the stack
-Foundation layer, [secrets-management](../categories/secrets-management.md), with adjacencies into device-trust / access management (Kolide) and now privileged/just-in-time access (Apono). Lethal-trifecta leg: **sensitive-data** — its job is to keep credentials out of code, browsers, prompts, and repos. Complements the IdP ([microsoft-entra](microsoft-entra.md), [okta](okta.md)) rather than replacing it.
+Foundation layer, [secrets-management](../categories/secrets-management.md), with adjacencies into device-trust / access management (Kolide) and now privileged/just-in-time access (Apono). Its risk role is preventing sensitive-data leakage — keeping credentials out of code, browsers, prompts, and repos. Complements the IdP ([microsoft-entra](microsoft-entra.md), [okta](okta.md)) rather than replacing it.
 
 ## Deployment & architecture
 SaaS, end-to-end (zero-knowledge) encrypted vaults, with the famous secret-key + master-password model. For developers: CLI, SDKs, Connect/Service Accounts, and integrations with CI/CD and cloud. Device-trust checks via the former Kolide product. The forthcoming **1Password Credential Broker** (private beta) brokers short-lived credentials, beginning with GitHub Actions workload identity.
@@ -72,4 +72,4 @@ Day-1 as a **human** credential/password manager — many funds already run it, 
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; confirmed independent/private (AgileBits), founded 2005 Toronto, ~$920M raised / $6.8B (2022). Established it is an ACQUIRER — Apono (2026-06-15, reported $250M-$300M), plus Kolide/Trelica/Passage. Set ownership independent, trifecta=sensitive-data, confidence high.
+- [2026-06-28] Researched; confirmed independent/private (AgileBits), founded 2005 Toronto, ~$920M raised / $6.8B (2022). Established it is an ACQUIRER — Apono (2026-06-15, reported $250M-$300M), plus Kolide/Trelica/Passage. Set ownership independent, noted sensitive-data protection role, confidence high.

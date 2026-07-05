@@ -36,9 +36,9 @@ Two hard truths a CTO should internalize before go-live:
 1. **RAG inherits your permission sprawl and makes it instantly queryable.** Years of "share with Everyone" folders that were safe-by-obscurity become a one-prompt search away. This is why [data-access-governance](data-access-governance.md) cleanup is a prerequisite, not a parallel nice-to-have.
 2. **Security-trimming is necessary but not sufficient.** Even with perfect ACL enforcement, the AI can *infer* sensitive facts from documents the user is technically allowed to see, or aggregate fragments into something none of them individually exposed. This "knowledge boundary" / inference problem is the gap pure-trimming vendors don't close.
 
-## Lethal-trifecta role
+## Security role
 
-This is the **sensitive-data** control in the retrieval layer — it governs *which* sensitive data reaches the model context for a given user. It does not break the trifecta on its own; it bounds the blast radius of the sensitive-data leg. Combined with [ai-runtime-security](ai-runtime-security.md) (the untrusted-input/egress legs) it is part of how you keep all three legs from lining up: an injected prompt that tries to make the assistant exfiltrate the HR deck fails because the deck was never retrievable for that user in the first place.
+This is the control that **governs access to sensitive data in the retrieval layer** — it decides *which* sensitive data reaches the model context for a given user. It is preventive and inline at query time, and it bounds the blast radius of a data leak; pair it with [ai-runtime-security](ai-runtime-security.md) for prompt-injection screening and exfiltration blocking. The two compound: an injected prompt that tries to make the assistant exfiltrate the HR deck fails because the deck was never retrievable for that user in the first place.
 
 It lives across the yellow and green zones: the retrieval pipeline reaches into internal systems of record (green), and the assistant consuming it may face untrusted input (red/yellow). Entitlement-aware RAG is the membrane between them.
 

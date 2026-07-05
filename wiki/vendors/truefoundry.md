@@ -58,11 +58,11 @@ and full tracing of agent→tool actions.
 ## Where it sits in the stack
 
 Lives in the model/prompt layer as the [ai-gateway](../categories/ai-gateway.md) — the single exit door for
-model traffic — and as an [mcp-gateway](../categories/mcp-gateway.md) for agent tool access. Its lethal-trifecta
-role is primarily **egress**: it is the chokepoint where outbound model/tool calls
+model traffic — and as an [mcp-gateway](../categories/mcp-gateway.md) for agent tool access. Its primary security
+role is **egress control**: it is the chokepoint where outbound model/tool calls
 are routed, logged, budgeted and policy-checked, so it's the natural place to enforce
-where data can and can't go. The built-in guardrails give it a secondary touch on the
-untrusted-input and sensitive-data legs, but it is not a dedicated [ai-runtime-security](../categories/ai-runtime-security.md)
+where data can and can't go. The built-in guardrails add some secondary screening of
+untrusted input and sensitive data, but it is not a dedicated [ai-runtime-security](../categories/ai-runtime-security.md)
 firewall. It sits between the apps/agents (yellow zone) and external model providers,
 and is most valuable when self-hosted so traffic and logs stay inside the trust boundary.
 
@@ -141,4 +141,4 @@ smaller scale (single Series A, India+US startup) when weighing vendor risk.
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2021, dual HQ (SF + Bengaluru), founders, $21.3M total funding ($19M Series A led by Intel Capital Feb 2025), independent VC-backed (no M&A, confidence high). Documented AI Gateway + MCP Gateway, Kubernetes-native self-hosted deployment, egress trifecta role, medium hedge-fund fit; compared to portkey/litellm/kong/cloudflare/openrouter. Cached 3 sources.
+- [2026-06-28] Researched; established founded 2021, dual HQ (SF + Bengaluru), founders, $21.3M total funding ($19M Series A led by Intel Capital Feb 2025), independent VC-backed (no M&A, confidence high). Documented AI Gateway + MCP Gateway, Kubernetes-native self-hosted deployment, egress-control role, medium hedge-fund fit; compared to portkey/litellm/kong/cloudflare/openrouter. Cached 3 sources.

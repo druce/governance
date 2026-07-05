@@ -42,7 +42,7 @@ tags: [sspm, saas-security, itdr, identity-threat-detection]
 Obsidian connects via API to an organization's SaaS apps and builds a model of users, privileges, OAuth integrations, and configuration state. Beyond static posture (SSPM), its differentiator is **detection**: it baselines normal SaaS activity and alerts on threats — compromised accounts, session hijacking, privilege escalation, suspicious third-party/AI app behavior — bringing a SOC/threat-detection lens to the SaaS layer. It also covers data-exposure reduction and excessive-privilege cleanup. More recently it markets AI threat/risk management (governing AI app and agent usage touching SaaS).
 
 ## Where it sits in the stack
-Sits in [sspm](../categories/sspm.md) (foundation layer), straddling SSPM and identity threat detection & response (ITDR). Trifecta-wise it primarily addresses the **sensitive-data** leg (limiting exposure and catching data-theft via compromised SaaS accounts). The detection/ITDR angle makes it more of a runtime-aware SaaS control than pure config hygiene.
+Sits in [sspm](../categories/sspm.md) (foundation layer), straddling SSPM and identity threat detection & response (ITDR). Its main risk role is protecting sensitive data (limiting exposure and catching data-theft via compromised SaaS accounts). The detection/ITDR angle makes it more of a runtime-aware SaaS control than pure config hygiene.
 
 ## Deployment & architecture
 SaaS-delivered; integrates with target apps via their APIs/OAuth (not an inline proxy or endpoint agent for core function). Streams detections to SIEM/SOC and integrates with IdP for identity context. Designed to feed a security operations workflow, not just a posture dashboard.

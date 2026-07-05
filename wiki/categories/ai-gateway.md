@@ -46,15 +46,15 @@ purposes downstream. If you only use a vendor-hosted [enterprise-ai-assistant](e
 the assistant vendor is effectively your gateway; the moment you build apps on raw
 model APIs, you want your own.
 
-## Lethal-trifecta role
+## Security role
 
-Controls **egress** by construction: it is the single outbound path for model
-traffic, so it's where you enforce which models can be reached, what gets logged,
-and where output-side policy attaches. On its own a gateway is a chokepoint, not an
-inspector — it breaks the egress leg only when you bolt guardrails
-([ai-runtime-security](ai-runtime-security.md)) onto it. It typically sits at the boundary of the
-yellow/green zone, mediating all calls leaving internal apps for external model
-providers.
+Controls **outbound data flows** by construction: it is the single outbound path for
+model traffic, so it's where you enforce which models can be reached, what gets
+logged, and where output-side policy attaches. It's a preventive, inline chokepoint —
+but a chokepoint, not an inspector: it actually blocks exfiltration only when you
+bolt guardrails ([ai-runtime-security](ai-runtime-security.md)) onto it. It typically sits at the boundary
+of the yellow/green zone, mediating all calls leaving internal apps for external
+model providers.
 
 ## Vendors
 

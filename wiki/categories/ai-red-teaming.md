@@ -46,14 +46,15 @@ For a hedge-fund CTO, red-team reports are useful evidence for
 [ai-governance-platform](ai-governance-platform.md) / SR 11-7 sign-off, and lightweight OSS guardrails
 (Guardrails AI, NeMo) can be adopted early at low cost.
 
-## Lethal-trifecta role
+## Security role
 
-Two modes. **Red-teaming** is detection — it doesn't block in production; it
-*reveals* which legs of the trifecta your app exposes (does untrusted input reach
-sensitive data? can output exfiltrate?). **Guardrails** are enforcement — they break
-the **untrusted-input** leg (reject injection/jailbreak prompts) and the **egress**
-leg (filter leaky or unsafe output) at runtime. Red-teaming spans all zones as a
-testing activity; guardrails sit at the same red/yellow boundary as the AI firewall.
+Two modes. **Red-teaming** is detective and out-of-band — it doesn't block in
+production; it *reveals* your app's exposures before attackers find them (does
+untrusted input reach sensitive data? can output exfiltrate?). **Guardrails** are
+preventive and inline — they screen untrusted input (reject injection/jailbreak
+prompts) and filter leaky or unsafe output at runtime. Red-teaming spans all zones
+as a testing activity; guardrails sit at the same red/yellow boundary as the AI
+firewall.
 
 ## Vendors
 

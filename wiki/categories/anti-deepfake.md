@@ -40,14 +40,14 @@ targeting traders. The exposure is acute for firms that move money on verbal/vid
 instruction, so some funds will pull deepfake detection forward to Day 1 for
 finance and treasury workflows even while general awareness training stays routine.
 
-## Lethal-trifecta role
+## Security role
 
-Not a trifecta control at all — it defends people, not the prompt/data/egress path
-of an AI application. Its job is **detection and human resilience** against
-synthetic-media and AI-phishing attacks that target employees. Lives at the human
-perimeter, outside the trust-zone model; included in the foundation layer because
-it backstops every other control (the strongest technical stack still fails if an
-employee is talked into bypassing it by a convincing deepfake).
+Defends people, not the data paths of an AI application. Its job is **detection and
+human resilience** against synthetic-media and AI-phishing attacks that target
+employees — detective and out-of-band, not an inline data control. Lives at the
+human perimeter, outside the trust-zone model; included in the foundation layer
+because it backstops every other control (the strongest technical stack still fails
+if an employee is talked into bypassing it by a convincing deepfake).
 
 ## Vendors
 

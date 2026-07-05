@@ -38,7 +38,7 @@ tags: [open-source, evals, observability, mlops]
 
 **What it does** — Opik (launched 2024-09-17, Apache-2.0 OSS) records every step an LLM/agent app takes (tracing), runs built-in eval metrics and LLM judges (hallucination, factuality), supports "model unit testing" and scoring, and ships production dashboards. It sits on top of Comet's longer-standing platform for ML experiment management, model management, and production monitoring — so a buyer gets both classic MLOps and LLM observability from one vendor.
 
-**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Dev/CI- and ops-time tracing and eval; not an inline runtime guardrail, so it does not directly break a leg of the lethal trifecta. Complements [ai-red-teaming](../categories/ai-red-teaming.md) and [ai-runtime-security](../categories/ai-runtime-security.md).
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Dev/CI- and ops-time tracing and eval; not an inline runtime guardrail — it does not itself screen prompts or block data flows. Complements [ai-red-teaming](../categories/ai-red-teaming.md) and [ai-runtime-security](../categories/ai-runtime-security.md).
 
 **Deployment & architecture** — SDK-based instrumentation; Opik self-hostable via OSS (GitHub, ~19k+ stars, 40+ framework/provider integrations) or run on Comet's managed/enterprise platform with collaboration, user management, and security controls. Pairs naturally with Comet's experiment-tracking for teams that train/fine-tune as well as call APIs.
 

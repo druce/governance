@@ -36,7 +36,7 @@ tags: [first-party, content-source, rag-source, microsoft]
 
 **What it does** — SharePoint Online (sites/libraries) and OneDrive for Business (personal storage) hold the documents, intranet pages, and files knowledge workers create. In an AI stack they are **content sources**: the data RAG pipelines and [microsoft-365-copilot](microsoft-365-copilot.md) index and answer over. The governance concern is not the product but its **permissions** — RAG inherits whatever access model (often over-shared) lives in SharePoint, which is exactly why [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and DSPM exist.
 
-**Where it sits in the stack** — [content-sources](../categories/content-sources.md) in the retrieval layer (Day-1 *if* doing RAG). Lethal-trifecta role: it is the **sensitive-data** leg — the trove an attacker wants exfiltrated. Pairs with [microsoft-purview](microsoft-purview.md) (classification/DLP) and [microsoft-graph](microsoft-graph.md) (entitlement-aware retrieval).
+**Where it sits in the stack** — [content-sources](../categories/content-sources.md) in the retrieval layer (Day-1 *if* doing RAG). Risk role: it holds the sensitive data — the trove an attacker wants exfiltrated. Pairs with [microsoft-purview](microsoft-purview.md) (classification/DLP) and [microsoft-graph](microsoft-graph.md) (entitlement-aware retrieval).
 
 **Deployment & architecture** — SaaS (SharePoint Online / OneDrive in Microsoft 365); legacy on-prem SharePoint Server still exists. Surfaced to AI via Microsoft Graph, Copilot connectors, and third-party RAG ingestion.
 

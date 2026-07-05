@@ -46,7 +46,7 @@ Newer capabilities push toward operational governance: auto-discovery of "shadow
 ## Where it sits in the stack
 Sits in the **governance** layer — the top of the cake, alongside [ai-governance-platform](../categories/ai-governance-platform.md) peers. This is the "policy, paperwork, and accountability" tier, not a data-path control.
 
-**Lethal-trifecta role:** none directly. Credo AI does not break any leg of the lethal trifecta (untrusted input / sensitive-data access / external egress) at runtime — it documents and governs the systems that do. It lives in the **green/governance zone**: it reasons about risk and produces controls and evidence, but the actual enforcement of untrusted-input filtering, data minimization, or egress control is done by runtime tools it would catalog and reference (e.g. AI firewalls, DLP, gateways). Its runtime-governance feature is closer to policy evaluation/monitoring than to inline data-path mediation.
+**Runtime enforcement:** none directly. Credo AI does not itself screen untrusted input, restrict sensitive-data access, or block outbound data flows at runtime — it documents and governs the systems that do. It lives in the **green/governance zone**: it reasons about risk and produces controls and evidence, but the actual enforcement of untrusted-input filtering, data minimization, or egress control is done by runtime tools it would catalog and reference (e.g. AI firewalls, DLP, gateways). Its runtime-governance feature is closer to policy evaluation/monitoring than to inline data-path mediation.
 
 ## Deployment & architecture
 - **Model:** Cloud SaaS, with an API/integration surface; no self-hosted/on-prem option found (note if regulated buyers require it).

@@ -55,9 +55,9 @@ top.
 [ai-red-teaming](../categories/ai-red-teaming.md) / guardrails in the model/prompt layer; overlaps with
 [ai-runtime-security](../categories/ai-runtime-security.md) because output/input validation is exactly what an AI
 firewall does — the difference is Guardrails AI is an SDK you build into your app
-rather than an inline network proxy. Lethal-trifecta role: the **untrusted-input**
-leg (input validators block injection/jailbreak patterns) and the **sensitive-data**
-leg (PII/secret-leakage validators on outputs).
+rather than an inline network proxy. It screens untrusted input (input validators
+block injection/jailbreak patterns) and prevents sensitive-data leakage
+(PII/secret-leakage validators on outputs).
 
 ## Deployment & architecture
 Self-hosted open-source Python package (SDK) embedded in your application code; runs

@@ -53,8 +53,8 @@ its founding research is that "traditional AppSec could not address AI-specific
 risks."
 
 ## Where it sits in the stack
-[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Lethal-trifecta role: primarily the
-**untrusted-input** leg — it probes how the model handles adversarial/malicious
+[ai-red-teaming](../categories/ai-red-teaming.md) in the model/prompt layer. Its primary focus is
+**untrusted input** — it probes how the model handles adversarial/malicious
 input. It is a pre-production and continuous-assurance tool rather than an inline
 runtime control, so it complements (not replaces) an [ai-runtime-security](../categories/ai-runtime-security.md) firewall
 that blocks attacks live.

@@ -46,7 +46,7 @@ The job for a buyer: stop sensitive data leaking out of SaaS via over-sharing, a
 
 Filed under [sspm](../categories/sspm.md) in this wiki, but its center of gravity is **SaaS data security / data-access governance** (closer to DSPM-for-SaaS than to config-posture SSPM). Layer: foundation.
 
-Lethal-trifecta role: **sensitive-data** and **egress** — it limits exposure and exfiltration of corporate data shared through SaaS apps. Not a model/prompt firewall.
+It controls sensitive-data exposure and outbound flows — limiting leakage and exfiltration of corporate data shared through SaaS apps. Not a model/prompt firewall.
 
 ## Deployment & architecture
 

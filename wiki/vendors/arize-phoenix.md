@@ -38,7 +38,7 @@ tags: [open-source, observability, evals, ml-monitoring]
 
 **What it does** — Phoenix traces LLM and agent applications, runs evaluations, surfaces failures (hallucinations, retrieval problems, regressions), and helps teams debug and improve output quality. Arize's heritage is classic ML observability (drift, performance monitoring), and Phoenix extended that into the LLM/agent world. Phoenix is OSS and self-hostable; Arize AX is the managed, enterprise-scale commercial product.
 
-**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Dev/ops-time tracing and eval, not an inline guardrail, so it does not directly break a leg of the lethal trifecta — but its eval/monitoring helps detect data-leak or injection symptoms. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-red-teaming](../categories/ai-red-teaming.md).
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Dev/ops-time tracing and eval, not an inline guardrail — but its eval/monitoring helps detect data-leak or injection symptoms. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-red-teaming](../categories/ai-red-teaming.md).
 
 **Deployment & architecture** — OpenTelemetry/OpenInference-based SDK instrumentation; Phoenix runs locally or self-hosted, Arize AX is SaaS. Integrations include Azure AI Foundry / AI Studio and most major model and framework providers. Reported >2M monthly downloads for Phoenix (company claim).
 

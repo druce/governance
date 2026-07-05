@@ -36,7 +36,7 @@ tags: [vector-database, retrieval, open-source, independent]
 
 **What it does** — Weaviate stores embeddings and serves vector, keyword, and hybrid search, with built-in modules for embedding generation and RAG. In a pipeline it is the **vector-retrieval** layer. Its differentiator versus managed pure-plays is that you can run it yourself (open source) or use Weaviate Cloud — useful when data cannot leave your tenancy.
 
-**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (your corpus embeddings). Multi-tenancy and RBAC support tenant/entitlement separation; entitlement-aware retrieval is still your wiring.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Risk role: it holds sensitive data (your corpus embeddings). Multi-tenancy and RBAC support tenant/entitlement separation; entitlement-aware retrieval is still your wiring.
 
 **Deployment & architecture** — Self-hostable open-source core (BSD-3) deployable in your own cloud/Kubernetes, plus Weaviate Cloud (managed SaaS) and a serverless option. API/SDK-driven; integrates with LangChain/LlamaIndex and major embedding providers.
 

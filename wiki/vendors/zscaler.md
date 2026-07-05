@@ -52,10 +52,10 @@ DLP to prompts.
 
 ## Where it sits in the stack
 Foundation-layer network control under [network-security-sase](../categories/network-security-sase.md), with an
-[ai-access-governance](../categories/ai-access-governance.md) role as a secondary use of the same proxy. On the lethal
-trifecta it primarily addresses the **egress** leg (controlling where data can flow,
-blocking unsanctioned AI destinations) and the **sensitive-data** leg (inline DLP on
-prompts). It is the green/yellow-zone perimeter, not a model-layer guardrail.
+[ai-access-governance](../categories/ai-access-governance.md) role as a secondary use of the same proxy. It primarily
+controls outbound data flows (governing where data can go, blocking unsanctioned AI
+destinations) and prevents sensitive-data leakage (inline DLP on prompts). It is the
+green/yellow-zone perimeter, not a model-layer guardrail.
 
 ## Deployment & architecture
 SaaS-delivered cloud proxy; traffic forwarded via agent (Zscaler Client Connector),

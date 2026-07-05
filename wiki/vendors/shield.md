@@ -62,8 +62,7 @@ after the fact.
 This is a [comms-surveillance](../categories/comms-surveillance.md) tool in the **governance** layer. In trust-zone
 terms it lives in the **green zone** — a back-office oversight system reading
 copies of communications, not an inline control on untrusted input, sensitive
-data, or egress. Its lethal-trifecta role is **none** (detective oversight, not a
-trifecta-leg control). Its job is regulatory: MAR / market-abuse and MNPI
+data, or egress. Its job is regulatory: MAR / market-abuse and MNPI
 detection, plus SEC/FINRA/CFTC-style books-and-records and supervision
 obligations.
 

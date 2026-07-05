@@ -36,7 +36,7 @@ tags: [agentic-soc, ai-soc, alert-triage]
 
 **What it does** — Radiant ingests alerts from your existing tooling and uses generative AI / LLMs to triage, investigate, and decide on each one, then automates containment, remediation, and escalation approvals. It markets itself as handling **every alert type across all sources with no playbooks required**, deployed via API in minutes, claiming up to ~95% reduction in analyst workload. The job is the same as its peers: collapse the Tier-1 triage burden and speed response.
 
-**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation/decision layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; automation/decision layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling — not an inline prompt/egress control. Trusted security-ops zone.
 
 **Deployment & architecture** — SaaS, API-deployed; reads from SIEM/EDR/cloud/identity sources and writes investigations/actions back. Emerged from stealth at Black Hat 2023.
 
@@ -60,4 +60,4 @@ HQ: SecurityWeek lists San Francisco; CB Insights lists Milpitas, CA — both SF
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established $15M Series A (Next47, 2023-11), ~$22.5M total, SF-Bay-Area HQ, ex-Imperva/Exabeam leadership, independent. Disambiguated from unrelated "Radiant" nuclear company (DCVC) that some searches surfaced. Set ownership_confidence high. trifecta=none. hedge_fund_fit=medium (Day-2).
+- [2026-06-28] Researched; established $15M Series A (Next47, 2023-11), ~$22.5M total, SF-Bay-Area HQ, ex-Imperva/Exabeam leadership, independent. Disambiguated from unrelated "Radiant" nuclear company (DCVC) that some searches surfaced. Set ownership_confidence high. Not an inline prompt/egress control. hedge_fund_fit=medium (Day-2).

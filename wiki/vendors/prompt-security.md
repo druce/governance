@@ -41,17 +41,17 @@ Prompt Security inspects GenAI traffic in real time to enforce policy on both si
 
 ## Where it sits in the stack
 It straddles several layers, which is why it's cross-listed:
-- [dlp](../categories/dlp.md) — prevents sensitive data leaving via prompts/responses (egress/sensitive-data legs).
-- [ai-runtime-security](../categories/ai-runtime-security.md) — inline AI firewall blocking prompt injection (untrusted-input leg).
+- [dlp](../categories/dlp.md) — prevents sensitive data leaving via prompts/responses.
+- [ai-runtime-security](../categories/ai-runtime-security.md) — inline AI firewall blocking prompt injection.
 - [ai-access-governance](../categories/ai-access-governance.md) — CASB-for-AI shadow-AI discovery and policy over sanctioned/unsanctioned tools.
 - [ai-spm](../categories/ai-spm.md) — inventory/posture of AI usage and agents.
-It lives in the yellow (AI application/usage) trust zone and addresses all three legs of the lethal trifecta.
+It lives in the yellow (AI application/usage) trust zone, screening untrusted input, preventing sensitive-data leakage, and controlling outbound data flows.
 
 ## Deployment & architecture
 Multi-channel enforcement: browser extension, desktop agent, and API/SDK/inline-proxy in front of models or AI gateways — i.e., it can govern SaaS AI usage and self-built apps without forcing all traffic through one network choke point. Integrates with IdP, SIEM/SOC, and AI gateways. Post-acquisition, capabilities are being integrated into [sentinelone](sentinelone.md) Singularity.
 
 ## Positioning & differentiators
-- Known for broad coverage across the "shadow AI + AI firewall + AI DLP" trifecta in one product, rather than specializing in only red-teaming or only guardrails.
+- Known for broad coverage across the "shadow AI + AI firewall + AI DLP" combination in one product, rather than specializing in only red-teaming or only guardrails.
 - Nearest neighbors: [witnessai](witnessai.md), [lasso-security](lasso-security.md), [harmonic-security](harmonic-security.md), [aurascape](aurascape.md) (access governance); [lakera](lakera.md), [pangea](pangea.md), [hiddenlayer](hiddenlayer.md), [prisma-airs](prisma-airs.md), [cisco-ai-defense](cisco-ai-defense.md) (runtime/guardrails).
 - Strategic-investor signal: Okta and F5 backed it pre-acquisition.
 

@@ -50,7 +50,7 @@ The product is framed as turning weeks-long model audits into minutes, with "pol
 
 This is a **[ai-governance-platform](../categories/ai-governance-platform.md)** play at the **governance layer** — the documentation/policy/model-validation control plane that sits above the runtime stack, not in the data path. It is registry-, evidence-, and workflow-centric: inventory AI systems, run validation/red-team tests, map results to regulatory controls, and produce audit artifacts.
 
-- **Lethal-trifecta role:** none directly. It does not break the untrusted-input / sensitive-data / egress chain inline; the "Assure" runtime-guardrail capability is adjacent to runtime security but the company's center of gravity is governance/assurance, not an inline AI firewall.
+- **Runtime-control role:** none directly. It is not an inline control on untrusted input, sensitive data, or outbound flows; the "Assure" runtime-guardrail capability is adjacent to runtime security but the company's center of gravity is governance/assurance, not an inline AI firewall.
 - **Trust zone:** governance/oversight plane spanning all zones via evidence, rather than enforcement inside any one zone.
 
 ## Deployment & architecture

@@ -40,7 +40,7 @@ tags: [identity-governance, iga, saas-management, access-reviews]
 Lumos started as a SaaS management / internal app-store with self-service access requests, then expanded into identity governance (IGA): access reviews/certifications, lifecycle (joiner/mover/leaver), policy automation, least-privilege, and increasingly non-human/agent identity and "agentic" access reviews. The pitch is automating routine identity work (requests, reviews, deprovisioning) that legacy IGA does manually and slowly, plus surfacing SaaS spend/usage as a byproduct.
 
 ## Where it sits in the stack
-The [identity-governance](../categories/identity-governance.md) foundation. Addresses the **sensitive-data** leg of the lethal trifecta by governing and certifying entitlements — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) inherit. SaaS-discovery roots also give it some shadow-IT/shadow-AI visibility adjacency.
+The [identity-governance](../categories/identity-governance.md) foundation. Controls access to sensitive data by governing and certifying entitlements — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) inherit. SaaS-discovery roots also give it some shadow-IT/shadow-AI visibility adjacency.
 
 ## Deployment & architecture
 SaaS. Integrates with IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md)), HR systems, and a broad catalog of SaaS apps to discover usage, drive access requests/reviews, and automate provisioning/deprovisioning. Workflow-centric (Slack-native approvals) and automation-forward.

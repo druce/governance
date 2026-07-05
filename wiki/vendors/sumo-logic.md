@@ -40,7 +40,7 @@ tags: [siem, log-analytics, observability, francisco-partners]
 Sumo Logic ingests logs, metrics and events from cloud and on-prem systems and provides log analytics, observability and a **cloud SIEM / Cloud SOC** for threat detection and investigation. The job: centralize machine data so security and ops teams can search, alert and investigate — the SIEM tier that AI-system audit logs, gateway logs and agent activity should ultimately feed into.
 
 ## Where it sits in the stack
-Foundation layer, [siem-soc](../categories/siem-soc.md). Lethal-trifecta leg: **none directly** — it is the detection/audit substrate, not an inline control. It is where you'd land logs from [ai-gateway](../categories/ai-gateway.md), [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-access-governance](../categories/ai-access-governance.md) tools for monitoring and forensics. Adjacent to [ai-soc-analysts](../categories/ai-soc-analysts.md), which increasingly sit on top of SIEM data.
+Foundation layer, [siem-soc](../categories/siem-soc.md). It is the detection/audit substrate, not an inline prompt/egress control. It is where you'd land logs from [ai-gateway](../categories/ai-gateway.md), [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-access-governance](../categories/ai-access-governance.md) tools for monitoring and forensics. Adjacent to [ai-soc-analysts](../categories/ai-soc-analysts.md), which increasingly sit on top of SIEM data.
 
 ## Deployment & architecture
 SaaS, multi-tenant; agent/collector and API-based ingestion. Integrates with cloud providers, security tooling and observability sources. Not an inline proxy.

@@ -46,7 +46,7 @@ The job for a buyer: meet regulatory obligations to monitor employee communicati
 
 ## Where it sits in the stack
 
-Primary category: [comms-surveillance](../categories/comms-surveillance.md), in the **governance** layer. This is a **detective control** — it observes and alerts on activity after the fact; it does not block prompts, redact data, or gate egress. In lethal-trifecta terms it breaks **no leg directly** (`trifecta_relevance: none`); it is a **green-zone detective backstop** that helps you *discover* that something bad (MNPI in a chat, collusion on a call) already happened. It complements, rather than replaces, preventive controls like DLP, information barriers, and AI runtime guardrails.
+Primary category: [comms-surveillance](../categories/comms-surveillance.md), in the **governance** layer. This is a **detective control** — it observes and alerts on activity after the fact; it does not block prompts, redact data, or gate egress. It is not an inline prompt/egress control; it is a **green-zone detective backstop** that helps you *discover* that something bad (MNPI in a chat, collusion on a call) already happened. It complements, rather than replaces, preventive controls like DLP, information barriers, and AI runtime guardrails.
 
 ## Deployment & architecture
 

@@ -38,7 +38,7 @@ tags: [evals, observability, ci-cd, prompt-management]
 
 **What it does** — Braintrust unifies trace logging, automated evaluations (LLM-as-a-judge and custom code scorers), prompt management, and dataset curation into one workflow. The signature loop: capture every prompt/tool call in production, score outputs, one-click-convert failures into test cases, and gate CI/CD releases on eval results. Built around a custom database for AI observability data and tuned for long-running, multi-step agents.
 
-**Where it sits in the stack** — Primary home is the [llm-observability](../categories/llm-observability.md) layer; its scoring/red-teaming-style evals also touch [ai-red-teaming](../categories/ai-red-teaming.md). Dev/CI- and ops-time tooling, not an inline runtime firewall — it does not directly break a leg of the lethal trifecta, though eval gates can catch unsafe behavior pre-release. Complements [ai-runtime-security](../categories/ai-runtime-security.md).
+**Where it sits in the stack** — Primary home is the [llm-observability](../categories/llm-observability.md) layer; its scoring/red-teaming-style evals also touch [ai-red-teaming](../categories/ai-red-teaming.md). Dev/CI- and ops-time tooling, not an inline runtime firewall — it is not an inline prompt/egress control, though eval gates can catch unsafe behavior pre-release. Complements [ai-runtime-security](../categories/ai-runtime-security.md).
 
 **Deployment & architecture** — SDK-based instrumentation, SaaS by default with self-hosting for enterprise. Deep CI/CD integration for eval gating is a core design point. Framework-agnostic.
 

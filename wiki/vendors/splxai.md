@@ -47,7 +47,7 @@ The pitch is economic as much as technical: automated red-teaming is positioned 
 - Primary: [ai-red-teaming](../categories/ai-red-teaming.md) (model/prompt layer) — the proactive, pre-deployment leg: find weaknesses in your AI app before go-live and on every change.
 - Secondary: [ai-runtime-security](../categories/ai-runtime-security.md) (AI firewall) — runtime guardrails/threat inspection that block malicious prompts and unsafe responses in production.
 
-**Lethal-trifecta role.** Red-teaming is overwhelmingly about the **untrusted-input** leg — stress-testing how the app handles hostile prompts/content. The runtime guardrails extend coverage toward **sensitive-data** exposure and **egress** (blocking data leakage and unsafe tool/response paths). Net: it touches all three legs, but its center of gravity is untrusted-input/prompt-injection. Trust zone: wherever LLM-facing apps live (typically yellow/green app tiers).
+**Risk coverage.** Red-teaming is overwhelmingly about **untrusted input** — stress-testing how the app handles hostile prompts/content. The runtime guardrails extend coverage toward **sensitive-data** exposure and **exfiltration** (blocking data leakage and unsafe tool/response paths). Net: it spans input screening, data protection and outbound controls, but its center of gravity is untrusted-input/prompt-injection. Trust zone: wherever LLM-facing apps live (typically yellow/green app tiers).
 
 ## Deployment & architecture
 

@@ -38,7 +38,7 @@ tags: [grc, audit, risk-management, compliance, esg]
 
 **What it does** — AuditBoard started in internal audit / SOX and expanded into a "connected risk" platform: audit management, risk management, compliance (SOX, IT compliance), third-party risk, and ESG reporting. Strong traction with internal-audit and finance teams; serves 2,000+ enterprises including roughly half the Fortune 500.
 
-**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for audit/risk/compliance, not a runtime data control (`trifecta_relevance: none`). Can host AI-governance and model-risk attestations as part of compliance workflows, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for audit/risk/compliance, not a runtime data control or inline prompt/egress control. Can host AI-governance and model-risk attestations as part of compliance workflows, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **Deployment & architecture** — SaaS. Integrates with ERP/finance systems, IT and security tooling; questionnaire and evidence-collection automation; AI features for audit/risk workflows.
 

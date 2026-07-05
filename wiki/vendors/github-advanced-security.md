@@ -49,7 +49,7 @@ GitHub Advanced Security (GHAS) is the paid security layer that runs inside the 
 Because it lives in the repo and the CI pipeline, scanning happens where developers already work — findings appear as PR checks and in a security-overview dashboard rather than in a separate console.
 
 ## Where it sits in the stack
-This is a [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures the code and dependencies that flow into everything else, before runtime. It does not address the lethal trifecta directly (it is not an inline prompt/egress gate), hence `trifecta_relevance: none`.
+This is a [software-supply-chain](../categories/software-supply-chain.md) / foundation-layer control: it secures the code and dependencies that flow into everything else, before runtime. It is not an inline prompt/egress control.
 
 **AI-generated-code relevance:** when developers accept code from Copilot, Cursor, or Claude, that code lands in the same repos GHAS already scans. CodeQL/SAST and secret scanning catch insecure or credential-leaking AI output at the PR gate, and **Copilot Autofix** proposes fixes inline — so for shops on GitHub this is often the lowest-friction way to put a guardrail under AI-assisted development.
 

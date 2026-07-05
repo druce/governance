@@ -38,7 +38,7 @@ tags: [elastic, elk, siem, soc, open-source, incumbent]
 
 **What it does** — Elasticsearch is the search/analytics engine; Logstash ingests, Kibana visualizes (together "ELK"). Elastic Security layers SIEM, endpoint/XDR, and SOAR-style automation on top. The draw for cost-sensitive shops is deployment flexibility: run it yourself on your own infra, or buy it as a managed cloud service. Detection rules are developed in public repos on a ~two-week cadence.
 
-**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. Also widely used as a general log/observability store, so it often already holds the data an AI-oversight program needs.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; it is not an inline prompt/egress control. Also widely used as a general log/observability store, so it often already holds the data an AI-oversight program needs.
 
 **Deployment & architecture** — SaaS (Elastic Cloud) or self-hosted/on-prem — a key differentiator vs cloud-only SIEMs. The **Elastic AI Assistant** is built on the Elasticsearch Relevance Engine (ESRE) and gives context-aware alert-triage/IR guidance; it exposes a reasoning trace (prompts, tool calls, responses) and lets customers connect multiple LLMs and pick per workflow. The **Elastic AI SOC Engine (EASE)** targets alert fatigue and can work alongside [splunk](splunk.md) / [microsoft-sentinel](microsoft-sentinel.md).
 

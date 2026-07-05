@@ -63,11 +63,10 @@ full audit trail).
 ## Where it sits in the stack
 
 Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Oasis governs the identities that
-machines and agents use, which is upstream plumbing rather than an AI-specific control. In
-lethal-trifecta terms it mainly hardens the **sensitive-data** and **egress** legs indirectly: by
+machines and agents use, which is upstream plumbing rather than an AI-specific control. By
 enforcing least privilege and just-in-time, short-lived credentials it limits what a compromised
 workload or a misbehaving agent can reach and exfiltrate. It does not inspect prompts or model
-output, so it does not address the untrusted-input leg. Its AAM line reaches into agent-governance
+output, so it does not screen untrusted input. Its AAM line reaches into agent-governance
 territory adjacent to [ai-spm](../categories/ai-spm.md) and authorization layers ([authorization-engine](../categories/authorization-engine.md)), but its
 spine remains identity governance, not runtime prompt security.
 

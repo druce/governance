@@ -42,7 +42,7 @@ Netwrix started as Active Directory change-auditing software and grew — by acq
 
 ## Where it sits in the stack
 
-Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) (who can reach sensitive data), with a strong second foot in [identity-governance](../categories/identity-governance.md) (IGA/PAM from the Usercube and Stealthbits lines). Lethal-trifecta role: **sensitive-data** leg — it governs and audits access to the data an AI agent or user could reach. It lives in the data/identity trust zone, not in prompt or egress inspection.
+Data layer. Primary fit is [data-access-governance](../categories/data-access-governance.md) (who can reach sensitive data), with a strong second foot in [identity-governance](../categories/identity-governance.md) (IGA/PAM from the Usercube and Stealthbits lines). It controls access to sensitive data — governing and auditing what an AI agent or user could reach. It lives in the data/identity trust zone, not in prompt or egress inspection.
 
 ## Deployment & architecture
 
@@ -81,4 +81,4 @@ Netwrix's heritage and strongest pull is **Active Directory / Windows-estate aud
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; corrected ownership from independent/low to acquired/PE-owned/high — TA Associates majority (since 2020), Centerbridge strategic investor (2023-09-05), Updata + management minority, per primary Netwrix release. Established founding (2006, Walters/Vovk), Frisco TX HQ, DAG+IGA+PAM scope, roll-up acquisition history (Stealthbits/PolicyPak/Usercube/NNT). Added identity-governance + dlp categories; set sensitive-data trifecta leg, hedge_fund_fit medium. Cached 2 sources.
+- [2026-06-28] Researched; corrected ownership from independent/low to acquired/PE-owned/high — TA Associates majority (since 2020), Centerbridge strategic investor (2023-09-05), Updata + management minority, per primary Netwrix release. Established founding (2006, Walters/Vovk), Frisco TX HQ, DAG+IGA+PAM scope, roll-up acquisition history (Stealthbits/PolicyPak/Usercube/NNT). Added identity-governance + dlp categories; set risk role to sensitive-data access control, hedge_fund_fit medium. Cached 2 sources.

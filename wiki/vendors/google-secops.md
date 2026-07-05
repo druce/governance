@@ -38,7 +38,7 @@ tags: [google, alphabet, siem, soc, chronicle, mandiant, incumbent]
 
 **What it does** — Ingests and retains security telemetry at very large scale, applies detections, and supports threat hunting and SOAR-style response. Differentiated historically by flat-rate, petabyte-scale storage (priced on employee count rather than ingest volume) and by built-in Mandiant frontline threat intelligence. The 2025-26 story is Gemini: AI-generated case summaries, response recommendations, context-aware chat, and NL detection/playbook creation.
 
-**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. It is where AI/security signals are centralized and where Gemini agents perform [ai-soc-analysts](../categories/ai-soc-analysts.md)-style triage natively.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md), foundation layer. Detection/response plumbing; not an inline prompt/egress control. It is where AI/security signals are centralized and where Gemini agents perform [ai-soc-analysts](../categories/ai-soc-analysts.md)-style triage natively.
 
 **Deployment & architecture** — SaaS on Google Cloud, API-driven ingestion. Bundles Mandiant threat intel; Gemini agents (Alert Triage & Investigation agent, Threat Intel agent) entered public preview late 2025 and reached GA in 1Q26. Integrates with Google Cloud, Chrome Enterprise, and third-party sources.
 

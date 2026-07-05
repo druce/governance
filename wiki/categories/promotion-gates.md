@@ -54,13 +54,14 @@ Gates are the *automated/procedural* counterpart to [hitl-approvals](hitl-approv
 gates govern **releasing the system**; HITL approvals govern **individual high-stakes
 actions** the system then takes at runtime.
 
-## Lethal-trifecta role
+## Security role
 
-None directly. Promotion gates don't break a trifecta leg; they **verify that the
-controls which do are present and configured** before a workload goes live. They are
-the enforcement moment where risk-tier requirements and zone placement get checked —
-the quality gate that stops a misconfigured (all-three-legs-aligned) workload from
-shipping.
+None directly at runtime — a gate screens no input and blocks no exfiltration
+itself. Instead it **verifies that the controls which do are present and
+configured** before a workload goes live: the enforcement moment where risk-tier
+requirements and zone placement get checked, and the quality gate that stops a
+misconfigured workload — one exposed to untrusted input with sensitive-data access
+and an open outbound path — from shipping.
 
 ## How it gets enforced (tooling, not a shortlist)
 

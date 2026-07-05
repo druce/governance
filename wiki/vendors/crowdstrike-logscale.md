@@ -38,7 +38,7 @@ tags: [crowdstrike, humio, siem, soc, next-gen-siem, incumbent]
 
 **What it does** — LogScale is a streaming, index-free log management technology: fast ingest and search at low storage cost. Inside CrowdStrike it is the foundation of **Falcon Next-Gen SIEM**, extending the Falcon platform from endpoint EDR/XDR into full SIEM by ingesting third-party logs alongside native CrowdStrike telemetry. Charlotte AI (CrowdStrike's genAI assistant) sits on top for triage.
 
-**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md) (and [edr-xdr](../categories/edr-xdr.md) via the broader Falcon platform), foundation layer. Detection/response plumbing; lethal-trifecta role **none** directly. The central log/data plane that an [ai-soc-analysts](../categories/ai-soc-analysts.md)-style layer (here, Charlotte AI) draws on.
+**Where it sits in the stack** — [siem-soc](../categories/siem-soc.md) (and [edr-xdr](../categories/edr-xdr.md) via the broader Falcon platform), foundation layer. Detection/response plumbing; not an inline prompt/egress control. The central log/data plane that an [ai-soc-analysts](../categories/ai-soc-analysts.md)-style layer (here, Charlotte AI) draws on.
 
 **Deployment & architecture** — Primarily SaaS as part of Falcon; LogScale/Humio also available self-hosted for log management. Priced per-GB ingested without indexing surcharges (positioned against [splunk](splunk.md)). Charlotte AI Agentic Detection Triage is benchmarked against Falcon Complete MDR analyst decisions. Strongest when CrowdStrike Falcon is already the EDR ([crowdstrike](crowdstrike.md)).
 

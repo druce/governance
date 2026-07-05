@@ -31,9 +31,9 @@ A work browser with guardrails baked in. Because most AI use happens *in a brows
 
 For a typical hedge fund on managed laptops, this is a deliberate "do we standardize the browser" decision, often weighed *against* the lighter [browser-security-extension](browser-security-extension.md) route (the seed notes they're frequently **either/or**). Many firms land on the extension first and reserve the full browser for contractors and high-risk roles.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-Primarily the **egress** leg, with a hand on **sensitive-data**: the browser is the last gate before data leaves on the user's clipboard, an upload, or a screenshot into an AI site — and the first gate where pasted/untrusted web content enters. It enforces the boundary at the UX edge, complementing network-layer egress control. Sits at the yellow/red boundary: it's the membrane between the trusted desktop and the untrusted web where AI tools live.
+The lethal trifecta — untrusted input, sensitive data, and external egress lining up in a single agent context — is the core threat model for agent security, and the browser is one of the few places all three legs routinely pass through. The enterprise browser works primarily on the **egress** leg, with a hand on **sensitive-data**: the browser is the last gate before data leaves on the user's clipboard, an upload, or a screenshot into an AI site — and the first gate where pasted/untrusted web content enters. It enforces the boundary at the UX edge, complementing network-layer egress control. Sits at the yellow/red boundary: it's the membrane between the trusted desktop and the untrusted web where AI tools live.
 
 ## Vendors
 

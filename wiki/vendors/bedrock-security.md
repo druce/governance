@@ -40,7 +40,7 @@ tags: [dspm, data-security, ai-data-governance]
 Bedrock continuously discovers and classifies sensitive data across cloud, SaaS, on-prem, and AI environments, then scores and helps remediate data-security posture (over-exposed data, stale data, access risk). Its differentiator is a patented **Metadata Lake** that autonomously catalogs data *in place* — it reads metadata/context rather than copying the underlying data out, which keeps regulated data inside the customer's trust boundary. The pitch is "operationalizing a data security program": not just visibility, but driving down exposure and improving access governance, increasingly framed around safe AI/RAG adoption.
 
 ## Where it sits in the stack
-Data layer — [dspm](../categories/dspm.md). Lethal-trifecta role: protects the **sensitive-data** leg by finding and reducing where sensitive data lives and who/what can reach it (including AI agents and copilots). Lives in the data trust zone feeding AI systems; adjacent to [dlp](../categories/dlp.md) and [data-access-governance](../categories/data-access-governance.md).
+Data layer — [dspm](../categories/dspm.md). It controls access to sensitive data by finding and reducing where that data lives and who/what can reach it (including AI agents and copilots). Lives in the data trust zone feeding AI systems; adjacent to [dlp](../categories/dlp.md) and [data-access-governance](../categories/data-access-governance.md).
 
 ## Deployment & architecture
 SaaS control plane with agentless, metadata-based scanning across private cloud, IaaS, PaaS, SaaS, and AI environments; data stays in place. Aimed at integrating into a broader data-security/governance program rather than acting as an inline proxy.

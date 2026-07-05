@@ -50,7 +50,7 @@ Historically these capabilities shipped as named products — **GovernML** (syst
 
 This is a **governance-layer** tool — it documents, monitors, and produces evidence about models rather than sitting inline in any request path. See [ai-governance-platform](../categories/ai-governance-platform.md).
 
-- **Lethal-trifecta role:** none directly. Monitaur does not break untrusted-input, sensitive-data, or egress legs at runtime; it is an oversight/assurance layer, not a runtime guardrail. (Contrast with [ai-runtime-security](../categories/ai-runtime-security.md) tools that sit inline.)
+- **Runtime role:** none directly. Monitaur does not screen untrusted input, gate access to sensitive data, or block exfiltration at runtime; it is an oversight/assurance layer, not a runtime guardrail. (Contrast with [ai-runtime-security](../categories/ai-runtime-security.md) tools that sit inline.)
 - **Trust zone:** governance/oversight plane spanning all zones — it inventories and monitors models wherever they run, but enforcement of data/egress boundaries lives elsewhere.
 
 ## Deployment & architecture

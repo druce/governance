@@ -77,7 +77,7 @@ behavioral "Generative Rules." Its permission-aware retrieval also overlaps
 [entitlement-aware-rag](../categories/entitlement-aware-rag.md), and its org-wide chat visibility / violation alerts edge toward
 [comms-surveillance](../categories/comms-surveillance.md).
 
-Lethal-trifecta role:
+Risk-control profile:
 
 - **Sensitive-data — strong.** In-tenant deployment, permission-aware retrieval ("if a user
   doesn't have access to a document, the AI doesn't either"), and DLP keep fund data inside
@@ -190,4 +190,4 @@ diligence on a small provider.
 - [Saberin Group / Saberin Data Platform](https://www.saberin.com/) — fetched 2026-06-30 — supports: parent operating company founded 2007, private/bootstrapped structure, capital-markets data heritage; confidence: high
 
 ## History
-- [2026-06-30] Created and researched from vendor request. Established primary fit as a finance-vertical, in-tenant secure [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) + agent platform, with [ai-governance-platform](../categories/ai-governance-platform.md) (usage GRC) and [dlp](../categories/dlp.md) as secondary tags. Ownership: private/bootstrapped product of Saberin Data Platform Inc (Saberin Group, founded 2007), Hauppauge NY; no external funding found; no M&A. Trifecta: strong sensitive-data, partial egress, weak untrusted-input (flagged Sidekick shell/browser/file agents as an open risk). Cached 1 source file.
+- [2026-06-30] Created and researched from vendor request. Established primary fit as a finance-vertical, in-tenant secure [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) + agent platform, with [ai-governance-platform](../categories/ai-governance-platform.md) (usage GRC) and [dlp](../categories/dlp.md) as secondary tags. Ownership: private/bootstrapped product of Saberin Data Platform Inc (Saberin Group, founded 2007), Hauppauge NY; no external funding found; no M&A. Risk coverage: strong sensitive-data control, partial egress control, weak untrusted-input screening (flagged Sidekick shell/browser/file agents as an open risk). Cached 1 source file.

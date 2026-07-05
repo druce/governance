@@ -48,14 +48,13 @@ catch — and a new, under-monitored channel. For a CTO, the Day-1-in-spirit act
 confirm AI channels are in scope for capture and surveillance even if the broader
 governance buildout is Day-2.
 
-## Lethal-trifecta role
+## Security role
 
-**None-detection / detective control.** Surveillance is after-the-fact: it does not sit
-inline and does not prevent a leak in real time, so it breaks no leg of the lethal
-trifecta directly. It is the **green-zone** detective backstop that catches MNPI /
-sensitive-data leakage *after* it has hit a comms channel — complementary to the
-preventive controls in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md) that try to stop the leak
-before it happens.
+**Detective, out-of-band.** Surveillance is after-the-fact: it does not sit inline and
+does not prevent a leak in real time. It is the **green-zone** detective backstop that
+catches MNPI / sensitive-data leakage *after* it has hit a comms channel —
+complementary to the preventive controls in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md) that
+try to stop the leak before it happens.
 
 ## Vendors
 

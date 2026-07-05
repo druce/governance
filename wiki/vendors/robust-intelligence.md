@@ -3,6 +3,7 @@ title: Robust Intelligence
 type: vendor
 name: Robust Intelligence
 slug: robust-intelligence
+alias_of: cisco-ai-defense
 aka: [Cisco AI Defense]
 primary_category: ai-runtime-security
 also_listed_in: []

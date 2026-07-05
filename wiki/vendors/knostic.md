@@ -50,7 +50,7 @@ Its central argument: **mirroring document ACLs is not enough**, because the ACL
 
 ## Where it sits in the stack
 
-Primary category [entitlement-aware-rag](../categories/entitlement-aware-rag.md) (retrieval layer); also relevant to [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) governance. Lethal-trifecta role: it addresses the **sensitive-data** leg — it does not break untrusted input or egress, it narrows *what private knowledge the model is allowed to surface* to a given user. Trust zone: the green/yellow boundary inside the enterprise, governing internal knowledge exposure rather than external exfiltration.
+Primary category [entitlement-aware-rag](../categories/entitlement-aware-rag.md) (retrieval layer); also relevant to [enterprise-ai-assistant](../categories/enterprise-ai-assistant.md) governance. Its risk role is controlling access to sensitive data — it does not screen untrusted input or control outbound flows; it narrows *what private knowledge the model is allowed to surface* to a given user. Trust zone: the green/yellow boundary inside the enterprise, governing internal knowledge exposure rather than external exfiltration.
 
 ## Deployment & architecture
 

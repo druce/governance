@@ -47,7 +47,7 @@ For the comms-surveillance category here, SURVEIL-X is the relevant product.
 
 ## Where it sits in the stack
 
-This is the **governance layer** — [comms-surveillance](../categories/comms-surveillance.md). It is a **detective** control: it does not sit inline in the request/response path, break the lethal trifecta, or block anything in real time. It monitors recorded comms and executed/attempted trades after the fact (or near-real-time) and raises alerts for compliance review. In trust-zone terms it operates in the **green zone** on already-captured enterprise data; `trifecta_relevance: none` (it's surveillance/forensics, not a runtime guardrail). Note: this is surveillance of *human* trader/employee conduct and market activity, not (primarily) of LLM/AI usage — though the same comms-capture pipes increasingly carry AI-assistant chat too.
+This is the **governance layer** — [comms-surveillance](../categories/comms-surveillance.md). It is a **detective** control: it does not sit inline in the request/response path or block anything in real time. It monitors recorded comms and executed/attempted trades after the fact (or near-real-time) and raises alerts for compliance review. In trust-zone terms it operates in the **green zone** on already-captured enterprise data; it is not an inline prompt/egress control (it's surveillance/forensics, not a runtime guardrail). Note: this is surveillance of *human* trader/employee conduct and market activity, not (primarily) of LLM/AI usage — though the same comms-capture pipes increasingly carry AI-assistant chat too.
 
 ## Deployment & architecture
 

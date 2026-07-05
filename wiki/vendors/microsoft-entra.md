@@ -42,7 +42,7 @@ Entra ID is the directory and identity-provider (IdP) layer that authenticates u
 It was renamed from **Azure Active Directory (Azure AD)** to Microsoft Entra ID in July 2023 — a rename only, no feature change. "Microsoft Entra" is the broader family: Entra ID (the IdP), Entra ID Governance (IGA), Entra Permissions Management (CIEM), Entra Verified ID, Entra Internet/Private Access (SSE), and newer Entra Agent ID for agent identities.
 
 ## Where it sits in the stack
-The [identity-access](../categories/identity-access.md) foundation — the human (and increasingly agent) front door. In lethal-trifecta terms it governs the **sensitive-data** leg by deciding who/what is authenticated and authorized before anything reaches data or models. It's the IdP that AI gateways, [entitlement-aware-rag](../categories/entitlement-aware-rag.md), and downstream tools federate against.
+The [identity-access](../categories/identity-access.md) foundation — the human (and increasingly agent) front door. It controls access to sensitive data by deciding who/what is authenticated and authorized before anything reaches data or models. It's the IdP that AI gateways, [entitlement-aware-rag](../categories/entitlement-aware-rag.md), and downstream tools federate against.
 
 ## Deployment & architecture
 SaaS, multi-tenant, delivered as part of Azure / Microsoft 365. Standards-based (SAML, OIDC, OAuth2, SCIM) so it federates to virtually any app. Integrates natively with [microsoft-purview](microsoft-purview.md), [microsoft-sentinel](microsoft-sentinel.md), [microsoft-defender](microsoft-defender.md), Intune, and Microsoft 365 Copilot. Licensed in tiers (Free, P1, P2); governance and CIEM are add-ons.

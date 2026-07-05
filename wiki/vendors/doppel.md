@@ -42,7 +42,7 @@ Doppel hunts external impersonation. Autonomous AI agents (the platform is brand
 
 ## Where it sits in the stack
 
-Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. Like [adaptive-security](adaptive-security.md), this is a **perimeter / brand-and-people** control rather than an inline AI-application guardrail — it doesn't sit in the model/prompt path. Lethal-trifecta relevance is **untrusted-input adjacent**: it reduces exposure to externally-originated impersonation and phishing aimed at staff and customers, but does not break a trifecta leg inside an AI system. Trust-zone relevance: the external untrusted internet (red zone), monitoring how your identity is abused outside your perimeter.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. Like [adaptive-security](adaptive-security.md), this is a **perimeter / brand-and-people** control rather than an inline AI-application guardrail — it doesn't sit in the model/prompt path. It reduces exposure to externally-originated impersonation and phishing aimed at staff and customers — screening untrusted input at the human perimeter — but it is not an inline control inside an AI system. Trust-zone relevance: the external untrusted internet (red zone), monitoring how your identity is abused outside your perimeter.
 
 ## Deployment & architecture
 
@@ -82,4 +82,4 @@ Funding, confirmed against primary/reputable sources:
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; confirmed independent VC-backed (no M&A); founded 2022, HQ San Francisco, co-founders Kevin Tian (CEO) & Rahul Madduluri (CTO); Series C $70M Bessemer-led at >$600M valuation, $124M total (2025-11-19); DRP/social-engineering-defense (web/social/ads/domains/dark web) + deepfake verification via GetReal partner; set hedge_fund_fit medium, trifecta untrusted-input, ownership_confidence high.
+- [2026-06-28] Researched; confirmed independent VC-backed (no M&A); founded 2022, HQ San Francisco, co-founders Kevin Tian (CEO) & Rahul Madduluri (CTO); Series C $70M Bessemer-led at >$600M valuation, $124M total (2025-11-19); DRP/social-engineering-defense (web/social/ads/domains/dark web) + deepfake verification via GetReal partner; set hedge_fund_fit medium, risk focus untrusted-input screening, ownership_confidence high.

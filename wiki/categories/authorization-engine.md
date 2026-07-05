@@ -44,9 +44,11 @@ scale — e.g. an agent that can touch many systems and must respect each user's
 access. Teams already doing [policy-as-code](policy-as-code.md) often already own one of these (OPA), so
 it may be a re-use rather than a new buy.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-An authorization engine constrains the **sensitive-data** and **egress** legs: it can
+The core threat model for agent security is the lethal trifecta — untrusted input,
+sensitive-data access, and external egress converging in one agent context. An
+authorization engine constrains the **sensitive-data** and **egress** legs: it can
 deny the read of sensitive data or the action that would move it, per request. It does
 *not* inspect prompt content for injection (that's [ai-runtime-security](ai-runtime-security.md) /
 [agent-runtime-security](agent-runtime-security.md)) — it enforces *whether the action is permitted at all*. It is

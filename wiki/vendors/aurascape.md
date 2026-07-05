@@ -44,7 +44,7 @@ Aurascape watches how people and applications in an organization actually use AI
 
 - Primary: [ai-access-governance](../categories/ai-access-governance.md) — it governs who can use which AI tools and what data may flow to them, the classic shadow-AI discovery + access-control job. Layer: **model-prompt**.
 - Secondary: [ai-runtime-security](../categories/ai-runtime-security.md) — because it inspects and can block prompt/response traffic inline, it overlaps with the AI-firewall/guardrail category.
-- **Lethal-trifecta role:** mainly **sensitive-data** exposure and **egress** control (stopping confidential data from leaving to external AI services); to a lesser degree **untrusted-input** screening on responses. It is fundamentally an egress/DLP-for-AI control sitting at the boundary between the corporate (green/yellow) zone and external AI services (red zone).
+- **Risk role:** mainly preventing sensitive-data exposure and controlling outbound data flows (stopping confidential data from leaving to external AI services); to a lesser degree screening untrusted content in responses. It is fundamentally an egress/DLP-for-AI control sitting at the boundary between the corporate (green/yellow) zone and external AI services (red zone).
 
 ## Deployment & architecture
 

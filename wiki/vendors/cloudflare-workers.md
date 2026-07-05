@@ -36,7 +36,7 @@ tags: [first-party, serverless, edge-compute, cloudflare]
 
 **What it does** — Workers runs functions in V8 isolates (not full containers/VMs) at Cloudflare's edge, with sub-millisecond cold starts and per-request isolation. The broader platform adds Workers AI (inference), AI Gateway, Durable Objects, KV/R2 storage, and a sandboxed code-execution offering for agents. For this wiki it appears as an **ephemeral-environments** primitive: a place to run untrusted or agent-generated code in a strongly isolated, short-lived sandbox with controllable egress.
 
-**Where it sits in the stack** — [ephemeral-environments](../categories/ephemeral-environments.md), governance layer; overlaps Cloudflare's network/SASE and AI-gateway lines (see [cloudflare](cloudflare.md)). Lethal-trifecta role: isolates **untrusted-input** execution and is a natural **egress** chokepoint (all outbound traffic flows through Cloudflare's network). Enabler of [trust-zone-segmentation](../categories/trust-zone-segmentation.md).
+**Where it sits in the stack** — [ephemeral-environments](../categories/ephemeral-environments.md), governance layer; overlaps Cloudflare's network/SASE and AI-gateway lines (see [cloudflare](cloudflare.md)). It isolates execution of **untrusted input** and is a natural chokepoint for **outbound data flows** (all outbound traffic flows through Cloudflare's network). Enabler of [trust-zone-segmentation](../categories/trust-zone-segmentation.md).
 
 **Deployment & architecture** — SaaS / serverless; deploy via Wrangler CLI or API. V8-isolate sandboxing (lighter and more locked-down than containers, but with runtime constraints). Integrates with Cloudflare's WAF, Zero Trust/SASE, AI Gateway, and storage.
 

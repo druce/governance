@@ -72,9 +72,9 @@ traffic through AI Gateway for deeper prompt filtering.
 ## Where it sits in the stack
 
 Primary lens here is the [ai-gateway](../categories/ai-gateway.md) layer (model/prompt) — the "single exit door" for
-model traffic. Its lethal-trifecta role is mainly **egress control** (it is the chokepoint
+model traffic. Its main security role is **egress control** (it is the chokepoint
 where outbound model/tool calls can be logged, capped, and blocked); the **Guardrails + DLP**
-features add an **untrusted-input** moderation leg. The MCP Portals piece lives in the
+features add moderation of untrusted input (prompt injection, unsafe content). The MCP Portals piece lives in the
 governance/trust-zone space and ties into [network-security-sase](../categories/network-security-sase.md) (Cloudflare One) and
 [mcp-gateway](../categories/mcp-gateway.md). Edge hosting of agents/MCP servers on Workers connects to
 [ephemeral-environments](../categories/ephemeral-environments.md) / [cloudflare-workers](cloudflare-workers.md).
@@ -152,4 +152,4 @@ own gateways. On the MCP side: [mcp-gateway](../categories/mcp-gateway.md) vendo
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; scoped page to AI-Gateway/MCP angle. Fixed ownership independent→public (NYSE: NET, IPO Sept 2019, conf high). Established founded 2009, HQ San Francisco; deployment saas/api/inline-proxy/edge; trifecta egress (+untrusted-input via Guardrails/DLP); hedge_fund_fit medium. Reordered categories so primary lens = ai-gateway for this wiki's listing. Cached 3 sources. No M&A. No contradictions.
+- [2026-06-28] Researched; scoped page to AI-Gateway/MCP angle. Fixed ownership independent→public (NYSE: NET, IPO Sept 2019, conf high). Established founded 2009, HQ San Francisco; deployment saas/api/inline-proxy/edge; risk role egress control (+untrusted-input moderation via Guardrails/DLP); hedge_fund_fit medium. Reordered categories so primary lens = ai-gateway for this wiki's listing. Cached 3 sources. No M&A. No contradictions.

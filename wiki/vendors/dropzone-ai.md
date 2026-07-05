@@ -36,7 +36,7 @@ tags: [agentic-soc, ai-soc, alert-triage, mssp]
 
 **What it does** — Dropzone connects to your SIEM/EDR/cloud/identity tooling and, for each alert, runs a full investigation the way an experienced analyst would: pulls context, chases artifacts, decides whether it's a real threat, and writes a verdict with the evidence. It covers phishing, endpoint, network, cloud, identity, and insider-threat alerts. The goal is to clear the Tier-1 triage backlog and cut MTTR without expanding headcount — explicitly marketed (marketing) as "the world's first AI SOC analyst."
 
-**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; an automation layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling, not an AI-application control — trifecta_relevance: none. Operates in the trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; an automation layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling, not an inline prompt/egress control. Operates in the trusted security-ops zone.
 
 **Deployment & architecture** — SaaS with API integrations into SIEM, EDR, and cloud systems; no inline/proxy data-path role. Notably sold to **MSSPs/MDR providers** as well as end-enterprises, so it shows up as the engine behind some managed offerings. Named customers include UiPath, Zapier, Pipe, Mysten Labs.
 
@@ -56,4 +56,4 @@ tags: [agentic-soc, ai-soc, alert-triage, mssp]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established 2023 founding, Seattle HQ, CEO Edward Wu, $37M Series B (Theory Ventures), ~$57.4M total, MSSP channel, independent. Set ownership_confidence high. trifecta=none. hedge_fund_fit=medium (Day-2).
+- [2026-06-28] Researched; established 2023 founding, Seattle HQ, CEO Edward Wu, $37M Series B (Theory Ventures), ~$57.4M total, MSSP channel, independent. Set ownership_confidence high. Not an inline prompt/egress control. hedge_fund_fit=medium (Day-2).

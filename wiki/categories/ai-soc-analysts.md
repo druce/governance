@@ -28,9 +28,9 @@ This is distinct from classic SOAR (rule-based playbooks): these tools reason ov
 
 Day-2. You need a SIEM and an alert pipeline first; the AI analyst sits on top of it. The trigger is alert volume the team cannot keep up with — a common state once AI telemetry, cloud, and SaaS logs all flow in. For a small fund with a thin or outsourced SOC, this can be attractive earlier as a force-multiplier; for a larger in-house SOC it is a Day-2 efficiency play. Maturity and trust in autonomous response are still developing, so most adopt in an assist (human-reviewed) mode first.
 
-## Lethal-trifecta role
+## Security role
 
-Detection/response automation, not prevention. Like the SIEM it sits behind, it does not break a leg of the trifecta directly — it makes the detection-and-response loop faster and cheaper. Green-zone operational tooling; itself a consideration, since an AI analyst with broad read access to security telemetry is a sensitive agent that needs its own governance.
+Detection/response automation, not prevention. Like the SIEM it sits behind, it blocks nothing inline — it makes the detection-and-response loop faster and cheaper after other controls have fired or failed. Green-zone operational tooling; itself a consideration, since an AI analyst with broad read access to security telemetry is a sensitive agent that needs its own governance.
 
 ## Vendors
 

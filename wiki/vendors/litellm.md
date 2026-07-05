@@ -49,7 +49,7 @@ The proxy gives platform teams the things you want at a single exit door for mod
 
 ## Where it sits in the stack
 
-LiteLLM is an [ai-gateway](../categories/ai-gateway.md) in the model/prompt layer. Its core job is to be the **single egress chokepoint** for outbound model traffic — the lethal-trifecta leg it most directly addresses is **egress** (centralizing, authenticating, budgeting and logging every call to external/internal models). It is not primarily an untrusted-input or sensitive-data control, but because the gateway sees every prompt and response it is the natural place to **bolt on guardrails** (PII redaction, content filters), giving it a secondary touch on the sensitive-data and untrusted-input legs. In a trust-zone model it typically lives at the boundary between application zones and external model providers.
+LiteLLM is an [ai-gateway](../categories/ai-gateway.md) in the model/prompt layer. Its core job is to be the **single egress chokepoint** for outbound model traffic — its most direct risk contribution is controlling **outbound data flows** (centralizing, authenticating, budgeting and logging every call to external/internal models). It is not primarily an untrusted-input or sensitive-data control, but because the gateway sees every prompt and response it is the natural place to **bolt on guardrails** (PII redaction, content filters), giving it a secondary role in preventing sensitive-data leakage and screening untrusted input. In a trust-zone model it typically lives at the boundary between application zones and external model providers.
 
 ## Deployment & architecture
 
@@ -99,4 +99,4 @@ Fit is **medium**: excellent if you have a platform/ML-platform engineer comfort
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established founded 2023, SF HQ, founders Krrish Dholakia & Ishaan Jaffer, BerriAI/YC W23, ~$1.6M seed (independent, ownership_confidence high), no M&A. Filled deployment (self-hosted/saas/api/sdk/inline-proxy/on-prem), trifecta_relevance=egress, hedge_fund_fit=medium. Cached 3 sources.
+- [2026-06-28] Researched; established founded 2023, SF HQ, founders Krrish Dholakia & Ishaan Jaffer, BerriAI/YC W23, ~$1.6M seed (independent, ownership_confidence high), no M&A. Filled deployment (self-hosted/saas/api/sdk/inline-proxy/on-prem), risk role=egress control, hedge_fund_fit=medium. Cached 3 sources.

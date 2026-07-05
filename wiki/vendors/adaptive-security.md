@@ -42,7 +42,7 @@ Adaptive Security is a human-layer defense vendor. It runs simulated social-engi
 
 ## Where it sits in the stack
 
-Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. This is a **people-and-process** control, not an inline technical guardrail: it does not sit in the model/prompt path or inspect application traffic. Its lethal-trifecta relevance is, at most, **untrusted-input adjacent** — it hardens the human against malicious inbound social-engineering content, but it does not break any of the three legs at the system level. Trust-zone relevance: the human perimeter (red zone / external untrusted contact), not the AI application data path.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the foundation layer. This is a **people-and-process** control, not an inline technical guardrail: it does not sit in the model/prompt path or inspect application traffic. At most it helps screen **untrusted input** — it hardens the human against malicious inbound social-engineering content — but it is not an inline prompt/egress control at the system level. Trust-zone relevance: the human perimeter (red zone / external untrusted contact), not the AI application data path.
 
 ## Deployment & architecture
 
@@ -85,4 +85,4 @@ Funding trajectory, all confirmed against primary releases:
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; confirmed OpenAI Startup Fund co-led/extended Series A (primary PR Newswire, Apr & Sep 2025) and Bain-led $81M Series B (Dec 2025, $146.5M total); independent (no M&A); founded 2025, HQ New York, founders Brian Long & Andrew Jones; SaaS human-layer training/simulation; set hedge_fund_fit medium, trifecta untrusted-input, ownership_confidence high.
+- [2026-06-28] Researched; confirmed OpenAI Startup Fund co-led/extended Series A (primary PR Newswire, Apr & Sep 2025) and Bain-led $81M Series B (Dec 2025, $146.5M total); independent (no M&A); founded 2025, HQ New York, founders Brian Long & Andrew Jones; SaaS human-layer training/simulation; set hedge_fund_fit medium, risk role untrusted-input screening, ownership_confidence high.

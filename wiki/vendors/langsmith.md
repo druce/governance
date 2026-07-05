@@ -38,7 +38,7 @@ tags: [observability, evals, agent-engineering, langchain]
 
 **What it does** — LangSmith captures detailed traces of every LLM call, tool call, cost, and latency in an agent, then layers evaluation (LLM-as-a-judge and custom evaluators), a prompt playground, dataset management, and human-in-the-loop annotation on top. It is LangChain's primary revenue product and the natural observability choice if you build on LangChain/LangGraph — though it works independently of those frameworks too.
 
-**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Development- and operations-time visibility plus eval; not an inline runtime control, so it does not directly break a leg of the lethal trifecta. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-gateway](../categories/ai-gateway.md) controls rather than replacing them.
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer of the model/prompt tier. Development- and operations-time visibility plus eval; not an inline runtime control, so it does not itself screen prompts or block data egress. Complements [ai-runtime-security](../categories/ai-runtime-security.md) and [ai-gateway](../categories/ai-gateway.md) controls rather than replacing them.
 
 **Deployment & architecture** — SDK-based instrumentation (Python, JS/TS), tightest with LangChain/LangGraph but framework-agnostic. SaaS (LangSmith Cloud) plus self-hosted/enterprise deployment for teams that need traces inside their own boundary. Adjacent "Deployment" product (formerly LangGraph Platform) ships long-running agents on managed infra.
 

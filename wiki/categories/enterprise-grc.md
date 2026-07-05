@@ -39,11 +39,11 @@ risk tiers (see [risk-tiers](risk-tiers.md)), control mappings, and sign-off wor
 [promotion-gates](promotion-gates.md), [hitl-approvals](hitl-approvals.md)) — rather than standing up a parallel system.
 Standing up a *new* GRC tool just for AI is almost never the right call.
 
-## Lethal-trifecta role
+## Security role
 
-**None-detection / oversight.** GRC does not sit inline on any data path and breaks no
-leg of the lethal trifecta directly. It is the governance backbone in the **green
-(governed) zone**: the place where the existence and testing of trifecta-breaking
+**Oversight, not enforcement.** GRC does not sit inline on any data path and blocks
+no threat directly. It is the governance backbone in the **green (governed) zone**:
+the place where the existence and testing of the firm's preventive and detective
 controls is recorded, attested, and audited.
 
 ## Vendors

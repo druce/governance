@@ -38,7 +38,7 @@ tags: [security-ratings, vendor-risk, tprm, attack-surface, data-leak]
 
 **What it does** — UpGuard scores an organization and its vendors on external security posture (like the other ratings vendors) but bundles attack-surface monitoring and a well-known data-leak-detection capability (it built a reputation publicizing exposed-cloud-storage breaches). Buyers use it for vendor screening/monitoring, security questionnaires, and watching their own external exposure.
 
-**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. External risk-signal + exposure detection feeding TPRM, not a runtime data control (`trifecta_relevance: none`). Peer of [bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [black-kite](black-kite.md); complements assessment workflows like [processunity](processunity.md) / [onetrust](onetrust.md).
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. External risk-signal + exposure detection feeding TPRM, not a runtime data control. Peer of [bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [black-kite](black-kite.md); complements assessment workflows like [processunity](processunity.md) / [onetrust](onetrust.md).
 
 **Deployment & architecture** — SaaS. Outside-in ratings + attack-surface/data-leak scanning + questionnaire workflow; integrations with GRC/security tooling.
 

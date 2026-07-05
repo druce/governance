@@ -45,14 +45,14 @@ exists. Distinct from [ai-runtime-security](ai-runtime-security.md) (protects th
 governs the AI your people reach for. It is the usage-governance complement to the
 data-side [dlp](dlp.md) control.
 
-## Lethal-trifecta role
+## Security role
 
-Breaks the **sensitive-data** and **egress** legs at the human/agent boundary: it
-prevents sensitive data from reaching an untrusted external model (egress control)
-and redacts or blocks the sensitive content itself before it leaves
-(sensitive-data control). It polices the edge between the green zone (internal data)
-and the red zone (public AI on the open internet) — the velvet rope precisely where
-employees would otherwise hand data to an outside model.
+A preventive, inline control on outbound data flows at the human/agent boundary: it
+stops sensitive data from reaching an untrusted external model, and redacts or
+blocks the sensitive content itself before it leaves. It polices the edge between
+the green zone (internal data) and the red zone (public AI on the open internet) —
+the velvet rope precisely where employees would otherwise hand data to an outside
+model.
 
 ## Vendors
 

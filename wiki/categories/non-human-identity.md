@@ -28,9 +28,9 @@ If the human IdP is the bouncer at the door, NHI is the same discipline applied 
 
 Day-2 for most funds, but it moves toward Day-1 the moment agents start acting autonomously or you have sprawl of service accounts and tokens (almost everyone does). The trigger is agentic AI: an agent that can authenticate to internal systems is a non-human identity with standing access, and ungoverned agent/service-account credentials are a fast-growing breach path. A small fund with few agents can defer; a shop deploying agents against production systems should treat this as near-term.
 
-## Lethal-trifecta role
+## Security role
 
-Primarily the sensitive-data and egress legs. NHI decides what a workload or agent is allowed to authenticate to (which systems, which data) and — via short-lived, scoped credentials — limits how far a compromised agent can reach or exfiltrate. Lives at the boundary of the yellow and green zones, where agents hold real credentials.
+A preventive control on access to sensitive data and on how far data can flow out. NHI decides what a workload or agent is allowed to authenticate to (which systems, which data) and — via short-lived, scoped credentials — bounds the blast radius of a compromised agent or stolen credential, limiting what it can reach or exfiltrate. Lives at the boundary of the yellow and green zones, where agents hold real credentials.
 
 ## Vendors
 

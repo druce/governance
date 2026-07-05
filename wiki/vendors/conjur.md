@@ -38,7 +38,7 @@ tags: [secrets, devops, machine-identity, cyberark, palo-alto]
 
 **What it does** — Conjur stores, rotates, and brokers machine secrets (API keys, DB credentials, tokens) for CI/CD pipelines, containers, and Kubernetes. Applications authenticate to Conjur via machine identity and fetch secrets at runtime through an API/SDK, removing hardcoded credentials from code and config. It ships as **Conjur Open Source** plus commercial **Conjur Enterprise / CyberArk Secrets Manager**.
 
-**Where it sits in the stack** — Foundation-layer [secrets-management](../categories/secrets-management.md), adjacent to [non-human-identity](../categories/non-human-identity.md). It addresses the **sensitive-data** leg of the lethal trifecta by keeping high-value credentials out of code and reachable only by authenticated workloads. In an AI context it secures the secrets agents and model-serving infra need.
+**Where it sits in the stack** — Foundation-layer [secrets-management](../categories/secrets-management.md), adjacent to [non-human-identity](../categories/non-human-identity.md). It controls access to sensitive data by keeping high-value credentials out of code and reachable only by authenticated workloads. In an AI context it secures the secrets agents and model-serving infra need.
 
 **Deployment & architecture** — Self-hosted (the OSS lineage) or via CyberArk's SaaS Secrets Manager; API/SDK-driven secret retrieval; native integrations for Kubernetes, OpenShift, Ansible, and major CI/CD tools. A direct competitor in posture to [hashicorp-vault](hashicorp-vault.md).
 

@@ -60,8 +60,7 @@ issuance, least-privilege policy, and centralized auditing of every machine-to-m
 
 Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Aembit is the "access management"
 pole of NHI, as distinct from the "posture/discovery/governance" pole occupied by [oasis-security](oasis-security.md),
-[token-security](token-security.md), [astrix-security](astrix-security.md), and [clutch-security](clutch-security.md). In lethal-trifecta terms it works
-the **sensitive-data** and **egress** legs: by gating which workload/agent can reach which resource,
+[token-security](token-security.md), [astrix-security](astrix-security.md), and [clutch-security](clutch-security.md). By gating which workload/agent can reach which resource,
 with short-lived scoped credentials, it constrains an agent's ability to reach sensitive data and to
 exfiltrate via over-broad service-to-service access. It does not inspect prompts or untrusted input.
 It lives at the boundary between trust zones — it is the broker that decides whether a workload in

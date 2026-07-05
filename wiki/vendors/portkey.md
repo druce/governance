@@ -38,7 +38,7 @@ tags: [ai-gateway, llm-routing, observability, palo-alto, acquired]
 
 **What it does** — Portkey is the "single exit door" for model traffic: one API endpoint in front of many model providers, with routing/failover, load balancing, cost and rate controls, prompt/response logging, caching, and guardrail hooks. It markets itself as a unified control plane for production AI and claims to process trillions of tokens per month at the low latency needed for agent-to-agent communication.
 
-**Where it sits in the stack** — Model/prompt-layer [ai-gateway](../categories/ai-gateway.md). As a chokepoint on model egress it primarily controls the **egress** leg of the lethal trifecta (what leaves to which model/provider) and is the natural enforcement point to bolt **untrusted-input** inspection onto. Under PANW it becomes the AI Gateway that feeds Prisma AIRS three capabilities: AI runtime security (traffic inspection), agent identity security, and AI observability.
+**Where it sits in the stack** — Model/prompt-layer [ai-gateway](../categories/ai-gateway.md). As a chokepoint on model traffic it primarily controls outbound data flows (what leaves to which model/provider) and is the natural enforcement point to bolt untrusted-input inspection (prompt injection screening) onto. Under PANW it becomes the AI Gateway that feeds Prisma AIRS three capabilities: AI runtime security (traffic inspection), agent identity security, and AI observability.
 
 **Deployment & architecture** — Inline gateway/proxy deployed as SaaS or self-hosted, fronting provider APIs via a unified API; SDKs and an OpenAI-compatible interface; integrates with observability and guardrail tooling. Designed for high-throughput agentic workloads.
 

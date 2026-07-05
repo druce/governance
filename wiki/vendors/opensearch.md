@@ -36,7 +36,7 @@ tags: [vector-database, retrieval, open-source, linux-foundation, aws]
 
 **What it does** — OpenSearch indexes documents and serves keyword, vector (k-NN), and hybrid search. For RAG it is the **vector-retrieval** layer; it is also widely used for logging/SIEM-style analytics, so some shops reuse one platform for both. Originated in 2021 when AWS forked Elasticsearch/Kibana 7.10 after Elastic's license change.
 
-**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (indexed corpus + embeddings). Document-level/field-level security supports entitlement-aware retrieval if configured.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). It holds sensitive data (indexed corpus + embeddings). Document-level/field-level security supports entitlement-aware retrieval if configured.
 
 **Deployment & architecture** — Self-hostable open-source (Apache-2.0), or the managed **Amazon OpenSearch Service** (SaaS) on AWS; also offered by other providers. API/SDK-driven; k-NN plugin for vectors.
 

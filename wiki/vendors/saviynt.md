@@ -40,7 +40,7 @@ tags: [identity-governance, iga, cloud-pam, converged-identity]
 Saviynt's Enterprise Identity Cloud converges several identity disciplines that legacy vendors sell separately: identity governance & administration (access requests, certifications, lifecycle, SoD), cloud privileged access management (PAM), application access governance (deep ERP/SoD controls, e.g. SAP), and third-party/non-human identity governance — increasingly with AI/agent identity. The pitch is one cloud platform instead of stitched-together point tools.
 
 ## Where it sits in the stack
-The [identity-governance](../categories/identity-governance.md) foundation (IGA/ISPM). It addresses the **sensitive-data** leg of the lethal trifecta by governing and attesting entitlements — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) must inherit.
+The [identity-governance](../categories/identity-governance.md) foundation (IGA/ISPM). It controls access to sensitive data by governing and attesting entitlements — the access substrate AI assistants and [entitlement-aware-rag](../categories/entitlement-aware-rag.md) must inherit.
 
 ## Deployment & architecture
 Cloud-native SaaS (born in the cloud, unlike SailPoint's on-prem IdentityIQ heritage). Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md), [ping-identity](ping-identity.md)), HR, cloud platforms, and enterprise apps; notable depth in SAP/ERP access controls and cloud PAM.

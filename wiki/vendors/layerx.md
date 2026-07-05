@@ -10,7 +10,7 @@ website: https://layerxsecurity.com
 founded: 2022
 hq: Tel Aviv, Israel
 ownership_state: acquired-pending
-owner: null
+owner: Akamai Technologies
 ownership_note: Akamai Technologies announced intent to acquire for ~$205M cash (2026-05-14); close expected Q3 2026. Independent VC-backed until then.
 acquisition: {announced: 2026-05-14, closed: null, price: null}
 funding_total: $45M

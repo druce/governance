@@ -38,7 +38,7 @@ tags: [security-ratings, vendor-risk, tprm, cyber-ratings]
 
 **What it does** — SecurityScorecard continuously scans the internet for signals (patching cadence, exposed services, DNS/email hygiene, leaked credentials, malware chatter) and rolls them into a letter-grade rating per organization. Buyers use it to screen and monitor suppliers without sending questionnaires, and to benchmark their own posture. Increasingly bundles supply-chain detection and, via the 2025 HyperComply buy, AI-driven security-questionnaire automation.
 
-**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. An external risk-signal source feeding TPRM decisions — not a runtime data control (`trifecta_relevance: none`). Complements assessment-workflow platforms like [processunity](processunity.md) and [onetrust](onetrust.md); a direct peer of [bitsight](bitsight.md), [black-kite](black-kite.md), [upguard](upguard.md).
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. An external risk-signal source feeding TPRM decisions — not a runtime data control or inline prompt/egress control. Complements assessment-workflow platforms like [processunity](processunity.md) and [onetrust](onetrust.md); a direct peer of [bitsight](bitsight.md), [black-kite](black-kite.md), [upguard](upguard.md).
 
 **Deployment & architecture** — SaaS. Outside-in scanning + ratings API/portal; integrations with GRC/TPRM and security tooling; questionnaire automation (post-HyperComply).
 

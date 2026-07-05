@@ -30,7 +30,7 @@ _NAME = r"([A-Z][\w&.' -]{1,40}?)"
 OWNER_PATTERNS = [
     re.compile(r"(?:acquired by|acq\.? by|taken private by|bought by|subsidiary of|owned by|unit of|now part of|merged into)\s+" + _NAME + _STOP, re.I),
     re.compile(r"product(?:\s+\w+)? of\s+" + _NAME + _STOP, re.I),
-    re.compile(r"(?:^|[.;:]\s+)" + _NAME.replace(" -", "-") + r"\s+(?:announced intent to acquire|announced acquisition|acquired\b|acquires\b|to acquire\b|hired)", re.M),
+    re.compile(r"(?:^|[.;:]\s+)" + _NAME + r"\s+(?:announced intent to acquire|announced acquisition|acquired\b|acquires\b|to acquire\b|hired)", re.M | re.I),
     re.compile(_NAME + r"\s+majority shareholder", 0),
 ]
 PE_HINT = re.compile(r"pe-owned|private equity|taken private|pe-backed", re.I)

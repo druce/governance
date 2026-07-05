@@ -68,7 +68,7 @@ of prompts and responses. But Lasso is genuinely cross-layer:
 - [agent-runtime-security](../categories/agent-runtime-security.md) — MCP Gateway + intent baselining for agentic apps.
 - [ai-access-governance](../categories/ai-access-governance.md) — shadow-AI discovery and employee-AI control via browser extension.
 
-**Lethal-trifecta role:** addresses all three legs — screens **untrusted input** (prompt
+**Risk coverage:** it screens **untrusted input** (prompt
 injection/jailbreak detection), guards **sensitive data** (DLP on prompts/responses), and
 controls **egress** (blocking leakage to external LLMs and via MCP tool calls). It lives at
 the boundary between the green zone (internal data/agents) and the red zone (external models

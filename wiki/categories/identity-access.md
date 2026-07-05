@@ -28,9 +28,9 @@ Everything else in the stack leans on this. DLP, data-access governance, AI acce
 
 Day-1, non-negotiable. No hedge fund stands up a governed AI platform without an IdP already in place — in practice it is usually the oldest piece of the security stack. For most shops this slot is already filled (commonly Microsoft Entra ID, because it ships with M365). The AI-era question is not "do we have an IdP" but "is SSO/MFA actually enforced everywhere, and can it issue and govern identities for agents and service accounts, not just people?"
 
-## Lethal-trifecta role
+## Security role
 
-Cross-cutting rather than a single leg. Identity does not by itself break untrusted-input, sensitive-data, or egress — but it is the substrate that makes zone enforcement possible. You cannot keep an agent out of the green zone, or scope it to read-only data, if you cannot first prove which identity is making the request. It is foundational to all three legs and lives across every trust zone.
+Cross-cutting substrate rather than a single control. Identity does not by itself screen untrusted input, gate sensitive data, or block exfiltration — but it is what makes zone enforcement possible. You cannot keep an agent out of the green zone, or scope it to read-only data, if you cannot first prove which identity is making the request. Preventive by nature, foundational to every downstream control, and lives across every trust zone.
 
 ## Vendors
 

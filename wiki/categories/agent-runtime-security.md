@@ -45,9 +45,12 @@ production systems, or act on untrusted web/email content does. It pairs natural
 (keep agents out of the green zone unless heavily vetted). Buy it when "what could this
 agent do if it were tricked?" stops having a comfortable answer.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-This is the layer that **breaks the chain at the agent's action boundary**. It targets
+The lethal trifecta — untrusted input, access to sensitive data, and external egress
+combining in one agent context — is the core threat model for agent security, and this
+category exists to fight it directly. This is the layer that **breaks the chain at the
+agent's action boundary**. It targets
 **untrusted input** (prompt injection arriving via tool outputs, documents, web content)
 and **egress** (blocking the exfiltration or unauthorized action the injection tries to
 trigger). It's most at home in the **yellow and green zones**, where agents have data or

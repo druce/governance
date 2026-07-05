@@ -46,7 +46,7 @@ The company frames adoption around a "Minimum Viable Governance" / right-sizing 
 
 This is a [ai-governance-platform](../categories/ai-governance-platform.md) at the **governance** layer — the oversight/system-of-record tier that sits above the models and the runtime/data tooling, not in the request path.
 
-- **Lethal-trifecta role:** none directly. ModelOp is an out-of-band governance and documentation control plane; it does not break the untrusted-input / sensitive-data / egress legs at runtime the way an inline guardrail or DLP tool does. Its value is process assurance, inventory, and evidence, not interception.
+- **Runtime-control role:** none directly. ModelOp is an out-of-band governance and documentation control plane; it does not screen prompts, gate data access, or block exfiltration at runtime the way an inline guardrail or DLP tool does. Its value is process assurance, inventory, and evidence, not interception.
 - **Trust zone:** spans the governance/oversight plane across all zones — it inventories and tracks models regardless of where they run, and integrates with the MLOps/monitoring stack to pull signals back.
 
 ## Deployment & architecture

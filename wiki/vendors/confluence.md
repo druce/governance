@@ -36,7 +36,7 @@ tags: [first-party, content-source, rag-source, atlassian]
 
 **What it does** — Confluence stores structured team documentation (spaces, pages). For an AI stack it is a **content source**: a clean, text-rich corpus that RAG and enterprise assistants index well. Like all content sources, its retrieval safety depends on its page/space permissions — RAG must honor them, not flatten them.
 
-**Where it sits in the stack** — [content-sources](../categories/content-sources.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: **sensitive-data** leg. Needs [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and classification/DLP discipline before exposure to an assistant.
+**Where it sits in the stack** — [content-sources](../categories/content-sources.md), retrieval layer (Day-1 if doing RAG). The risk it concentrates is **sensitive-data** exposure. Needs [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and classification/DLP discipline before exposure to an assistant.
 
 **Deployment & architecture** — SaaS (Confluence Cloud) or self-hosted (Confluence Data Center; Server is EOL). Surfaced to AI via Atlassian's APIs/Rovo, Glean and other connectors, or custom ingestion.
 

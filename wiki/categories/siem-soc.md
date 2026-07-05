@@ -28,9 +28,9 @@ For AI specifically, the SIEM is where prompt/response logs, gateway traffic, an
 
 Day-1, required — and usually already deployed. No regulated firm operates without centralized logging and some detection capability; for a hedge fund it is both a security and a compliance/audit necessity. The AI-era work is not buying a SIEM but *piping AI telemetry into it* — making sure gateway logs, assistant transcripts, and agent activity are ingested, retained, and alertable alongside everything else.
 
-## Lethal-trifecta role
+## Security role
 
-Detection and forensics, not prevention. The SIEM does not break untrusted-input, sensitive-data, or egress directly — it is how you *notice* when a control failed and reconstruct the chain afterward. It is the green-zone audit backbone and the evidence layer behind every other control.
+Detective and out-of-band, not preventive. The SIEM does not screen untrusted input, gate sensitive data, or block outbound flows itself — it is how you *notice* when a control failed and reconstruct the chain afterward. It is the green-zone audit backbone and the evidence layer behind every other control.
 
 ## Vendors
 

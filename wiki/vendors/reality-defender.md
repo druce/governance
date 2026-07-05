@@ -40,7 +40,7 @@ tags: [deepfake, detection, multimodal]
 Reality Defender scans media and flags whether it is likely AI-generated or manipulated. It covers four modalities — audio, video, images, and text — and is pitched for real-time use cases like screening inbound voice calls for synthetic/cloned speech and vetting submitted documents or video. The job it does: give a fraud/security team a probabilistic "is this real?" signal they can wire into onboarding, call centers, or content review, rather than relying on human eyes.
 
 ## Where it sits in the stack
-Sits in the [anti-deepfake](../categories/anti-deepfake.md) category at the **foundation** layer — it defends the *authenticity of inputs* (people, media, voice) rather than securing a model or prompt. In lethal-trifecta terms its relevance is **untrusted-input**-adjacent: it helps a human or system decide whether incoming media is trustworthy. It is a social-engineering / authenticity control, not an AI-runtime or data-governance control. Trust zone: the boundary where external media/communications enter the org (red→yellow).
+Sits in the [anti-deepfake](../categories/anti-deepfake.md) category at the **foundation** layer — it defends the *authenticity of inputs* (people, media, voice) rather than securing a model or prompt. Its risk role is screening untrusted input at the human boundary: it helps a human or system decide whether incoming media is trustworthy. It is a social-engineering / authenticity control, not an AI-runtime or data-governance control. Trust zone: the boundary where external media/communications enter the org (red→yellow).
 
 ## Deployment & architecture
 - **SaaS web platform + REST API** for real-time and batch detection (vendor description).

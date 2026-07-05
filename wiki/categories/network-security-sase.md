@@ -42,14 +42,14 @@ unsanctioned models, log prompts, apply DLP to uploads). For a hedge-fund CTO th
 is the cheapest existing lever for shadow-AI control before buying a dedicated
 [ai-access-governance](ai-access-governance.md) tool — though it's destination-aware, not intent-aware.
 
-## Lethal-trifecta role
+## Security role
 
-Primarily an **egress** control: the TLS-inspecting proxy is where outbound data
-to external models and tools can be seen and stopped, breaking the exfiltration
-leg of the trifecta at the network boundary. It also touches **untrusted input**
-(inbound web/content filtering) and is the enforcement plane for trust-zone
-egress rules — e.g. denying a yellow-zone workload any route to the public
-internet. Lives at the perimeter of every zone; it's the wall between
+Primarily a preventive, inline control on **outbound data flows**: the
+TLS-inspecting proxy is where outbound data to external models and tools can be
+seen and stopped, blocking exfiltration at the network boundary. It also screens
+inbound untrusted content (web/content filtering) and is the enforcement plane
+for trust-zone egress rules — e.g. denying a yellow-zone workload any route to
+the public internet. Lives at the perimeter of every zone; it's the wall between
 **green/yellow (internal)** and the **red zone (open internet)**.
 
 ## Vendors

@@ -41,13 +41,14 @@ email and endpoints is often already owned; the AI-specific gap — data leaving
 prompts — is what is new and urgent the moment employees use public AI tools (they
 do). Pair it with [ai-access-governance](ai-access-governance.md) for prompt-aware enforcement.
 
-## Lethal-trifecta role
+## Security role
 
-DLP directly breaks the **egress** leg — it is the control that stops sensitive data
-from leaving even when an attacker or careless user has lined up the other two legs.
-It also operates on the **sensitive-data** leg by recognizing what is sensitive in
-the outbound stream. It lives at the boundary between the **green/yellow zones and
-the outside (red)**: the last gate before data crosses out of trusted territory.
+A preventive, inline control on outbound data flows — it blocks exfiltration even
+when an attacker or careless user already has access to the data and an outbound
+channel lined up. Its core competence is recognizing what is sensitive in the
+outbound stream and stopping it in motion. It lives at the boundary between the
+**green/yellow zones and the outside (red)**: the last gate before data crosses out
+of trusted territory.
 
 ## Vendors
 

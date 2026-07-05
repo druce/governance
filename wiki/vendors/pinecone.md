@@ -36,7 +36,7 @@ tags: [vector-database, retrieval, independent]
 
 **What it does** — Pinecone stores embeddings and serves low-latency similarity search at scale without you running infrastructure. In a RAG pipeline it is the **vector-retrieval** layer: index document embeddings, retrieve top-k matches per query. Known for ease of use and a serverless model that scales to billions of vectors.
 
-**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Lethal-trifecta role: holds **sensitive-data** (embeddings of your corpus — which can leak content, so it is in scope for data governance). Namespaces/metadata filtering support tenant and entitlement separation, but entitlement-aware retrieval is your responsibility to wire.
+**Where it sits in the stack** — [vector-retrieval](../categories/vector-retrieval.md), retrieval layer (Day-1 if doing RAG). Risk role: it holds sensitive data (embeddings of your corpus — which can leak content, so it is in scope for data governance). Namespaces/metadata filtering support tenant and entitlement separation, but entitlement-aware retrieval is your responsibility to wire.
 
 **Deployment & architecture** — SaaS / fully-managed, API/SDK-driven (serverless and pod-based tiers). Cloud-hosted on AWS/GCP/Azure regions; not self-hostable. Integrates with LangChain/LlamaIndex and the usual embedding providers.
 

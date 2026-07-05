@@ -38,7 +38,7 @@ tags: [tprm, vendor-risk, grc, third-party-risk]
 
 **What it does** — ProcessUnity runs the TPRM lifecycle: vendor onboarding, risk-tiering, assessments/questionnaires, continuous monitoring, and remediation, plus broader GRC (policy, controls). The 2023 CyberGRX combination added an "exchange" of pre-completed third-party risk assessments and predictive risk data, reducing the questionnaire burden on both buyers and vendors.
 
-**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. Process/workflow + data for assessing suppliers — including AI vendors — not a runtime data control (`trifecta_relevance: none`). Complements security-ratings vendors ([bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md)) by owning the assessment workflow they feed into.
+**Where it sits in the stack** — [vendor-risk](../categories/vendor-risk.md), governance layer. Process/workflow + data for assessing suppliers — including AI vendors — not a runtime data control. Complements security-ratings vendors ([bitsight](bitsight.md), [securityscorecard](securityscorecard.md), [black-kite](black-kite.md), [upguard](upguard.md)) by owning the assessment workflow they feed into.
 
 **Deployment & architecture** — SaaS. Questionnaire/assessment engine + CyberGRX exchange data; integrations with GRC and security tooling.
 

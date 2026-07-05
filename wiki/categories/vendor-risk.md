@@ -42,13 +42,13 @@ questions to the standard vendor questionnaire and to flag AI/model subprocessor
 the vendor inventory. This is where "is our data being used to train someone's model?"
 gets answered contractually.
 
-## Lethal-trifecta role
+## Security role
 
-**None-detection / oversight.** Vendor risk does not sit inline and breaks no leg of
-the trifecta directly. It is a **green-zone governance control** that gates *which*
-external parties (and their egress paths) you allow into the stack in the first
-place — an upstream filter on the supply chain rather than a runtime enforcement
-point. Closely related but distinct from [software-supply-chain](software-supply-chain.md) (code/dependency
+**Oversight, not enforcement.** Vendor risk does not sit inline and blocks nothing
+at runtime. It is a **green-zone governance control** that gates *which* external
+parties (and their outbound data paths) you allow into the stack in the first
+place — an upstream, preventive filter on the supply chain rather than a runtime
+enforcement point. Closely related but distinct from [software-supply-chain](software-supply-chain.md) (code/dependency
 provenance) and [non-human-identity](non-human-identity.md) (machine credentials for those vendors' agents).
 
 ## Vendors

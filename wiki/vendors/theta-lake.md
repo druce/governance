@@ -60,7 +60,7 @@ often come from separate vendors:
 ## Where it sits in the stack
 
 This is a **governance-layer**, **detective** control on the [comms-surveillance](../categories/comms-surveillance.md)
-slot. Like other surveillance tools it is **"none" on the lethal trifecta** — it
+slot. Like other surveillance tools it is **not an inline control** — it
 does not block untrusted input, sensitive data, or egress in real time; it captures
 records after the fact and detects problems for human review. It lives in the
 **green zone** (records of internal/employee communications), supporting MAR/MNPI

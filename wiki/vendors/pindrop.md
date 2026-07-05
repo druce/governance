@@ -40,7 +40,7 @@ tags: [deepfake, voice, call-center, fraud, authentication]
 Pindrop analyzes the audio, device, and behavioral signals of phone calls to (a) passively authenticate legitimate callers and (b) flag fraudsters, spoofing, and synthetic/cloned voices. Its newer **Pulse** capability targets audio deepfake detection for calls and meetings. The job it does: cut fraud and account-takeover in phone channels while reducing authentication friction for genuine customers — and increasingly, catch AI-generated voices used in social-engineering attacks.
 
 ## Where it sits in the stack
-Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, focused specifically on the **voice/telephony channel**. Lethal-trifecta relevance is **untrusted-input**-adjacent: it decides whether a caller/voice can be trusted before action is taken. It is a fraud / identity / authenticity control, not a model or data-governance control. Trust zone: the inbound call boundary (red→yellow), embedded in contact-center and IVR infrastructure.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, focused specifically on the **voice/telephony channel**. In risk terms it screens **untrusted input** on that channel: it decides whether a caller/voice can be trusted before action is taken. It is a fraud / identity / authenticity control, not a model or data-governance control. Trust zone: the inbound call boundary (red→yellow), embedded in contact-center and IVR infrastructure.
 
 ## Deployment & architecture
 - Delivered as **SaaS / API** integrated into contact-center, IVR, and call platforms; on-prem/private options have historically been available for regulated enterprises.

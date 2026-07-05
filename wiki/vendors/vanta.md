@@ -47,7 +47,7 @@ Important framing for a model-risk reader: this is **compliance automation, not 
 ## Where it sits in the stack
 
 - Layer: **governance** — the [ai-governance-platform](../categories/ai-governance-platform.md) and [enterprise-grc](../categories/enterprise-grc.md) categories.
-- **Lethal-trifecta role: none.** Vanta is a documentation/attestation layer, not a runtime control. It does not sit in the path of untrusted input, sensitive data, or egress; it does not break any leg of the trifecta. It evidences that controls elsewhere exist.
+- **Runtime-control role: none.** Vanta is a documentation/attestation layer, not a runtime control. It does not sit in the path of untrusted input, sensitive data, or egress. It evidences that controls elsewhere exist.
 - Trust zone: governance/oversight plane, not the data/model path.
 
 ## Deployment & architecture

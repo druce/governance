@@ -40,7 +40,7 @@ tags: [non-human-identity, secrets, nhi, zero-trust, agentic]
 Clutch secures the credentials and machine identities that power cloud infrastructure, CI/CD pipelines, and AI systems — API keys, secrets, service accounts, tokens, certificates. It discovers and inventories NHIs, assesses posture/risk, applies Zero Trust verification, and provides threat detection and response, plus AI-agent guardrails and shadow-AI discovery. Its differentiating philosophy is replacing periodic secret *rotation* with real-time dynamic controls and ephemeral identities ("Zero Trust for NHIs").
 
 ## Where it sits in the stack
-Foundation layer, [non-human-identity](../categories/non-human-identity.md). Overlaps with [secrets-management](../categories/secrets-management.md) but positions as a security/governance layer over secrets rather than a vault. Lethal-trifecta role: constrains the **egress / action** leg (what a machine identity or agent can reach and do) and protects the **sensitive-data** leg by finding and locking down over-privileged or exposed credentials.
+Foundation layer, [non-human-identity](../categories/non-human-identity.md). Overlaps with [secrets-management](../categories/secrets-management.md) but positions as a security/governance layer over secrets rather than a vault. It constrains what a machine identity or agent can reach and do, and protects sensitive data by finding and locking down over-privileged or exposed credentials.
 
 ## Deployment & architecture
 SaaS, cloud-agnostic — connects "to wherever your Identities, Agents, and Secrets live" via API/read integrations across cloud, CI/CD, and SaaS. Emphasis on ephemeral, dynamically-issued identities over static long-lived secrets.

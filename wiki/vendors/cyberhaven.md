@@ -46,7 +46,7 @@ A large part of its current pitch is **shadow AI / GenAI data protection**: show
 
 ## Where it sits in the stack
 
-Primary home is the [dlp](../categories/dlp.md) category in the **data layer**, with a strong secondary footprint in [ai-access-governance](../categories/ai-access-governance.md) (CASB-for-AI / shadow-AI). In lethal-trifecta terms it controls the **sensitive-data** and **egress** legs: it watches sensitive data at the endpoint and blocks/controls its exfiltration to untrusted destinations (including AI tools). It does *not* address untrusted-input/prompt-injection — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md). Trust-zone relevance: it instruments the endpoint (the boundary between green/internal and red/external), making it a data-egress control point rather than a model-traffic inspector.
+Primary home is the [dlp](../categories/dlp.md) category in the **data layer**, with a strong secondary footprint in [ai-access-governance](../categories/ai-access-governance.md) (CASB-for-AI / shadow-AI). It controls **sensitive data** and its **outbound movement**: it watches sensitive data at the endpoint and blocks/controls its exfiltration to untrusted destinations (including AI tools). It does *not* address untrusted-input/prompt-injection — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md). Trust-zone relevance: it instruments the endpoint (the boundary between green/internal and red/external), making it a data-egress control point rather than a model-traffic inspector.
 
 ## Deployment & architecture
 

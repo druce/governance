@@ -58,8 +58,8 @@ and policy/oversight tier that sits *above* the runtime data path, not in it. It
 inventory, documentation, risk assessment, attestation and regulatory mapping, not inline
 traffic inspection.
 
-- **Lethal-trifecta role:** **none directly.** Holistic AI does not break the untrusted-input,
-  sensitive-data, or egress legs at runtime — it is an oversight/registry layer. (Its newer
+- **Runtime-control role:** **none directly.** Holistic AI is not an inline prompt/egress control
+  — it is an oversight/registry layer. (Its newer
   "Guardian Agents" / AI Safeguard runtime features edge toward monitoring, but the core product
   is governance, not a firewall.)
 - **Trust zone:** spans the governance plane across all zones; it documents and risk-rates

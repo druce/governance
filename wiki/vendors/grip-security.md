@@ -46,7 +46,7 @@ The job for a buyer: get an accurate, continuously updated map of every SaaS/AI 
 
 Primary category [sspm](../categories/sspm.md); also [browser-security-extension](../categories/browser-security-extension.md) (its endpoint/browser agent extends discovery and control to the user) and [ai-access-governance](../categories/ai-access-governance.md) (shadow-AI discovery and OAuth governance). Layer: foundation.
 
-Lethal-trifecta role: mainly **sensitive-data** and **egress** — it limits which third-party SaaS/AI apps can reach corporate data and where OAuth-granted access can send it. It is not an inline prompt/content firewall; it governs the access plane, not model I/O.
+Its risk role is mainly controlling access to sensitive data and outbound data flows — it limits which third-party SaaS/AI apps can reach corporate data and where OAuth-granted access can send it. It is not an inline prompt/content firewall; it governs the access plane, not model I/O.
 
 ## Deployment & architecture
 

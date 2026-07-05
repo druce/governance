@@ -59,11 +59,11 @@ breach — and extending that same governance to the explosion of AI-agent ident
 
 Primary category: [non-human-identity](../categories/non-human-identity.md) (Foundation layer). Its job is discovery, ownership, and
 least-privilege governance of machine and agent identities — the identity-plane control that sits
-beneath secrets management and IGA. In lethal-trifecta terms it does not inspect prompts or content;
-it constrains the **sensitive-data** and **egress** legs indirectly, by ensuring an agent or service
+beneath secrets management and IGA. It does not inspect prompts or content;
+it constrains access to sensitive data and outbound reach indirectly, by ensuring an agent or service
 account can only reach the data and systems it is entitled to, and by killing orphaned/over-privileged
-credentials an attacker (or a compromised agent) would otherwise use to exfiltrate. It does not address
-the untrusted-input leg — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md) guardrails. Trust-zone relevance:
+credentials an attacker (or a compromised agent) would otherwise use to exfiltrate. It does not screen
+untrusted input — that is the job of [ai-runtime-security](../categories/ai-runtime-security.md) guardrails. Trust-zone relevance:
 it polices who/what can cross zone boundaries at the identity layer.
 
 ## Deployment & architecture

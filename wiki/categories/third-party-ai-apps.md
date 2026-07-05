@@ -28,9 +28,9 @@ The niche AI tools — legal review, coding, research, transcription, market-dat
 
 If you skip this, third-party AI apps become indistinguishable from [shadow AI](ai-access-governance.md) — the only difference is whether procurement signed a contract.
 
-## Lethal-trifecta role
+## Security role
 
-Same profile as any assistant: a third-party AI app can take **untrusted input**, touch **sensitive data** you feed it, and **egress** to an external model and the vendor's infrastructure — so potentially **all three legs**. The added wrinkle is *vendor trust*: you're now also relying on a third party's security posture and data-handling, which is why [vendor-risk](vendor-risk.md) is the gating control. These apps sit in the yellow zone at best; until vetted and routed, assume red.
+Same risk profile as any assistant: a third-party AI app can ingest untrusted input (prompt injection, poisoned content), touch sensitive data you feed it, and send data out to an external model and the vendor's infrastructure — the full leak-and-exfiltration exposure in one package. The added wrinkle is *vendor trust*: you're now also relying on a third party's security posture and data-handling, which is why [vendor-risk](vendor-risk.md) is the gating control. These apps sit in the yellow zone at best; until vetted and routed, assume red.
 
 ## Vendors
 

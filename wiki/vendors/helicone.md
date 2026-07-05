@@ -38,7 +38,7 @@ tags: [open-source, observability, proxy, ai-gateway, yc-w23, maintenance-mode]
 
 **What it does** — Helicone sits as a proxy between your app and LLM providers: change one line (point your base URL at Helicone) and it logs every request/response, cost, latency, and usage, with caching, rate-limiting, and a unified gateway to 100+ models via an OpenAI-compatible endpoint. The low-friction proxy model was its signature. It processed ~14.2 trillion tokens across ~16,000 organizations.
 
-**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer; its gateway features also overlap [ai-gateway](../categories/ai-gateway.md). As a proxy it sits on the model-traffic path, but it is an observability/routing layer, not a security firewall — it does not by itself break a leg of the lethal trifecta. Adjacent to [litellm](litellm.md), [portkey](portkey.md), [openrouter](openrouter.md) on the gateway side.
+**Where it sits in the stack** — The [llm-observability](../categories/llm-observability.md) layer; its gateway features also overlap [ai-gateway](../categories/ai-gateway.md). As a proxy it sits on the model-traffic path, but it is an observability/routing layer, not a security firewall — it does not by itself screen prompts or block sensitive-data leakage. Adjacent to [litellm](litellm.md), [portkey](portkey.md), [openrouter](openrouter.md) on the gateway side.
 
 **Deployment & architecture** — Inline proxy (the default, one-line integration), plus async logging SDK option; self-hostable OSS or Helicone Cloud SaaS. Integrates with OpenAI, Anthropic, Azure, and other providers at the API layer.
 

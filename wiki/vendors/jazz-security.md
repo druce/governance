@@ -38,7 +38,7 @@ tags: [dlp, ai-native-dlp, data-loss-prevention, agentic-investigator]
 
 **What it does** — Jazz replaces rigid, regex/rule-driven DLP with a forensic endpoint agent that watches how data is actually used, plus an autonomous Agentic Investigator that judges intent and context to decide whether a given data movement is risky. The pitch: traditional DLP buries teams in false positives while real leaks slip through; Jazz aims to cut the noise and surface genuine exfiltration/insider risk. Relevant to AI because it targets data leaving via modern workflows — including paste-into-chatbot and other AI egress paths.
 
-**Where it sits in the stack** — [dlp](../categories/dlp.md) in the Data layer; adjacent to [ai-access-governance](../categories/ai-access-governance.md) (shadow-AI / data-into-LLM egress) and to [data-access-governance](../categories/data-access-governance.md). Lethal-trifecta role: it controls **sensitive-data** exposure and **egress** (data leaving to untrusted destinations). Lives at the endpoint/data boundary, the yellow-zone control point.
+**Where it sits in the stack** — [dlp](../categories/dlp.md) in the Data layer; adjacent to [ai-access-governance](../categories/ai-access-governance.md) (shadow-AI / data-into-LLM egress) and to [data-access-governance](../categories/data-access-governance.md). It controls sensitive-data exposure and outbound flows (data leaving to untrusted destinations). Lives at the endpoint/data boundary, the yellow-zone control point.
 
 **Deployment & architecture** — Endpoint-agent architecture (forensic agent for data-usage visibility) with SaaS analysis backend. Endpoint-based control rather than inline network proxy.
 
@@ -58,4 +58,4 @@ tags: [dlp, ai-native-dlp, data-loss-prevention, agentic-investigator]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established Jazz is an AI-native DLP company (NOT agentic-SOC), founded 2024 Tel Aviv, CEO Ido Livneh, $61M (seed+A) led by Glilot/Team8, independent. **Reclassified primary category from ai-soc-analysts/siem-soc to dlp; layer foundation→data; trifecta none→[sensitive-data, egress].** Soft category mismatch flagged. ownership_confidence high.
+- [2026-06-28] Researched; established Jazz is an AI-native DLP company (NOT agentic-SOC), founded 2024 Tel Aviv, CEO Ido Livneh, $61M (seed+A) led by Glilot/Team8, independent. **Reclassified primary category from ai-soc-analysts/siem-soc to dlp; layer foundation→data; risk role updated from none to sensitive-data exposure + egress control.** Soft category mismatch flagged. ownership_confidence high.

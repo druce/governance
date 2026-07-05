@@ -43,9 +43,12 @@ in code, no central view of which agent can act in which SaaS app as whom. Buy o
 this to avoid a pile of bespoke, poorly-secured integrations. For a small fund it may
 arrive bundled with the agent platform; standalone adoption signals a real agent program.
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-This layer governs the **sensitive-data** and **egress** legs by controlling *how an agent
+The lethal trifecta — untrusted input, sensitive-data access, and external egress
+combining in a single agent context — is the core threat model for agent security,
+and credentials are where two of its legs get their reach. This layer governs the
+**sensitive-data** and **egress** legs by controlling *how an agent
 authenticates to the systems holding data and the paths out*. Done well — short-lived,
 scoped, per-user-delegated credentials, vaulted not hardcoded — it shrinks what a
 compromised or injected agent can reach and do. Done badly (broad, long-lived tokens) it

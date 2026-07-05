@@ -40,7 +40,7 @@ tags: [deepfake, forensics, provenance, content-authenticity]
 GetReal combines real-time deepfake detection with forensic content analysis and content-provenance/authenticity verification. Beyond a yes/no detector, it positions as a "Forensics Platform as a Service" with detection plus human expert investigation and response. The job it does: when an org receives a suspicious call, video, or piece of media (e.g., a "CFO" on a video call authorizing a transfer), GetReal helps determine whether it is authentic and supports an incident response.
 
 ## Where it sits in the stack
-Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, defending the authenticity of human communications and media. Lethal-trifecta relevance is **untrusted-input**-adjacent: it gates whether incoming media/identity can be trusted. It is a social-engineering / authenticity and digital-forensics control rather than a model/data control. Trust zone: the external-communications boundary (red→yellow), with an incident-response role inside the org.
+Sits in [anti-deepfake](../categories/anti-deepfake.md) at the **foundation** layer, defending the authenticity of human communications and media. Its risk role is screening untrusted input at the human boundary: it gates whether incoming media/identity can be trusted. It is a social-engineering / authenticity and digital-forensics control rather than a model/data control. Trust zone: the external-communications boundary (red→yellow), with an incident-response role inside the org.
 
 ## Deployment & architecture
 - **SaaS platform + API** ("FPaaS"); product line spans:

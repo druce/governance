@@ -36,7 +36,7 @@ tags: [dspm, data-access-governance, cloud-security, ai-data-security]
 
 **What it does** — Sentra scans cloud environments (agentless) to find and classify sensitive data, score posture/risk, and detect risky movement (data detection & response). Its current emphasis is **data security for AI** — keeping training datasets and gen-AI prompts free of PII/restricted data — alongside data access governance (who/what can reach sensitive data). You buy it to get a fast, low-friction map of cloud data risk without deploying agents.
 
-**Where it sits in the stack** — Primary: [dspm](../categories/dspm.md); also [data-access-governance](../categories/data-access-governance.md). Data layer. Lethal-trifecta role: the **sensitive-data** leg (discover/classify/constrain) and helping the **egress** leg by keeping sensitive data out of prompts/training. Trust zones: green/yellow cloud data plane feeding AI.
+**Where it sits in the stack** — Primary: [dspm](../categories/dspm.md); also [data-access-governance](../categories/data-access-governance.md). Data layer. It controls access to sensitive data (discover/classify/constrain) and reduces leakage risk by keeping sensitive data out of prompts/training. Trust zones: green/yellow cloud data plane feeding AI.
 
 **Deployment & architecture** — SaaS, **agentless/cloud-connector** (scans cloud accounts and datastores without installing agents) — a fast, low-touch deployment story. Cloud-first (AWS/Azure/GCP, SaaS). Integrates with DLP, IAM, and SIEM/workflow tooling. Direct architectural analog to [cyera](cyera.md).
 

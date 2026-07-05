@@ -38,7 +38,7 @@ tags: [grc, irm, risk-management, no-code]
 
 **What it does** — Risk Cloud lets risk/compliance teams build and run GRC workflows — enterprise risk, compliance frameworks, third-party risk, controls, audit, policy — without code, via a drag-and-drop application builder. The selling point is configurability and speed-to-value versus heavyweight incumbents.
 
-**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for risk/control workflows, not a runtime data control (`trifecta_relevance: none`). Can host AI-use-case risk assessments and policy attestations, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. System of record for risk/control workflows, not a runtime data control — it is not an inline prompt/egress control. Can host AI-use-case risk assessments and policy attestations, overlapping [ai-governance-platform](../categories/ai-governance-platform.md).
 
 **Deployment & architecture** — SaaS. No-code app/workflow builder; integrations with security and IT tooling; supports third-party-risk questionnaires and continuous-control mappings.
 

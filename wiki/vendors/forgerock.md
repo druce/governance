@@ -40,7 +40,7 @@ tags: [iam, ciam, identity-access, thoma-bravo, ping-identity]
 ForgeRock provided a full IAM platform: access management/SSO, customer identity (CIAM), identity governance, and identity orchestration — built originally on the open-source OpenAM/OpenIDM lineage. The job: be the front door that authenticates and authorizes humans (and increasingly workloads) into applications, including AI assistants. It served 1,300+ organizations at acquisition.
 
 ## Where it sits in the stack
-Foundation layer, [identity-access](../categories/identity-access.md) — the human/agent front door that everything else gates on. Lethal-trifecta leg: **none directly**, but it is the identity substrate that access governance, [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and agent authz all depend on. Adjacent to [identity-governance](../categories/identity-governance.md) and [non-human-identity](../categories/non-human-identity.md).
+Foundation layer, [identity-access](../categories/identity-access.md) — the human/agent front door that everything else gates on. Not an inline prompt/egress control itself, but it is the identity substrate that access governance, [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and agent authz all depend on. Adjacent to [identity-governance](../categories/identity-governance.md) and [non-human-identity](../categories/non-human-identity.md).
 
 ## Deployment & architecture
 SaaS (ForgeRock Identity Cloud) plus self-managed/on-prem deployments — historically stronger than pure-SaaS rivals at complex on-prem/hybrid and CIAM scenarios. Standards-based (OIDC, SAML, OAuth2, SCIM).

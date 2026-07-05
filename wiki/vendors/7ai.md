@@ -36,7 +36,7 @@ tags: [agentic-soc, ai-soc, alert-triage, cybereason-founders]
 
 **What it does** — 7AI deploys autonomous AI security agents that pick up alerts, investigate them, and close out the triage/investigation work that normally consumes a SOC. The company reports its agents have processed 2.5M+ alerts and completed 650,000+ investigations, cutting investigation time from hours to minutes and removing 95–99% of false positives (vendor metrics — marketing). It's pitched as end-to-end autonomous SOC operations rather than a single co-pilot.
 
-**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; an autonomous automation layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling, not an AI-application guardrail — trifecta_relevance: none. Trusted security-ops zone.
+**Where it sits in the stack** — [ai-soc-analysts](../categories/ai-soc-analysts.md), Foundation layer; an autonomous automation layer over [siem-soc](../categories/siem-soc.md) and [edr-xdr](../categories/edr-xdr.md). SOC-ops tooling, not an inline prompt/egress control. Trusted security-ops zone.
 
 **Deployment & architecture** — SaaS. Two offerings: the **7AI Platform** (self-serve/independent deployment) and **7AI Platform + PLAID** ("People-Led, AI-Driven"), a white-glove model with expert customization — i.e., closer to a managed-service wrap. Named customer DXC Technology reportedly deployed in ~8 weeks.
 
@@ -56,4 +56,4 @@ tags: [agentic-soc, ai-soc, alert-triage, cybereason-founders]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; established 2024 founding, Boston HQ, founders ex-Cybereason (Lior Div / Yonatan Striem-Amit), $130M Series A (Index, 2025-12), ~$166M total, ~$700M valuation, independent. Set ownership_confidence high. trifecta=none. hedge_fund_fit=medium (Day-2, large-enterprise skew).
+- [2026-06-28] Researched; established 2024 founding, Boston HQ, founders ex-Cybereason (Lior Div / Yonatan Striem-Amit), $130M Series A (Index, 2025-12), ~$166M total, ~$700M valuation, independent. Set ownership_confidence high. Not an inline prompt/egress control. hedge_fund_fit=medium (Day-2, large-enterprise skew).

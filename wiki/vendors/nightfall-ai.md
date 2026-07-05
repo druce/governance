@@ -59,8 +59,8 @@ analyst ("Nyx").
 
 Primary category: [dlp](../categories/dlp.md) (Data layer). Its job is preventing **sensitive-data** egress: it inspects
 content at the points where data leaves a sanctioned zone (a SaaS app, the browser, a prompt to an
-external LLM) and blocks/redacts. In lethal-trifecta terms it primarily breaks the **sensitive-data**
-and **egress** legs — it does not address untrusted-input/prompt-injection. It overlaps the data-security
+external LLM) and blocks/redacts. Its risk role is preventing sensitive-data leakage and blocking
+exfiltration — it does not screen untrusted input (prompt injection). It overlaps the data-security
 neighborhood: lighter-touch and more egress/leak-focused than full [microsoft-purview](microsoft-purview.md)-style suites,
 and adjacent to DSPM ([cyera](cyera.md), [bigid](bigid.md)) which focuses on discovery/posture of data at rest rather
 than inline interception.

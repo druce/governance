@@ -44,9 +44,12 @@ surface. The trigger is **MCP/tool sprawl** — when you can't enumerate which t
 agents can invoke. Strongly paired with [trust-zone-segmentation](trust-zone-segmentation.md) and
 [authorization-engine](authorization-engine.md).
 
-## Lethal-trifecta role
+## Agent-security role: the lethal trifecta
 
-The MCP gateway attacks the **egress** leg most directly — it is the broker that decides
+In agent security the core threat model is the lethal trifecta: untrusted input,
+sensitive-data access, and external egress converging in one agent context — and the
+tool path is where an injected instruction becomes a real action. The MCP gateway
+attacks the **egress** leg most directly — it is the broker that decides
 *which tools can be called at all*, so it can stop an injected instruction from reaching a
 data-moving or Internet-facing tool. By allowlisting tool surfaces it also limits the
 **untrusted-input** blast radius (fewer attacker-reachable tools). It belongs in the

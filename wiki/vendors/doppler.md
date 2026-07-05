@@ -40,7 +40,7 @@ tags: [secrets, secretops, developer-first, saas]
 Doppler stores environment variables, config, and credentials centrally and then syncs them out to wherever they are needed — local dev, CI/CD, containers/Kubernetes, serverless, and cloud providers — so teams stop scattering `.env` files and hard-coded keys. It adds access control, audit logs, versioning, secret rotation, and integrations with the major clouds and platforms. The pitch is one consistent secrets workflow across a heterogeneous/multi-cloud stack rather than a different vault per environment.
 
 ## Where it sits in the stack
-Foundation layer, [secrets-management](../categories/secrets-management.md), at the developer-workflow end (vs the infra-native hyperscaler stores). Lethal-trifecta leg: **sensitive-data** — keeps secrets out of code, repos, and prompts. Sits alongside the IdP/SSO for human auth and feeds runtime apps/agents their credentials.
+Foundation layer, [secrets-management](../categories/secrets-management.md), at the developer-workflow end (vs the infra-native hyperscaler stores). Its risk role is preventing sensitive-data leakage — it keeps secrets out of code, repos, and prompts. Sits alongside the IdP/SSO for human auth and feeds runtime apps/agents their credentials.
 
 ## Deployment & architecture
 SaaS (managed cloud), accessed via web dashboard, CLI, SDKs, and API; syncs/injects secrets into apps and pipelines. Integrations across AWS/GCP/Azure, Vercel, Kubernetes, GitHub Actions, etc. (Cloud-hosted control plane — relevant for shops that prefer self-hosting, where [infisical](infisical.md) or [hashicorp-vault](hashicorp-vault.md) may fit better.)
@@ -67,4 +67,4 @@ Day-1 *if* you have a multi-cloud or heterogeneous developer stack and want one 
 
 ## History
 - [2026-06-28] Stub created from seed registry.
-- [2026-06-28] Researched; confirmed independent VC-backed (YC alum), founded 2018 SF, ~$28.9M raised / $20M Series A 2022. Developer-first SaaS secrets manager, nearest neighbor Infisical. Set ownership independent, trifecta=sensitive-data, confidence high.
+- [2026-06-28] Researched; confirmed independent VC-backed (YC alum), founded 2018 SF, ~$28.9M raised / $20M Series A 2022. Developer-first SaaS secrets manager, nearest neighbor Infisical. Set ownership independent, noted sensitive-data protection role, confidence high.

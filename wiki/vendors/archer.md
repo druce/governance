@@ -38,7 +38,7 @@ tags: [grc, irm, risk-management, compliance]
 
 **What it does** — Archer is a configurable GRC / integrated-risk-management suite: risk register, policy & compliance management, controls assurance, audit, third-party (vendor) risk, business resiliency, and regulatory change. It is a deep, customizable system of record favored by large regulated enterprises with mature risk programs. It serves more than half of the Fortune 500.
 
-**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. A risk/control system of record, not a runtime data-flow control (`trifecta_relevance: none`). For AI governance it is where AI use-case risk, model inventory, and policy attestations would be tracked, overlapping [ai-governance-platform](../categories/ai-governance-platform.md) tooling.
+**Where it sits in the stack** — [enterprise-grc](../categories/enterprise-grc.md), governance layer. A risk/control system of record, not a runtime data-flow control — it is not an inline prompt/egress control. For AI governance it is where AI use-case risk, model inventory, and policy attestations would be tracked, overlapping [ai-governance-platform](../categories/ai-governance-platform.md) tooling.
 
 **Deployment & architecture** — Available SaaS and self-managed/on-prem (legacy Archer deployments are frequently on-prem), highly configurable via its app-builder. Integrates with enterprise risk data sources and security tooling.
 

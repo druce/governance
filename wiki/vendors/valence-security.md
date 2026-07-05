@@ -42,7 +42,7 @@ tags: [sspm, saas-security, ai-security, itdr]
 Valence connects via API to an organization's SaaS apps, inventories SaaS and AI usage (including shadow apps and OAuth integrations), and identifies risks across misconfigurations, identities, third-party integrations, and data sharing. Its signature angle is **remediation workflow**: routing fixes to the relevant app owners/business users (not just dumping findings on the security team) to actually close risks. It now layers in AI Security Posture Management (governing AI tools and agents) and ITDR (identity-based threat detection/response across SaaS).
 
 ## Where it sits in the stack
-Sits in [sspm](../categories/sspm.md) (foundation layer), spanning SaaS discovery, SSPM, AI-SPM, and ITDR. Trifecta-wise it primarily addresses the **sensitive-data** leg (reducing SaaS/AI data exposure and over-broad integrations). The newer AI-SPM/discovery features make it directly relevant to **shadow-AI** inventory — a growing reason a fund might look at this layer.
+Sits in [sspm](../categories/sspm.md) (foundation layer), spanning SaaS discovery, SSPM, AI-SPM, and ITDR. Its main risk role is protecting sensitive data (reducing SaaS/AI data exposure and over-broad integrations). The newer AI-SPM/discovery features make it directly relevant to **shadow-AI** inventory — a growing reason a fund might look at this layer.
 
 ## Deployment & architecture
 SaaS-delivered; API/OAuth integrations into target SaaS and AI apps (no inline proxy or endpoint agent for core function). Supports 175+ SaaS/AI applications (vendor claim). Remediation routing integrates with collaboration/ticketing so app owners receive and action fixes.

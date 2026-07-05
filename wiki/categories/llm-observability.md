@@ -44,14 +44,13 @@ eval harness is the evidence trail that supports model-risk review under
 [ai-governance-platform](ai-governance-platform.md) / SR 11-7. This is monitoring, not enforcement — pair it
 with [ai-runtime-security](ai-runtime-security.md) for blocking.
 
-## Lethal-trifecta role
+## Security role
 
-Detection and visibility, not enforcement — it does not break a leg of the
-trifecta. Its role is to *see* everything (the green-zone instrumentation that makes
-the other controls auditable and tunable): it surfaces the evidence that a prompt
-injection happened or that sensitive data appeared in output, which feeds the
-guardrails and red-teaming that actually block. Treat it as the eyes, not the
-bouncer.
+Detection and visibility, not enforcement — it blocks nothing inline. Its role is
+to *see* everything (the green-zone instrumentation that makes the other controls
+auditable and tunable): it surfaces the evidence that a prompt injection happened
+or that sensitive data appeared in output, which feeds the guardrails and
+red-teaming that actually block. Treat it as the eyes, not the bouncer.
 
 ## Vendors
 

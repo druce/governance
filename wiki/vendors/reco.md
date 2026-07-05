@@ -46,7 +46,7 @@ Reco continuously monitors an organization's SaaS estate to find misconfiguratio
 - [sspm](../categories/sspm.md) — its origin and core: classic SaaS security posture management.
 - [ai-access-governance](../categories/ai-access-governance.md) — the identity-graph view of who/what can access which data through SaaS and AI integrations.
 - Layer: model-prompt (per taxonomy), though Reco's actual control point is the **SaaS/identity/data layer around** the model, not inline on prompts.
-- Lethal-trifecta role: mainly **sensitive-data** exposure and **egress/connectivity** (risky third-party and AI OAuth grants that can exfiltrate data). It does **not** sit inline on untrusted input — it is a posture/visibility and access-governance tool, not a runtime prompt firewall.
+- Risk role: mainly **sensitive-data** exposure and outbound connectivity (risky third-party and AI OAuth grants that can exfiltrate data). It does **not** screen prompts inline — it is a posture/visibility and access-governance tool, not a runtime prompt firewall.
 - Trust zones: spans the green/yellow zones (sanctioned SaaS + IdP) and surfaces yellow/red shadow-AI connections.
 
 ## Deployment & architecture
