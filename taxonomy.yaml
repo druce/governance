@@ -1,0 +1,635 @@
+# taxonomy.yaml — MACHINE SOURCE OF TRUTH for the wiki's category set and
+# controlled vocabularies. All skills and scripts validate against this file.
+# The human-readable taxonomy.md is REGENERATED from this file by
+# scripts/gen_taxonomy_md.py — edit here, never there.
+#
+# Schema spec: SCHEMA.md. Decision log: log.md (2026-07-05, schema v2).
+
+version: 2
+last_updated: 2026-07-05
+
+layers:
+  - foundation
+  - data
+  - model-prompt
+  - retrieval
+  - ux
+  - governance
+  - policy
+
+# Controlled vocabularies (SCHEMA.md §3). Lint rejects values outside these.
+vocab:
+  type: [vendor, category, comparison, overview]
+  adoption_tier:
+    - day-1               # table stakes before any AI in production
+    - day-2               # required once scaling / agents
+    - situational         # depends on deployment pattern; page must state trigger
+    - firm-type-specific  # page must state firm type
+    - practice            # a process, not a purchase (extension to draft §3.1)
+  ownership_state:
+    - public
+    - pe-owned
+    - independent
+    - acquired-closed     # requires acquirer + announced + close dates
+    - acquired-pending    # requires acquirer + announced date + verify_after
+    - oss-foundation
+    - oss-vendor-backed
+    - maintenance-mode
+    - defunct
+  market_position:
+    - leader
+    - challenger
+    - legacy-incumbent
+    - ai-native-disruptor
+    - platform-module
+    - oss-default
+    - niche-specialist
+  deployment_model: [saas, self-hosted, hybrid, in-tenant, on-prem]
+  # form_factor is an extension to draft §3.4: preserves how the product is
+  # consumed (the old `deployment` field mixed this into deployment_model).
+  form_factor: [inline-proxy, api, sdk, agent, browser-extension, platform]
+  category_maturity: [nascent, growth, consolidating, mature]
+  mcp_support: [none, client, server, gateway, unverified]
+  data_leaves_tenancy: ["true", "false", partial, unverified]
+  fs_traction: [verified, claimed, unverified]
+
+# agent_security_context: true = the lethal trifecta (untrusted input +
+# sensitive data + egress) is a core concern discussed on this category page
+# and its primary vendors. On all other pages trifecta framing is flagged by
+# editorial lint rule 18 (SCHEMA.md §5.2).
+
+categories:
+  # ---------------------------------------------------------------- foundation
+  - slug: identity-access
+    display_name: "Identity & Access (IdP/SSO)"
+    layer: foundation
+    adoption_tier: day-1
+    trigger: "any users at all — the human + agent front door"
+    survey_question: "General Identity"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [non-human-identity, identity-governance, secrets-management]
+    seed_doc_row: "Identity & Access"
+    seed_csv: "General Identity"
+    notes: "Entra, Okta, Ping, ForgeRock."
+
+  - slug: non-human-identity
+    display_name: "Non-Human / Agent Identity Governance"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "agents and workloads hold their own credentials and call tools"
+    survey_question: "Non-Human Identity / Agent Identity Governance"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [identity-access, secrets-management, tool-identity-integration, identity-governance]
+    seed_doc_row: "(folded into Identity & Access + Tool Identity)"
+    seed_csv: "Non-Human Identity / Agent Identity Governance"
+    notes: "NHI: secrets-less workload + agent identity. CyberArk, Astrix, Aembit, Oasis, Token, Natoma, Entro, Clutch."
+
+  - slug: identity-governance
+    display_name: "Identity Governance & Visibility (IGA / ISPM)"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "enough headcount/apps that joiner-mover-leaver and access certs need automation"
+    survey_question: "Identity Governance & Visibility (IGA / ISPM)"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [identity-access, data-access-governance, non-human-identity]
+    seed_doc_row: "(folded into Identity & Access + Data Access Gov)"
+    seed_csv: "Identity Governance & Visibility (IGA / ISPM)"
+    notes: "SailPoint, Saviynt, Veza, CyberArk, ConductorOne, Lumos, Linx, Hydden."
+
+  - slug: secrets-management
+    display_name: "Secrets Manager"
+    layer: foundation
+    adoption_tier: day-1
+    trigger: "any code or agent that authenticates to anything"
+    survey_question: "Secrets Manager"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [non-human-identity, identity-access]
+    seed_doc_row: "Secrets Manager"
+    seed_csv: "Secrets Manager"
+    notes: "Vaulting + rotation. Key Vault, HashiCorp Vault, AWS/GCP, Conjur, 1Password, Doppler, Infisical."
+
+  - slug: siem-soc
+    display_name: "Enterprise Logging / SIEM / SOC"
+    layer: foundation
+    adoption_tier: day-1
+    trigger: "table stakes — you cannot investigate what you did not log"
+    survey_question: "SIEM/SOAR/SecOps"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [ai-soc-analysts, edr-xdr]
+    seed_doc_row: "Enterprise logging / SIEM / SOC"
+    seed_csv: "SIEM/SOAR/SecOps"
+    notes: "Sentinel, Splunk, Cortex XSIAM, Sumo, ELK, Google SecOps, LogScale."
+
+  - slug: ai-soc-analysts
+    display_name: "AI SecOps / Agentic SOC Analysts"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "SOC alert volume outgrows analyst headcount"
+    survey_question: "AI SOC analysts"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [siem-soc]
+    seed_doc_row: "AI SecOps, Security Automation"
+    seed_csv: "AI SOC analysts"
+    notes: "Merges doc 'AI SecOps' + CSV 'AI SOC analysts' (same vendors). Prophet, Dropzone, 7AI, Radiant, Simbian, Charlotte, Cortex AgentiX, Jazz, Torq."
+
+  - slug: edr-xdr
+    display_name: "EDR / XDR"
+    layer: foundation
+    adoption_tier: day-1
+    trigger: "table stakes — usually already deployed"
+    survey_question: "EDR / XDR"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [siem-soc, network-security-sase]
+    seed_doc_row: "EDR / XDR"
+    seed_csv: "EDR"
+    notes: "CrowdStrike, Defender, SentinelOne, Cortex XDR."
+
+  - slug: network-security-sase
+    display_name: "Network Security / SASE (SSE)"
+    layer: foundation
+    adoption_tier: day-1
+    trigger: "table stakes — the TLS-inspecting egress path AI traffic rides on"
+    survey_question: "AI-aware Network Security (SSE/SASE)"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [ai-access-governance, dlp, enterprise-browser]
+    seed_doc_row: "Network Security / SASE"
+    seed_csv: "AI-aware Network Security (SSE/SASE)"
+    notes: "Palo Alto, Zscaler, Netskope, Cloudflare, Cisco, Cato, Forcepoint."
+
+  - slug: sspm
+    display_name: "SaaS Security Posture Management (SSPM)"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "SaaS sprawl — many third-party apps with OAuth grants into your tenant"
+    survey_question: "SaaS Security Posture Management (SSPM)"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [ai-spm, ai-access-governance]
+    seed_doc_row: "SaaS Security Posture (SSPM)"
+    seed_csv: null
+    notes: "AppOmni, Obsidian, Adaptive Shield, Grip, Valence, Wing, DoControl."
+
+  - slug: software-supply-chain
+    display_name: "Software Supply Chain & Coding Security"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "shipping code; day-1 if shipping AI-generated code"
+    survey_question: "Software supply chain"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [promotion-gates]
+    seed_doc_row: "Software Supply Chain & Coding Security"
+    seed_csv: "Software supply chain"
+    notes: "Snyk, Semgrep, Endor, Socket, Apiiro, Legit, Aikido, Sonatype, JFrog, GitHub AS, GitLab."
+
+  - slug: anti-deepfake
+    display_name: "Security Awareness / Anti-Deepfake"
+    layer: foundation
+    adoption_tier: day-2
+    trigger: "wire-transfer authority + voice/video approval workflows = deepfake exposure"
+    survey_question: "AI Antiphishing/deepfake/social engineering defense"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [comms-surveillance]
+    seed_doc_row: "Security Awareness / Anti-Deepfake"
+    seed_csv: "AI Antiphishing/deepfake/social engineering defense"
+    notes: "Adaptive, Doppel, Reality Defender, GetReal, Pindrop."
+
+  # ---------------------------------------------------------------------- data
+  - slug: dspm
+    display_name: "Data Classification & DSPM"
+    layer: data
+    adoption_tier: day-1
+    trigger: "before AI touches internal data you must know what/where the sensitive data is"
+    survey_question: "DSPM / Data Security Posture"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [dlp, data-access-governance]
+    seed_doc_row: "Data Classification & DSPM"
+    seed_csv: "DSPM / Data Governance / DLP (split)"
+    notes: "Purview, BigID, Securiti, Cyera, Sentra, Normalyze, Wiz DSPM, Concentric, Bedrock, Immuta, Collibra."
+
+  - slug: dlp
+    display_name: "Data Loss Prevention (DLP)"
+    layer: data
+    adoption_tier: day-1
+    trigger: "employees can paste sensitive data into anything with a text box"
+    survey_question: "Data Loss Prevention (DLP)"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [dspm, ai-access-governance, network-security-sase]
+    seed_doc_row: "Data Loss Prevention (DLP)"
+    seed_csv: "DSPM / Data Governance / DLP (split)"
+    notes: "Cyberhaven, Nightfall, MIND, Prompt Security, Lasso, Netskope/Purview DLP. CSV merged DSPM+DLP; we keep the split."
+
+  - slug: data-access-governance
+    display_name: "Data Access Governance"
+    layer: data
+    adoption_tier: day-2
+    trigger: "day-1 if doing RAG over internal permissioned data"
+    survey_question: "Data Access Governance"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [dspm, identity-governance, entitlement-aware-rag]
+    seed_doc_row: "Data Access Governance"
+    seed_csv: "Data Access Governance"
+    notes: "Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, ConductorOne, Silverfort, Netwrix."
+
+  # -------------------------------------------------------------- model-prompt
+  - slug: ai-runtime-security
+    display_name: "AI Runtime Security (AI Firewall)"
+    layer: model-prompt
+    adoption_tier: day-1
+    trigger: "any self-built LLM app in front of users or data (governed vendor assistants can lag slightly)"
+    survey_question: "AI Runtime Security / AI Firewall"
+    agent_security_context: true
+    category_maturity: consolidating
+    adjacent: [ai-gateway, ai-red-teaming, agent-runtime-security, llm-observability]
+    seed_doc_row: "AI Runtime Security (AI Firewall)"
+    seed_csv: "AI Runtime Security / AI Firewall"
+    notes: "Prisma AIRS, HiddenLayer, WitnessAI, Pillar, Cisco AI Defense, SplxAI, Aim, Lasso, Enkrypt, CalypsoAI, Lakera, Prompt Security, TrojAI."
+
+  - slug: ai-gateway
+    display_name: "AI Gateway"
+    layer: model-prompt
+    adoption_tier: day-1
+    trigger: "any LLM API traffic beyond a single vendor SDK"
+    survey_question: "AI Gateway"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
+    seed_doc_row: "AI Gateway"
+    seed_csv: "AI Gateway"
+    notes: "Single exit door for model traffic. Portkey, LiteLLM, Kong, F5, Cloudflare, TrueFoundry, OpenRouter."
+
+  - slug: llm-observability
+    display_name: "LLM Observability & Evaluation"
+    layer: model-prompt
+    adoption_tier: day-1
+    trigger: "any LLM feature you need to debug, evaluate, or show evidence for"
+    survey_question: "LLM Observability & Eval"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
+    seed_doc_row: "LLM Observability & Evaluation"
+    seed_csv: "LLM Observability & Eval"
+    notes: "Langfuse, LangSmith, Arize Phoenix, Helicone, Braintrust, Datadog, W&B Weave, Comet Opik, Fiddler, TruLens."
+
+  - slug: ai-red-teaming
+    display_name: "AI Red Teaming / Guardrails"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "self-built AI apps worth adversarially testing before and after launch"
+    survey_question: "AI Red Teaming / Guardrails"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [ai-runtime-security, llm-observability]
+    seed_doc_row: "(folded into LLM Obs red-teaming)"
+    seed_csv: "AI Red Teaming / Guardrails"
+    notes: "Offensive testing vs runtime guardrails bundled here — scope-boundary note required. Mindgard, SplxAI, Promptfoo, HiddenLayer, Lakera, Guardrails AI, NeMo Guardrails, Galileo, Patronus, Pangea, Maxim, Haize."
+
+  - slug: ai-access-governance
+    display_name: "AI Access Governance (CASB for AI) / Shadow-AI"
+    layer: model-prompt
+    adoption_tier: day-1
+    trigger: "employees using third-party AI tools (i.e., immediately)"
+    survey_question: "Shadow-AI / Insider risk"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [dlp, network-security-sase, sspm, ai-spm]
+    seed_doc_row: "AI Access Governance (CASB for AI)"
+    seed_csv: "Shadow-AI / Insider risk"
+    notes: "Governs employees using AI; runtime security protects AI you build. WitnessAI, Harmonic, Aurascape, Nudge, Lanai, Cyberhaven, Wald.ai, Portal26, Zscaler AI Guard, Netskope One, Reco."
+
+  - slug: ai-spm
+    display_name: "AI-SPM (AI Security Posture Management)"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "enough AI assets/agents that you need an inventory and posture view"
+    survey_question: "AI-SPM (AI estate inventory & posture)"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [sspm, agent-runtime-security, ai-access-governance]
+    seed_doc_row: "AI-SPM / Agent Governance"
+    seed_csv: "AI-SPM"
+    notes: "Discover/inventory/govern AI assets & agents. Noma, Wiz AI-SPM, Prisma AIRS, Cranium, Quilr, Zenity, Reco, Nudge, Torq."
+
+  - slug: agent-runtime-security
+    display_name: "Agent Security (Runtime)"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "agents act autonomously with tool access — untrusted input meets real permissions"
+    survey_question: "Agent Security (runtime protection of agents)"
+    agent_security_context: true
+    category_maturity: nascent
+    adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
+    seed_doc_row: "(folded into AI-SPM / Agent Gov)"
+    seed_csv: "Agent Security"
+    notes: "Runtime protection of agentic apps. Zenity, Lasso, Operant, Apex (acq. Tenable), Straiker."
+
+  - slug: authorization-engine
+    display_name: "Authorization Engine (Agent / Tool)"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "agents or apps need fine-grained, externalized authorization decisions"
+    survey_question: "Authorization Engine (Agent / Tool)"
+    agent_security_context: true
+    category_maturity: growth
+    adjacent: [mcp-gateway, policy-as-code, tool-identity-integration]
+    seed_doc_row: "Authorization Engine (Agent / Tool)"
+    seed_csv: "MCP / Agent Gateway & Tool Access (split)"
+    notes: "Fine-grained externalized authz. Cerbos, OPA, Styra, Permit.io, AuthZed/SpiceDB, Oso."
+
+  - slug: mcp-gateway
+    display_name: "MCP Gateway / Tool Access Control"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "agents call tools via MCP; the tool path needs a policy choke point"
+    survey_question: "MCP Gateway / Tool Access Control"
+    agent_security_context: true
+    category_maturity: nascent
+    adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
+    seed_doc_row: "MCP Gateway / Tool Access Control"
+    seed_csv: "MCP / Agent Gateway & Tool Access (split)"
+    notes: "Kong MCP, agentgateway (Solo.io), Arcade, TrueFoundry MCP, Obot, MintMCP, IBM ContextForge, Docker MCP, Pomerium, Prisma AIRS Agent Gw."
+
+  - slug: tool-identity-integration
+    display_name: "Tool Identity & Integration"
+    layer: model-prompt
+    adoption_tier: day-2
+    trigger: "agents authenticate to SaaS on users' behalf — managed connectors + agent auth"
+    survey_question: "Tool Identity & Integration (Agent Auth)"
+    agent_security_context: true
+    category_maturity: nascent
+    adjacent: [mcp-gateway, non-human-identity, authorization-engine]
+    seed_doc_row: "Tool Identity & Integration Layer"
+    seed_csv: "MCP / Agent Gateway & Tool Access (split)"
+    notes: "Composio, StackOne, Arcade, CyberArk, Descope, Stytch, WorkOS."
+
+  # ----------------------------------------------------------------- retrieval
+  - slug: content-sources
+    display_name: "Enterprise Content Sources"
+    layer: retrieval
+    adoption_tier: situational
+    trigger: "doing RAG over internal documents"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [vector-retrieval, entitlement-aware-rag]
+    seed_doc_row: "Content Sources"
+    seed_csv: "(in Enterprise Chat & RAG)"
+    notes: "SharePoint, OneDrive, Confluence, Google Drive. Infra, not a survey shortlist."
+
+  - slug: vector-retrieval
+    display_name: "Vector Retrieval"
+    layer: retrieval
+    adoption_tier: situational
+    trigger: "doing RAG"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [content-sources, entitlement-aware-rag]
+    seed_doc_row: "Vector Retrieval"
+    seed_csv: null
+    notes: "Azure AI Search, Pinecone, Weaviate, OpenSearch."
+
+  - slug: entitlement-aware-rag
+    display_name: "Entitlement-Aware RAG"
+    layer: retrieval
+    adoption_tier: situational
+    trigger: "non-negotiable if doing RAG over internal permissioned data"
+    survey_question: "Entitlement-Aware RAG / Retrieval Permissions"
+    agent_security_context: false
+    category_maturity: nascent
+    adjacent: [vector-retrieval, data-access-governance, content-sources]
+    seed_doc_row: "Entitlement-Aware RAG"
+    seed_csv: "(in Enterprise Chat & RAG)"
+    notes: "Glean, Microsoft Graph, Knostic."
+
+  # ------------------------------------------------------------------------ ux
+  - slug: enterprise-ai-assistant
+    display_name: "Enterprise AI Assistant"
+    layer: ux
+    adoption_tier: day-1
+    trigger: "the chatbot people actually use — first AI purchase for most firms"
+    survey_question: "Enterprise AI Assistant"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [entitlement-aware-rag, ai-access-governance]
+    seed_doc_row: "Enterprise AI Assistant"
+    seed_csv: "Enterprise Chat & RAG"
+    notes: "ChatGPT Enterprise, Claude Enterprise, M365 Copilot, Gemini Enterprise, Amazon Q, Perplexity, Glean."
+
+  - slug: third-party-ai-apps
+    display_name: "Third-Party AI Apps"
+    layer: ux
+    adoption_tier: practice
+    trigger: "domain AI tools adopted outside the core assistant — route via the gateway"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [ai-access-governance, vendor-risk]
+    seed_doc_row: "Third-Party AI Apps"
+    seed_csv: null
+    notes: "Process/architecture pattern, not a single shortlist."
+
+  - slug: enterprise-browser
+    display_name: "Enterprise Browser"
+    layer: ux
+    adoption_tier: situational
+    trigger: "BYOD / contractor access, or browser-level AI controls beyond SASE"
+    survey_question: "Enterprise Browser Security"
+    agent_security_context: true
+    category_maturity: growth
+    adjacent: [browser-security-extension, network-security-sase]
+    seed_doc_row: "Enterprise Browser"
+    seed_csv: "Enterprise Browser"
+    notes: "Island, Prisma Access Browser, Menlo, Seraphic, Red Access, Chrome Enterprise Premium, Edge for Business."
+
+  - slug: browser-security-extension
+    display_name: "Browser Security Extension"
+    layer: ux
+    adoption_tier: situational
+    trigger: "want browser-level AI/data controls without replacing Chrome"
+    survey_question: "Enterprise Browser Security"   # shares the survey question with enterprise-browser
+    agent_security_context: true
+    category_maturity: growth
+    adjacent: [enterprise-browser]
+    seed_doc_row: "Browser Security Extension"
+    seed_csv: "(in Enterprise Browser)"
+    notes: "Bolt-on to existing Chrome. LayerX, Material, Grip. Often either/or with enterprise browser."
+
+  # ---------------------------------------------------------------- governance
+  - slug: ai-governance-platform
+    display_name: "AI Governance / Model Risk & Compliance"
+    layer: governance
+    adoption_tier: firm-type-specific
+    trigger: "day-1 for bank-affiliated / model-validation-mandated (SR 11-7) firms; day-2 otherwise"
+    survey_question: "AI Governance, Model Risk & Compliance"
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [enterprise-grc, llm-observability, ai-spm]
+    seed_doc_row: "AI Governance Platform"
+    seed_csv: "AI Governance, Model Risk & Compliance"
+    notes: "Credo AI, Holistic AI, ModelOp, Fairly AI (now Asenion), Monitaur, IBM watsonx.governance, Vanta, CalypsoAI, GovernGPT."
+
+  - slug: enterprise-grc
+    display_name: "Enterprise GRC"
+    layer: governance
+    adoption_tier: day-1
+    trigger: "usually already owned — extend existing GRC to AI risk"
+    survey_question: "Enterprise GRC"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [ai-governance-platform, vendor-risk]
+    seed_doc_row: "Enterprise GRC"
+    seed_csv: "Enterprize GRC"
+    notes: "ServiceNow GRC, Archer, LogicGate, AuditBoard, OneTrust, Onspring."
+
+  - slug: vendor-risk
+    display_name: "Third-Party / Vendor Risk + Cyber Ratings"
+    layer: governance
+    adoption_tier: day-1
+    trigger: "extend existing TPRM to AI vendors and AI features of existing vendors"
+    survey_question: "Vendor Risk"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [enterprise-grc, third-party-ai-apps]
+    seed_doc_row: "Third-Party / Vendor Risk + Cyber Ratings"
+    seed_csv: "Vendor Risk"
+    notes: "ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard."
+
+  - slug: comms-surveillance
+    display_name: "Comms Surveillance"
+    layer: governance
+    adoption_tier: firm-type-specific
+    trigger: "registered advisers / regulated comms (MAR/MNPI) — hedge-fund-critical"
+    survey_question: "Comms Surveillance"
+    agent_security_context: false
+    category_maturity: mature
+    adjacent: [dlp, anti-deepfake]
+    seed_doc_row: "Comms Surveillance"
+    seed_csv: "(in AI Governance, Model Risk)"
+    notes: "Surveillance/analysis, NOT capture/archival — scope-boundary note required. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace."
+
+  - slug: ephemeral-environments
+    display_name: "Ephemeral Environments"
+    layer: governance
+    adoption_tier: practice
+    trigger: "underpins trust-zone design — disposable compute for risky AI work"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [trust-zone-segmentation, promotion-gates]
+    seed_doc_row: "Ephemeral Environments"
+    seed_csv: null
+    notes: "GitHub Codespaces, Azure Dev Boxes, Terraform Cloud, Cloudflare Workers."
+
+  - slug: policy-as-code
+    display_name: "Policy-as-Code"
+    layer: governance
+    adoption_tier: day-2
+    trigger: "guardrails you want enforced by software, not documents"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: growth
+    adjacent: [authorization-engine, promotion-gates]
+    seed_doc_row: "Policy-as-Code"
+    seed_csv: "(OPA appears in MCP/Agent)"
+    notes: "OPA, HashiCorp Sentinel, Kyverno."
+
+  # -------------------------------------------------------------------- policy
+  - slug: trust-zone-segmentation
+    display_name: "Trust Zone Segmentation"
+    layer: policy
+    adoption_tier: practice
+    trigger: "the organizing idea — red/yellow/green zones for agentic AI"
+    survey_question: null
+    agent_security_context: true
+    category_maturity: null
+    adjacent: [risk-tiers, ephemeral-environments]
+    seed_doc_row: "Trust Zone Segmentation"
+    seed_csv: null
+    notes: "Zone design keeps untrusted input, sensitive data, and egress from combining in one agent context."
+
+  - slug: risk-tiers
+    display_name: "Risk Tiers"
+    layer: policy
+    adoption_tier: practice
+    trigger: "classify AI use cases by stakes before controls can be proportionate"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [trust-zone-segmentation, promotion-gates, hitl-approvals]
+    seed_doc_row: "Risk Tiers"
+    seed_csv: null
+    notes: "Classify AI use cases by stakes."
+
+  - slug: promotion-gates
+    display_name: "Promotion Gates"
+    layer: policy
+    adoption_tier: practice
+    trigger: "CI/CD sign-off between experiment and production"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [risk-tiers, policy-as-code, software-supply-chain]
+    seed_doc_row: "Promotion Gates"
+    seed_csv: null
+    notes: "Sign-off between experiment and production."
+
+  - slug: hitl-approvals
+    display_name: "HITL Approvals"
+    layer: policy
+    adoption_tier: practice
+    trigger: "human-in-the-loop on consequential agent actions"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [risk-tiers, agent-runtime-security]
+    seed_doc_row: "HITL Approvals"
+    seed_csv: null
+    notes: "Human sign-off on consequential agent actions."
+
+  - slug: acceptable-use-policies
+    display_name: "Acceptable Use Policies"
+    layer: policy
+    adoption_tier: practice
+    trigger: "the cheapest control there is — write it down first"
+    survey_question: null
+    agent_security_context: false
+    category_maturity: null
+    adjacent: [ai-access-governance]
+    seed_doc_row: "Acceptable Use Policies"
+    seed_csv: null
+    notes: "The cheapest control there is."
+
+# Curated appendix rendered verbatim at the bottom of the generated taxonomy.md.
+appendix: |
+  ## Bundled CSV entries split into separate vendor pages
+
+  Per CLAUDE.md §3. Recorded in `log.md`.
+
+  - `1Password / Doppler / Infisical` → `1password`, `doppler`, `infisical`
+  - `OPA / Styra` → `open-policy-agent` (project) + `styra` (commercial company)
+  - `Immuta / Collibra` → `immuta`, `collibra`
+  - `Obot / MintMCP` → `obot`, `mintmcp`
+  - `Promptfoo (acq. by OpenAI)` → `promptfoo`
+
+  ## Cross-listed vendors (one page, multiple categories)
+
+  Notable multi-category vendors: Palo Alto Networks (Prisma AIRS, Cortex, Prisma
+  Access, Portkey), CyberArk (NHI, IGA, secrets, tool-identity), HiddenLayer
+  (runtime + red-teaming), Cyberhaven (DLP + shadow-AI), WitnessAI (runtime +
+  access-governance), Lasso (runtime + agent + DLP), Zenity (AI-SPM +
+  agent-runtime), Veza (IGA + data-access-governance), OneTrust (GRC + governance
+  + DSPM), Reco / Nudge Security (AI-SPM + shadow-AI), Wiz (DSPM + AI-SPM), Glean
+  (assistant + entitlement-aware-RAG).
