@@ -3,26 +3,30 @@ title: Reality Defender
 type: vendor
 name: Reality Defender
 slug: reality-defender
-categories: [anti-deepfake]
-layer: foundation
-aliases: []
-website: "https://www.realitydefender.com"
+aka: []
+primary_category: anti-deepfake
+also_listed_in: []
+website: https://www.realitydefender.com
 founded: 2021
 hq: New York, NY, USA
-ownership: independent
-ownership_detail: VC-backed; expanded Series A to $33M (Oct 2024), led by Illuminate Financial. No acquisition found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; expanded Series A to $33M (Oct 2024), led by Illuminate Financial. No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $33M (Series A, incl. expansion)
 last_funding: Series A expansion, 2024-10-22 (Illuminate Financial)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (financial institutions, government, media)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [deepfake, detection, multimodal]
 ---
 

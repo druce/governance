@@ -3,14 +3,19 @@ title: Acceptable Use Policies
 type: category
 name: Acceptable Use Policies
 slug: acceptable-use-policies
+category: acceptable-use-policies
 layer: policy
-priority: process
-trifecta_role: none-detection
-maps_to_seed_doc: Acceptable Use Policies
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: the cheapest control there is — write it down first
+maturity_stage_required: null
+category_maturity: null
+adjacent: [ai-access-governance]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Acceptable Use Policies
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > A **practice**, not a product — an internal policy framework. There's nothing to

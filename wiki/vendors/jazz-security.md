@@ -3,26 +3,30 @@ title: Jazz Security
 type: vendor
 name: Jazz Security
 slug: jazz-security
-categories: [dlp]
-layer: data
-aliases: [Jazz]
-website: "https://www.jazz.security"
+aka: [Jazz]
+primary_category: dlp
+also_listed_in: []
+website: https://www.jazz.security
 founded: 2024
 hq: Tel Aviv, Israel (US presence in New York)
-ownership: independent
-ownership_detail: VC-backed; $61M combined seed ($18M) + Series A ($43M), led by Glilot Capital Partners and Team8 (announced ~2026-03).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $61M combined seed ($18M) + Series A ($43M), led by Glilot Capital Partners and Team8 (announced ~2026-03).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$61M
 last_funding: Series A $43M (2026-03; combined $61M seed+A)
-deployment: [saas, on-prem]
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dlp, ai-native-dlp, data-loss-prevention, agentic-investigator]
 ---
 

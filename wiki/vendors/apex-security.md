@@ -3,26 +3,30 @@ title: Apex Security
 type: vendor
 name: Apex Security
 slug: apex-security
-categories: [agent-runtime-security]
-layer: model-prompt
-aliases: [Apex, Apex AI Security]
-website: "https://www.apexsec.com"
+aka: [Apex, Apex AI Security]
+primary_category: agent-runtime-security
+also_listed_in: []
+website: https://www.apexsec.com
 founded: 2023
 hq: Tel Aviv, Israel
-ownership: acquired
-ownership_detail: "Acquired by Tenable (NASDAQ: TENB) — announced 2025-05-29 (>$105M reported), expected close Q2 2025; integrated into Tenable One exposure management (H2 2025)"
-ownership_confidence: high
+ownership_state: acquired-pending
+owner: Tenable
+ownership_note: 'Acquired by Tenable (NASDAQ: TENB) — announced 2025-05-29 (>$105M reported), expected close Q2 2025; integrated into Tenable One exposure management (H2 2025)'
+acquisition: {announced: 2025-05-29, closed: null, price: null}
 funding_total: ~$25M (pre-acquisition; seed + Series A)
-last_funding: "Series A (backers incl. Sam Altman, Sequoia Capital, Index Ventures)"
-deployment: [saas, api]
+last_funding: Series A (backers incl. Sam Altman, Sequoia Capital, Index Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [acquired, ai-spm, shadow-ai, agent-security, exposure-management]
 ---
 

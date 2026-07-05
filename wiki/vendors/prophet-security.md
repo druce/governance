@@ -3,26 +3,30 @@ title: Prophet Security
 type: vendor
 name: Prophet Security
 slug: prophet-security
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: []
-website: "https://www.prophetsecurity.ai"
+aka: []
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://www.prophetsecurity.ai
 founded: 2023
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: VC-backed; $30M Series A led by Accel (2025-07), plus strategic investments from Amex Ventures and Citi Ventures.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $30M Series A led by Accel (2025-07), plus strategic investments from Amex Ventures and Citi Ventures.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$41M
 last_funding: Series A $30M (2025-07, Accel)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise SOC teams (also mid-market)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agentic-soc, ai-soc, alert-triage]
 ---
 

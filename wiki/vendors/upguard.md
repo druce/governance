@@ -3,26 +3,30 @@ title: UpGuard
 type: vendor
 name: UpGuard
 slug: upguard
-categories: [vendor-risk]
-layer: governance
-aliases: [ScriptRock]
-website: "https://www.upguard.com/"
+aka: [ScriptRock]
+primary_category: vendor-risk
+also_listed_in: []
+website: https://www.upguard.com/
 founded: 2012
 hq: Mountain View, California, USA
-ownership: independent
-ownership_detail: "Private, VC-backed (~$121M raised). Series C $75M (2026) led by Springcoast Partners."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed (~$121M raised). Series C $75M (2026) led by Springcoast Partners.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$121M
-last_funding: "Series C, $75M, 2026 (Springcoast Partners)"
-deployment: [saas]
+last_funding: Series C, $75M, 2026 (Springcoast Partners)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [security-ratings, vendor-risk, tprm, attack-surface, data-leak]
 ---
 

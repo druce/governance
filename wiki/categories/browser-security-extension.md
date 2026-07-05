@@ -3,14 +3,19 @@ title: Browser Security Extension
 type: category
 name: Browser Security Extension
 slug: browser-security-extension
+category: browser-security-extension
 layer: ux
-priority: optional
-trifecta_role: egress
-maps_to_seed_doc: Browser Security Extension
-maps_to_seed_csv: "(in Enterprise Browser)"
+survey_question: Enterprise Browser Security
+adoption_tier: situational
+trigger: want browser-level AI/data controls without replacing Chrome
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [enterprise-browser]
+incumbent_coverage: []
 vendor_count: 4
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Browser Security Extension
+maps_to_seed_csv: (in Enterprise Browser)
+last_verified: 2026-06-28
 ---
 
 ## Business objective

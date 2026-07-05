@@ -3,26 +3,30 @@ title: agentgateway (Solo.io / AAIF)
 type: vendor
 name: agentgateway (Solo.io / AAIF)
 slug: agentgateway
-categories: [mcp-gateway]
-layer: model-prompt
-aliases: [agent gateway]
-website: "https://agentgateway.dev"
+aka: [agent gateway]
+primary_category: mcp-gateway
+also_listed_in: []
+website: https://agentgateway.dev
 founded: 2025
-hq: # n/a — OSS project; sponsor Solo.io is HQ'd in Cambridge, MA
-ownership: independent
-ownership_detail: "Open-source project created by Solo.io; donated to the Linux Foundation 2025-08-25, now hosted under the Agentic AI Foundation (AAIF). Apache 2.0."
-ownership_confidence: high
-funding_total: # n/a — OSS project, no funding round
-last_funding: # n/a
-deployment: [self-hosted, inline-proxy, on-prem]
+hq: null
+ownership_state: independent
+owner: null
+ownership_note: Open-source project created by Solo.io; donated to the Linux Foundation 2025-08-25, now hosted under the Agentic AI Foundation (AAIF). Apache 2.0.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [self-hosted, on-prem]
+form_factor: [inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / platform & cloud-native teams
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, mcp, a2a, llm-gateway, rust, linux-foundation, aaif]
 ---
 

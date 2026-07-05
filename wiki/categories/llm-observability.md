@@ -3,14 +3,19 @@ title: LLM Observability & Evaluation
 type: category
 name: LLM Observability & Evaluation
 slug: llm-observability
+category: llm-observability
 layer: model-prompt
-priority: day-1
-trifecta_role: none-detection
+survey_question: LLM Observability & Eval
+adoption_tier: day-1
+trigger: any LLM feature you need to debug, evaluate, or show evidence for
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
+incumbent_coverage: []
+vendor_count: 13
 maps_to_seed_doc: LLM Observability & Evaluation
 maps_to_seed_csv: LLM Observability & Eval
-vendor_count: 13
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # LLM Observability & Evaluation

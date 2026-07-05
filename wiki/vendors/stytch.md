@@ -3,26 +3,30 @@ title: Stytch
 type: vendor
 name: Stytch
 slug: stytch
-categories: [tool-identity-integration, non-human-identity]
-layer: model-prompt
-aliases: [Stytch Inc]
-website: "https://stytch.com"
+aka: [Stytch Inc]
+primary_category: tool-identity-integration
+also_listed_in: [non-human-identity]
+website: https://stytch.com
 founded: 2020
 hq: San Francisco, California, USA
-ownership: acquired
-ownership_detail: Acquired by Twilio; definitive agreement announced 2025-10-30, deal completed 2025-11-14 (terms undisclosed). Now a Twilio subsidiary / product line.
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Twilio
+ownership_note: Acquired by Twilio; definitive agreement announced 2025-10-30, deal completed 2025-11-14 (terms undisclosed). Now a Twilio subsidiary / product line.
+acquisition: {announced: 2025-10-30, closed: 2025-11-14, price: null}
 funding_total: ~$126M–$146M pre-acquisition (aggregators; not vendor-confirmed). Disclosed rounds = $120M ($30M Series A + $90M Series B).
 last_funding: Series B, $90M, 2021-11 (led by Coatue; $1B valuation) — last priced round before Twilio acquisition
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / B2B SaaS builders; startups through enterprise (developer-first CIAM)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authentication, ciam, oauth, mcp, agent-identity, non-human-identity, device-fingerprinting]
 ---
 

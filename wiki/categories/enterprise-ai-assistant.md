@@ -3,14 +3,19 @@ title: Enterprise AI Assistant
 type: category
 name: Enterprise AI Assistant
 slug: enterprise-ai-assistant
+category: enterprise-ai-assistant
 layer: ux
-priority: day-1
-trifecta_role: all
+survey_question: Enterprise AI Assistant
+adoption_tier: day-1
+trigger: the chatbot people actually use — first AI purchase for most firms
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [entitlement-aware-rag, ai-access-governance]
+incumbent_coverage: []
+vendor_count: 9
 maps_to_seed_doc: Enterprise AI Assistant
 maps_to_seed_csv: Enterprise Chat & RAG
-vendor_count: 9
-status: drafted
-last_updated: 2026-06-30
+last_verified: 2026-06-30
 ---
 
 ## Business objective

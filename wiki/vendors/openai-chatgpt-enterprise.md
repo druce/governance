@@ -3,26 +3,30 @@ title: ChatGPT Enterprise (OpenAI)
 type: vendor
 name: ChatGPT Enterprise (OpenAI)
 slug: openai-chatgpt-enterprise
-categories: [enterprise-ai-assistant]
-layer: ux
-aliases: [ChatGPT Enterprise, ChatGPT Business, ChatGPT Team, OpenAI Enterprise]
-website: "https://openai.com/enterprise/"
+aka: [ChatGPT Enterprise, ChatGPT Business, ChatGPT Team, OpenAI Enterprise]
+primary_category: enterprise-ai-assistant
+also_listed_in: []
+website: https://openai.com/enterprise/
 founded: 2015
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: "Independent. OpenAI Group PBC, controlled by the non-profit OpenAI Foundation. Microsoft holds a large minority stake (~27% reported, post Oct-2025 restructuring) plus a commercial/Azure partnership, but does not control OpenAI."
-ownership_confidence: medium
-funding_total: "$60B+ raised across rounds (incl. 2025 SoftBank-led round); exact cumulative figure varies by source"
-last_funding: "2025 SoftBank-led round (~$40B announced); as-of 2026-06-28"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Independent. OpenAI Group PBC, controlled by the non-profit OpenAI Foundation. Microsoft holds a large minority stake (~27% reported, post Oct-2025 restructuring) plus a commercial/Azure partnership, but does not control OpenAI.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: $60B+ raised across rounds (incl. 2025 SoftBank-led round); exact cumulative figure varies by source
+last_funding: 2025 SoftBank-led round (~$40B announced); as-of 2026-06-28
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated / mid-market
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [llm, assistant, frontier-model, openai]
 ---
 

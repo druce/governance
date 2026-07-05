@@ -3,26 +3,30 @@ title: Elastic (ELK)
 type: vendor
 name: Elastic (ELK)
 slug: elastic
-categories: [siem-soc]
-layer: foundation
-aliases: [Elasticsearch, ELK Stack, Elastic Security]
-website: "https://www.elastic.co/security"
+aka: [Elasticsearch, ELK Stack, Elastic Security]
+primary_category: siem-soc
+also_listed_in: []
+website: https://www.elastic.co/security
 founded: 2012
 hq: Mountain View, CA, USA (incorporated in the Netherlands as Elastic N.V.)
-ownership: public
-ownership_detail: "Elastic N.V., public (NYSE: ESTC)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, on-prem]
+ownership_state: public
+owner: null
+ownership_note: 'Elastic N.V., public (NYSE: ESTC)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [elastic, elk, siem, soc, open-source, incumbent]
 ---
 

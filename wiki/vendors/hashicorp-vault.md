@@ -3,26 +3,30 @@ title: HashiCorp Vault
 type: vendor
 name: HashiCorp Vault
 slug: hashicorp-vault
-categories: [secrets-management, policy-as-code]
-layer: foundation
-aliases: [Vault, HCP Vault]
-website: "https://www.hashicorp.com/products/vault"
+aka: [Vault, HCP Vault]
+primary_category: secrets-management
+also_listed_in: [policy-as-code]
+website: https://www.hashicorp.com/products/vault
 founded: 2012
 hq: San Francisco, USA
-ownership: subsidiary
-ownership_detail: "HashiCorp acquired by IBM for $6.4B ($35/share); announced 2024-04-24, closed 2025-02-27. Vault is the secrets-management product within IBM."
-ownership_confidence: high
-funding_total: "n/a (was public, Nasdaq: HCP, before IBM)"
+ownership_state: acquired-closed
+owner: IBM
+ownership_note: HashiCorp acquired by IBM for $6.4B ($35/share); announced 2024-04-24, closed 2025-02-27. Vault is the secrets-management product within IBM.
+acquisition: {announced: 2024-04-24, closed: 2025-02-27, price: null}
+funding_total: 'n/a (was public, Nasdaq: HCP, before IBM)'
 last_funding: IPO Dec 2021
-deployment: [self-hosted, saas, on-prem]
+market_position: null
+deployment_model: [self-hosted, saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated / platform & DevOps teams
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [secrets-management, vault, pki, encryption, ibm, hashicorp]
 ---
 

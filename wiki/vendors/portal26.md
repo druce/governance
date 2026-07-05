@@ -3,26 +3,30 @@ title: Portal26
 type: vendor
 name: Portal26
 slug: portal26
-categories: [ai-access-governance]
-layer: model-prompt
-aliases: [Titaniam]
-website: "https://portal26.ai"
+aka: [Titaniam]
+primary_category: ai-access-governance
+also_listed_in: []
+website: https://portal26.ai
 founded: 2019
 hq: Los Gatos, California, USA
-ownership: independent
-ownership_detail: "Private, venture-backed. Founded 2019 as Titaniam, Inc.; rebranded to Portal26 on 2023-10-10. No M&A; no acquisition confirmed."
-ownership_confidence: high
-funding_total: "$15M (as of 2025-11)"
-last_funding: "Series A, $9M, 2025-11-04 (led by Shasta Ventures)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed. Founded 2019 as Titaniam, Inc.; rebranded to Portal26 on 2023-10-10. No M&A; no acquisition confirmed.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: $15M (as of 2025-11)
+last_funding: Series A, $9M, 2025-11-04 (led by Shasta Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [genai-governance, ai-trism, shadow-ai, forensics]
 ---
 

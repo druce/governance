@@ -3,26 +3,30 @@ title: Knostic
 type: vendor
 name: Knostic
 slug: knostic
-categories: [entitlement-aware-rag, enterprise-ai-assistant]
-layer: retrieval
-aliases: []
-website: "https://www.knostic.ai"
+aka: []
+primary_category: entitlement-aware-rag
+also_listed_in: [enterprise-ai-assistant]
+website: https://www.knostic.ai
 founded: 2023
 hq: Herndon, Virginia, US (R&D in Tel Aviv, Israel)
-ownership: independent
-ownership_detail: VC-backed, independent as of 2026-06-28; no M&A flagged or found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed, independent as of 2026-06-28; no M&A flagged or found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$19.3M
 last_funding: $5M RSAC Innovation Sandbox Top-10 finalist investment (2025-04); $11M Series A (2025-03)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (energy, finance, healthcare, pharma, government)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 5
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [need-to-know, copilot-security, oversharing, llm-access-control]
 ---
 

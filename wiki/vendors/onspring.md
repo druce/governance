@@ -3,26 +3,30 @@ title: Onspring
 type: vendor
 name: Onspring
 slug: onspring
-categories: [enterprise-grc]
-layer: governance
-aliases: [Onspring Technologies]
-website: "https://onspring.com/"
+aka: [Onspring Technologies]
+primary_category: enterprise-grc
+also_listed_in: []
+website: https://onspring.com/
 founded: 2010
 hq: Overland Park, Kansas, USA
-ownership: independent
-ownership_detail: "Privately held; minority growth investment from Capital IP Investment Partners. No control acquisition found."
-ownership_confidence: medium
-funding_total:
-last_funding: "Growth/PE minority investment (Capital IP); terms undisclosed"
-deployment: [saas]
+ownership_state: independent
+owner: null
+ownership_note: Privately held; minority growth investment from Capital IP Investment Partners. No control acquisition found.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: Growth/PE minority investment (Capital IP); terms undisclosed
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, no-code, risk-management, compliance]
 ---
 

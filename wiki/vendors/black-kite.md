@@ -3,26 +3,30 @@ title: Black Kite
 type: vendor
 name: Black Kite
 slug: black-kite
-categories: [vendor-risk]
-layer: governance
-aliases: []
-website: "https://blackkite.com/"
+aka: []
+primary_category: vendor-risk
+also_listed_in: []
+website: https://blackkite.com/
 founded: 2016
 hq: Boston, Massachusetts, USA
-ownership: independent
-ownership_detail: "Private, VC-backed (~$33M+ raised). Series B $22M (2023) led by Volition Capital."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed (~$33M+ raised). Series B $22M (2023) led by Volition Capital.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$33M+
-last_funding: "Series B, $22M, 2023 (Volition Capital)"
-deployment: [saas]
+last_funding: Series B, $22M, 2023 (Volition Capital)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [security-ratings, vendor-risk, tprm, cyber-ratings, fair]
 ---
 

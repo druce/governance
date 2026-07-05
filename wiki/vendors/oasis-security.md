@@ -3,27 +3,31 @@ title: Oasis Security
 type: vendor
 name: Oasis Security
 slug: oasis-security
-categories: [non-human-identity]
-layer: foundation
-aliases: [Oasis, Oasis NHI, Oasis Agentic Access Management, AAM]
-website: "https://www.oasis.security"
+aka: [Oasis, Oasis NHI, Oasis Agentic Access Management, AAM]
+primary_category: non-human-identity
+also_listed_in: []
+website: https://www.oasis.security
 founded: 2022
 hq: New York, NY, USA (R&D roots in Tel Aviv, Israel)
-ownership: independent
-ownership_detail: Independent, venture-backed as of 2026-06; no acquisition found. $120M Series B (2026-03-19) led by Craft Ventures.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, venture-backed as of 2026-06; no acquisition found. $120M Series B (2026-03-19) led by Craft Ventures.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$195M (per press; one source says $190M — minor discrepancy)
 last_funding: Series B, $120M, 2026-03-19 (led by Craft Ventures)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise / Fortune 500; regulated (finance, healthcare, insurance, energy, retail)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
+last_verified: 2026-06-28
+verify_after: null
 tags: [non-human-identity, nhi, machine-identity, agentic-identity, secrets, least-privilege]
-sources_count: 4
-last_updated: 2026-06-28
 ---
 
 # Oasis Security

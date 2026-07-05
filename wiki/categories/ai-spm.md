@@ -3,14 +3,19 @@ title: AI-SPM (AI Security Posture Management)
 type: category
 name: AI-SPM (AI Security Posture Management)
 slug: ai-spm
+category: ai-spm
 layer: model-prompt
-priority: day-2
-trifecta_role: none-detection (posture/inventory across all three legs; not an inline control)
+survey_question: AI-SPM (AI estate inventory & posture)
+adoption_tier: day-2
+trigger: enough AI assets/agents that you need an inventory and posture view
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [sspm, agent-runtime-security, ai-access-governance]
+incumbent_coverage: []
+vendor_count: 14
 maps_to_seed_doc: AI-SPM / Agent Governance
 maps_to_seed_csv: AI-SPM
-vendor_count: 14
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # AI-SPM (AI Security Posture Management)

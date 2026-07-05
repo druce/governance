@@ -3,26 +3,30 @@ title: LiteLLM
 type: vendor
 name: LiteLLM
 slug: litellm
-categories: [ai-gateway]
-layer: model-prompt
-aliases: [BerriAI]
-website: "https://www.litellm.ai/"
+aka: [BerriAI]
+primary_category: ai-gateway
+also_listed_in: []
+website: https://www.litellm.ai/
 founded: 2023
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: Independent, VC-backed (BerriAI); Y Combinator W23. No M&A found as of 2026-06-28.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed (BerriAI); Y Combinator W23. No M&A found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$1.6M (seed, confirmed); aggregators claim up to ~$5M total (unverified)
 last_funding: Seed (2023) — YC, Gravity Fund, Pioneer Fund
-deployment: [self-hosted, saas, api, sdk, inline-proxy, on-prem]
+market_position: null
+deployment_model: [self-hosted, saas, on-prem]
+form_factor: [api, sdk, inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: Developers and platform/ML-platform teams; startups through enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, ai-gateway, llm-proxy, yc]
 ---
 

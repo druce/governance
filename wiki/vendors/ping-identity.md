@@ -3,26 +3,30 @@ title: Ping Identity
 type: vendor
 name: Ping Identity
 slug: ping-identity
-categories: [identity-access]
-layer: foundation
-aliases: [Ping, ForgeRock]
-website: "https://www.pingidentity.com"
+aka: [Ping, ForgeRock]
+primary_category: identity-access
+also_listed_in: []
+website: https://www.pingidentity.com
 founded: 2002
 hq: Denver, Colorado, USA
-ownership: acquired
-ownership_detail: Taken private by Thoma Bravo (~$2.8B, completed Oct 2022); merged with ForgeRock (~$2.3B) into Ping, completed Aug 2023
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, on-prem, api]
+ownership_state: pe-owned
+owner: Thoma Bravo
+ownership_note: Taken private by Thoma Bravo (~$2.8B, completed Oct 2022); merged with ForgeRock (~$2.3B) into Ping, completed Aug 2023
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise / regulated (workforce + CIAM)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity, idp, sso, mfa, ciam, thoma-bravo]
 ---
 

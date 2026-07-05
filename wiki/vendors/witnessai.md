@@ -3,26 +3,30 @@ title: WitnessAI
 type: vendor
 name: WitnessAI
 slug: witnessai
-categories: [ai-access-governance, ai-runtime-security]
-layer: model-prompt
-aliases: [Witness AI]
-website: "https://witness.ai"
+aka: [Witness AI]
+primary_category: ai-access-governance
+also_listed_in: [ai-runtime-security]
+website: https://witness.ai
 founded: 2023
 hq: Mountain View, California (US)
-ownership: independent
-ownership_detail: "Independent, VC-backed; $86.5M raised across Series A+B; no acquisition as of 2026-06-28"
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed; $86.5M raised across Series A+B; no acquisition as of 2026-06-28
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $86.5M
-last_funding: "Series B $58M, 2026-01-13 (Sound Ventures lead)"
-deployment: [inline-proxy, saas, self-hosted, api]
+last_funding: Series B $58M, 2026-01-13 (Sound Ventures lead)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise; regulated
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-access-governance, ai-firewall, shadow-ai, agentic-control, independent]
 ---
 

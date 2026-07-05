@@ -3,26 +3,30 @@ title: ProcessUnity
 type: vendor
 name: ProcessUnity
 slug: processunity
-categories: [vendor-risk]
-layer: governance
-aliases: [ProcessUnity + CyberGRX]
-website: "https://www.processunity.com/"
+aka: [ProcessUnity + CyberGRX]
+primary_category: vendor-risk
+also_listed_in: []
+website: https://www.processunity.com/
 founded: 2003
 hq: Concord, Massachusetts, USA
-ownership: acquired
-ownership_detail: "PE-owned: Marlin Equity Partners acquired ProcessUnity 2021-09-28. ProcessUnity acquired/merged CyberGRX 2023-07."
-ownership_confidence: high
-funding_total:
-last_funding: "Acquired by Marlin Equity Partners (2021)"
-deployment: [saas]
+ownership_state: pe-owned
+owner: ProcessUnity
+ownership_note: 'PE-owned: Marlin Equity Partners acquired ProcessUnity 2021-09-28. ProcessUnity acquired/merged CyberGRX 2023-07.'
+acquisition: {announced: 2021-09-28, closed: null, price: null}
+funding_total: null
+last_funding: Acquired by Marlin Equity Partners (2021)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [tprm, vendor-risk, grc, third-party-risk]
 ---
 

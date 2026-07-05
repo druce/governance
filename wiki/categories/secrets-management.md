@@ -3,14 +3,19 @@ title: Secrets Manager
 type: category
 name: Secrets Manager
 slug: secrets-management
+category: secrets-management
 layer: foundation
-priority: day-1
-trifecta_role: sensitive-data (protects the credentials that unlock sensitive systems and data)
+survey_question: Secrets Manager
+adoption_tier: day-1
+trigger: any code or agent that authenticates to anything
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [non-human-identity, identity-access]
+incumbent_coverage: []
+vendor_count: 8
 maps_to_seed_doc: Secrets Manager
 maps_to_seed_csv: Secrets Manager
-vendor_count: 8
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

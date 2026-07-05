@@ -3,26 +3,30 @@ title: Aurascape
 type: vendor
 name: Aurascape
 slug: aurascape
-categories: [ai-access-governance, ai-runtime-security]
-layer: model-prompt
-aliases: ["AI Activity Control"]
-website: "https://aurascape.ai"
+aka: [AI Activity Control]
+primary_category: ai-access-governance
+also_listed_in: [ai-runtime-security]
+website: https://aurascape.ai
 founded: 2024
 hq: Santa Clara, CA, USA
-ownership: independent
-ownership_detail: "VC-backed, independent as of 2026-06. No M&A found."
-ownership_confidence: high
-funding_total: "$62.8M (reported total across seed + Series A)"
-last_funding: "Series A — $50M — 2025-04 (co-led by Mayfield Fund + Menlo Ventures)"
-deployment: [saas, inline-proxy, browser]
+ownership_state: independent
+owner: null
+ownership_note: VC-backed, independent as of 2026-06. No M&A found.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: $62.8M (reported total across seed + Series A)
+last_funding: Series A — $50M — 2025-04 (co-led by Mayfield Fund + Menlo Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy, platform]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [shadow-ai, ai-dlp, ai-visibility, prevention-first]
 ---
 

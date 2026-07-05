@@ -3,26 +3,30 @@ title: Radiant Security
 type: vendor
 name: Radiant Security
 slug: radiant-security
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: []
-website: "https://radiantsecurity.ai"
+aka: []
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://radiantsecurity.ai
 founded: 2021
 hq: San Francisco Bay Area, CA, USA
-ownership: independent
-ownership_detail: VC-backed; $15M Series A led by Next47 (2023-11). Total ~$22.5M.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $15M Series A led by Next47 (2023-11). Total ~$22.5M.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$22.5M
 last_funding: Series A $15M (2023-11, Next47)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise SOC teams (also mid-market)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agentic-soc, ai-soc, alert-triage]
 ---
 

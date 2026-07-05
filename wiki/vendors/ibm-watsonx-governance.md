@@ -3,26 +3,30 @@ title: IBM watsonx.governance
 type: vendor
 name: IBM watsonx.governance
 slug: ibm-watsonx-governance
-categories: [ai-governance-platform]
-layer: governance
-aliases: [watsonx.governance, Watson OpenScale, OpenScale, AI FactSheets, OpenPages Model Risk Governance]
-website: "https://www.ibm.com/products/watsonx-governance"
-founded:                            # N/A — product, not a company; watsonx.governance GA early Dec 2023. Parent IBM founded 1911.
+aka: [watsonx.governance, Watson OpenScale, OpenScale, AI FactSheets, OpenPages Model Risk Governance]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.ibm.com/products/watsonx-governance
+founded: null
 hq: Armonk, NY (IBM)
-ownership: subsidiary
-ownership_detail: "Product of IBM (NYSE: IBM); part of the watsonx AI & data platform"
-ownership_confidence: high
-funding_total: N/A                  # IBM product, not separately funded
+ownership_state: acquired-closed
+owner: IBM
+ownership_note: 'Product of IBM (NYSE: IBM); part of the watsonx AI & data platform'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: N/A
 last_funding: N/A
-deployment: [saas, api, on-prem]    # IBM Cloud SaaS, AWS, Azure; on-prem/hybrid via Cloud Pak for Data
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large regulated enterprise
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]          # governance/oversight layer; does not itself break a trifecta leg
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-governance, model-risk, sr-11-7, eu-ai-act, nist-ai-rmf, ibm]
 ---
 

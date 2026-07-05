@@ -3,26 +3,30 @@ title: Microsoft Defender XDR
 type: vendor
 name: Microsoft Defender XDR
 slug: microsoft-defender
-categories: [edr-xdr]
-layer: foundation
-aliases: [Microsoft 365 Defender, Defender for Endpoint, Microsoft Defender for Endpoint]
-website: "https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint"
+aka: [Microsoft 365 Defender, Defender for Endpoint, Microsoft Defender for Endpoint]
+primary_category: edr-xdr
+also_listed_in: []
+website: https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint
 founded: 2019
 hq: Redmond, WA, USA
-ownership: public
-ownership_detail: "Product line of Microsoft Corporation (NASDAQ: MSFT)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api, sdk]
+ownership_state: public
+owner: Microsoft Corporation
+ownership_note: 'Product line of Microsoft Corporation (NASDAQ: MSFT)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [microsoft, edr, xdr, endpoint, incumbent]
 ---
 

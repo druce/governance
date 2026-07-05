@@ -3,26 +3,30 @@ title: Microsoft Sentinel
 type: vendor
 name: Microsoft Sentinel
 slug: microsoft-sentinel
-categories: [siem-soc]
-layer: foundation
-aliases: [Azure Sentinel]
-website: "https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel"
+aka: [Azure Sentinel]
+primary_category: siem-soc
+also_listed_in: []
+website: https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel
 founded: 2019
 hq: Redmond, WA, USA
-ownership: public
-ownership_detail: "Product line of Microsoft Corporation (NASDAQ: MSFT)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: Microsoft Corporation
+ownership_note: 'Product line of Microsoft Corporation (NASDAQ: MSFT)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [microsoft, siem, soc, incumbent]
 ---
 

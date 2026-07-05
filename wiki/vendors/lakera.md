@@ -3,26 +3,30 @@ title: Lakera
 type: vendor
 name: Lakera
 slug: lakera
-categories: [ai-runtime-security, ai-red-teaming]
-layer: model-prompt
-aliases: [Lakera AI, Lakera Guard]
-website: "https://www.lakera.ai"
+aka: [Lakera AI, Lakera Guard]
+primary_category: ai-runtime-security
+also_listed_in: [ai-red-teaming]
+website: https://www.lakera.ai
 founded: 2021
 hq: Zurich, Switzerland (and San Francisco, USA)
-ownership: acquired
-ownership_detail: "Acquired by Check Point Software (NASDAQ: CHKP) — announced 2025-09-16 (~$300M reported), expected close Q4 2025; to anchor Check Point's Global Center of Excellence for AI Security"
-ownership_confidence: high
+ownership_state: acquired-pending
+owner: Check Point Software
+ownership_note: 'Acquired by Check Point Software (NASDAQ: CHKP) — announced 2025-09-16 (~$300M reported), expected close Q4 2025; to anchor Check Point''s Global Center of Excellence for AI Security'
+acquisition: {announced: 2025-09-16, closed: null, price: null}
 funding_total: ~$30M
-last_funding: "$20M Series A — July 2024 (led by Atomico; Citi Ventures, Dropbox, redalpine)"
-deployment: [saas, api, self-hosted]
+last_funding: $20M Series A — July 2024 (led by Atomico; Citi Ventures, Dropbox, redalpine)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [acquired, ai-firewall, prompt-injection, gandalf, red-teaming]
 ---
 

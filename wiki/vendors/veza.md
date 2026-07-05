@@ -3,26 +3,30 @@ title: Veza
 type: vendor
 name: Veza
 slug: veza
-categories: [identity-governance, data-access-governance]
-layer: foundation
-aliases: [Veza Access Platform, Access Graph]
-website: "https://veza.com"
+aka: [Veza Access Platform, Access Graph]
+primary_category: identity-governance
+also_listed_in: [data-access-governance]
+website: https://veza.com
 founded: 2020
 hq: Los Gatos, California, USA
-ownership: acquired
-ownership_detail: Acquired by ServiceNow — announced 2025-12-02, closed 2026-03-02 (reported ~$1B; value undisclosed by ServiceNow)
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: ServiceNow GRC
+ownership_note: Acquired by ServiceNow — announced 2025-12-02, closed 2026-03-02 (reported ~$1B; value undisclosed by ServiceNow)
+acquisition: {announced: 2025-12-02, closed: 2026-03-02, price: null}
 funding_total: ~$235M (pre-acquisition)
 last_funding: Series D, $108M, Apr 2025, $808M valuation (NEA-led)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity-security, access-graph, iga, data-access-governance, nhi, servicenow]
 ---
 

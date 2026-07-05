@@ -3,26 +3,30 @@ title: Pillar Security
 type: vendor
 name: Pillar Security
 slug: pillar-security
-categories: [ai-runtime-security, ai-spm]
-layer: model-prompt
-aliases: []
-website: "https://www.pillar.security"
+aka: []
+primary_category: ai-runtime-security
+also_listed_in: [ai-spm]
+website: https://www.pillar.security
 founded: 2023
 hq: Tel Aviv, Israel (US presence in Miami)
-ownership: independent
-ownership_detail: Independent, VC-backed; $9M seed led by Shield Capital announced 2025-04-16. No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed; $9M seed led by Shield Capital announced 2025-04-16. No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$9M
 last_funding: Seed, $9M, 2025-04-16
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (AI builders / dev teams in regulated and mid-market+ orgs)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-security, israel, runtime-guardrails, ai-spm, red-teaming, agent-security]
 ---
 

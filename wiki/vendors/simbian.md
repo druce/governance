@@ -3,26 +3,30 @@ title: Simbian
 type: vendor
 name: Simbian
 slug: simbian
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: [Simbian.AI]
-website: "https://www.simbian.ai"
+aka: [Simbian.AI]
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://www.simbian.ai
 founded: 2023
 hq: Mountain View, CA, USA
-ownership: independent
-ownership_detail: VC/angel-backed; $10M+ seed (emerged from stealth 2024-04).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC/angel-backed; $10M+ seed (emerged from stealth 2024-04).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$10M+ (seed)
 last_funding: Seed $10M+ (2024-04)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise security teams (cloud-security automation)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agentic-soc, ai-soc, alert-triage, grc-agent]
 ---
 

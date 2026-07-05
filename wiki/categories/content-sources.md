@@ -3,14 +3,19 @@ title: Enterprise Content Sources
 type: category
 name: Enterprise Content Sources
 slug: content-sources
+category: content-sources
 layer: retrieval
-priority: day-1
-trifecta_role: sensitive-data
-maps_to_seed_doc: Content Sources
-maps_to_seed_csv: "— (folded into Enterprise Chat & RAG)"
+survey_question: null
+adoption_tier: situational
+trigger: doing RAG over internal documents
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [vector-retrieval, entitlement-aware-rag]
+incumbent_coverage: []
 vendor_count: 3
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Content Sources
+maps_to_seed_csv: — (folded into Enterprise Chat & RAG)
+last_verified: 2026-06-28
 ---
 
 > **STUB.** This is the plumbing layer, not the governance layer. The part that actually matters for keeping an AI from leaking data is **[entitlement-aware-rag](entitlement-aware-rag.md)** — read that page. This page exists to name the slot.

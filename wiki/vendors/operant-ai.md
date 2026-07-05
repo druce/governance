@@ -3,26 +3,30 @@ title: Operant AI
 type: vendor
 name: Operant AI
 slug: operant-ai
-categories: [agent-runtime-security]
-layer: model-prompt
-aliases: [Operant]
-website: "https://www.operant.ai"
+aka: [Operant]
+primary_category: agent-runtime-security
+also_listed_in: []
+website: https://www.operant.ai
 founded: 2020
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: VC-backed; ~$13.5M over 2 rounds (SineWave, Felicis, others)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$13.5M over 2 rounds (SineWave, Felicis, others)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$13.5M
 last_funding: undisclosed (Series A era)
-deployment: [self-hosted, sdk, api]
+market_position: null
+deployment_model: [self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (Kubernetes / cloud-native AI builders)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agent-runtime, kubernetes, cloud-native, mcp-gateway, owasp-llm]
 ---
 

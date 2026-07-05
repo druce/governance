@@ -3,26 +3,30 @@ title: Braintrust
 type: vendor
 name: Braintrust
 slug: braintrust
-categories: [llm-observability, ai-red-teaming]
-layer: model-prompt
-aliases: [Braintrust Data]
-website: "https://www.braintrust.dev"
+aka: [Braintrust Data]
+primary_category: llm-observability
+also_listed_in: [ai-red-teaming]
+website: https://www.braintrust.dev
 founded: 2023
 hq: San Francisco, CA
-ownership: independent
-ownership_detail: "Independent, VC-backed; Series B $80M Feb 2026 (led by ICONIQ), reported ~$800M valuation"
-ownership_confidence: high
-funding_total: "~$116M (Series A $36M Oct 2024 + Series B $80M Feb 2026)"
-last_funding: "Series B $80M, 2026-02 (led by ICONIQ)"
-deployment: [saas, self-hosted, sdk, api]
-target_customer: "AI-forward engineering/product teams; enterprise (Notion, Stripe, Vercel, Cloudflare cited)"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed; Series B $80M Feb 2026 (led by ICONIQ), reported ~$800M valuation
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$116M (Series A $36M Oct 2024 + Series B $80M Feb 2026)
+last_funding: Series B $80M, 2026-02 (led by ICONIQ)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: AI-forward engineering/product teams; enterprise (Notion, Stripe, Vercel, Cloudflare cited)
+last_verified: 2026-06-28
+verify_after: null
 tags: [evals, observability, ci-cd, prompt-management]
 ---
 

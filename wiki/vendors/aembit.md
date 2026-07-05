@@ -3,26 +3,30 @@ title: Aembit
 type: vendor
 name: Aembit
 slug: aembit
-categories: [non-human-identity]
-layer: foundation
-aliases: [Aembit Workload IAM]
-website: "https://aembit.io"
+aka: [Aembit Workload IAM]
+primary_category: non-human-identity
+also_listed_in: []
+website: https://aembit.io
 founded: 2021
 hq: Silver Spring, Maryland, USA
-ownership: independent
-ownership_detail: Venture-backed and independent as of 2026-06; no acquisition found. Last round Series A (2024-09).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed and independent as of 2026-06; no acquisition found. Last round Series A (2024-09).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$45M (cumulative, per vendor + SecurityWeek, as of 2024-09)
 last_funding: Series A, $25M, 2024-09-12 (led by Acrew Capital)
-deployment: [saas, self-hosted, sdk]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise; distributed/cloud-native engineering orgs
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [non-human-identity, workload-iam, secretless, agent-identity, mcp, nhi]
 ---
 

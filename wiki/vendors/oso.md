@@ -3,26 +3,30 @@ title: Oso
 type: vendor
 name: Oso
 slug: oso
-categories: [authorization-engine, agent-runtime-security]
-layer: model-prompt
-aliases: [Oso Cloud, Polar, Oso for Agents, osohq]
-website: "https://www.osohq.com"
+aka: [Oso Cloud, Polar, Oso for Agents, osohq]
+primary_category: authorization-engine
+also_listed_in: [agent-runtime-security]
+website: https://www.osohq.com
 founded: 2018
 hq: New York, NY, USA (remote)
-ownership: independent
-ownership_detail: "VC-backed; ~$11M raised disclosed (Series A $8.2M, 2021-03, Sequoia); some sources cite up to ~$26M cumulatively"
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$11M raised disclosed (Series A $8.2M, 2021-03, Sequoia); some sources cite up to ~$26M cumulatively
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$11M (Series A; some sources ~$26M cumulative)
-last_funding: "Series A $8.2M (2021-03, Sequoia)"
-deployment: [saas, sdk, self-hosted]
+last_funding: Series A $8.2M (2021-03, Sequoia)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market / enterprise (developer-led)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authorization, polar, agent-authz, ai-agents, rebac, abac]
 ---
 

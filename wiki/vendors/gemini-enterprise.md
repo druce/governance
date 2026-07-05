@@ -3,26 +3,30 @@ title: Gemini Enterprise / Agentspace (Google)
 type: vendor
 name: Gemini Enterprise / Agentspace (Google)
 slug: gemini-enterprise
-categories: [enterprise-ai-assistant, entitlement-aware-rag]
-layer: ux
-aliases: [Google Agentspace, Gemini Enterprise app, Gemini for Google Cloud, Gemini Enterprise Standard, Gemini Enterprise Plus]
-website: "https://cloud.google.com/gemini-enterprise"
-founded:
+aka: [Google Agentspace, Gemini Enterprise app, Gemini for Google Cloud, Gemini Enterprise Standard, Gemini Enterprise Plus]
+primary_category: enterprise-ai-assistant
+also_listed_in: [entitlement-aware-rag]
+website: https://cloud.google.com/gemini-enterprise
+founded: null
 hq: Mountain View, California, USA
-ownership: public
-ownership_detail: "Product of Google LLC / Alphabet Inc. (NASDAQ: GOOGL/GOOG)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: null
+ownership_note: 'Product of Google LLC / Alphabet Inc. (NASDAQ: GOOGL/GOOG)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [google, alphabet, gcp, workspace, enterprise-search, rag, agents]
 ---
 

@@ -3,26 +3,30 @@ title: Styra
 type: vendor
 name: Styra
 slug: styra
-categories: [authorization-engine, policy-as-code]
-layer: model-prompt
-aliases: [Styra DAS, Declarative Authorization Service, Enterprise OPA]
-website: "https://www.styra.com"
+aka: [Styra DAS, Declarative Authorization Service, Enterprise OPA]
+primary_category: authorization-engine
+also_listed_in: [policy-as-code]
+website: https://www.styra.com
 founded: 2015
 hq: Redwood City, CA, USA
-ownership: acquired
-ownership_detail: "Acqui-hire: Apple hired Styra's core OPA maintainers (Tim Hinrichs, Torin Sandall, Teemu Koponen) + several engineers (announced ~2025-08-20). NOT a clean corporate acquisition; Styra commercial products (DAS) reported wound down / being open-sourced. OPA stays under CNCF."
-ownership_confidence: medium
+ownership_state: acquired-pending
+owner: Apple
+ownership_note: 'Acqui-hire: Apple hired Styra''s core OPA maintainers (Tim Hinrichs, Torin Sandall, Teemu Koponen) + several engineers (announced ~2025-08-20). NOT a clean corporate acquisition; Styra commercial products (DAS) reported wound down / being open-sourced. OPA stays under CNCF.'
+acquisition: {announced: 2025-08-20, closed: null, price: null}
 funding_total: ~$54M
-last_funding: "Series B $40M (2021-05, Battery Ventures)"
-deployment: [saas, self-hosted, on-prem]
+last_funding: Series B $40M (2021-05, Battery Ventures)
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (platform/security teams)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [authorization, policy-as-code, opa, acqui-hire, apple]
 ---
 

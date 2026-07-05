@@ -3,26 +3,30 @@ title: Microsoft Entra ID
 type: vendor
 name: Microsoft Entra ID
 slug: microsoft-entra
-categories: [identity-access]
-layer: foundation
-aliases: [Azure AD, Azure Active Directory, AAD, Entra ID]
-website: "https://www.microsoft.com/security/business/identity-access/microsoft-entra-id"
+aka: [Azure AD, Azure Active Directory, AAD, Entra ID]
+primary_category: identity-access
+also_listed_in: []
+website: https://www.microsoft.com/security/business/identity-access/microsoft-entra-id
 founded: 2000
 hq: Redmond, Washington, USA
-ownership: public
-ownership_detail: "Product of Microsoft (Nasdaq: MSFT); part of the Microsoft Entra family"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: Microsoft
+ownership_note: 'Product of Microsoft (Nasdaq: MSFT); part of the Microsoft Entra family'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market / SMB (anyone on Microsoft 365 or Azure)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity, idp, sso, mfa, microsoft]
 ---
 

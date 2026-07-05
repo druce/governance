@@ -3,26 +3,30 @@ title: Google Drive
 type: vendor
 name: Google Drive
 slug: google-drive
-categories: [content-sources]
-layer: retrieval
-aliases: [Google Workspace Drive, Shared Drives]
-website: "https://workspace.google.com/products/drive/"
+aka: [Google Workspace Drive, Shared Drives]
+primary_category: content-sources
+also_listed_in: []
+website: https://workspace.google.com/products/drive/
 founded: 2012
 hq: Mountain View, CA, USA
-ownership: public
-ownership_detail: "Product of Google LLC / Alphabet Inc. (public, NASDAQ: GOOGL)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: null
+ownership_note: 'Product of Google LLC / Alphabet Inc. (public, NASDAQ: GOOGL)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, content-source, rag-source, google]
 ---
 

@@ -3,26 +3,30 @@ title: Nudge Security
 type: vendor
 name: Nudge Security
 slug: nudge-security
-categories: [ai-access-governance, ai-spm, sspm]
-layer: model-prompt
-aliases: []
-website: "https://www.nudgesecurity.com"
+aka: []
+primary_category: ai-access-governance
+also_listed_in: [ai-spm, sspm]
+website: https://www.nudgesecurity.com
 founded: 2021
 hq: Austin, TX, USA
-ownership: independent
-ownership_detail: "Venture-backed, independent. Series A $22.5M led by Cerberus Ventures (announced 2025-11-18). No M&A."
-ownership_confidence: high
-funding_total: "~$40M (seed $7M Apr-2022 + seed ext. $16.5M May-2024 + Series A $22.5M Nov-2025)"
-last_funding: "Series A, $22.5M, 2025-11-18"
-deployment: [saas, api]
-target_customer: "Mid-market to enterprise IT/Security/Compliance teams with sprawling SaaS estates"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent. Series A $22.5M led by Cerberus Ventures (announced 2025-11-18). No M&A.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$40M (seed $7M Apr-2022 + seed ext. $16.5M May-2024 + Series A $22.5M Nov-2025)
+last_funding: Series A, $22.5M, 2025-11-18
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: Mid-market to enterprise IT/Security/Compliance teams with sprawling SaaS estates
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, shadow-ai, shadow-it, saas-discovery, ai-governance]
 ---
 

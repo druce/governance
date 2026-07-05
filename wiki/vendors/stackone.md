@@ -3,26 +3,30 @@ title: StackOne
 type: vendor
 name: StackOne
 slug: stackone
-categories: [tool-identity-integration]
-layer: model-prompt
-aliases: [StackOne Technologies]
-website: "https://www.stackone.com"
+aka: [StackOne Technologies]
+primary_category: tool-identity-integration
+also_listed_in: []
+website: https://www.stackone.com
 founded: 2023
 hq: London, UK (registered office Newbury, Berkshire; team across Europe and US)
-ownership: independent
-ownership_detail: Venture-backed, independent as of 2026-06. $24M raised; no acquisition found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06. $24M raised; no acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$24M (vendor-stated)
 last_funding: Series A, $20M, 2025-05-06 (led by GV/Google Ventures)
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: B2B SaaS vendors and enterprises building/deploying AI agents (HR/ATS/CRM/LMS-heavy)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [tool-identity-integration, unified-api, agent-tooling, mcp, saas-connectors]
 ---
 

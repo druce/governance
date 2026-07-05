@@ -3,26 +3,30 @@ title: Sumo Logic
 type: vendor
 name: Sumo Logic
 slug: sumo-logic
-categories: [siem-soc]
-layer: foundation
-aliases: []
-website: "https://www.sumologic.com"
+aka: []
+primary_category: siem-soc
+also_listed_in: []
+website: https://www.sumologic.com
 founded: 2010
 hq: Redwood City, USA
-ownership: acquired
-ownership_detail: "Taken private by Francisco Partners (PE) for ~$1.7B ($12.05/share); announced 2023-02-09, closed 2023-05-12. Delisted from Nasdaq."
-ownership_confidence: high
-funding_total: "n/a (was public, Nasdaq: SUMO, before take-private)"
+ownership_state: pe-owned
+owner: Francisco Partners
+ownership_note: Taken private by Francisco Partners (PE) for ~$1.7B ($12.05/share); announced 2023-02-09, closed 2023-05-12. Delisted from Nasdaq.
+acquisition: {announced: 2023-02-09, closed: null, price: null}
+funding_total: 'n/a (was public, Nasdaq: SUMO, before take-private)'
 last_funding: IPO Sep 2020
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / cloud-native ops & security teams
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [siem, log-analytics, observability, francisco-partners]
 ---
 

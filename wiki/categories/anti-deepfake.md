@@ -3,14 +3,19 @@ title: Security Awareness / Anti-Deepfake
 type: category
 name: Security Awareness / Anti-Deepfake
 slug: anti-deepfake
+category: anti-deepfake
 layer: foundation
-priority: day-2
-trifecta_role: none-detection
+survey_question: AI Antiphishing/deepfake/social engineering defense
+adoption_tier: day-2
+trigger: wire-transfer authority + voice/video approval workflows = deepfake exposure
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [comms-surveillance]
+incumbent_coverage: []
+vendor_count: 5
 maps_to_seed_doc: Security Awareness / Anti-Deepfake
 maps_to_seed_csv: AI Antiphishing/deepfake/social engineering defense
-vendor_count: 5
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Security Awareness / Anti-Deepfake

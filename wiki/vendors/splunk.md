@@ -3,26 +3,30 @@ title: Splunk
 type: vendor
 name: Splunk
 slug: splunk
-categories: [siem-soc]
-layer: foundation
-aliases: [Splunk Enterprise Security, Splunk ES]
-website: "https://www.splunk.com"
+aka: [Splunk Enterprise Security, Splunk ES]
+primary_category: siem-soc
+also_listed_in: []
+website: https://www.splunk.com
 founded: 2003
 hq: San Francisco, California, USA
-ownership: subsidiary
-ownership_detail: "Acquired by Cisco — completed 2024-03-18 for ~$28B (announced 2023-09-21). Now a Cisco business unit; was NASDAQ: SPLK."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, on-prem]
+ownership_state: acquired-closed
+owner: Cisco
+ownership_note: 'Acquired by Cisco — completed 2024-03-18 for ~$28B (announced 2023-09-21). Now a Cisco business unit; was NASDAQ: SPLK.'
+acquisition: {announced: 2024-03-18, closed: 2023-09-21, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [siem, soar, observability, cisco]
 ---
 

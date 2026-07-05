@@ -3,26 +3,30 @@ title: Cyberhaven
 type: vendor
 name: Cyberhaven
 slug: cyberhaven
-categories: [dlp, ai-access-governance]
-layer: data
-aliases: [Linea AI, LLiM, Data Detection and Response]
-website: "https://www.cyberhaven.com"
+aka: [Linea AI, LLiM, Data Detection and Response]
+primary_category: dlp
+also_listed_in: [ai-access-governance]
+website: https://www.cyberhaven.com
 founded: 2016
 hq: Palo Alto, California, USA (founded in Lausanne, Switzerland)
-ownership: independent
-ownership_detail: Venture-backed independent. $100M Series D (2025-04-02) led by StepStone Group at a $1B valuation; total raised ~$250M. No acquisition.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed independent. $100M Series D (2025-04-02) led by StepStone Group at a $1B valuation; total raised ~$250M. No acquisition.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$250M (as of 2025-04)
 last_funding: Series D, $100M, 2025-04-02 (StepStone Group; Schroders, Industry Ventures)
-deployment: [saas, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dlp, ddr, data-lineage, shadow-ai, insider-risk, dspm]
 ---
 

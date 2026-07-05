@@ -3,26 +3,30 @@ title: Socket
 type: vendor
 name: Socket
 slug: socket
-categories: [software-supply-chain]
-layer: foundation
-aliases: [Socket.dev]
-website: "https://socket.dev"
+aka: [Socket.dev]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://socket.dev
 founded: 2020
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Private, venture-backed. Total funding ~$65M; last round $40M Series B (Oct 2024, led by Abstract Ventures, with Elad Gil and a16z).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed. Total funding ~$65M; last round $40M Series B (Oct 2024, led by Abstract Ventures, with Elad Gil and a16z).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$65M
 last_funding: Series B, $40M, October 2024 (Abstract Ventures, Elad Gil, a16z)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: engineering orgs with heavy open-source / npm + PyPI use; startups to enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [malicious-packages, npm, pypi, supply-chain-attacks, typosquatting, sca]
 ---
 

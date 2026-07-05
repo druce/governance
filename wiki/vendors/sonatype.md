@@ -3,26 +3,30 @@ title: Sonatype
 type: vendor
 name: Sonatype
 slug: sonatype
-categories: [software-supply-chain]
-layer: foundation
-aliases: [Nexus Repository, Sonatype Lifecycle, Sonatype Repository Firewall, Nexus IQ]
-website: "https://www.sonatype.com"
+aka: [Nexus Repository, Sonatype Lifecycle, Sonatype Repository Firewall, Nexus IQ]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://www.sonatype.com
 founded: 2008
 hq: Fulton, Maryland, USA
-ownership: acquired
-ownership_detail: "Majority interest acquired by Vista Equity Partners, announced 2019-11-18 (PE-controlled; some existing investors retained stakes). NOTE: this was 2019, not 2024/2025."
-ownership_confidence: high
-funding_total: "~$80M+ VC pre-2019 (incl. ~$11M Series A led by Accel/Bay Partners) before Vista majority investment (terms undisclosed)"
-last_funding: "Vista Equity Partners majority investment, 2019-11-18 (deal value undisclosed)"
-deployment: [saas, self-hosted, on-prem, api]
+ownership_state: acquired-pending
+owner: Vista Equity Partners
+ownership_note: 'Majority interest acquired by Vista Equity Partners, announced 2019-11-18 (PE-controlled; some existing investors retained stakes). NOTE: this was 2019, not 2024/2025.'
+acquisition: {announced: 2019-11-18, closed: null, price: null}
+funding_total: ~$80M+ VC pre-2019 (incl. ~$11M Series A led by Accel/Bay Partners) before Vista majority investment (terms undisclosed)
+last_funding: Vista Equity Partners majority investment, 2019-11-18 (deal value undisclosed)
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [artifact-repository, sca, repository-firewall, maven-central, devsecops]
 ---
 

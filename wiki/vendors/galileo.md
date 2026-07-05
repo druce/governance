@@ -3,26 +3,30 @@ title: Galileo
 type: vendor
 name: Galileo
 slug: galileo
-categories: [ai-red-teaming, llm-observability]
-layer: model-prompt
-aliases: [Galileo Technologies, Rungalileo, galileo.ai]
-website: "https://galileo.ai"
+aka: [Galileo Technologies, Rungalileo, galileo.ai]
+primary_category: ai-red-teaming
+also_listed_in: [llm-observability]
+website: https://galileo.ai
 founded: 2021
 hq: San Francisco, California, USA
-ownership: acquired
-ownership_detail: "Acquired by Cisco — intent announced 2026-04-09; secondary press reports completion 2026-05-22 (Cisco said expected close Q4 FY2026). Folding into Splunk Observability. Terms undisclosed. Prior: independent, ~$68M raised."
-ownership_confidence: medium
+ownership_state: acquired-closed
+owner: Cisco
+ownership_note: 'Acquired by Cisco — intent announced 2026-04-09; secondary press reports completion 2026-05-22 (Cisco said expected close Q4 FY2026). Folding into Splunk Observability. Terms undisclosed. Prior: independent, ~$68M raised.'
+acquisition: {announced: 2026-04-09, closed: 2026-05-22, price: null}
 funding_total: ~$68M (pre-acquisition)
 last_funding: Series B $45M (2024-10), led by Scale Venture Partners
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [llm-eval, observability, guardrails, cisco]
 ---
 

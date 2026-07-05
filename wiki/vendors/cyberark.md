@@ -3,26 +3,30 @@ title: CyberArk
 type: vendor
 name: CyberArk
 slug: cyberark
-categories: [non-human-identity, secrets-management, identity-governance, tool-identity-integration]
-layer: foundation
-aliases: [CyberArk Software, CYBR]
-website: "https://www.cyberark.com"
+aka: [CyberArk Software, CYBR]
+primary_category: non-human-identity
+also_listed_in: [secrets-management, identity-governance, tool-identity-integration]
+website: https://www.cyberark.com
 founded: 1999
-hq: "Petah Tikva, Israel (US ops: Newton, Massachusetts)"
-ownership: acquired
-ownership_detail: "Acquired by Palo Alto Networks — announced 2025-07-30 (~$25B: $45 cash + 2.2005 PANW shares per CYBR share), closed 2026-02-11. Was public (NASDAQ: CYBR, IPO 2014) until close."
-ownership_confidence: high
-funding_total: "n/a (was public, NASDAQ: CYBR)"
+hq: 'Petah Tikva, Israel (US ops: Newton, Massachusetts)'
+ownership_state: acquired-closed
+owner: Palo Alto Networks
+ownership_note: 'Acquired by Palo Alto Networks — announced 2025-07-30 (~$25B: $45 cash + 2.2005 PANW shares per CYBR share), closed 2026-02-11. Was public (NASDAQ: CYBR, IPO 2014) until close.'
+acquisition: {announced: 2025-07-30, closed: 2026-02-11, price: null}
+funding_total: 'n/a (was public, NASDAQ: CYBR)'
 last_funding: IPO 2014; acquired by Palo Alto Networks 2026-02-11
-deployment: [saas, self-hosted, on-prem, api]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [pam, identity, secrets, machine-identity, acquired]
 ---
 

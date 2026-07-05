@@ -3,26 +3,30 @@ title: Lasso Security
 type: vendor
 name: Lasso Security
 slug: lasso-security
-categories: [dlp, ai-runtime-security, agent-runtime-security, ai-access-governance]
-layer: data
-aliases: [Lasso]
-website: "https://www.lasso.security"
+aka: [Lasso]
+primary_category: dlp
+also_listed_in: [ai-runtime-security, agent-runtime-security, ai-access-governance]
+website: https://www.lasso.security
 founded: 2023
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: Independent, VC-backed. $6M seed led by Entrée Capital (Samsung Next) announced 2023-11-20; later SAFE/round activity reported by aggregators but post-seed totals unverified.
-ownership_confidence: high
-funding_total: "$6M seed verified; later rounds reported (~$28M cited by aggregators) but unverified"
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed. $6M seed led by Entrée Capital (Samsung Next) announced 2023-11-20; later SAFE/round activity reported by aggregators but post-seed totals unverified.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: $6M seed verified; later rounds reported (~$28M cited by aggregators) but unverified
 last_funding: Seed $6M (2023-11-20); later rounds reported 2024-2025 (unverified)
-deployment: [saas, inline-proxy, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy, api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (AI-adopting orgs, AppSec + dev teams)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [genai-security, llm-security, mcp, shadow-ai, israel]
 ---
 

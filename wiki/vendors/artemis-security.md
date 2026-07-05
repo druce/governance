@@ -3,26 +3,30 @@ title: Artemis Security
 type: vendor
 name: Artemis Security
 slug: artemis-security
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: [Artemis]
-website: "https://artemissecurity.com"
+aka: [Artemis]
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://artemissecurity.com
 founded: 2025
 hq: New York, NY (Israeli-founded team)
-ownership: independent
-ownership_detail: Independent, VC-backed; emerged from stealth 2026-04-15 with $70M ($15M seed + $55M Series A led by Felicis). No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed; emerged from stealth 2026-04-15 with $70M ($15M seed + $55M Series A led by Felicis). No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$70M
 last_funding: Series A, $55M (part of $70M total), 2026-04-15
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (technology, banking, financial services)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-30
+last_verified: 2026-06-30
+verify_after: null
 tags: [ai-soc, agentic-secops, siem-replacement, threat-detection, new-york]
 ---
 

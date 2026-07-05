@@ -3,26 +3,30 @@ title: Fairly AI
 type: vendor
 name: Fairly AI
 slug: fairly-ai
-categories: [ai-governance-platform]
-layer: governance
-aliases: [Asenion, anch.AI]
-website: "https://www.asenion.ai/"
+aka: [Asenion, anch.AI]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.asenion.ai/
 founded: 2020
 hq: Kitchener-Waterloo, Ontario, Canada
-ownership: independent
-ownership_detail: "Independent venture-backed startup. Acquirer (not target): bought Swedish startup anch.AI on 2025-06-20 and rebranded the combined company as Asenion."
-ownership_confidence: medium
-funding_total: "~US$3.36M (aggregator-reported; unverified)"
-last_funding: "CAD $2.2M seed (April 2023; aggregator-reported)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: 'Independent venture-backed startup. Acquirer (not target): bought Swedish startup anch.AI on 2025-06-20 and rebranded the combined company as Asenion.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~US$3.36M (aggregator-reported; unverified)
+last_funding: CAD $2.2M seed (April 2023; aggregator-reported)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated enterprises and AI-native product companies (financial services, insurance, HR-tech, healthcare, legal)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-governance, grc, model-validation, eu-ai-act, nist-ai-rmf, iso-42001, canada]
 ---
 

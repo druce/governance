@@ -3,26 +3,30 @@ title: Harmonic Security
 type: vendor
 name: Harmonic Security
 slug: harmonic-security
-categories: [ai-access-governance]
-layer: model-prompt
-aliases: [Harmonic]
-website: "https://www.harmonic.security"
+aka: [Harmonic]
+primary_category: ai-access-governance
+also_listed_in: []
+website: https://www.harmonic.security
 founded: 2023
 hq: San Francisco, CA and London, UK
-ownership: independent
-ownership_detail: Venture-backed independent; ~$26M raised across seed + Series A. No acquisition found as of 2026-06-28.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed independent; ~$26M raised across seed + Series A. No acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$26M
 last_funding: Series A $17.5M (announced 2024-10-02, led by Next47)
-deployment: [saas, browser]
+market_position: null
+deployment_model: [saas]
+form_factor: [platform]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [shadow-ai, dlp, data-protection, genai-security]
 ---
 

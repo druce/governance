@@ -3,26 +3,30 @@ title: Helicone
 type: vendor
 name: Helicone
 slug: helicone
-categories: [llm-observability]
-layer: model-prompt
-aliases: []
-website: "https://www.helicone.ai"
+aka: []
+primary_category: llm-observability
+also_listed_in: []
+website: https://www.helicone.ai
 founded: 2023
 hq: San Francisco, CA
-ownership: acquired
-ownership_detail: "Acquired by Mintlify (announced 2026-03-03); Helicone product now in maintenance mode, founders joined Mintlify"
-ownership_confidence: high
-funding_total: "pre-seed/seed stage (small; YC W23)"
-last_funding: "Pre-seed/seed (pre-acquisition); acquired by Mintlify 2026-03"
-deployment: [saas, self-hosted, inline-proxy, api]
-target_customer: "developers / engineering teams (~16,000 organizations cited)"
-hedge_fund_fit: low
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: acquired-pending
+owner: Mintlify
+ownership_note: Acquired by Mintlify (announced 2026-03-03); Helicone product now in maintenance mode, founders joined Mintlify
+acquisition: {announced: 2026-03-03, closed: null, price: null}
+funding_total: pre-seed/seed stage (small; YC W23)
+last_funding: Pre-seed/seed (pre-acquisition); acquired by Mintlify 2026-03
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: developers / engineering teams (~16,000 organizations cited)
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [open-source, observability, proxy, ai-gateway, yc-w23, maintenance-mode]
 ---
 

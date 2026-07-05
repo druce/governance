@@ -3,26 +3,30 @@ title: Portkey
 type: vendor
 name: Portkey
 slug: portkey
-categories: [ai-gateway]
-layer: model-prompt
-aliases: [Portkey AI]
-website: "https://portkey.ai"
+aka: [Portkey AI]
+primary_category: ai-gateway
+also_listed_in: []
+website: https://portkey.ai
 founded: 2023
 hq: San Francisco, California, USA
-ownership: acquired
-ownership_detail: "Acquired by Palo Alto Networks — announced 2026-04-30, closed 2026-05-29; terms undisclosed. Becomes the AI Gateway component of Prisma AIRS."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Palo Alto Networks
+ownership_note: Acquired by Palo Alto Networks — announced 2026-04-30, closed 2026-05-29; terms undisclosed. Becomes the AI Gateway component of Prisma AIRS.
+acquisition: {announced: 2026-04-30, closed: 2026-05-29, price: null}
 funding_total: ~$18M (≈$3M seed 2023 + $15M Series A Feb 2026)
 last_funding: Series A $15M led by Elevation Capital, announced 2026-02-19 (acquired by PANW ~3 months later)
-deployment: [saas, self-hosted, api, inline-proxy]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api, inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-gateway, llm-routing, observability, palo-alto, acquired]
 ---
 

@@ -3,26 +3,30 @@ title: Promptfoo
 type: vendor
 name: Promptfoo
 slug: promptfoo
-categories: [ai-red-teaming, llm-observability]
-layer: model-prompt
-aliases: [promptfoo]
-website: "https://www.promptfoo.dev"
+aka: [promptfoo]
+primary_category: ai-red-teaming
+also_listed_in: [llm-observability]
+website: https://www.promptfoo.dev
 founded: 2024
 hq: San Francisco, CA (US)
-ownership: acquired
-ownership_detail: "acq. by OpenAI — announced 2026-03-09; terms undisclosed; remains open source, folded into OpenAI Frontier (primary: OpenAI + promptfoo blog)"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: OpenAI
+ownership_note: 'acq. by OpenAI — announced 2026-03-09; terms undisclosed; remains open source, folded into OpenAI Frontier (primary: OpenAI + promptfoo blog)'
+acquisition: {announced: 2026-03-09, closed: 2026-03-09, price: null}
 funding_total: ~$23M (pre-acquisition)
-last_funding: "Series A $18.4M, Jul 2025 (Insight Partners lead, a16z participation, ~$86M post-money)"
-deployment: [self-hosted, sdk, saas, api]
+last_funding: Series A $18.4M, Jul 2025 (Insight Partners lead, a16z participation, ~$86M post-money)
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / AI engineering teams; enterprise (25%+ of Fortune 500 used it)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, eval, red-teaming, m-and-a]
 ---
 

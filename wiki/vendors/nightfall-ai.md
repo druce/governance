@@ -3,26 +3,30 @@ title: Nightfall AI
 type: vendor
 name: Nightfall AI
 slug: nightfall-ai
-categories: [dlp]
-layer: data
-aliases: [Nightfall, Nightfall DLP]
-website: "https://www.nightfall.ai"
+aka: [Nightfall, Nightfall DLP]
+primary_category: dlp
+also_listed_in: []
+website: https://www.nightfall.ai
 founded: 2018
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Venture-backed and independent as of 2026-06; no acquisition found.
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed and independent as of 2026-06; no acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$60M (per Crunchbase/PitchBook trackers; not vendor-confirmed)
 last_funding: Series B, $40M, 2022-08-10 (led by WestBridge Capital)
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market to enterprise; regulated (healthcare, insurance, fintech) and tech
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dlp, data-security, genai-data-protection, browser-extension]
 ---
 

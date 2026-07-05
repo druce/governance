@@ -3,26 +3,30 @@ title: Monitaur
 type: vendor
 name: Monitaur
 slug: monitaur
-categories: [ai-governance-platform]
-layer: governance
-aliases: [monitaur.ai, "ML Assurance Platform"]
-website: "https://www.monitaur.ai/"
+aka: [monitaur.ai, ML Assurance Platform]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.monitaur.ai/
 founded: 2019
 hq: Boston, MA, USA
-ownership: independent
-ownership_detail: Venture-backed independent; raised $6M Series A (2024-05-13) led by Cultivation Capital. No acquisition found.
-ownership_confidence: high
-funding_total: "~$13M+ disclosed (pre-seed + $2.6M 2021 + $4.6M 2023 + $6M Series A 2024)"
-last_funding: "Series A, $6M, 2024-05-13 (lead: Cultivation Capital)"
-deployment: [saas]
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed independent; raised $6M Series A (2024-05-13) led by Cultivation Capital. No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$13M+ disclosed (pre-seed + $2.6M 2021 + $4.6M 2023 + $6M Series A 2024)
+last_funding: 'Series A, $6M, 2024-05-13 (lead: Cultivation Capital)'
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: Regulated financial services — primarily insurance carriers (Fortune 200 + mid-market); also banking and healthcare
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-governance, model-risk, insurance, ml-assurance, model-monitoring]
 ---
 

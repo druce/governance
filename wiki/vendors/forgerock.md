@@ -3,26 +3,30 @@ title: ForgeRock
 type: vendor
 name: ForgeRock
 slug: forgerock
-categories: [identity-access]
-layer: foundation
-aliases: [ForgeRock Identity Platform]
-website: "https://www.pingidentity.com"
+aka: [ForgeRock Identity Platform]
+primary_category: identity-access
+also_listed_in: []
+website: https://www.pingidentity.com
 founded: 2010
 hq: San Francisco, USA (origins in Norway)
-ownership: acquired
-ownership_detail: "Acquired by Thoma Bravo (~$2.3B, $23.25/share) and merged into Ping Identity; announced 2022-10-11, closed 2023-08-23. No longer an independent brand."
-ownership_confidence: high
-funding_total: "n/a (was public, NYSE: FORG, before take-private)"
+ownership_state: acquired-closed
+owner: Thoma Bravo
+ownership_note: Acquired by Thoma Bravo (~$2.3B, $23.25/share) and merged into Ping Identity; announced 2022-10-11, closed 2023-08-23. No longer an independent brand.
+acquisition: {announced: 2022-10-11, closed: 2023-08-23, price: null}
+funding_total: 'n/a (was public, NYSE: FORG, before take-private)'
 last_funding: IPO Sep 2021
-deployment: [saas, self-hosted, on-prem]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (workforce + CIAM)
-hedge_fund_fit: low
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [iam, ciam, identity-access, thoma-bravo, ping-identity]
 ---
 

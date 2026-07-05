@@ -3,14 +3,19 @@ title: SaaS Security Posture Management
 type: category
 name: SaaS Security Posture Management
 slug: sspm
+category: sspm
 layer: foundation
-priority: day-2
-trifecta_role: none-detection
+survey_question: SaaS Security Posture Management (SSPM)
+adoption_tier: day-2
+trigger: SaaS sprawl — many third-party apps with OAuth grants into your tenant
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [ai-spm, ai-access-governance]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: SaaS Security Posture (SSPM)
 maps_to_seed_csv: —
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # SaaS Security Posture Management (SSPM)

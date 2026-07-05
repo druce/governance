@@ -3,14 +3,19 @@ title: AI Governance / Model Risk & Compliance
 type: category
 name: AI Governance / Model Risk & Compliance
 slug: ai-governance-platform
+category: ai-governance-platform
 layer: governance
-priority: day-2
-trifecta_role: none-detection
+survey_question: AI Governance, Model Risk & Compliance
+adoption_tier: firm-type-specific
+trigger: day-1 for bank-affiliated / model-validation-mandated (SR 11-7) firms; day-2 otherwise
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [enterprise-grc, llm-observability, ai-spm]
+incumbent_coverage: []
+vendor_count: 13
 maps_to_seed_doc: AI Governance Platform
 maps_to_seed_csv: AI Governance, Model Risk & Compliance
-vendor_count: 13
-status: drafted
-last_updated: 2026-06-30
+last_verified: 2026-06-30
 ---
 
 ## Business objective

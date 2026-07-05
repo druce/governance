@@ -3,26 +3,30 @@ title: AuditBoard
 type: vendor
 name: AuditBoard
 slug: auditboard
-categories: [enterprise-grc]
-layer: governance
-aliases: []
-website: "https://www.auditboard.com/"
+aka: []
+primary_category: enterprise-grc
+also_listed_in: []
+website: https://www.auditboard.com/
 founded: 2014
 hq: Cerritos, California, USA
-ownership: acquired
-ownership_detail: "Acquired by Hg (private equity) for >$3B — announced 2024-05-23, completed 2024."
-ownership_confidence: high
-funding_total: "Series B (2018, Battery Ventures) prior to PE buyout"
-last_funding: "Acquired by Hg, >$3B, 2024"
-deployment: [saas]
+ownership_state: pe-owned
+owner: Hg
+ownership_note: Acquired by Hg (private equity) for >$3B — announced 2024-05-23, completed 2024.
+acquisition: {announced: 2024-05-23, closed: null, price: null}
+funding_total: Series B (2018, Battery Ventures) prior to PE buyout
+last_funding: Acquired by Hg, >$3B, 2024
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, audit, risk-management, compliance, esg]
 ---
 

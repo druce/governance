@@ -3,26 +3,30 @@ title: Snyk
 type: vendor
 name: Snyk
 slug: snyk
-categories: [software-supply-chain]
-layer: foundation
-aliases: []
-website: "https://snyk.io"
+aka: []
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://snyk.io
 founded: 2015
 hq: Boston, Massachusetts, USA (founded Tel Aviv / London)
-ownership: independent
-ownership_detail: Private, venture-backed. ~$1.6B raised; last major round $196.5M Series G (Dec 2022, led by Qatar Investment Authority) at a reported ~$7.4B valuation. IPO long rumored, not filed as of 2026-06.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed. ~$1.6B raised; last major round $196.5M Series G (Dec 2022, led by Qatar Investment Authority) at a reported ~$7.4B valuation. IPO long rumored, not filed as of 2026-06.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$1.6B (aggregator estimate; ~$745M+ confirmed pre-2022)
 last_funding: Series G, $196.5M, December 2022 (QIA)
-deployment: [saas, self-hosted, api, sdk]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise and mid-market developer/AppSec teams
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sca, sast, appsec, dependency-scanning, container-security]
 ---
 

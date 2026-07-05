@@ -3,26 +3,30 @@ title: Astrix Security
 type: vendor
 name: Astrix Security
 slug: astrix-security
-categories: [non-human-identity, ai-spm]
-layer: foundation
-aliases: [Astrix]
-website: "https://astrix.security"
+aka: [Astrix]
+primary_category: non-human-identity
+also_listed_in: [ai-spm]
+website: https://astrix.security
 founded: 2021
 hq: Boston, Massachusetts, USA (R&D in Tel Aviv, Israel)
-ownership: acquired
-ownership_detail: "Cisco announced INTENT to acquire Astrix 2026-05-04; deal PENDING (not closed) as of 2026-06-28. Terms undisclosed (press cites ~$400M, unconfirmed). Prior to deal: independent, $85M+ raised."
-ownership_confidence: medium
+ownership_state: acquired-closed
+owner: null
+ownership_note: 'Cisco announced INTENT to acquire Astrix 2026-05-04; deal PENDING (not closed) as of 2026-06-28. Terms undisclosed (press cites ~$400M, unconfirmed). Prior to deal: independent, $85M+ raised.'
+acquisition: {announced: 2026-05-04, closed: 2026-06-28, price: null}
 funding_total: $85M+ (pre-acquisition)
 last_funding: Series B $45M led by Menlo Ventures
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [non-human-identity, nhi, agentic-identity, cisco]
 ---
 

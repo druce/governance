@@ -3,26 +3,30 @@ title: Weaviate
 type: vendor
 name: Weaviate
 slug: weaviate
-categories: [vector-retrieval]
-layer: retrieval
-aliases: [SeMI Technologies]
-website: "https://weaviate.io/"
+aka: [SeMI Technologies]
+primary_category: vector-retrieval
+also_listed_in: []
+website: https://weaviate.io/
 founded: 2019
 hq: Amsterdam, Netherlands
-ownership: independent
-ownership_detail: VC-backed independent; Series B $50M (2023, Index Ventures), Series C ~$50M (2025, Battery/Index); ~$118M raised
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; Series B $50M (2023, Index Ventures), Series C ~$50M (2025, Battery/Index); ~$118M raised
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$118M
 last_funding: Series C ~$50M (2025)
-deployment: [self-hosted, saas, api]
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [vector-database, retrieval, open-source, independent]
 ---
 

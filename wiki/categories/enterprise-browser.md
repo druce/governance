@@ -3,14 +3,19 @@ title: Enterprise Browser
 type: category
 name: Enterprise Browser
 slug: enterprise-browser
+category: enterprise-browser
 layer: ux
-priority: optional
-trifecta_role: egress
+survey_question: Enterprise Browser Security
+adoption_tier: situational
+trigger: BYOD / contractor access, or browser-level AI controls beyond SASE
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [browser-security-extension, network-security-sase]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: Enterprise Browser
 maps_to_seed_csv: Enterprise Browser
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

@@ -3,14 +3,19 @@ title: Trust Zone Segmentation
 type: category
 name: Trust Zone Segmentation
 slug: trust-zone-segmentation
+category: trust-zone-segmentation
 layer: policy
-priority: process
-trifecta_role: all
-maps_to_seed_doc: Trust Zone Segmentation
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: the organizing idea — red/yellow/green zones for agentic AI
+maturity_stage_required: null
+category_maturity: null
+adjacent: [risk-tiers, ephemeral-environments]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Trust Zone Segmentation
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > This is a **practice**, not a product. It is the organizing idea behind the whole

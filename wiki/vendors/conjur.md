@@ -3,26 +3,30 @@ title: CyberArk Conjur
 type: vendor
 name: CyberArk Conjur
 slug: conjur
-categories: [secrets-management]
-layer: foundation
-aliases: [Conjur, Conjur Open Source, CyberArk Secrets Manager]
-website: "https://www.conjur.org"
+aka: [Conjur, Conjur Open Source, CyberArk Secrets Manager]
+primary_category: secrets-management
+also_listed_in: []
+website: https://www.conjur.org
 founded: 2011
 hq: Newton/Waltham, Massachusetts, USA (origin)
-ownership: subsidiary
-ownership_detail: "Product line of CyberArk (acquired by CyberArk 2017 for ~$42M). CyberArk in turn acquired by Palo Alto Networks (closed 2026-02-11), so Conjur is now part of PANW."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: CyberArk
+ownership_note: Product line of CyberArk (acquired by CyberArk 2017 for ~$42M). CyberArk in turn acquired by Palo Alto Networks (closed 2026-02-11), so Conjur is now part of PANW.
+acquisition: {announced: 2026-02-11, closed: 2026-02-11, price: null}
 funding_total: n/a (product within CyberArk)
 last_funding: acquired by CyberArk 2017 (~$42M); CyberArk acquired by PANW 2026-02-11
-deployment: [self-hosted, saas, api, sdk]
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [secrets, devops, machine-identity, cyberark, palo-alto]
 ---
 

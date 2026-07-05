@@ -3,26 +3,30 @@ title: Fiddler AI
 type: vendor
 name: Fiddler AI
 slug: fiddler-ai
-categories: [llm-observability, ai-governance-platform]
-layer: model-prompt
-aliases: [Fiddler Labs]
-website: "https://www.fiddler.ai"
+aka: [Fiddler Labs]
+primary_category: llm-observability
+also_listed_in: [ai-governance-platform]
+website: https://www.fiddler.ai
 founded: 2018
 hq: Palo Alto, California, USA
-ownership: independent
-ownership_detail: Independent, VC-backed. $30M Series C Jan 2026 (led by RPS Ventures); ~$99M total raised.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed. $30M Series C Jan 2026 (led by RPS Ventures); ~$99M total raised.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$99M
 last_funding: Series C, $30M, 2026-01
-deployment: [saas, self-hosted, api, sdk, on-prem]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (Fortune 500, government, financial services)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [observability, model-monitoring, explainability, guardrails, governance]
 ---
 

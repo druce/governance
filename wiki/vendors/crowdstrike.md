@@ -3,26 +3,30 @@ title: CrowdStrike
 type: vendor
 name: CrowdStrike
 slug: crowdstrike
-categories: [edr-xdr, siem-soc, ai-soc-analysts, ai-red-teaming]
-layer: foundation
-aliases: [Falcon, CrowdStrike Holdings]
-website: "https://www.crowdstrike.com"
+aka: [Falcon, CrowdStrike Holdings]
+primary_category: edr-xdr
+also_listed_in: [siem-soc, ai-soc-analysts, ai-red-teaming]
+website: https://www.crowdstrike.com
 founded: 2011
 hq: Austin, Texas, USA
-ownership: public
-ownership_detail: "Public — NASDAQ: CRWD (IPO 2019). Acquirer: Adaptive Shield (SSPM, closed ~Jan 2025) and Pangea (AI prompt-layer/AIDR, completed ~Sept 2025)."
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Public — NASDAQ: CRWD (IPO 2019). Acquirer: Adaptive Shield (SSPM, closed ~Jan 2025) and Pangea (AI prompt-layer/AIDR, completed ~Sept 2025).'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public)
-last_funding: "IPO June 2019 (NASDAQ: CRWD)"
-deployment: [saas, api]
+last_funding: 'IPO June 2019 (NASDAQ: CRWD)'
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market / regulated
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [edr, xdr, siem, soc, ai-security, falcon]
 ---
 

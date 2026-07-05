@@ -3,14 +3,19 @@ title: AI SecOps / Agentic SOC Analysts
 type: category
 name: AI SecOps / Agentic SOC Analysts
 slug: ai-soc-analysts
+category: ai-soc-analysts
 layer: foundation
-priority: day-2
-trifecta_role: none-detection (automates triage/response on top of detection — not a preventive leg of the trifecta)
+survey_question: AI SOC analysts
+adoption_tier: day-2
+trigger: SOC alert volume outgrows analyst headcount
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [siem-soc]
+incumbent_coverage: []
+vendor_count: 10
 maps_to_seed_doc: AI SecOps, Security Automation
 maps_to_seed_csv: AI SOC analysts
-vendor_count: 10
-status: drafted
-last_updated: 2026-06-30
+last_verified: 2026-06-30
 ---
 
 ## Business objective

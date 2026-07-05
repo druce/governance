@@ -3,26 +3,30 @@ title: Shield
 type: vendor
 name: Shield
 slug: shield
-categories: [comms-surveillance]
-layer: governance
-aliases: ["Shield FC", "Shield Financial Compliance"]
-website: "https://www.shieldfc.com"
+aka: [Shield FC, Shield Financial Compliance]
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://www.shieldfc.com
 founded: 2018
 hq: Tel Aviv, Israel (offices in New York and London)
-ownership: independent
-ownership_detail: "VC-backed independent; $20M Series B (2022-12) led by Macquarie Capital, with UBS Next, Mindset Ventures, OurCrowd. No acquisition found as of 2026-06-28."
-ownership_confidence: medium
-funding_total: "~$35M (as of 2022-12)"
-last_funding: "Series B, $20M, 2022-12"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; $20M Series B (2022-12) led by Macquarie Capital, with UBS Next, Mindset Ventures, OurCrowd. No acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$35M (as of 2022-12)
+last_funding: Series B, $20M, 2022-12
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated (banks, broker-dealers, asset managers, PE); enterprise / tier-1
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [comms-surveillance, regtech, mar, mnpi, ecomms, conduct, ai-nlp]
 ---
 

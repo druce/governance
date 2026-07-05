@@ -3,26 +3,30 @@ title: Maxim AI
 type: vendor
 name: Maxim AI
 slug: maxim-ai
-categories: [ai-red-teaming, llm-observability]
-layer: model-prompt
-aliases: [Maxim, getmaxim]
-website: "https://www.getmaxim.ai"
+aka: [Maxim, getmaxim]
+primary_category: ai-red-teaming
+also_listed_in: [llm-observability]
+website: https://www.getmaxim.ai
 founded: 2023
 hq: San Francisco, CA (US) & India
-ownership: independent
-ownership_detail: VC-backed; $3M seed (2024-06-18) led by Elevation Capital (no acquisition)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $3M seed (2024-06-18) led by Elevation Capital (no acquisition)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$3M
 last_funding: Seed $3M (2024-06)
-deployment: [saas, sdk, self-hosted]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: AI engineering teams / enterprise
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-red-teaming, evaluation, simulation, llm-observability]
 ---
 

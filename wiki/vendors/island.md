@@ -3,26 +3,30 @@ title: Island
 type: vendor
 name: Island
 slug: island
-categories: [enterprise-browser]
-layer: ux
-aliases: [Island.io, The Enterprise Browser]
-website: "https://www.island.io"
+aka: [Island.io, The Enterprise Browser]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://www.island.io
 founded: 2020
 hq: Dallas, Texas, USA (R&D in Tel Aviv)
-ownership: independent
-ownership_detail: Private, VC/growth-backed. Series E $250M at ~$4.8B valuation led by Coatue (2025-03); ~$730M raised total.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/growth-backed. Series E $250M at ~$4.8B valuation led by Coatue (2025-03); ~$730M raised total.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$730M (as of 2026-06-28)
 last_funding: Series E, $250M, 2025-03 (at ~$4.8B valuation)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [egress, untrusted-input, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [enterprise-browser, browser-security, dlp, zero-trust]
 ---
 

@@ -3,14 +3,19 @@ title: Entitlement-Aware RAG
 type: category
 name: Entitlement-Aware RAG
 slug: entitlement-aware-rag
+category: entitlement-aware-rag
 layer: retrieval
-priority: day-1
-trifecta_role: sensitive-data
-maps_to_seed_doc: Entitlement-Aware RAG
-maps_to_seed_csv: "(in Enterprise Chat & RAG)"
+survey_question: Entitlement-Aware RAG / Retrieval Permissions
+adoption_tier: situational
+trigger: non-negotiable if doing RAG over internal permissioned data
+maturity_stage_required: null
+category_maturity: nascent
+adjacent: [vector-retrieval, data-access-governance, content-sources]
+incumbent_coverage: []
 vendor_count: 3
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Entitlement-Aware RAG
+maps_to_seed_csv: (in Enterprise Chat & RAG)
+last_verified: 2026-06-28
 ---
 
 ## Business objective

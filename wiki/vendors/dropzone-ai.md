@@ -3,26 +3,30 @@ title: Dropzone AI
 type: vendor
 name: Dropzone AI
 slug: dropzone-ai
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: []
-website: "https://www.dropzone.ai"
+aka: []
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://www.dropzone.ai
 founded: 2023
 hq: Seattle, WA, USA
-ownership: independent
-ownership_detail: VC-backed; $37M Series B led by Theory Ventures (2025-07). ~$57.4M total across 3 rounds.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $37M Series B led by Theory Ventures (2025-07). ~$57.4M total across 3 rounds.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$57.4M
 last_funding: Series B $37M (2025-07, Theory Ventures)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise SOC teams, MSSPs/MDR providers
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agentic-soc, ai-soc, alert-triage, mssp]
 ---
 

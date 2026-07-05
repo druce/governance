@@ -3,26 +3,30 @@ title: Normalyze
 type: vendor
 name: Normalyze
 slug: normalyze
-categories: [dspm]
-layer: data
-aliases: []
-website: "https://normalyze.ai"
+aka: []
+primary_category: dspm
+also_listed_in: []
+website: https://normalyze.ai
 founded: 2020
 hq: San Francisco, USA
-ownership: acquired
-ownership_detail: "Acquired by Proofpoint; announced 2024-10-29, expected close Nov 2024. Terms undisclosed. (Proofpoint is itself Thoma Bravo-owned.)"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Proofpoint
+ownership_note: Acquired by Proofpoint; announced 2024-10-29, expected close Nov 2024. Terms undisclosed. (Proofpoint is itself Thoma Bravo-owned.)
+acquisition: {announced: 2024-10-29, closed: 2024-10-29, price: null}
 funding_total: ~$26.6M
 last_funding: Series A $22.2M (2022-06, Battery Ventures + Lightspeed)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, data-security, proofpoint, thoma-bravo]
 ---
 

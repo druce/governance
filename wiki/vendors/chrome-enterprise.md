@@ -3,26 +3,30 @@ title: Chrome Enterprise Premium (Google)
 type: vendor
 name: Chrome Enterprise Premium (Google)
 slug: chrome-enterprise
-categories: [enterprise-browser, browser-security-extension]
-layer: ux
-aliases: [Chrome Enterprise, BeyondCorp Enterprise, Chrome Enterprise Core]
-website: "https://chromeenterprise.google/products/chrome-enterprise-premium/"
-founded:
+aka: [Chrome Enterprise, BeyondCorp Enterprise, Chrome Enterprise Core]
+primary_category: enterprise-browser
+also_listed_in: [browser-security-extension]
+website: https://chromeenterprise.google/products/chrome-enterprise-premium/
+founded: null
 hq: Mountain View, California, USA
-ownership: public
-ownership_detail: "Product of Google (Google Cloud / Chrome), a subsidiary of Alphabet Inc. (NASDAQ: GOOGL/GOOG). Chrome Enterprise Premium is the rebrand/evolution of BeyondCorp Enterprise."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted]
+ownership_state: public
+owner: Alphabet Inc
+ownership_note: 'Product of Google (Google Cloud / Chrome), a subsidiary of Alphabet Inc. (NASDAQ: GOOGL/GOOG). Chrome Enterprise Premium is the rebrand/evolution of BeyondCorp Enterprise.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (mid-to-large; existing managed-Chrome / Google Cloud shops)
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, browser, google, alphabet, zero-trust, dlp]
 ---
 

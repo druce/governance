@@ -3,26 +3,30 @@ title: Credo AI
 type: vendor
 name: Credo AI
 slug: credo-ai
-categories: [ai-governance-platform]
-layer: governance
-aliases: [Credo.ai]
-website: "https://www.credo.ai"
+aka: [Credo.ai]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.credo.ai
 founded: 2020
 hq: Palo Alto, CA, USA
-ownership: independent
-ownership_detail: Private, VC-backed. ~$41.3M raised across 3 rounds; latest $21M round announced 2024-07-30 (commonly reported as Series B). No acquisition found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed. ~$41.3M raised across 3 rounds; latest $21M round announced 2024-07-30 (commonly reported as Series B). No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$41.3M (as of 2024-07-30)
-last_funding: "$21M, 2024-07-30 (lead: CrimsoNox Capital, Mozilla Ventures, FPV Ventures)"
-deployment: [saas, api]
+last_funding: '$21M, 2024-07-30 (lead: CrimsoNox Capital, Mozilla Ventures, FPV Ventures)'
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (Global 2000 / regulated)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-governance, grc, compliance, eu-ai-act, nist-ai-rmf, iso-42001]
 ---
 

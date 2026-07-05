@@ -3,26 +3,30 @@ title: Legit Security
 type: vendor
 name: Legit Security
 slug: legit-security
-categories: [software-supply-chain]
-layer: foundation
-aliases: []
-website: "https://www.legitsecurity.com"
+aka: []
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://www.legitsecurity.com
 founded: 2020
 hq: Palo Alto, California, USA (R&D in Israel)
-ownership: independent
-ownership_detail: Venture-backed, independent as of 2026-06-28. No acquisition found in vendor news or press; $40M Series B (Sep 2023, CRV).
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06-28. No acquisition found in vendor news or press; $40M Series B (Sep 2023, CRV).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$70M (Series A $30M 2022 + Series B $40M 2023)
 last_funding: Series B, $40M, 2023-09-20 (CRV)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (Google, NYSE, Kraft Heinz, AIG, Freddie Mac, Cboe cited)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [aspm, sdlc-security, secrets, sca, sast]
 ---
 

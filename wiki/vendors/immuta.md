@@ -3,26 +3,30 @@ title: Immuta
 type: vendor
 name: Immuta
 slug: immuta
-categories: [data-access-governance, dspm]
-layer: data
-aliases: []
-website: "https://www.immuta.com"
+aka: []
+primary_category: data-access-governance
+also_listed_in: [dspm]
+website: https://www.immuta.com
 founded: 2015
 hq: Boston, Massachusetts, USA
-ownership: independent
-ownership_detail: VC-backed private; $100M Series E (2022, led by NightDragon + Snowflake) at $1B valuation. NightDragon is an investor, NOT an acquirer.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed private; $100M Series E (2022, led by NightDragon + Snowflake) at $1B valuation. NightDragon is an investor, NOT an acquirer.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$267M
 last_funding: Series E $100M (2022-06-08, NightDragon + Snowflake)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (finance, healthcare, government)
-hedge_fund_fit: high
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [data-access-governance, dspm, abac, snowflake, databricks]
 ---
 

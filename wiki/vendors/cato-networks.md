@@ -3,26 +3,30 @@ title: Cato Networks
 type: vendor
 name: Cato Networks
 slug: cato-networks
-categories: [network-security-sase, ai-spm]
-layer: foundation
-aliases: [Cato]
-website: "https://www.catonetworks.com"
+aka: [Cato]
+primary_category: network-security-sase
+also_listed_in: [ai-spm]
+website: https://www.catonetworks.com
 founded: 2015
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: "Private/VC-backed (Series G extended to $409M, 2025). Acquirer of [aim-security](aim-security.md) — announced 2025-09-03 (~$350M reported), Cato's first acquisition"
-ownership_confidence: high
-funding_total: ">$700M raised (Series G round $409M, 2025)"
-last_funding: "Series G extended +$50M (Acrew Capital), total $409M — 2025"
-deployment: [saas, inline-proxy]
+ownership_state: independent
+owner: null
+ownership_note: Private/VC-backed (Series G extended to $409M, 2025). Acquirer of [aim-security](aim-security.md) — announced 2025-09-03 (~$350M reported), Cato's first acquisition
+acquisition: {announced: null, closed: null, price: null}
+funding_total: '>$700M raised (Series G round $409M, 2025)'
+last_funding: Series G extended +$50M (Acrew Capital), total $409M — 2025
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sase, sse, acquirer, network-security]
 ---
 

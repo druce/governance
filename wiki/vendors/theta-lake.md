@@ -3,26 +3,30 @@ title: Theta Lake
 type: vendor
 name: Theta Lake
 slug: theta-lake
-categories: [comms-surveillance]
-layer: governance
-aliases: []
-website: "https://thetalake.com"
+aka: []
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://thetalake.com
 founded: 2017
 hq: Santa Barbara, California, USA
-ownership: independent
-ownership_detail: "Private, VC-backed. $50M Series B led by Battery Ventures (2022-03-23); strategic investors include Cisco, Salesforce Ventures, Zoom, RingCentral Ventures, Lightspeed, Neotribe, Wells Fargo. No Series C disclosed as of 2026-06-28."
-ownership_confidence: high
-funding_total: "~$71M (over $70M as of Series B, 2022)"
-last_funding: "Series B, $50M, 2022-03-23 (Battery Ventures)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed. $50M Series B led by Battery Ventures (2022-03-23); strategic investors include Cisco, Salesforce Ventures, Zoom, RingCentral Ventures, Lightspeed, Neotribe, Wells Fargo. No Series C disclosed as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$71M (over $70M as of Series B, 2022)
+last_funding: Series B, $50M, 2022-03-23 (Battery Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (financial services, banks, asset managers)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [comms-surveillance, dcga, collaboration, archiving, ai-surveillance]
 ---
 

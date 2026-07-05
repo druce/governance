@@ -3,26 +3,30 @@ title: Adaptive Shield
 type: vendor
 name: Adaptive Shield
 slug: adaptive-shield
-categories: [sspm]
-layer: foundation
-aliases: [CrowdStrike Falcon Shield]
-website: "https://www.adaptive-shield.com"
+aka: [CrowdStrike Falcon Shield]
+primary_category: sspm
+also_listed_in: []
+website: https://www.adaptive-shield.com
 founded: 2019
 hq: Tel Aviv, Israel
-ownership: acquired
-ownership_detail: "Acquired by CrowdStrike — announced 2024-11-06 at Fal.Con Europe, closed ~Jan 2025 (CrowdStrike fiscal Q4); reported ~$300M. Now CrowdStrike's SSPM offering (Falcon Shield)."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: CrowdStrike
+ownership_note: Acquired by CrowdStrike — announced 2024-11-06 at Fal.Con Europe, closed ~Jan 2025 (CrowdStrike fiscal Q4); reported ~$300M. Now CrowdStrike's SSPM offering (Falcon Shield).
+acquisition: {announced: 2024-11-06, closed: 2024-11-06, price: null}
 funding_total: ~$44M (pre-acquisition)
-last_funding: "Series A / growth (Insight Partners, Okta Ventures, Vertex Ventures Israel, Blackstone Growth)"
-deployment: [saas, api]
+last_funding: Series A / growth (Insight Partners, Okta Ventures, Vertex Ventures Israel, Blackstone Growth)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, saas-security, itdr, shadow-ai, crowdstrike]
 ---
 

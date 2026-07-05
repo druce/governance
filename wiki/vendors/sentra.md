@@ -3,26 +3,30 @@ title: Sentra
 type: vendor
 name: Sentra
 slug: sentra
-categories: [dspm, data-access-governance]
-layer: data
-aliases: []
-website: "https://www.sentra.io"
+aka: []
+primary_category: dspm
+also_listed_in: [data-access-governance]
+website: https://www.sentra.io
 founded: 2021
 hq: Tel Aviv, Israel (offices in New York, NY)
-ownership: independent
-ownership_detail: Privately held, VC-backed. >$100M raised total; $50M Series B (2025-04, led by Key1 Capital).
-ownership_confidence: high
-funding_total: ">$100M"
+ownership_state: independent
+owner: null
+ownership_note: Privately held, VC-backed. >$100M raised total; $50M Series B (2025-04, led by Key1 Capital).
+acquisition: {announced: null, closed: null, price: null}
+funding_total: '>$100M'
 last_funding: $50M Series B (2025-04, led by Key1 Capital)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: cloud-heavy enterprise adopting AI
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, data-access-governance, cloud-security, ai-data-security]
 ---
 

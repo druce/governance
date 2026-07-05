@@ -3,26 +3,30 @@ title: Red Access
 type: vendor
 name: Red Access
 slug: red-access
-categories: [enterprise-browser]
-layer: ux
-aliases: [RedAccess]
-website: "https://redaccess.io/"
+aka: [RedAccess]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://redaccess.io/
 founded: 2021
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: "Independent and venture-backed as of 2026-06-28; no acquisition found. Note: SentinelOne participated as an investor (S Ventures), not as an acquirer."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: 'Independent and venture-backed as of 2026-06-28; no acquisition found. Note: SentinelOne participated as an investor (S Ventures), not as an acquirer.'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $23M
 last_funding: Series A, $17M, 2025-09-10 (led by Norwest Venture Partners)
-deployment: [saas, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (remote workers, unmanaged devices, contractors)
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [browser-security, secure-browsing, agentless, sse]
 ---
 

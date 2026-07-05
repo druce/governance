@@ -3,26 +3,30 @@ title: Saviynt
 type: vendor
 name: Saviynt
 slug: saviynt
-categories: [identity-governance]
-layer: foundation
-aliases: [Saviynt Enterprise Identity Cloud, EIC]
-website: "https://saviynt.com"
+aka: [Saviynt Enterprise Identity Cloud, EIC]
+primary_category: identity-governance
+also_listed_in: []
+website: https://saviynt.com
 founded: 2010
 hq: El Segundo, California, USA
-ownership: independent
-ownership_detail: Private, VC/PE-backed; $700M Series B growth round (Dec 2025) led by KKR at ~$3B valuation
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/PE-backed; $700M Series B growth round (Dec 2025) led by KKR at ~$3B valuation
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$870M
 last_funding: Series B (growth), $700M, Dec 2025 (KKR-led)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity-governance, iga, cloud-pam, converged-identity]
 ---
 

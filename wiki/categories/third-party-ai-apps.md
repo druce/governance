@@ -3,14 +3,19 @@ title: Third-Party AI Apps
 type: category
 name: Third-Party AI Apps
 slug: third-party-ai-apps
+category: third-party-ai-apps
 layer: ux
-priority: optional
-trifecta_role: all
-maps_to_seed_doc: Third-Party AI Apps
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: domain AI tools adopted outside the core assistant — route via the gateway
+maturity_stage_required: null
+category_maturity: null
+adjacent: [ai-access-governance, vendor-risk]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Third-Party AI Apps
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 ## Business objective

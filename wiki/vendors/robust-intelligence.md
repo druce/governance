@@ -3,26 +3,30 @@ title: Robust Intelligence
 type: vendor
 name: Robust Intelligence
 slug: robust-intelligence
-categories: [ai-runtime-security]
-layer: model-prompt
-aliases: [Cisco AI Defense]
-website: "https://www.cisco.com/site/us/en/products/security/ai-defense/"
+aka: [Cisco AI Defense]
+primary_category: ai-runtime-security
+also_listed_in: []
+website: https://www.cisco.com/site/us/en/products/security/ai-defense/
 founded: 2019
 hq: San Francisco, California, USA
-ownership: subsidiary
-ownership_detail: "Acquired by Cisco — intent announced 2024-08-26, closed ~2024-09-24. Rebranded/absorbed into Cisco AI Defense."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api, inline-proxy, sdk]
+ownership_state: acquired-closed
+owner: Cisco
+ownership_note: Acquired by Cisco — intent announced 2024-08-26, closed ~2024-09-24. Rebranded/absorbed into Cisco AI Defense.
+acquisition: {announced: 2024-08-26, closed: 2024-09-24, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api, inline-proxy, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [alias, ai-firewall, cisco]
 ---
 

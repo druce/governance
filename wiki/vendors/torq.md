@@ -3,26 +3,30 @@ title: Torq
 type: vendor
 name: Torq
 slug: torq
-categories: [ai-soc-analysts, siem-soc, ai-spm]
-layer: foundation
-aliases: [Torq HyperSOC]
-website: "https://torq.io"
+aka: [Torq HyperSOC]
+primary_category: ai-soc-analysts
+also_listed_in: [siem-soc, ai-spm]
+website: https://torq.io
 founded: 2020
 hq: Denver, CO, USA (also New York; R&D in Israel)
-ownership: independent
-ownership_detail: VC-backed; $140M Series D led by Merlin Ventures (2026-01) at $1.2B valuation. $332M total.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $140M Series D led by Merlin Ventures (2026-01) at $1.2B valuation. $332M total.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$332M
 last_funding: Series D $140M (2026-01, Merlin Ventures, $1.2B valuation)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: Fortune 500 / large enterprise, US Federal/Public Sector
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [hyperautomation, soar, ai-soc, agentic-ai, alert-triage]
 ---
 

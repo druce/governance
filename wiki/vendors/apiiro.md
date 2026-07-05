@@ -3,26 +3,30 @@ title: Apiiro
 type: vendor
 name: Apiiro
 slug: apiiro
-categories: [software-supply-chain]
-layer: foundation
-aliases: []
-website: "https://apiiro.com"
+aka: []
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://apiiro.com
 founded: 2019
 hq: Tel Aviv, Israel (with New York, USA presence)
-ownership: independent
-ownership_detail: Venture-backed, independent as of 2026-06-28. $100M Series B (Nov 2022) led by General Catalyst.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06-28. $100M Series B (Nov 2022) led by General Catalyst.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$135M
 last_funding: Series B, $100M, 2022-11-03 (General Catalyst)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise (USAA, BlackRock, JPMorgan Chase, Shell cited)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [aspm, deep-code-analysis, risk-graph, sdlc, sbom]
 ---
 

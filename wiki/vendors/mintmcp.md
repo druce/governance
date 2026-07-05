@@ -3,26 +3,30 @@ title: MintMCP
 type: vendor
 name: MintMCP
 slug: mintmcp
-categories: [mcp-gateway]
-layer: model-prompt
-aliases: ["Dependable AI, Inc."]
-website: "https://www.mintmcp.com"
-founded:
+aka: ['Dependable AI, Inc.']
+primary_category: mcp-gateway
+also_listed_in: []
+website: https://www.mintmcp.com
+founded: null
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: "Venture-backed startup; legal name Dependable AI, Inc. Public launch 2026-02-05. Backers reported as Coatue, Hustle Fund, Maven Ventures, WVV Capital (+ angels); raise amount not disclosed in a primary source."
-ownership_confidence: medium
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, inline-proxy, api]
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed startup; legal name Dependable AI, Inc. Public launch 2026-02-05. Backers reported as Coatue, Hustle Fund, Maven Ventures, WVV Capital (+ angels); raise amount not disclosed in a primary source.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [egress, untrusted-input, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [mcp, agent-governance, gateway, soc2]
 ---
 

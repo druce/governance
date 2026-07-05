@@ -3,26 +3,30 @@ title: Zscaler
 type: vendor
 name: Zscaler
 slug: zscaler
-categories: [network-security-sase, ai-access-governance]
-layer: foundation
-aliases: [ZS, Zero Trust Exchange]
-website: "https://www.zscaler.com"
+aka: [ZS, Zero Trust Exchange]
+primary_category: network-security-sase
+also_listed_in: [ai-access-governance]
+website: https://www.zscaler.com
 founded: 2007
 hq: San Jose, California, USA
-ownership: public
-ownership_detail: "Public company, NASDAQ: ZS (IPO 2018); confirmed via vendor press releases 2026-06-28"
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Public company, NASDAQ: ZS (IPO 2018); confirmed via vendor press releases 2026-06-28'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public)
-last_funding: "IPO March 2018 (NASDAQ: ZS)"
-deployment: [saas, inline-proxy, api]
+last_funding: 'IPO March 2018 (NASDAQ: ZS)'
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sase, sse, zero-trust, cloud-proxy, shadow-ai, inline-dlp]
 ---
 

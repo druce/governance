@@ -3,26 +3,30 @@ title: GCP Secret Manager
 type: vendor
 name: GCP Secret Manager
 slug: gcp-secret-manager
-categories: [secrets-management]
-layer: foundation
-aliases: [Google Cloud Secret Manager, Secret Manager]
-website: "https://cloud.google.com/secret-manager"
+aka: [Google Cloud Secret Manager, Secret Manager]
+primary_category: secrets-management
+also_listed_in: []
+website: https://cloud.google.com/secret-manager
 founded: 2020
 hq: Mountain View, CA
-ownership: public
-ownership_detail: "First-party Google Cloud service. Alphabet Inc. / Google LLC (NASDAQ: GOOGL)."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: null
+ownership_note: 'First-party Google Cloud service. Alphabet Inc. / Google LLC (NASDAQ: GOOGL).'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (any Google Cloud customer)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [secrets, iam, cmek, rotation, google-cloud, first-party-cloud]
 ---
 

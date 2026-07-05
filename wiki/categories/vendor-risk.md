@@ -3,14 +3,19 @@ title: Third-Party / Vendor Risk + Cyber Ratings
 type: category
 name: Third-Party / Vendor Risk + Cyber Ratings
 slug: vendor-risk
+category: vendor-risk
 layer: governance
-priority: day-1
-trifecta_role: none-detection
+survey_question: Vendor Risk
+adoption_tier: day-1
+trigger: extend existing TPRM to AI vendors and AI features of existing vendors
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [enterprise-grc, third-party-ai-apps]
+incumbent_coverage: []
+vendor_count: 5
 maps_to_seed_doc: Third-Party / Vendor Risk + Cyber Ratings
 maps_to_seed_csv: Vendor Risk
-vendor_count: 5
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

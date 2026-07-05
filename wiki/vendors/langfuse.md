@@ -3,26 +3,30 @@ title: Langfuse
 type: vendor
 name: Langfuse
 slug: langfuse
-categories: [llm-observability]
-layer: model-prompt
-aliases: []
-website: "https://langfuse.com"
+aka: []
+primary_category: llm-observability
+also_listed_in: []
+website: https://langfuse.com
 founded: 2022
 hq: Berlin, Germany (+ San Francisco)
-ownership: acquired
-ownership_detail: "Acquired by ClickHouse, Inc. (announced 2026-01-26); operates within ClickHouse, core remains open source"
-ownership_confidence: high
-funding_total: "~$4.5M pre-acquisition (Lightspeed, La Famiglia; also backed by Y Combinator, General Catalyst)"
-last_funding: "Seed (pre-acquisition); acquired by ClickHouse 2026-01"
-deployment: [saas, self-hosted, sdk, api]
-target_customer: "developers / engineering teams; enterprise (19 Fortune 50, 63 Fortune 500 cited)"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: acquired-pending
+owner: ClickHouse
+ownership_note: Acquired by ClickHouse, Inc. (announced 2026-01-26); operates within ClickHouse, core remains open source
+acquisition: {announced: 2026-01-26, closed: null, price: null}
+funding_total: ~$4.5M pre-acquisition (Lightspeed, La Famiglia; also backed by Y Combinator, General Catalyst)
+last_funding: Seed (pre-acquisition); acquired by ClickHouse 2026-01
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: developers / engineering teams; enterprise (19 Fortune 50, 63 Fortune 500 cited)
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [open-source, observability, evals, yc-w23]
 ---
 

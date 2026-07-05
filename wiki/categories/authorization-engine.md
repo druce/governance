@@ -3,14 +3,19 @@ title: Authorization Engine (Agent / Tool)
 type: category
 name: Authorization Engine (Agent / Tool)
 slug: authorization-engine
+category: authorization-engine
 layer: model-prompt
-priority: day-2
-trifecta_role: sensitive-data, egress (constrains what an agent action is allowed to do; not inline content inspection)
+survey_question: Authorization Engine (Agent / Tool)
+adoption_tier: day-2
+trigger: agents or apps need fine-grained, externalized authorization decisions
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [mcp-gateway, policy-as-code, tool-identity-integration]
+incumbent_coverage: []
+vendor_count: 6
 maps_to_seed_doc: Authorization Engine (Agent / Tool)
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
-vendor_count: 6
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Authorization Engine (Agent / Tool)

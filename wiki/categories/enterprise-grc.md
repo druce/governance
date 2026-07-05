@@ -3,14 +3,19 @@ title: Enterprise GRC
 type: category
 name: Enterprise GRC
 slug: enterprise-grc
+category: enterprise-grc
 layer: governance
-priority: day-1
-trifecta_role: none-detection
+survey_question: Enterprise GRC
+adoption_tier: day-1
+trigger: usually already owned — extend existing GRC to AI risk
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [ai-governance-platform, vendor-risk]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: Enterprise GRC
 maps_to_seed_csv: Enterprize GRC
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

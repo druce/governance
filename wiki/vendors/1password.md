@@ -3,26 +3,30 @@ title: 1Password
 type: vendor
 name: 1Password
 slug: 1password
-categories: [secrets-management]
-layer: foundation
-aliases: [AgileBits, 1Password Extended Access Management]
-website: "https://1password.com/"
+aka: [AgileBits, 1Password Extended Access Management]
+primary_category: secrets-management
+also_listed_in: []
+website: https://1password.com/
 founded: 2005
 hq: Toronto, Canada
-ownership: independent
-ownership_detail: Private, VC-backed (legal entity AgileBits Inc.). ~$920M raised; Series C $620M at $6.8B valuation (Jan 2022). Acquirer of Apono (2026-06-15, reported $250M-$300M).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed (legal entity AgileBits Inc.). ~$920M raised; Series C $620M at $6.8B valuation (Jan 2022). Acquirer of Apono (2026-06-15, reported $250M-$300M).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$920M
 last_funding: Series C, $620M, 2022-01 (at $6.8B valuation)
-deployment: [saas, sdk, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market / SMB
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [secrets, password-manager, extended-access-management, device-trust, acquirer]
 ---
 

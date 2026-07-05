@@ -3,26 +3,30 @@ title: AWS Secrets Manager
 type: vendor
 name: AWS Secrets Manager
 slug: aws-secrets-manager
-categories: [secrets-management]
-layer: foundation
-aliases: [Secrets Manager]
-website: "https://aws.amazon.com/secrets-manager/"
+aka: [Secrets Manager]
+primary_category: secrets-management
+also_listed_in: []
+website: https://aws.amazon.com/secrets-manager/
 founded: 2018
 hq: Seattle, WA
-ownership: public
-ownership_detail: "First-party AWS service. Amazon.com, Inc. (NASDAQ: AMZN)."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: null
+ownership_note: 'First-party AWS service. Amazon.com, Inc. (NASDAQ: AMZN).'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (any AWS customer)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [secrets, rotation, iam, kms, aws, first-party-cloud]
 ---
 

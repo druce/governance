@@ -3,26 +3,30 @@ title: LogicGate
 type: vendor
 name: LogicGate
 slug: logicgate
-categories: [enterprise-grc]
-layer: governance
-aliases: [Risk Cloud]
-website: "https://www.logicgate.com/"
+aka: [Risk Cloud]
+primary_category: enterprise-grc
+also_listed_in: []
+website: https://www.logicgate.com/
 founded: 2015
 hq: Chicago, Illinois, USA
-ownership: independent
-ownership_detail: "Private, VC/growth-equity backed; ~$156M raised. Series C $113M (2021) led by PSG."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/growth-equity backed; ~$156M raised. Series C $113M (2021) led by PSG.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$156M
-last_funding: "Series C, $113M, 2021 (PSG + Greenspring)"
-deployment: [saas]
+last_funding: Series C, $113M, 2021 (PSG + Greenspring)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, irm, risk-management, no-code]
 ---
 

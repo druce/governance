@@ -3,26 +3,30 @@ title: Menlo Security
 type: vendor
 name: Menlo Security
 slug: menlo-security
-categories: [enterprise-browser]
-layer: ux
-aliases: [Menlo]
-website: "https://www.menlosecurity.com"
+aka: [Menlo]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://www.menlosecurity.com
 founded: 2013
 hq: Mountain View, California, USA
-ownership: independent
-ownership_detail: Private, VC/PE-backed (Vista Equity Partners, Neuberger Berman, General Catalyst, Amex Ventures, Ericsson Ventures, HSBC, JPMorgan Chase). Acquired Votiro (CDR/DLP) 2025-02-19.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/PE-backed (Vista Equity Partners, Neuberger Berman, General Catalyst, Amex Ventures, Ericsson Ventures, HSBC, JPMorgan Chase). Acquired Votiro (CDR/DLP) 2025-02-19.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$260M (as of 2026-06-28)
 last_funding: Series E, $100M, 2020 (led by Vista Equity Partners)
-deployment: [saas, inline-proxy]
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated / government
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [untrusted-input, egress, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [enterprise-browser, remote-browser-isolation, rbi, browser-security, dlp]
 ---
 

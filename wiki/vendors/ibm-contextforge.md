@@ -3,26 +3,30 @@ title: IBM ContextForge MCP Gateway
 type: vendor
 name: IBM ContextForge MCP Gateway
 slug: ibm-contextforge
-categories: [mcp-gateway]
-layer: model-prompt
-aliases: [MCP Context Forge, IBM mcp-context-forge, ContextForge AI Gateway]
-website: "https://github.com/IBM/mcp-context-forge"
+aka: [MCP Context Forge, IBM mcp-context-forge, ContextForge AI Gateway]
+primary_category: mcp-gateway
+also_listed_in: []
+website: https://github.com/IBM/mcp-context-forge
 founded: 2025
 hq: Armonk, NY (IBM)
-ownership: public
-ownership_detail: "IBM open-source project (Apache-2.0); IBM is public (NYSE: IBM). Community/corporate-backed OSS, not a separately sold commercial product as of 2026-06."
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'IBM open-source project (Apache-2.0); IBM is public (NYSE: IBM). Community/corporate-backed OSS, not a separately sold commercial product as of 2026-06.'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a
 last_funding: n/a
-deployment: [self-hosted, on-prem, api, sdk]
+market_position: null
+deployment_model: [self-hosted, on-prem]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [mcp, gateway, open-source, ibm, agentic]
 ---
 

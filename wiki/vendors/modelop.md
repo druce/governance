@@ -3,26 +3,30 @@ title: ModelOp
 type: vendor
 name: ModelOp
 slug: modelop
-categories: [ai-governance-platform]
-layer: governance
-aliases: [ModelOp Center]
-website: "https://www.modelop.com"
+aka: [ModelOp Center]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.modelop.com
 founded: 2018
 hq: Chicago, IL, USA
-ownership: independent
-ownership_detail: "VC-backed independent; $10M Series B led by Baird Capital (2024-08-13). No M&A."
-ownership_confidence: medium
-funding_total: "~$16M total (aggregator est.); $10M Series B disclosed by vendor"
-last_funding: "Series B, $10M, 2024-08-13 (Baird Capital)"
-deployment: [saas, self-hosted, api]
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; $10M Series B led by Baird Capital (2024-08-13). No M&A.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$16M total (aggregator est.); $10M Series B disclosed by vendor
+last_funding: Series B, $10M, 2024-08-13 (Baird Capital)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated enterprise (banks / financial services, Fortune 500)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [model-risk, sr-11-7, modelops, ai-governance, financial-services]
 ---
 

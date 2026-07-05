@@ -3,26 +3,30 @@ title: CrowdStrike Falcon LogScale
 type: vendor
 name: CrowdStrike Falcon LogScale
 slug: crowdstrike-logscale
-categories: [siem-soc, edr-xdr]
-layer: foundation
-aliases: [Humio, Falcon LogScale, Falcon Next-Gen SIEM]
-website: "https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/"
+aka: [Humio, Falcon LogScale, Falcon Next-Gen SIEM]
+primary_category: siem-soc
+also_listed_in: [edr-xdr]
+website: https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/
 founded: 2016
 hq: Austin, TX, USA
-ownership: public
-ownership_detail: "Product of CrowdStrike Holdings, Inc. (NASDAQ: CRWD); formerly Humio, acq. 2021 (~$400M)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted]
+ownership_state: public
+owner: CrowdStrike Holdings
+ownership_note: 'Product of CrowdStrike Holdings, Inc. (NASDAQ: CRWD); formerly Humio, acq. 2021 (~$400M)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [crowdstrike, humio, siem, soc, next-gen-siem, incumbent]
 ---
 

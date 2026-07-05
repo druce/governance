@@ -3,26 +3,30 @@ title: TruLens
 type: vendor
 name: TruLens
 slug: trulens
-categories: [llm-observability]
-layer: model-prompt
-aliases: [TruEra]
-website: "https://www.trulens.org"
+aka: [TruEra]
+primary_category: llm-observability
+also_listed_in: []
+website: https://www.trulens.org
 founded: 2021
 hq: Redwood City, California, USA (TruEra; now part of Snowflake)
-ownership: acquired
-ownership_detail: Created by TruEra; Snowflake acquired the TruEra AI Observability platform (announced 2024-05-22). TruLens kept open source under Snowflake stewardship.
-ownership_confidence: high
+ownership_state: acquired-pending
+owner: Snowflake
+ownership_note: Created by TruEra; Snowflake acquired the TruEra AI Observability platform (announced 2024-05-22). TruLens kept open source under Snowflake stewardship.
+acquisition: {announced: 2024-05-22, closed: null, price: null}
 funding_total: n/a (TruLens is an OSS project; TruEra was VC-backed pre-acquisition — total not verified here)
 last_funding: n/a (acquired by Snowflake 2024)
-deployment: [sdk, self-hosted, api]
+market_position: null
+deployment_model: [self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / ML & GenAI engineering teams (esp. Snowflake users)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [observability, evaluation, open-source, rag, snowflake]
 ---
 

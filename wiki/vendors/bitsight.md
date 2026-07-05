@@ -3,26 +3,30 @@ title: Bitsight
 type: vendor
 name: Bitsight
 slug: bitsight
-categories: [vendor-risk]
-layer: governance
-aliases: [BitSight Technologies]
-website: "https://www.bitsight.com/"
+aka: [BitSight Technologies]
+primary_category: vendor-risk
+also_listed_in: []
+website: https://www.bitsight.com/
 founded: 2011
 hq: Boston, Massachusetts, USA
-ownership: independent
-ownership_detail: "Private; Moody's Corporation is largest shareholder after a $250M investment in 2021 (~$2.4B valuation). Not a Moody's subsidiary. Acquired Cybersixgill (2024, ~$115M)."
-ownership_confidence: high
-funding_total: ">$465M (incl. Moody's $250M, 2021)"
-last_funding: "Moody's strategic investment, $250M, 2021"
-deployment: [saas]
+ownership_state: independent
+owner: null
+ownership_note: Private; Moody's Corporation is largest shareholder after a $250M investment in 2021 (~$2.4B valuation). Not a Moody's subsidiary. Acquired Cybersixgill (2024, ~$115M).
+acquisition: {announced: null, closed: null, price: null}
+funding_total: '>$465M (incl. Moody''s $250M, 2021)'
+last_funding: Moody's strategic investment, $250M, 2021
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [security-ratings, vendor-risk, tprm, cyber-ratings]
 ---
 

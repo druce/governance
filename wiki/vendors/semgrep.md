@@ -3,26 +3,30 @@ title: Semgrep
 type: vendor
 name: Semgrep
 slug: semgrep
-categories: [software-supply-chain]
-layer: foundation
-aliases: [r2c]
-website: "https://semgrep.dev"
+aka: [r2c]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://semgrep.dev
 founded: 2017
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Private, venture-backed. Total funding ~$193M; last round $100M Series D (Feb 2025, led by Menlo Ventures). Originally named r2c.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed. Total funding ~$193M; last round $100M Series D (Feb 2025, led by Menlo Ventures). Originally named r2c.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$193M
 last_funding: Series D, $100M, February 2025 (Menlo Ventures)
-deployment: [saas, self-hosted, sdk]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developer / AppSec teams, startups to enterprise; strong open-source adoption
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sast, sca, secrets-detection, appsec, open-source]
 ---
 

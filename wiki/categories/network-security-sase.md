@@ -3,14 +3,19 @@ title: Network Security / SASE (SSE)
 type: category
 name: Network Security / SASE (SSE)
 slug: network-security-sase
+category: network-security-sase
 layer: foundation
-priority: day-1
-trifecta_role: egress
+survey_question: AI-aware Network Security (SSE/SASE)
+adoption_tier: day-1
+trigger: table stakes — the TLS-inspecting egress path AI traffic rides on
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [ai-access-governance, dlp, enterprise-browser]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: Network Security / SASE
 maps_to_seed_csv: AI-aware Network Security (SSE/SASE)
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Network Security / SASE (SSE)

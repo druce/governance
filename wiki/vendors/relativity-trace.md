@@ -3,26 +3,30 @@ title: Relativity Trace
 type: vendor
 name: Relativity Trace
 slug: relativity-trace
-categories: [comms-surveillance]
-layer: governance
-aliases: ["Trace", "kCura", "Relativity"]
-website: "https://www.relativity.com/data-breach-response/communication-surveillance/"
-founded: 2018                        # Trace product launched 2018-11-06; parent kCura/Relativity founded 2001 (Chicago)
+aka: [Trace, kCura, Relativity]
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://www.relativity.com/data-breach-response/communication-surveillance/
+founded: 2018
 hq: Chicago, IL
-ownership: subsidiary               # product of Relativity (privately held; Silver Lake-backed)
-ownership_detail: "Product of Relativity (formerly kCura), a private company. Silver Lake made a strategic growth investment (2021-03-18) at a reported ~$3.6B valuation, becoming largest shareholder with a significant minority stake; ICONIQ Growth remains an investor; founder Andrew Sieja remains a shareholder."
-ownership_confidence: high
-funding_total:                       # Relativity not separately broken out; ICONIQ $125M (2015), Silver Lake strategic growth investment (2021)
-last_funding: "Silver Lake strategic growth investment, 2021-03 (amount undisclosed; ~$3.6B valuation per WSJ)"
-deployment: [saas]
+ownership_state: acquired-closed
+owner: Relativity
+ownership_note: Product of Relativity (formerly kCura), a private company. Silver Lake made a strategic growth investment (2021-03-18) at a reported ~$3.6B valuation, becoming largest shareholder with a significant minority stake; ICONIQ Growth remains an investor; founder Andrew Sieja remains a shareholder.
+acquisition: {announced: 2021-03-18, closed: null, price: null}
+funding_total: null
+last_funding: Silver Lake strategic growth investment, 2021-03 (amount undisclosed; ~$3.6B valuation per WSJ)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated (banking, investment management, financial services, pharma); enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [comms-surveillance, ecomms, market-abuse, mnpi, ediscovery, ai-detection]
 ---
 

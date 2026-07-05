@@ -3,14 +3,19 @@ title: Promotion Gates
 type: category
 name: Promotion Gates
 slug: promotion-gates
+category: promotion-gates
 layer: policy
-priority: process
-trifecta_role: none-detection
-maps_to_seed_doc: Promotion Gates
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: CI/CD sign-off between experiment and production
+maturity_stage_required: null
+category_maturity: null
+adjacent: [risk-tiers, policy-as-code, software-supply-chain]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Promotion Gates
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > A **practice**, not a product. You implement it with the CI/CD, change-management,

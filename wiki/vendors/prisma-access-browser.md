@@ -3,26 +3,30 @@ title: Prisma Access Browser (Palo Alto/Talon)
 type: vendor
 name: Prisma Access Browser (Palo Alto/Talon)
 slug: prisma-access-browser
-categories: [enterprise-browser]
-layer: ux
-aliases: [Talon, Talon Cyber Security, Talon Enterprise Browser]
-website: "https://www.paloaltonetworks.com/sase/access-browser"
+aka: [Talon, Talon Cyber Security, Talon Enterprise Browser]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://www.paloaltonetworks.com/sase/access-browser
 founded: 2021
-hq: "Santa Clara, California, USA (Palo Alto Networks); Talon origin: Tel Aviv, Israel"
-ownership: subsidiary
-ownership_detail: "Former Talon Cyber Security, acquired by Palo Alto Networks (closed 2023-12-28, reported ~$625M); rebranded Prisma Access Browser within the Prisma SASE portfolio."
-ownership_confidence: high
+hq: 'Santa Clara, California, USA (Palo Alto Networks); Talon origin: Tel Aviv, Israel'
+ownership_state: acquired-closed
+owner: Palo Alto Networks
+ownership_note: Former Talon Cyber Security, acquired by Palo Alto Networks (closed 2023-12-28, reported ~$625M); rebranded Prisma Access Browser within the Prisma SASE portfolio.
+acquisition: {announced: 2023-12-28, closed: 2023-12-28, price: null}
 funding_total: n/a (PANW product; Talon raised ~$143M pre-acquisition)
 last_funding: acquired by Palo Alto Networks 2023-12-28
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [enterprise-browser, sase, talon, palo-alto, byod]
 ---
 

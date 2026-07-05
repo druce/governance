@@ -3,14 +3,19 @@ title: Identity Governance & Visibility (IGA / ISPM)
 type: category
 name: Identity Governance & Visibility (IGA / ISPM)
 slug: identity-governance
+category: identity-governance
 layer: foundation
-priority: day-2
-trifecta_role: sensitive-data (right-sizes standing access so fewer identities can reach sensitive systems)
+survey_question: Identity Governance & Visibility (IGA / ISPM)
+adoption_tier: day-2
+trigger: enough headcount/apps that joiner-mover-leaver and access certs need automation
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [identity-access, data-access-governance, non-human-identity]
+incumbent_coverage: []
+vendor_count: 9
 maps_to_seed_doc: (folded into Identity & Access + Data Access Gov)
 maps_to_seed_csv: Identity Governance & Visibility (IGA / ISPM)
-vendor_count: 9
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

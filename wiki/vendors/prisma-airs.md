@@ -3,26 +3,30 @@ title: Prisma AIRS (Palo Alto)
 type: vendor
 name: Prisma AIRS (Palo Alto)
 slug: prisma-airs
-categories: [ai-runtime-security, ai-spm, mcp-gateway, ai-gateway]
-layer: model-prompt
-aliases: [Prisma AIRS, Palo Alto AI Runtime Security]
-website: "https://www.paloaltonetworks.com/prisma/prisma-airs"
+aka: [Prisma AIRS, Palo Alto AI Runtime Security]
+primary_category: ai-runtime-security
+also_listed_in: [ai-spm, mcp-gateway, ai-gateway]
+website: https://www.paloaltonetworks.com/prisma/prisma-airs
 founded: 2025
 hq: Santa Clara, California, USA (Palo Alto Networks)
-ownership: subsidiary
-ownership_detail: "Product platform of Palo Alto Networks. Built on acquisitions: Protect AI (closed 2025-07-22) for model scanning/red-teaming/posture; Portkey (closed 2026-05-29) as the AI Gateway component."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Palo Alto Networks
+ownership_note: 'Product platform of Palo Alto Networks. Built on acquisitions: Protect AI (closed 2025-07-22) for model scanning/red-teaming/posture; Portkey (closed 2026-05-29) as the AI Gateway component.'
+acquisition: {announced: 2025-07-22, closed: 2026-05-29, price: null}
 funding_total: n/a (PANW product)
 last_funding: n/a
-deployment: [saas, api, inline-proxy, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, inline-proxy, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-runtime-security, ai-firewall, ai-spm, protect-ai, portkey, palo-alto]
 ---
 

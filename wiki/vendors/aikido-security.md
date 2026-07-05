@@ -3,26 +3,30 @@ title: Aikido Security
 type: vendor
 name: Aikido Security
 slug: aikido-security
-categories: [software-supply-chain]
-layer: foundation
-aliases: [Aikido]
-website: "https://www.aikido.dev"
+aka: [Aikido]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://www.aikido.dev
 founded: 2022
 hq: Ghent, Belgium
-ownership: independent
-ownership_detail: "Independent, venture-backed private company; Series B Jan 2026 at $1B valuation (unicorn)"
-ownership_confidence: high
-funding_total: "~$84M total (pre-seed €2M Jan 2023; seed €5M Nov 2023; Series A $17M May 2024; Series B $60M Jan 2026)"
-last_funding: "Series B $60M, Jan 2026, $1B valuation (led by DST Global; PSG Equity, Notion Capital, Singular)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Independent, venture-backed private company; Series B Jan 2026 at $1B valuation (unicorn)
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$84M total (pre-seed €2M Jan 2023; seed €5M Nov 2023; Series A $17M May 2024; Series B $60M Jan 2026)
+last_funding: Series B $60M, Jan 2026, $1B valuation (led by DST Global; PSG Equity, Notion Capital, Singular)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: SMB / mid-market (developer-first)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [appsec, sca, sast, dev-first, consolidated-platform]
 ---
 

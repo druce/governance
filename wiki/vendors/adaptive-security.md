@@ -3,26 +3,30 @@ title: Adaptive Security
 type: vendor
 name: Adaptive Security
 slug: adaptive-security
-categories: [anti-deepfake]
-layer: foundation
-aliases: []
-website: "https://www.adaptivesecurity.com"
+aka: []
+primary_category: anti-deepfake
+also_listed_in: []
+website: https://www.adaptivesecurity.com
 founded: 2025
 hq: New York, NY, USA
-ownership: independent
-ownership_detail: VC-backed independent; OpenAI Startup Fund and a16z are investors (not owners). No acquisition.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; OpenAI Startup Fund and a16z are investors (not owners). No acquisition.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $146.5M (as of 2025-12-16)
 last_funding: Series B, $81M, 2025-12-16 (led by Bain Capital Ventures)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [deepfake, social-engineering, security-awareness-training, phishing-simulation, vishing]
 ---
 

@@ -3,26 +3,30 @@ title: NeMo Guardrails (NVIDIA)
 type: vendor
 name: NeMo Guardrails (NVIDIA)
 slug: nemo-guardrails
-categories: [ai-red-teaming]
-layer: model-prompt
-aliases: [NVIDIA NeMo Guardrails, Colang]
-website: "https://github.com/NVIDIA-NeMo/Guardrails"
+aka: [NVIDIA NeMo Guardrails, Colang]
+primary_category: ai-red-teaming
+also_listed_in: []
+website: https://github.com/NVIDIA-NeMo/Guardrails
 founded: 2023
 hq: Santa Clara, CA (NVIDIA)
-ownership: public
-ownership_detail: "Open-source project (Apache 2.0) maintained by NVIDIA (NASDAQ: NVDA); not a standalone company"
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Open-source project (Apache 2.0) maintained by NVIDIA (NASDAQ: NVDA); not a standalone company'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (NVIDIA-funded OSS project)
 last_funding: n/a
-deployment: [self-hosted, sdk]
+market_position: null
+deployment_model: [self-hosted]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: AI developers / enterprises (esp. NVIDIA AI stack users)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-red-teaming, guardrails, open-source, nvidia, colang]
 ---
 

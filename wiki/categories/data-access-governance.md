@@ -3,14 +3,19 @@ title: Data Access Governance
 type: category
 name: Data Access Governance
 slug: data-access-governance
+category: data-access-governance
 layer: data
-priority: day-2
-trifecta_role: sensitive-data (right-sizes who can reach the sensitive data leg)
+survey_question: Data Access Governance
+adoption_tier: day-2
+trigger: day-1 if doing RAG over internal permissioned data
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [dspm, identity-governance, entitlement-aware-rag]
+incumbent_coverage: []
+vendor_count: 10
 maps_to_seed_doc: Data Access Governance
 maps_to_seed_csv: — (doc-only; overlaps IGA survey question)
-vendor_count: 10
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Data Access Governance

@@ -3,26 +3,30 @@ title: Arize Phoenix
 type: vendor
 name: Arize Phoenix
 slug: arize-phoenix
-categories: [llm-observability]
-layer: model-prompt
-aliases: [Arize AI, Phoenix, Arize AX]
-website: "https://arize.com"
+aka: [Arize AI, Phoenix, Arize AX]
+primary_category: llm-observability
+also_listed_in: []
+website: https://arize.com
 founded: 2020
 hq: Berkeley, CA
-ownership: independent
-ownership_detail: "Arize AI, independent VC-backed; Series C $70M Feb 2025. Phoenix is its open-source library; Arize AX is the commercial SaaS"
-ownership_confidence: high
-funding_total: "~$135M across 5 rounds"
-last_funding: "Series C $70M, 2025-02 (led by Adams Street Partners)"
-deployment: [saas, self-hosted, sdk, api]
-target_customer: "ML/AI engineering teams; enterprise (Booking.com, Uber, Duolingo, PepsiCo cited)"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: independent
+owner: null
+ownership_note: Arize AI, independent VC-backed; Series C $70M Feb 2025. Phoenix is its open-source library; Arize AX is the commercial SaaS
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$135M across 5 rounds
+last_funding: Series C $70M, 2025-02 (led by Adams Street Partners)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: ML/AI engineering teams; enterprise (Booking.com, Uber, Duolingo, PepsiCo cited)
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, observability, evals, ml-monitoring]
 ---
 

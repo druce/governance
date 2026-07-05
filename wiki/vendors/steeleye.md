@@ -3,26 +3,30 @@ title: SteelEye
 type: vendor
 name: SteelEye
 slug: steeleye
-categories: [comms-surveillance]
-layer: governance
-aliases: []
-website: "https://www.steel-eye.com"
+aka: []
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://www.steel-eye.com
 founded: 2017
 hq: London, UK
-ownership: independent
-ownership_detail: "VC-backed, independent. Series B ($21M, 2022-09) led by Ten Coves Capital; total raised ~$43M. No acquisition found as of 2026-06-28."
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: VC-backed, independent. Series B ($21M, 2022-09) led by Ten Coves Capital; total raised ~$43M. No acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$43M
-last_funding: "Series B, $21M, 2022-09 (led by Ten Coves Capital)"
-deployment: [saas, api]
+last_funding: Series B, $21M, 2022-09 (led by Ten Coves Capital)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated financial firms (banks, brokers, asset managers, hedge funds); positioned for mid-size firms
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [comms-surveillance, trade-surveillance, market-abuse, mar, recordkeeping, regtech]
 ---
 

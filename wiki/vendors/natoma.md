@@ -3,26 +3,30 @@ title: Natoma
 type: vendor
 name: Natoma
 slug: natoma
-categories: [non-human-identity, mcp-gateway]
-layer: foundation
-aliases: [Natoma Labs]
-website: "https://natoma.ai"
+aka: [Natoma Labs]
+primary_category: non-human-identity
+also_listed_in: [mcp-gateway]
+website: https://natoma.ai
 founded: 2024
 hq: San Francisco, California, USA
-ownership: acquired
-ownership_detail: "Snowflake announced intent to acquire (2026-05-27); deal subject to customary closing conditions, terms undisclosed; see sources"
-ownership_confidence: high
-funding_total: "$7M (seed)"
-last_funding: "Seed, May 2025 (led by Index Ventures and Greylock)"
-deployment: [saas, self-hosted, on-prem, api]
+ownership_state: acquired-closed
+owner: Snowflake
+ownership_note: Snowflake announced intent to acquire (2026-05-27); deal subject to customary closing conditions, terms undisclosed; see sources
+acquisition: {announced: 2026-05-27, closed: 2026-05-27, price: null}
+funding_total: $7M (seed)
+last_funding: Seed, May 2025 (led by Index Ventures and Greylock)
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [mcp, ai-agents, non-human-identity, agentic]
 ---
 

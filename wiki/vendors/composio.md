@@ -3,26 +3,30 @@ title: Composio
 type: vendor
 name: Composio
 slug: composio
-categories: [tool-identity-integration]
-layer: model-prompt
-aliases: [Sampark Inc.]
-website: "https://composio.dev"
+aka: [Sampark Inc.]
+primary_category: tool-identity-integration
+also_listed_in: []
+website: https://composio.dev
 founded: 2023
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Venture-backed and independent as of 2026-06; no acquisition found. Legal entity Sampark Inc.
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed and independent as of 2026-06; no acquisition found. Legal entity Sampark Inc.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$29M (vendor-stated total)
 last_funding: Series A, $25M, 2025-07 (led by Lightspeed Venture Partners)
-deployment: [saas, api, sdk, self-hosted]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / engineering teams building AI agents; startups to enterprise
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [tool-identity-integration, agent-tooling, managed-auth, oauth, mcp, tool-calling]
 ---
 

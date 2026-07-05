@@ -3,26 +3,30 @@ title: Kong
 type: vendor
 name: Kong
 slug: kong
-categories: [ai-gateway, mcp-gateway]
-layer: model-prompt
-aliases: [Kong Inc., Mashape, Kong AI Gateway, Kong Konnect]
-website: "https://konghq.com"
+aka: [Kong Inc., Mashape, Kong AI Gateway, Kong Konnect]
+primary_category: ai-gateway
+also_listed_in: [mcp-gateway]
+website: https://konghq.com
 founded: 2009
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: "Private, VC-backed (unicorn). $175M Series E at $2B valuation closed 2024-11-19; total raised ~$345M. Not acquired, not public."
-ownership_confidence: high
+ownership_state: independent
+owner: Not
+ownership_note: Private, VC-backed (unicorn). $175M Series E at $2B valuation closed 2024-11-19; total raised ~$345M. Not acquired, not public.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$345M
-last_funding: "Series E, $175M, 2024-11-19 (Tiger Global lead; $2B valuation)"
-deployment: [saas, self-hosted, inline-proxy, api, on-prem]
+last_funding: Series E, $175M, 2024-11-19 (Tiger Global lead; $2B valuation)
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-gateway, mcp-gateway, api-management, llm-proxy, guardrails]
 ---
 

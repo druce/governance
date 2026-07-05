@@ -3,26 +3,30 @@ title: Varonis
 type: vendor
 name: Varonis
 slug: varonis
-categories: [data-access-governance, dspm, dlp]
-layer: data
-aliases: [Varonis Systems, VRNS]
-website: "https://www.varonis.com"
+aka: [Varonis Systems, VRNS]
+primary_category: data-access-governance
+also_listed_in: [dspm, dlp]
+website: https://www.varonis.com
 founded: 2005
 hq: Miami, Florida, US (relocated from New York, Q1 2025)
-ownership: public
-ownership_detail: "Publicly traded, NASDAQ: VRNS (IPO 2014-02-28). Acquired Cyral (database activity monitoring) 2025-03-17."
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Publicly traded, NASDAQ: VRNS (IPO 2014-02-28). Acquired Cyral (database activity monitoring) 2025-03-17.'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public company)
-last_funding: "IPO 2014-02-28 (NASDAQ: VRNS)"
-deployment: [saas, self-hosted, on-prem, api]
+last_funding: 'IPO 2014-02-28 (NASDAQ: VRNS)'
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: high
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [data-security-platform, dag, dspm, dlp, data-classification]
 ---
 

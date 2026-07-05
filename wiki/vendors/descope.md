@@ -3,26 +3,30 @@ title: Descope
 type: vendor
 name: Descope
 slug: descope
-categories: [tool-identity-integration, non-human-identity]
-layer: model-prompt
-aliases: [Descope Agentic Identity Hub]
-website: "https://www.descope.com"
+aka: [Descope Agentic Identity Hub]
+primary_category: tool-identity-integration
+also_listed_in: [non-human-identity]
+website: https://www.descope.com
 founded: 2022
 hq: Los Altos, California, USA
-ownership: independent
-ownership_detail: Venture-backed and independent as of 2026-06; no acquisition found. Founded by ex-Demisto team (Demisto itself acq. by Palo Alto Networks 2019, pre-Descope).
-ownership_confidence: high
+ownership_state: independent
+owner: Palo Alto Networks
+ownership_note: Venture-backed and independent as of 2026-06; no acquisition found. Founded by ex-Demisto team (Demisto itself acq. by Palo Alto Networks 2019, pre-Descope).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $88M (seed + extension)
 last_funding: Seed extension, +$35M, 2025-09-30 (existing investors); brings total to $88M
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / B2B SaaS and enterprise app builders; security teams adopting agentic AI
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ciam, authentication, passwordless, agentic-identity, mcp, non-human-identity, oauth]
 ---
 

@@ -3,26 +3,30 @@ title: Cloudflare
 type: vendor
 name: Cloudflare
 slug: cloudflare
-categories: [ai-gateway, network-security-sase, ephemeral-environments]
-layer: model-prompt
-aliases: [NET, "Cloudflare One", "Workers AI", "AI Gateway"]
-website: "https://www.cloudflare.com/products/ai-gateway/"
+aka: [NET, Cloudflare One, Workers AI, AI Gateway]
+primary_category: ai-gateway
+also_listed_in: [network-security-sase, ephemeral-environments]
+website: https://www.cloudflare.com/products/ai-gateway/
 founded: 2009
 hq: San Francisco, California, USA
-ownership: public
-ownership_detail: "Public — NYSE: NET; IPO September 2019. Founders retain voting control via dual-class structure."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api, inline-proxy, edge]
+ownership_state: public
+owner: null
+ownership_note: 'Public — NYSE: NET; IPO September 2019. Founders retain voting control via dual-class structure.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api, inline-proxy, platform]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market / developers
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-gateway, edge, sase, mcp, workers]
 ---
 

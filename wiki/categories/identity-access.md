@@ -3,14 +3,19 @@ title: Identity & Access (IdP/SSO)
 type: category
 name: Identity & Access (IdP/SSO)
 slug: identity-access
+category: identity-access
 layer: foundation
-priority: day-1
-trifecta_role: sensitive-data (foundational enabler; least-privilege gates who/what reaches sensitive systems across all three legs)
+survey_question: General Identity
+adoption_tier: day-1
+trigger: any users at all — the human + agent front door
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [non-human-identity, identity-governance, secrets-management]
+incumbent_coverage: []
+vendor_count: 5
 maps_to_seed_doc: Identity & Access
 maps_to_seed_csv: General Identity
-vendor_count: 5
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

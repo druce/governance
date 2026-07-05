@@ -3,26 +3,30 @@ title: Cisco AI Defense
 type: vendor
 name: Cisco AI Defense
 slug: cisco-ai-defense
-categories: [ai-runtime-security, ai-red-teaming]
-layer: model-prompt
-aliases: [Robust Intelligence, robust-intelligence]
-website: "https://www.cisco.com/site/us/en/products/security/ai-defense/"
+aka: [Robust Intelligence, robust-intelligence]
+primary_category: ai-runtime-security
+also_listed_in: [ai-red-teaming]
+website: https://www.cisco.com/site/us/en/products/security/ai-defense/
 founded: 2019
 hq: San Jose, California, USA
-ownership: subsidiary
-ownership_detail: "Cisco product built on Robust Intelligence (founded 2019, San Francisco; founders Yaron Singer, Kojin Oshiba, Eric Balkanski, Alexander Rilee). Cisco announced intent to acquire Robust Intelligence 2024-08-26; closed ~2024-09-24. Rebranded/absorbed into Cisco AI Defense."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api, inline-proxy, sdk]
+ownership_state: acquired-closed
+owner: Cisco
+ownership_note: Cisco product built on Robust Intelligence (founded 2019, San Francisco; founders Yaron Singer, Kojin Oshiba, Eric Balkanski, Alexander Rilee). Cisco announced intent to acquire Robust Intelligence 2024-08-26; closed ~2024-09-24. Rebranded/absorbed into Cisco AI Defense.
+acquisition: {announced: 2024-08-26, closed: 2024-09-24, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api, inline-proxy, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-firewall, red-teaming, cisco]
 ---
 

@@ -3,26 +3,30 @@ title: CalypsoAI
 type: vendor
 name: CalypsoAI
 slug: calypsoai
-categories: [ai-runtime-security, ai-governance-platform]
-layer: model-prompt
-aliases: [Calypso AI]
-website: "https://calypsoai.com"
+aka: [Calypso AI]
+primary_category: ai-runtime-security
+also_listed_in: [ai-governance-platform]
+website: https://calypsoai.com
 founded: 2018
 hq: Dublin, Ireland
-ownership: acquired
-ownership_detail: "Acquired by [f5](f5.md) for ~$180M — announced 2025-09-11, completed 2025-10-08; now F5 AI Guardrails / F5 AI Red Team"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: F5
+ownership_note: Acquired by [f5](f5.md) for ~$180M — announced 2025-09-11, completed 2025-10-08; now F5 AI Guardrails / F5 AI Red Team
+acquisition: {announced: 2025-09-11, closed: 2025-10-08, price: null}
 funding_total: ~$40M+ (pre-acquisition)
-last_funding: "$23M round announced 2023-06-27 (Paladin Capital Group + strategic investors)"
-deployment: [saas, api, self-hosted]
+last_funding: $23M round announced 2023-06-27 (Paladin Capital Group + strategic investors)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [acquired, ai-firewall, ai-guardrails, red-teaming]
 ---
 

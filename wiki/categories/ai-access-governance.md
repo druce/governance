@@ -3,14 +3,19 @@ title: AI Access Governance (CASB for AI) / Shadow-AI
 type: category
 name: AI Access Governance (CASB for AI) / Shadow-AI
 slug: ai-access-governance
+category: ai-access-governance
 layer: model-prompt
-priority: day-1
-trifecta_role: sensitive-data / egress
+survey_question: Shadow-AI / Insider risk
+adoption_tier: day-1
+trigger: employees using third-party AI tools (i.e., immediately)
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [dlp, network-security-sase, sspm, ai-spm]
+incumbent_coverage: []
+vendor_count: 11
 maps_to_seed_doc: AI Access Governance (CASB for AI)
 maps_to_seed_csv: Shadow-AI / Insider risk
-vendor_count: 11
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # AI Access Governance (CASB for AI) / Shadow-AI

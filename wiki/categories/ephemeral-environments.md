@@ -3,14 +3,19 @@ title: Ephemeral Environments
 type: category
 name: Ephemeral Environments
 slug: ephemeral-environments
+category: ephemeral-environments
 layer: governance
-priority: day-2
-trifecta_role: egress
+survey_question: null
+adoption_tier: practice
+trigger: underpins trust-zone design — disposable compute for risky AI work
+maturity_stage_required: null
+category_maturity: null
+adjacent: [trust-zone-segmentation, promotion-gates]
+incumbent_coverage: []
+vendor_count: 4
 maps_to_seed_doc: Ephemeral Environments
 maps_to_seed_csv: —
-vendor_count: 4
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

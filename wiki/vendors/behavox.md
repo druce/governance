@@ -3,26 +3,30 @@ title: Behavox
 type: vendor
 name: Behavox
 slug: behavox
-categories: [comms-surveillance]
-layer: governance
-aliases: [Behavox Quantum, Behavox LLM]
-website: "https://www.behavox.com/"
+aka: [Behavox Quantum, Behavox LLM]
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://www.behavox.com/
 founded: 2014
 hq: London, UK (major hubs in Montreal, New York, Belfast)
-ownership: independent
-ownership_detail: "VC/PE-backed independent. SoftBank Vision Fund 2 invested $100M (2020-02-24); HPS Investment Partners (part of BlackRock) made a $175M preferred-equity investment (2026-06-22). Other investors: Citigroup, Index Ventures, Hoxton Ventures. No acquisition."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: 'VC/PE-backed independent. SoftBank Vision Fund 2 invested $100M (2020-02-24); HPS Investment Partners (part of BlackRock) made a $175M preferred-equity investment (2026-06-22). Other investors: Citigroup, Index Ventures, Hoxton Ventures. No acquisition.'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$296M equity (per aggregators); $100M SoftBank (2020) + $175M HPS/BlackRock (2026) confirmed via primary/press
-last_funding: "$175M preferred equity from HPS Investment Partners (BlackRock), 2026-06-22"
-deployment: [saas, on-prem]
+last_funding: $175M preferred equity from HPS Investment Partners (BlackRock), 2026-06-22
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated — global banks, asset managers, hedge funds, commodity trading firms
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [comms-surveillance, market-abuse, mar, mnpi, conduct-risk, voice-surveillance, regtech]
 ---
 

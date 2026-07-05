@@ -3,26 +3,30 @@ title: Cerbos
 type: vendor
 name: Cerbos
 slug: cerbos
-categories: [authorization-engine, mcp-gateway]
-layer: model-prompt
-aliases: [Cerbos PDP, Cerbos Hub, Cerbos Cloud]
-website: "https://www.cerbos.dev"
+aka: [Cerbos PDP, Cerbos Hub, Cerbos Cloud]
+primary_category: authorization-engine
+also_listed_in: [mcp-gateway]
+website: https://www.cerbos.dev
 founded: 2021
 hq: London, UK (remote-first)
-ownership: independent
-ownership_detail: "VC-backed; ~$11M raised (seed $3.5M 2021 Crane; extended seed $7.5M Mar 2023, OMERS Ventures)"
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$11M raised (seed $3.5M 2021 Crane; extended seed $7.5M Mar 2023, OMERS Ventures)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$11M
-last_funding: "Extended seed $7.5M (2023-03, OMERS Ventures)"
-deployment: [self-hosted, saas, sdk]
+last_funding: Extended seed $7.5M (2023-03, OMERS Ventures)
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (developer-led)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authorization, pdp, open-source, rbac, abac, policy-as-code]
 ---
 

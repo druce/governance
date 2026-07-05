@@ -3,26 +3,30 @@ title: HiddenLayer
 type: vendor
 name: HiddenLayer
 slug: hiddenlayer
-categories: [ai-runtime-security, ai-red-teaming, ai-spm]
-layer: model-prompt
-aliases: []
-website: "https://www.hiddenlayer.com"
+aka: []
+primary_category: ai-runtime-security
+also_listed_in: [ai-red-teaming, ai-spm]
+website: https://www.hiddenlayer.com
 founded: 2022
 hq: Austin, Texas (US)
-ownership: independent
-ownership_detail: "Independent, VC-backed; no acquisition found as of 2026-06-28"
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed; no acquisition found as of 2026-06-28
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$50M+ (Series A $50M; earlier seed undisclosed)
-last_funding: "Series A $50M, 2023-09-19 (M12 / Microsoft + Moore Strategic Ventures lead)"
-deployment: [saas, self-hosted, api, sdk]
+last_funding: Series A $50M, 2023-09-19 (M12 / Microsoft + Moore Strategic Ventures lead)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise; regulated; government / defense
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-firewall, model-scanning, red-teaming, ai-spm, independent]
 ---
 

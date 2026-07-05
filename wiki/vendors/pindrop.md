@@ -3,26 +3,30 @@ title: Pindrop
 type: vendor
 name: Pindrop
 slug: pindrop
-categories: [anti-deepfake]
-layer: foundation
-aliases: []
-website: "https://www.pindrop.com"
+aka: []
+primary_category: anti-deepfake
+also_listed_in: []
+website: https://www.pindrop.com
 founded: 2011
 hq: Atlanta, GA, USA
-ownership: independent
-ownership_detail: VC-backed; ~$200M+ prior equity (a16z, GV, CapitalG, IVP, Citi Ventures et al.) + $100M venture debt from Hercules Capital (Jul 2024). No acquisition found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$200M+ prior equity (a16z, GV, CapitalG, IVP, Citi Ventures et al.) + $100M venture debt from Hercules Capital (Jul 2024). No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$200M+ equity + $100M venture debt (2024)
 last_funding: $100M venture debt (Hercules Capital), 2024-07-17
-deployment: [saas, api, on-prem]
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (banks, insurance, contact centers, financial services)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [deepfake, voice, call-center, fraud, authentication]
 ---
 

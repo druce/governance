@@ -3,26 +3,30 @@ title: SailPoint
 type: vendor
 name: SailPoint
 slug: sailpoint
-categories: [identity-governance, data-access-governance]
-layer: foundation
-aliases: [SailPoint Technologies, IdentityNow, IdentityIQ, Atlas]
-website: "https://www.sailpoint.com"
+aka: [SailPoint Technologies, IdentityNow, IdentityIQ, Atlas]
+primary_category: identity-governance
+also_listed_in: [data-access-governance]
+website: https://www.sailpoint.com
 founded: 2005
 hq: Austin, Texas, USA
-ownership: public
-ownership_detail: Re-IPO'd on Nasdaq (SAIL) Feb 2025; ~88% owned/controlled by Thoma Bravo post-IPO
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, on-prem]
+ownership_state: public
+owner: null
+ownership_note: Re-IPO'd on Nasdaq (SAIL) Feb 2025; ~88% owned/controlled by Thoma Bravo post-IPO
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity-governance, iga, access-certification, thoma-bravo]
 ---
 

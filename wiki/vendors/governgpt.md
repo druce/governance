@@ -3,26 +3,30 @@ title: GovernGPT
 type: vendor
 name: GovernGPT
 slug: governgpt
-categories: [ai-governance-platform]
-layer: governance
-aliases: [GovernGPT.ai]
-website: "https://www.governgpt.com"
+aka: [GovernGPT.ai]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.governgpt.com
 founded: 2023
 hq: Montreal, Canada
-ownership: independent
-ownership_detail: "Private, VC/accelerator-backed (Y Combinator W24); no M&A as of 2026-06-28"
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/accelerator-backed (Y Combinator W24); no M&A as of 2026-06-28
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$500K (pre-seed)
-last_funding: "Pre-seed ~2024-04 (Y Combinator W24); aggregator-reported, medium confidence"
-deployment: [saas]
+last_funding: Pre-seed ~2024-04 (Y Combinator W24); aggregator-reported, medium confidence
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: asset managers (hedge funds, PE, private credit) raising capital
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: low
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ddq-automation, rfp-automation, investor-relations, mismatch-flag]
 ---
 

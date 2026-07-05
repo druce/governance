@@ -3,26 +3,30 @@ title: TrojAI
 type: vendor
 name: TrojAI
 slug: trojai
-categories: [ai-runtime-security, ai-red-teaming]
-layer: model-prompt
-aliases: [Troj.AI]
-website: "https://troj.ai"
+aka: [Troj.AI]
+primary_category: ai-runtime-security
+also_listed_in: [ai-red-teaming]
+website: https://troj.ai
 founded: 2019
 hq: Saint John, New Brunswick, Canada (Boston office)
-ownership: acquired
-ownership_detail: "acq. by A10 Networks (NYSE: ATEN) — announced 2026-06-15; terms undisclosed; becomes A10's AI-security software arm (primary: A10 press release / BusinessWire)"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: A10 Networks
+ownership_note: 'acq. by A10 Networks (NYSE: ATEN) — announced 2026-06-15; terms undisclosed; becomes A10''s AI-security software arm (primary: A10 press release / BusinessWire)'
+acquisition: {announced: 2026-06-15, closed: 2026-06-15, price: null}
 funding_total: ~$9.65M (pre-acquisition, disclosed)
-last_funding: "Seed $5.75M, Apr 2024 (Flying Fish Partners, Build Ventures, Techstars Ventures)"
-deployment: [api, self-hosted, saas]
+last_funding: Seed $5.75M, Apr 2024 (Flying Fish Partners, Build Ventures, Techstars Ventures)
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise; MSSPs; sovereign / regulated buyers
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-firewall, red-teaming, m-and-a, canada]
 ---
 

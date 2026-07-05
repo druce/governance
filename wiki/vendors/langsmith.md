@@ -3,26 +3,30 @@ title: LangSmith (LangChain)
 type: vendor
 name: LangSmith (LangChain)
 slug: langsmith
-categories: [llm-observability]
-layer: model-prompt
-aliases: [LangChain]
-website: "https://www.langchain.com/langsmith"
+aka: [LangChain]
+primary_category: llm-observability
+also_listed_in: []
+website: https://www.langchain.com/langsmith
 founded: 2023
 hq: San Francisco, CA
-ownership: independent
-ownership_detail: "Product of LangChain (independent, VC-backed); Series B Oct 2025 at $1.25B valuation"
-ownership_confidence: high
-funding_total: "~$160M across 3 rounds"
-last_funding: "Series B $125M, 2025-10 (led by IVP), $1.25B valuation"
-deployment: [saas, self-hosted, sdk, api]
-target_customer: "AI-native startups to global enterprise (35% of Fortune 500 cited)"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: independent
+owner: LangChain
+ownership_note: Product of LangChain (independent, VC-backed); Series B Oct 2025 at $1.25B valuation
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$160M across 3 rounds
+last_funding: Series B $125M, 2025-10 (led by IVP), $1.25B valuation
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: AI-native startups to global enterprise (35% of Fortune 500 cited)
+last_verified: 2026-06-28
+verify_after: null
 tags: [observability, evals, agent-engineering, langchain]
 ---
 

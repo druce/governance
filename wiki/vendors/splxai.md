@@ -3,26 +3,30 @@ title: SplxAI
 type: vendor
 name: SplxAI
 slug: splxai
-categories: [ai-red-teaming, ai-runtime-security]
-layer: model-prompt
-aliases: [SPLX, SPLX AI, SplxAI Inc.]
-website: "https://splx.ai"
+aka: [SPLX, SPLX AI, SplxAI Inc.]
+primary_category: ai-red-teaming
+also_listed_in: [ai-runtime-security]
+website: https://splx.ai
 founded: 2023
 hq: Dover, Delaware, US (Croatian engineering roots; NYC US presence)
-ownership: subsidiary
-ownership_detail: "Acquired by Zscaler (NASDAQ: ZS); announced 2025-11-03, closed Zscaler Q1 FY2026 (bundled with Red Canary, aggregate $692M; SPLX portion not separately disclosed)"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Zscaler
+ownership_note: 'Acquired by Zscaler (NASDAQ: ZS); announced 2025-11-03, closed Zscaler Q1 FY2026 (bundled with Red Canary, aggregate $692M; SPLX portion not separately disclosed)'
+acquisition: {announced: 2025-11-03, closed: 2025-11-03, price: null}
 funding_total: ~$7M (pre-acquisition)
-last_funding: "$7M seed, 2025-03-26 (led by LAUNCHub Ventures)"
-deployment: [saas, api]
+last_funding: $7M seed, 2025-03-26 (led by LAUNCHub Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (regulated + AI-building orgs)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-red-teaming, ai-runtime-security, prompt-injection, agentic-ai, zscaler]
 ---
 

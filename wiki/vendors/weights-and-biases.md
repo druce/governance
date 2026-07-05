@@ -3,26 +3,30 @@ title: Weights & Biases (Weave)
 type: vendor
 name: Weights & Biases (Weave)
 slug: weights-and-biases
-categories: [llm-observability]
-layer: model-prompt
-aliases: [W&B, wandb, Weave]
-website: "https://wandb.ai"
+aka: [W&B, wandb, Weave]
+primary_category: llm-observability
+also_listed_in: []
+website: https://wandb.ai
 founded: 2017
 hq: San Francisco, USA
-ownership: acquired
-ownership_detail: "Acquired by CoreWeave (Nasdaq: CRWV); announced 2025-03-04, closed 2025-05-05. Reported ~$1.7B (terms not officially disclosed)."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: CoreWeave
+ownership_note: 'Acquired by CoreWeave (Nasdaq: CRWV); announced 2025-03-04, closed 2025-05-05. Reported ~$1.7B (terms not officially disclosed).'
+acquisition: {announced: 2025-03-04, closed: 2025-05-05, price: null}
 funding_total: ~$250-300M (pre-acquisition)
 last_funding: $50M (2023-08, led by existing investors)
-deployment: [saas, self-hosted, sdk, on-prem]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / ML & AI engineering teams
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [llm-observability, ml-experiment-tracking, evaluation, weave, coreweave]
 ---
 

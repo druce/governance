@@ -3,26 +3,30 @@ title: GitHub Codespaces
 type: vendor
 name: GitHub Codespaces
 slug: github-codespaces
-categories: [ephemeral-environments]
-layer: governance
-aliases: [Codespaces]
-website: "https://github.com/features/codespaces"
+aka: [Codespaces]
+primary_category: ephemeral-environments
+also_listed_in: []
+website: https://github.com/features/codespaces
 founded: 2020
 hq: San Francisco, CA, USA
-ownership: subsidiary
-ownership_detail: Product of GitHub, Inc., a Microsoft subsidiary (Microsoft acquired GitHub in 2018)
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: acquired-closed
+owner: GitHub
+ownership_note: Product of GitHub, Inc., a Microsoft subsidiary (Microsoft acquired GitHub in 2018)
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, dev-environments, microsoft]
 ---
 

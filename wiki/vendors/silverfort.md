@@ -3,26 +3,30 @@ title: Silverfort
 type: vendor
 name: Silverfort
 slug: silverfort
-categories: [identity-governance, non-human-identity, data-access-governance]
-layer: foundation
-aliases: []
-website: "https://www.silverfort.com/"
+aka: []
+primary_category: identity-governance
+also_listed_in: [non-human-identity, data-access-governance]
+website: https://www.silverfort.com/
 founded: 2016
-hq: "Tel Aviv, Israel (US presence: Boston / Texas)"
-ownership: independent
-ownership_detail: VC-backed unicorn; ~$222M raised. Series D $116M (Jan 2024) led by Brighton Park Capital at ~$1B valuation.
-ownership_confidence: high
+hq: 'Tel Aviv, Israel (US presence: Boston / Texas)'
+ownership_state: independent
+owner: null
+ownership_note: VC-backed unicorn; ~$222M raised. Series D $116M (Jan 2024) led by Brighton Park Capital at ~$1B valuation.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$222M
 last_funding: Series D, $116M, 2024-01
-deployment: [saas, self-hosted, on-prem, api]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (hybrid AD + cloud estates)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity, mfa, itdr, non-human-identity, runtime-identity, unicorn]
 ---
 

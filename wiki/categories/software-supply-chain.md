@@ -3,14 +3,19 @@ title: Software Supply Chain & Coding Security
 type: category
 name: Software Supply Chain & Coding Security
 slug: software-supply-chain
+category: software-supply-chain
 layer: foundation
-priority: day-2
-trifecta_role: untrusted-input
+survey_question: Software supply chain
+adoption_tier: day-2
+trigger: shipping code; day-1 if shipping AI-generated code
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [promotion-gates]
+incumbent_coverage: []
+vendor_count: 11
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
-vendor_count: 11
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Software Supply Chain & Coding Security

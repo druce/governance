@@ -3,14 +3,19 @@ title: Vector Retrieval
 type: category
 name: Vector Retrieval
 slug: vector-retrieval
+category: vector-retrieval
 layer: retrieval
-priority: day-1
-trifecta_role: sensitive-data
-maps_to_seed_doc: Vector Retrieval
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: situational
+trigger: doing RAG
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [content-sources, entitlement-aware-rag]
+incumbent_coverage: []
 vendor_count: 4
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Vector Retrieval
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > **STUB.** This is retrieval *infrastructure*, not a governance control. The governance-critical part of retrieval is **[entitlement-aware-rag](entitlement-aware-rag.md)** — read that page. A vector store with no permission enforcement is exactly how a RAG system surfaces documents a user was never allowed to see.

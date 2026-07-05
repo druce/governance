@@ -3,26 +3,30 @@ title: Doppel
 type: vendor
 name: Doppel
 slug: doppel
-categories: [anti-deepfake]
-layer: foundation
-aliases: [Doppel Vision]
-website: "https://www.doppel.com"
+aka: [Doppel Vision]
+primary_category: anti-deepfake
+also_listed_in: []
+website: https://www.doppel.com
 founded: 2022
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: VC-backed independent; ~$600M valuation at Series C (2025-11-19). No acquisition.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; ~$600M valuation at Series C (2025-11-19). No acquisition.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $124M (as of 2025-11-19)
 last_funding: Series C, $70M, 2025-11-19 (led by Bessemer Venture Partners)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [deepfake, digital-risk-protection, impersonation, brand-protection, executive-protection, social-engineering]
 ---
 

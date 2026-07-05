@@ -3,14 +3,19 @@ title: Non-Human / Agent Identity Governance
 type: category
 name: Non-Human / Agent Identity Governance
 slug: non-human-identity
+category: non-human-identity
 layer: foundation
-priority: day-2
-trifecta_role: sensitive-data + egress (governs what workloads/agents can authenticate to and reach)
+survey_question: Non-Human Identity / Agent Identity Governance
+adoption_tier: day-2
+trigger: agents and workloads hold their own credentials and call tools
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [identity-access, secrets-management, tool-identity-integration, identity-governance]
+incumbent_coverage: []
+vendor_count: 8
 maps_to_seed_doc: (folded into Identity & Access + Tool Identity)
 maps_to_seed_csv: Non-Human Identity / Agent Identity Governance
-vendor_count: 8
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

@@ -3,26 +3,30 @@ title: Docker MCP Gateway
 type: vendor
 name: Docker MCP Gateway
 slug: docker-mcp-gateway
-categories: [mcp-gateway]
-layer: model-prompt
-aliases: [Docker MCP Toolkit, Docker MCP Catalog, docker mcp gateway]
-website: "https://github.com/docker/mcp-gateway"
-founded: 2025-07-09   # MCP Gateway project launch/open-source date; parent Docker, Inc. founded 2013
-hq: Palo Alto, California, US   # Docker, Inc.
-ownership: independent
-ownership_detail: "Open-source project (MIT) from Docker, Inc., a private/independent company (HQ Palo Alto). Ships as part of Docker Desktop's MCP Toolkit and is also usable standalone with any Docker Engine. Parent company not acquired; was last priced at ~$2.1B (2022)."
-ownership_confidence: high   # for project ownership/origin; funding figures are low confidence
-funding_total:   # parent Docker, Inc.; aggregators cite ~$443M–$541M total — see note, not primary
+aka: [Docker MCP Toolkit, Docker MCP Catalog, docker mcp gateway]
+primary_category: mcp-gateway
+also_listed_in: []
+website: https://github.com/docker/mcp-gateway
+founded: 2025-07-09
+hq: Palo Alto, California, US
+ownership_state: independent
+owner: null
+ownership_note: Open-source project (MIT) from Docker, Inc., a private/independent company (HQ Palo Alto). Ships as part of Docker Desktop's MCP Toolkit and is also usable standalone with any Docker Engine. Parent company not acquired; was last priced at ~$2.1B (2022).
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
 last_funding: 2022 — $105M Series ? at ~$2.1B valuation (Docker, Inc.; aggregator-sourced)
-deployment: [self-hosted, container, sdk]   # runs MCP servers as Docker containers; CLI plugin; Docker Desktop or standalone Engine
+market_position: null
+deployment_model: [self-hosted]
+form_factor: [platform, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers and enterprise platform/security teams already using Docker
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [mcp, gateway, container-isolation, open-source, docker]
 ---
 

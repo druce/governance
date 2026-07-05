@@ -3,26 +3,30 @@ title: AuthZed (SpiceDB)
 type: vendor
 name: AuthZed (SpiceDB)
 slug: authzed
-categories: [authorization-engine]
-layer: model-prompt
-aliases: [SpiceDB, Zanzibar]
-website: "https://authzed.com"
+aka: [SpiceDB, Zanzibar]
+primary_category: authorization-engine
+also_listed_in: []
+website: https://authzed.com
 founded: 2020
 hq: New York, NY, USA
-ownership: independent
-ownership_detail: "VC-backed; ~$16M raised (Series A $12M, 2024-06, General Catalyst)"
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$16M raised (Series A $12M, 2024-06, General Catalyst)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$16M
-last_funding: "Series A $12M (2024-06, General Catalyst)"
-deployment: [self-hosted, saas, on-prem]
+last_funding: Series A $12M (2024-06, General Catalyst)
+market_position: null
+deployment_model: [self-hosted, saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (platform/security teams)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authorization, rebac, zanzibar, permissions-database, open-source, spicedb]
 ---
 

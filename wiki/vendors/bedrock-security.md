@@ -3,26 +3,30 @@ title: Bedrock Security
 type: vendor
 name: Bedrock Security
 slug: bedrock-security
-categories: [dspm]
-layer: data
-aliases: [Bedrock Data]
-website: "https://www.bedrock.security"
+aka: [Bedrock Data]
+primary_category: dspm
+also_listed_in: []
+website: https://www.bedrock.security
 founded: 2021
 hq: Menlo Park, California, USA
-ownership: independent
-ownership_detail: VC-backed private; $25M Series A led by Greylock (2025-11). No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed private; $25M Series A led by Greylock (2025-11). No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$35M (disclosed)
 last_funding: Series A $25M (2025-11-19, Greylock Partners)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, data-security, ai-data-governance]
 ---
 

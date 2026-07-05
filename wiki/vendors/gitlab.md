@@ -3,26 +3,30 @@ title: GitLab (Ultimate)
 type: vendor
 name: GitLab (Ultimate)
 slug: gitlab
-categories: [software-supply-chain]
-layer: foundation
-aliases: [GitLab Ultimate, GitLab Inc., GTLB]
-website: "https://about.gitlab.com"
+aka: [GitLab Ultimate, GitLab Inc., GTLB]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://about.gitlab.com
 founded: 2014
 hq: San Francisco, CA, USA (all-remote company)
-ownership: public
-ownership_detail: "Public, NASDAQ: GTLB (IPO 2021-10-14). Datadog acquisition reported/rumored (Reuters 2024-07; renewed buzz Oct 2025) but UNCONFIRMED — no definitive agreement as of 2026-06-28."
-ownership_confidence: high
-funding_total:                      # n/a — public; IPO at ~$10B valuation (2021)
-last_funding: "IPO 2021-10-14 (NASDAQ: GTLB), ~$10B valuation"
-deployment: [saas, self-hosted, on-prem]   # GitLab.com SaaS + self-managed (Dedicated/self-hosted)
+ownership_state: public
+owner: null
+ownership_note: 'Public, NASDAQ: GTLB (IPO 2021-10-14). Datadog acquisition reported/rumored (Reuters 2024-07; renewed buzz Oct 2025) but UNCONFIRMED — no definitive agreement as of 2026-06-28.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: 'IPO 2021-10-14 (NASDAQ: GTLB), ~$10B valuation'
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (DevSecOps platform buyers)
-hedge_fund_fit: high
-priority: day-2
-trifecta_relevance: [none]          # supply-chain/code-security control; not a runtime AI-trifecta gate
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sast, dast, sca, secret-detection, container-scanning, license-compliance, devsecops]
 ---
 

@@ -3,14 +3,19 @@ title: Tool Identity & Integration
 type: category
 name: Tool Identity & Integration
 slug: tool-identity-integration
+category: tool-identity-integration
 layer: model-prompt
-priority: day-2
-trifecta_role: sensitive-data, egress (manages agent identity/credentials to tools; the universal adapter, not content inspection)
+survey_question: Tool Identity & Integration (Agent Auth)
+adoption_tier: day-2
+trigger: agents authenticate to SaaS on users' behalf — managed connectors + agent auth
+maturity_stage_required: null
+category_maturity: nascent
+adjacent: [mcp-gateway, non-human-identity, authorization-engine]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: Tool Identity & Integration Layer
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Tool Identity & Integration

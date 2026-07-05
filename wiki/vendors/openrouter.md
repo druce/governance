@@ -3,26 +3,30 @@ title: OpenRouter
 type: vendor
 name: OpenRouter
 slug: openrouter
-categories: [ai-gateway]
-layer: model-prompt
-aliases: []
-website: "https://openrouter.ai"
+aka: []
+primary_category: ai-gateway
+also_listed_in: []
+website: https://openrouter.ai
 founded: 2023
 hq: New York, NY (US)
-ownership: independent
-ownership_detail: "VC-backed independent. Seed (~$12.5M, a16z, early 2025); Series A (~$28M, Menlo Ventures, Apr 2025, ~$500M valuation); Series B ($113M, CapitalG-led, 2026-05-26, ~$1.3B valuation)."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent. Seed (~$12.5M, a16z, early 2025); Series A (~$28M, Menlo Ventures, Apr 2025, ~$500M valuation); Series B ($113M, CapitalG-led, 2026-05-26, ~$1.3B valuation).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$153M (cumulative, through Series B 2026-05)
 last_funding: Series B — $113M, led by CapitalG — 2026-05-26
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: developers / startups / enterprise (multi-model inference buyers)
-hedge_fund_fit: low
-priority: day-1
-trifecta_relevance: [egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-gateway, inference-marketplace, model-routing, hosted-aggregator]
 ---
 

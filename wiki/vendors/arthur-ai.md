@@ -3,26 +3,30 @@ title: Arthur AI
 type: vendor
 name: Arthur AI
 slug: arthur-ai
-categories: [llm-observability, ai-governance-platform]
-layer: model-prompt
-aliases: [Arthur]
-website: "https://www.arthur.ai"
+aka: [Arthur]
+primary_category: llm-observability
+also_listed_in: [ai-governance-platform]
+website: https://www.arthur.ai
 founded: 2018
 hq: New York City, New York, USA
-ownership: independent
-ownership_detail: Independent, VC-backed. ~$63M total raised; $42M Series B (Sept 2022, Acrew Capital + Greycroft).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed. ~$63M total raised; $42M Series B (Sept 2022, Acrew Capital + Greycroft).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$63M
 last_funding: Series B, $42M, 2022-09
-deployment: [saas, self-hosted, on-prem, api, sdk]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (financial services, government)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [observability, model-monitoring, explainability, guardrails, governance, agents]
 ---
 

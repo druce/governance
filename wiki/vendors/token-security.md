@@ -3,26 +3,30 @@ title: Token Security
 type: vendor
 name: Token Security
 slug: token-security
-categories: [non-human-identity]
-layer: foundation
-aliases: [Token, token.security]
-website: "https://www.token.security"
+aka: [Token, token.security]
+primary_category: non-human-identity
+also_listed_in: []
+website: https://www.token.security
 founded: 2023
 hq: Tel Aviv, Israel & New York, USA
-ownership: independent
-ownership_detail: Venture-backed and independent as of 2026-06; no acquisition found. CEO relocated to the US (Feb 2025); company describes itself as Tel Aviv & New York.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed and independent as of 2026-06; no acquisition found. CEO relocated to the US (Feb 2025); company describes itself as Tel Aviv & New York.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $27M (Seed $7M + Series A $20M)
 last_funding: Series A, $20M, 2025-01-28 (led by Notable Capital)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise security / IAM teams (CISOs); cloud-heavy and AI-adopting orgs
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [non-human-identity, machine-identity, nhi, ai-agent-identity, secrets, agentless]
 ---
 

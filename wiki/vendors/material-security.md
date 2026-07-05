@@ -3,26 +3,30 @@ title: Material Security
 type: vendor
 name: Material Security
 slug: material-security
-categories: [browser-security-extension]
-layer: ux
-aliases: [Material]
-website: "https://material.security"
+aka: [Material]
+primary_category: browser-security-extension
+also_listed_in: []
+website: https://material.security
 founded: 2017
 hq: Redwood City, California, USA
-ownership: independent
-ownership_detail: "Independent, VC-backed. Series C May 2022 led by Founders Fund at $1.1B valuation; no M&A found as of 2026-06-28."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Independent, VC-backed. Series C May 2022 led by Founders Fund at $1.1B valuation; no M&A found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$166M
 last_funding: Series C, $100M, May 2022 ($1.1B valuation)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [sensitive-data, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [email-security, cloud-workspace-security, microsoft-365, google-workspace, data-security, posture-management]
 ---
 

@@ -3,26 +3,30 @@ title: Perplexity Enterprise
 type: vendor
 name: Perplexity Enterprise
 slug: perplexity-enterprise
-categories: [enterprise-ai-assistant]
-layer: ux
-aliases: [Perplexity Enterprise Pro, Perplexity for Enterprise, Enterprise Max]
-website: "https://www.perplexity.ai/enterprise"
+aka: [Perplexity Enterprise Pro, Perplexity for Enterprise, Enterprise Max]
+primary_category: enterprise-ai-assistant
+also_listed_in: []
+website: https://www.perplexity.ai/enterprise
 founded: 2022
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: "Private, venture-backed (Perplexity AI, Inc.); no single controlling owner. Valued ~$20B (Sept 2025, ~$200M round); reported ~$21B after a Series E-6 round early 2026. Investors incl. Nvidia, Jeff Bezos, SoftBank Vision Fund 2, IVP, Accel, NEA, Databricks."
-ownership_confidence: high
-funding_total: "~$1B+ (uncertain; Wikipedia-disclosed rounds ~$665M, aggregators report higher)"
-last_funding: "~$200M round Sept 2025 at ~$20B valuation; further raise reported early 2026"
-deployment: [saas]
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed (Perplexity AI, Inc.); no single controlling owner. Valued ~$20B (Sept 2025, ~$200M round); reported ~$21B after a Series E-6 round early 2026. Investors incl. Nvidia, Jeff Bezos, SoftBank Vision Fund 2, IVP, Accel, NEA, Databricks.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$1B+ (uncertain; Wikipedia-disclosed rounds ~$665M, aggregators report higher)
+last_funding: ~$200M round Sept 2025 at ~$20B valuation; further raise reported early 2026
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (knowledge workers; research-heavy teams)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [answer-engine, web-search, rag, assistant]
 ---
 

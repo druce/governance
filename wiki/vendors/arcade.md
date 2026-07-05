@@ -3,26 +3,30 @@ title: Arcade.dev
 type: vendor
 name: Arcade.dev
 slug: arcade
-categories: [mcp-gateway, tool-identity-integration]
-layer: model-prompt
-aliases: [Arcade AI, ArcadeAI]
-website: "https://www.arcade.dev"
+aka: [Arcade AI, ArcadeAI]
+primary_category: mcp-gateway
+also_listed_in: [tool-identity-integration]
+website: https://www.arcade.dev
 founded: 2024
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: VC-backed startup; $72M raised across seed + Series A. No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed startup; $72M raised across seed + Series A. No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $72M
 last_funding: Series A — $60M — 2026-06 (led by SYN Ventures)
-deployment: [saas, self-hosted, on-prem, sdk, api]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (incl. regulated — banks, pharma, industrials)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [egress, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agent-tool-calling, oauth, mcp, tool-auth, agent-identity]
 ---
 

@@ -3,26 +3,30 @@ title: Concentric AI
 type: vendor
 name: Concentric AI
 slug: concentric-ai
-categories: [dspm, data-access-governance]
-layer: data
-aliases: [Concentric]
-website: "https://concentric.ai"
+aka: [Concentric]
+primary_category: dspm
+also_listed_in: [data-access-governance]
+website: https://concentric.ai
 founded: 2018
 hq: San Mateo, CA, USA
-ownership: independent
-ownership_detail: Privately held, VC-backed. >$67M raised total; $45M Series B (2024-10, led by Top Tier Capital Partners & HarbourVest).
-ownership_confidence: high
-funding_total: ">$67M"
+ownership_state: independent
+owner: null
+ownership_note: Privately held, VC-backed. >$67M raised total; $45M Series B (2024-10, led by Top Tier Capital Partners & HarbourVest).
+acquisition: {announced: null, closed: null, price: null}
+funding_total: '>$67M'
 last_funding: $45M Series B (2024-10, Top Tier Capital Partners & HarbourVest Partners)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market to enterprise (Microsoft 365 / unstructured-data heavy)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, data-access-governance, unstructured-data, oversharing]
 ---
 

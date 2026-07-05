@@ -3,26 +3,30 @@ title: Microsoft Edge for Business
 type: vendor
 name: Microsoft Edge for Business
 slug: microsoft-edge-business
-categories: [enterprise-browser]
-layer: ux
-aliases: [Edge for Business, Microsoft Edge]
-website: "https://www.microsoft.com/en-us/edge/business/"
-founded:
+aka: [Edge for Business, Microsoft Edge]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://www.microsoft.com/en-us/edge/business/
+founded: null
 hq: Redmond, Washington, USA
-ownership: public
-ownership_detail: "First-party product of Microsoft Corporation (NASDAQ: MSFT). Edge for Business is the enterprise mode/profile of Microsoft Edge, included with Windows and Microsoft 365."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted]
+ownership_state: public
+owner: Microsoft Corporation
+ownership_note: 'First-party product of Microsoft Corporation (NASDAQ: MSFT). Edge for Business is the enterprise mode/profile of Microsoft Edge, included with Windows and Microsoft 365.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market / regulated (existing Microsoft 365 / Windows shops, all sizes)
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, browser, microsoft, zero-trust, dlp, purview]
 ---
 

@@ -3,26 +3,30 @@ title: AppOmni
 type: vendor
 name: AppOmni
 slug: appomni
-categories: [sspm]
-layer: foundation
-aliases: []
-website: "https://appomni.com"
+aka: []
+primary_category: sspm
+also_listed_in: []
+website: https://appomni.com
 founded: 2018
 hq: San Mateo, California, USA
-ownership: independent
-ownership_detail: "Venture-backed, independent as of 2026-06-28; no acquisition found. Series C ($70M) led by Thoma Bravo, June 2022."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06-28; no acquisition found. Series C ($70M) led by Thoma Bravo, June 2022.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$123M (vendor figure at Series C; profile aggregators cite up to ~$126M)
-last_funding: "Series C $70M led by Thoma Bravo (2022-06-06); TSG follow-on added Dec 2022"
-deployment: [saas, api]
+last_funding: Series C $70M led by Thoma Bravo (2022-06-06); TSG follow-on added Dec 2022
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, saas-security, posture-management]
 ---
 

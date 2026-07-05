@@ -3,26 +3,30 @@ title: Securiti
 type: vendor
 name: Securiti
 slug: securiti
-categories: [dspm, ai-governance-platform, data-access-governance]
-layer: data
-aliases: [Securiti AI, Securiti.ai]
-website: "https://securiti.ai"
+aka: [Securiti AI, Securiti.ai]
+primary_category: dspm
+also_listed_in: [ai-governance-platform, data-access-governance]
+website: https://securiti.ai
 founded: 2019
 hq: San Jose, CA, USA
-ownership: subsidiary
-ownership_detail: Acquired by Veeam Software for $1.725B; announced 2025-10-21, completed 2025-12-11. CEO Rehan Jalil became Veeam President of Security and AI.
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Veeam Software
+ownership_note: Acquired by Veeam Software for $1.725B; announced 2025-10-21, completed 2025-12-11. CEO Rehan Jalil became Veeam President of Security and AI.
+acquisition: {announced: 2025-10-21, closed: 2025-12-11, price: null}
 funding_total: ~$156M (pre-acquisition)
 last_funding: $75M Series C (2022); acquired by Veeam 2025-12-11
-deployment: [saas, self-hosted]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise, regulated (privacy/compliance heavy)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, privacy, ai-governance, data-access-governance, veeam, acquired]
 ---
 

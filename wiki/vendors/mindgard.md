@@ -3,26 +3,30 @@ title: Mindgard
 type: vendor
 name: Mindgard
 slug: mindgard
-categories: [ai-red-teaming]
-layer: model-prompt
-aliases: []
-website: "https://mindgard.ai"
+aka: []
+primary_category: ai-red-teaming
+also_listed_in: []
+website: https://mindgard.ai
 founded: 2022
 hq: London, UK & Boston, MA
-ownership: independent
-ownership_detail: VC-backed; $8M round Dec 2024 led by .406 Ventures (no acquisition)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $8M round Dec 2024 led by .406 Ventures (no acquisition)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$11.6M
 last_funding: Seed/round $8M (2024-12, .406 Ventures)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (incl. Fortune 500 design partners)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-red-teaming, offensive-security, model-testing]
 ---
 

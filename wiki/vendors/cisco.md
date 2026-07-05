@@ -3,26 +3,30 @@ title: Cisco
 type: vendor
 name: Cisco
 slug: cisco
-categories: [network-security-sase, ai-runtime-security, ai-red-teaming, non-human-identity, siem-soc]
-layer: foundation
-aliases: [Cisco Systems]
-website: "https://www.cisco.com"
+aka: [Cisco Systems]
+primary_category: network-security-sase
+also_listed_in: [ai-runtime-security, ai-red-teaming, non-human-identity, siem-soc]
+website: https://www.cisco.com
 founded: 1984
 hq: San Jose, California, USA
-ownership: public
-ownership_detail: "Public (NASDAQ: CSCO). Active acquirer in AI security: Splunk (closed 2024-03-18, $28B), Robust Intelligence (closed ~2024-09-24, now Cisco AI Defense), Galileo (announced 2026-04-09; reported closed 2026-05-22), Astrix Security (intent announced 2026-05-04, pending)."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, on-prem, self-hosted, inline-proxy, api]
+ownership_state: public
+owner: null
+ownership_note: 'Public (NASDAQ: CSCO). Active acquirer in AI security: Splunk (closed 2024-03-18, $28B), Robust Intelligence (closed ~2024-09-24, now Cisco AI Defense), Galileo (announced 2026-04-09; reported closed 2026-05-22), Astrix Security (intent announced 2026-05-04, pending).'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, on-prem, self-hosted]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [acquirer, platform, networking, security]
 ---
 

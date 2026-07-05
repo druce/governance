@@ -3,26 +3,30 @@ title: OpenSearch
 type: vendor
 name: OpenSearch
 slug: opensearch
-categories: [vector-retrieval]
-layer: retrieval
-aliases: [Amazon OpenSearch Service]
-website: "https://opensearch.org/"
+aka: [Amazon OpenSearch Service]
+primary_category: vector-retrieval
+also_listed_in: []
+website: https://opensearch.org/
 founded: 2021
 hq: (open-source project; OpenSearch Software Foundation under the Linux Foundation)
-ownership: independent
-ownership_detail: Apache-2.0 OSS; AWS transferred it to the Linux Foundation (OpenSearch Software Foundation) on 2024-09-16. AWS still offers the managed Amazon OpenSearch Service.
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [self-hosted, saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Apache-2.0 OSS; AWS transferred it to the Linux Foundation (OpenSearch Software Foundation) on 2024-09-16. AWS still offers the managed Amazon OpenSearch Service.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [vector-database, retrieval, open-source, linux-foundation, aws]
 ---
 

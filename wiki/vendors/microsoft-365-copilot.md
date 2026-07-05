@@ -3,26 +3,30 @@ title: Microsoft 365 Copilot
 type: vendor
 name: Microsoft 365 Copilot
 slug: microsoft-365-copilot
-categories: [enterprise-ai-assistant]
-layer: ux
-aliases: [M365 Copilot, Office Copilot, Copilot for Microsoft 365]
-website: "https://www.microsoft.com/microsoft-365/copilot"
+aka: [M365 Copilot, Office Copilot, Copilot for Microsoft 365]
+primary_category: enterprise-ai-assistant
+also_listed_in: []
+website: https://www.microsoft.com/microsoft-365/copilot
 founded: 1975
 hq: Redmond, Washington, USA
-ownership: public
-ownership_detail: "Product of Microsoft Corporation (NASDAQ: MSFT)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: Microsoft Corporation
+ownership_note: 'Product of Microsoft Corporation (NASDAQ: MSFT)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [microsoft, m365, copilot, enterprise-assistant, rag]
 ---
 

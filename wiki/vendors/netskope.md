@@ -3,26 +3,30 @@ title: Netskope
 type: vendor
 name: Netskope
 slug: netskope
-categories: [network-security-sase, dlp, dspm, ai-access-governance]
-layer: foundation
-aliases: [NTSK, Netskope One]
-website: "https://www.netskope.com"
+aka: [NTSK, Netskope One]
+primary_category: network-security-sase
+also_listed_in: [dlp, dspm, ai-access-governance]
+website: https://www.netskope.com
 founded: 2012
 hq: Santa Clara, California, USA
-ownership: public
-ownership_detail: "IPO 2025-09-18, NASDAQ: NTSK; priced $19/share, raised ~$908M, ~$8.6B debut market cap. Verified 2026-06-28"
-ownership_confidence: high
-funding_total: "~$908M IPO proceeds (Sep 2025); previously VC-backed, ~$7.5B private valuation (2021)"
-last_funding: "IPO September 2025 (NASDAQ: NTSK)"
-deployment: [saas, inline-proxy, api]
+ownership_state: public
+owner: null
+ownership_note: 'IPO 2025-09-18, NASDAQ: NTSK; priced $19/share, raised ~$908M, ~$8.6B debut market cap. Verified 2026-06-28'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$908M IPO proceeds (Sep 2025); previously VC-backed, ~$7.5B private valuation (2021)
+last_funding: 'IPO September 2025 (NASDAQ: NTSK)'
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sase, sse, casb, dlp, dspm, shadow-ai, inline-proxy]
 ---
 

@@ -3,14 +3,19 @@ title: AI Red Teaming / Guardrails
 type: category
 name: AI Red Teaming / Guardrails
 slug: ai-red-teaming
+category: ai-red-teaming
 layer: model-prompt
-priority: day-2
-trifecta_role: none-detection (red-teaming) / untrusted-input + egress (guardrails)
+survey_question: AI Red Teaming / Guardrails
+adoption_tier: day-2
+trigger: self-built AI apps worth adversarially testing before and after launch
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [ai-runtime-security, llm-observability]
+incumbent_coverage: []
+vendor_count: 16
 maps_to_seed_doc: (folded into LLM Observability "red-teaming")
 maps_to_seed_csv: AI Red Teaming / Guardrails
-vendor_count: 16
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # AI Red Teaming / Guardrails

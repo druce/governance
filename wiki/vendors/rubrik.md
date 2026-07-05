@@ -3,26 +3,30 @@ title: Rubrik
 type: vendor
 name: Rubrik
 slug: rubrik
-categories: [dspm]
-layer: data
-aliases: []
-website: "https://www.rubrik.com"
+aka: []
+primary_category: dspm
+also_listed_in: []
+website: https://www.rubrik.com
 founded: 2014
 hq: Palo Alto, California, USA
-ownership: public
-ownership_detail: Public on NYSE (ticker RBRK) since IPO 2024-04-25 ($752M raised). Stub's "independent" corrected to "public".
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: Public on NYSE (ticker RBRK) since IPO 2024-04-25 ($752M raised). Stub's "independent" corrected to "public".
+acquisition: {announced: null, closed: null, price: null}
 funding_total: N/A (public; raised $752M at IPO)
-last_funding: "IPO 2024-04-25 (NYSE: RBRK)"
-deployment: [saas, on-prem]
+last_funding: 'IPO 2024-04-25 (NYSE: RBRK)'
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, cyber-resilience, backup, ransomware-recovery, public-company]
 ---
 

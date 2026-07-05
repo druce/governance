@@ -3,26 +3,30 @@ title: Forcepoint
 type: vendor
 name: Forcepoint
 slug: forcepoint
-categories: [network-security-sase, dlp]
-layer: foundation
-aliases: [Websense, Raytheon Forcepoint, Forcepoint Commercial]
-website: "https://www.forcepoint.com"
+aka: [Websense, Raytheon Forcepoint, Forcepoint Commercial]
+primary_category: network-security-sase
+also_listed_in: [dlp]
+website: https://www.forcepoint.com
 founded: 2016
 hq: Austin, Texas, USA
-ownership: acquired
-ownership_detail: "Commercial Forcepoint (DLP / Data-first SASE) owned by Francisco Partners (PE) since 2021; ownership retained in 2023 when TPG bought the separate G2CI public-sector unit (closed 2023-10-02). Verified 2026-06-28"
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Francisco Partners
+ownership_note: Commercial Forcepoint (DLP / Data-first SASE) owned by Francisco Partners (PE) since 2021; ownership retained in 2023 when TPG bought the separate G2CI public-sector unit (closed 2023-10-02). Verified 2026-06-28
+acquisition: {announced: 2023-10-02, closed: 2026-06-28, price: null}
 funding_total: n/a (PE-owned)
-last_funding: "Acquired by Francisco Partners from Raytheon (2021); G2CI split off to TPG (2023)"
-deployment: [saas, inline-proxy, api, on-prem, self-hosted]
+last_funding: Acquired by Francisco Partners from Raytheon (2021); G2CI split off to TPG (2023)
+market_position: null
+deployment_model: [saas, on-prem, self-hosted]
+form_factor: [inline-proxy, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dlp, sase, sse, data-first-sase, private-equity]
 ---
 

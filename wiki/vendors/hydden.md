@@ -3,26 +3,30 @@ title: Hydden
 type: vendor
 name: Hydden
 slug: hydden
-categories: [identity-governance]
-layer: foundation
-aliases: []
-website: "https://www.hydden.com/"
+aka: []
+primary_category: identity-governance
+also_listed_in: []
+website: https://www.hydden.com/
 founded: 2022
 hq: New York, NY
-ownership: independent
-ownership_detail: VC-backed; $4.4M seed (2024-09-17) led by Access Venture Partners, with Lockstep, Service Provider Capital, and cyber angels.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $4.4M seed (2024-09-17) led by Access Venture Partners, with Lockstep, Service Provider Capital, and cyber angels.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $4.4M (seed)
 last_funding: Seed, $4.4M, 2024-09-17
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (security/identity teams with hybrid estates)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity, visibility, ispm, identity-system-of-record, seed-stage]
 ---
 

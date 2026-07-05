@@ -3,14 +3,19 @@ title: Policy-as-Code
 type: category
 name: Policy-as-Code
 slug: policy-as-code
+category: policy-as-code
 layer: governance
-priority: day-2
-trifecta_role: none-detection
+survey_question: null
+adoption_tier: day-2
+trigger: guardrails you want enforced by software, not documents
+maturity_stage_required: null
+category_maturity: growth
+adjacent: [authorization-engine, promotion-gates]
+incumbent_coverage: []
+vendor_count: 5
 maps_to_seed_doc: Policy-as-Code
 maps_to_seed_csv: (OPA appears in MCP/Agent)
-vendor_count: 5
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

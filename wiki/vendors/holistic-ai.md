@@ -3,26 +3,30 @@ title: Holistic AI
 type: vendor
 name: Holistic AI
 slug: holistic-ai
-categories: [ai-governance-platform]
-layer: governance
-aliases: [Holistic AI Limited]
-website: "https://www.holisticai.com"
+aka: [Holistic AI Limited]
+primary_category: ai-governance-platform
+also_listed_in: []
+website: https://www.holisticai.com
 founded: 2020
 hq: London, UK (US presence in Palo Alto, CA)
-ownership: independent
-ownership_detail: Private, VC-backed. Investors include Tola Capital, Mozilla Ventures (Mar 2024), Premji Invest, Innovate UK, Microsoft for Startups. No acquisition found.
-ownership_confidence: medium
-funding_total: "~$35M reported (uncertain — see note)"
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed. Investors include Tola Capital, Mozilla Ventures (Mar 2024), Premji Invest, Innovate UK, Microsoft for Startups. No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$35M reported (uncertain — see note)
 last_funding: Venture round reported May 2024 (~$35M, low confidence); Mozilla Ventures investment Mar 2024
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (Fortune 500, government, also SMEs)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 5
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-governance, model-risk, bias-audit, eu-ai-act, nist-ai-rmf, iso-42001, nyc-ll144]
 ---
 

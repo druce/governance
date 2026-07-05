@@ -3,14 +3,19 @@ title: Agent Security (runtime)
 type: category
 name: Agent Security (runtime)
 slug: agent-runtime-security
+category: agent-runtime-security
 layer: model-prompt
-priority: day-2
-trifecta_role: untrusted-input, egress (guards agent actions at runtime); yellow/green zone
+survey_question: Agent Security (runtime protection of agents)
+adoption_tier: day-2
+trigger: agents act autonomously with tool access — untrusted input meets real permissions
+maturity_stage_required: null
+category_maturity: nascent
+adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
+incumbent_coverage: []
+vendor_count: 6
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
-vendor_count: 6
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Agent Security (runtime)

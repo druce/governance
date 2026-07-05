@@ -3,26 +3,30 @@ title: Straiker
 type: vendor
 name: Straiker
 slug: straiker
-categories: [agent-runtime-security, ai-runtime-security]
-layer: model-prompt
-aliases: [Straiker AI]
-website: "https://www.straiker.ai"
+aka: [Straiker AI]
+primary_category: agent-runtime-security
+also_listed_in: [ai-runtime-security]
+website: https://www.straiker.ai
 founded: 2024
 hq: Sunnyvale, California, USA
-ownership: independent
-ownership_detail: VC-backed; $21M Series A from Lightspeed & Bain Capital Ventures (2025-03)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $21M Series A from Lightspeed & Bain Capital Ventures (2025-03)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$21M
 last_funding: Series A $21M (2025-03)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (finance, healthcare, tech, media, retail)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agent-runtime, ai-runtime, red-teaming, ai-native, ex-palo-alto]
 ---
 

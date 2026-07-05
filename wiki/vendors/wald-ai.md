@@ -3,26 +3,30 @@ title: Wald.ai
 type: vendor
 name: Wald.ai
 slug: wald-ai
-categories: [ai-access-governance]
-layer: model-prompt
-aliases: [Wald, "Wald, Inc."]
-website: "https://wald.ai"
+aka: [Wald, 'Wald, Inc.']
+primary_category: ai-access-governance
+also_listed_in: []
+website: https://wald.ai
 founded: 2023
 hq: Palo Alto, California, USA
-ownership: independent
-ownership_detail: Seed-stage startup; no acquisition found as of 2026-06-28.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Seed-stage startup; no acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $4M
 last_funding: Seed, $4M (announced 2024-12-10)
-deployment: [saas, sdk, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated mid-market / enterprise (healthcare, financial services, legal, education)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-dlp, redaction, secure-ai-assistant, data-protection]
 ---
 

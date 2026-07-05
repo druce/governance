@@ -3,26 +3,30 @@ title: BigID
 type: vendor
 name: BigID
 slug: bigid
-categories: [dspm, dlp, data-access-governance]
-layer: data
-aliases: []
-website: "https://bigid.com"
+aka: []
+primary_category: dspm
+also_listed_in: [dlp, data-access-governance]
+website: https://bigid.com
 founded: 2016
 hq: New York, NY, USA
-ownership: independent
-ownership_detail: Privately held; VC/growth-equity backed. ~$320M raised, valuation over $1B (unicorn).
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Privately held; VC/growth-equity backed. ~$320M raised, valuation over $1B (unicorn).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$320M
 last_funding: $60M growth round (Riverwood Capital, w/ Silver Lake Waterman, Advent)
-deployment: [saas, self-hosted, on-prem]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: large enterprise, Fortune 500, regulated
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, dlp, data-access-governance, privacy, ai-governance]
 ---
 

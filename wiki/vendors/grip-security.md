@@ -3,26 +3,30 @@ title: Grip Security
 type: vendor
 name: Grip Security
 slug: grip-security
-categories: [sspm, browser-security-extension, ai-access-governance]
-layer: foundation
-aliases: []
-website: "https://www.grip.security"
+aka: []
+primary_category: sspm
+also_listed_in: [browser-security-extension, ai-access-governance]
+website: https://www.grip.security
 founded: 2021
 hq: Tel Aviv, Israel (US office Boston, MA)
-ownership: independent
-ownership_detail: VC-backed independent; no acquisition found as of 2026-06-28.
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; no acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$76M (per aggregators)
 last_funding: Series B $41M, led by Third Point Ventures (with YL Ventures, Intel Capital, The Syndicate Group)
-deployment: [saas, api, browser]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, platform]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, shadow-ai, identity, saas-security]
 ---
 

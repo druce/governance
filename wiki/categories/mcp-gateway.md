@@ -3,14 +3,19 @@ title: MCP Gateway / Tool Access Control
 type: category
 name: MCP Gateway / Tool Access Control
 slug: mcp-gateway
+category: mcp-gateway
 layer: model-prompt
-priority: day-2
-trifecta_role: untrusted-input, egress (single broker/allowlist for the tools agents can reach); yellow/green zone
+survey_question: MCP Gateway / Tool Access Control
+adoption_tier: day-2
+trigger: agents call tools via MCP; the tool path needs a policy choke point
+maturity_stage_required: null
+category_maturity: nascent
+adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
+incumbent_coverage: []
+vendor_count: 11
 maps_to_seed_doc: MCP Gateway / Tool Access Control
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
-vendor_count: 11
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # MCP Gateway / Tool Access Control

@@ -3,26 +3,30 @@ title: JFrog
 type: vendor
 name: JFrog
 slug: jfrog
-categories: [software-supply-chain]
-layer: foundation
-aliases: [Artifactory, Xray, JFrog Platform, JFrog ML]
-website: "https://jfrog.com"
+aka: [Artifactory, Xray, JFrog Platform, JFrog ML]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://jfrog.com
 founded: 2008
 hq: Sunnyvale, California, USA (dual HQ with Netanya, Israel)
-ownership: public
-ownership_detail: "Public — NASDAQ: FROG since IPO Sept 2020; market cap ~$3.5B-$4.5B (as of early 2025, volatile)"
-ownership_confidence: high
-funding_total: "~$509M raised at IPO (Sept 2020, ~$3.9B valuation); pre-IPO VC ~$226M"
-last_funding: "IPO Sept 2020 (NASDAQ: FROG)"
-deployment: [saas, self-hosted, on-prem, api]
+ownership_state: public
+owner: null
+ownership_note: 'Public — NASDAQ: FROG since IPO Sept 2020; market cap ~$3.5B-$4.5B (as of early 2025, volatile)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$509M raised at IPO (Sept 2020, ~$3.9B valuation); pre-IPO VC ~$226M
+last_funding: 'IPO Sept 2020 (NASDAQ: FROG)'
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [artifact-repository, sca, mlops, devsecops]
 ---
 

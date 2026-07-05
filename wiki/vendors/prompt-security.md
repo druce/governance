@@ -3,26 +3,30 @@ title: Prompt Security
 type: vendor
 name: Prompt Security
 slug: prompt-security
-categories: [dlp, ai-runtime-security, ai-spm, ai-access-governance]
-layer: data
-aliases: [Prompt, Prompt Security (SentinelOne)]
-website: "https://prompt.security"
+aka: [Prompt, Prompt Security (SentinelOne)]
+primary_category: dlp
+also_listed_in: [ai-runtime-security, ai-spm, ai-access-governance]
+website: https://prompt.security
 founded: 2023
 hq: Tel Aviv, Israel
-ownership: acquired
-ownership_detail: "Acquired by SentinelOne — announced 2025-08-05, cash + stock, reported ~$250M, closed in SentinelOne fiscal Q3 FY2026. Now SentinelOne's GenAI security product."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: SentinelOne
+ownership_note: Acquired by SentinelOne — announced 2025-08-05, cash + stock, reported ~$250M, closed in SentinelOne fiscal Q3 FY2026. Now SentinelOne's GenAI security product.
+acquisition: {announced: 2025-08-05, closed: 2025-08-05, price: null}
 funding_total: ~$23M (pre-acquisition)
-last_funding: "Series A (Hetz Ventures, Jump Capital, Ridge Ventures; strategics Okta, F5)"
-deployment: [inline-proxy, api, sdk, saas]
+last_funding: Series A (Hetz Ventures, Jump Capital, Ridge Ventures; strategics Okta, F5)
+market_position: null
+deployment_model: [saas]
+form_factor: [inline-proxy, api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [genai-security, ai-firewall, prompt-injection, shadow-ai, dlp, sentinelone]
 ---
 

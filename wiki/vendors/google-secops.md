@@ -3,26 +3,30 @@ title: Google SecOps (Chronicle)
 type: vendor
 name: Google SecOps (Chronicle)
 slug: google-secops
-categories: [siem-soc]
-layer: foundation
-aliases: [Chronicle, Chronicle Security Operations, Google Security Operations]
-website: "https://cloud.google.com/security/products/security-operations"
+aka: [Chronicle, Chronicle Security Operations, Google Security Operations]
+primary_category: siem-soc
+also_listed_in: []
+website: https://cloud.google.com/security/products/security-operations
 founded: 2018
 hq: Mountain View, CA, USA
-ownership: public
-ownership_detail: "Google Cloud product line of Alphabet Inc. (NASDAQ: GOOGL/GOOG); incl. Mandiant (acq. completed 2022-09-12, ~$5.4B)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: Alphabet Inc
+ownership_note: 'Google Cloud product line of Alphabet Inc. (NASDAQ: GOOGL/GOOG); incl. Mandiant (acq. completed 2022-09-12, ~$5.4B)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [google, alphabet, siem, soc, chronicle, mandiant, incumbent]
 ---
 

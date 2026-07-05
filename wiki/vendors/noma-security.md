@@ -3,26 +3,30 @@ title: Noma Security
 type: vendor
 name: Noma Security
 slug: noma-security
-categories: [ai-spm, agent-runtime-security]
-layer: model-prompt
-aliases: [Noma]
-website: "https://noma.security"
+aka: [Noma]
+primary_category: ai-spm
+also_listed_in: [agent-runtime-security]
+website: https://noma.security
 founded: 2023
 hq: Tel Aviv, Israel (R&D); New York, USA (operations)
-ownership: independent
-ownership_detail: VC-backed; $100M Series B led by Evolution Equity Partners (2025-07)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $100M Series B led by Evolution Equity Partners (2025-07)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$132M
 last_funding: Series B $100M (2025-07)
-deployment: [saas, api, self-hosted]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (Fortune 500; financial services, life sciences, retail, tech)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-spm, agent-security, runtime, red-teaming]
 ---
 

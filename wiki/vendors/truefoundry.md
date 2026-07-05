@@ -3,26 +3,30 @@ title: TrueFoundry
 type: vendor
 name: TrueFoundry
 slug: truefoundry
-categories: [ai-gateway, mcp-gateway]
-layer: model-prompt
-aliases: []
-website: "https://www.truefoundry.com"
+aka: []
+primary_category: ai-gateway
+also_listed_in: [mcp-gateway]
+website: https://www.truefoundry.com
 founded: 2021
 hq: San Francisco, US + Bengaluru, India (dual HQ)
-ownership: independent
-ownership_detail: VC-backed; $19M Series A led by Intel Capital (Feb 2025). No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $19M Series A led by Intel Capital (Feb 2025). No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $21.3M
 last_funding: Series A, $19M, 2025-02 (lead Intel Capital)
-deployment: [self-hosted, saas, api, on-prem]
+market_position: null
+deployment_model: [self-hosted, saas, on-prem]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (regulated — banking, healthcare, insurance, government)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-gateway, mcp-gateway, llmops, kubernetes]
 ---
 

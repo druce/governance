@@ -3,26 +3,30 @@ title: Amazon Q Business
 type: vendor
 name: Amazon Q Business
 slug: amazon-q-business
-categories: [enterprise-ai-assistant, entitlement-aware-rag]
-layer: ux
-aliases: [Amazon Q, AWS Q Business, Q Business]
-website: "https://aws.amazon.com/q/business/"
+aka: [Amazon Q, AWS Q Business, Q Business]
+primary_category: enterprise-ai-assistant
+also_listed_in: [entitlement-aware-rag]
+website: https://aws.amazon.com/q/business/
 founded: 2023
 hq: Seattle, WA, USA
-ownership: public
-ownership_detail: "Product of Amazon Web Services (Amazon.com, Inc., NASDAQ: AMZN)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: Amazon Web Services
+ownership_note: 'Product of Amazon Web Services (Amazon.com, Inc., NASDAQ: AMZN)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [aws, enterprise-assistant, rag, generative-ai]
 ---
 

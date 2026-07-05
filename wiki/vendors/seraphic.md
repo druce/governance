@@ -3,26 +3,30 @@ title: Seraphic Security
 type: vendor
 name: Seraphic Security
 slug: seraphic
-categories: [enterprise-browser]
-layer: ux
-aliases: [Seraphic, Seraphic Algorithms]
-website: "https://seraphicsecurity.com/"
+aka: [Seraphic, Seraphic Algorithms]
+primary_category: enterprise-browser
+also_listed_in: []
+website: https://seraphicsecurity.com/
 founded: 2020
-hq: "Herzliya, Israel (US office: Wilmington, MA)"
-ownership: acquired
-ownership_detail: "Definitive agreement to be acquired by CrowdStrike for $420M announced 2026-01-13; expected to close in CrowdStrike's Q1 FY'27 (pending close as of 2026-06-28). CrowdStrike Falcon Fund was a prior Series A investor."
-ownership_confidence: high
+hq: 'Herzliya, Israel (US office: Wilmington, MA)'
+ownership_state: acquired-pending
+owner: CrowdStrike
+ownership_note: Definitive agreement to be acquired by CrowdStrike for $420M announced 2026-01-13; expected to close in CrowdStrike's Q1 FY'27 (pending close as of 2026-06-28). CrowdStrike Falcon Fund was a prior Series A investor.
+acquisition: {announced: 2026-01-13, closed: null, price: null}
 funding_total: $29M (Series A)
 last_funding: Series A, $29M, 2025-01 (incl. CrowdStrike Falcon Fund)
-deployment: [saas, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (incl. regulated; managed + unmanaged/BYOD, contractors)
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [browser-security, secure-browsing, crowdstrike]
 ---
 

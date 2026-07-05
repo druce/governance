@@ -3,26 +3,30 @@ title: Enkrypt AI
 type: vendor
 name: Enkrypt AI
 slug: enkrypt-ai
-categories: [ai-runtime-security, ai-red-teaming]
-layer: model-prompt
-aliases: [Enkrypt, Sentry]
-website: "https://www.enkryptai.com/"
+aka: [Enkrypt, Sentry]
+primary_category: ai-runtime-security
+also_listed_in: [ai-red-teaming]
+website: https://www.enkryptai.com/
 founded: 2022
 hq: Boston, MA, USA
-ownership: independent
-ownership_detail: VC-backed independent; no M&A. Seed round Feb 2024 led by Boldcap.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; no M&A. Seed round Feb 2024 led by Boldcap.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $2.35M (disclosed seed; later/larger Series A unconfirmed)
 last_funding: Seed, $2.35M, 2024-02 (led by Boldcap)
-deployment: [saas, api, sdk, inline-proxy]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk, inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (finance, healthcare)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [llm-security, red-teaming, guardrails, ai-firewall, agent-security, mcp]
 ---
 

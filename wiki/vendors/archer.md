@@ -3,26 +3,30 @@ title: Archer
 type: vendor
 name: Archer
 slug: archer
-categories: [enterprise-grc]
-layer: governance
-aliases: [RSA Archer, Archer IRM, Archer Technologies]
-website: "https://www.archerirm.com/"
+aka: [RSA Archer, Archer IRM, Archer Technologies]
+primary_category: enterprise-grc
+also_listed_in: []
+website: https://www.archerirm.com/
 founded: 2000
 hq: Overland Park, Kansas, USA
-ownership: acquired
-ownership_detail: "PE-owned: acquired by Cinven (carved out of RSA Security) — announced 2023-04-13, completed 2023-07-10. Prior chain: Dell→STG (2020)→STG+Clearlake."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted, on-prem]
+ownership_state: pe-owned
+owner: Cinven
+ownership_note: 'PE-owned: acquired by Cinven (carved out of RSA Security) — announced 2023-04-13, completed 2023-07-10. Prior chain: Dell→STG (2020)→STG+Clearlake.'
+acquisition: {announced: 2023-04-13, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, irm, risk-management, compliance]
 ---
 

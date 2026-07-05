@@ -3,26 +3,30 @@ title: GetReal Security
 type: vendor
 name: GetReal Security
 slug: getreal
-categories: [anti-deepfake]
-layer: foundation
-aliases: [GetReal Labs, GetReal]
-website: "https://www.getrealsecurity.com"
+aka: [GetReal Labs, GetReal]
+primary_category: anti-deepfake
+also_listed_in: []
+website: https://www.getrealsecurity.com
 founded: 2022
 hq: San Mateo, CA, USA
-ownership: independent
-ownership_detail: VC-backed; $17.5M Series A led by Forgepoint Capital (2025-03-26). No acquisition found.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $17.5M Series A led by Forgepoint Capital (2025-03-26). No acquisition found.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $17.5M (Series A)
 last_funding: Series A, 2025-03-26 (Forgepoint Capital)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / government / defense (financial services, BPO, recruiting)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [deepfake, forensics, provenance, content-authenticity]
 ---
 

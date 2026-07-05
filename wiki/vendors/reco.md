@@ -3,26 +3,30 @@ title: Reco
 type: vendor
 name: Reco
 slug: reco
-categories: [ai-spm, ai-access-governance, sspm]
-layer: model-prompt
-aliases: [Reco AI, Reco Labs, recolabs]
-website: "https://www.reco.ai"
+aka: [Reco AI, Reco Labs, recolabs]
+primary_category: ai-spm
+also_listed_in: [ai-access-governance, sspm]
+website: https://www.reco.ai
 founded: 2020
 hq: New York, NY, US (also Tel Aviv, Israel)
-ownership: independent
-ownership_detail: Venture-backed; $85M total raised. $30M Series B led by Zeev Ventures (2026-02). No acquisition.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed; $85M total raised. $30M Series B led by Zeev Ventures (2026-02). No acquisition.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: $85M
 last_funding: Series B, $30M, 2026-02
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (regulated, large SaaS estates)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, ai-spm, shadow-ai, identity, saas-security]
 ---
 

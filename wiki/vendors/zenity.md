@@ -3,26 +3,30 @@ title: Zenity
 type: vendor
 name: Zenity
 slug: zenity
-categories: [agent-runtime-security, ai-spm]
-layer: model-prompt
-aliases: [Zenity.io]
-website: "https://zenity.io"
+aka: [Zenity.io]
+primary_category: agent-runtime-security
+also_listed_in: [ai-spm]
+website: https://zenity.io
 founded: 2021
 hq: Tel Aviv-Yafo, Israel
-ownership: independent
-ownership_detail: VC-backed; $38M Series B co-led by Third Point Ventures & DTCP (2024-10); M12, Intel Capital, Vertex
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $38M Series B co-led by Third Point Ventures & DTCP (2024-10); M12, Intel Capital, Vertex
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$55M+
 last_funding: Series B $38M (2024-10)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (Fortune 500; financial services, tech, manufacturing, energy, pharma)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agent-security, ai-spm, copilots, low-code, red-teaming]
 ---
 

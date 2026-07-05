@@ -3,26 +3,30 @@ title: MIND
 type: vendor
 name: MIND
 slug: mind
-categories: [dlp]
-layer: data
-aliases: [mind.io]
-website: "https://mind.io"
+aka: [mind.io]
+primary_category: dlp
+also_listed_in: []
+website: https://mind.io
 founded: 2023
 hq: Seattle, Washington, USA (R&D in Israel)
-ownership: independent
-ownership_detail: VC-backed; Series A June 2025. No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; Series A June 2025. No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$41M (>$40M)
 last_funding: Series A, $30M, 2025-06-04 (Paladin Capital Group + Crosspoint Capital Partners)
-deployment: [saas, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dlp, ddr, genai-dlp, insider-risk]
 ---
 

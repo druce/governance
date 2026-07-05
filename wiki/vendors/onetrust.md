@@ -3,26 +3,30 @@ title: OneTrust
 type: vendor
 name: OneTrust
 slug: onetrust
-categories: [enterprise-grc, ai-governance-platform, dspm]
-layer: governance
-aliases: []
-website: "https://www.onetrust.com"
+aka: []
+primary_category: enterprise-grc
+also_listed_in: [ai-governance-platform, dspm]
+website: https://www.onetrust.com
 founded: 2016
 hq: Atlanta, Georgia, USA
-ownership: independent
-ownership_detail: "Private, growth-equity backed (Insight Partners, TCV, Coatue, SoftBank Vision Fund, Generation Investment Management). ~$1.1B raised total; last priced round $150M in 2023 at $4.5B (a down round from a prior ~$5.3B peak). No IPO as of 2026-06."
-ownership_confidence: medium
-funding_total: "~$1.1B (as of 2025)"
-last_funding: "$150M, 2023, led by Generation Investment Management (down round, $4.5B valuation)"
-deployment: [saas]
+ownership_state: independent
+owner: null
+ownership_note: Private, growth-equity backed (Insight Partners, TCV, Coatue, SoftBank Vision Fund, Generation Investment Management). ~$1.1B raised total; last priced round $150M in 2023 at $4.5B (a down round from a prior ~$5.3B peak). No IPO as of 2026-06.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$1.1B (as of 2025)
+last_funding: $150M, 2023, led by Generation Investment Management (down round, $4.5B valuation)
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (and large mid-market); regulated industries
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, privacy, ai-governance, dspm]
 ---
 

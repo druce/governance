@@ -3,26 +3,30 @@ title: Cyera
 type: vendor
 name: Cyera
 slug: cyera
-categories: [dspm, data-access-governance, dlp]
-layer: data
-aliases: []
-website: "https://www.cyera.com"
+aka: []
+primary_category: dspm
+also_listed_in: [data-access-governance, dlp]
+website: https://www.cyera.com
 founded: 2021
 hq: New York, NY, USA (R&D in Israel)
-ownership: independent
-ownership_detail: Privately held, VC-backed. $400M Series F (2026-01) led by Blackstone at $9B valuation; >$1.7B raised total.
-ownership_confidence: high
-funding_total: ">$1.7B"
+ownership_state: independent
+owner: null
+ownership_note: Privately held, VC-backed. $400M Series F (2026-01) led by Blackstone at $9B valuation; >$1.7B raised total.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: '>$1.7B'
 last_funding: $400M Series F at $9B valuation (2026-01-08, led by Blackstone)
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise, Fortune 500, regulated (financial services heavy)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, dlp, data-access-governance, ai-native, cloud-security]
 ---
 

@@ -3,14 +3,19 @@ title: HITL Approvals
 type: category
 name: HITL Approvals
 slug: hitl-approvals
+category: hitl-approvals
 layer: policy
-priority: process
-trifecta_role: none-detection
-maps_to_seed_doc: HITL Approvals
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: human-in-the-loop on consequential agent actions
+maturity_stage_required: null
+category_maturity: null
+adjacent: [risk-tiers, agent-runtime-security]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: HITL Approvals
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > A **practice**, not a product. Human-in-the-loop approvals are a workflow you wire

@@ -3,26 +3,30 @@ title: Valence Security
 type: vendor
 name: Valence Security
 slug: valence-security
-categories: [sspm]
-layer: foundation
-aliases: []
-website: "https://www.valencesecurity.com"
+aka: []
+primary_category: sspm
+also_listed_in: []
+website: https://www.valencesecurity.com
 founded: 2021
 hq: Tel Aviv, Israel (R&D); US presence in South San Francisco, California
-ownership: independent
-ownership_detail: "Venture-backed, independent as of 2026-06-28; no acquisition found. Series A ($25M) led by M12 (Microsoft), Oct 2022."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06-28; no acquisition found. Series A ($25M) led by M12 (Microsoft), Oct 2022.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$32M
-last_funding: "Series A $25M led by M12 / Microsoft (2022-10-26); prior $7M Seed led by YL Ventures (2021)"
-deployment: [saas, api]
+last_funding: Series A $25M led by M12 / Microsoft (2022-10-26); prior $7M Seed led by YL Ventures (2021)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, saas-security, ai-security, itdr]
 ---
 

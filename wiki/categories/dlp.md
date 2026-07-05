@@ -3,14 +3,19 @@ title: Data Loss Prevention (DLP)
 type: category
 name: Data Loss Prevention (DLP)
 slug: dlp
+category: dlp
 layer: data
-priority: day-1
-trifecta_role: egress (+ sensitive-data — blocks sensitive data leaving at the exit)
+survey_question: Data Loss Prevention (DLP)
+adoption_tier: day-1
+trigger: employees can paste sensitive data into anything with a text box
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [dspm, ai-access-governance, network-security-sase]
+incumbent_coverage: []
+vendor_count: 9
 maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
-vendor_count: 9
-status: drafted
-last_updated: 2026-06-30
+last_verified: 2026-06-30
 ---
 
 # Data Loss Prevention (DLP)

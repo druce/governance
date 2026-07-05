@@ -3,26 +3,30 @@ title: DoControl
 type: vendor
 name: DoControl
 slug: docontrol
-categories: [sspm]
-layer: foundation
-aliases: []
-website: "https://www.docontrol.io"
+aka: []
+primary_category: sspm
+also_listed_in: []
+website: https://www.docontrol.io
 founded: 2020
 hq: New York, NY
-ownership: independent
-ownership_detail: VC-backed independent; no acquisition found as of 2026-06-28.
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: VC-backed independent; no acquisition found as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$45M
 last_funding: Series B $30M (Apr 2022), led by Insight Partners
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, saas-dlp, data-security, data-access-governance]
 ---
 

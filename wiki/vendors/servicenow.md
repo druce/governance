@@ -3,26 +3,30 @@ title: ServiceNow GRC
 type: vendor
 name: ServiceNow GRC
 slug: servicenow
-categories: [enterprise-grc]
-layer: governance
-aliases: [ServiceNow IRM, Now Platform GRC, Integrated Risk Management]
-website: "https://www.servicenow.com/products/governance-risk-and-compliance.html"
+aka: [ServiceNow IRM, Now Platform GRC, Integrated Risk Management]
+primary_category: enterprise-grc
+also_listed_in: []
+website: https://www.servicenow.com/products/governance-risk-and-compliance.html
 founded: 2004
 hq: Santa Clara, California, USA
-ownership: public
-ownership_detail: "Public company, NYSE: NOW (IPO 2012)"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: null
+ownership_note: 'Public company, NYSE: NOW (IPO 2012)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, irm, risk-management, compliance]
 ---
 

@@ -3,26 +3,30 @@ title: Kyverno
 type: vendor
 name: Kyverno
 slug: kyverno
-categories: [policy-as-code]
-layer: governance
-aliases: []
-website: "https://kyverno.io/"
+aka: []
+primary_category: policy-as-code
+also_listed_in: []
+website: https://kyverno.io/
 founded: 2019
 hq: (open-source project; commercial backer Nirmata, San Jose, CA)
-ownership: independent
-ownership_detail: CNCF graduated project (graduated 2026-03-24); created by Nirmata, contributed to CNCF in 2020. Apache-2.0 OSS.
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [self-hosted]
+ownership_state: independent
+owner: null
+ownership_note: CNCF graduated project (graduated 2026-03-24); created by Nirmata, contributed to CNCF in 2020. Apache-2.0 OSS.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, cncf, policy-as-code, kubernetes]
 ---
 

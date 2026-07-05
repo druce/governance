@@ -3,26 +3,30 @@ title: Cloudflare Workers
 type: vendor
 name: Cloudflare Workers
 slug: cloudflare-workers
-categories: [ephemeral-environments]
-layer: governance
-aliases: [Workers, Cloudflare Workers AI]
-website: "https://workers.cloudflare.com/"
+aka: [Workers, Cloudflare Workers AI]
+primary_category: ephemeral-environments
+also_listed_in: []
+website: https://workers.cloudflare.com/
 founded: 2017
 hq: San Francisco, CA, USA
-ownership: public
-ownership_detail: "Product of Cloudflare, Inc. (public, NYSE: NET); Workers launched 2017"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas]
+ownership_state: public
+owner: Cloudflare
+ownership_note: 'Product of Cloudflare, Inc. (public, NYSE: NET); Workers launched 2017'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, serverless, edge-compute, cloudflare]
 ---
 

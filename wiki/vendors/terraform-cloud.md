@@ -3,26 +3,30 @@ title: Terraform Cloud (HCP Terraform)
 type: vendor
 name: Terraform Cloud (HCP Terraform)
 slug: terraform-cloud
-categories: [ephemeral-environments, policy-as-code]
-layer: governance
-aliases: [HCP Terraform, Terraform Enterprise]
-website: "https://www.hashicorp.com/products/terraform"
+aka: [HCP Terraform, Terraform Enterprise]
+primary_category: ephemeral-environments
+also_listed_in: [policy-as-code]
+website: https://www.hashicorp.com/products/terraform
 founded: 2012
 hq: San Francisco, CA, USA
-ownership: subsidiary
-ownership_detail: HashiCorp; acquired by IBM 2025-02-27 ($6.4B). Now an IBM company.
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, self-hosted]
+ownership_state: acquired-closed
+owner: IBM 2025-02-27
+ownership_note: HashiCorp; acquired by IBM 2025-02-27 ($6.4B). Now an IBM company.
+acquisition: {announced: 2025-02-27, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, infrastructure-as-code, hashicorp, ibm, policy-as-code]
 ---
 

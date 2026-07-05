@@ -3,26 +3,30 @@ title: Microsoft Purview
 type: vendor
 name: Microsoft Purview
 slug: microsoft-purview
-categories: [dspm, dlp]
-layer: data
-aliases: [Purview, Microsoft 365 Compliance, Azure Purview]
-website: "https://www.microsoft.com/en-us/security/business/microsoft-purview"
+aka: [Purview, Microsoft 365 Compliance, Azure Purview]
+primary_category: dspm
+also_listed_in: [dlp]
+website: https://www.microsoft.com/en-us/security/business/microsoft-purview
 founded: 2022
 hq: Redmond, WA, USA
-ownership: public
-ownership_detail: "Product of Microsoft Corporation (NASDAQ: MSFT); not a standalone company. \"Purview\" brand consolidated the former Microsoft 365 Compliance + Azure Purview in 2022."
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: Microsoft Corporation
+ownership_note: 'Product of Microsoft Corporation (NASDAQ: MSFT); not a standalone company. "Purview" brand consolidated the former Microsoft 365 Compliance + Azure Purview in 2022.'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (esp. Microsoft 365 E5 / regulated shops)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [microsoft, dspm, dlp, data-governance, copilot]
 ---
 

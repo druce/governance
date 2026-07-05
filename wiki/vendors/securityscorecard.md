@@ -3,26 +3,30 @@ title: SecurityScorecard
 type: vendor
 name: SecurityScorecard
 slug: securityscorecard
-categories: [vendor-risk]
-layer: governance
-aliases: []
-website: "https://securityscorecard.com/"
+aka: []
+primary_category: vendor-risk
+also_listed_in: []
+website: https://securityscorecard.com/
 founded: 2013
 hq: New York, New York, USA
-ownership: independent
-ownership_detail: "Private, VC/growth-backed (~$290M+ raised; Series E $180M 2021, ~$1B valuation). Acquired HyperComply (2025)."
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC/growth-backed (~$290M+ raised; Series E $180M 2021, ~$1B valuation). Acquired HyperComply (2025).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$290M+
-last_funding: "Series E, $180M, 2021"
-deployment: [saas]
+last_funding: Series E, $180M, 2021
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [security-ratings, vendor-risk, tprm, cyber-ratings]
 ---
 

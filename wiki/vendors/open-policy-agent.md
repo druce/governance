@@ -3,26 +3,30 @@ title: Open Policy Agent (OPA)
 type: vendor
 name: Open Policy Agent (OPA)
 slug: open-policy-agent
-categories: [authorization-engine, policy-as-code]
-layer: model-prompt
-aliases: [OPA, Rego]
-website: "https://www.openpolicyagent.org"
+aka: [OPA, Rego]
+primary_category: authorization-engine
+also_listed_in: [policy-as-code]
+website: https://www.openpolicyagent.org
 founded: 2016
-hq: "CNCF project (originated at Styra, Redwood City, CA)"
-ownership: independent
-ownership_detail: "Open-source CNCF Graduated project (Apache-2.0). Created by Styra; donated to CNCF 2018. Core maintainers acqui-hired by Apple (2025-08); project remains under CNCF governance."
-ownership_confidence: high
+hq: CNCF project (originated at Styra, Redwood City, CA)
+ownership_state: independent
+owner: null
+ownership_note: Open-source CNCF Graduated project (Apache-2.0). Created by Styra; donated to CNCF 2018. Core maintainers acqui-hired by Apple (2025-08); project remains under CNCF governance.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (open-source project, not a company)
 last_funding: n/a
-deployment: [self-hosted, sdk, on-prem]
+market_position: null
+deployment_model: [self-hosted, on-prem]
+form_factor: [sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (platform/devops/security teams)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authorization, pdp, open-source, cncf, policy-as-code, rego]
 ---
 

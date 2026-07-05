@@ -3,26 +3,30 @@ title: Okta
 type: vendor
 name: Okta
 slug: okta
-categories: [identity-access]
-layer: foundation
-aliases: [Auth0]
-website: "https://www.okta.com"
+aka: [Auth0]
+primary_category: identity-access
+also_listed_in: []
+website: https://www.okta.com
 founded: 2009
 hq: San Francisco, California, USA
-ownership: public
-ownership_detail: "Independent public company (Nasdaq: OKTA); IPO April 2017"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: null
+ownership_note: 'Independent public company (Nasdaq: OKTA); IPO April 2017'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (vendor-neutral IdP); Auth0 for CIAM/developers
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity, idp, sso, mfa]
 ---
 

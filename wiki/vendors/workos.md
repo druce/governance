@@ -3,26 +3,30 @@ title: WorkOS
 type: vendor
 name: WorkOS
 slug: workos
-categories: [tool-identity-integration, identity-access]
-layer: model-prompt
-aliases: [AuthKit]
-website: "https://workos.com"
+aka: [AuthKit]
+primary_category: tool-identity-integration
+also_listed_in: [identity-access]
+website: https://workos.com
 founded: 2019
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Venture-backed, independent as of 2026-06. $100M Series C (2026-03-02) at $2B valuation, led by Meritech and Sapphire. Itself an acquirer — bought Warrant (FGA) on/around 2024-04-23.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06. $100M Series C (2026-03-02) at $2B valuation, led by Meritech and Sapphire. Itself an acquirer — bought Warrant (FGA) on/around 2024-04-23.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$180M (cumulative across Series A/B/C; ~$100M raised pre-Series-C plus $100M Series C — see note)
 last_funding: Series C, $100M, 2026-03-02 (led by Meritech & Sapphire; $2B valuation)
-deployment: [api, saas, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: software vendors / SaaS & AI app builders (developer platform); indie to enterprise
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [tool-identity-integration, identity-access, agent-identity, mcp, oauth, authorization, developer-platform]
 ---
 

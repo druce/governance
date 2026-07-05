@@ -3,26 +3,30 @@ title: Claude Enterprise (Anthropic)
 type: vendor
 name: Claude Enterprise (Anthropic)
 slug: anthropic-claude-enterprise
-categories: [enterprise-ai-assistant]
-layer: ux
-aliases: [Claude for Work, Claude Enterprise, Anthropic Claude]
-website: "https://claude.com/solutions/enterprise"
+aka: [Claude for Work, Claude Enterprise, Anthropic Claude]
+primary_category: enterprise-ai-assistant
+also_listed_in: []
+website: https://claude.com/solutions/enterprise
 founded: 2021
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: "Private, independent company. Amazon (~$8B invested since 2023; mid-to-high-teens % stake) and Google (~14% equity, contractually capped at 15%) hold minority investments but do not control it. Filed confidentially for IPO 2026-06-01."
-ownership_confidence: high
-funding_total: "~$60B+ raised across rounds (as of 2026-06)"
-last_funding: "Series H ~$65B at ~$965B valuation (2026); Series G $30B at $380B post-money (2026-02-12)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: Private, independent company. Amazon (~$8B invested since 2023; mid-to-high-teens % stake) and Google (~14% equity, contractually capped at 15%) hold minority investments but do not control it. Filed confidentially for IPO 2026-06-01.
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$60B+ raised across rounds (as of 2026-06)
+last_funding: Series H ~$65B at ~$965B valuation (2026); Series G $30B at $380B post-money (2026-02-12)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [llm-vendor, ai-assistant, frontier-model]
 ---
 

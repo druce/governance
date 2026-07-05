@@ -24,10 +24,29 @@ from wikilib import ROOT, cat_index, dump_page, iter_pages, load_taxonomy, parse
 TODAY = datetime.date.today()
 
 ISO_DATE = re.compile(r"\b(20\d{2}-\d{2}(?:-\d{2})?)\b")
-OWNER_RE = re.compile(
-    r"(?:acq(?:uired|\.)?(?:\s+by)?|subsidiary of|part of|owned by|unit of|now part of|merged into)"
-    r"\s+([A-Z][\w&.' -]{1,40}?)(?=\s*[(,;.]|\s*$)"
-)
+MD_LINK = re.compile(r"\[([^\]]+)\]\([^)]*\)")
+_STOP = r"(?=\s*[(,;.—–]|\s+for\s|\s*$)"
+_NAME = r"([A-Z][\w&.' -]{1,40}?)"
+OWNER_PATTERNS = [
+    re.compile(r"(?:acquired by|acq\.? by|taken private by|bought by|subsidiary of|owned by|unit of|now part of|merged into)\s+" + _NAME + _STOP, re.I),
+    re.compile(r"product(?:\s+\w+)? of\s+" + _NAME + _STOP, re.I),
+    re.compile(r"(?:^|[.;:]\s+)" + _NAME.replace(" -", "-") + r"\s+(?:announced intent to acquire|announced acquisition|acquired\b|acquires\b|to acquire\b|hired)", re.M),
+    re.compile(_NAME + r"\s+majority shareholder", 0),
+]
+PE_HINT = re.compile(r"pe-owned|private equity|taken private|pe-backed", re.I)
+
+
+def extract_owner(detail):
+    d = MD_LINK.sub(r"\1", detail)
+    for pat in OWNER_PATTERNS:
+        m = pat.search(d)
+        if m:
+            owner = m.group(1).strip().rstrip(".")
+            owner = re.sub(r"(?:\s+in)?\s+20\d{2}$", "", owner)  # "CyberArk 2017", "Apple in 2025"
+            if owner.lower().startswith("the "):
+                continue
+            return owner
+    return None
 
 # old `deployment` values → (deployment_model, form_factor)
 DEPLOY_MODEL = {"saas", "self-hosted", "on-prem", "hybrid", "in-tenant"}
@@ -53,10 +72,7 @@ def parse_date(s):
 
 def map_ownership(own, detail, confidence, flags):
     """Return (ownership_state, owner, acquisition, verify_after)."""
-    owner = None
-    m = OWNER_RE.search(detail)
-    if m:
-        owner = m.group(1).strip().rstrip(".")
+    owner = extract_owner(detail)
     acq: dict = {"announced": None, "closed": None, "price": None}
     verify_after = None
     dates = ISO_DATE.findall(detail)
@@ -64,6 +80,12 @@ def map_ownership(own, detail, confidence, flags):
 
     if own in ("independent", "public"):
         state = own
+    elif own in ("acquired", "subsidiary") and PE_HINT.search(detail):
+        state = "pe-owned"
+        if dates:
+            acq["announced"] = parse_date(dates[0])
+        if not owner:
+            flags.append("pe-owned: could not extract sponsor name from ownership_detail")
     elif own in ("acquired", "subsidiary"):
         pending = ("pending" in low or "announced" in low) and not any(
             w in low for w in ("closed", "completed", "complete")
@@ -113,7 +135,7 @@ def split_deployment(dep, flags):
     return model, form
 
 
-def migrate_vendor(fm, flags):
+def migrate_vendor(fm, flags, names=None):
     new = {k: fm.get(k) for k in ("title", "type", "name", "slug")}
     new["aka"] = fm.get("aliases") or []
     cats = fm.get("categories") or []
@@ -130,6 +152,8 @@ def migrate_vendor(fm, flags):
         fm.get("ownership_confidence"),
         flags,
     )
+    if owner and names:
+        owner = names.get(owner.lower(), owner)  # '[f5](f5.md)' link text → page name
     new["ownership_state"] = state
     new["owner"] = owner
     detail = fm.get("ownership_detail")
@@ -181,6 +205,12 @@ def main():
     report = {}  # path → flags
     migrated = skipped = 0
 
+    names = {}  # vendor slug → display name, for resolving wikilinked owners
+    for path in iter_pages("vendors"):
+        fm, _ = parse_page(path)
+        if fm and fm.get("slug") and fm.get("name"):
+            names[str(fm["slug"]).lower()] = fm["name"]
+
     for path in iter_pages("vendors", "categories"):
         fm, body = parse_page(path)
         rel = str(path.relative_to(ROOT))
@@ -192,7 +222,7 @@ def main():
             if "primary_category" in fm:
                 skipped += 1
                 continue
-            new = migrate_vendor(fm, flags)
+            new = migrate_vendor(fm, flags, names)
         elif fm.get("type") == "category":
             if "adoption_tier" in fm:
                 skipped += 1

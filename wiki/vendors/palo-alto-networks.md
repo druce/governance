@@ -3,26 +3,30 @@ title: Palo Alto Networks
 type: vendor
 name: Palo Alto Networks
 slug: palo-alto-networks
-categories: [network-security-sase, siem-soc, edr-xdr, ai-runtime-security, ai-soc-analysts, enterprise-browser, ai-gateway, non-human-identity]
-layer: foundation
-aliases: [PANW, Prisma, Cortex, Strata]
-website: "https://www.paloaltonetworks.com"
+aka: [PANW, Prisma, Cortex, Strata]
+primary_category: network-security-sase
+also_listed_in: [siem-soc, edr-xdr, ai-runtime-security, ai-soc-analysts, enterprise-browser, ai-gateway, non-human-identity]
+website: https://www.paloaltonetworks.com
 founded: 2005
 hq: Santa Clara, California, USA
-ownership: public
-ownership_detail: "Public (NASDAQ: PANW). Acquirer, not target — AI-security roll-up: Talon (closed 2023-12-28), Protect AI (2025-07-22), CyberArk incl. Conjur (closed 2026-02-11, ~$25B), Portkey (2026-05-29)."
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Public (NASDAQ: PANW). Acquirer, not target — AI-security roll-up: Talon (closed 2023-12-28), Protect AI (2025-07-22), CyberArk incl. Conjur (closed 2026-02-11, ~$25B), Portkey (2026-05-29).'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public)
-last_funding: "IPO 2012 (NYSE; now NASDAQ: PANW)"
-deployment: [saas, inline-proxy, api, on-prem, sdk]
+last_funding: 'IPO 2012 (NYSE; now NASDAQ: PANW)'
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: [inline-proxy, api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [platform, sase, xdr, siem, ai-security, acquirer]
 ---
 

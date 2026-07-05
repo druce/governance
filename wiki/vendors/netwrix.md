@@ -3,26 +3,30 @@ title: Netwrix
 type: vendor
 name: Netwrix
 slug: netwrix
-categories: [data-access-governance, identity-governance, dlp]
-layer: data
-aliases: [Netwrix Corporation]
-website: "https://www.netwrix.com"
+aka: [Netwrix Corporation]
+primary_category: data-access-governance
+also_listed_in: [identity-governance, dlp]
+website: https://www.netwrix.com
 founded: 2006
 hq: Frisco, Texas, US
-ownership: acquired
-ownership_detail: "Private, PE-owned. TA Associates majority shareholder (since 2020); Centerbridge Partners strategic investor (announced 2023-09-05); Updata Partners + management minority."
-ownership_confidence: high
+ownership_state: pe-owned
+owner: PE-owned. TA Associates
+ownership_note: Private, PE-owned. TA Associates majority shareholder (since 2020); Centerbridge Partners strategic investor (announced 2023-09-05); Updata Partners + management minority.
+acquisition: {announced: 2023-09-05, closed: null, price: null}
 funding_total: n/a (PE-backed, terms undisclosed)
 last_funding: Centerbridge strategic investment, announced 2023-09-05 (terms undisclosed)
-deployment: [self-hosted, on-prem, saas]
+market_position: null
+deployment_model: [self-hosted, on-prem, saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market / enterprise / regulated
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [data-access-governance, dag, iam, pam, identity-governance, active-directory]
 ---
 

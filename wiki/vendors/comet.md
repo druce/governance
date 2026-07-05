@@ -3,26 +3,30 @@ title: Comet (Opik)
 type: vendor
 name: Comet (Opik)
 slug: comet
-categories: [llm-observability]
-layer: model-prompt
-aliases: [Comet ML, Opik]
-website: "https://www.comet.com"
+aka: [Comet ML, Opik]
+primary_category: llm-observability
+also_listed_in: []
+website: https://www.comet.com
 founded: 2017
 hq: New York, NY
-ownership: independent
-ownership_detail: "Comet ML, Inc. — independent, VC-backed (~$70M raised, Series B led by OpenView). Opik is its open-source LLM eval product"
-ownership_confidence: high
-funding_total: "~$70M"
-last_funding: "Series B (led by OpenView Venture Partners)"
-deployment: [saas, self-hosted, sdk, api]
-target_customer: "ML/AI engineering teams; enterprise (150+ customers incl. Netflix, Uber, Cisco)"
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: independent
+owner: null
+ownership_note: Comet ML, Inc. — independent, VC-backed (~$70M raised, Series B led by OpenView). Opik is its open-source LLM eval product
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$70M
+last_funding: Series B (led by OpenView Venture Partners)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: ML/AI engineering teams; enterprise (150+ customers incl. Netflix, Uber, Cisco)
+last_verified: 2026-06-28
+verify_after: null
 tags: [open-source, evals, observability, mlops]
 ---
 

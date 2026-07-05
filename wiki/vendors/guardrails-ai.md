@@ -3,26 +3,30 @@ title: Guardrails AI
 type: vendor
 name: Guardrails AI
 slug: guardrails-ai
-categories: [ai-red-teaming]
-layer: model-prompt
-aliases: [Guardrails Hub]
-website: "https://www.guardrailsai.com"
+aka: [Guardrails Hub]
+primary_category: ai-red-teaming
+also_listed_in: []
+website: https://www.guardrailsai.com
 founded: 2023
 hq: San Francisco, CA
-ownership: independent
-ownership_detail: VC-backed; $7.5M seed (2024-02) led by Zetta Venture Partners (no acquisition)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $7.5M seed (2024-02) led by Zetta Venture Partners (no acquisition)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$7.5M
 last_funding: Seed $7.5M (2024-02)
-deployment: [sdk, self-hosted, api]
+market_position: null
+deployment_model: [self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: AI developers / enterprise engineering teams
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-red-teaming, guardrails, open-source, validators]
 ---
 

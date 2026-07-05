@@ -3,26 +3,30 @@ title: Clutch Security
 type: vendor
 name: Clutch Security
 slug: clutch-security
-categories: [non-human-identity]
-layer: foundation
-aliases: []
-website: "https://www.clutch.security"
+aka: []
+primary_category: non-human-identity
+also_listed_in: []
+website: https://www.clutch.security
 founded: 2023
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: "VC-backed; no acquisition found as of 2026-06-28"
-ownership_confidence: high
-funding_total: "$28.5M"
-last_funding: "Series A, January 2025 ($20M, led by SignalFire)"
-deployment: [saas, api]
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; no acquisition found as of 2026-06-28
+acquisition: {announced: null, closed: null, price: null}
+funding_total: $28.5M
+last_funding: Series A, January 2025 ($20M, led by SignalFire)
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (banking, financial services, insurance)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [non-human-identity, secrets, nhi, zero-trust, agentic]
 ---
 

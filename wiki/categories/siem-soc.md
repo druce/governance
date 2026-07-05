@@ -3,14 +3,19 @@ title: Enterprise Logging / SIEM / SOC
 type: category
 name: Enterprise Logging / SIEM / SOC
 slug: siem-soc
+category: siem-soc
 layer: foundation
-priority: day-1
-trifecta_role: none-detection (detection, audit trail, and forensics — not a preventive leg of the trifecta)
+survey_question: SIEM/SOAR/SecOps
+adoption_tier: day-1
+trigger: table stakes — you cannot investigate what you did not log
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [ai-soc-analysts, edr-xdr]
+incumbent_coverage: []
+vendor_count: 9
 maps_to_seed_doc: Enterprise logging / SIEM / SOC
 maps_to_seed_csv: SIEM/SOAR/SecOps
-vendor_count: 9
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

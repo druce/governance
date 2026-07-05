@@ -3,26 +3,30 @@ title: Vanta
 type: vendor
 name: Vanta
 slug: vanta
-categories: [ai-governance-platform, enterprise-grc]
-layer: governance
-aliases: []
-website: "https://www.vanta.com"
+aka: []
+primary_category: ai-governance-platform
+also_listed_in: [enterprise-grc]
+website: https://www.vanta.com
 founded: 2018
 hq: San Francisco, CA, USA
-ownership: independent
-ownership_detail: Private, venture-backed. Series D $150M (2025-07, led by Wellington Management) at $4.15B valuation; ~$504M raised total. No acquisition of Vanta; Vanta is itself an acquirer (TrustPage 2023, Riskey 2025).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, venture-backed. Series D $150M (2025-07, led by Wellington Management) at $4.15B valuation; ~$504M raised total. No acquisition of Vanta; Vanta is itself an acquirer (TrustPage 2023, Riskey 2025).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$504M (as of 2025-07)
 last_funding: Series D $150M, 2025-07 (Wellington Management lead), $4.15B valuation
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: SMB / startup / mid-market (moving upmarket to enterprise)
-hedge_fund_fit: low
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [grc, compliance-automation, iso-42001, soc2, ai-governance]
 ---
 

@@ -3,26 +3,30 @@ title: GitHub Advanced Security
 type: vendor
 name: GitHub Advanced Security
 slug: github-advanced-security
-categories: [software-supply-chain]
-layer: foundation
-aliases: [GHAS, GitHub Code Security, GitHub Secret Protection]
-website: "https://github.com/security/advanced-security"
-founded: 2008                       # GitHub, the parent product; GHAS launched later
+aka: [GHAS, GitHub Code Security, GitHub Secret Protection]
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://github.com/security/advanced-security
+founded: 2008
 hq: San Francisco, CA, USA
-ownership: subsidiary
-ownership_detail: Product of GitHub, a subsidiary of Microsoft (Microsoft acq. GitHub 2018-10, closed; announced 2018-06)
-ownership_confidence: high
-funding_total:                      # n/a — product within Microsoft/GitHub
-last_funding:                       # n/a
-deployment: [saas, self-hosted]     # GitHub.com SaaS + GitHub Enterprise Server (self-managed)
+ownership_state: acquired-closed
+owner: Microsoft
+ownership_note: Product of GitHub, a subsidiary of Microsoft (Microsoft acq. GitHub 2018-10, closed; announced 2018-06)
+acquisition: {announced: 2018-10-01, closed: 2018-06-01, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market (GitHub Team & Enterprise orgs)
-hedge_fund_fit: high
-priority: day-2
-trifecta_relevance: [none]          # supply-chain/code-security control; not a runtime AI-trifecta gate
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sast, secret-scanning, sca, code-scanning, codeql, copilot-autofix, devsecops]
 ---
 

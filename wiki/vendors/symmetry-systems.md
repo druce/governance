@@ -3,26 +3,30 @@ title: Symmetry Systems
 type: vendor
 name: Symmetry Systems
 slug: symmetry-systems
-categories: [dspm, data-access-governance]
-layer: data
-aliases: []
-website: "https://www.symmetry-systems.com"
+aka: []
+primary_category: dspm
+also_listed_in: [data-access-governance]
+website: https://www.symmetry-systems.com
 founded: 2021
 hq: San Jose, California, USA
-ownership: acquired
-ownership_detail: "Acquired by Zscaler — announced 2026-05-21, terms undisclosed, close expected days after announcement (Access Graph for AI-agent identity/data mapping). Prior: VC-backed, $17.7M inside round 2023 (ForgePoint + Prefix)."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Zscaler
+ownership_note: 'Acquired by Zscaler — announced 2026-05-21, terms undisclosed, close expected days after announcement (Access Graph for AI-agent identity/data mapping). Prior: VC-backed, $17.7M inside round 2023 (ForgePoint + Prefix).'
+acquisition: {announced: 2026-05-21, closed: 2026-05-21, price: null}
 funding_total: ~$33M (approx; disclosed rounds)
 last_funding: $17.7M inside round (2023-08-09, ForgePoint Capital + Prefix Capital)
-deployment: [saas, self-hosted, on-prem]
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [dspm, data-access-governance, identity-graph, darpa]
 ---
 

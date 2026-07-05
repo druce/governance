@@ -3,26 +3,30 @@ title: Lumos
 type: vendor
 name: Lumos
 slug: lumos
-categories: [identity-governance]
-layer: foundation
-aliases: []
-website: "https://www.lumos.com"
+aka: []
+primary_category: identity-governance
+also_listed_in: []
+website: https://www.lumos.com
 founded: 2020
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Private, VC-backed; ~$65M raised, latest Series B $35M (May 2024) led by Scale Venture Partners (a16z, Harpoon, Neo)
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed; ~$65M raised, latest Series B $35M (May 2024) led by Scale Venture Partners (a16z, Harpoon, Neo)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$65M
 last_funding: Series B, $35M, May 2024 (Scale Venture Partners-led)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market / fast-growing tech (cloud-forward)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity-governance, iga, saas-management, access-reviews]
 ---
 

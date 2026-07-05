@@ -3,26 +3,30 @@ title: Audition AI
 type: vendor
 name: Audition AI
 slug: audition-ai
-categories: [enterprise-ai-assistant, ai-governance-platform, dlp]
-layer: ux
-aliases: [Saberin Data Platform]
-website: "https://audition-ai.com"
+aka: [Saberin Data Platform]
+primary_category: enterprise-ai-assistant
+also_listed_in: [ai-governance-platform, dlp]
+website: https://audition-ai.com
 founded: 2025
 hq: Hauppauge, NY (Long Island)
-ownership: independent
-ownership_detail: Private, bootstrapped product of Saberin Data Platform, Inc. (Saberin Group, founded 2007). No external/VC funding found. No M&A.
-ownership_confidence: high
+ownership_state: independent
+owner: Saberin Data Platform
+ownership_note: Private, bootstrapped product of Saberin Data Platform, Inc. (Saberin Group, founded 2007). No external/VC funding found. No M&A.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: none found (likely bootstrapped)
-last_funding:
-deployment: [saas, self-hosted, on-prem]
+last_funding: null
+market_position: null
+deployment_model: [saas, self-hosted, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: regulated finance (hedge funds, RIAs, asset managers); SMB-to-enterprise within that niche
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-30
+last_verified: 2026-06-30
+verify_after: null
 tags: [enterprise-ai-assistant, agent-platform, in-tenant, azure, hedge-fund, ai-governance, dlp, regulated-finance]
 ---
 

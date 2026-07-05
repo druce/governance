@@ -3,26 +3,30 @@ title: Giskard
 type: vendor
 name: Giskard
 slug: giskard
-categories: [llm-observability, ai-red-teaming]
-layer: model-prompt
-aliases: []
-website: "https://www.giskard.ai"
+aka: []
+primary_category: llm-observability
+also_listed_in: [ai-red-teaming]
+website: https://www.giskard.ai
 founded: 2021
 hq: Paris, France
-ownership: independent
-ownership_detail: Independent, early-stage. ~$1.5–2M seed (~2022, Elaia + angels); ~€3M Bpifrance/France 2030 grant (2024). No later round confirmed.
-ownership_confidence: medium
+ownership_state: independent
+owner: null
+ownership_note: Independent, early-stage. ~$1.5–2M seed (~2022, Elaia + angels); ~€3M Bpifrance/France 2030 grant (2024). No later round confirmed.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$1.5–2M (seed) + ~€3M non-dilutive grant
 last_funding: Seed, ~$1.5–2M, ~2022
-deployment: [sdk, self-hosted, saas, api]
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (EU), ML & GenAI teams
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [evaluation, red-teaming, open-source, testing, eu-ai-act]
 ---
 

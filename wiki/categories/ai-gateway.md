@@ -3,14 +3,19 @@ title: AI Gateway
 type: category
 name: AI Gateway
 slug: ai-gateway
+category: ai-gateway
 layer: model-prompt
-priority: day-1
-trifecta_role: egress
+survey_question: AI Gateway
+adoption_tier: day-1
+trigger: any LLM API traffic beyond a single vendor SDK
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
+incumbent_coverage: []
+vendor_count: 7
 maps_to_seed_doc: AI Gateway
 maps_to_seed_csv: AI Gateway
-vendor_count: 7
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # AI Gateway

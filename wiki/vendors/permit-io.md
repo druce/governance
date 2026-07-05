@@ -3,26 +3,30 @@ title: Permit.io
 type: vendor
 name: Permit.io
 slug: permit-io
-categories: [authorization-engine, mcp-gateway]
-layer: model-prompt
-aliases: [Permit, Authorizon, OPAL]
-website: "https://www.permit.io"
+aka: [Permit, Authorizon, OPAL]
+primary_category: authorization-engine
+also_listed_in: [mcp-gateway]
+website: https://www.permit.io
 founded: 2021
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: "VC-backed; ~$14M raised (Series A $8M, 2024-02, Scale Venture Partners)"
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; ~$14M raised (Series A $8M, 2024-02, Scale Venture Partners)
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$14M
-last_funding: "Series A $8M (2024-02, Scale Venture Partners)"
-deployment: [saas, self-hosted, sdk, api]
+last_funding: Series A $8M (2024-02, Scale Venture Partners)
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market / enterprise (developer-led)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [authorization, pdp, authorization-as-a-service, opal, agent-authz, mcp]
 ---
 

@@ -3,14 +3,19 @@ title: Comms Surveillance
 type: category
 name: Comms Surveillance
 slug: comms-surveillance
+category: comms-surveillance
 layer: governance
-priority: day-2
-trifecta_role: none-detection
+survey_question: Comms Surveillance
+adoption_tier: firm-type-specific
+trigger: registered advisers / regulated comms (MAR/MNPI) — hedge-fund-critical
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [dlp, anti-deepfake]
+incumbent_coverage: []
+vendor_count: 6
 maps_to_seed_doc: Comms Surveillance
 maps_to_seed_csv: (in AI Governance, Model Risk)
-vendor_count: 6
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 ## Business objective

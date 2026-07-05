@@ -3,26 +3,30 @@ title: Azure AI Search
 type: vendor
 name: Azure AI Search
 slug: azure-ai-search
-categories: [vector-retrieval]
-layer: retrieval
-aliases: [Azure Cognitive Search, Azure Search]
-website: "https://azure.microsoft.com/en-us/products/ai-services/ai-search"
+aka: [Azure Cognitive Search, Azure Search]
+primary_category: vector-retrieval
+also_listed_in: []
+website: https://azure.microsoft.com/en-us/products/ai-services/ai-search
 founded: 2014
 hq: Redmond, WA, USA
-ownership: public
-ownership_detail: "First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); renamed from Azure Cognitive Search in 2023"
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [saas, api]
+ownership_state: public
+owner: null
+ownership_note: 'First-party Microsoft Azure service (Microsoft Corp, NASDAQ: MSFT); renamed from Azure Cognitive Search in 2023'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, vector-database, retrieval, microsoft, azure]
 ---
 

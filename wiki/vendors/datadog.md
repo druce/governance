@@ -3,26 +3,30 @@ title: Datadog LLM Observability
 type: vendor
 name: Datadog LLM Observability
 slug: datadog
-categories: [llm-observability]
-layer: model-prompt
-aliases: [Datadog, DDOG]
-website: "https://www.datadoghq.com/product/ai/llm-observability/"
+aka: [Datadog, DDOG]
+primary_category: llm-observability
+also_listed_in: []
+website: https://www.datadoghq.com/product/ai/llm-observability/
 founded: 2010
 hq: New York, NY
-ownership: public
-ownership_detail: "Datadog, Inc. — public (NASDAQ: DDOG). LLM Observability is one module of its platform; GA 2024-06-26"
-ownership_confidence: high
-funding_total: "public company (IPO 2019)"
-last_funding: "n/a (public)"
-deployment: [saas, sdk, api]
-target_customer: "existing Datadog enterprise customers; mid-market to large enterprise"
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+ownership_state: public
+owner: null
+ownership_note: 'Datadog, Inc. — public (NASDAQ: DDOG). LLM Observability is one module of its platform; GA 2024-06-26'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: public company (IPO 2019)
+last_funding: n/a (public)
+market_position: null
+deployment_model: [saas]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
+target_customer: existing Datadog enterprise customers; mid-market to large enterprise
+last_verified: 2026-06-28
+verify_after: null
 tags: [observability, apm, enterprise, public-company]
 ---
 

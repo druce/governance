@@ -3,14 +3,19 @@ title: Data Classification & DSPM
 type: category
 name: Data Classification & DSPM
 slug: dspm
+category: dspm
 layer: data
-priority: day-1
-trifecta_role: sensitive-data (detection — finds and labels the sensitive data leg)
+survey_question: DSPM / Data Security Posture
+adoption_tier: day-1
+trigger: before AI touches internal data you must know what/where the sensitive data is
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [dlp, data-access-governance]
+incumbent_coverage: []
+vendor_count: 15
 maps_to_seed_doc: Data Classification & DSPM
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
-vendor_count: 15
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # Data Classification & DSPM

@@ -3,26 +3,30 @@ title: Endor Labs
 type: vendor
 name: Endor Labs
 slug: endor-labs
-categories: [software-supply-chain]
-layer: foundation
-aliases: []
-website: "https://www.endorlabs.com"
+aka: []
+primary_category: software-supply-chain
+also_listed_in: []
+website: https://www.endorlabs.com
 founded: 2021
 hq: Palo Alto, California, USA (also Bangalore, India)
-ownership: independent
-ownership_detail: Venture-backed, independent as of 2026-06-28. $93M Series B (Apr 2025) led by DFJ Growth.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Venture-backed, independent as of 2026-06-28. $93M Series B (Apr 2025) led by DFJ Growth.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$163M (Series A $70M 2023 + Series B $93M 2025; excludes seed converted into Series A)
 last_funding: Series B, $93M, 2025-04-23 (DFJ Growth)
-deployment: [saas, api, sdk]
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (esp. orgs shipping AI-generated code; OpenAI, Snowflake, Dropbox cited)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sca, aspm, reachability, ai-code-security, sbom]
 ---
 

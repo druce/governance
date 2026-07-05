@@ -3,14 +3,19 @@ title: AI Runtime Security (AI Firewall)
 type: category
 name: AI Runtime Security (AI Firewall)
 slug: ai-runtime-security
+category: ai-runtime-security
 layer: model-prompt
-priority: day-1
-trifecta_role: untrusted-input / egress
+survey_question: AI Runtime Security / AI Firewall
+adoption_tier: day-1
+trigger: any self-built LLM app in front of users or data (governed vendor assistants can lag slightly)
+maturity_stage_required: null
+category_maturity: consolidating
+adjacent: [ai-gateway, ai-red-teaming, agent-runtime-security, llm-observability]
+incumbent_coverage: []
+vendor_count: 14
 maps_to_seed_doc: AI Runtime Security (AI Firewall)
 maps_to_seed_csv: AI Runtime Security / AI Firewall
-vendor_count: 14
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # AI Runtime Security (AI Firewall)

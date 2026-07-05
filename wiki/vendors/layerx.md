@@ -3,26 +3,30 @@ title: LayerX
 type: vendor
 name: LayerX
 slug: layerx
-categories: [browser-security-extension]
-layer: ux
-aliases: [LayerX Security]
-website: "https://layerxsecurity.com"
+aka: [LayerX Security]
+primary_category: browser-security-extension
+also_listed_in: []
+website: https://layerxsecurity.com
 founded: 2022
 hq: Tel Aviv, Israel
-ownership: acquired
-ownership_detail: "Akamai Technologies announced intent to acquire for ~$205M cash (2026-05-14); close expected Q3 2026. Independent VC-backed until then."
-ownership_confidence: high
+ownership_state: acquired-pending
+owner: null
+ownership_note: Akamai Technologies announced intent to acquire for ~$205M cash (2026-05-14); close expected Q3 2026. Independent VC-backed until then.
+acquisition: {announced: 2026-05-14, closed: null, price: null}
 funding_total: $45M
 last_funding: Series A extension (April 2025), total raised $45M
-deployment: [saas, browser-extension, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [browser-extension, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / Fortune 500
-hedge_fund_fit: medium
-priority: optional
-trifecta_relevance: [egress, sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [browser-security, shadow-ai, last-mile-dlp, secure-enterprise-browser]
 ---
 

@@ -3,26 +3,30 @@ title: 7AI
 type: vendor
 name: 7AI
 slug: 7ai
-categories: [ai-soc-analysts]
-layer: foundation
-aliases: [7 AI, Seven AI]
-website: "https://7ai.com"
+aka: [7 AI, Seven AI]
+primary_category: ai-soc-analysts
+also_listed_in: []
+website: https://7ai.com
 founded: 2024
 hq: Boston, MA, USA
-ownership: independent
-ownership_detail: VC-backed; $130M Series A led by Index Ventures (2025-12) at ~$700M valuation. ~$166M total raised.
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed; $130M Series A led by Index Ventures (2025-12) at ~$700M valuation. ~$166M total raised.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$166M
 last_funding: Series A $130M (2025-12, Index Ventures)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: Fortune 500 / large enterprise (finance, retail, tech, healthcare)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [agentic-soc, ai-soc, alert-triage, cybereason-founders]
 ---
 

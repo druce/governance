@@ -3,26 +3,30 @@ title: Wiz
 type: vendor
 name: Wiz
 slug: wiz
-categories: [dspm, ai-spm]
-layer: data
-aliases: []
-website: "https://www.wiz.io"
+aka: []
+primary_category: dspm
+also_listed_in: [ai-spm]
+website: https://www.wiz.io
 founded: 2020
 hq: New York City, USA (R&D Tel Aviv, Israel)
-ownership: acquired
-ownership_detail: "Acquired by Google (Alphabet) for $32B all-cash; announced 2025-03, closed 2026-03-11. Joins Google Cloud, keeps brand."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: Google
+ownership_note: Acquired by Google (Alphabet) for $32B all-cash; announced 2025-03, closed 2026-03-11. Joins Google Cloud, keeps brand.
+acquisition: {announced: 2025-03-01, closed: 2026-03-11, price: null}
 funding_total: ~$1.9B (pre-acquisition)
 last_funding: Series E $1B (2024-05) at ~$12B valuation
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / cloud-native / regulated
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [cnapp, cspm, dspm, ai-spm, cloud-security, google]
 ---
 

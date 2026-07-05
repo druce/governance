@@ -3,26 +3,30 @@ title: WhyLabs
 type: vendor
 name: WhyLabs
 slug: whylabs
-categories: [llm-observability]
-layer: model-prompt
-aliases: [WhyLabs AI Observatory, WhyLogs]
-website: "https://whylabs.ai"
+aka: [WhyLabs AI Observatory, WhyLogs]
+primary_category: llm-observability
+also_listed_in: []
+website: https://whylabs.ai
 founded: 2019
 hq: Seattle, Washington, USA
-ownership: acquired
-ownership_detail: Acquired by Apple in 2025 (under-the-radar acqui-hire; founders joined Apple). Standalone product discontinued; platform open-sourced.
-ownership_confidence: medium
+ownership_state: acquired-closed
+owner: Apple
+ownership_note: Acquired by Apple in 2025 (under-the-radar acqui-hire; founders joined Apple). Standalone product discontinued; platform open-sourced.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$14M
 last_funding: Series A, $10M, 2021
-deployment: [saas, sdk, self-hosted, api]
+market_position: null
+deployment_model: [saas, self-hosted]
+form_factor: [sdk, api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: ML/data engineering teams (historically); product now wound down
-hedge_fund_fit: low
-priority: day-1
-trifecta_relevance: [untrusted-input]
-status: researched
-confidence: medium
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [observability, model-monitoring, data-monitoring, open-source, wound-down]
 ---
 

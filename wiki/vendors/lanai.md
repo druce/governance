@@ -3,26 +3,30 @@ title: Lanai
 type: vendor
 name: Lanai
 slug: lanai
-categories: [ai-access-governance]
-layer: model-prompt
-aliases: [Lanai AI, Lanai Software, withlanai]
-website: "https://www.withlanai.com/"
-founded:                            # not confirmed; stealth until 2025-01; ~2023-2024 inferred
+aka: [Lanai AI, Lanai Software, withlanai]
+primary_category: ai-access-governance
+also_listed_in: []
+website: https://www.withlanai.com/
+founded: null
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: VC-backed startup; no acquisition. Seed round led by Juxtapose (2025-01-23).
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: VC-backed startup; no acquisition. Seed round led by Juxtapose (2025-01-23).
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$10M (seed)
 last_funding: Seed, $10M, 2025-01-23
-deployment: [endpoint-agent, saas]
+market_position: null
+deployment_model: [saas]
+form_factor: [agent]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise (Fortune 500; SaaS, fintech, healthcare, restaurant tech)
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 4
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [shadow-ai, ai-observability, edge-detection, dlp-adjacent]
 ---
 

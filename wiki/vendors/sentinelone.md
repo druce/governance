@@ -3,26 +3,30 @@ title: SentinelOne
 type: vendor
 name: SentinelOne
 slug: sentinelone
-categories: [edr-xdr, ai-runtime-security, ai-spm]
-layer: foundation
-aliases: [Singularity, SentinelOne Inc.]
-website: "https://www.sentinelone.com"
+aka: [Singularity, SentinelOne Inc.]
+primary_category: edr-xdr
+also_listed_in: [ai-runtime-security, ai-spm]
+website: https://www.sentinelone.com
 founded: 2013
 hq: Mountain View, California, USA
-ownership: public
-ownership_detail: "Public — NYSE: S (IPO June 2021). Acquirer: Prompt Security (GenAI runtime/DLP, announced 2025-08-05, ~$250M) and Observo AI (data pipeline)."
-ownership_confidence: high
+ownership_state: public
+owner: null
+ownership_note: 'Public — NYSE: S (IPO June 2021). Acquirer: Prompt Security (GenAI runtime/DLP, announced 2025-08-05, ~$250M) and Observo AI (data pipeline).'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public)
-last_funding: "IPO June 2021 (NYSE: S)"
-deployment: [saas, api]
+last_funding: 'IPO June 2021 (NYSE: S)'
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [edr, xdr, singularity, purple-ai, ai-security, genai]
 ---
 

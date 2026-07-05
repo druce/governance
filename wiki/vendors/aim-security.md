@@ -3,26 +3,30 @@ title: Aim Security
 type: vendor
 name: Aim Security
 slug: aim-security
-categories: [ai-runtime-security, ai-spm]
-layer: model-prompt
-aliases: [Aim, Aim Labs]
-website: "https://www.aim.security"
+aka: [Aim, Aim Labs]
+primary_category: ai-runtime-security
+also_listed_in: [ai-spm]
+website: https://www.aim.security
 founded: 2022
 hq: Tel Aviv, Israel
-ownership: acquired
-ownership_detail: "Acquired by [cato-networks](cato-networks.md) — announced 2025-09-03 (~$350M reported), Cato's first acquisition; being integrated into Cato SASE Cloud"
-ownership_confidence: high
+ownership_state: acquired-pending
+owner: Cato Networks
+ownership_note: Acquired by [cato-networks](cato-networks.md) — announced 2025-09-03 (~$350M reported), Cato's first acquisition; being integrated into Cato SASE Cloud
+acquisition: {announced: 2025-09-03, closed: null, price: null}
 funding_total: ~$28M (Series A; pre-acquisition)
-last_funding: "$10M Series A extension / ~$18M Series A (YL Ventures, Canaan Partners)"
-deployment: [saas, api, inline-proxy]
+last_funding: $10M Series A extension / ~$18M Series A (YL Ventures, Canaan Partners)
+market_position: null
+deployment_model: [saas]
+form_factor: [api, inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-1
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: 2026-09-03
 tags: [acquired, ai-firewall, shadow-ai, ai-spm, unit-8200]
 ---
 

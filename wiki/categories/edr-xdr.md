@@ -3,14 +3,19 @@ title: EDR / XDR
 type: category
 name: EDR / XDR
 slug: edr-xdr
+category: edr-xdr
 layer: foundation
-priority: day-1
-trifecta_role: none-detection
+survey_question: EDR / XDR
+adoption_tier: day-1
+trigger: table stakes — usually already deployed
+maturity_stage_required: null
+category_maturity: mature
+adjacent: [siem-soc, network-security-sase]
+incumbent_coverage: []
+vendor_count: 4
 maps_to_seed_doc: EDR / XDR
 maps_to_seed_csv: EDR
-vendor_count: 4
-status: drafted
-last_updated: 2026-06-28
+last_verified: 2026-06-28
 ---
 
 # EDR / XDR

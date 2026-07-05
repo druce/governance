@@ -3,26 +3,30 @@ title: NICE Actimize
 type: vendor
 name: NICE Actimize
 slug: nice-actimize
-categories: [comms-surveillance]
-layer: governance
-aliases: [Actimize, SURVEIL-X]
-website: "https://www.niceactimize.com"
+aka: [Actimize, SURVEIL-X]
+primary_category: comms-surveillance
+also_listed_in: []
+website: https://www.niceactimize.com
 founded: 1999
-hq: "Hoboken, New Jersey, USA (parent NICE Ltd: Ra'anana, Israel)"
-ownership: public
-ownership_detail: "Business unit/division of NICE Ltd (publicly traded NASDAQ & Tel Aviv: NICE). Not separately financed; reported within NICE Ltd."
-ownership_confidence: high
+hq: 'Hoboken, New Jersey, USA (parent NICE Ltd: Ra''anana, Israel)'
+ownership_state: public
+owner: null
+ownership_note: 'Business unit/division of NICE Ltd (publicly traded NASDAQ & Tel Aviv: NICE). Not separately financed; reported within NICE Ltd.'
+acquisition: {announced: null, closed: null, price: null}
 funding_total: N/A (division of public parent NICE Ltd; not separately funded)
 last_funding: N/A
-deployment: [saas, on-prem]
+market_position: null
+deployment_model: [saas, on-prem]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / large (buy- and sell-side, banks, insurers, regulators)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [surveillance, market-abuse, mar, mnpi, aml, financial-crime, trade-surveillance, comms-surveillance, incumbent]
 ---
 

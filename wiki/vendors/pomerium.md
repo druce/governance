@@ -3,26 +3,30 @@ title: Pomerium
 type: vendor
 name: Pomerium
 slug: pomerium
-categories: [mcp-gateway, authorization-engine]
-layer: model-prompt
-aliases: [Pomerium Inc]
-website: "https://www.pomerium.com"
+aka: [Pomerium Inc]
+primary_category: mcp-gateway
+also_listed_in: [authorization-engine]
+website: https://www.pomerium.com
 founded: 2019
 hq: California, US
-ownership: independent
-ownership_detail: "Pomerium, Inc. — independent, VC-backed; open-source core + commercial Enterprise edition. Series A $13.75M led by Benchmark (2024-06-20)."
-ownership_confidence: high
-funding_total: "~$18M (as of 2024-06)"
-last_funding: "Series A — $13.75M — 2024-06-20 (Benchmark lead; Bain Capital, Haystack, SNR)"
-deployment: [self-hosted, inline-proxy, saas]
+ownership_state: independent
+owner: null
+ownership_note: Pomerium, Inc. — independent, VC-backed; open-source core + commercial Enterprise edition. Series A $13.75M led by Benchmark (2024-06-20).
+acquisition: {announced: null, closed: null, price: null}
+funding_total: ~$18M (as of 2024-06)
+last_funding: Series A — $13.75M — 2024-06-20 (Benchmark lead; Bain Capital, Haystack, SNR)
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: [inline-proxy]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (also startups via OSS)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [egress, untrusted-input]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ztna, identity-aware-proxy, reverse-proxy, mcp, zero-trust, open-source]
 ---
 

@@ -3,14 +3,19 @@ title: Risk Tiers
 type: category
 name: Risk Tiers
 slug: risk-tiers
+category: risk-tiers
 layer: policy
-priority: process
-trifecta_role: none-detection
-maps_to_seed_doc: Risk Tiers
-maps_to_seed_csv: "—"
+survey_question: null
+adoption_tier: practice
+trigger: classify AI use cases by stakes before controls can be proportionate
+maturity_stage_required: null
+category_maturity: null
+adjacent: [trust-zone-segmentation, promotion-gates, hitl-approvals]
+incumbent_coverage: []
 vendor_count: 0
-status: drafted
-last_updated: 2026-06-28
+maps_to_seed_doc: Risk Tiers
+maps_to_seed_csv: —
+last_verified: 2026-06-28
 ---
 
 > A **practice**, not a product. There's nothing to buy; the tiers live as a field in

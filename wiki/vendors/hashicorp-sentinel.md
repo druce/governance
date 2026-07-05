@@ -3,26 +3,30 @@ title: HashiCorp Sentinel
 type: vendor
 name: HashiCorp Sentinel
 slug: hashicorp-sentinel
-categories: [policy-as-code]
-layer: governance
-aliases: [Sentinel]
-website: "https://docs.hashicorp.com/sentinel"
+aka: [Sentinel]
+primary_category: policy-as-code
+also_listed_in: []
+website: https://docs.hashicorp.com/sentinel
 founded: 2017
 hq: San Francisco, CA, USA
-ownership: subsidiary
-ownership_detail: HashiCorp policy framework; HashiCorp acquired by IBM 2025-02-27 ($6.4B). Now an IBM company.
-ownership_confidence: high
-funding_total:
-last_funding:
-deployment: [self-hosted, saas]
+ownership_state: acquired-closed
+owner: IBM 2025-02-27
+ownership_note: HashiCorp policy framework; HashiCorp acquired by IBM 2025-02-27 ($6.4B). Now an IBM company.
+acquisition: {announced: 2025-02-27, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [self-hosted, saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [none]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [first-party, policy-as-code, hashicorp, ibm]
 ---
 

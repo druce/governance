@@ -3,26 +3,30 @@ title: Microsoft Graph
 type: vendor
 name: Microsoft Graph
 slug: microsoft-graph
-categories: [entitlement-aware-rag]
-layer: retrieval
-aliases: [Microsoft Graph API, Microsoft Search semantic index, Graph connectors, Copilot connectors]
-website: "https://developer.microsoft.com/graph"
-founded:                            # N/A — Microsoft platform/API, not a standalone company
+aka: [Microsoft Graph API, Microsoft Search semantic index, Graph connectors, Copilot connectors]
+primary_category: entitlement-aware-rag
+also_listed_in: []
+website: https://developer.microsoft.com/graph
+founded: null
 hq: Redmond, WA (Microsoft)
-ownership: public
-ownership_detail: "Microsoft Corporation (NASDAQ: MSFT)"
-ownership_confidence: high
-funding_total:                      # N/A — first-party Microsoft platform
-last_funding:                       # N/A
-deployment: [saas, api]
+ownership_state: public
+owner: null
+ownership_note: 'Microsoft Corporation (NASDAQ: MSFT)'
+acquisition: {announced: null, closed: null, price: null}
+funding_total: null
+last_funding: null
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / regulated (any Microsoft 365 tenant; permission-aware grounding requires paid M365 Copilot licenses)
-hedge_fund_fit: high
-priority: day-1
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: medium
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [microsoft, m365, copilot, retrieval, semantic-index, graph-connectors]
 ---
 

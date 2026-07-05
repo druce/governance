@@ -3,26 +3,30 @@ title: Wing Security
 type: vendor
 name: Wing Security
 slug: wing-security
-categories: [sspm]
-layer: foundation
-aliases: []
-website: "https://wing.security"
+aka: []
+primary_category: sspm
+also_listed_in: []
+website: https://wing.security
 founded: 2020
 hq: Tel Aviv, Israel
-ownership: independent
-ownership_detail: "Seed hint of acquisition by Zscaler COULD NOT be confirmed (no Zscaler/primary source). Wing issued its own press release as an independent company on 2025-09-30; appears independent as of 2026-06-28."
-ownership_confidence: low
+ownership_state: independent
+owner: null
+ownership_note: Seed hint of acquisition by Zscaler COULD NOT be confirmed (no Zscaler/primary source). Wing issued its own press release as an independent company on 2025-09-30; appears independent as of 2026-06-28.
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$26M
 last_funding: Series A $20M (Mar 2022), led by GGV Capital
-deployment: [saas, api]
+market_position: null
+deployment_model: [saas]
+form_factor: [api]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / mid-market
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data, egress]
-status: researched
-confidence: medium
-sources_count: 2
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [sspm, itdr, shadow-ai, saas-security]
 ---
 

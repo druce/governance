@@ -3,26 +3,30 @@ title: Pangea
 type: vendor
 name: Pangea
 slug: pangea
-categories: [ai-red-teaming, ai-runtime-security]
-layer: model-prompt
-aliases: [Pangea Cyber, Pangea AI Guardrail Platform]
-website: "https://pangea.cloud"
+aka: [Pangea Cyber, Pangea AI Guardrail Platform]
+primary_category: ai-red-teaming
+also_listed_in: [ai-runtime-security]
+website: https://pangea.cloud
 founded: 2021
 hq: Palo Alto, California, USA
-ownership: acquired
-ownership_detail: "Acquired by CrowdStrike — announced 2025-09-16 at Fal.Con 2025, completed ~Sept 2025; reported ~$260M. Now part of CrowdStrike's AI Detection and Response (AIDR)."
-ownership_confidence: high
+ownership_state: acquired-closed
+owner: CrowdStrike
+ownership_note: Acquired by CrowdStrike — announced 2025-09-16 at Fal.Con 2025, completed ~Sept 2025; reported ~$260M. Now part of CrowdStrike's AI Detection and Response (AIDR).
+acquisition: {announced: 2025-09-16, closed: 2025-09-16, price: null}
 funding_total: ~$51M (pre-acquisition)
-last_funding: "$26M Series B (Nov 2022, led by GV; Decibel, Okta Ventures)"
-deployment: [api, sdk, saas]
+last_funding: $26M Series B (Nov 2022, led by GV; Decibel, Okta Ventures)
+market_position: null
+deployment_model: [saas]
+form_factor: [api, sdk]
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: enterprise / developers building AI apps
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [untrusted-input, sensitive-data, egress]
-status: researched
-confidence: high
-sources_count: 3
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [ai-guardrails, prompt-injection, aidr, crowdstrike]
 ---
 

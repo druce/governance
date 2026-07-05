@@ -3,26 +3,30 @@ title: ConductorOne
 type: vendor
 name: ConductorOne
 slug: conductorone
-categories: [identity-governance, data-access-governance]
-layer: foundation
-aliases: [C1]
-website: "https://www.conductorone.com"
+aka: [C1]
+primary_category: identity-governance
+also_listed_in: [data-access-governance]
+website: https://www.conductorone.com
 founded: 2020
 hq: San Francisco, California, USA
-ownership: independent
-ownership_detail: Private, VC-backed; $79M Series B (Oct 2025) led by Greycroft, with CrowdStrike Falcon Fund, Accel, Felicis
-ownership_confidence: high
+ownership_state: independent
+owner: null
+ownership_note: Private, VC-backed; $79M Series B (Oct 2025) led by Greycroft, with CrowdStrike Falcon Fund, Accel, Felicis
+acquisition: {announced: null, closed: null, price: null}
 funding_total: ~$111M
 last_funding: Series B, $79M, Oct 2025 (Greycroft-led)
-deployment: [saas]
+market_position: null
+deployment_model: [saas]
+form_factor: []
+data_leaves_tenancy: unverified
+integrations: []
+mcp_support: unverified
+certifications: []
+pricing_model: null
+fs_traction: unverified
 target_customer: mid-market / enterprise (cloud-forward)
-hedge_fund_fit: medium
-priority: day-2
-trifecta_relevance: [sensitive-data]
-status: researched
-confidence: high
-sources_count: 1
-last_updated: 2026-06-28
+last_verified: 2026-06-28
+verify_after: null
 tags: [identity-governance, iga, access-reviews, jit-access, ispm]
 ---
 
