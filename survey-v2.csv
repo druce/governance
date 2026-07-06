@@ -5,8 +5,6 @@ Enterprise AI Assistant,Microsoft 365 Copilot,"RENAMED from 'Microsoft Copilot' 
 Enterprise AI Assistant,Gemini Enterprise / Agentspace,Google,,https://cloud.google.com/gemini-enterprise,https://github.com/druce/governance/blob/master/wiki/vendors/gemini-enterprise.md
 Enterprise AI Assistant,Amazon Q Business,AWS,,https://aws.amazon.com/q/business/,https://github.com/druce/governance/blob/master/wiki/vendors/amazon-q-business.md
 Enterprise AI Assistant,Perplexity Enterprise,"Independent; weak comms-archival for regulated shops",,https://www.perplexity.ai/enterprise,https://github.com/druce/governance/blob/master/wiki/vendors/perplexity-enterprise.md
-Enterprise AI Assistant,Glean,"Also entitlement-aware RAG (cross-listed there)",,https://www.glean.com,https://github.com/druce/governance/blob/master/wiki/vendors/glean.md
-Enterprise AI Assistant,Audition AI,"NEW: finance-vertical, in-tenant; niche — relevant to hedge-fund audience",,https://audition-ai.com,https://github.com/druce/governance/blob/master/wiki/vendors/audition-ai.md
 Enterprise AI Assistant,Other (Please Specify),,,,
 General Identity,Entra,Microsoft,,https://www.microsoft.com/security/business/identity-access/microsoft-entra-id,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-entra.md
 General Identity,Okta,Public (OKTA),,https://www.okta.com,https://github.com/druce/governance/blob/master/wiki/vendors/okta.md
@@ -32,7 +30,6 @@ LLM Observability & Eval,Langfuse,"Acq. by ClickHouse (announced 2026-01-26); co
 LLM Observability & Eval,LangSmith,Independent (LangChain),,https://www.langchain.com/langsmith,https://github.com/druce/governance/blob/master/wiki/vendors/langsmith.md
 LLM Observability & Eval,Arize Phoenix,Independent,,https://arize.com,https://github.com/druce/governance/blob/master/wiki/vendors/arize-phoenix.md
 LLM Observability & Eval,Braintrust,Independent,,https://www.braintrust.dev,https://github.com/druce/governance/blob/master/wiki/vendors/braintrust.md
-LLM Observability & Eval,Helicone,"Acq. by Mintlify (announced 2026-03-03); now maintenance mode — weak option for new adoption",,https://www.helicone.ai,https://github.com/druce/governance/blob/master/wiki/vendors/helicone.md
 LLM Observability & Eval,Datadog LLM Observability,"Public (DDOG); organic module",,https://www.datadoghq.com/product/ai/llm-observability/,https://github.com/druce/governance/blob/master/wiki/vendors/datadog.md
 LLM Observability & Eval,Weights & Biases (Weave),"Acq. by CoreWeave (closed 2025-05-05)",,https://wandb.ai,https://github.com/druce/governance/blob/master/wiki/vendors/weights-and-biases.md
 LLM Observability & Eval,Comet (Opik),Independent,,https://www.comet.com,https://github.com/druce/governance/blob/master/wiki/vendors/comet.md
@@ -42,31 +39,31 @@ LLM Observability & Eval,Giskard,"NEW: Independent (OSS eval/testing); also fits
 LLM Observability & Eval,Arthur AI,"NEW: Independent; monitoring/eval, overlaps AI governance",,https://www.arthur.ai,https://github.com/druce/governance/blob/master/wiki/vendors/arthur-ai.md
 LLM Observability & Eval,Other (Please Specify),,,,
 AI Runtime Security / AI Firewall,Prisma AIRS (Palo Alto),"incl. former Protect AI (closed 2025-07-22) + Portkey gateway",,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
-AI Runtime Security / AI Firewall,WitnessAI,"Independent ($86.5M; Series B 2026-01); also shadow-AI / access governance",,https://witness.ai,https://github.com/druce/governance/blob/master/wiki/vendors/witnessai.md
 AI Runtime Security / AI Firewall,Cisco AI Defense (former Robust Intelligence),"Cisco (closed ~2024-09)",,https://www.cisco.com/site/us/en/products/security/ai-defense/,https://github.com/druce/governance/blob/master/wiki/vendors/cisco-ai-defense.md
-AI Runtime Security / AI Firewall,Pillar Security,Independent,,https://www.pillar.security,https://github.com/druce/governance/blob/master/wiki/vendors/pillar-security.md
+AI Runtime Security / AI Firewall,Lakera (Check Point),"NEW (cross-listed from Red Teaming): Acq. by Check Point (announced 2025-09-16, close exp. Q4 2025 — verify); runtime guardrails is its core job",,https://www.lakera.ai,https://github.com/druce/governance/blob/master/wiki/vendors/lakera.md
 AI Runtime Security / AI Firewall,CalypsoAI (F5),"Acq. by F5 (closed 2025-10-08); now F5 AI Guardrails",,https://calypsoai.com,https://github.com/druce/governance/blob/master/wiki/vendors/calypsoai.md
+AI Runtime Security / AI Firewall,WitnessAI,"Independent ($86.5M; Series B 2026-01); also shadow-AI / access governance",,https://witness.ai,https://github.com/druce/governance/blob/master/wiki/vendors/witnessai.md
 AI Runtime Security / AI Firewall,HiddenLayer,"Independent ($50M Series A)",,https://www.hiddenlayer.com,https://github.com/druce/governance/blob/master/wiki/vendors/hiddenlayer.md
+AI Runtime Security / AI Firewall,Pillar Security,Independent,,https://www.pillar.security,https://github.com/druce/governance/blob/master/wiki/vendors/pillar-security.md
 AI Runtime Security / AI Firewall,Enkrypt AI,Independent (seed-stage),,https://www.enkryptai.com/,https://github.com/druce/governance/blob/master/wiki/vendors/enkrypt-ai.md
 AI Runtime Security / AI Firewall,TrojAI,"Acq. by A10 Networks (announced 2026-06-15 — pending)",,https://troj.ai,https://github.com/druce/governance/blob/master/wiki/vendors/trojai.md
-AI Runtime Security / AI Firewall,Lakera (Check Point),"NEW (cross-listed from Red Teaming): Acq. by Check Point (announced 2025-09-16, close exp. Q4 2025 — verify); runtime guardrails is its core job",,https://www.lakera.ai,https://github.com/druce/governance/blob/master/wiki/vendors/lakera.md
 AI Runtime Security / AI Firewall,Other (Please Specify),,,,
 AI-SPM (AI estate inventory & posture),Noma,"Independent; AI-SPM + agent runtime",,https://noma.security,https://github.com/druce/governance/blob/master/wiki/vendors/noma-security.md
 AI-SPM (AI estate inventory & posture),Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 AI-SPM (AI estate inventory & posture),Prisma AIRS (Palo Alto),,,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
-AI-SPM (AI estate inventory & posture),Prompt Security (SentinelOne),"Acq. by SentinelOne (announced 2025-08-05, closed ~2025-11; ~$250M)",,https://prompt.security,https://github.com/druce/governance/blob/master/wiki/vendors/prompt-security.md
-AI-SPM (AI estate inventory & posture),Aim Security (Cato),"Acq. by Cato (announced 2025-09-03; ~$350M)",,https://www.aim.security,https://github.com/druce/governance/blob/master/wiki/vendors/aim-security.md
 AI-SPM (AI estate inventory & posture),Astrix (Cisco),"Acq. announced 2026-05-04 (~$400M) — pending, not closed",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
+AI-SPM (AI estate inventory & posture),Aim Security (Cato),"Acq. by Cato (announced 2025-09-03; ~$350M)",,https://www.aim.security,https://github.com/druce/governance/blob/master/wiki/vendors/aim-security.md
+AI-SPM (AI estate inventory & posture),Prompt Security (SentinelOne),"Acq. by SentinelOne (announced 2025-08-05, closed ~2025-11; ~$250M)",,https://prompt.security,https://github.com/druce/governance/blob/master/wiki/vendors/prompt-security.md
 AI-SPM (AI estate inventory & posture),Cranium,"Independent; itself acquired Aiceberg (2026-05)",,https://cranium.ai,https://github.com/druce/governance/blob/master/wiki/vendors/cranium.md
 AI-SPM (AI estate inventory & posture),Quilr,"Independent; overlap with access-governance",,https://www.quilr.ai,https://github.com/druce/governance/blob/master/wiki/vendors/quilr.md
 AI-SPM (AI estate inventory & posture),Zenity,"Independent; spans AI-SPM + agent runtime",,https://zenity.io,https://github.com/druce/governance/blob/master/wiki/vendors/zenity.md
 AI-SPM (AI estate inventory & posture),Reco,"NEW: Independent; also shadow-AI / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
 AI-SPM (AI estate inventory & posture),Other (Please Specify),,,,
 Agent Security (runtime protection of agents),Zenity,Independent,,https://zenity.io,https://github.com/druce/governance/blob/master/wiki/vendors/zenity.md
-Agent Security (runtime protection of agents),Lasso Security,"Independent; AI/agent security + shadow-AI",,https://www.lasso.security,https://github.com/druce/governance/blob/master/wiki/vendors/lasso-security.md
-Agent Security (runtime protection of agents),Operant AI,Runtime agent/API protection,,https://www.operant.ai,https://github.com/druce/governance/blob/master/wiki/vendors/operant-ai.md
 Agent Security (runtime protection of agents),Apex Security (Tenable),"Acq. by Tenable (announced 2025-05-29; reported >$105M)",,https://www.apexsec.com,https://github.com/druce/governance/blob/master/wiki/vendors/apex-security.md
 Agent Security (runtime protection of agents),Straiker,Independent,,https://www.straiker.ai,https://github.com/druce/governance/blob/master/wiki/vendors/straiker.md
+Agent Security (runtime protection of agents),Operant AI,Runtime agent/API protection,,https://www.operant.ai,https://github.com/druce/governance/blob/master/wiki/vendors/operant-ai.md
+Agent Security (runtime protection of agents),Lasso Security,"Independent; AI/agent security + shadow-AI",,https://www.lasso.security,https://github.com/druce/governance/blob/master/wiki/vendors/lasso-security.md
 Agent Security (runtime protection of agents),Other (Please Specify),,,,
 AI Antiphishing/deepfake/social engineering defense,Adaptive,"Independent; OpenAI Startup Fund-backed",,https://www.adaptivesecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/adaptive-security.md
 AI Antiphishing/deepfake/social engineering defense,Doppel,Independent,,https://www.doppel.com,https://github.com/druce/governance/blob/master/wiki/vendors/doppel.md

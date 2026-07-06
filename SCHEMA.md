@@ -76,7 +76,7 @@ it is discussed **only** where agent security is specifically in play:
 ## 2. Vendor pages — questions to always answer
 
 ### 2.1 Identity & classification
-- **One-liner:** what it does, for whom.
+- **One-liner:** what it does, for whom, where it sits in the stack.
 - **Primary category** + cross-listed categories (must match the CSV; one canonical page per vendor).
 - **Naming/provenance:** founding year, renames (Fairly AI → Asenion), product renames post-acquisition (CalypsoAI → F5 AI Guardrails, Pangea → Falcon AIDR, Portkey → Prisma AIRS gateway), disambiguation notes (M365 Copilot vs. GitHub/Windows Copilot; Holistic AI vs. Paris "H").
 
