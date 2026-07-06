@@ -19,8 +19,8 @@ SCALE = ["Interested in a demo", "Considering/Evaluating", "Piloting/Implementin
 
 # CSV category -> (wiki category slug, one-line description)
 CATEGORIES = {
- "LLM Gateway": ("ai-gateway", "Single governed exit door for all model/API traffic — routing, logging, cost and policy control."),
- "Prompt Observability & Evals": ("llm-observability", "Prompt-level evaluation, tracing, debugging, and monitoring of LLM usage."),
+ "AI Gateway": ("ai-gateway", "Single governed exit door for all model/API traffic — routing, logging, cost and policy control."),
+ "LLM Observability & Eval": ("llm-observability", "Prompt-level evaluation, tracing, debugging, and monitoring of LLM usage."),
  "AI Runtime Security / AI Firewall": ("ai-runtime-security", "Inline defense of AI apps at runtime: prompt injection, jailbreaks, output leakage."),
  "AI-SPM (AI estate inventory & posture)": ("ai-spm", "Discovery, inventory and posture management of your AI/agent estate."),
  "Agent Security (runtime protection of agents)": ("agent-runtime-security", "Runtime protection of agentic applications as they act."),
