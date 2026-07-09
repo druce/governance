@@ -51,6 +51,8 @@ The incumbent enterprise IGA leader — deepest connector catalog, strongest cer
 ## Ownership, funding & M&A
 **Verified.** SailPoint returned to public markets on **Nasdaq (ticker SAIL) in February 2025**, raising $1.38B (60M shares at $23). It first IPO'd in 2017, was taken private by **Thoma Bravo** in 2022 (~$6.9B), and re-IPO'd in 2025 — but Thoma Bravo retained ~**88%** and board control post-IPO, so it's public-but-PE-controlled. Matches the brief's re-IPO note. Ownership set public, confidence high. (Stub had `independent` → corrected to `public`.)
 
+**As acquirer:** bought [entro-security](entro-security.md) (NHI/credentials security; announced 2026-06-18, closed 2026-06-29, ~$200M reported) to add non-human-identity and secrets discovery to its **Agentic Fabric** agent-identity platform — its move into the [non-human-identity](../categories/non-human-identity.md) category.
+
 ## CTO / hedge-fund lens
 **Day-2** for most funds — IGA is a maturity/compliance layer you add after the IdP, SIEM, and DLP basics. It becomes **Day-1-ish under SR 11-7-style model-risk / audit regimes or heavy RAG**, where you must prove access entitlements and recertify them. For a 50–500-person fund, SailPoint is often heavier than needed; lighter automation-first tools may fit better unless the fund is large, regulated, or already standardized on it.
 
@@ -58,11 +60,13 @@ The incumbent enterprise IGA leader — deepest connector catalog, strongest cer
 [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md). Microsoft's bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). Data-access neighbors: [varonis](varonis.md), [cyera](cyera.md).
 
 ## Open questions / to verify
-- Pace of migration from legacy IdentityIQ to Atlas; agent/NHI governance roadmap depth.
+- Pace of migration from legacy IdentityIQ to Atlas; agent/NHI governance roadmap depth (partly answered by the Entro acquisition — watch integration pace).
 
 ## Sources
 - [Cybersecurity firm SailPoint's IPO raises $1.38 billion (Reuters via U.S. News)](https://money.usnews.com/investing/news/articles/2025-02-13/cybersecurity-firm-sailpoints-ipo-raises-1-38-billion-in-us-ipo) — fetched 2026-06-28 — supports: Feb 2025 Nasdaq re-IPO, Thoma Bravo ~88% control, 2017 IPO / 2022 take-private history; confidence: high
+- [SailPoint completes acquisition of Entro Security (SailPoint PR via GlobeNewswire)](https://www.globenewswire.com/news-release/2026/06/29/3318987/0/en/sailpoint-completes-acquisition-of-entro-security-to-secure-agentic-identities.html) — fetched 2026-07-09 — supports: Entro acquisition closed 2026-06-29, Agentic Fabric integration; confidence: high; cached `raw/sources/2026-07-09--entro-security--sailpoint-close-pr.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; verified Feb 2025 Nasdaq re-IPO under Thoma Bravo (~88% retained). Corrected ownership independent→public, confidence high. Day-2 (Day-1 under model-risk/RAG), medium hedge-fund fit.
+- [2026-07-09] Added Entro Security acquisition (announced 2026-06-18, closed 2026-06-29, ~$200M reported) — SailPoint's NHI/Agentic Fabric play.

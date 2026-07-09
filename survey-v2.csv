@@ -9,8 +9,10 @@ Enterprise AI Assistant,Other (Please Specify),,,,
 General Identity,Entra,Microsoft,,https://www.microsoft.com/security/business/identity-access/microsoft-entra-id,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-entra.md
 General Identity,Okta,Public (OKTA),,https://www.okta.com,https://github.com/druce/governance/blob/master/wiki/vendors/okta.md
 General Identity,Ping Identity,Thoma Bravo (incl. ForgeRock),,https://www.pingidentity.com,https://github.com/druce/governance/blob/master/wiki/vendors/ping-identity.md
+General Identity,Google Cloud Identity,Google,,https://cloud.google.com/identity,
+General Identity,AWS,Amazon Web Services,,https://aws.amazon.com/iam/,
 General Identity,Other (Please Specify),,,,
-AI-aware Network Security (SSE/SASE),Palo Alto,Public (PANW),,https://www.paloaltonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
+AI-aware Network Security (SSE/SASE),Palo Alto,Public (PANW),,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
 AI-aware Network Security (SSE/SASE),Zscaler,"Public (ZS); acquired SplxAI (2025) + Symmetry Systems (2026, pending)",,https://www.zscaler.com,https://github.com/druce/governance/blob/master/wiki/vendors/zscaler.md
 AI-aware Network Security (SSE/SASE),Netskope,Public (NTSK; IPO 2025-09),,https://www.netskope.com,https://github.com/druce/governance/blob/master/wiki/vendors/netskope.md
 AI-aware Network Security (SSE/SASE),Cloudflare,Public (NET),,https://www.cloudflare.com/products/ai-gateway/,https://github.com/druce/governance/blob/master/wiki/vendors/cloudflare.md
@@ -82,10 +84,9 @@ AI Antiphishing/deepfake/social engineering defense,Other (Please Specify),,,,
 "AI Governance, Model Risk & Compliance",Other (Please Specify),,,,
 Comms Surveillance,Behavox,"Independent; comms-surveillance",,https://www.behavox.com/,https://github.com/druce/governance/blob/master/wiki/vendors/behavox.md
 Comms Surveillance,SteelEye,"NEW: Independent; capture + surveillance",,https://www.steel-eye.com,https://github.com/druce/governance/blob/master/wiki/vendors/steeleye.md
-Comms Surveillance,NICE Actimize,"NEW: large-enterprise skew; also AML/fin-crime (may inflate selection)",,https://www.niceactimize.com,https://github.com/druce/governance/blob/master/wiki/vendors/nice-actimize.md
 Comms Surveillance,Theta Lake,"Independent; comms-surveillance",,https://thetalake.com,https://github.com/druce/governance/blob/master/wiki/vendors/theta-lake.md
 Comms Surveillance,Shield,NEW: Independent,,https://www.shieldfc.com,https://github.com/druce/governance/blob/master/wiki/vendors/shield.md
-Comms Surveillance,Relativity Trace,NEW: Relativity product,,https://www.relativity.com/data-breach-response/communication-surveillance/,https://github.com/druce/governance/blob/master/wiki/vendors/relativity-trace.md
+Comms Surveillance,NICE Actimize,"NEW: large-enterprise skew; also AML/fin-crime (may inflate selection)",,https://www.niceactimize.com,https://github.com/druce/governance/blob/master/wiki/vendors/nice-actimize.md
 Comms Surveillance,Other (Please Specify),"Note: capture/archival tools (Smarsh, Global Relay, Purview) are a different question",,,
 Authorization Engine (Agent / Tool),Cerbos,Agent/tool authz (PDP),,https://www.cerbos.dev,https://github.com/druce/governance/blob/master/wiki/vendors/cerbos.md
 Authorization Engine (Agent / Tool),Open Policy Agent (OPA),"RENAMED from 'OPA / Styra': OPA stays CNCF; Styra core team acqui-hired by Apple (~2025-08), commercial DAS in limbo — a 'Styra' answer likely means legacy usage",,https://www.openpolicyagent.org,https://github.com/druce/governance/blob/master/wiki/vendors/open-policy-agent.md
@@ -93,17 +94,17 @@ Authorization Engine (Agent / Tool),Permit.io,Agent authz,,https://www.permit.io
 Authorization Engine (Agent / Tool),Oso,"Agent authz; 'Oso for Agents'",,https://www.osohq.com,https://github.com/druce/governance/blob/master/wiki/vendors/oso.md
 Authorization Engine (Agent / Tool),AuthZed (SpiceDB),Relationship-based authz (Zanzibar),,https://authzed.com,https://github.com/druce/governance/blob/master/wiki/vendors/authzed.md
 Authorization Engine (Agent / Tool),Other (Please Specify),,,,
-MCP Gateway / Tool Access Control,Kong MCP Gateway,Agent/MCP gateway,,https://konghq.com,https://github.com/druce/governance/blob/master/wiki/vendors/kong.md
+MCP Gateway / Tool Access Control,Kong MCP Gateway,Agent/MCP gateway,,https://konghq.com/products/mcp-registry.com,https://github.com/druce/governance/blob/master/wiki/vendors/kong.md
 MCP Gateway / Tool Access Control,Solo.io agentgateway,"Open-source (Linux Foundation; distinct from kgateway)",,https://agentgateway.dev,https://github.com/druce/governance/blob/master/wiki/vendors/agentgateway.md
-MCP Gateway / Tool Access Control,TrueFoundry MCP Gateway,Agent/MCP gateway,,https://www.truefoundry.com,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
+MCP Gateway / Tool Access Control,TrueFoundry MCP Gateway,Agent/MCP gateway,,https://www.truefoundry.com/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
 MCP Gateway / Tool Access Control,Obot,"SPLIT from 'Obot / MintMCP': agent/MCP gateway (early-stage)",,https://obot.ai,https://github.com/druce/governance/blob/master/wiki/vendors/obot.md
 MCP Gateway / Tool Access Control,MintMCP,"SPLIT from 'Obot / MintMCP': agent/MCP gateway (early-stage)",,https://www.mintmcp.com,https://github.com/druce/governance/blob/master/wiki/vendors/mintmcp.md
 MCP Gateway / Tool Access Control,Arcade,"NEW (cross-listed with Tool Identity): tool-calling gateway + per-user OAuth",,https://www.arcade.dev,https://github.com/druce/governance/blob/master/wiki/vendors/arcade.md
 MCP Gateway / Tool Access Control,Docker MCP Gateway,NEW: OSS,,https://github.com/docker/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/docker-mcp-gateway.md
 MCP Gateway / Tool Access Control,IBM ContextForge,NEW: OSS,,https://github.com/IBM/mcp-context-forge,https://github.com/druce/governance/blob/master/wiki/vendors/ibm-contextforge.md
 MCP Gateway / Tool Access Control,Pomerium,Identity-aware proxy for MCP/tool access,,https://www.pomerium.com,https://github.com/druce/governance/blob/master/wiki/vendors/pomerium.md
-MCP Gateway / Tool Access Control,Natoma,"MCP-native NHI gateway; acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
-MCP Gateway / Tool Access Control,Prisma AIRS AI Agent Gateway,Palo Alto,,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
+MCP Gateway / Tool Access Control,Natoma,"MCP-native NHI gateway; acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai/platform,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
+MCP Gateway / Tool Access Control,Prisma AIRS AI Agent Gateway,Palo Alto,,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
 MCP Gateway / Tool Access Control,Other (Please Specify),,,,
 Tool Identity & Integration (Agent Auth),Composio,Tool integration / managed agent auth,,https://composio.dev,https://github.com/druce/governance/blob/master/wiki/vendors/composio.md
 Tool Identity & Integration (Agent Auth),Arcade,Tool-calling / per-user OAuth (Arcade.dev),,https://www.arcade.dev,https://github.com/druce/governance/blob/master/wiki/vendors/arcade.md
@@ -122,15 +123,13 @@ Shadow-AI / Insider risk,Cyberhaven,Data-flow visibility into AI usage,,https://
 Shadow-AI / Insider risk,Wald.ai,AI usage discovery + redaction,,https://wald.ai,https://github.com/druce/governance/blob/master/wiki/vendors/wald-ai.md
 Shadow-AI / Insider risk,Portal26,Independent (formerly Titaniam),,https://portal26.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portal26.md
 Shadow-AI / Insider risk,Reco,"NEW: Independent; also AI-SPM / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
-Shadow-AI / Insider risk,Zscaler (AI Guard),"NEW: SASE-native module — counts respondents covered by their incumbent",,https://www.zscaler.com,https://github.com/druce/governance/blob/master/wiki/vendors/zscaler.md
-Shadow-AI / Insider risk,Netskope One,"NEW: SASE-native module — counts respondents covered by their incumbent",,https://www.netskope.com,https://github.com/druce/governance/blob/master/wiki/vendors/netskope.md
 Shadow-AI / Insider risk,Other (Please Specify),,,,
-Enterprise Browser Security,Island,Independent,,https://www.island.io,https://github.com/druce/governance/blob/master/wiki/vendors/island.md
-Enterprise Browser Security,LayerX browser extension,"Acq. by Akamai (announced 2026-05-14; ~$205M)",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
-Enterprise Browser Security,Prisma Access Browser (Palo Alto; former Talon),Palo Alto,,https://www.paloaltonetworks.com/sase/access-browser,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-access-browser.md
-Enterprise Browser Security,Menlo Security,"Independent; acquired Votiro (2025-02)",,https://www.menlosecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/menlo-security.md
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md
+Enterprise Browser Security,Island Browser,Independent,,https://www.island.io,https://github.com/druce/governance/blob/master/wiki/vendors/island.md
+Enterprise Browser Security,LayerX browser extension,"Acq. by Akamai (announced 2026-05-14; ~$205M)",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
+Enterprise Browser Security,Prisma Access Browser (Palo Alto; former Talon),Palo Alto,,https://www.paloaltonetworks.com/sase/prisma-browser,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-access-browser.md
+Enterprise Browser Security,Menlo Security,"Independent; acquired Votiro (2025-02)",,https://www.menlosecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/menlo-security.md
 Enterprise Browser Security,Seraphic,"Acq. by CrowdStrike (announced 2026-01-13; $420M)",,https://seraphicsecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/seraphic.md
 Enterprise Browser Security,Red Access,"NEW: Independent; agentless browsing security",,https://redaccess.io/,https://github.com/druce/governance/blob/master/wiki/vendors/red-access.md
 Enterprise Browser Security,Other (Please Specify),,,,
@@ -148,7 +147,7 @@ Non-Human Identity / Agent Identity Governance,Token Security,Independent,,https
 Non-Human Identity / Agent Identity Governance,Aembit,Independent,,https://aembit.io,https://github.com/druce/governance/blob/master/wiki/vendors/aembit.md
 Non-Human Identity / Agent Identity Governance,Oasis Security,"Independent ($120M Series B 2026)",,https://www.oasis.security,https://github.com/druce/governance/blob/master/wiki/vendors/oasis-security.md
 Non-Human Identity / Agent Identity Governance,Natoma,"Acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
-Non-Human Identity / Agent Identity Governance,Entro Security,Independent,,https://entro.security,https://github.com/druce/governance/blob/master/wiki/vendors/entro-security.md
+Non-Human Identity / Agent Identity Governance,Entro Security (SailPoint),"Acq. by SailPoint (closed 2026-06-29; ~$200M reported)",,https://entro.security,https://github.com/druce/governance/blob/master/wiki/vendors/entro-security.md
 Non-Human Identity / Agent Identity Governance,Clutch Security,Independent,,https://www.clutch.security,https://github.com/druce/governance/blob/master/wiki/vendors/clutch-security.md
 Non-Human Identity / Agent Identity Governance,Other (Please Specify),,,,
 AI Red Teaming / Guardrails,Mindgard,Automated AI red teaming,,https://mindgard.ai,https://github.com/druce/governance/blob/master/wiki/vendors/mindgard.md
@@ -187,7 +186,7 @@ AI SOC analysts,Artemis Security,NEW: Independent,,https://artemissecurity.com,h
 AI SOC analysts,CrowdStrike Charlotte AI,CrowdStrike (built in-house),,https://www.crowdstrike.com,https://github.com/druce/governance/blob/master/wiki/vendors/crowdstrike.md
 AI SOC analysts,Palo Alto Cortex AgentiX,Palo Alto,,https://www.paloaltonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
 AI SOC analysts,Other (Please Specify),,,,
-Identity Governance & Visibility (IGA / ISPM),SailPoint,"Public (SAIL; re-IPO 2025; Thoma Bravo majority)",,https://www.sailpoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/sailpoint.md
+Identity Governance & Visibility (IGA / ISPM),SailPoint,"Public (SAIL; re-IPO 2025; Thoma Bravo majority); acquired Entro Security (closed 2026-06-29)",,https://www.sailpoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/sailpoint.md
 Identity Governance & Visibility (IGA / ISPM),Saviynt,"Independent ($700M KKR round 2025)",,https://saviynt.com,https://github.com/druce/governance/blob/master/wiki/vendors/saviynt.md
 Identity Governance & Visibility (IGA / ISPM),Veza (ServiceNow),"Acq. by ServiceNow (closed 2026-03-02; ~$1B)",,https://veza.com,https://github.com/druce/governance/blob/master/wiki/vendors/veza.md
 Identity Governance & Visibility (IGA / ISPM),CyberArk (Palo Alto),"PAM-first; acq. by Palo Alto (closed 2026-02-11)",,https://www.cyberark.com,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
@@ -273,3 +272,5 @@ Vendor Risk,BitSight,"Independent; Moody's largest shareholder; acquired Cybersi
 Vendor Risk,Black Kite,Independent,,https://blackkite.com/,https://github.com/druce/governance/blob/master/wiki/vendors/black-kite.md
 Vendor Risk,UpGuard,Independent,,https://www.upguard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/upguard.md
 Vendor Risk,Other (Please Specify),,,,
+
+

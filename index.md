@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-07-05 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -123,7 +123,7 @@ Regenerated 2026-07-05 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Elastic (ELK)](wiki/vendors/elastic.md) — Elastic Security is a SIEM/XDR built on the Elasticsearch (ELK) stack, popular because teams can self-host the data plane and avoid per-GB SaaS SIEM pricing,… — (public, 2026-06-28)
 - [Endor Labs](wiki/vendors/endor-labs.md) — Reachability-based software composition analysis (SCA) that tells you whether a vulnerable open-source dependency is actually *callable* in your code, now ex… — (independent, 2026-06-28)
 - [Enkrypt AI](wiki/vendors/enkrypt-ai.md) — A full-lifecycle LLM/agent security startup that pairs automated red-teaming (find the holes) with runtime guardrails (an AI firewall that blocks them), wrap… — (independent, 2026-06-28)
-- [Entro Security](wiki/vendors/entro-security.md) — An agentless SaaS platform that discovers, governs, and manages the full lifecycle of non-human identities and secrets (API keys, tokens, service accounts) a… — (independent, 2026-06-28)
+- [Entro Security](wiki/vendors/entro-security.md) — An agentless SaaS platform that discovers, governs, and manages the full lifecycle of non-human identities and secrets (API keys, tokens, service accounts) a… — (acquired-closed, 2026-07-09)
 - [F5](wiki/vendors/f5.md) — The incumbent application-delivery / load-balancer vendor now bolting AI runtime security and "AI guardrails" onto its traffic platform, anchored by its 2025… — (public, 2026-06-28)
 - [Fairly AI](wiki/vendors/fairly-ai.md) — A small Canadian AI governance/compliance (GRC) platform that assesses, tests, and provides runtime "assurance" for AI models and agents against regulatory f… — (independent, 2026-06-28)
 - [Fiddler AI](wiki/vendors/fiddler-ai.md) — An enterprise AI observability platform that monitors, evaluates, explains, and guards ML models, LLM apps, and agents in production. — (independent, 2026-06-28)

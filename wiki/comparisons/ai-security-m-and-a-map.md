@@ -4,7 +4,7 @@ type: comparison
 name: AI-Security M&A Map (2023–2026)
 slug: ai-security-m-and-a-map
 status: drafted
-last_updated: 2026-06-28
+last_updated: 2026-07-09
 confidence: medium
 sources_count: 25
 ---
@@ -65,6 +65,7 @@ PANW is assembling identity ([cyberark](../vendors/cyberark.md)) + AI gateway ([
 ### Other notable AI-security tuck-ins
 | Target | Acquirer | What it brought | Status | Date | Value |
 |---|---|---|---|---|---|
+| [entro-security](../vendors/entro-security.md) | [sailpoint](../vendors/sailpoint.md) | NHI/credentials security → SailPoint Agentic Fabric | **Closed** | 2026-06-29 (announced 2026-06-18) | reported ~$200M |
 | [aim-security](../vendors/aim-security.md) | [cato-networks](../vendors/cato-networks.md) | AI/agent security (Cato's first acquisition) | Announced | 2025-09-03 | reported ~$350M |
 | [lakera](../vendors/lakera.md) | Check Point | AI guardrails / prompt-injection defense | Announced (close exp. Q4 2025) | 2025-09-16 | reported ~$300M |
 | [apex-security](../vendors/apex-security.md) | Tenable | Agent/AI security → Tenable One | Announced/integrating | 2025-05-29 | reported >$105M |
@@ -138,3 +139,6 @@ the specific citation + confidence per claim.
 ## History
 - [2026-06-28] Created from Phase 3 Wave 1 verified M&A research (33 vendors). Pending-deal and
   reported-value caveats preserved. To extend as later waves surface more deals.
+- [2026-07-09] Added Entro Security → SailPoint (announced 2026-06-18, **closed 2026-06-29**,
+  ~$200M reported) — verified against SailPoint's close press release. SailPoint joins the
+  NHI-acquirer list (with Palo Alto/CyberArk, Cisco/Astrix pending, Snowflake/Natoma pending).

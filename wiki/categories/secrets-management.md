@@ -51,7 +51,7 @@ Developer-friendly / modern:
 - [doppler](../vendors/doppler.md) — developer-centric secrets platform (SecretOps) with environment syncing.
 - [infisical](../vendors/infisical.md) — open-source-rooted secrets management platform.
 
-Cross-listed (secrets sit adjacent to NHI): [cyberark](../vendors/cyberark.md), [entro-security](../vendors/entro-security.md).
+Cross-listed (secrets sit adjacent to NHI): [cyberark](../vendors/cyberark.md), [entro-security](../vendors/entro-security.md) (acquired by SailPoint, closed 2026-06-29).
 
 ## Consolidation / M&A dynamics
 

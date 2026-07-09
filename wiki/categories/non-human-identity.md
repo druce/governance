@@ -42,7 +42,7 @@ Dedicated NHI / agent-identity platforms (the survey shortlist):
 - [aembit](../vendors/aembit.md) — workload identity and access management; issues short-lived, policy-based credentials (secrets-less workload auth).
 - [oasis-security](../vendors/oasis-security.md) — NHI lifecycle management and discovery/governance.
 - [natoma](../vendors/natoma.md) — agent identity and access governance (also relevant to MCP/tool access).
-- [entro-security](../vendors/entro-security.md) — NHI and secrets security; discovery of non-human identities and exposed secrets.
+- [entro-security](../vendors/entro-security.md) — NHI and secrets security; discovery of non-human identities and exposed secrets. Acquired by [sailpoint](../vendors/sailpoint.md) (closed 2026-06-29) — the IGA incumbent buying into this category.
 - [clutch-security](../vendors/clutch-security.md) — NHI security platform.
 
 Identity/governance platforms with NHI capabilities (cross-listed):
@@ -55,8 +55,9 @@ Identity/governance platforms with NHI capabilities (cross-listed):
 
 - CyberArk — per seed, acquired by Palo Alto Networks (per seed; unverified — to confirm in research).
 - Astrix Security — per seed, acquired by Cisco (per seed; unverified — to confirm in research).
+- Entro Security — acquired by [sailpoint](../vendors/sailpoint.md) (announced 2026-06-18, closed 2026-06-29; ~$200M reported) for its Agentic Fabric agent-identity platform. Verified against SailPoint's press release.
 
-NHI is an active acquisition target: the platform players (Palo Alto, Cisco) appear to be buying the discovery/governance startups to bolt NHI onto their identity and SASE stacks. Expect this list to consolidate.
+NHI is an active acquisition target: the platform players (Palo Alto, Cisco, now SailPoint) are buying the discovery/governance startups to bolt NHI onto their identity and SASE stacks — three of the eight shortlist vendors are now acquired or pending. Expect this list to keep consolidating.
 
 ## Adjacent categories
 
@@ -70,11 +71,11 @@ NHI is an active acquisition target: the platform players (Palo Alto, Cisco) app
 
 **Question.** Which non-human / agent identity governance tool(s) is your firm currently using or evaluating?
 
-**Answer options.** CyberArk; Astrix Security; Token Security; Aembit; Oasis Security; Natoma; Entro Security; Clutch Security; Other (Please Specify).
+**Answer options.** CyberArk; Astrix Security; Token Security; Aembit; Oasis Security; Natoma; Entro Security (SailPoint); Clutch Security; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** This is an emerging, crowded category — most respondents will cluster in "Interested/Considering," and many will not yet distinguish vendors clearly. CyberArk is the incumbent anchor and overlaps PAM/secrets, which may inflate its "in production" count for the wrong reason (existing PAM, not new NHI). The CyberArk→Palo Alto and Astrix→Cisco deals (per seed) date those options. Consider asking separately about service-account/secrets sprawl vs. autonomous-agent identity — buyers conflate them.
+**Notes for survey design.** This is an emerging, crowded category — most respondents will cluster in "Interested/Considering," and many will not yet distinguish vendors clearly. CyberArk is the incumbent anchor and overlaps PAM/secrets, which may inflate its "in production" count for the wrong reason (existing PAM, not new NHI). The CyberArk→Palo Alto, Astrix→Cisco, and Entro→SailPoint (closed 2026-06-29) deals date those options. Consider asking separately about service-account/secrets sprawl vs. autonomous-agent identity — buyers conflate them.
 
 ## Open taxonomy questions
 
