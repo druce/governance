@@ -66,6 +66,7 @@ Agent Security (runtime protection of agents),Apex Security (Tenable),"Acq. by T
 Agent Security (runtime protection of agents),Straiker,Independent,,https://www.straiker.ai,https://github.com/druce/governance/blob/master/wiki/vendors/straiker.md
 Agent Security (runtime protection of agents),Operant AI,Runtime agent/API protection,,https://www.operant.ai,https://github.com/druce/governance/blob/master/wiki/vendors/operant-ai.md
 Agent Security (runtime protection of agents),Lasso Security,"Independent; AI/agent security + shadow-AI",,https://www.lasso.security,https://github.com/druce/governance/blob/master/wiki/vendors/lasso-security.md
+Agent Security (runtime protection of agents),Knostic,"MOVED primary from Entitlement-Aware RAG (2026-07-09): repositioned to agentic security — Kirin (agents/coding tools/MCP) + AgentMesh supply chain",,https://www.knostic.ai,https://github.com/druce/governance/blob/master/wiki/vendors/knostic.md
 Agent Security (runtime protection of agents),Other (Please Specify),,,,
 AI Antiphishing/deepfake/social engineering defense,Adaptive,"Independent; OpenAI Startup Fund-backed",,https://www.adaptivesecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/adaptive-security.md
 AI Antiphishing/deepfake/social engineering defense,Doppel,Independent,,https://www.doppel.com,https://github.com/druce/governance/blob/master/wiki/vendors/doppel.md
@@ -165,8 +166,7 @@ AI Red Teaming / Guardrails,Haize Labs,Independent,,https://www.haizelabs.com,ht
 AI Red Teaming / Guardrails,Other (Please Specify),"Category bundles two jobs (offensive testing vs runtime guardrail filters) — consider a scope line or split",,,
 Entitlement-Aware RAG / Retrieval Permissions,Glean (permissions-mirroring index),"NEW CATEGORY (split from Enterprise Chat & RAG); gate on 'do you do RAG over internal data?'",,https://www.glean.com,https://github.com/druce/governance/blob/master/wiki/vendors/glean.md
 Entitlement-Aware RAG / Retrieval Permissions,Microsoft Graph / Copilot built-in enforcement,NEW CATEGORY,,https://developer.microsoft.com/graph,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-graph.md
-Entitlement-Aware RAG / Retrieval Permissions,Knostic,"MOVED from Enterprise Chat & RAG: oversharing / knowledge-boundary overlay, not an assistant",,https://www.knostic.ai,https://github.com/druce/governance/blob/master/wiki/vendors/knostic.md
-Entitlement-Aware RAG / Retrieval Permissions,Built-in security-trimming in our vector/search platform (e.g. Azure AI Search ACLs),NEW CATEGORY,,https://azure.microsoft.com/en-us/products/ai-services/ai-search,https://github.com/druce/governance/blob/master/wiki/vendors/azure-ai-search.md
+Entitlement-Aware RAG / Retrieval Permissions,Knostic,"Cross-listed: knowledge-boundary/oversharing overlay still offered; company now leads with agentic security (primary moved to Agent Security 2026-07-09)",,https://www.knostic.ai,https://github.com/druce/governance/blob/master/wiki/vendors/knostic.md
 Entitlement-Aware RAG / Retrieval Permissions,Other (Please Specify),,,,
 SIEM/SOAR/SecOps,Microsoft Sentinel,Microsoft,,https://www.microsoft.com/en-us/security/business/siem-and-xdr/microsoft-sentinel,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-sentinel.md
 SIEM/SOAR/SecOps,Sumo Logic,Francisco Partners take-private (2023-05),,https://www.sumologic.com,https://github.com/druce/governance/blob/master/wiki/vendors/sumo-logic.md

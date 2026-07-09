@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 6
+vendor_count: 7
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28
@@ -67,6 +67,7 @@ anyway.
 - [apex-security](../vendors/apex-security.md) — enterprise agent security (per seed, acq. by Tenable — unverified).
 - [straiker](../vendors/straiker.md) — runtime security for AI agents and applications.
 - [noma-security](../vendors/noma-security.md) — AI/ML and agent security spanning discovery and runtime; primary in [ai-spm](ai-spm.md), cross-listed here.
+- [knostic](../vendors/knostic.md) — moved here 2026-07-09: now leads with agentic security (Kirin — runtime least-privilege and injection-blocking for agents, coding assistants, and MCP servers; AgentMesh supply-chain reputation). Distinctive coding-tool/MCP supply-chain wedge. Its original need-to-know/oversharing product stays cross-listed in [entitlement-aware-rag](entitlement-aware-rag.md).
 
 ## Consolidation / M&A dynamics
 
@@ -91,7 +92,7 @@ evaluating to protect agentic applications as they act? *(Select all that apply 
 indicate stage.)*
 
 **Answer options.** Zenity · Lasso Security · Operant AI · Apex Security · Straiker ·
-Noma · Other (Please Specify)
+Noma · Knostic · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.
@@ -100,6 +101,7 @@ In production; Would recommend; Would not recommend.
 - Young category — expect **low production adoption** and lots of "Interested/Considering"; the signal is intent, not deployment.
 - **Heavy overlap with [ai-spm](ai-spm.md):** Zenity and Noma appear on both lists. If you ask both questions, a short scope line ("runtime *protection* of agents, not just inventory") reduces double-counting.
 - Lasso also appears under [ai-runtime-security](ai-runtime-security.md) and shadow-AI; respondents may file it wherever they first met it.
+- Knostic repositioned into this category in 2026; respondents who know it as the Copilot-oversharing tool may file it under [entitlement-aware-rag](entitlement-aware-rag.md) instead (it appears in both questions on purpose).
 - "Other" likely captures Prisma AIRS and AI-firewall vendors that pitch agent protection as a feature.
 
 ## Open taxonomy questions

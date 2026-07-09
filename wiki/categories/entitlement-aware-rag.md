@@ -51,7 +51,7 @@ This is a small, somewhat mixed slot — part platform feature, part dedicated o
 - [microsoft-graph](../vendors/microsoft-graph.md) — the identity-and-permissions substrate Microsoft 365 Copilot retrieves through; Copilot honors existing Microsoft 365 / SharePoint permissions via Graph, which is why Microsoft-shop RAG entitlement largely reduces to "are your Graph/SharePoint permissions actually clean." A capability inside the platform rather than a product you buy separately.
 
 **Dedicated overlay / knowledge-boundary guardrail**
-- [knostic](../vendors/knostic.md) — purpose-built for the gap the above leave open: it sits over Copilot/Glean-class assistants and enforces *need-to-know* knowledge boundaries, catching oversharing and inference that raw ACL-trimming permits. Positioned as the "your permissions are messier than you think, and the AI just exposed it" remediation layer. Also cross-listed under [enterprise-ai-assistant](enterprise-ai-assistant.md).
+- [knostic](../vendors/knostic.md) — purpose-built for the gap the above leave open: it sits over Copilot/Glean-class assistants and enforces *need-to-know* knowledge boundaries, catching oversharing and inference that raw ACL-trimming permits. Positioned as the "your permissions are messier than you think, and the AI just exposed it" remediation layer. **Note (2026-07-09):** the company now leads with agentic security and its primary category moved to [agent-runtime-security](agent-runtime-security.md); the knowledge-security product is still offered and stays listed here. Also cross-listed under [enterprise-ai-assistant](enterprise-ai-assistant.md).
 
 ## Consolidation / M&A dynamics
 

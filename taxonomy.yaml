@@ -333,7 +333,7 @@ categories:
     adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
     seed_doc_row: "(folded into AI-SPM / Agent Gov)"
     seed_csv: "Agent Security"
-    notes: "Runtime protection of agentic apps. Zenity, Lasso, Operant, Apex (acq. Tenable), Straiker."
+    notes: "Runtime protection of agentic apps. Zenity, Lasso, Operant, Apex (acq. Tenable), Straiker, Knostic (repositioned 2026)."
 
   - slug: authorization-engine
     display_name: "Authorization Engine (Agent / Tool)"

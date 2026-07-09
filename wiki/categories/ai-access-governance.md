@@ -66,6 +66,7 @@ model.
 - [nudge-security](../vendors/nudge-security.md) — SaaS/AI discovery and shadow-AI governance (primary in [ai-spm](ai-spm.md); cross-listed in [sspm](sspm.md)).
 - [reco](../vendors/reco.md) — SaaS/AI posture and shadow-AI discovery (primary in [ai-spm](ai-spm.md); cross-listed in [sspm](sspm.md)).
 - [quilr](../vendors/quilr.md) — AI usage governance / data protection (cross-listed in [ai-spm](ai-spm.md)).
+- [knostic](../vendors/knostic.md) — Shadow AI Spotlight, unsanctioned-AI-tool discovery (primary in [agent-runtime-security](agent-runtime-security.md) since its 2026 agentic repositioning).
 
 **Data-security lineage doing AI usage governance**
 - [cyberhaven](../vendors/cyberhaven.md) — data-lineage DLP extended to data-flow visibility into AI usage (primary in [dlp](dlp.md)).
