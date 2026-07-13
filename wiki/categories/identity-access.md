@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [non-human-identity, identity-governance, secrets-management]
 incumbent_coverage: []
-vendor_count: 5
+vendor_count: 7
 maps_to_seed_doc: Identity & Access
 maps_to_seed_csv: General Identity
 last_verified: 2026-06-28
@@ -41,6 +41,11 @@ Core enterprise IdPs (the survey shortlist):
 - [ping-identity](../vendors/ping-identity.md) — enterprise IdP, strong in regulated/large-enterprise and CIAM use cases (now under Thoma Bravo).
 - [forgerock](../vendors/forgerock.md) — enterprise identity platform; per seed, acquired into the Ping/Thoma Bravo orbit (unverified — to confirm in research).
 
+Cloud-suite IdPs (added to survey CSV 2026-07; stubs, to research):
+
+- [google-cloud-identity](../vendors/google-cloud-identity.md) — Google's IdP/SSO; the Entra-equivalent default for Google Workspace shops.
+- [aws-iam](../vendors/aws-iam.md) — AWS IAM + IAM Identity Center; cloud-resource IAM and AWS-workforce SSO more than a general corporate IdP.
+
 Adjacent / agent-era identity:
 
 - [workos](../vendors/workos.md) — developer-focused auth and SSO; primary fit is tool/agent identity, listed here as it overlaps the IdP slot for app builders.
@@ -63,11 +68,11 @@ The macro story: the standalone-IdP field has thinned via private-equity roll-up
 
 **Question.** Which identity provider(s) / SSO platform(s) is your firm currently using or evaluating for human and agent access?
 
-**Answer options.** Microsoft Entra ID; Okta; Ping Identity; ForgeRock; WorkOS; Other (Please Specify).
+**Answer options.** Microsoft Entra ID; Okta; Ping Identity; ForgeRock; Google Cloud Identity; AWS (IAM / Identity Center); WorkOS; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Entra and Okta are table-stakes and will dominate "in production" responses; most respondents already own one, so framing should emphasize *primary* IdP and whether agent/workload identity is in scope. Ping and ForgeRock now overlap (same PE owner) — list both but expect confusion; consider a note. WorkOS is niche (developer/app-builder) and may belong better under tool-identity; include only if surveying teams that build their own AI apps.
+**Notes for survey design.** Entra and Okta are table-stakes and will dominate "in production" responses; most respondents already own one, so framing should emphasize *primary* IdP and whether agent/workload identity is in scope. Ping and ForgeRock now overlap (same PE owner) — list both but expect confusion; consider a note. WorkOS is niche (developer/app-builder) and may belong better under tool-identity; include only if surveying teams that build their own AI apps. "AWS" is ambiguous as an IdP option — nearly every AWS shop uses IAM for cloud resources without it being their workforce IdP; label it "AWS (IAM / Identity Center)" or responses will over-count.
 
 ## Open taxonomy questions
 
