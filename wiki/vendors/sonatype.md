@@ -9,7 +9,7 @@ also_listed_in: []
 website: https://www.sonatype.com
 founded: 2008
 hq: Fulton, Maryland, USA
-ownership_state: acquired-pending
+ownership_state: pe-owned
 owner: Vista Equity Partners
 ownership_note: 'Majority interest acquired by Vista Equity Partners, announced 2019-11-18 (PE-controlled; some existing investors retained stakes). NOTE: this was 2019, not 2024/2025.'
 acquisition: {announced: 2019-11-18, closed: null, price: null}
@@ -26,7 +26,7 @@ pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
 last_verified: 2026-06-28
-verify_after: 2026-09-03
+verify_after: null
 tags: [artifact-repository, sca, repository-firewall, maven-central, devsecops]
 ---
 
@@ -62,3 +62,4 @@ tags: [artifact-repository, sca, repository-firewall, maven-central, devsecops]
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; corrected ownership to Vista Equity Partners MAJORITY interest dated 2019-11-18 (not 2024/2025); founded 2008 Fulton MD (Fox/van Zyl), Maven Central steward, Nexus Repository + Lifecycle SCA + Repository Firewall. ownership_confidence high on the 2019 event.
+- [2026-07-13] Reclassified ownership_state acquired-pending → pe-owned: the Vista Equity majority investment was 2019 and long since done; 'pending' was a migration artifact. Cleared verify_after. CSV option stays 'Sonatype'.

@@ -9,10 +9,10 @@ also_listed_in: [dlp]
 website: https://www.forcepoint.com
 founded: 2016
 hq: Austin, Texas, USA
-ownership_state: acquired-closed
+ownership_state: pe-owned
 owner: Francisco Partners
 ownership_note: Commercial Forcepoint (DLP / Data-first SASE) owned by Francisco Partners (PE) since 2021; ownership retained in 2023 when TPG bought the separate G2CI public-sector unit (closed 2023-10-02). Verified 2026-06-28
-acquisition: {announced: 2023-10-02, closed: 2026-06-28, price: null}
+acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (PE-owned)
 last_funding: Acquired by Francisco Partners from Raytheon (2021); G2CI split off to TPG (2023)
 market_position: null
@@ -102,3 +102,4 @@ small fund, full Forcepoint DLP+SASE may be more than needed.
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; VERIFIED ownership — commercial Forcepoint (DLP/SASE) owned by Francisco Partners (PE) since 2021; TPG acquired only the G2CI public-sector unit (closed 2023-10-02, ~$2.45B). Set ownership: acquired / Francisco Partners (high). Founded 2016, Austin TX. Source cached.
+- [2026-07-13] Reclassified ownership_state acquired-closed → pe-owned (PE take-private is not an open M&A event; matches ping-identity precedent). Cleared stray acquisition dates that belonged to the TPG/G2CI carve-out. CSV option stays 'Forcepoint' (no acquirer suffix — PE ownership noted in Flag column).

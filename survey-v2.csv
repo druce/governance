@@ -28,7 +28,7 @@ AI Gateway,Kong AI Gateway,"Independent; also MCP gateway",,https://konghq.com,h
 AI Gateway,F5,"Public (FFIV); acquired CalypsoAI 2025-10",,https://www.f5.com,https://github.com/druce/governance/blob/master/wiki/vendors/f5.md
 AI Gateway,OpenRouter,"Independent; hosted aggregator (data leaves tenancy)",,https://openrouter.ai,https://github.com/druce/governance/blob/master/wiki/vendors/openrouter.md
 AI Gateway,Other (Please Specify),,,,
-LLM Observability & Eval,Langfuse,"Acq. by ClickHouse (announced 2026-01-26); core stays OSS",,https://langfuse.com,https://github.com/druce/governance/blob/master/wiki/vendors/langfuse.md
+LLM Observability & Eval,Langfuse (ClickHouse),"Acq. by ClickHouse (announced 2026-01-26); core stays OSS",,https://langfuse.com,https://github.com/druce/governance/blob/master/wiki/vendors/langfuse.md
 LLM Observability & Eval,LangSmith,Independent (LangChain),,https://www.langchain.com/langsmith,https://github.com/druce/governance/blob/master/wiki/vendors/langsmith.md
 LLM Observability & Eval,Arize Phoenix,Independent,,https://arize.com,https://github.com/druce/governance/blob/master/wiki/vendors/arize-phoenix.md
 LLM Observability & Eval,Braintrust,Independent,,https://www.braintrust.dev,https://github.com/druce/governance/blob/master/wiki/vendors/braintrust.md
@@ -36,7 +36,7 @@ LLM Observability & Eval,Datadog LLM Observability,"Public (DDOG); organic modul
 LLM Observability & Eval,Weights & Biases (Weave),"Acq. by CoreWeave (closed 2025-05-05)",,https://wandb.ai,https://github.com/druce/governance/blob/master/wiki/vendors/weights-and-biases.md
 LLM Observability & Eval,Comet (Opik),Independent,,https://www.comet.com,https://github.com/druce/governance/blob/master/wiki/vendors/comet.md
 LLM Observability & Eval,Fiddler AI,Independent,,https://www.fiddler.ai,https://github.com/druce/governance/blob/master/wiki/vendors/fiddler-ai.md
-LLM Observability & Eval,TruLens,"Snowflake (acq. TruEra 2024-05); TruLens stays OSS",,https://www.trulens.org,https://github.com/druce/governance/blob/master/wiki/vendors/trulens.md
+LLM Observability & Eval,TruLens (Snowflake),"Snowflake (acq. TruEra 2024-05); TruLens stays OSS",,https://www.trulens.org,https://github.com/druce/governance/blob/master/wiki/vendors/trulens.md
 LLM Observability & Eval,Giskard,"NEW: Independent (OSS eval/testing); also fits red-teaming",,https://www.giskard.ai,https://github.com/druce/governance/blob/master/wiki/vendors/giskard.md
 LLM Observability & Eval,Arthur AI,"NEW: Independent; monitoring/eval, overlaps AI governance",,https://www.arthur.ai,https://github.com/druce/governance/blob/master/wiki/vendors/arthur-ai.md
 LLM Observability & Eval,Other (Please Specify),,,,
@@ -48,7 +48,7 @@ AI Runtime Security / AI Firewall,WitnessAI,"Independent ($86.5M; Series B 2026-
 AI Runtime Security / AI Firewall,HiddenLayer,"Independent ($50M Series A)",,https://www.hiddenlayer.com,https://github.com/druce/governance/blob/master/wiki/vendors/hiddenlayer.md
 AI Runtime Security / AI Firewall,Pillar Security,Independent,,https://www.pillar.security,https://github.com/druce/governance/blob/master/wiki/vendors/pillar-security.md
 AI Runtime Security / AI Firewall,Enkrypt AI,Independent (seed-stage),,https://www.enkryptai.com/,https://github.com/druce/governance/blob/master/wiki/vendors/enkrypt-ai.md
-AI Runtime Security / AI Firewall,TrojAI,"Acq. by A10 Networks (announced 2026-06-15 — pending)",,https://troj.ai,https://github.com/druce/governance/blob/master/wiki/vendors/trojai.md
+AI Runtime Security / AI Firewall,TrojAI (A10 Networks),"Acq. by A10 Networks (announced 2026-06-15 — pending)",,https://troj.ai,https://github.com/druce/governance/blob/master/wiki/vendors/trojai.md
 AI Runtime Security / AI Firewall,Other (Please Specify),,,,
 AI-SPM (AI estate inventory & posture),Noma,"Independent; AI-SPM + agent runtime",,https://noma.security,https://github.com/druce/governance/blob/master/wiki/vendors/noma-security.md
 AI-SPM (AI estate inventory & posture),Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
@@ -104,7 +104,7 @@ MCP Gateway / Tool Access Control,Arcade,"NEW (cross-listed with Tool Identity):
 MCP Gateway / Tool Access Control,Docker MCP Gateway,NEW: OSS,,https://github.com/docker/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/docker-mcp-gateway.md
 MCP Gateway / Tool Access Control,IBM ContextForge,NEW: OSS,,https://github.com/IBM/mcp-context-forge,https://github.com/druce/governance/blob/master/wiki/vendors/ibm-contextforge.md
 MCP Gateway / Tool Access Control,Pomerium,Identity-aware proxy for MCP/tool access,,https://www.pomerium.com,https://github.com/druce/governance/blob/master/wiki/vendors/pomerium.md
-MCP Gateway / Tool Access Control,Natoma,"MCP-native NHI gateway; acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai/platform,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
+MCP Gateway / Tool Access Control,Natoma (Snowflake),"MCP-native NHI gateway; acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai/platform,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
 MCP Gateway / Tool Access Control,Prisma AIRS AI Agent Gateway,Palo Alto,,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
 MCP Gateway / Tool Access Control,Other (Please Specify),,,,
 Tool Identity & Integration (Agent Auth),Composio,Tool integration / managed agent auth,,https://composio.dev,https://github.com/druce/governance/blob/master/wiki/vendors/composio.md
@@ -130,10 +130,10 @@ Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md
 Enterprise Browser Security,Island Browser,Independent,,https://www.island.io,https://github.com/druce/governance/blob/master/wiki/vendors/island.md
-Enterprise Browser Security,LayerX browser extension,"Acq. by Akamai (announced 2026-05-14; ~$205M)",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
+Enterprise Browser Security,LayerX (Akamai),"Acq. by Akamai (announced 2026-05-14; ~$205M)",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
 Enterprise Browser Security,Prisma Access Browser (Palo Alto; former Talon),Palo Alto,,https://www.paloaltonetworks.com/sase/prisma-browser,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-access-browser.md
 Enterprise Browser Security,Menlo Security,"Independent; acquired Votiro (2025-02)",,https://www.menlosecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/menlo-security.md
-Enterprise Browser Security,Seraphic,"Acq. by CrowdStrike (announced 2026-01-13; $420M)",,https://seraphicsecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/seraphic.md
+Enterprise Browser Security,Seraphic (CrowdStrike),"Acq. by CrowdStrike (announced 2026-01-13; $420M)",,https://seraphicsecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/seraphic.md
 Enterprise Browser Security,Red Access,"NEW: Independent; agentless browsing security",,https://redaccess.io/,https://github.com/druce/governance/blob/master/wiki/vendors/red-access.md
 Enterprise Browser Security,Other (Please Specify),,,,
 SaaS Security Posture Management (SSPM),AppOmni,NEW CATEGORY: Independent,,https://appomni.com,https://github.com/druce/governance/blob/master/wiki/vendors/appomni.md
@@ -149,7 +149,7 @@ Non-Human Identity / Agent Identity Governance,Astrix (Cisco),"Acq. announced 20
 Non-Human Identity / Agent Identity Governance,Token Security,Independent,,https://www.token.security,https://github.com/druce/governance/blob/master/wiki/vendors/token-security.md
 Non-Human Identity / Agent Identity Governance,Aembit,Independent,,https://aembit.io,https://github.com/druce/governance/blob/master/wiki/vendors/aembit.md
 Non-Human Identity / Agent Identity Governance,Oasis Security,"Independent ($120M Series B 2026)",,https://www.oasis.security,https://github.com/druce/governance/blob/master/wiki/vendors/oasis-security.md
-Non-Human Identity / Agent Identity Governance,Natoma,"Acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
+Non-Human Identity / Agent Identity Governance,Natoma (Snowflake),"Acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
 Non-Human Identity / Agent Identity Governance,Entro Security (SailPoint),"Acq. by SailPoint (closed 2026-06-29; ~$200M reported)",,https://entro.security,https://github.com/druce/governance/blob/master/wiki/vendors/entro-security.md
 Non-Human Identity / Agent Identity Governance,Clutch Security,Independent,,https://www.clutch.security,https://github.com/druce/governance/blob/master/wiki/vendors/clutch-security.md
 Non-Human Identity / Agent Identity Governance,Other (Please Specify),,,,
@@ -200,7 +200,7 @@ Identity Governance & Visibility (IGA / ISPM),Silverfort,"NEW: center of gravity
 Identity Governance & Visibility (IGA / ISPM),Other (Please Specify),,,,
 Secrets Manager,Azure Key Vault,Microsoft,,https://azure.microsoft.com/products/key-vault,https://github.com/druce/governance/blob/master/wiki/vendors/azure-key-vault.md
 Secrets Manager,HashiCorp Vault (IBM),"Acq. by IBM (closed 2025-02-27; $6.4B)",,https://www.hashicorp.com/products/vault,https://github.com/druce/governance/blob/master/wiki/vendors/hashicorp-vault.md
-Secrets Manager,Conjur,CyberArk product (now Palo Alto),,https://www.conjur.org,https://github.com/druce/governance/blob/master/wiki/vendors/conjur.md
+Secrets Manager,Conjur (CyberArk),CyberArk product (now Palo Alto),,https://www.conjur.org,https://github.com/druce/governance/blob/master/wiki/vendors/conjur.md
 Secrets Manager,AWS Secrets Manager,AWS,,https://aws.amazon.com/secrets-manager/,https://github.com/druce/governance/blob/master/wiki/vendors/aws-secrets-manager.md
 Secrets Manager,GCP Secret Manager,Google,,https://cloud.google.com/secret-manager,https://github.com/druce/governance/blob/master/wiki/vendors/gcp-secret-manager.md
 Secrets Manager,1Password,"SPLIT from bundled row: Independent; acquired Apono (2026-06)",,https://1password.com/,https://github.com/druce/governance/blob/master/wiki/vendors/1password.md
@@ -220,7 +220,7 @@ DSPM / Data Security Posture,Concentric AI,Independent,,https://concentric.ai,ht
 DSPM / Data Security Posture,Bedrock Security,Independent,,https://www.bedrock.security,https://github.com/druce/governance/blob/master/wiki/vendors/bedrock-security.md
 DSPM / Data Security Posture,Securiti (Veeam),"Acq. by Veeam (closed 2025-12-11; $1.725B)",,https://securiti.ai,https://github.com/druce/governance/blob/master/wiki/vendors/securiti.md
 DSPM / Data Security Posture,Normalyze (Proofpoint),"Acq. by Proofpoint (closed ~2024-11)",,https://normalyze.ai,https://github.com/druce/governance/blob/master/wiki/vendors/normalyze.md
-DSPM / Data Security Posture,Symmetry Systems,"Acq. by Zscaler (announced 2026-05-21 — pending)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md
+DSPM / Data Security Posture,Symmetry Systems (Zscaler),"Acq. by Zscaler (announced 2026-05-21 — pending)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md
 DSPM / Data Security Posture,Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 DSPM / Data Security Posture,Rubrik,"Public (RBRK); acquired Laminar",,https://www.rubrik.com,https://github.com/druce/governance/blob/master/wiki/vendors/rubrik.md
 DSPM / Data Security Posture,OneTrust,"Independent; privacy/governance",,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
@@ -258,7 +258,7 @@ Software supply chain,Legit Security,Independent (verified not acquired),,https:
 Software supply chain,Aikido Security,"Independent (~$1B val 2026)",,https://www.aikido.dev,https://github.com/druce/governance/blob/master/wiki/vendors/aikido-security.md
 Software supply chain,Sonatype,Vista Equity majority (2019),,https://www.sonatype.com,https://github.com/druce/governance/blob/master/wiki/vendors/sonatype.md
 Software supply chain,JFrog,Public (FROG),,https://jfrog.com,https://github.com/druce/governance/blob/master/wiki/vendors/jfrog.md
-Software supply chain,GitHub Advanced Security,"Microsoft/GitHub; now split (Secret Protection + Code Security)",,https://github.com/security/advanced-security,https://github.com/druce/governance/blob/master/wiki/vendors/github-advanced-security.md
+Software supply chain,GitHub Advanced Security (Microsoft),"Microsoft/GitHub; now split (Secret Protection + Code Security)",,https://github.com/security/advanced-security,https://github.com/druce/governance/blob/master/wiki/vendors/github-advanced-security.md
 Software supply chain,GitLab Ultimate,Public (GTLB),,https://about.gitlab.com,https://github.com/druce/governance/blob/master/wiki/vendors/gitlab.md
 Software supply chain,Other (Please Specify),,,,
 Enterprise GRC,ServiceNow GRC,"NEW (was missing — the wiki's lead option); TYPO FIXED in category name (was 'Enterprize')",,https://www.servicenow.com/products/governance-risk-and-compliance.html,https://github.com/druce/governance/blob/master/wiki/vendors/servicenow.md

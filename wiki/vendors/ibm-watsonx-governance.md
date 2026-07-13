@@ -9,7 +9,7 @@ also_listed_in: []
 website: https://www.ibm.com/products/watsonx-governance
 founded: null
 hq: Armonk, NY (IBM)
-ownership_state: acquired-closed
+ownership_state: public
 owner: IBM
 ownership_note: 'Product of IBM (NYSE: IBM); part of the watsonx AI & data platform'
 acquisition: {announced: null, closed: null, price: null}
@@ -62,3 +62,4 @@ tags: [ai-governance, model-risk, sr-11-7, eu-ai-act, nist-ai-rmf, ibm]
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; corrected ownership independent→subsidiary (IBM product, NYSE: IBM, HQ Armonk NY, ownership_confidence high); established GA early Dec 2023 as part of watsonx platform, OpenPages + Watson OpenScale + AI FactSheets lineage, multi-cloud + Cloud Pak for Data deployment, SR 11-7 / EU AI Act / NIST AI RMF / ISO 42001 mapping, Model Risk Evaluation Engine + AI Risk Atlas; set hedge_fund_fit low (fits large IBM-shop regulated institutions, not lean funds); cached 3 sources; status stub→researched.
+- [2026-07-13] Reclassified ownership_state acquired-closed → public: watsonx.governance is a first-party IBM product (as the body already stated), not an acquired company. Clears the R4 unconfirmed-close research item.
