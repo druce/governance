@@ -4,7 +4,7 @@ type: comparison
 name: AI-Security M&A Map (2023–2026)
 slug: ai-security-m-and-a-map
 status: drafted
-last_updated: 2026-07-09
+last_updated: 2026-07-13
 confidence: medium
 sources_count: 25
 ---
@@ -61,6 +61,10 @@ PANW is assembling identity ([cyberark](../vendors/cyberark.md)) + AI gateway ([
 | Target | What it brought | Status | Date | Value |
 |---|---|---|---|---|
 | [calypsoai](../vendors/calypsoai.md) | AI guardrails + red-team (now F5 AI Guardrails / AI Red Team) | **Closed** | 2025-10-08 | reported ~$180M |
+| [surepath-ai](../vendors/surepath-ai.md) | Network-based shadow-AI discovery + intent classification (F5 AI Security Platform) | **Announced — pending** | 2026-06-22 | undisclosed |
+
+F5 is now a two-deal roll-up: CalypsoAI's guardrails/red-team plus SurePath's discovery layer,
+launched together as the F5 AI Security Platform (2026-06-22).
 
 ### Other notable AI-security tuck-ins
 | Target | Acquirer | What it brought | Status | Date | Value |
@@ -71,6 +75,7 @@ PANW is assembling identity ([cyberark](../vendors/cyberark.md)) + AI gateway ([
 | [apex-security](../vendors/apex-security.md) | Tenable | Agent/AI security → Tenable One | Announced/integrating | 2025-05-29 | reported >$105M |
 | [promptfoo](../vendors/promptfoo.md) | OpenAI | Open-source eval/red-team → OpenAI Frontier | **Closed** | 2026-03-09 | undisclosed |
 | [trojai](../vendors/trojai.md) | A10 Networks | AI detect (red-team) + defend (runtime firewall) | **Announced** | 2026-06-15 | undisclosed |
+| [acuvity](../vendors/acuvity.md) | Proofpoint | Shadow-AI + agent/MCP visibility ("agentic workspace"; Proofpoint's 2nd after [normalyze](../vendors/normalyze.md)) | **Closed** (announced as completed) | 2026-02-12 | undisclosed |
 
 > **TrojAI→A10 Networks was NOT in the seed CSV** — surfaced during research. A recent (2026-06-15)
 > deal; confirm completion.
@@ -142,3 +147,7 @@ the specific citation + confidence per claim.
 - [2026-07-09] Added Entro Security → SailPoint (announced 2026-06-18, **closed 2026-06-29**,
   ~$200M reported) — verified against SailPoint's close press release. SailPoint joins the
   NHI-acquirer list (with Palo Alto/CyberArk, Cisco/Astrix pending, Snowflake/Natoma pending).
+- [2026-07-13] Added two deals surfaced while triaging SurePath competitors: SurePath AI → F5
+  (**announced 2026-06-22, pending**; F5's second AI-security buy, launched with the F5 AI
+  Security Platform) and Acuvity → Proofpoint (**closed 2026-02-12**; Proofpoint's second after
+  Normalyze). Shadow-AI/access-governance is now consolidating the same way runtime/guardrails did.

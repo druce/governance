@@ -55,10 +55,11 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-06-28)
 
-## Vendors (227)
+## Vendors (229)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
+- [Acuvity](wiki/vendors/acuvity.md) — An AI security and governance startup (RYNO platform) covering the full span of enterprise AI usage — shadow-AI visibility from endpoints and browsers throug… — (acquired-closed, 2026-07-13)
 - [Adaptive Security](wiki/vendors/adaptive-security.md) — AI-native security awareness training and social-engineering attack simulation (phishing, vishing, smishing, and deepfake voice/video) that drills employees … — (independent, 2026-06-28)
 - [Adaptive Shield](wiki/vendors/adaptive-shield.md) — A SaaS Security Posture Management (SSPM) leader — misconfiguration, entitlement, and shadow-app visibility across 150+ SaaS apps — now CrowdStrike's SSPM/Sa… — (acquired-closed, 2026-06-28)
 - [Aembit](wiki/vendors/aembit.md) — A non-human identity platform that issues short-lived, policy-scoped credentials — (independent, 2026-06-28)
@@ -262,6 +263,7 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Sumo Logic](wiki/vendors/sumo-logic.md) — A cloud-native SaaS log analytics and SIEM platform for security + ops telemetry; taken private by Francisco Partners in 2023. — (pe-owned, 2026-06-28)
 - [SurePath AI](wiki/vendors/surepath-ai.md) — A network-based shadow-AI discovery and workforce-GenAI governance platform (find every AI tool in use, classify intent, enforce inline policy) that F5 is fo… — (acquired-pending, 2026-07-13)
 - [Symmetry Systems](wiki/vendors/symmetry-systems.md) — A DSPM platform that maps sensitive data to *who can reach it* — humans, service accounts, AI agents, third parties — and can automatically remediate over-pe… — (acquired-closed, 2026-06-28)
+- [Teleskope](wiki/vendors/teleskope.md) — An "agentic data security" DSPM that doesn't stop at finding and classifying sensitive data — it autonomously remediates (block, quarantine, redact, delete),… — (independent, 2026-07-13)
 - [Terraform Cloud (HCP Terraform)](wiki/vendors/terraform-cloud.md) — HashiCorp's managed service for running Terraform infrastructure-as-code with remote state, collaboration, and policy enforcement — the control plane through… — (acquired-closed, 2026-06-28)
 - [Theta Lake](wiki/vendors/theta-lake.md) — A compliance-surveillance and archiving platform purpose-built for — (independent, 2026-06-28)
 - [Token Security](wiki/vendors/token-security.md) — Identity-first security for non-human and AI-agent identities: find every machine — (independent, 2026-06-28)

@@ -75,6 +75,7 @@ Platform / incumbent DLP:
 - [netskope](../vendors/netskope.md) — inline DLP within its SSE/SASE platform.
 - [forcepoint](../vendors/forcepoint.md) — long-standing enterprise DLP (endpoint/network/email).
 - [cyera](../vendors/cyera.md) — DSPM-led vendor extending into DLP/egress controls.
+- [teleskope](../vendors/teleskope.md) — DSPM-led with native remediation (redact/quarantine/block) and external-LLM egress prevention (primary in [dspm](dspm.md)).
 
 ## Consolidation / M&A dynamics
 

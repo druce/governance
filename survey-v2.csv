@@ -125,6 +125,7 @@ Shadow-AI / Insider risk,Wald.ai,AI usage discovery + redaction,,https://wald.ai
 Shadow-AI / Insider risk,Portal26,Independent (formerly Titaniam),,https://portal26.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portal26.md
 Shadow-AI / Insider risk,Reco,"NEW: Independent; also AI-SPM / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
 Shadow-AI / Insider risk,SurePath AI (F5),"NEW: Acq. by F5 (announced 2026-06-22, pending close); network-based shadow-AI discovery",,https://www.surepath.ai,https://github.com/druce/governance/blob/master/wiki/vendors/surepath-ai.md
+Shadow-AI / Insider risk,Acuvity (Proofpoint),"NEW: Acq. by Proofpoint (closed 2026-02-12); shadow-AI + agent/MCP visibility",,https://acuvity.ai,https://github.com/druce/governance/blob/master/wiki/vendors/acuvity.md
 Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md
@@ -223,6 +224,7 @@ DSPM / Data Security Posture,Symmetry Systems,"Acq. by Zscaler (announced 2026-0
 DSPM / Data Security Posture,Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 DSPM / Data Security Posture,Rubrik,"Public (RBRK); acquired Laminar",,https://www.rubrik.com,https://github.com/druce/governance/blob/master/wiki/vendors/rubrik.md
 DSPM / Data Security Posture,OneTrust,"Independent; privacy/governance",,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
+DSPM / Data Security Posture,Teleskope,"NEW: Independent ($32.2M; Series A 2025-10); agentic remediation; also DLP",,https://www.teleskope.ai,https://github.com/druce/governance/blob/master/wiki/vendors/teleskope.md
 DSPM / Data Security Posture,Other (Please Specify),,,,
 Data Access Governance,Varonis,"Public (VRNS); acquired Cyral (2025-03); table-stakes incumbent",,https://www.varonis.com,https://github.com/druce/governance/blob/master/wiki/vendors/varonis.md
 Data Access Governance,Veza (ServiceNow),"Acq. by ServiceNow (closed 2026-03-02; ~$1B)",,https://veza.com,https://github.com/druce/governance/blob/master/wiki/vendors/veza.md

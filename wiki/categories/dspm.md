@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [dlp, data-access-governance]
 incumbent_coverage: []
-vendor_count: 15
+vendor_count: 16
 maps_to_seed_doc: Data Classification & DSPM
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-28
@@ -74,6 +74,7 @@ Cloud-native DSPM:
 - [concentric-ai](../vendors/concentric-ai.md) — AI-based classification of unstructured data (also
   [data-access-governance](data-access-governance.md)).
 - [rubrik](../vendors/rubrik.md) — DSPM bolted onto data-resilience/backup footprint.
+- [teleskope](../vendors/teleskope.md) — "agentic" DSPM with native automated remediation (block/redact/delete) and external-LLM egress prevention; air-gapped deployment option (also [dlp](dlp.md)).
 
 Cross-listed:
 
@@ -105,8 +106,8 @@ suites (OneTrust, Securiti, Collibra) folding it in alongside cataloging.
 evaluating to discover and classify sensitive data at rest?
 
 **Answer options.** Microsoft Purview, BigID, Securiti, Cyera, Sentra, Normalyze,
-Wiz, Bedrock Security, Symmetry Systems, Concentric AI, Rubrik, Immuta, Collibra,
-OneTrust, Netskope, Other (Please Specify).
+Wiz, Bedrock Security, Symmetry Systems, Concentric AI, Rubrik, Teleskope, Immuta,
+Collibra, OneTrust, Netskope, Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
