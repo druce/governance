@@ -9,8 +9,8 @@ Enterprise AI Assistant,Other (Please Specify),,,,
 General Identity,Entra,Microsoft,,https://www.microsoft.com/security/business/identity-access/microsoft-entra-id,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-entra.md
 General Identity,Okta,Public (OKTA),,https://www.okta.com,https://github.com/druce/governance/blob/master/wiki/vendors/okta.md
 General Identity,Ping Identity,Thoma Bravo (incl. ForgeRock),,https://www.pingidentity.com,https://github.com/druce/governance/blob/master/wiki/vendors/ping-identity.md
-General Identity,Google Cloud Identity,Google,,https://cloud.google.com/identity,
-General Identity,AWS,Amazon Web Services,,https://aws.amazon.com/iam/,
+General Identity,Google Cloud Identity,Google,,https://cloud.google.com/identity,https://github.com/druce/governance/blob/master/wiki/vendors/google-cloud-identity.md
+General Identity,AWS,Amazon Web Services,,https://aws.amazon.com/iam/,https://github.com/druce/governance/blob/master/wiki/vendors/aws-iam.md
 General Identity,Other (Please Specify),,,,
 AI-aware Network Security (SSE/SASE),Palo Alto,Public (PANW),,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
 AI-aware Network Security (SSE/SASE),Zscaler,"Public (ZS); acquired SplxAI (2025) + Symmetry Systems (2026, pending)",,https://www.zscaler.com,https://github.com/druce/governance/blob/master/wiki/vendors/zscaler.md
@@ -124,6 +124,7 @@ Shadow-AI / Insider risk,Cyberhaven,Data-flow visibility into AI usage,,https://
 Shadow-AI / Insider risk,Wald.ai,AI usage discovery + redaction,,https://wald.ai,https://github.com/druce/governance/blob/master/wiki/vendors/wald-ai.md
 Shadow-AI / Insider risk,Portal26,Independent (formerly Titaniam),,https://portal26.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portal26.md
 Shadow-AI / Insider risk,Reco,"NEW: Independent; also AI-SPM / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
+Shadow-AI / Insider risk,SurePath AI (F5),"NEW: Acq. by F5 (announced 2026-06-22, pending close); network-based shadow-AI discovery",,https://www.surepath.ai,https://github.com/druce/governance/blob/master/wiki/vendors/surepath-ai.md
 Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md

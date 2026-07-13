@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -55,7 +55,7 @@ Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-06-28)
 
-## Vendors (224)
+## Vendors (227)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -80,6 +80,7 @@ Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Audition AI](wiki/vendors/audition-ai.md) — A compliance-first enterprise AI platform purpose-built for hedge funds and — (independent, 2026-06-30)
 - [Aurascape](wiki/vendors/aurascape.md) — An AI-native security platform that gives enterprises visibility into and control over every employee/app interaction with AI tools (sanctioned and shadow), … — (independent, 2026-06-28)
 - [AuthZed (SpiceDB)](wiki/vendors/authzed.md) — A Google-Zanzibar-style **permissions database** (open-source **SpiceDB**) that stores relationships between users, resources, and groups and answers fine-gr… — (independent, 2026-06-28)
+- [AWS IAM / Identity Center](wiki/vendors/aws-iam.md) — AWS's native identity layer: IAM for cloud-resource permissions (users, roles, policies) plus IAM Identity Center (ex-AWS SSO) for workforce single sign-on i… — (public, 2026-07-13)
 - [AWS Secrets Manager](wiki/vendors/aws-secrets-manager.md) — AWS's official wording: it "helps you manage, retrieve, and rotate database credentials, application credentials, OAuth tokens, API keys, and other secrets t… — (public, 2026-06-28)
 - [Azure AI Search](wiki/vendors/azure-ai-search.md) — Microsoft's managed search-and-vector-index service — the retrieval engine most Azure-based RAG apps (and Azure OpenAI "on your data") use to find the right … — (public, 2026-06-28)
 - [Azure Dev Box](wiki/vendors/azure-dev-boxes.md) — Microsoft's managed, cloud-hosted developer workstations — preconfigured Windows (or Linux) cloud PCs developers self-serve on demand and tear down, keeping … — (public, 2026-06-28)
@@ -138,6 +139,7 @@ Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [GitHub Codespaces](wiki/vendors/github-codespaces.md) — Cloud-hosted, on-demand development environments spun up from a Git repo, so code (including AI-generated or AI-agent-run code) executes in a disposable cont… — (acquired-closed, 2026-06-28)
 - [GitLab (Ultimate)](wiki/vendors/gitlab.md) — The DevSecOps platform whose top tier, **GitLab Ultimate**, bundles platform-native application security — SAST, DAST, dependency scanning, secret detection,… — (public, 2026-06-28)
 - [Glean](wiki/vendors/glean.md) — Permission-aware enterprise search and a "Work AI" assistant/agent platform that connects to all your SaaS apps and answers questions over company data — whi… — (independent, 2026-06-28)
+- [Google Cloud Identity](wiki/vendors/google-cloud-identity.md) — Google's identity-as-a-service offering (IdP/SSO/MFA, device and user management) — the identity front door for Google Workspace / Google Cloud shops, as Ent… — (public, 2026-07-13)
 - [Google Drive](wiki/vendors/google-drive.md) — Google Workspace's file storage (Docs, Sheets, Slides, Shared Drives) — the primary unstructured-content corpus for Workspace-centric shops, and a core RAG/G… — (public, 2026-06-28)
 - [Google SecOps (Chronicle)](wiki/vendors/google-secops.md) — Google's cloud-native SIEM/SOAR platform, built for petabyte-scale log retention, enriched with Mandiant threat intelligence and Gemini-powered investigation… — (public, 2026-06-28)
 - [GovernGPT](wiki/vendors/governgpt.md) — AI that drafts answers to investor DDQs and RFPs for fund managers, — (independent, 2026-06-28)
@@ -258,6 +260,7 @@ Regenerated 2026-07-09 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Styra](wiki/vendors/styra.md) — The company that created Open Policy Agent and sold enterprise management on top of it (Styra DAS / Enterprise OPA) — until Apple hired away its core team in… — (acquired-pending, 2026-06-28)
 - [Stytch](wiki/vendors/stytch.md) — An API-first authentication and fraud platform for developers that now also does AI-agent identity: letting your app issue scoped, revocable OAuth tokens to … — (acquired-closed, 2026-06-28)
 - [Sumo Logic](wiki/vendors/sumo-logic.md) — A cloud-native SaaS log analytics and SIEM platform for security + ops telemetry; taken private by Francisco Partners in 2023. — (pe-owned, 2026-06-28)
+- [SurePath AI](wiki/vendors/surepath-ai.md) — A network-based shadow-AI discovery and workforce-GenAI governance platform (find every AI tool in use, classify intent, enforce inline policy) that F5 is fo… — (acquired-pending, 2026-07-13)
 - [Symmetry Systems](wiki/vendors/symmetry-systems.md) — A DSPM platform that maps sensitive data to *who can reach it* — humans, service accounts, AI agents, third parties — and can automatically remediate over-pe… — (acquired-closed, 2026-06-28)
 - [Terraform Cloud (HCP Terraform)](wiki/vendors/terraform-cloud.md) — HashiCorp's managed service for running Terraform infrastructure-as-code with remote state, collaboration, and policy enforcement — the control plane through… — (acquired-closed, 2026-06-28)
 - [Theta Lake](wiki/vendors/theta-lake.md) — A compliance-surveillance and archiving platform purpose-built for — (independent, 2026-06-28)
