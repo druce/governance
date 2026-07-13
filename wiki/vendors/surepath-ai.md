@@ -60,7 +60,7 @@ Founded **2023**, HQ **Denver, Colorado**; founders Casey Bleeker (CEO) and Rand
 Shadow-AI governance is a Day-1 concern for a fund (MNPI in consumer chatbots), and SurePath's integration-free network deployment suits a lean IT team. But the F5 acquisition changes the evaluation: expect it to be packaged as the visibility layer of the F5 AI Security Platform rather than sold standalone indefinitely. Natural fit if you're already an F5 shop or want discovery + guardrails + red-team from one vendor; if not, the independent specialists ([harmonic-security](harmonic-security.md), [witnessai](witnessai.md), [aurascape](aurascape.md)) or your SASE vendor's AI-guard module are the comparators. Site claims finance-sector customers (unnamed) — fs_traction: claimed, not verified.
 
 ## Competitors / alternatives
-[witnessai](witnessai.md), [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [nudge-security](nudge-security.md), [lanai](lanai.md), [cyberhaven](cyberhaven.md), [wald-ai](wald-ai.md), [portal26](portal26.md), [zscaler](zscaler.md) (AI Guard), [netskope](netskope.md) (Netskope One).
+[witnessai](witnessai.md), [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [nudge-security](nudge-security.md), [lanai](lanai.md), [cyberhaven](cyberhaven.md), [wald-ai](wald-ai.md), [portal26](portal26.md), [acuvity](acuvity.md) (the closest analogue — also discovery-led, also platform-acquired in 2026, by Proofpoint), [zscaler](zscaler.md) (AI Guard), [netskope](netskope.md) (Netskope One).
 
 ## Open questions / to verify
 - **Acquisition close date** — announced 2026-06-22; no completion notice found as of 2026-07-13. Re-check after 2026-10-01.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 8
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28
@@ -66,6 +66,7 @@ anyway.
 - [operant-ai](../vendors/operant-ai.md) — runtime protection for agentic apps and APIs (in-cluster/runtime defense angle).
 - [apex-security](../vendors/apex-security.md) — enterprise agent security (per seed, acq. by Tenable — unverified).
 - [straiker](../vendors/straiker.md) — runtime security for AI agents and applications.
+- [acuvity](../vendors/acuvity.md) — runtime inspection and governance of agents and MCP servers (primary in [ai-access-governance](ai-access-governance.md); acquired by Proofpoint 2026-02-12).
 - [noma-security](../vendors/noma-security.md) — AI/ML and agent security spanning discovery and runtime; primary in [ai-spm](ai-spm.md), cross-listed here.
 - [knostic](../vendors/knostic.md) — moved here 2026-07-09: now leads with agentic security (Kirin — runtime least-privilege and injection-blocking for agents, coding assistants, and MCP servers; AgentMesh supply-chain reputation). Distinctive coding-tool/MCP supply-chain wedge. Its original need-to-know/oversharing product stays cross-listed in [entitlement-aware-rag](entitlement-aware-rag.md).
 

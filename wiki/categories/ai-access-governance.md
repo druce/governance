@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [dlp, network-security-sase, sspm, ai-spm]
 incumbent_coverage: []
-vendor_count: 12
+vendor_count: 13
 maps_to_seed_doc: AI Access Governance (CASB for AI)
 maps_to_seed_csv: Shadow-AI / Insider risk
 last_verified: 2026-06-28
@@ -63,6 +63,7 @@ model.
 - [lanai](../vendors/lanai.md) — discovery and governance of AI usage embedded in SaaS.
 - [wald-ai](../vendors/wald-ai.md) — AI usage discovery plus prompt redaction.
 - [surepath-ai](../vendors/surepath-ai.md) — network-based shadow-AI discovery (no per-app integrations), intent classification, sanctioned GenAI portal; acquisition by [f5](../vendors/f5.md) announced 2026-06-22, pending close.
+- [acuvity](../vendors/acuvity.md) — shadow-AI visibility from endpoints/browsers plus agent/MCP runtime enforcement; acquired by Proofpoint 2026-02-12 (cross-listed in [agent-runtime-security](agent-runtime-security.md)).
 - [portal26](../vendors/portal26.md) — AI usage visibility, governance, and forensics.
 - [nudge-security](../vendors/nudge-security.md) — SaaS/AI discovery and shadow-AI governance (primary in [ai-spm](ai-spm.md); cross-listed in [sspm](sspm.md)).
 - [reco](../vendors/reco.md) — SaaS/AI posture and shadow-AI discovery (primary in [ai-spm](ai-spm.md); cross-listed in [sspm](sspm.md)).
@@ -82,10 +83,12 @@ model.
 ## Consolidation / M&A dynamics
 
 Per seed flags (unverified — to confirm in research): Prompt Security flagged as
-acquired by [sentinelone](../vendors/sentinelone.md). Confirmed: [f5](../vendors/f5.md) announced its acquisition of
+acquired by [sentinelone](../vendors/sentinelone.md). Confirmed 2026 deals: Proofpoint acquired
+[acuvity](../vendors/acuvity.md) (announced as completed 2026-02-12) for its "agentic workspace" play, and
+[f5](../vendors/f5.md) announced its acquisition of
 [surepath-ai](../vendors/surepath-ai.md) on 2026-06-22 (pending close) as the shadow-AI discovery layer of its
-new AI Security Platform — the first case of an app-delivery/network incumbent
-buying an AI-native specialist in this category rather than building an "AI
+new AI Security Platform — two cases of platform incumbents buying AI-native
+specialists in this category rather than building an "AI
 guard" module. The broader structural dynamic here is platform encroachment
 rather than startup-to-startup rollups: SASE/CASB incumbents (Zscaler, Netskope,
 Palo Alto) are adding "AI guard" modules that compete directly with the AI-native
@@ -108,8 +111,8 @@ to discover unsanctioned AI use and enforce inline policy on what data flows to 
 tools?
 
 **Answer options:** WitnessAI, Harmonic Security, Aurascape, Nudge Security, Lanai,
-Cyberhaven, Wald.ai, Portal26, Reco, SurePath AI (F5), Zscaler (AI Guard), Netskope
-One, Other (Please Specify).
+Cyberhaven, Wald.ai, Portal26, Reco, SurePath AI (F5), Acuvity (Proofpoint),
+Zscaler (AI Guard), Netskope One, Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -118,7 +121,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - Table-stakes / most-recognized AI-native: WitnessAI, Harmonic, Aurascape, Nudge.
 - Big overlap risk: respondents who already have Zscaler/Netskope/Palo Alto SASE may not see "shadow-AI" as a separate buy — list the incumbent "AI guard" modules so they're counted, and consider an "already covered by our SASE/DLP" option.
 - Cross-listing with [dlp](dlp.md) (Cyberhaven, Prompt Security, Lasso) and [ai-spm](ai-spm.md) (Reco, Nudge, Quilr) means the same vendor may be selected in multiple categories; that's expected but note it for analysis.
-- M&A: Prompt Security flagged → SentinelOne. SurePath AI → F5 announced 2026-06-22 (pending close) — label it "SurePath AI (F5)" so both pre- and post-acquisition buyers recognize it. Show recognizable names.
+- M&A: Prompt Security flagged → SentinelOne. SurePath AI → F5 announced 2026-06-22 (pending close) — label it "SurePath AI (F5)" so both pre- and post-acquisition buyers recognize it. Acuvity → Proofpoint (closed 2026-02-12) — label "Acuvity (Proofpoint)". Show recognizable names.
 
 ## Open taxonomy questions
 
