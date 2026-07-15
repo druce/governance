@@ -135,3 +135,11 @@ Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (
 ## [2026-07-13] lint | R5 acquirer-rendering pass: CSV options renamed, 3 misclassifications fixed
 - Fixed lint bucket "acquired vendor lacks X (Acquirer) rendering" (user request). **Renamed 10 CSV options** to the recognizable "X (Acquirer)" form: Langfuse (ClickHouse), TruLens (Snowflake), TrojAI (A10 Networks), Natoma (Snowflake) ×2 rows, LayerX (Akamai) (was "LayerX browser extension"), Seraphic (CrowdStrike), Conjur (CyberArk), Symmetry Systems (Zscaler), GitHub Advanced Security (Microsoft). Convention: acquirer suffix applied for pending deals too (recognition > deal-status precision; status stays in the Flag column) — consistent with SurePath AI (F5) / CalypsoAI (F5).
 - **3 pages were misclassified, not mislabeled** — fixed the frontmatter instead of the CSV: forcepoint acquired-closed → **pe-owned** (Francisco Partners take-private 2021; also cleared stray acquisition dates that belonged to the TPG/G2CI carve-out), sonatype acquired-pending → **pe-owned** (Vista majority 2019; "pending" was a migration artifact, cleared verify_after), ibm-watsonx-governance acquired-closed → **public** (first-party IBM product; also clears its R4 unconfirmed-close research item).
+
+## [2026-07-15] decision | citizen-dev primer spec
+Approved outline for a new document: "Citizen Development in a Hedge Fund — A Primer
+and Implementation Guide" (CTO audience, full program playbook, enterprise-grade tool
+scope). Spec: `docs/superpowers/specs/2026-07-15-citizen-dev-primer-design.md`.
+Draws on the 12-dimension maturity framework (druce.ai ai_maturity.html), the
+2026-04 ai-implementation post (Crawl→Fly), and this wiki's trust-zone / risk-tier /
+promotion-gate categories. Ch 6 tool claims flagged for research-at-writing-time.
