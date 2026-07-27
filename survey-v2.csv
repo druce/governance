@@ -125,7 +125,7 @@ Shadow-AI / Insider risk,Wald.ai,AI usage discovery + redaction,,https://wald.ai
 Shadow-AI / Insider risk,Portal26,Independent (formerly Titaniam),,https://portal26.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portal26.md
 Shadow-AI / Insider risk,Reco,"NEW: Independent; also AI-SPM / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
 Shadow-AI / Insider risk,SurePath AI (F5),"NEW: Acq. by F5 (announced 2026-06-22, pending close); network-based shadow-AI discovery",,https://www.surepath.ai,https://github.com/druce/governance/blob/master/wiki/vendors/surepath-ai.md
-Shadow-AI / Insider risk,Acuvity (Proofpoint),"NEW: Acq. by Proofpoint (closed 2026-02-12); shadow-AI + agent/MCP visibility",,https://acuvity.ai,https://github.com/druce/governance/blob/master/wiki/vendors/acuvity.md
+Shadow-AI / Insider risk,Proofpoint AI Security (formerly Acuvity),"NEW: Acq. by Proofpoint (closed 2026-02-12); Acuvity brand retired, site redirects; sold as AI Access Security / Agentic AI Security / AI MCP Security",,https://www.proofpoint.com/us/platform/ai-security,https://github.com/druce/governance/blob/master/wiki/vendors/acuvity.md
 Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md

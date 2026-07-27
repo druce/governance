@@ -317,3 +317,58 @@ option should probably be *retired* in favor of a plain "Tenable One AI Exposure
 next survey revision — respondents will not recognize "Apex". Flagging, not acting.
 
 `index.md` deliberately left stale — regenerated once at the end of this batch.
+
+## [2026-07-27] research | acuvity
+
+**Trigger:** URL audit — `acuvity.ai` issues a hard 301. Verified 2026-07-27:
+`https://acuvity.ai` → `301 Moved Permanently`, `Location:
+https://www.proofpoint.com/us/platform/ai-security`. That page is 100% Proofpoint-branded;
+**neither "Acuvity" nor "RYNO" appears on it**, nor on any of the three product pages.
+Unlike Normalyze, Proofpoint published **no lineage/transition page** —
+`/us/acuvity-is-now-proofpoint` 404s.
+
+**No new acquisition facts.** The frontmatter was already correct: acquired by Proofpoint,
+announced-as-completed **2026-02-12** (PR past tense, no separate close date), **terms
+undisclosed**. Confirmed against the same Proofpoint press release plus Thoma Bravo's
+newsroom and BusinessWire. So `ownership_state: acquired-closed` stands; price stays null.
+What changed is **brand status**: Acuvity is retired, and the capability now ships as three
+Proofpoint SKUs — **AI Access Security** (AI app/agent discovery and inventory, runtime
+observability, 18 built-in detectors, forensic audit trails, SIEM/SOAR routing),
+**Agentic AI Security**, and **AI MCP Security** (MCP discovery + risk classification,
+gateway-style inline enforcement, transaction forensics, an 800-plus trusted-MCP-server
+registry).
+
+**Changed — `wiki/vendors/acuvity.md`:** `website` → the Proofpoint AI Security platform page;
+`aka` += `Proofpoint AI Security`; `mcp_support` unverified → **gateway** (the MCP SKU brokers
+and inspects requests inline, not passive monitoring); `tags` += `thoma-bravo`;
+`ownership_note` extended with the redirect/brand-retirement and SKU names; `last_verified` →
+2026-07-27; added three frontmatter `sources:` entries. Body: header banner and one-liner now
+say brand retired / shop it as Proofpoint AI Security; "What it does" gained a present-tense
+SKU breakdown; new "Naming / provenance" section; deployment notes the MCP gateway;
+positioning adds Proofpoint's "intent-aware" AI-security-plus-data-security pitch (labelled as
+the platform's marketing claim, not an Acuvity differentiator); CTO lens tells buyers to ask
+for SKU names because "Acuvity" is ~5 months dead as a purchasing term. **Two open questions
+resolved** (does RYNO survive as a brand → no; MCP depth → gateway); remaining opens now
+include SKU packaging/pricing.
+
+**Decision — slug kept as `acuvity`, NOT renamed.** This deliberately breaks precedent with
+`normalyze` → `proofpoint-dspm` (same acquirer, same batch). Reason: Normalyze became exactly
+one shopping unit ("Proofpoint DSPM"), so a product slug was the unit buyers shop for. The
+Acuvity technology was **split across three SKUs**, so no single product slug is faithful —
+`proofpoint-ai-security` would name the platform, not the unit, and the three SKUs do not each
+deserve a page yet. The acquired-company slug plus a `Naming / provenance` section is the
+honest representation. Revisit if Proofpoint consolidates the three into one purchasable
+product.
+
+**Changed — `survey-v2.csv` row 128:** Vendor URL `https://acuvity.ai` →
+`https://www.proofpoint.com/us/platform/ai-security`; product option "Acuvity (Proofpoint)" →
+"Proofpoint AI Security (formerly Acuvity)"; Flag/Note extended with brand retirement, the
+redirect and the three SKU names. Same survey-design caveat as the Apex/Tenable row:
+respondents will not recognize "Acuvity", so the next survey revision should probably lead
+with the Proofpoint name. Flagging, not acting.
+
+**Source cached:** `raw/sources/2026-07-27--acuvity--brand-retired-proofpoint-ai-security.md`
+(supersedes nothing — sits alongside `2026-07-13--acuvity--proofpoint-acquisition-pr.md`,
+which remains the acquisition-facts anchor).
+
+`index.md` deliberately left stale — regenerated once at the end of this batch.
