@@ -105,7 +105,11 @@ Counts: **42 canonical categories** across 7 layers.
 Per CLAUDE.md §3. Recorded in `log.md`.
 
 - `1Password / Doppler / Infisical` → `1password`, `doppler`, `infisical`
-- `OPA / Styra` → `open-policy-agent` (project) + `styra` (commercial company)
+- `OPA / Styra` → `open-policy-agent` (project) only. Originally split into a second
+  `styra` page for the commercial company; that page was **deleted 2026-07-27** after
+  Styra wound down (core team acqui-hired by Apple ~2025-08, DAS/Enterprise OPA
+  discontinued or open-sourced, styra.com no longer resolves). OPA remains under CNCF
+  governance, and `open-policy-agent` is now the single page for this lineage.
 - `Immuta / Collibra` → `immuta`, `collibra`
 - `Obot / MintMCP` → `obot`, `mintmcp`
 - `Promptfoo (acq. by OpenAI)` → `promptfoo`

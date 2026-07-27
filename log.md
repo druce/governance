@@ -2020,3 +2020,84 @@ Researched and filled in the same pass (single vendor, not a queue item).
   Enterprise split for the AI/MCP features, registered legal HQ, SOC 2 report
   period, A2A Proxy GA status, and the absence of any non-vendor evaluation.
 - 3 sources cached to `raw/sources/2026-07-27--gravitee--*.md`.
+
+## [2026-07-27] lint | url-audit-sweep final pass
+
+Wrap-up pass closing out the day's URL-audit / M&A-verification sweep.
+
+**Sweep totals.** 52 `[2026-07-27]` entries in this log across **~40 distinct vendor
+pages** touched today, plus 2 vendor pages deleted (`styra`, `whylabs`), 1 vendor page
+added (`gravitee`), and 3 slug renames (`auditboard`→`optro`, `conductorone`→`c1`,
+`normalyze`→`proofpoint-dspm`). Committed one-per-vendor throughout, per CLAUDE.md §11.
+
+**Date-sanity sweep (new work this pass).** A scratch script parsed the frontmatter of
+all 231 `wiki/vendors/*.md` pages looking for three signatures of the acquisition-date
+defect that kept surfacing during the sweep: (a) `closed < announced` (transposition),
+(b) `acquired-closed` with `closed == announced` and no citation for the close (the
+fabricated-close pattern), and (c) `acquired-pending` announced >12 months ago (stale
+status, per the heuristic logged on `trulens`).
+
+Raw hits: 2 transposed, 11 same-day closes, 4 pending, 6 state/date inconsistencies.
+After excluding the 8 vendors already verified earlier today and triaging the rest,
+**6 pages carried genuine defects and all 6 were fixed** against primary sources
+(SEC filings preferred), each with a cached source, a dated History line and its own
+commit:
+
+- `github-advanced-security` — **transposed**: `{announced: 2018-10-01, closed:
+  2018-06-01}`, i.e. closed 4 months before announced. Microsoft 8-K dates the
+  announcement 2018-06-04; FY2019 10-K Note 8 and FY2019 Q2 10-Q Note 7 both put the
+  close at **2018-10-25**. Price filled ($7.5B stock, $6,924M allocated). Noted the
+  10-25 vs 10-26 trap — 10-26 is the day *completion was announced*.
+- `prompt-security` — **fabricated close**: `closed` copied `announced` (2025-08-05)
+  while the note said the deal closed in fiscal Q3 FY2026. SentinelOne's 8-K and 10-Q
+  Note 4 both say **2025-09-05**. Price filled (~$180M per 8-K, $159.3M GAAP
+  consideration); the ~$250M Calcalist figure demoted to unconfirmed press estimate.
+- `pangea` — **fabricated close**: `closed` copied `announced` (2025-09-16) behind a
+  "completed ~Sept 2025" hedge. CrowdStrike's press release announced only a *signed
+  agreement*; audited FY2026 10-K Note 12 gives **2025-09-26**. Price filled ($222.7M
+  as filed); the ~$260M press figure demoted.
+- `prisma-access-browser` — **fabricated announce date**: `announced` copied the close
+  date (2023-12-28) while the body already said "intent announced Nov 2023". PANW's Q1
+  FY2024 10-Q Note 15 dates the Talon agreement **2023-11-06** with explicit pending
+  language. Close 2023-12-28 confirmed. The ~$625M in the body appears in no PANW
+  filing — replaced with $458.6M final GAAP consideration (~$550.0M at signing).
+- `hashicorp-sentinel` + `terraform-cloud` — **conflated announce/close**, same deal:
+  both had `acquired-closed` next to `closed: null` (self-contradictory) with
+  `announced: 2025-02-27` actually holding the *close* date. IBM announced **2024-04-24**
+  and completed **2025-02-27**; HashiCorp's closing 8-K states both dates in one
+  sentence. Ten-month gap was the UK CMA inquiry (Phase 1 clearance 2025-02-25). Price
+  filled; `owner: IBM 2025-02-27` normalized to `owner: IBM`.
+- `promptfoo` — **self-contradicting close**, the variant this sweep kept finding:
+  `acquired-closed` with `closed` copied from `announced` (2026-03-09), while the page's
+  own Open Questions admitted "only the announcement was public" and the body said OpenAI
+  "announced it *would* acquire". Both primary posts use pending language and carry
+  "The closing of the acquisition is subject to customary closing conditions"; no
+  completion notice exists and neither party is an SEC filer. Corrected to
+  `acquired-pending`, `closed: null`, `verify_after: 2026-10-01`.
+
+Checked and confirmed **not** defects: `splxai` (closed 2025-10-31 genuinely precedes the
+2025-11-03 announcement — Zscaler announced an already-completed deal, 10-Q sourced),
+`apex-security` and `trulens` (honest month-precision close dates), and all 4
+`acquired-pending` pages (none stale — oldest is 195 days, all carry `verify_after`).
+
+**Follow-ups, not chased this pass** (low impact, no reader-misleading claim):
+- `relativity-trace` — `ownership_state: acquired-closed` with `owner: Relativity` really
+  describes a 2021 Silver Lake **minority growth investment**, not an acquisition. The
+  note is honest about it; the state field is the wrong shape. Taxonomy question more
+  than a fact error. Still an open R4.
+- `github-codespaces` — `acquired-closed` with an all-null `acquisition` block; it is a
+  first-party Microsoft/GitHub product, not an acquired company. Same shape problem.
+  Still an open R4.
+
+**Housekeeping.** `taxonomy.yaml` appendix still routed `OPA / Styra` to a `styra` page
+deleted earlier today — rewritten to point at `open-policy-agent` alone with the
+wind-down recorded; `taxonomy.md` regenerated. `index.md` regenerated.
+
+**Final lint status: 0 errors · 27 warns · 2 research-needed · 280 pages.** Commit gate
+clean — zero errors and no `Status: Unresolved` anywhere in `wiki/`. Research queue is
+down from 4 to 2 (the two shape questions above); the 27 warns are the long-standing R1
+orphan and R9 CSV-note backlog, unchanged in character by this sweep. Verified no live
+markdown link anywhere in `wiki/`, `index.md` or `survey-v2.csv` still points at
+`styra.md` or `whylabs.md`; remaining mentions are intentional historical plain text on
+`open-policy-agent`, `policy-as-code` and `authorization-engine`, plus `log.md` and
+`migration-report.md` history.
