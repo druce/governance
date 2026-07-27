@@ -1037,3 +1037,73 @@ question, three source entries, history line). Cached
 `survey-v2.csv` checked: **no Helicone row exists** (zero matches, case-insensitive), so there was
 nothing to renote — no CSV change. Crunchbase and Dealroom acquisition entries both 403 to direct
 fetch; used as title-level corroboration only, not cited as primary evidence.
+
+## [2026-07-27] research | lakera
+
+**Check Point / Lakera is closed, and both the close date and the price came from the acquirer's
+own SEC filings rather than press.** The URL audit flagged an ambiguous signal: `lakera.ai` loads
+200 with no redirect and the unchanged title "Lakera: The AI-Native Security Platform to
+Accelerate GenAI" — i.e. it still presents as an independent vendor — but the footer reads
+"©1994-2026 Check Point Software Technologies Ltd." 1994 is Check Point's founding year, three
+decades before Lakera existed, so that copyright line is a parent company's boilerplate on a
+property it owns. Ownership changed; the marketing site did not.
+
+Check Point is a foreign private issuer (NASDAQ: CHKP), so it files 6-K/20-F rather than 8-K/10-Q.
+EDGAR full-text search returned seven Lakera-mentioning filings. The **FY2025 Form 20-F** (filed
+2026-03-31), Note 3: Acquisitions, item (f), is definitive:
+
+> "On **October 22, 2025**, the Company **completed the acquisition** of all outstanding shares of
+> **Lakera AI AG** ('Lakera'), a privately-held Swiss company. … The Company acquired Lakera for
+> **total consideration of approximately $201.8** [million]."
+
+The filing's XBRL contexts corroborate (`chkp:LakeraAiAgMember` acquisition-date context tagged
+`2025-10-01 – 2025-10-22`). Moved `ownership_state` **acquired-pending → acquired-closed**,
+`acquisition.closed` null → **2025-10-22**, `verify_after` cleared. Sign-to-close was 36 days
+against a press-release estimate of "Q4 2025."
+
+**Price correction, and a discrepancy worth recording.** The page carried "~$300M reported"
+(Calcalist, repeated widely). The audited figure is **$201.8M total consideration** — roughly
+$100M lower. Logged as a **soft / scope-mismatch** contradiction, not a hard one: accounting
+"total consideration" excludes amounts expensed as post-close compensation, and retention/earn-out
+packages routinely inflate the number journalists are briefed on. But **no primary source itemizes
+the gap**, so the page says so explicitly rather than asserting retention. $201.8M is now the
+authoritative price in frontmatter; the ~$300M press figure is retained in the sources list at
+lowered confidence specifically to document the discrepancy.
+
+**The purchase price allocation turned out to be the most decision-relevant thing in the filing.**
+Goodwill $150.1M (74% of price, "primarily attributed to synergies"); core technology $44.0M over
+**7 years**; customer relationships $4.4M over **1 year**; trademark $0.3M over **1 year**. Check
+Point's own accounting assumption is that the Lakera *brand* and the acquired *standalone customer
+base* have about a year of remaining economic value from October 2025, while the *engine* has
+seven. That is the fingerprint of absorb-the-product/retire-the-identity. Recorded the useful lives
+as filing facts and labeled the intent reading as our inference.
+
+**Brand decision: no rename**, per this sweep's rule (rename only when the old brand is retiring
+*and* the new brand is distinctive). Lakera fails the first half today — live site, own name, own
+marketing, still sold. `website` stays `https://www.lakera.ai`, slug stays `lakera`, survey option
+stays "Lakera (Check Point)". Added an explicit open question and a note that the 1-year trademark
+life means this specific decision should be revisited inside a year.
+
+Also rewrote the framing, since "acquired" changes what this vendor *is* to a buyer. Positioning
+previously read as best-of-breed pure-play; it now groups Lakera with the 2025 platform-absorption
+wave — [prisma-airs](wiki/vendors/prisma-airs.md) (Palo Alto), [cisco-ai-defense](wiki/vendors/cisco-ai-defense.md),
+[calypsoai](wiki/vendors/calypsoai.md) (F5), [aim-security](wiki/vendors/aim-security.md) (Cato),
+[prompt-security](wiki/vendors/prompt-security.md) (SentinelOne) — and notes that the technical
+differentiation survives the deal while the *neutrality* argument does not. Checked each
+"independent alternative" against its own page before listing it, which caught prompt-security
+(SentinelOne-owned, so moved to the absorbed list); witnessai, enkrypt-ai, mindgard and hiddenlayer
+remain `independent`. CTO lens reworked around the commercial consequences: you now contract with
+Check Point; ask for standalone-availability and renewal protection in writing given the 1-year
+trademark life; but counterparty risk arguably *fell* — a $201.8M cash purchase with a 7-year
+technology life and a Center-of-Excellence mandate is an investment case, not an acqui-hire.
+
+Updated `wiki/vendors/lakera.md` (ownership_state, acquisition close + price, ownership_note,
+last_verified 2026-07-27, verify_after cleared, tags +check-point, new frontmatter `sources:`
+entries, new Brand-status section, rewritten Positioning / Ownership / CTO-lens / open-questions,
+three new body sources, history line). Cached
+`raw/sources/2026-07-27--lakera--checkpoint-20f-close-date-and-price.md`.
+
+`survey-v2.csv`: **two** Lakera rows (AI Runtime Security line 45, AI Red Teaming line 160), both
+carrying "close exp. Q4 2025 — verify" / "verify close". Both flag-notes updated to the closed date
+and filed price; product names left as "Lakera (Check Point)" and both vendor URLs left at
+lakera.ai, consistent with the no-rename decision.
