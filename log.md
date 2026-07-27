@@ -1567,3 +1567,94 @@ the acquirer's 10-Q/8-K and read the business-combination or subsequent-event no
 `acquisition.closed == acquisition.announced` with no `sources:` entry backing the close — that predicate cheaply
 identifies the whole affected population rather than catching them one page at a time. Recorded against the sweep's
 open follow-ups item.
+
+## [2026-07-27] research | trojai
+URL audit + M&A re-verification against A10's primary disclosures and EDGAR. Verified status:
+**`acquired-closed` — CONFIRMED, no correction needed.** A10 Networks (**NYSE**: ATEN), announced *and*
+closed **2026-06-15**, **price undisclosed**.
+
+Re-checked because the 2026-06-28 pass had recorded `acquisition: {announced: 2026-06-15, closed:
+2026-06-15}` — a `closed` value identical to `announced` with no separate citation, which is the exact
+defect shape corrected on natoma and symmetry-systems earlier in this sweep. Here the state survives
+scrutiny.
+
+Affirmative evidence for close:
+- A10's own release, verbatim lead (identical across two independent retrievals — a10networks.com and
+  StockTitan's reproduction of the wire): *"SAN JOSE, Calif., June 15, 2026 – A10 Networks (NYSE: ATEN)
+  today announced that it **has acquired** TrojAI…"* Completed-transaction grammar, with **no**
+  definitive-agreement, closing-conditions, regulatory-approval, or expected-close language anywhere.
+  Ordinary simultaneous sign-and-close for a small private tuck-in needing no clearance.
+- **Brand integration already live**: troj.ai (200, no redirect) serves a logo reading "TrojAI by A10
+  Networks" plus a "New! A10 Networks Acquires TrojAI" banner. Putting the acquirer's name in the
+  target's logo is post-close behaviour — pre-close, that is what gun-jumping rules forbid. Contrast
+  symmetry-systems.com, still on its own domain with a "Zscaler *to acquire*" banner.
+
+Negative SEC evidence, consistent with a closed-but-immaterial tuck-in rather than against close:
+**no 8-K filed** (A10's only 8-Ks since 2026-05-01 are 2026-05-01 and 2026-05-07, both Item 5.02
+officer changes — no Item 2.01); **EDGAR full-text search for "TrojAI" across all 10-K/10-Q/8-K returns
+zero hits** (the only three EDGAR hits for the string anywhere are TrojAI, Inc.'s own 2024-04-24 Form Ds,
+CIK 0002019012). Item 2.01 is triggered only by acquiring a *significant* amount of assets, and A10
+stated the deal is immaterial to FY2026 — so no filing obligation arises. A10's most recent 10-Q covers
+the quarter ended 2026-03-31 and predates the deal; the quarter ended 2026-06-30 is the first period
+containing it, due early Aug 2026.
+
+Price stays **null** — never disclosed, and unlike the F5/SurePath case there is no filed cash-flow
+statement covering the period to bound it against. Not guessed at, per CLAUDE.md §7.
+
+Frontmatter: `ownership_state` unchanged (acquired-closed, now actually sourced); `acquisition`
+unchanged but now cited; `ownership_note` rewritten to state the sign-and-close basis explicitly;
+`last_verified` 2026-06-28→2026-07-27; `verify_after` null→**2026-08-15** (A10's Q2 FY2026 10-Q, the
+first filing that could carry a purchase-price allocation); added 4 `sources:` entries; tags +=
+a10-networks, acquired-closed. `website` unchanged — troj.ai is live with no redirect and the brand
+persists as a sub-brand, so it stays the canonical URL.
+
+Body: rewrote Ownership around *why* closed is defensible here (verbatim grammar + brand integration +
+absence-of-8-K reasoning) rather than asserting it; added a new section on the acquisition as a genuine
+**diversification** — A10 is a ~$250M ADC/load-balancer/DDoS vendor moving from the packet/flow layer to
+the model/prompt layer, a different engineering substrate sold to a different buyer, with "sovereign AI
+security" (on-prem hardware AI firewall + TrojAI's software Detect/Defend) as the stated thesis and the
+self-hosted posture flagged as both the most durable rationale and the capability most at risk of being
+diluted toward appliance attach. Resolved the close-date open question; added open questions on price,
+on the newer **Defend for MCP** / **Defend for Employees** SKUs seen on the post-acquisition site, and on
+founder retention.
+
+Incidental verifications: TrojAI HQ (Saint John, New Brunswick) independently confirmed against TrojAI,
+Inc.'s SEC Form D business address, 14 King St. Suite 102. A10's exchange confirmed as **NYSE** via
+`data.sec.gov` submissions (`exchanges: ["NYSE"], tickers: ["ATEN"]`) — the page's "NYSE: ATEN" was
+already correct; a NASDAQ attribution raised during the sweep was wrong.
+
+survey-v2.csv: the TrojAI row said "announced 2026-06-15 — **pending**", which was **wrong**; corrected to
+CLOSED with the verified date, ticker, undisclosed terms, and the sub-brand note. Note this is the mirror
+image of the symmetry-systems finding, where the CSV was right and the wiki page wrong — the two artifacts
+drift independently and neither can be treated as authoritative over the other.
+
+Cached: `raw/sources/2026-07-27--trojai--a10-close-verification.md`
+
+## [2026-07-27] decision | trojai acquired-closed retained — sign-and-close distinguished from unsourced-close
+No status change, but recording the reasoning because this is the first page in the sweep where the
+suspicious `closed == announced` pattern turned out to be **legitimate**, and the discriminator is worth
+having written down.
+
+The pattern flagged on natoma and symmetry-systems is an announcement date copied into `closed` where the
+underlying deal was still subject to closing conditions. That is a fabrication. But `closed == announced`
+is *also* the correct, truthful encoding of a simultaneous sign-and-close, which is the norm for small
+private acquisitions needing no regulatory clearance. The two are indistinguishable from the date fields
+alone — the discriminator is the acquirer's own grammar plus observable integration:
+
+- **Pending** looks like: "entered into a definitive agreement," "expected to close in Q4," "subject to
+  the satisfaction of closing conditions"; target still on its own domain and brand; acquirer's filings
+  describe a *proposed* transaction. (Zscaler/Symmetry.)
+- **Closed** looks like: "has acquired," no conditions language at all, and the target's brand already
+  absorbed into the acquirer's. (A10/TrojAI.)
+
+Decision: **retain `acquired-closed`**, and treat the absence of an 8-K as neutral rather than as evidence
+of pendency — Item 2.01 has a significance threshold this deal explicitly does not meet, so demanding a
+filing here would import a false standard. The residual uncertainty is real but narrow: A10 has never
+published a close *date* as such, so 2026-06-15 rests on the release's past tense. `verify_after:
+2026-08-15` queues A10's Q2 FY2026 10-Q; if its business-combination note gives a different acquisition
+date, correct in place with a dated History line — the calypsoai precedent.
+
+Sweep tally for this defect pattern is now: **natoma** (false closed → pending), **symmetry-systems**
+(false closed → pending), **splxai** (right state, wrong date), **surepath-ai** (pending → closed on
+inference), **trojai** (closed, correctly). The lesson is that `closed == announced` is a *prompt to
+verify*, not a defect in itself.
