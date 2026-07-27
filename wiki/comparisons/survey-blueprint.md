@@ -52,7 +52,7 @@ Design rule: **ask about what a fund buys as one decision.** Where the wiki spli
 | # | Question | Maps to | Shortlist |
 |---|---|---|---|
 | Q10 | AI-SPM / agent security *(merges 2 wiki rows)* | [ai-spm](../categories/ai-spm.md) + [agent-runtime-security](../categories/agent-runtime-security.md) | Zenity, Noma, Prisma AIRS, Cranium, Lasso, Operant, Straiker, Other |
-| Q11 | Agent authorization & tool/MCP access *(merges 3 wiki rows)* | [authorization-engine](../categories/authorization-engine.md) + [mcp-gateway](../categories/mcp-gateway.md) + [tool-identity-integration](../categories/tool-identity-integration.md) | Cerbos, OPA/Styra, Permit.io, Oso, Kong MCP, Solo.io agentgateway, Arcade, Composio, Other |
+| Q11 | Agent authorization & tool/MCP access *(merges 3 wiki rows)* | [authorization-engine](../categories/authorization-engine.md) + [mcp-gateway](../categories/mcp-gateway.md) + [tool-identity-integration](../categories/tool-identity-integration.md) | Cerbos, OPA, Permit.io, Oso, Kong MCP, Solo.io agentgateway, Arcade, Composio, Other |
 | Q12 | Non-human / agent identity | [non-human-identity](../categories/non-human-identity.md) | CyberArk (Palo Alto), Astrix (Cisco, pending), Aembit, Oasis, Token, Natoma (Snowflake), Entro, Clutch, Other |
 
 ## Foundation & governance (gated / as relevant)

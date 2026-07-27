@@ -99,7 +99,7 @@ date several survey answer options.
 | [whylabs](../vendors/whylabs.md) | Apple | ML monitoring (acqui-hire; product wound down) | ~2025 (med conf.) | — |
 | [seraphic](../vendors/seraphic.md) | CrowdStrike | Enterprise browser security | Announced | 2026-01-13 ($420M) |
 | [layerx](../vendors/layerx.md) | Akamai | Browser security extension | Announced | 2026-05-14 (~$205M) |
-| [styra](../vendors/styra.md) / OPA team | Apple | Authorization (acqui-hire; OPA stays CNCF) | ~2025-08 (med conf.) | — |
+| Styra / OPA team | Apple | Authorization (acqui-hire; company since wound down, OPA stays CNCF — see [open-policy-agent](../vendors/open-policy-agent.md)) | ~2025-08 (med conf.) | — |
 
 > **Snowflake and Zscaler are each running two-deal AI roll-ups** here (Snowflake: TruEra +
 > Natoma; Zscaler: SplxAI + Symmetry Systems). Apple quietly absorbed two open-source-adjacent

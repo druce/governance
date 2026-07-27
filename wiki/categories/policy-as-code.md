@@ -56,7 +56,6 @@ infra policy).
 OSS projects and the general-purpose policy engines:
 
 - [open-policy-agent](../vendors/open-policy-agent.md) — CNCF general-purpose policy engine (Rego); the de facto standard for cloud/K8s and externalized authz.
-- [styra](../vendors/styra.md) — commercial OPA: management, distribution, and control plane (DAS) for OPA at scale.
 - [hashicorp-sentinel](../vendors/hashicorp-sentinel.md) — policy-as-code embedded in the HashiCorp stack (Terraform/Vault), governing infrastructure provisioning.
 - [kyverno](../vendors/kyverno.md) — Kubernetes-native policy engine using YAML/CRDs instead of a dedicated policy language.
 - [terraform-cloud](../vendors/terraform-cloud.md) — cross-listed: enforces Sentinel/OPA policy on infrastructure changes at provisioning time.
@@ -67,10 +66,15 @@ the same idea pointed at runtime agent decisions.
 
 ## Consolidation / M&A dynamics
 
-A largely open-source-anchored space: OPA (CNCF) commercialized by Styra; Kyverno
-(CNCF); Sentinel proprietary to HashiCorp — and HashiCorp itself flagged as acquired by
-IBM (per seed; unverified — to confirm in research), which would place Sentinel and
-Terraform Cloud under IBM stewardship. No heavy roll-up otherwise; the live trend is
+A largely open-source-anchored space: OPA (CNCF); Kyverno (CNCF); Sentinel proprietary to
+HashiCorp — and HashiCorp itself flagged as acquired by IBM (per seed; unverified — to
+confirm in research), which would place Sentinel and Terraform Cloud under IBM stewardship.
+
+The one clean exit here was a failure: OPA's commercial sponsor **Styra wound down in 2026**
+after Apple acqui-hired its founding maintainers (Aug 2025). Styra DAS and Enterprise OPA are
+discontinued and styra.com no longer resolves (checked 2026-07-27), while OPA itself is
+unaffected under CNCF — a useful reminder that "OSS project with a company behind it" and
+"the company" are separate bets. No heavy roll-up otherwise; the live trend is
 these engines being repurposed from infra governance toward **agent/MCP authorization**.
 
 ## Adjacent categories
@@ -86,15 +90,15 @@ these engines being repurposed from infra governance toward **agent/MCP authoriz
 **Question.** Which policy-as-code engines does your firm use to enforce
 version-controlled policy (infrastructure, Kubernetes, or agent/tool authorization)?
 
-**Answer options.** Open Policy Agent (OPA); Styra; HashiCorp Sentinel; Kyverno;
+**Answer options.** Open Policy Agent (OPA); HashiCorp Sentinel; Kyverno;
 Terraform Cloud (Sentinel/OPA); Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** OPA is table-stakes / de facto standard; Styra is the
-commercial wrapper around it, so respondents may legitimately select both — not a
-contradiction. Sentinel selection usually tracks Terraform adoption; Kyverno tracks
+**Notes for survey design.** OPA is table-stakes / de facto standard. **Styra was dropped
+as an option (2026-07):** the commercial OPA wrapper is defunct, so a "Styra" write-in
+means legacy DAS usage, not net-new adoption. Sentinel selection usually tracks Terraform adoption; Kyverno tracks
 Kubernetes adoption. Heavy conceptual overlap with the [authorization-engine](authorization-engine.md) survey
 (OPA, Cerbos appear in both) — clarify whether you are asking about infra policy vs
 agent/tool authz, or respondents will conflate them. HashiCorp's ownership (IBM, per
@@ -102,7 +106,7 @@ seed) may date the Sentinel/Terraform options.
 
 ## Open taxonomy questions
 
-- Strong overlap with [authorization-engine](authorization-engine.md): OPA and Styra appear in both. The cut
+- Strong overlap with [authorization-engine](authorization-engine.md): OPA appears in both. The cut
   here is infra/CI/CD policy vs runtime agent/tool authorization — worth a comparison
   page rather than merging.
 - Is this a "governance" category or a "policy/process" enabler? Kept under governance

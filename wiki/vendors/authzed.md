@@ -46,7 +46,7 @@ Primary [authorization-engine](../categories/authorization-engine.md) — the Re
 Open-source **SpiceDB** (Apache-2.0) self-hosted; **AuthZed** offers managed **Dedicated** (single-tenant cloud), **Serverless**, and on-prem **Enterprise** editions with SLAs. Stores its own relationship data (stateful) backed by Postgres/CockroachDB/Spanner-class stores; exposes a gRPC/HTTP permissions API with Zanzibar-style consistency tokens (zookies). Pairs with your IdP for identity; it stores the *relationships*, not credentials. Current site markets it as "the authorization platform for AI and modern applications."
 
 ## Positioning & differentiators
-The **Zanzibar/ReBAC specialist** — deepest fit when permissions are relationship-graph-shaped at scale. Versus [open-policy-agent](open-policy-agent.md) / [cerbos](cerbos.md) (stateless policy engines that evaluate rules over attributes you supply but don't store relationships), [oso](oso.md) (Polar DSL, does ReBAC too but less Zanzibar-purist), [permit-io](permit-io.md) (managed wrapper over OPA/Cedar), [styra](styra.md) (enterprise OPA). The tradeoff: SpiceDB owns a stateful permissions store (more power for relationship data, more to operate) where stateless engines push data-fetching to the caller.
+The **Zanzibar/ReBAC specialist** — deepest fit when permissions are relationship-graph-shaped at scale. Versus [open-policy-agent](open-policy-agent.md) / [cerbos](cerbos.md) (stateless policy engines that evaluate rules over attributes you supply but don't store relationships), [oso](oso.md) (Polar DSL, does ReBAC too but less Zanzibar-purist), [permit-io](permit-io.md) (managed wrapper over OPA/Cedar). The tradeoff: SpiceDB owns a stateful permissions store (more power for relationship data, more to operate) where stateless engines push data-fetching to the caller.
 
 ## Ownership, funding & M&A
 Founded **2020** by **Jimmy Zelinskie, Jake Moshenko, and Joseph (Joey) Schorr/Zwicker** — ex-CoreOS/Quay infrastructure engineers. HQ **New York, NY** (some sources list SF). Raised **~$16M**: Series A **$12M** (**2024-06**, led by General Catalyst, with Work-Bench, Y Combinator, Amplify Partners). **No M&A** — independent (no seed flag). Confidence high.
@@ -55,7 +55,7 @@ Founded **2020** by **Jimmy Zelinskie, Jake Moshenko, and Joseph (Joey) Schorr/Z
 Day-2. The right pick specifically when your authorization is **relationship/sharing-heavy** — document/folder hierarchies, nested teams, multi-tenant data — and you want consistent, fast checks an agent can call before reading a record. Heavier to run than a stateless engine (it's a database you operate, or you buy the managed tier). For a fund doing entitlement-aware RAG over shared content, SpiceDB-style ReBAC is a strong primitive; for simple role/attribute checks, [cerbos](cerbos.md) / [open-policy-agent](open-policy-agent.md) are lighter. Series-A vendor — manage vendor-risk, though the OSS core limits lock-in.
 
 ## Competitors / alternatives
-[open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [oso](oso.md), [permit-io](permit-io.md), [styra](styra.md).
+[open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [oso](oso.md), [permit-io](permit-io.md).
 
 ## Open questions / to verify
 - Exact NY-vs-SF HQ and any funding since the 2024 Series A.

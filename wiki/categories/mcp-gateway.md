@@ -105,7 +105,7 @@ In production; Would recommend; Would not recommend.
 
 **Notes for survey design.**
 - Very new and OSS-heavy — expect **low production adoption**, lots of "evaluating," and self-built solutions hiding in "Other."
-- **Overlap risk is high:** the CSV asked MCP gateway, authorization engine, and tool identity as *one* question. Here they're split; respondents will still conflate them. A scope line ("the *doorway/allowlist* that brokers tool calls — not the auth engine or the connectors") helps. Cerbos/OPA/Styra/Permit.io/Oso belong on the [authorization-engine](authorization-engine.md) question; Composio/Descope/Stytch/WorkOS on [tool-identity-integration](tool-identity-integration.md).
+- **Overlap risk is high:** the CSV asked MCP gateway, authorization engine, and tool identity as *one* question. Here they're split; respondents will still conflate them. A scope line ("the *doorway/allowlist* that brokers tool calls — not the auth engine or the connectors") helps. Cerbos/OPA/Permit.io/Oso belong on the [authorization-engine](authorization-engine.md) question; Composio/Descope/Stytch/WorkOS on [tool-identity-integration](tool-identity-integration.md).
 - Kong, TrueFoundry, and Prisma AIRS also appear on the [ai-gateway](ai-gateway.md) question — same vendor, different door.
 
 ## Open taxonomy questions

@@ -171,3 +171,40 @@ User flagged normalyze.ai redirect. VERIFIED: normalyze.ai 301-redirects to proo
 
 ## [2026-07-27] decision | slug rename normalyze → proofpoint-dspm
 Product-slugged (`proofpoint-dspm`), not `proofpoint`, per the product-as-shopping-unit convention (prisma-airs precedent): "Proofpoint" alone is ambiguous — Proofpoint also owns Acuvity and its core email/DLP franchise, and no company-level proofpoint page exists. `aka: [Normalyze]`; website → Proofpoint DSPM product URL; inbound links (rubrik, wiz, bedrock-security, symmetry-systems, teleskope, acuvity, dspm category, M&A map), taxonomy notes, and CSV row updated. Survey option renders "Proofpoint DSPM (formerly Normalyze)".
+
+## [2026-07-27] decision | delete styra page — company wound down
+`wiki/vendors/styra.md` **deleted** (git rm). Not a rename — a vendor-is-gone case. Styra
+(creator of OPA, sold Styra DAS / Enterprise OPA) is no longer a going concern: Apple
+acqui-hired its founding OPA maintainers (Teemu Koponen, Tim Hinrichs, Torin Sandall) plus
+much of engineering (~2025-08), the commercial enterprise products were discontinued /
+open-sourced (Cloud Native Now, osohq.com, TechCrunch-HN reporting), and **styra.com now
+fails to resolve (DNS SERVFAIL, confirmed independently 2026-07-27)**. The page's soft
+contradiction from 2026-06-28 ("acquired the developer of OPA" vs "acqui-hire only") is
+thereby resolved in favor of *acqui-hire followed by wind-down*, and the page's open
+question "corporate status of Styra Inc. post-Apple" is answered: wound down.
+
+OPA itself is unaffected — still a CNCF Graduated project under unchanged governance — and
+its content already lives at `wiki/vendors/open-policy-agent.md`. survey-v2.csv row 93 was
+already renamed to "Open Policy Agent (OPA)" in a prior session with an explanatory note;
+**confirmed still correct, no CSV change made**. `index.md` intentionally left stale — it is
+regenerated once at the end of this cleanup batch.
+
+**12 files repaired** (link removal, judged case-by-case rather than find-replace):
+- Delinked + kept as historical plain text where Styra's history is load-bearing:
+  `wiki/vendors/open-policy-agent.md` (created-at-Styra lineage, expanded to record the
+  wind-down and the dead domain), `wiki/comparisons/ai-security-m-and-a-map.md` (M&A row
+  retained — the acqui-hire happened — now pointing at open-policy-agent),
+  `wiki/categories/authorization-engine.md` + `wiki/categories/policy-as-code.md` (M&A
+  dynamics sections rewritten from "uncertain roadmap" to "wound down").
+- Dropped entirely from competitor / alternatives / positioning lists, since a defunct
+  company is not a live alternative: `oso.md`, `kyverno.md`, `hashicorp-sentinel.md`,
+  `authzed.md`, `permit-io.md`, `cerbos.md`. Stale prose "standing up OPA+Styra yourself"
+  → "standing up and operating OPA yourself" (permit-io, cerbos).
+- Dropped as a **survey answer option** in both category pages, with a note explaining the
+  removal so survey design keeps the context (a "Styra" write-in = legacy DAS, not net-new).
+  Same stale option cleaned out of `wiki/comparisons/survey-blueprint.md` (Q11) and
+  `wiki/categories/mcp-gateway.md` (overlap note) — plain-text mentions, no dangling links,
+  but they named Styra as a live choice.
+- Left deliberately: `taxonomy.yaml` / `taxonomy.md` / `taxonomy-gaps.md` historical record
+  of the `OPA / Styra` → two-page split (a record of a past decision, not a live pointer),
+  and `raw/` sources (immutable).

@@ -40,13 +40,13 @@ tags: [first-party, policy-as-code, hashicorp, ibm]
 
 **Deployment & architecture** — Embedded framework, not a standalone server: runs inside Terraform Cloud/Enterprise (HCP Terraform), Vault, Nomad, Consul Enterprise. Available on paid/Enterprise tiers. CLI for local policy testing.
 
-**Positioning & differentiators** — Proprietary and **HashiCorp-ecosystem-specific** — its strength (deep, native integration with Terraform/Vault) is also its limit. Contrast the open, general-purpose engines: [open-policy-agent](open-policy-agent.md) / [styra](styra.md) (Rego, cloud-native, works across many systems) and [kyverno](kyverno.md) (Kubernetes-native, YAML). Pick Sentinel when you are standardized on HashiCorp Enterprise; pick OPA/Kyverno for portability.
+**Positioning & differentiators** — Proprietary and **HashiCorp-ecosystem-specific** — its strength (deep, native integration with Terraform/Vault) is also its limit. Contrast the open, general-purpose engines: [open-policy-agent](open-policy-agent.md) (Rego, cloud-native, works across many systems) and [kyverno](kyverno.md) (Kubernetes-native, YAML). Pick Sentinel when you are standardized on HashiCorp Enterprise; pick OPA/Kyverno for portability.
 
 **Ownership, funding & M&A** — Part of HashiCorp, **acquired by IBM 2025-02-27** ($6.4B); now an IBM product. No separate M&A. Confidence: high.
 
 **CTO / hedge-fund lens** — Day-2. Relevant only if you run HashiCorp Enterprise/HCP and want policy gates on infrastructure and secrets. Not an AI-specific control, but a credible mechanism to enforce trust-zone and promotion-gate rules in IaC. If you are not a HashiCorp shop, [open-policy-agent](open-policy-agent.md) or [kyverno](kyverno.md) is the more neutral choice.
 
-**Competitors / alternatives** — [open-policy-agent](open-policy-agent.md), [styra](styra.md), [kyverno](kyverno.md).
+**Competitors / alternatives** — [open-policy-agent](open-policy-agent.md), [kyverno](kyverno.md).
 
 **Open questions / to verify** — Post-IBM roadmap; whether Sentinel stays HashiCorp-exclusive or broadens.
 

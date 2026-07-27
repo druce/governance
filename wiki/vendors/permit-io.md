@@ -46,16 +46,16 @@ Primary [authorization-engine](../categories/authorization-engine.md); cross-lis
 Hybrid: Permit hosts the control plane (policy authoring, audit) while the **PDP can run locally** (sidecar/container) so authorization decisions and sensitive data stay in your environment — useful for regulated shops. SDKs across major languages; REST API for policy management. Built on OPA/Cedar + OPAL. Integrates with existing auth/IdP (it authorizes, it doesn't authenticate).
 
 ## Positioning & differentiators
-Known for **developer experience and speed-to-implement** — no-code editor plus code, and "don't write your own authz." Versus [open-policy-agent](open-policy-agent.md) (raw engine, write your own Rego), [styra](styra.md) (enterprise OPA management), [cerbos](cerbos.md) (stateless OSS engine, also hosted), [oso](oso.md) (Polar DSL), [authzed](authzed.md) (Zanzibar/ReBAC graph). Permit's hedge is engine-agnostic (OPA *and* Cedar) with a managed wrapper; its agent/MCP messaging is early but active.
+Known for **developer experience and speed-to-implement** — no-code editor plus code, and "don't write your own authz." Versus [open-policy-agent](open-policy-agent.md) (raw engine, write your own Rego), [cerbos](cerbos.md) (stateless OSS engine, also hosted), [oso](oso.md) (Polar DSL), [authzed](authzed.md) (Zanzibar/ReBAC graph). Permit's hedge is engine-agnostic (OPA *and* Cedar) with a managed wrapper; its agent/MCP messaging is early but active.
 
 ## Ownership, funding & M&A
 Founded **2021** (originally "Authorizon") by **Or Weis** (CEO) and **Asaf Cohen**; HQ **Tel Aviv**. Raised **~$14M**: ~$6M early round then **Series A $8M** (**2024-02**, led by Scale Venture Partners, with NFX, Firestreak, Roosh, Verissimo). **No M&A** — independent (no seed flag). Confidence high.
 
 ## CTO / hedge-fund lens
-Day-2. Good fit when you want externalized, fine-grained agent/tool authz **without** standing up and operating OPA+Styra yourself — the local-PDP model keeps decisions and data in-house, which matters for a fund. Lower engineering lift than raw OPA; more opinionated than Cerbos. Diligence the maturity of the agent/MCP features (newer than the core authz product) before betting an agent program on them. Series-A vendor — weigh vendor-risk for a core control.
+Day-2. Good fit when you want externalized, fine-grained agent/tool authz **without** standing up and operating OPA yourself — the local-PDP model keeps decisions and data in-house, which matters for a fund. Lower engineering lift than raw OPA; more opinionated than Cerbos. Diligence the maturity of the agent/MCP features (newer than the core authz product) before betting an agent program on them. Series-A vendor — weigh vendor-risk for a core control.
 
 ## Competitors / alternatives
-[open-policy-agent](open-policy-agent.md), [styra](styra.md), [cerbos](cerbos.md), [oso](oso.md), [authzed](authzed.md), [pomerium](pomerium.md).
+[open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [oso](oso.md), [authzed](authzed.md), [pomerium](pomerium.md).
 
 ## Open questions / to verify
 - Maturity/production references for the **agent / MCP authorization** features specifically (vs core app authz).

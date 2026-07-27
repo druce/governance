@@ -46,7 +46,7 @@ Primary [authorization-engine](../categories/authorization-engine.md) (Polar-bas
 Managed **Oso Cloud** (SaaS) is the primary path; SDKs in major languages call a central PDP. Self-managed options exist. "Oso for Agents" adds discovery/monitoring across endpoints and an MCP-aware policy layer. Pairs with your IdP; authorizes rather than authenticates.
 
 ## Positioning & differentiators
-Known for **Polar** — an expressive, purpose-built authz DSL — and a strong developer-education brand (Authorization Academy). Versus [open-policy-agent](open-policy-agent.md) (Rego, infra-general), [cerbos](cerbos.md) (stateless YAML), [authzed](authzed.md) (Zanzibar/ReBAC database), [permit-io](permit-io.md) (managed OPA/Cedar wrapper), [styra](styra.md) (enterprise OPA). Oso's distinctive 2025 bet is leaning into **agent** authorization/security as a wedge — closest in that framing to [zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md) on the runtime side while remaining an authz engine at its core.
+Known for **Polar** — an expressive, purpose-built authz DSL — and a strong developer-education brand (Authorization Academy). Versus [open-policy-agent](open-policy-agent.md) (Rego, infra-general), [cerbos](cerbos.md) (stateless YAML), [authzed](authzed.md) (Zanzibar/ReBAC database), [permit-io](permit-io.md) (managed OPA/Cedar wrapper). Oso's distinctive 2025 bet is leaning into **agent** authorization/security as a wedge — closest in that framing to [zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md) on the runtime side while remaining an authz engine at its core.
 
 ## Ownership, funding & M&A
 Founded **~2018** by **Graham Neray** (CEO) and **Sam Scott** (CTO); remote, New York base. **Series A $8.2M** (**2021-03**, led by **Sequoia**, with SV Angel, Company Ventures, Highland Capital and notable angels). Disclosed total ~**$11M** (incl. 2019 Sequoia seed); some trackers cite up to ~$26M cumulatively — hence ownership_confidence medium on the exact figure. **No M&A** — independent (no seed flag). Confidence high on independence, medium on total funding.
@@ -55,7 +55,7 @@ Founded **~2018** by **Graham Neray** (CEO) and **Sam Scott** (CTO); remote, New
 Day-2. Attractive if you want a managed authz engine with an expressive policy language and minimal ops, and you're interested in the **agent-security angle** (discover/monitor/control agents) from one vendor. The agents product is **new** — diligence maturity and production references before relying on it as a primary agent-runtime control; for pure authz the core Oso Cloud is more proven. The Polar DSL is a (mild) lock-in consideration vs OPA/Cedar's broader ecosystems.
 
 ## Competitors / alternatives
-[open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [authzed](authzed.md), [permit-io](permit-io.md), [styra](styra.md); on the agent-runtime side [zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md).
+[open-policy-agent](open-policy-agent.md), [cerbos](cerbos.md), [authzed](authzed.md), [permit-io](permit-io.md); on the agent-runtime side [zenity](zenity.md), [operant-ai](operant-ai.md), [straiker](straiker.md).
 
 ## Open questions / to verify
 - **Exact cumulative funding** (sources disagree: ~$11M disclosed vs ~$26M cited) and any round since 2021.
