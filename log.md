@@ -499,3 +499,89 @@ Cisco SKU name lands before fielding, rename both rows to it.
 close date — not touched here to keep this commit one vendor wide.
 
 `index.md` deliberately left stale — regenerated once at the end of this batch.
+
+## [2026-07-27] research | azure-dev-boxes
+
+**Product sunset, not an ownership change.** URL audit found a transition banner on
+`https://azure.microsoft.com/en-us/products/dev-box`, verbatim: *"Capabilities of Microsoft
+Dev Box are transitioning to Windows 365. Existing customers can continue using Dev Box, but
+new sign-ups will no longer be accepted as of November 1, 2025."* Confirmed against a second
+Microsoft primary source — the Dev Box **roadmap** page on Microsoft Learn
+(`/azure/dev-box/dev-box-windows-365-announcement`, `ms.date` 2026-05-01) has been replaced
+in place by a maintenance-mode notice: *"Dev Box is now in maintenance mode, with no
+additional features planned. Microsoft's investments for developer cloud environments are
+focused on Windows 365."* Existing dev boxes, pools and configurations "remain fully
+functional and supported." **No end-of-service date has been announced** — treat retirement
+timing as unknown, not indefinite.
+
+**It's a merge, not a rename — so "Windows 365" was NOT added to `aka`.** Windows 365
+predates Dev Box (Dev Box was always built on the Windows 365 / Cloud PC platform), is still
+sold, and has its own SKUs and admin surface (Intune / M365 admin center rather than the
+Azure Dev Center resource model). Directions on Microsoft calls it "a capability merge rather
+than a simple rename." Adding it as an alias would wrongly imply the Dev Box slug and the
+Windows 365 slug denote the same buying unit.
+
+**Successor capabilities identified** (Windows Developer Blog, Build 2026, 2026-06-02 —
+primary). Two things, at deliberately different maturities: **Windows 365 with Developer
+configuration** (*public preview*) is the direct replacement for a Dev Box pool image —
+preconfigured Win11 with VS Code, Git, GitHub CLI, WSL from first sign-in; **Windows 365 for
+Agents** (*GA*, within Agent 365) gives AI agents Intune-managed Cloud PCs isolated from the
+user's own machine to run multi-step workflows. Worth flagging for this wiki's thesis: the
+successor line ships a **separately-branded agent-containment SKU at GA while the developer
+image is still preview** — Microsoft's investment is weighted toward the agent case, and Dev
+Box never had an agent-specific offering at all.
+
+**Licensing left at medium confidence.** Directions on Microsoft and Licensing Lore & Law
+both report developer scenarios are enabled via **Windows 365 Frontline** at ~50% over
+Windows 365 Enterprise, one license covering up to three Cloud PCs; the same analysts report
+an onboarding-exception form for orgs that evaluated Dev Box before the cutoff. **Neither
+Microsoft page states a required SKU**, so per CLAUDE.md §7 this stays analyst-reported in
+prose and out of frontmatter.
+
+**Cancelled-before-GA features noted as governance gaps.** The maintenance-mode page lists
+seven killed features; two matter to a regulated buyer inheriting a Dev Box estate — firewall
+**Service Tags** (egress rules) and automatic **developer offboarding** on leaver/transfer.
+Those are egress-control and JML gaps that will never be filled in this product.
+
+**Changed — `wiki/vendors/azure-dev-boxes.md`:** `last_verified` 2026-06-28 → 2026-07-27;
+`verify_after` null → 2027-01-31 (re-check for an announced end-of-service date);
+`ownership_note` extended with the sunset; tags += `maintenance-mode`,
+`closed-to-new-customers`; added a 4-entry `sources:` block. `ownership_state` **unchanged**
+at `public` — Microsoft owned it before and owns the successor. Note `maintenance-mode` *is*
+a legal `ownership_state` enum value (SCHEMA.md §3.2), but selecting it would destroy the
+ownership fact; followed the existing `wiki/vendors/helicone.md` precedent of recording
+frozen status as a **tag** alongside a real ownership state. Body: added a closure callout
+under the H1, a new "Product status & the Windows 365 transition" section, rewrote
+Positioning, Ownership, CTO lens and Competitors, expanded open questions, Sources and
+History.
+
+**`market_position` left `null` deliberately.** None of the SCHEMA.md §3.3 labels (leader /
+challenger / legacy-incumbent / platform-module / oss-default / niche-specialist /
+ai-native-disruptor) honestly describes a product withdrawn from sale, and the rule requires
+justifying the label in a sentence — which can't be done here without misleading. Stated as
+such on the page rather than left as a silent null.
+
+**CTO lens re-cut around buying-relevance**, which is the material change: a new evaluator
+cannot buy this and should look at Windows 365 (budgeting for Frontline, expecting preview
+quality on the developer image); an existing estate should schedule migration as Day-2 work
+and get the end date from their account team; the underlying thesis — governed ephemeral
+cloud workstations to keep dev and agent work off local endpoints — is unchanged, only the
+SKU moved.
+
+**`survey-v2.csv`: no change needed.** No Azure Dev Box row exists, and correctly so —
+`ephemeral-environments` is `adoption_tier: practice` with `survey_question: null`, so per
+CLAUDE.md §6 the category carries no survey scaffolding. GitHub Codespaces is likewise absent.
+Nothing to flag.
+
+**Source cached:**
+`raw/sources/2026-07-27--azure-dev-boxes--windows-365-transition.md`.
+
+**Follow-ups:** (1) **No `wiki/vendors/windows-365.md` exists** — Windows 365 is now the live
+product in the ephemeral-environments slot and arguably warrants a page, especially Windows
+365 for Agents, which is agent-containment infrastructure and relevant well beyond this
+category; flagged for the human as a scope call rather than created unilaterally. (2) Re-check
+2027-01-31 for an announced Dev Box end-of-service date. (3) Confirm the Frontline licensing
+requirement with a Microsoft primary source if one ever publishes. (4)
+`wiki/categories/ephemeral-environments.md` and `wiki/vendors/github-codespaces.md` both
+reference Dev Box as a live option and may want the closure noted — not touched here to keep
+this commit one vendor wide.
