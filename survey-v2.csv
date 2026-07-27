@@ -130,7 +130,7 @@ Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md
 Enterprise Browser Security,Microsoft Edge for Business,Microsoft,,https://www.microsoft.com/en-us/edge/business/,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-edge-business.md
 Enterprise Browser Security,Island Browser,Independent,,https://www.island.io,https://github.com/druce/governance/blob/master/wiki/vendors/island.md
-Enterprise Browser Security,LayerX (Akamai),"Acq. by Akamai (announced 2026-05-14; ~$205M)",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
+Enterprise Browser Security,LayerX (Akamai),"Acq. by Akamai closed 2026-07-02; ~US$205M (acquirer-stated, unaudited). Now sold as Akamai Workforce Protector (formerly LayerX); layerxsecurity.com still live",,https://layerxsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/layerx.md
 Enterprise Browser Security,Prisma Access Browser (Palo Alto; former Talon),Palo Alto,,https://www.paloaltonetworks.com/sase/prisma-browser,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-access-browser.md
 Enterprise Browser Security,Menlo Security,"Independent; acquired Votiro (2025-02)",,https://www.menlosecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/menlo-security.md
 Enterprise Browser Security,Seraphic (CrowdStrike),"Acq. by CrowdStrike (announced 2026-01-13; $420M)",,https://seraphicsecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/seraphic.md

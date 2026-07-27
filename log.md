@@ -1107,3 +1107,63 @@ three new body sources, history line). Cached
 carrying "close exp. Q4 2025 — verify" / "verify close". Both flag-notes updated to the closed date
 and filed price; product names left as "Lakera (Check Point)" and both vendor URLs left at
 lakera.ai, consistent with the no-rename decision.
+
+## [2026-07-27] research | layerx
+
+URL-audit follow-up. layerxsecurity.com came back live (200, no redirect) carrying the banner
+"Akamai acquires LayerX, delivering end-to-end security and real-time AI usage control", while the
+page still said `ownership_state: acquired-pending` with "close expected Q3 2026".
+
+**Deal is closed.** Akamai's own completion press release (2026-07-02, dateline "CAMBRIDGE, Mass.,
+July 02, 2026"): "announced the completion of its acquisition of LayerX... The deal, valued at
+approximately US$205 million, was initially announced on May 14." So announced 2026-05-14, closed
+**2026-07-02** — Q3 2026 guidance met on the first business days of the quarter.
+
+**Price caveat, per this sweep's public-company rule.** Akamai is NASDAQ: AKAM, so I went to EDGAR
+for an audited figure and there isn't one yet. Checked the submissions index directly: **no 8-K**
+was filed for the completion (Akamai's May 8-Ks are credit-agreement/notes-offering and
+annual-meeting items — a ~$205M deal is below its significant-acquisition threshold, so Item 2.01
+never triggered), and the last 10-Q on file is Q1 2026 (period ended 2026-03-31, filed 2026-05-08),
+i.e. *before* the deal was announced. The Q2 2026 10-Q was not yet filed on 2026-07-27, and since
+the close landed two days after the 2026-06-30 quarter-end it could only appear there as a
+subsequent event anyway. The audited purchase-price allocation should first show up in the **Q3
+2026 10-Q, ~Nov 2026**. Recorded ~US$205M as acquirer-stated and unaudited, in both the
+`acquisition:` price field and the body, and set `verify_after: 2026-11-30` to go get the real
+number — the same PPA check that has already corrected press-reported prices for
+[calypsoai](wiki/vendors/calypsoai.md) and [lakera](wiki/vendors/lakera.md) in this sweep.
+
+**Brand decision: no rename — but this one is genuinely borderline**, unlike the other holds this
+sweep. The split: layerxsecurity.com is live, unredirected and still fully LayerX-branded ("LayerX
+Interaction Security Platform"), which fails the "old brand is retiring" half of the rule; but on
+akamai.com the product page is *already* titled **"Akamai Workforce Protector (Formerly LayerX)"**,
+with a Gartner Peer Insights listing under the new name. That is further along than e.g. Lakera,
+where Check Point picked no successor name at all. So the acquirer has chosen and shipped a
+replacement — the old brand is retiring, just not yet on its own domain. Held at slug `layerx`,
+`website: https://layerxsecurity.com`, survey option "LayerX (Akamai)" for now, added
+"Akamai Workforce Protector" to `aka`, and logged an explicit open question to move the slug when
+layerxsecurity.com starts redirecting. Expect to revisit this well inside a year.
+
+Rewrote the framing since it is no longer independent: added a "Brand status" section documenting
+the two-sided transition; positioning now groups LayerX with the platform-absorption wave —
+[prisma-airs](wiki/vendors/prisma-airs.md) (Palo Alto), [cisco-ai-defense](wiki/vendors/cisco-ai-defense.md),
+[calypsoai](wiki/vendors/calypsoai.md) (F5), [aim-security](wiki/vendors/aim-security.md) (Cato),
+[lakera](wiki/vendors/lakera.md) (Check Point), [prompt-security](wiki/vendors/prompt-security.md)
+(SentinelOne) — and notes that the extension-based technical differentiation survives while the
+neutrality argument does not. Checked each competitor against its own page: island, menlo-security
+and grip-security are all still `independent` (now a differentiator worth naming),
+chrome-enterprise is Alphabet-owned, so that comparison is Akamai's stack vs Google's. CTO lens
+reworked around commercial consequences: quote under the new product name, ask in writing whether
+it is still sold standalone or only bundled with Zero Trust/ZTNA, counterparty risk arguably *fell*
+(profitable public acquirer vs a $10M-ARR startup), and diligence artifacts (SOC 2, DPA,
+sub-processor list) need re-requesting under Akamai's entity.
+
+Updated `wiki/vendors/layerx.md` (ownership_state → acquired-closed, acquisition closed date +
+price, rewritten ownership_note, aka, tags +acquired/+akamai, last_verified 2026-07-27,
+verify_after 2026-11-30, four new frontmatter `sources:` entries, new lede, new Brand-status
+section, rewritten Positioning / Ownership / CTO-lens / open questions, four new body sources,
+history line). Cached `raw/sources/2026-07-27--layerx--akamai-close-2026-07-02.md`.
+
+`survey-v2.csv`: one LayerX row (Enterprise Browser Security, line 133). Flag-note updated from
+"announced 2026-05-14" to the closed date, price caveat and the Akamai Workforce Protector name;
+product name left "LayerX (Akamai)" and vendor URL left at layerxsecurity.com per the no-rename
+decision above.
