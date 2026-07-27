@@ -12,7 +12,7 @@ hq: San Francisco, California, USA
 ownership_state: acquired-closed
 owner: Cisco
 ownership_note: 'Acquired by Cisco — completed 2024-03-18 for ~$28B (announced 2023-09-21). Now a Cisco business unit; was NASDAQ: SPLK.'
-acquisition: {announced: 2024-03-18, closed: 2023-09-21, price: null}
+acquisition: {announced: 2023-09-21, closed: 2024-03-18, price: ~$28B ($157.00/share cash)}
 funding_total: null
 last_funding: null
 market_position: null
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [siem, soar, observability, cisco]
 ---
@@ -67,3 +67,4 @@ tags: [siem, soar, observability, cisco]
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; confirmed Splunk acquired by Cisco, completed 2024-03-18 for ~$28B (announced 2023-09-21). Set ownership=subsidiary (Cisco), confidence high; hedge_fund_fit high (Day-1 SIEM).
+- [2026-07-27] Confirmation pass (URL audit: splunk.com live, states "Splunk is now a Cisco company", cites Cisco Talos + Cisco support). Ownership already correct. Fixed transposed `acquisition` frontmatter dates (announced/closed were swapped relative to the body and `ownership_note`) and filled `price` from the already-cited sources. No re-research.

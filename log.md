@@ -1270,3 +1270,31 @@ survey-v2.csv: AI Gateway / "Portkey (Palo Alto)" flag-note expanded with announ
 date, price, and the standalone-SKU caveat; the AI Runtime Security row's Prisma AIRS note
 now dates the Portkey component too. Vendor URL left as `https://portkey.ai` (still live and
 still the product's own site).
+
+## [2026-07-27] research | splunk
+
+Confirmation-only pass, triggered by the automated URL audit: `splunk.com` is live with no
+redirect and states "Splunk is now a Cisco company", with references to Cisco Talos threat
+intel and Cisco support resources. This is long-settled news — Cisco closed the acquisition
+2024-03-18 — and the page already documented it correctly in `ownership_state`
+(`acquired-closed`), `owner` (Cisco), `ownership_note`, the M&A section and the body. No
+re-research performed; the two existing sources (Network World completion coverage and the
+Splunk 8-K) already support every claim on the page.
+
+Not a pure no-op, though. The `acquisition:` frontmatter had its dates **transposed** —
+`{announced: 2024-03-18, closed: 2023-09-21}` — i.e. a close date preceding the announcement,
+contradicting the `ownership_note` and the M&A section on the same page, both of which read
+correctly (announced 2023-09-21, completed 2024-03-18). Almost certainly a field-order slip
+when the stub was filled on 2026-06-28. Corrected to `{announced: 2023-09-21, closed:
+2024-03-18}`. Worth noting for the rest of the URL-audit sweep: a bulk ownership check that
+only looks at `ownership_state`/`owner` will not catch this class of error, since both of
+those fields were right — only the structured dates were wrong.
+
+Also filled `price`, which had been `null` despite the body and both cited sources stating
+the figure: `~$28B ($157.00/share cash)`, matching the price-format convention used by the
+cyberark/portkey/koi rows. `last_verified` 2026-06-28 -> 2026-07-27.
+
+survey-v2.csv checked, no change needed: the SIEM/SOAR/SecOps row already reads
+`Splunk (Cisco)` with flag-note "Acq. by Cisco (closed 2024-03-18; $28B)" — consistent with
+the corrected frontmatter. Open question about post-acquisition Splunk + Cisco XDR bundling
+and current licensing left standing; it needs pricing research, not an ownership check.
