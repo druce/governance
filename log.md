@@ -585,3 +585,108 @@ requirement with a Microsoft primary source if one ever publishes. (4)
 `wiki/categories/ephemeral-environments.md` and `wiki/vendors/github-codespaces.md` both
 reference Dev Box as a live option and may want the closure noted — not touched here to keep
 this commit one vendor wide.
+
+## [2026-07-27] research | amazon-q-business
+
+**Internal product sunset, not M&A.** URL audit found an End of Support Notice on
+`https://aws.amazon.com/q/business/`, verbatim: *"Amazon Q Business will no longer be open to
+new customers starting on July 30, 2026. If you would like to use the service, please sign up
+prior to July 30, 2026."* Confirmed against AWS's own docs — the **Amazon Q Business
+availability change** page (`/amazonq/latest/qbusiness-ug/qbusiness-availability-change.html`),
+which also carries the full migration guide: *"Amazon Q Business remains fully supported and
+AWS will continue to provide bug fixes and security updates for existing customers, however new
+feature requests will no longer be considered."* That is maintenance mode. **No end-of-service
+date has been announced** — retirement timing unknown, not indefinite.
+
+> Contradiction (soft): AWS's product page says the closure starts **July 30, 2026**; AWS's
+> docs banner says **July 31, 2026**. Both instruct sign-up *prior to July 30, 2026*. A one-day
+> discrepancy inside AWS's own copy, immaterial to the guidance — recorded on the page and in
+> the cached source so it isn't later mistaken for a transcription error. Not escalated.
+
+**Amazon Quick is a capability merge, NOT a rename — so "Amazon Quick" was NOT added to `aka`.**
+This was the judgment call the task hinged on, and the evidence is one-sided. AWS's own framing
+sentence — *"Amazon Quick represents the next evolution of Amazon Q Business"* — is positioning
+written for the Q Business reader. Quick is actually the **QuickSight** service lineage:
+AWS announced on **2025-10-09** that QuickSight (BI product, GA since 2016) "evolves to Amazon
+Quick Suite," bundling the existing BI engine with new generative features (Quick Research,
+Flows, Automate, Index, Chat); by the **2026-04-28** "What's Next with AWS" event the name is
+plain **"Amazon Quick"** — the "Suite" suffix has been dropped from AWS's 2026 copy. The
+plumbing settles it: Quick setup asks for a Region for *"initial data storage capacity, called
+SPICE"*; AWS's own migration script calls `boto3.client('quicksight')` and
+`quicksight.update_folder_permissions` against `arn:aws:quicksight:…` principals; Quick sits in
+the console under **Analytics**; and Q Business's non-IDC auth mode is literally named
+`AWS_QUICKSIGHT_IDP`. So Quick's scope is materially wider than Q Business's (BI dashboards +
+workflow automation + agentic research *alongside* enterprise-content Q&A). Adding it as an
+alias would wrongly assert the two slugs denote the same buying unit. **Same call as
+`azure-dev-boxes` → Windows 365**, decided on the same reasoning three commits earlier.
+
+**The finding that actually matters for this wiki: the successor is weaker on entitlement.**
+Q Business earns its `entitlement-aware-rag` tag because connectors crawl source ACLs and
+retrieval is filtered per user. AWS's migration guide documents that several of those
+properties do **not** survive the move — these are AWS's words, not analysis:
+- **Non-IDC mode loses per-user entitlement outright**: *"all Amazon Quick users automatically
+  receive access to connected Q Business indexes… you lose the per-user and per-group access
+  distinctions that Q Business enforced at the index level."* Under IAM Identity Center it *is*
+  preserved. **The IdP choice is therefore a security decision, not a convenience one** — a
+  firm with Chinese-wall obligations should treat a non-IDC migration as a control failure.
+- **Guardrails and Actions are "explicitly excluded from the BYOI capability"** — topic and
+  global controls must be rebuilt, and guardrails configured in Q Business do not apply through
+  BYOI.
+- **The User Store has no equivalent**; user management drops to the knowledge-base level.
+- **Document-level ACLs cover only S3, Confluence Cloud, SharePoint and Google Drive**, versus
+  Q Business's broader connector-side ACL crawling. Elsewhere AWS's advice is to shard content
+  into per-role knowledge bases and script permissions — manual work, not automatic.
+- One genuine *improvement*: Quick's ingest default is stricter — it *"does not ingest documents
+  that lack an associated ACL entry,"* where Q Business granted all users access to S3 prefixes
+  absent from the ACL file. Migrators must give every document an explicit ACL entry first or
+  silently lose content.
+
+**Migration path** is BYOI (Bring Your Own Index) — non-destructive, runs in parallel, index and
+Quick instance must share account+Region. Quotas: max **two** Q Business indexes per Region
+(not increasable), and once selected an index **cannot be unselected**. Q Apps must be hand-
+rebuilt as Quick Flows (forms unsupported). Connectors without native Quick equivalents are
+bridged via **MCP**, which cannot back a knowledge base (actions only), has a fixed 60s timeout,
+static tool lists and no step-up auth. Anonymous-access / API-integration customers get no
+documented self-serve path — AWS tells them to contact Support.
+
+**Frontmatter:** `last_verified` → 2026-07-27; `verify_after` 2027-01-31 to re-check for an
+announced end-of-service date. `ownership_state` unchanged (`public`, AWS/Amazon.com) — this is
+an internal sunset, not M&A; detail added to `ownership_note`, and `maintenance-mode` /
+`closed-to-new-customers` tags added, following the `helicone` / `azure-dev-boxes` precedent of
+tagging frozen status rather than overloading `ownership_state`.
+
+**`market_position` left `null` deliberately**, same reasoning as `azure-dev-boxes`: no
+SCHEMA.md §3.3 label honestly describes a product withdrawn from sale, and the rule requires
+justifying the label in a sentence. Stated on the page rather than left a silent null.
+
+**Body re-cut around buying-relevance.** Page now leads with a "Product status — closed to new
+customers" block; adds an "Amazon Quick: what it actually is" section carrying the lineage
+evidence, the BYOI path and the entitlement regressions; CTO lens split into *evaluating now*
+(you can't buy it — look at Quick, budget for the Enterprise subscription since Professional
+can't create knowledge bases or connectors) vs *existing estate* (Day-2, not a fire drill — no
+end date — but insist on IDC and re-derive guardrails/ACL coverage). Four new open questions
+added, the sharpest being **whether the no-training commitment carries over to Quick** — the
+primary-sourced "does not use customer data… for improving underlying LLMs" language is a *Q
+Business* doc and was NOT verified for Quick. That is the single most important thing for a
+fund to confirm before migrating, and it is deliberately left unverified rather than assumed.
+
+**`survey-v2.csv`:** row 6 (`Enterprise AI Assistant, Amazon Q Business`) **kept** — existing
+deployments remain in production and must stay answerable — with a Flag/Note recording the
+closure, the Quick successor, and that future rounds should rename the option to "Amazon Quick"
+or list both during the migration window. **No `Amazon Quick` row added**: no `amazon-quick`
+wiki page exists, and adding an unbacked row would break the CSV↔wiki bijection lint enforces.
+
+**Source cached:** `raw/sources/2026-07-27--amazon-q-business--amazon-quick-transition.md`.
+
+**Follow-ups:** (1) **No `wiki/vendors/amazon-quick.md` exists** — Quick is now the live product
+in this slot and spans `enterprise-ai-assistant`, `entitlement-aware-rag` and BI/automation
+territory this wiki doesn't currently cover; creating it would also unblock the survey option
+rename. Flagged for the human as a scope call rather than created unilaterally. (2) Verify
+Quick's no-training commitment and compliance attestations (does it inherit Q Business's HIPAA/
+ISO 42001, or QuickSight's?). (3) Re-check 2027-01-31 for an announced Q Business end-of-service
+date. (4) `wiki/categories/enterprise-ai-assistant.md` and
+`wiki/categories/entitlement-aware-rag.md` both reference Q Business as a live option and will
+want the closure noted — not touched here to keep this commit one vendor wide. (5) Unrelated but
+noted while researching: **Amazon Q Developer** (the IDE coding assistant, a different product)
+is separately being sunset in **2027** in favour of **Kiro** — worth a check for whether this
+wiki lists it anywhere.
