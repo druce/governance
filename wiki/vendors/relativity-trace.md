@@ -6,7 +6,7 @@ slug: relativity-trace
 aka: [Trace, kCura, Relativity]
 primary_category: comms-surveillance
 also_listed_in: []
-website: https://www.relativity.com/data-breach-response/communication-surveillance/
+website: https://www.relativity.com/
 founded: 2018
 hq: Chicago, IL
 ownership_state: acquired-closed
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: regulated (banking, investment management, financial services, pharma); enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [comms-surveillance, ecomms, market-abuse, mnpi, ediscovery, ai-detection]
 ---
@@ -87,6 +87,13 @@ Comms surveillance is a **Day-2** capability for most funds but becomes **critic
 - Channel coverage and market-abuse model depth relative to [behavox](behavox.md)/[steeleye](steeleye.md) (independent benchmarks, not vendor claims).
 - Pricing model and whether Trace is sold standalone vs. bundled with RelativityOne.
 - Voice/audio surveillance maturity (native vs. partner transcription).
+- Relativity no longer publishes a dedicated Trace product page: the former
+  `/data-solutions/communication-surveillance/` landing page now 301s to the generic
+  `/data-solutions/corporations/` page, and Trace appears nowhere in Relativity's own HTML
+  sitemap (checked 2026-07-27). The product is plainly still active (press releases, the
+  Proofpoint archive partnership, Relativity Fest surveillance sessions), so this reads as
+  marketing-site consolidation rather than sunset — but worth re-checking whether Trace is
+  being de-emphasized, folded into a broader compliance offering, or renamed.
 
 ## Sources
 
@@ -98,3 +105,4 @@ Comms surveillance is a **Day-2** capability for most funds but becomes **critic
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; refined ownership (Relativity, Silver Lake-backed strategic growth investment 2021-03, ~$3.6B valuation, significant minority, largest shareholder; ownership_confidence low→high). Added full body: Trace = proactive e-comms surveillance on RelativityOne (SaaS), launched 2018; e-discovery heritage as key differentiator; detective control, not an inline prompt/egress control; positioned vs [behavox](behavox.md)/[steeleye](steeleye.md)/[nice-actimize](nice-actimize.md)/[shield](shield.md)/[theta-lake](theta-lake.md); hedge_fund_fit unclear→medium. Cached 2 source files (4 cited sources). status stub→researched, confidence low→medium.
+- [2026-07-27] URL fix: `website` on file (`/data-breach-response/communication-surveillance/`) returned HTTP 404. No rebrand, acquisition or sunset — Relativity retired its dedicated Trace landing page; the successor path `/data-solutions/communication-surveillance/` 301s to the generic `/data-solutions/corporations/` (which carries no Trace content), and Trace is absent from Relativity's HTML sitemap and App Hub catalog. With no specific product page to point at, `website` falls back to the root domain `https://www.relativity.com/`. Product confirmed still actively marketed. last_verified → 2026-07-27; added an open question to track the missing product page.

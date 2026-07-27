@@ -1818,3 +1818,40 @@ both updated to the `/ai-security/` path. The third Prisma AIRS-linked row (MCP 
 part of this 404.
 
 Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
+
+## [2026-07-27] research | relativity-trace
+
+Broken-URL fix flagged by the automated link audit. The `website` on file,
+`https://www.relativity.com/data-breach-response/communication-surveillance/`, returns a hard
+HTTP 404.
+
+Unlike the other URL fixes in this batch, there is **no successor product page to move to**.
+The obvious candidate, `https://www.relativity.com/data-solutions/communication-surveillance/`
+— still the link used in Relativity's own Trace press releases — 301s to
+`https://www.relativity.com/data-solutions/corporations/`, a generic "Relativity for
+Corporations" page with no Trace or surveillance content. (`/data-solutions/compliance/` chains
+into the same redirect.) Wayback CDX shows the surveillance path has been a 301 since at least
+2024-01. Also checked and ruled out: `/relativity-trace/`, `/trace/`,
+`/ediscovery-software/trace/`, `/ediscovery-software/app-hub/relativity-trace/` (App Hub moved
+to `apphub.relativity.com`; Trace is not in its catalog — it is first-party, not a partner app),
+and `help.relativity.com` current-version Trace docs. Relativity's own HTML sitemap
+(`/sitemap/`, 247 links, listing every `/data-solutions/` and `/ediscovery-software/` product
+page) contains no Trace or communication-surveillance entry. The XML sitemap is incomplete and
+was not treated as evidence.
+
+Diagnosis: **marketing-site consolidation, not a sunset.** Relativity retired the dedicated
+Trace landing page from its site IA while the product remains actively marketed — Proofpoint
+Enterprise Archive partnership, AI data-cleansing releases, and Relativity Fest 2026
+surveillance sessions all reference Trace as a current AI-powered communication surveillance
+product. No rebrand, acquisition, or ownership change, so ownership frontmatter is untouched.
+
+Per CLAUDE.md §7 ("never invent"), `website` falls back to the root domain
+`https://www.relativity.com/` rather than pointing at a redirect target that does not describe
+the product. `last_verified` → 2026-07-27. Added an open question to track whether Trace is
+being de-emphasized, folded into a broader compliance offering, or renamed.
+
+`survey-v2.csv`: no edit — the Comms Surveillance block (Behavox, SteelEye, Theta Lake, Shield,
+NICE Actimize, Other) has no Relativity Trace row. Noting for a later pass that this is a
+CSV ↔ wiki bijection gap (lint rule), pre-existing and out of scope here.
+
+Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
