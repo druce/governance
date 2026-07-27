@@ -257,3 +257,63 @@ rule R1 has been reporting against `wiki/vendors/whylabs.md` since 2026-07-05; d
 page clears that finding). `index.md` intentionally left stale — regenerated once at the end
 of this batch. `raw/sources/` left untouched (immutable), as are the seed files and
 `proposed-*` snapshots that name WhyLabs as a point-in-time record.
+
+## [2026-07-27] research | apex-security
+
+**Trigger:** URL audit — `apexsec.com` no longer serves Apex content. Confirmed 2026-07-27:
+both `https://apexsec.com` and `https://www.apexsec.com` return HTTP 404 (server: Kestrel);
+the audit also observed a 302 to a HugeDomains "domain for sale" parking page ($15,595).
+The domain has lapsed entirely — the Apex brand has no web presence left.
+
+**Verified (primary sources, cached to
+`raw/sources/2026-07-27--apex-security--tenable-close-and-ai-exposure.md`):**
+
+- **Acquisition CLOSED — June 2025.** Tenable Holdings Form 10-Q for the quarter ended
+  2025-06-30, Note 6: *"In June 2025, we acquired Apex Security, Inc. ... We acquired 100%
+  of Apex's equity through a share purchase agreement for total consideration of $47.8
+  million, including $47.7 million in cash, net of $2.0 million cash acquired, and $0.1
+  million fair value of replacement equity."* Allocation: $6.8M intangibles (proprietary
+  technology, 5-yr life), $41.3M goodwill. This resolves the standing open question
+  ("confirm the deal closed") that had the page at `acquired-pending` with
+  `verify_after: 2026-09-03`. The 10-Q gives **month precision only**; Tenable filed no
+  close 8-K (immaterial at that size), so no day-level close date exists in any primary
+  source — recorded as `2025-06` rather than guessed, per the never-invent rule.
+- **Successor product + live URL.** Apex's technology now ships as **Tenable One AI
+  Exposure**: private customer preview announced on the Tenable blog 2025-08-06 (agentless,
+  built into Tenable One), **GA announced 2026-01-27** ("Tenable Extends Exposure Management
+  to AI Attack Surface"). Live product page: **https://www.tenable.com/products/ai-exposure**.
+  Neither the product page nor the GA release mentions Apex by name — the brand is fully
+  absorbed, which also answers the second standing open question. GA platform coverage is
+  narrower than acquisition-era messaging implied: OpenAI ChatGPT Enterprise + Microsoft
+  Copilot / 365 Copilot / Studio Copilot, with Gemini "forthcoming."
+
+**Decision — price contradiction resolved (soft).** The page had carried Calcalist's
+reported **">$105M"** since 2026-06-28. Tenable's own SEC filing says **$47.8M** total
+consideration. Resolved in favor of the 10-Q: it is authoritative for consideration
+transferred, and the higher press figure most likely folded in retention/incentive packages,
+which are compensation expense rather than purchase price under ASC 805. Both figures are
+kept on the page with that explanation, flagged `Contradiction (soft, resolved)` — **not**
+`Status: Unresolved`, so the commit gate is unaffected. Calcalist source entry downgraded to
+`confidence: low` (superseded on price; still fine as a deal-happened corroborant).
+
+**Changed — `wiki/vendors/apex-security.md`:** `website` → the Tenable AI Exposure product
+page; `ownership_state` acquired-pending → **acquired-closed**; `acquisition` →
+`{announced: 2025-05-29, closed: 2025-06, price: $47.8M}`; `ownership_note` rewritten;
+`aka` += `Tenable One AI Exposure`, `Tenable AI Exposure`; `verify_after` → null;
+`last_verified` → 2026-07-27; added frontmatter `sources:` entries for the close/price and
+the rebrand. Body: header banner and one-liner now say closed-and-rebranded; "What it does"
+gained a present-tense Tenable One AI Exposure paragraph incl. GA platform coverage;
+deployment section notes agentless delivery and that no standalone Apex deployment remains;
+positioning reframed — the differentiator post-integration is co-location in Tenable's
+exposure graph, a consolidation play rather than depth against agent-security pure-plays;
+CTO lens notes there is no Apex contract/pricing path and that adopting this means adopting
+Tenable One; open questions replaced (exact close day, module pricing, non-Microsoft/OpenAI
+coverage); Sources and History updated.
+
+**Changed — `survey-v2.csv` row 65:** Vendor URL → `https://www.tenable.com/products/ai-exposure`;
+product option → "Apex Security (Tenable One AI Exposure)"; Flag/Note extended (not replaced)
+with closed date, corrected price, dead domain and new product name. Survey-design note: this
+option should probably be *retired* in favor of a plain "Tenable One AI Exposure" answer in the
+next survey revision — respondents will not recognize "Apex". Flagging, not acting.
+
+`index.md` deliberately left stale — regenerated once at the end of this batch.

@@ -62,7 +62,7 @@ AI-SPM (AI estate inventory & posture),Zenity,"Independent; spans AI-SPM + agent
 AI-SPM (AI estate inventory & posture),Reco,"NEW: Independent; also shadow-AI / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
 AI-SPM (AI estate inventory & posture),Other (Please Specify),,,,
 Agent Security (runtime protection of agents),Zenity,Independent,,https://zenity.io,https://github.com/druce/governance/blob/master/wiki/vendors/zenity.md
-Agent Security (runtime protection of agents),Apex Security (Tenable),"Acq. by Tenable (announced 2025-05-29; reported >$105M)",,https://www.apexsec.com,https://github.com/druce/governance/blob/master/wiki/vendors/apex-security.md
+Agent Security (runtime protection of agents),Apex Security (Tenable One AI Exposure),"Acq. by Tenable (announced 2025-05-29; closed June 2025; $47.8M per Tenable 10-Q, though press reported >$105M). Brand retired; apexsec.com dead; now Tenable One AI Exposure (GA 2026-01-27)",,https://www.tenable.com/products/ai-exposure,https://github.com/druce/governance/blob/master/wiki/vendors/apex-security.md
 Agent Security (runtime protection of agents),Straiker,Independent,,https://www.straiker.ai,https://github.com/druce/governance/blob/master/wiki/vendors/straiker.md
 Agent Security (runtime protection of agents),Operant AI,Runtime agent/API protection,,https://www.operant.ai,https://github.com/druce/governance/blob/master/wiki/vendors/operant-ai.md
 Agent Security (runtime protection of agents),Lasso Security,"Independent; AI/agent security + shadow-AI",,https://www.lasso.security,https://github.com/druce/governance/blob/master/wiki/vendors/lasso-security.md
