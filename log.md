@@ -690,3 +690,38 @@ want the closure noted — not touched here to keep this commit one vendor wide.
 noted while researching: **Amazon Q Developer** (the IDE coding assistant, a different product)
 is separately being sunset in **2027** in favour of **Kiro** — worth a check for whether this
 wiki lists it anywhere.
+
+## [2026-07-27] research | bedrock-security
+URL audit flagged `https://www.bedrock.security` 301-redirecting to `https://bedrockdata.ai/`,
+raising the question of which name is current — the frontmatter said `name: Bedrock Security`
+with `aka: [Bedrock Data]` (implying Bedrock Data was the *old* name), while the page body
+already said "now operating as Bedrock Data." VERIFIED, direction was backwards in the
+frontmatter: **Bedrock Security → Bedrock Data, announced 2025-08-05** (first-party newsroom
+post + BusinessWire wire copy, "Bedrock Security Rebrands as Bedrock Data to Advance Data
+Governance, Security and Management in the AI Era"). Brand change only — legal entity stays
+**Bedrock Labs, Inc.** (d/b/a Bedrock Data), no ownership event. Same-entity confirmed on four
+independent points: CEO/co-founder **Bruno Kurtic** (named CEO under the old brand
+2024-07-23), same Menlo Park HQ, same patented Metadata Lake product, and the vendor rehosting
+its Bedrock Security press archive on bedrockdata.ai — ruling out a coincidental domain squat.
+Timeline reconciles: the 2025-11-19 $25M Series A release the page already cited was titled
+"*Bedrock Data* Announces...", i.e. post-rebrand, which is why the body was right and the
+frontmatter wrong. Also recorded a name-collision hazard: an **unrelated** "Bedrock Data" at
+`bedrockdata.com` (.406 Ventures-backed SaaS data-integration vendor, product Fusion, active
+at least 2016–2018) — different domain/product/investors, current status unverified.
+Source cached: `raw/sources/2026-07-27--bedrock-security--rebrand-to-bedrock-data.md`.
+
+## [2026-07-27] decision | bedrock-security naming direction corrected; slug rename deferred
+Fixed the inverted `aka`: `title`/`name` → **Bedrock Data**, `aka: [Bedrock Security, Bedrock
+Labs]`, `website` → `https://bedrockdata.ai/`, `ownership_note` gains the rename line,
+`last_verified` → 2026-07-27. Body: new naming paragraph under Ownership, disambiguation
+callout for the unrelated bedrockdata.com, 3 new sources, dated History line. Rippled into
+`survey-v2.csv` (option "Bedrock Security" → "Bedrock Data (formerly Bedrock Security)",
+vendor URL updated — same "formerly" convention as Optro/C1/Proofpoint DSPM), `dspm.md`
+(vendor-list line + survey option), and `taxonomy.yaml` notes ("Bedrock" was ambiguous →
+"Bedrock Data (ex-Bedrock Security)"); taxonomy.md regenerated.
+**Slug rename deferred, not decided.** The `conductorone → c1` and `auditboard → optro`
+precedents say the slug should follow the current company name (`bedrock-data`), but that
+needs `git mv` + inbound-link updates across rubrik, wiz, symmetry-systems, teleskope,
+proofpoint-dspm, collibra and the dspm category, plus the CSV Wiki URL. Left as
+`bedrock-security` with an Open-questions flag on the page for the human to confirm —
+all links remain valid meanwhile.

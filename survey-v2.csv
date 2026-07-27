@@ -217,7 +217,7 @@ DSPM / Data Security Posture,Cyera,"Independent ($9B val 2026); also DLP + data 
 DSPM / Data Security Posture,BigID,Independent,,https://bigid.com,https://github.com/druce/governance/blob/master/wiki/vendors/bigid.md
 DSPM / Data Security Posture,Sentra,Independent,,https://www.sentra.io,https://github.com/druce/governance/blob/master/wiki/vendors/sentra.md
 DSPM / Data Security Posture,Concentric AI,Independent,,https://concentric.ai,https://github.com/druce/governance/blob/master/wiki/vendors/concentric-ai.md
-DSPM / Data Security Posture,Bedrock Security,Independent,,https://www.bedrock.security,https://github.com/druce/governance/blob/master/wiki/vendors/bedrock-security.md
+DSPM / Data Security Posture,Bedrock Data (formerly Bedrock Security),Independent,,https://bedrockdata.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/bedrock-security.md
 DSPM / Data Security Posture,Securiti (Veeam),"Acq. by Veeam (closed 2025-12-11; $1.725B)",,https://securiti.ai,https://github.com/druce/governance/blob/master/wiki/vendors/securiti.md
 DSPM / Data Security Posture,Proofpoint DSPM (formerly Normalyze),"Acq. by Proofpoint (closed ~2024-11); Normalyze brand retired, site redirects",,https://www.proofpoint.com/us/products/data-security-posture-management,https://github.com/druce/governance/blob/master/wiki/vendors/proofpoint-dspm.md
 DSPM / Data Security Posture,Symmetry Systems (Zscaler),"Acq. by Zscaler (announced 2026-05-21 — pending)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md

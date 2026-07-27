@@ -215,7 +215,7 @@ categories:
     adjacent: [dlp, data-access-governance]
     seed_doc_row: "Data Classification & DSPM"
     seed_csv: "DSPM / Data Governance / DLP (split)"
-    notes: "Purview, BigID, Securiti, Cyera, Sentra, Proofpoint DSPM (ex-Normalyze), Wiz DSPM, Concentric, Bedrock, Immuta, Collibra."
+    notes: "Purview, BigID, Securiti, Cyera, Sentra, Proofpoint DSPM (ex-Normalyze), Wiz DSPM, Concentric, Bedrock Data (ex-Bedrock Security), Immuta, Collibra."
 
   - slug: dlp
     display_name: "Data Loss Prevention (DLP)"
