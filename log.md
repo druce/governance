@@ -2101,3 +2101,22 @@ markdown link anywhere in `wiki/`, `index.md` or `survey-v2.csv` still points at
 `styra.md` or `whylabs.md`; remaining mentions are intentional historical plain text on
 `open-policy-agent`, `policy-as-code` and `authorization-engine`, plus `log.md` and
 `migration-report.md` history.
+
+## [2026-07-27] decision | slug rename bedrock-security → bedrock-data
+Human confirmed the rename deferred earlier today. Per the slug convention (vendor slug =
+the company's current name) and the `conductorone → c1` / `normalyze → proofpoint-dspm`
+precedents, `wiki/vendors/bedrock-security.md` → `wiki/vendors/bedrock-data.md` (git mv,
+history preserved); frontmatter `slug: bedrock-data`, `aka: [Bedrock Security, Bedrock Labs]`
+kept so the former name stays searchable. Mechanical only — no facts changed: the 2025-08-05
+rebrand (brand change, legal entity still Bedrock Labs, Inc.) was already verified and written
+up in today's research entry.
+Inbound links updated in `wiki/categories/dspm.md` and vendors `rubrik`, `wiz`,
+`symmetry-systems`, `teleskope`, `proofpoint-dspm`, `collibra`, `immuta` (immuta was **not**
+on the originally-flagged list — caught by a repo-wide grep). `survey-v2.csv` Wiki URL →
+`.../bedrock-data.md`; the survey option text already read "Bedrock Data (formerly Bedrock
+Security)" and is unchanged. `taxonomy.yaml`/`taxonomy.md` needed no edit — they reference the
+display name ("Bedrock Data (ex-Bedrock Security)"), not the slug. Page banner and Open-
+questions flag rewritten from "pending decision" to "done"; History line added. `index.md`
+regenerated. Intentionally left pointing at the old string: the cached source filename
+`raw/sources/2026-07-27--bedrock-security--rebrand-to-bedrock-data.md` (raw/ is immutable),
+the vendor's own press-release URL, and prior `log.md` history.

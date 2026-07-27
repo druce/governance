@@ -69,7 +69,7 @@ Cloud-native DSPM:
 - [sentra](../vendors/sentra.md) — cloud DSPM with data-access context.
 - [proofpoint-dspm](../vendors/proofpoint-dspm.md) — cloud-data security posture; formerly Normalyze, now a Proofpoint platform module.
 - [wiz](../vendors/wiz.md) — DSPM as part of a broader cloud-security platform (also [ai-spm](ai-spm.md)).
-- [bedrock-security](../vendors/bedrock-security.md) — data-store discovery and posture via a "Metadata Lake"; renamed **Bedrock Data** (ex-Bedrock Security) 2025-08-05.
+- [bedrock-data](../vendors/bedrock-data.md) — data-store discovery and posture via a "Metadata Lake"; renamed **Bedrock Data** (ex-Bedrock Security) 2025-08-05.
 - [symmetry-systems](../vendors/symmetry-systems.md) — data-store-centric posture and access analysis.
 - [concentric-ai](../vendors/concentric-ai.md) — AI-based classification of unstructured data (also
   [data-access-governance](data-access-governance.md)).

@@ -55,7 +55,7 @@ Known for fast agentless deployment, the security graph, and attack-path priorit
 **Day-1 if you run meaningful workloads in public cloud**; less central for a shop that is mostly SaaS-only. For a fund, the draw is one tool for cloud misconfig + data exposure + (increasingly) AI asset posture, which maps to data-protection and model-risk diligence. Watch the Google ownership: neutral-multi-cloud messaging is the stated commitment, but a Google-owned control plane may be a governance question for some shops. Pricing is enterprise-tier.
 
 ## Competitors / alternatives
-[cyera](cyera.md), [sentra](sentra.md), [proofpoint-dspm](proofpoint-dspm.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md) (DSPM); [noma-security](noma-security.md), [prisma-airs](prisma-airs.md) (AI-SPM); [microsoft-purview](microsoft-purview.md) (data security in Microsoft estates).
+[cyera](cyera.md), [sentra](sentra.md), [proofpoint-dspm](proofpoint-dspm.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-data](bedrock-data.md) (DSPM); [noma-security](noma-security.md), [prisma-airs](prisma-airs.md) (AI-SPM); [microsoft-purview](microsoft-purview.md) (data security in Microsoft estates).
 
 ## Open questions / to verify
 - Exact total funding figure (sources range ~$1.9B); confirm against Crunchbase/filings.

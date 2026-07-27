@@ -51,7 +51,7 @@ Data layer, [dspm](../categories/dspm.md). Risk focus: **sensitive data** — fi
 SaaS console with agentless, in-place scanning of connected data stores via cloud APIs/roles. Integrates with cloud providers and security tooling. Now folded into the Proofpoint platform alongside Proofpoint DLP.
 
 ## Positioning & differentiators
-Known for in-place scanning and quantified risk ("data risk in dollars"). Nearest neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), and [wiz](wiz.md) (DSPM-as-CNAPP-module). The pitch is no longer standalone DSPM but "DSPM + DLP + human-centric security" in one Proofpoint platform.
+Known for in-place scanning and quantified risk ("data risk in dollars"). Nearest neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-data](bedrock-data.md), and [wiz](wiz.md) (DSPM-as-CNAPP-module). The pitch is no longer standalone DSPM but "DSPM + DLP + human-centric security" in one Proofpoint platform.
 
 ## Ownership, funding & M&A
 **Verified (acquirer matches seed).** Normalyze acquired by **Proofpoint**; announced **2024-10-29**, expected to close **November 2024**; **financial terms not disclosed**. Brand fully absorbed by 2026 (redirect verified 2026-07-27). Note the chain of ownership: **Proofpoint is itself owned by Thoma Bravo** (taken private 2021), so this is effectively a Thoma Bravo-portfolio asset under Proofpoint — Proofpoint's first data/AI-security buy, followed by [acuvity](acuvity.md) (2026-02). Founded 2020 (San Francisco); co-founders Amer Deeba (CEO, ex-Qualys) and Ravi Ithal (CTO, ex-Netskope/Palo Alto); ~$26.6M raised (Series A $22.2M, June 2022, Battery Ventures + Lightspeed). Ownership confidence **high** on the acquirer; **deal terms remain undisclosed**.
@@ -60,7 +60,7 @@ Known for in-place scanning and quantified risk ("data risk in dollars"). Neares
 **Day-1 if you handle regulated/sensitive data and especially if doing RAG** (you must know where sensitive data sits before exposing it to AI). For an existing Proofpoint customer, the value is consolidation — DSPM under the same vendor as email security/DLP. For others, evaluate it against the data-first specialists ([cyera](cyera.md), [sentra](sentra.md)) as a Proofpoint platform module, not a standalone tool — the standalone product and brand are gone.
 
 ## Competitors / alternatives
-[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md).
+[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-data](bedrock-data.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md).
 
 ## Open questions / to verify
 - Independent confirmation of the actual close (press treated it as completed by Dec 2024; a standalone "completion" PR was not located).

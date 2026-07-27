@@ -2,7 +2,7 @@
 title: Bedrock Data
 type: vendor
 name: Bedrock Data
-slug: bedrock-security
+slug: bedrock-data
 aka: [Bedrock Security, Bedrock Labs]
 primary_category: dspm
 also_listed_in: []
@@ -34,8 +34,8 @@ tags: [dspm, data-security, ai-data-governance]
 
 > **Formerly Bedrock Security** — renamed to **Bedrock Data** on 2025-08-05 (brand change
 > only; same company, same CEO, same Menlo Park HQ, legal entity Bedrock Labs, Inc.).
-> `bedrock.security` 301-redirects to `bedrockdata.ai`. The page slug stays
-> `bedrock-security` pending a slug-rename decision — see Open questions.
+> `bedrock.security` 301-redirects to `bedrockdata.ai`. Page slug renamed
+> `bedrock-security` → `bedrock-data` on 2026-07-27 to follow the current company name.
 > Primary category: [dspm](../categories/dspm.md).
 
 **One-liner** — An AI-native data security posture management (DSPM) platform that discovers, classifies, and governs sensitive enterprise data in place using a "Metadata Lake," without moving data outside the customer boundary.
@@ -66,7 +66,6 @@ DSPM is **Day-1** for a fund standing up AI on internal data — you must know w
 [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [symmetry-systems](symmetry-systems.md), [proofpoint-dspm](proofpoint-dspm.md), [concentric-ai](concentric-ai.md), [securiti](securiti.md), [microsoft-purview](microsoft-purview.md), [wiz](wiz.md).
 
 ## Open questions / to verify
-- **Slug rename pending human decision.** Per the CLAUDE.md slug convention (vendor slug = the company's current name) and the `conductorone → c1` / `auditboard → optro` precedents in `log.md`, this page should arguably be `git mv`'d to `wiki/vendors/bedrock-data.md` with inbound links updated (rubrik, wiz, symmetry-systems, teleskope, proofpoint-dspm, collibra, dspm category) plus `taxonomy.yaml` notes and the CSV Wiki URL. Deliberately **not** done unilaterally — flagged 2026-07-27 for the human to confirm.
 - Exact total funding and full cap table (only seed + Series A confirmed; total ~$35M is disclosed-rounds sum).
 - Confirm all three co-founders and current exec roster post-rebrand (only CEO/co-founder Bruno Kurtic is confirmed by name).
 - Current status of the unrelated `bedrockdata.com` (Fusion) company — no evidence found either way.
@@ -85,3 +84,4 @@ DSPM is **Day-1** for a fund standing up AI on internal data — you must know w
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established independent VC-backed (Greylock seed + $25M Series A Nov 2025), rebrand to "Bedrock Data," Menlo Park HQ, founded 2021, DSPM/Metadata-Lake product. No M&A. Set ownership_confidence high.
 - [2026-07-27] **Naming direction corrected.** URL audit found `bedrock.security` 301-redirecting to `bedrockdata.ai`, raising the question of which name is current. Verified against the vendor's own 2025-08-05 rebrand release: **Bedrock Security is the FORMER name, Bedrock Data is the CURRENT name** — the previous frontmatter had it backwards (`name: Bedrock Security`, `aka: [Bedrock Data]`) even though the body already said otherwise. Fixed: `title`/`name` → Bedrock Data, `aka` → [Bedrock Security, Bedrock Labs], `website` → bedrockdata.ai. Same-entity confirmed via CEO (Bruno Kurtic), HQ (Menlo Park), Metadata Lake product, and migrated press archive — not a domain squat. Added a disambiguation note for the unrelated bedrockdata.com/Fusion company. Slug rename to `bedrock-data` flagged, not executed.
+- [2026-07-27] **Slug renamed** `bedrock-security` → `bedrock-data` (user-confirmed), following the `conductorone → c1` and `normalyze → proofpoint-dspm` precedents; inbound links, `survey-v2.csv` Wiki URL, and `index.md` updated. `aka` retains Bedrock Security.
