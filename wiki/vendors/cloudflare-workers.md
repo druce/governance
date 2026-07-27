@@ -6,7 +6,7 @@ slug: cloudflare-workers
 aka: [Workers, Cloudflare Workers AI]
 primary_category: ephemeral-environments
 also_listed_in: []
-website: https://workers.cloudflare.com/
+website: https://www.cloudflare.com/products/workers/
 founded: 2017
 hq: San Francisco, CA, USA
 ownership_state: public
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [first-party, serverless, edge-compute, cloudflare]
 ---
@@ -51,8 +51,9 @@ tags: [first-party, serverless, edge-compute, cloudflare]
 **Open questions / to verify** — Isolation guarantees of the agent code-sandbox offering for genuinely hostile code.
 
 ## Sources
-- [Cloudflare Workers](https://workers.cloudflare.com/) — fetched 2026-06-28 — supports: product description, Cloudflare ownership; confidence: high
+- [Cloudflare Workers](https://www.cloudflare.com/products/workers/) — fetched 2026-07-27 — supports: product description, Cloudflare ownership; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched (light); confirmed Cloudflare (NYSE: NET) ownership → public, high. Positioned as ephemeral/serverless sandbox + egress chokepoint; cross-linked parent [cloudflare](cloudflare.md).
+- [2026-07-27] URL fix: `workers.cloudflare.com` 301-redirects to `www.cloudflare.com/products/workers/` (domain consolidation onto the main marketing site). No ownership, product, or branding change; `last_verified` refreshed.

@@ -1855,3 +1855,24 @@ NICE Actimize, Other) has no Relativity Trace row. Noting for a later pass that 
 CSV ↔ wiki bijection gap (lint rule), pre-existing and out of scope here.
 
 Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
+
+## [2026-07-27] research | cloudflare-workers
+
+URL fix, no substantive change. `https://workers.cloudflare.com/` 301-redirects to
+`https://www.cloudflare.com/products/workers/`, titled "Cloudflare Workers - Global Serverless
+Functions Platform". Fetched and confirmed live and current: serverless functions across 330+
+cities, with the surrounding platform (Workers AI, R2, D1, KV, Queues) actively marketed.
+
+Diagnosis: **domain consolidation onto the main marketing site.** Same company, same product,
+no rebrand, acquisition, or ownership change — Cloudflare, Inc. (NYSE: NET) frontmatter
+untouched.
+
+Changes: `website` → `https://www.cloudflare.com/products/workers/`; `last_verified` →
+2026-07-27; `## Sources` entry re-pointed and re-dated; dated History line noting the
+consolidation.
+
+`survey-v2.csv`: no edit — there is no "Cloudflare Workers" row. The two Cloudflare rows
+(AI-aware Network Security (SSE/SASE), AI Gateway) both point at the AI Gateway product URL and
+the parent [cloudflare](wiki/vendors/cloudflare.md) page, which is correct for those categories.
+
+Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
