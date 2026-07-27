@@ -60,7 +60,7 @@ PANW is assembling identity ([cyberark](../vendors/cyberark.md)) + AI gateway ([
 ### F5
 | Target | What it brought | Status | Date | Value |
 |---|---|---|---|---|
-| [calypsoai](../vendors/calypsoai.md) | AI guardrails + red-team (now F5 AI Guardrails / AI Red Team) | **Closed** | 2025-10-08 | reported ~$180M |
+| [calypsoai](../vendors/calypsoai.md) | AI guardrails + red-team (now F5 AI Guardrails / AI Red Team; brand retired) | **Closed** | 2025-09-26 | $145.2M cash per 10-Q (announced ~$180M) |
 | [surepath-ai](../vendors/surepath-ai.md) | Network-based shadow-AI discovery + intent classification (F5 AI Security Platform) | **Announced — pending** | 2026-06-22 | undisclosed |
 
 F5 is now a two-deal roll-up: CalypsoAI's guardrails/red-team plus SurePath's discovery layer,

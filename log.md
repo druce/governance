@@ -725,3 +725,44 @@ needs `git mv` + inbound-link updates across rubrik, wiz, symmetry-systems, tele
 proofpoint-dspm, collibra and the dspm category, plus the CSV Wiki URL. Left as
 `bedrock-security` with an Open-questions flag on the page for the human to confirm —
 all links remain valid meanwhile.
+
+## [2026-07-27] research | calypsoai
+
+URL audit flagged `calypsoai.com` as 301-redirecting to `https://www.f5.com/products/ai-guardrails`.
+Verified: the redirect resolves 200 to a live **F5 AI Guardrails** page with **zero CalypsoAI
+branding**. The existing `ownership_state: acquired-closed` / `owner: F5` was correct — but two
+recorded facts were **wrong**, and the fix required a primary source rather than the press.
+
+**Corrections (source: F5 Form 10-Q, FY2026 Q1, Note 4 Business Combinations, SEC):**
+
+- **Close date `2025-10-08` → `2025-09-26`.** The 10-Q states verbatim: "On September 26, 2025,
+  the Company closed on a transaction for the acquisition of CalypsoAI Corp." No primary source
+  supports 2025-10-08. The bad date came from dating the F5 completion blog, which announces
+  completion but carries **no close date** and was in fact published 2025-09-29.
+- **Price `null` → `$145.2M cash`.** The 10-Q records $145.2M ($14.2M net tangible assets,
+  $16.9M developed technology, $114.2M goodwill; total $145.207M, preliminary allocation). The
+  widely-cited **~$180M** is the 2025-09-11 *announced* purchase consideration.
+
+Treated as **soft / scope-mismatch**, not a hard contradiction (CLAUDE.md §8): the two price
+figures measure different things — announced headline consideration vs. GAAP purchase price
+allocated at close. Both are now stated on-page with their basis. F5 does **not** reconcile the
+~$35M gap, so no explanation is asserted; logged as an open question instead of a guess. Also
+noted from the filing: CalypsoAI's revenue and earnings were **not material** to F5 — a useful
+scale check on the pure-play at exit.
+
+**Resolved open question:** "Whether the CalypsoAI brand survives or is fully retired into F5
+product naming" — **fully retired**, on both `calypsoai.md` and `f5.md`.
+
+Edits: `calypsoai.md` — website → the F5 product page, `acquisition` filled, `ownership_note`
+rewritten, `last_verified` → 2026-07-27, `brand-retired` tag added; body reframed as a
+historical/absorbed entry (no standalone product, contract or price list; evaluate F5 AI
+Guardrails instead), current F5 capability list added, inline correction note, 2 new sources,
+dated History line. Rippled the same corrections into `f5.md` (frontmatter note, M&A paragraph,
+sources, History, open questions) and `wiki/comparisons/ai-security-m-and-a-map.md` (F5 table
+row), plus `survey-v2.csv` (vendor URL + flag-note). Source cached to
+`raw/sources/2026-07-27--calypsoai--f5-10q-close-date-and-price.md`.
+
+**Worth generalizing:** the 2025-10-08 error came from treating a completion blog post's
+publication date as the close date. Where a deal's close date traces only to a vendor blog,
+check the acquirer's 10-Q/10-K — public acquirers state the exact closing date and the actual
+consideration, and both can differ from the announcement.
