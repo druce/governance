@@ -3,7 +3,7 @@ title: GitHub Advanced Security
 type: vendor
 name: GitHub Advanced Security
 slug: github-advanced-security
-aka: [GHAS, GitHub Code Security, GitHub Secret Protection]
+aka: [GHAS, GitHub Code Security, GitHub Secret Protection, CodeQL]
 primary_category: software-supply-chain
 also_listed_in: []
 website: https://github.com/security/advanced-security
