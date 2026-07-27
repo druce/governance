@@ -766,3 +766,56 @@ row), plus `survey-v2.csv` (vendor URL + flag-note). Source cached to
 publication date as the close date. Where a deal's close date traces only to a vendor blog,
 check the acquirer's 10-Q/10-K — public acquirers state the exact closing date and the actual
 consideration, and both can differ from the announcement.
+
+## [2026-07-27] research | conjur
+
+URL audit flagged `conjur.org` as 301-redirecting to
+`https://www.paloaltonetworks.com/idira/machine/secrets-management` — a live Palo Alto
+Networks page with **zero Conjur or CyberArk branding**. Verified the redirect by curl and
+confirmed the cause.
+
+**Second-order acquisition.** Conjur Inc. → CyberArk (May 2017, ~$42M) → CyberArk → Palo
+Alto Networks (announced 2025-07-30, closed 2026-02-11, ~$25B). In **May 2026** PANW
+rebranded the acquired CyberArk portfolio as **Idira**, and the secrets line landed in
+Idira's *Machine Identity* pillar as **Secrets Manager** (SaaS or self-hosted). Two renames
+stack here: CyberArk had already gone Conjur Cloud → "Secrets Manager, SaaS" and Conjur
+Enterprise → "Secrets Manager, Self-Hosted"; Idira just carried that name forward. The
+**commercial Conjur brand is retired**; the name survives only as the open-source project
+and in SDK repo names (`conjur-api-go` is documented as the "Go client for the CyberArk
+Secrets Manager API").
+
+Changes to `wiki/vendors/conjur.md`: `website` → the Idira Secrets Manager page; `owner`
+**CyberArk → Palo Alto Networks**; `acquisition.announced` **2026-02-11 → 2025-07-30**
+(the close date had been wrongly duplicated into the announce field); `ownership_note`
+rewritten to spell out the two-step chain; `aka` += `Idira Secrets Manager`,
+`Palo Alto Networks Secrets Manager`; tags += `idira`, `renamed`; `last_verified` →
+2026-07-27. Body: re-verified header banner, rewritten one-liner / what-it-does / M&A /
+CTO-lens paragraphs, new **Open source status** section, 4 new sources, dated History line.
+Brand-survival open question **resolved**. `survey-v2.csv` row 203 vendor URL + flag note
+updated. Source cached to
+`raw/sources/2026-07-27--conjur--panw-idira-secrets-management.md`.
+
+**Conjur Open Source is a genuinely open question, not a resolved one.**
+`github.com/cyberark/conjur` is still public, unarchived, and LGPL v3.0 — but its README now
+carries a "Migrating to CyberArk Secrets Manager, Self-Hosted" section, and the marketing
+domain that fronted the project is gone. No PANW statement addresses the OSS roadmap. Left
+flagged as absence-of-evidence rather than inferring a sunset.
+
+**Ordering note:** `cyberark.md` had **not** been processed when this ran (still
+`last_verified: 2026-06-28`, no Idira mention), so this page led rather than followed. Facts
+used here were taken from the existing `cyberark.md` frontmatter (owner `Palo Alto Networks`,
+announced 2025-07-30, closed 2026-02-11) plus fresh research on the Idira rebrand — the
+cyberark task should reuse the cached source above and stay consistent with the naming and
+dates recorded here. `palo-alto-networks.md` and the M&A map may also need the Idira brand
+noted; not touched in this pass.
+
+**Minor, deferred:** the CSV answer option is still labelled `Conjur (CyberArk)`. Under the
+"X (Acquirer)" convention (logged 2026-07-27) the acquirer is now Palo Alto, but "Conjur
+(CyberArk)" is still the more *recognizable* string for survey respondents and the
+convention explicitly optimizes recognition over deal-status precision. Left as-is; the flag
+column now carries the Idira/PANW status. Revisit if the cyberark pass renames its own row.
+
+**Worth generalizing:** a redirect audit that lands on an unfamiliar brand may be reporting a
+*second-order* acquisition — the vendor's acquirer got acquired. Two rename events can stack
+(product rename under acquirer #1, then platform rebrand under acquirer #2), so reconstruct
+the full chain before assuming the redirect target is the direct buyer.

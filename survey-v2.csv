@@ -200,7 +200,7 @@ Identity Governance & Visibility (IGA / ISPM),Silverfort,"NEW: center of gravity
 Identity Governance & Visibility (IGA / ISPM),Other (Please Specify),,,,
 Secrets Manager,Azure Key Vault,Microsoft,,https://azure.microsoft.com/products/key-vault,https://github.com/druce/governance/blob/master/wiki/vendors/azure-key-vault.md
 Secrets Manager,HashiCorp Vault (IBM),"Acq. by IBM (closed 2025-02-27; $6.4B)",,https://www.hashicorp.com/products/vault,https://github.com/druce/governance/blob/master/wiki/vendors/hashicorp-vault.md
-Secrets Manager,Conjur (CyberArk),CyberArk product (now Palo Alto),,https://www.conjur.org,https://github.com/druce/governance/blob/master/wiki/vendors/conjur.md
+Secrets Manager,Conjur (CyberArk),Now sold as Idira Secrets Manager (Palo Alto Networks) — conjur.org retired; Conjur name survives only in OSS,,https://www.paloaltonetworks.com/idira/machine/secrets-management,https://github.com/druce/governance/blob/master/wiki/vendors/conjur.md
 Secrets Manager,AWS Secrets Manager,AWS,,https://aws.amazon.com/secrets-manager/,https://github.com/druce/governance/blob/master/wiki/vendors/aws-secrets-manager.md
 Secrets Manager,GCP Secret Manager,Google,,https://cloud.google.com/secret-manager,https://github.com/druce/governance/blob/master/wiki/vendors/gcp-secret-manager.md
 Secrets Manager,1Password,"SPLIT from bundled row: Independent; acquired Apono (2026-06)",,https://1password.com/,https://github.com/druce/governance/blob/master/wiki/vendors/1password.md
