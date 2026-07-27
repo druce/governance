@@ -990,3 +990,50 @@ sources cached, no ownership fields touched.
 `survey-v2.csv` checked: there is no ForgeRock row, by design — the brand is folded into the
 **Ping Identity** row (`General Identity,Ping Identity,Thoma Bravo (incl. ForgeRock)`), which
 already carries the ForgeRock lineage in its ownership note. Consistent; no CSV change.
+
+## [2026-07-27] research | helicone
+
+**URL audit question resolved: "Helicone Joins Mintlify" is a closed acquisition, not a
+partnership.** The audit found helicone.ai live (200, no redirect) with a prominent
+"🎉 Helicone Joins Mintlify 🚀" banner, and asked whether the soft "Joins" language covered an
+acquisition, a merger, an acqui-hire, or a commercial partnership. Both counterparties'
+announcement posts (2026-03-03) are unambiguous: Helicone wrote "Helicone **has been acquired**
+by Mintlify, and our team will be joining them in San Francisco" — completed past tense on
+announcement day — and Mintlify wrote "Mintlify **is acquiring** Helicone" plus "Mintlify has
+acquired @helicone_ai" on X. Not a merger (Helicone is absorbed; Mintlify is the sole surviving
+brand and entity) and not a partnership (no commercial-agreement framing anywhere). It is a real
+company acquisition with strong **acqui-hire / technology-absorption** character: founders Justin
+Torre and Cole Gottdank moved to Mintlify, the tech is being folded into Mintlify's assistant/
+agent/workflow products, and the standalone product was frozen rather than invested in.
+
+Moved `ownership_state` **acquired-pending → acquired-closed**. No separate closing date was ever
+disclosed by either party, so `acquisition.closed` is set to the announcement date **2026-03-03**
+as the effective date, justified by the target's completed past-tense language plus five months of
+subsequent Mintlify operational control (roadmap decisions, customer migrations). That single
+field is recorded at **medium** confidence; the deal itself is high. Terms undisclosed
+(`price: null`, per the dominant CSV/frontmatter convention for undisclosed).
+
+**Brand decision: no rename.** Applying this sweep's rule — rename only if the new brand is
+distinctive and the old brand is retiring — Helicone fails both halves. `helicone.ai` is live,
+200, no redirect to mintlify.com, still self-describes as "AI Gateway & LLM Observability", and
+still sells (free trial, pricing page). The Helicone brand persists as an operating legacy brand
+under Mintlify. `website` left at https://www.helicone.ai.
+
+Also added a body section on what the deal means for the product, since that is the part a buyer
+actually needs: Helicone's capabilities survive **inside Mintlify's** docs/AI-knowledge platform,
+not as a standalone line; the standalone product stays in maintenance mode (security updates, bug
+fixes, new-model support only); Mintlify has committed to "work closely with every customer to
+support a smooth migration to another platform" — i.e. the vendor is steering its own customers
+off; and **no sunset or shutdown date has been announced** as of 2026-07-27. Flagged the mismatch
+that helicone.ai's homepage still reads promotional with no maintenance-mode notice — the frozen
+status is disclosed only in the linked post. Softened the CTO lens accordingly: no fire drill for
+existing users, but plan the exit rather than waiting for a sunset notice.
+
+Updated `wiki/vendors/helicone.md` (ownership_state, acquisition.closed, ownership_note,
+last_verified 2026-07-27, verify_after 2026-10-27, new deal-consequence section, third open
+question, three source entries, history line). Cached
+`raw/sources/2026-07-27--helicone--mintlify-acquisition-closed.md`.
+
+`survey-v2.csv` checked: **no Helicone row exists** (zero matches, case-insensitive), so there was
+nothing to renote — no CSV change. Crunchbase and Dealroom acquisition entries both 403 to direct
+fetch; used as title-level corroboration only, not cited as primary evidence.
