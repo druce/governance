@@ -6,7 +6,7 @@ slug: prisma-airs
 aka: [Prisma AIRS, Palo Alto AI Runtime Security]
 primary_category: ai-runtime-security
 also_listed_in: [ai-spm, mcp-gateway, ai-gateway]
-website: https://www.paloaltonetworks.com/prisma/prisma-airs
+website: https://www.paloaltonetworks.com/ai-security/prisma-airs
 founded: 2025
 hq: Santa Clara, California, USA (Palo Alto Networks)
 ownership_state: acquired-closed
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [ai-runtime-security, ai-firewall, ai-spm, protect-ai, portkey, palo-alto]
 ---
@@ -61,4 +61,5 @@ tags: [ai-runtime-security, ai-firewall, ai-spm, protect-ai, portkey, palo-alto]
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-07-27] URL fix: product page moved from `/prisma/prisma-airs` (now hard 404) to `/ai-security/prisma-airs`. Site-nav reorganization only — no rebrand, no ownership change; live page still "Prisma AIRS" with AI Gateway, Agent Security, AI Red Teaming, AI Runtime Security, AI Model Security, AI Posture Management (references AIRS 3.0). Verified 2026-07-27.
 - [2026-06-28] Researched; **CONFIRMED** seed flag "incl. former Protect AI" — Protect AI acquisition completed 2025-07-22 and folded into Prisma AIRS (model scanning, red teaming, posture, runtime, agent security). Also established Portkey (closed 2026-05-29) as the AIRS AI Gateway. Set ownership=subsidiary (PANW product), confidence high. Noted version cadence (AIRS 2.0 integrated Protect AI; 3.0 ~Mar 2026 agentic).

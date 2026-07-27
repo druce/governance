@@ -1797,3 +1797,24 @@ Slug **not** renamed — `prisma-access-browser` stays, to avoid breaking inboun
 name entirely. `survey-v2.csv` needed no edit — its Vendor URL column already pointed at
 `/sase/prisma-browser`; its answer-option label still reads "Prisma Access Browser (Palo Alto;
 former Talon)", left as-is since that name remains recognizable to survey respondents.
+
+## [2026-07-27] research | prisma-airs
+
+Broken-URL fix flagged by the automated link audit. The `website` on file,
+`https://www.paloaltonetworks.com/prisma/prisma-airs`, returns a hard HTTP 404. The live
+equivalent is `https://www.paloaltonetworks.com/ai-security/prisma-airs` — verified 2026-07-27,
+serving current Prisma AIRS content (AI Gateway, Agent Security, AI Red Teaming, AI Runtime
+Security, AI Model Security, AI Posture Management; page links reference AIRS 3.0).
+
+Diagnosis: **site-nav reorganization only.** PANW moved the product out of the `/prisma/` path
+into a dedicated `/ai-security/` section — consistent with AIRS being marketed as its own AI
+security platform rather than a Prisma sub-brand. No rebrand, no acquisition, no ownership
+change; product name, vendor, and scope are unchanged, so no frontmatter beyond `website` and
+`last_verified` (→ 2026-07-27) needed touching. Slug, `title`, and `aka` left as-is.
+
+`survey-v2.csv`: two rows carried the dead URL (AI Runtime Security / AI Firewall, and AI-SPM);
+both updated to the `/ai-security/` path. The third Prisma AIRS-linked row (MCP Gateway /
+"Prisma AIRS AI Agent Gateway") points at `/sase` and was left alone — different page, not
+part of this 404.
+
+Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
