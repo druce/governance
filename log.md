@@ -1737,3 +1737,22 @@ Sweep tally for the closed-vs-pending defect pattern is now: **natoma** (false c
 **symmetry-systems** (false closed → pending), **splxai** (right state, wrong date), **surepath-ai**
 (pending → closed on inference), **trojai** (closed, correctly), **trulens** (stale pending → closed;
 first case where the staleness came from an abandoned target-side page rather than a mis-read filing).
+
+## [2026-07-27] research | venminder
+
+URL-audit follow-up on the stub created earlier today. `venminder.com` is live (200, no redirect)
+and now carries **"Venminder by Ncontracts"** sub-brand copy in body text, with careers links
+routed to ncontracts.com. Title, wordmark, domain and product names (Vendiligence, Ven-monitor)
+are all still Venminder, and ncontracts.com does not mention Venminder on its homepage while still
+marketing its own **Nvendor** vendor-risk line — so this is "X by Y" sub-brand naming, not product
+consolidation. Recorded the roadmap question (two overlapping TPRM platforms, one owner) as an
+open question for buyers.
+
+Deal dates re-checked against the closed-vs-pending defect pattern from this sweep: **not** a
+defect. The 2024-09-04 acquirer press release reads "has acquired" / "Hg **has** bought out prior
+shareholders" — completed-deal language, so `announced == closed == 2024-09-04` is genuine, not a
+placeholder copy. Sweep tally unchanged.
+
+Updated `aka`, `ownership_note`, naming/provenance, sources and History; `last_verified` stays
+2026-07-27. `survey-v2.csv` row ("Venminder (Ncontracts)") already correct — brand persists, no
+rename. Cached `raw/sources/2026-07-27--venminder--by-ncontracts-branding.md`.
