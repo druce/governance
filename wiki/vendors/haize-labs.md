@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: AI labs / enterprise building LLM apps
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [ai-red-teaming, jailbreak, evaluation, judge-models]
 ---
@@ -97,3 +97,4 @@ evidence. Early-stage vendor: weigh maturity for production-critical reliance.
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established independent VC-backed (2023, NYC, Harvard founders; $12.5M seed General Catalyst Aug-2024 at ~$100M val; Anthropic customer); no acquisition. Set ownership_confidence high, hedge_fund_fit low.
+- [2026-07-27] URL/status refresh: haizelabs.com returns a Cloudflare bot-challenge (HTTP 403) to automated fetchers, not a dead or parked domain. Confirmed still active and independent per corroborating evidence — live GitHub/HuggingFace/X presence under Haize Labs branding and continued j1 judge/reward-model releases (j1-nano, j1-micro). No acquisition or rebrand found. No content changes; last_verified bumped only.

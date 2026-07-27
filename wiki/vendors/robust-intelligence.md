@@ -26,7 +26,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [alias, ai-firewall, cisco]
 ---
@@ -42,3 +42,4 @@ Go to → **[cisco-ai-defense](cisco-ai-defense.md)**
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; confirmed Robust Intelligence = Cisco AI Defense (acquired by Cisco, intent 2024-08-26, closed ~2024-09-24). Per the brief, made this a thin alias page pointing to [cisco-ai-defense](cisco-ai-defense.md) (which carries the full profile) rather than maintaining a duplicate. Set aliases, ownership=subsidiary, confidence high.
+- [2026-07-27] URL/status refresh: the Cisco AI Defense product URL returns an Akamai "Access Denied" WAF block to automated fetchers — a bot block, not a dead link. Confirmed still active per corroborating evidence — Cisco maintains a "Robust Intelligence Is Now Part of Cisco" page and AI Defense saw a major 2026 expansion (agentic/AI-supply-chain controls). Acquisition status unchanged and already reflected here. No content changes; last_verified bumped only.

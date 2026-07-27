@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise / regulated / mid-market
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [llm, assistant, frontier-model, openai]
 ---
@@ -104,3 +104,4 @@ vs nearest neighbors: [microsoft-365-copilot](microsoft-365-copilot.md) wins on 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established independent ownership (OpenAI Foundation-controlled PBC; Microsoft ~27% minority, no control, confidence medium); documented enterprise governance posture — no-training default across Enterprise/Business/API, AES-256/TLS encryption, SOC 2 Type 2 + ISO 27001 family + CSA STAR + DPA/GDPR, SAML SSO + SCIM, Enterprise Compliance API / Audit Logs + archiving connectors (Global Relay/Smarsh/Theta Lake) for SEC 17a-4/FINRA recordkeeping, and data residency across 10 regions incl. optional in-region inference. Set hedge_fund_fit high, status researched, 4 sources cached. No M&A flag; no contradictions.
+- [2026-07-27] URL/status refresh: openai.com returns a Cloudflare bot-challenge (HTTP 403) site-wide to automated fetchers (including bare openai.com/), not a dead or moved page. Confirmed still active per corroborating evidence — ChatGPT Enterprise/Business/Edu tiers all current, with continued 2026 enterprise release activity. Ownership unchanged (OpenAI Foundation-controlled PBC). No content changes; last_verified bumped only.

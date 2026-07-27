@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: large enterprise (USAA, BlackRock, JPMorgan Chase, Shell cited)
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [aspm, deep-code-analysis, risk-graph, sdlc, sbom]
 ---
@@ -70,3 +70,4 @@ Independent, venture-backed. Founded 2019 by Idan Plotnik (CEO) and Yonatan Elda
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established Tel Aviv/NY HQ, founded ~2019, ~$135M total ($100M Series B Nov 2022, General Catalyst), independent. Positioned as deep-code-analysis ASPM with Risk Graph. ownership_confidence raised to high.
+- [2026-07-27] URL/status refresh: apiiro.com returns a Cloudflare bot-challenge (HTTP 403) to automated fetchers, not a dead or parked domain. Confirmed still active and independent per corroborating evidence — company press/blog activity through 2026 (Guardian Agent AppSec agent launched 2026-01-28) and aggregator profiles (Tracxn, CB Insights) showing no acquisition. The 2023-era Palo Alto Networks acquisition rumor remains unconfirmed and unclosed. No content changes; last_verified bumped only.

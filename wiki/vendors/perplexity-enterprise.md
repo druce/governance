@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise / mid-market (knowledge workers; research-heavy teams)
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [answer-engine, web-search, rag, assistant]
 ---
@@ -94,3 +94,4 @@ Note the center of gravity differs from [openai-chatgpt-enterprise](openai-chatg
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established Perplexity Enterprise as SaaS web-search answer engine with enterprise governance shell (no-train on enterprise data, SAML SSO + SCIM, MFA, admin/audit controls with real-time audit-log webhook, ~7-day default file retention + custom retention for larger orgs, permission-aware connectors), SOC 2 Type II / HIPAA / GDPR certs; ownership independent/private venture-backed (~$20B Sept 2025, high confidence) with no M&A; flagged absence of native eDiscovery/comms-archival and apparent lack of data residency as hedge-fund gaps. fit = medium.
+- [2026-07-27] URL/status refresh: perplexity.ai returns a Cloudflare bot-challenge (HTTP 403) to automated fetchers, not a dead or moved page. Confirmed still active per corroborating evidence — "Perplexity Enterprise Pro" and "Enterprise Max" remain the current tier names, both actively sold in 2026. Ownership unchanged (independent, venture-backed). No content changes; last_verified bumped only.

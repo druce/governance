@@ -1932,3 +1932,45 @@ left as-is — it redirects the same way and still resolves 200.
 carries `https://www.microsoft.com/en-us/edge/business/`, consistent with this decision.
 
 Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
+
+## [2026-07-27] research | bot-blocked vendor refresh (apiiro, haize-labs, openai-chatgpt-enterprise, perplexity-enterprise, robust-intelligence)
+
+Light-touch confirmation pass on the five vendors whose homepages the automated URL
+audit could not check because they serve anti-bot interstitials (HTTP 403 Cloudflare
+"Just a moment..." / Akamai "Access Denied") rather than being dead, parked, or
+rebranded domains.
+
+**Fetch results — all five stayed blocked.** Re-tried each URL directly; every one
+returned HTTP 403 to the fetcher, so no page content was retrieved for any vendor.
+Verification therefore rests on corroborating evidence (search results, vendor press
+activity, aggregator profiles, third-party product coverage) rather than the vendor
+site itself.
+
+| Vendor | URL | Block | Verdict |
+|---|---|---|---|
+| apiiro | apiiro.com | Cloudflare 403 | Active, still independent |
+| haize-labs | haizelabs.com | Cloudflare 403 | Active, still independent |
+| openai-chatgpt-enterprise | openai.com/enterprise/ | Cloudflare 403 (site-wide) | Active, unchanged |
+| perplexity-enterprise | perplexity.ai/enterprise | Cloudflare 403 | Active, unchanged |
+| robust-intelligence | cisco.com/…/ai-defense/ | Akamai WAF 403 | Active, acquisition already reflected |
+
+Corroboration notes:
+- **Apiiro** — 2026 company-news activity (Guardian Agent AppSec agent, 2026-01-28);
+  Tracxn/CB Insights profiles show no acquisition. The 2023-era Palo Alto Networks
+  acquisition rumor remains unconfirmed and never closed — `ownership_state` stays
+  `independent`.
+- **Haize Labs** — GitHub/HuggingFace/X presence live under Haize Labs branding;
+  continued j1 judge/reward-model releases (j1-nano, j1-micro). No M&A.
+- **ChatGPT Enterprise** — Enterprise/Business/Edu tiers all current with ongoing 2026
+  release activity; OpenAI Foundation-controlled PBC ownership unchanged.
+- **Perplexity Enterprise** — "Enterprise Pro" and "Enterprise Max" remain the current
+  tier names and are actively sold; independent/venture-backed, no M&A.
+- **Robust Intelligence** — Cisco still hosts a "Robust Intelligence Is Now Part of
+  Cisco" page; AI Defense had a major 2026 expansion. Alias page already correct.
+
+**Changes:** `last_verified` 2026-06-28 → 2026-07-27 on all five, plus one History line
+each recording the bot-block and the corroborating basis. No other content edits, no
+ownership-field changes, no survey-v2.csv changes, no new contradictions.
+
+Note for future audits: these five URLs are expected to keep returning 403 to automated
+fetchers. Treat that signal as "unverifiable by fetch," not as a broken link.
