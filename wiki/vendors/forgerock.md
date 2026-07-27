@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise / regulated (workforce + CIAM)
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [iam, ciam, identity-access, thoma-bravo, ping-identity]
 ---
@@ -43,7 +43,7 @@ ForgeRock provided a full IAM platform: access management/SSO, customer identity
 Foundation layer, [identity-access](../categories/identity-access.md) — the human/agent front door that everything else gates on. Not an inline prompt/egress control itself, but it is the identity substrate that access governance, [entitlement-aware-rag](../categories/entitlement-aware-rag.md) and agent authz all depend on. Adjacent to [identity-governance](../categories/identity-governance.md) and [non-human-identity](../categories/non-human-identity.md).
 
 ## Deployment & architecture
-SaaS (ForgeRock Identity Cloud) plus self-managed/on-prem deployments — historically stronger than pure-SaaS rivals at complex on-prem/hybrid and CIAM scenarios. Standards-based (OIDC, SAML, OAuth2, SCIM).
+SaaS (ForgeRock Identity Cloud) plus self-managed/on-prem deployments — historically stronger than pure-SaaS rivals at complex on-prem/hybrid and CIAM scenarios. Standards-based (OIDC, SAML, OAuth2, SCIM). The SaaS product now ships as **PingOne Advanced Identity Cloud** under the Ping brand (observed on pingidentity.com 2026-07-27).
 
 ## Positioning & differentiators
 Was known for deployment flexibility (self-managed + cloud), heavy-duty CIAM, and identity orchestration. Nearest neighbors: [ping-identity](ping-identity.md) (now the parent brand), [okta](okta.md), [microsoft-entra](microsoft-entra.md). Post-merger, ForgeRock capabilities are being consolidated into the Ping Identity portfolio, so it is increasingly a feature set under Ping rather than a separate product to shop.
@@ -68,3 +68,4 @@ Was known for deployment flexibility (self-managed + cloud), heavy-duty CIAM, an
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; verified BOTH seed flags — Thoma Bravo acquisition (~$2.3B, closed 2023-08-23) AND merger into Ping Identity; raised ownership_confidence low→high; filled founding/HQ, noted brand consolidation under Ping.
+- [2026-07-27] URL audit confirmation pass: `website` already resolves to pingidentity.com, which serves pure Ping branding (PingOne, PingOne Advanced Identity Cloud, Helix AI) with no ForgeRock brand remaining. No ownership change; page already correct. Added the PingOne Advanced Identity Cloud product name; bumped `last_verified`.

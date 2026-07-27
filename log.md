@@ -972,3 +972,21 @@ Updated `wiki/vendors/entro-security.md` (announce date, ownership_note, last_ve
 verify_after, brand-persistence + SEC-status bullets, 3 new source entries, history line) and the
 `survey-v2.csv` flag note. Cached
 `raw/sources/2026-07-27--entro-security--sailpoint-announce-date-correction.md`.
+
+## [2026-07-27] research | forgerock
+
+**Confirmation-only pass — no factual change.** URL audit flagged that the `website` on file,
+www.pingidentity.com, loads live with pure Ping Identity branding (PingOne, PingOne Advanced
+Identity Cloud, Helix AI) and zero ForgeRock branding. That is old news, and the page already
+documented it: `ownership_state: acquired-closed`, `owner: Thoma Bravo`, acquisition announced
+2022-10-11 / closed 2023-08-23, `website` already pointed at pingidentity.com, and the body already
+described the fold-in to Ping. A prior researcher (2026-06-28) had handled the merger correctly.
+
+Only edits: bumped `last_verified` 2026-06-28 → 2026-07-27, and added the current SaaS product name
+**PingOne Advanced Identity Cloud** (the successor to ForgeRock Identity Cloud) to the Deployment &
+architecture section, since the page named only the retired ForgeRock brand. No re-research, no new
+sources cached, no ownership fields touched.
+
+`survey-v2.csv` checked: there is no ForgeRock row, by design — the brand is folded into the
+**Ping Identity** row (`General Identity,Ping Identity,Thoma Bravo (incl. ForgeRock)`), which
+already carries the ForgeRock lineage in its ownership note. Consistent; no CSV change.
