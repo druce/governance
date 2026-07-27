@@ -1225,3 +1225,48 @@ purchase-price accounting rather than as a forecast subsequent event — hence t
 
 Process note for the rest of this sweep: a `closed` date equal to the `announced` date is a
 smell, not a fact. Worth grepping other `acquired-closed` pages for that pattern.
+
+## [2026-07-27] research | portkey
+URL audit + M&A re-verification. `portkey.ai` live (HTTP 200, no redirect), unchanged as the
+canonical vendor URL, now carrying a banner "Palo Alto Networks has completed the acquisition
+of Portkey" linking to PANW's completion release.
+
+**Explicitly checked for the `closed == announced` copy-paste bug flagged by the natoma task
+earlier in this sweep — NOT present on this page.** portkey.md already carried
+`announced: 2026-04-30, closed: 2026-05-29` (distinct dates), and both survive primary-source
+re-verification. The 2026-06-28 research pass on this page was sound; no correction needed and
+no contradiction to log.
+
+Primary source: **PANW Form 10-Q for the quarter ended 2026-04-30, filed 2026-06-03**
+(CIK 0001327567, accession 0001327567-26-000015), found via EDGAR full-text search. Note 6
+Business Combinations: "On April 30, 2026, we entered into a definitive agreement to acquire
+Portkey, Inc., a privately-held AI Gateway company ... in exchange for total consideration of
+$140 million in cash and replacement awards, subject to adjustments." Note 17 Subsequent
+Events: "On May 29, 2026, we completed the acquisition of Portkey." MD&A repeats the close
+date. Recorded as a business combination in PANW fiscal Q4 2026. The PANW completion press
+release (dateline May 29, 2026) corroborates the close date independently.
+
+**New fact recovered: the purchase price.** Both PANW press releases withheld terms, so the
+page had carried `price: null` and an open question "acquisition price (undisclosed)". The
+10-Q discloses it — **$140M in cash and replacement awards** — confirming the SEC-filings-over-
+blog-posts lesson from the cyberark/conjur tasks: for a public acquirer, the filing routinely
+supplies the one number the press release omits. Context on scale: PANW closed CyberArk at
+$21.1B (2026-02-11) and Koi Security at $231M (2026-04-14) in the same fiscal year, so Portkey
+is the smallest of the FY2026 tuck-ins.
+
+Source cached: `raw/sources/2026-07-27--portkey--panw-10q-close-date-and-price.md`.
+Frontmatter: `ownership_state: acquired-closed` retained (justified — real close date plus
+source entries, per SCHEMA.md §5 rule 4), `price` null -> "$140M cash + replacement awards",
+expanded `ownership_note`, `last_verified: 2026-07-27`, three `sources:` entries added (10-Q
+for close and price, PANW announcement release for the announced date). YAML re-parsed clean.
+Body: dated History line; header note that the vendor is no longer independent; M&A section
+rewritten around the filing; positioning rewritten (the differentiator is now the Prisma AIRS
+bundle — AI Runtime Security + Idira agent identity + Chronosphere telemetry — which is also
+the lock-in); CTO lens gained two procurement points (get standalone-SKU availability in
+writing before renewal; the genuinely neutral gateway option is now OSS, since the commercial
+independents in this category keep getting acquired).
+
+survey-v2.csv: AI Gateway / "Portkey (Palo Alto)" flag-note expanded with announce date, close
+date, price, and the standalone-SKU caveat; the AI Runtime Security row's Prisma AIRS note
+now dates the Portkey component too. Vendor URL left as `https://portkey.ai` (still live and
+still the product's own site).

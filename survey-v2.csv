@@ -20,7 +20,7 @@ AI-aware Network Security (SSE/SASE),Cisco (Secure Access),Public (CSCO),,https:
 AI-aware Network Security (SSE/SASE),Cato Networks,"Independent; acquired Aim Security (2025)",,https://www.catonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/cato-networks.md
 AI-aware Network Security (SSE/SASE),Forcepoint,Francisco Partners (PE),,https://www.forcepoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/forcepoint.md
 AI-aware Network Security (SSE/SASE),Other (Please Specify),,,,
-AI Gateway,Portkey (Palo Alto),"Acq. by Palo Alto (closed 2026-05-29); now the Prisma AIRS gateway",,https://portkey.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portkey.md
+AI Gateway,Portkey (Palo Alto),"Acq. by Palo Alto — announced 2026-04-30, CLOSED 2026-05-29 for $140M cash + replacement awards (per PANW 10-Q, verified 2026-07-27); now the Prisma AIRS AI Gateway. portkey.ai still live under its own brand; standalone SKU availability unconfirmed",,https://portkey.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portkey.md
 AI Gateway,LiteLLM,"Independent (OSS)",,https://www.litellm.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/litellm.md
 AI Gateway,TrueFoundry,Independent,,https://www.truefoundry.com,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
 AI Gateway,Cloudflare,Public (NET),,https://www.cloudflare.com/products/ai-gateway/,https://github.com/druce/governance/blob/master/wiki/vendors/cloudflare.md
@@ -40,7 +40,7 @@ LLM Observability & Eval,TruLens (Snowflake),"Snowflake (acq. TruEra 2024-05); T
 LLM Observability & Eval,Giskard,"NEW: Independent (OSS eval/testing); also fits red-teaming",,https://www.giskard.ai,https://github.com/druce/governance/blob/master/wiki/vendors/giskard.md
 LLM Observability & Eval,Arthur AI,"NEW: Independent; monitoring/eval, overlaps AI governance",,https://www.arthur.ai,https://github.com/druce/governance/blob/master/wiki/vendors/arthur-ai.md
 LLM Observability & Eval,Other (Please Specify),,,,
-AI Runtime Security / AI Firewall,Prisma AIRS (Palo Alto),"incl. former Protect AI (closed 2025-07-22) + Portkey gateway",,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
+AI Runtime Security / AI Firewall,Prisma AIRS (Palo Alto),"incl. former Protect AI (closed 2025-07-22) + Portkey AI Gateway (closed 2026-05-29)",,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
 AI Runtime Security / AI Firewall,Cisco AI Defense (former Robust Intelligence),"Cisco (closed ~2024-09)",,https://www.cisco.com/site/us/en/products/security/ai-defense/,https://github.com/druce/governance/blob/master/wiki/vendors/cisco-ai-defense.md
 AI Runtime Security / AI Firewall,Lakera (Check Point),"NEW (cross-listed from Red Teaming): Acq. by Check Point (closed 2025-10-22, ~$201.8M per 20-F); brand still live at lakera.ai; runtime guardrails is its core job",,https://www.lakera.ai,https://github.com/druce/governance/blob/master/wiki/vendors/lakera.md
 AI Runtime Security / AI Firewall,CalypsoAI (F5),"Acq. by F5 (closed 2025-09-26, $145.2M); brand retired — now F5 AI Guardrails",,https://www.f5.com/products/ai-guardrails,https://github.com/druce/governance/blob/master/wiki/vendors/calypsoai.md
