@@ -1775,3 +1775,25 @@ Adaptive Shield, less Flow's $96.4M). Filled `acquisition.price`, which had been
 Both standing open questions resolved (exact close date/price; Falcon Shield vs. Falcon for SaaS
 → **Falcon Shield**). `survey-v2.csv` row updated (URL + the "closed ~2025-01" note).
 Cached `raw/sources/2026-07-27--adaptive-shield--crowdstrike-10k-close-date-and-price.md`.
+
+## [2026-07-27] research | prisma-access-browser
+
+Light-touch URL fix. `paloaltonetworks.com/sase/access-browser` returns a hard **404**; the live
+equivalent is `paloaltonetworks.com/sase/prisma-browser` (**200**, "Secure Browser | Prisma
+Browser - Palo Alto Networks"). Same company, same ex-Talon lineage — a **URL path change plus a
+naming simplification** from "Prisma Access Browser" to "Prisma Browser", *not* a rebrand to a
+different company and *not* an ownership event. `ownership_state: acquired-closed` (Talon → Palo
+Alto Networks, closed 2023-12-28) was already correct and is untouched.
+
+Updated `website`, `last_verified` → 2026-07-27, `title`/`name` → "Prisma Browser
+(Palo Alto/Talon)", and added "Prisma Access Browser" to `aka` — the longer name still appears in
+PANW datasheet titles, so both are live search terms. Also filled `form_factor:
+[agent, browser-extension]`: PANW now markets three form factors (dedicated desktop browser,
+extension for existing consumer browsers, mobile app), which narrows the gap with the
+browser-security-extension category.
+
+Slug **not** renamed — `prisma-access-browser` stays, to avoid breaking inbound links and the
+`survey-v2.csv` wiki URL; flagged in the page's open questions to revisit if PANW drops the long
+name entirely. `survey-v2.csv` needed no edit — its Vendor URL column already pointed at
+`/sase/prisma-browser`; its answer-option label still reads "Prisma Access Browser (Palo Alto;
+former Talon)", left as-is since that name remains recognizable to survey respondents.
