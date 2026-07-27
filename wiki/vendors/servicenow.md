@@ -48,7 +48,7 @@ tags: [grc, irm, risk-management, compliance]
 
 **CTO / hedge-fund lens** — Day-1 governance plumbing, but mainly relevant to a fund that *already* standardized on ServiceNow — few sub-$5B funds buy ServiceNow GRC de novo just for AI governance. For SR 11-7 / model-risk programs it can host the attestation and control library, but a fund with no existing ServiceNow footprint will find lighter GRC tools cheaper to stand up.
 
-**Competitors / alternatives** — [archer](archer.md), [logicgate](logicgate.md), [auditboard](auditboard.md), [onspring](onspring.md), [onetrust](onetrust.md), [ibm-watsonx-governance](ibm-watsonx-governance.md).
+**Competitors / alternatives** — [archer](archer.md), [logicgate](logicgate.md), [optro](optro.md), [onspring](onspring.md), [onetrust](onetrust.md), [ibm-watsonx-governance](ibm-watsonx-governance.md).
 
 **Open questions / to verify** — Depth of Now Assist for IRM AI-governance features vs. dedicated AI-governance platforms; pricing posture for mid-size funds.
 

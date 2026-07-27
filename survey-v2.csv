@@ -261,19 +261,20 @@ Software supply chain,JFrog,Public (FROG),,https://jfrog.com,https://github.com/
 Software supply chain,GitHub Advanced Security (Microsoft),"Microsoft/GitHub; now split (Secret Protection + Code Security)",,https://github.com/security/advanced-security,https://github.com/druce/governance/blob/master/wiki/vendors/github-advanced-security.md
 Software supply chain,GitLab Ultimate,Public (GTLB),,https://about.gitlab.com,https://github.com/druce/governance/blob/master/wiki/vendors/gitlab.md
 Software supply chain,Other (Please Specify),,,,
-Enterprise GRC,ServiceNow GRC,"NEW (was missing — the wiki's lead option); TYPO FIXED in category name (was 'Enterprize')",,https://www.servicenow.com/products/governance-risk-and-compliance.html,https://github.com/druce/governance/blob/master/wiki/vendors/servicenow.md
-Enterprise GRC,Archer,Cinven (PE),,https://www.archerirm.com/,https://github.com/druce/governance/blob/master/wiki/vendors/archer.md
-Enterprise GRC,LogicGate,Independent,,https://www.logicgate.com/,https://github.com/druce/governance/blob/master/wiki/vendors/logicgate.md
-Enterprise GRC,AuditBoard,"Acq. by Hg (2024; >$3B)",,https://www.auditboard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/auditboard.md
-Enterprise GRC,OneTrust,Independent,,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
-Enterprise GRC,Onspring,Independent,,https://onspring.com/,https://github.com/druce/governance/blob/master/wiki/vendors/onspring.md
-Enterprise GRC,Vanta,"NEW: compliance-automation flavored; also under AI Governance",,https://www.vanta.com,https://github.com/druce/governance/blob/master/wiki/vendors/vanta.md
-Enterprise GRC,Other (Please Specify),,,,
-Vendor Risk,ProcessUnity,"Marlin Equity (PE); merged CyberGRX",,https://www.processunity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/processunity.md
-Vendor Risk,SecurityScorecard,"Independent; acquired HyperComply (2025)",,https://securityscorecard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/securityscorecard.md
-Vendor Risk,BitSight,"Independent; Moody's largest shareholder; acquired Cybersixgill (2024)",,https://www.bitsight.com/,https://github.com/druce/governance/blob/master/wiki/vendors/bitsight.md
-Vendor Risk,Black Kite,Independent,,https://blackkite.com/,https://github.com/druce/governance/blob/master/wiki/vendors/black-kite.md
-Vendor Risk,UpGuard,Independent,,https://www.upguard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/upguard.md
-Vendor Risk,Other (Please Specify),,,,
-
-
+"Enterprise Governance, Risk & Compliance",OneTrust,Independent,,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
+"Enterprise Governance, Risk & Compliance",ServiceNow GRC,"NEW (was missing — the wiki's lead option); TYPO FIXED in category name (was 'Enterprize')",,https://www.servicenow.com/products/governance-risk-and-compliance.html,https://github.com/druce/governance/blob/master/wiki/vendors/servicenow.md
+"Enterprise Governance, Risk & Compliance",Archer,Cinven (PE),,https://www.archerirm.com/,https://github.com/druce/governance/blob/master/wiki/vendors/archer.md
+"Enterprise Governance, Risk & Compliance",LogicGate,Independent,,https://www.logicgate.com/,https://github.com/druce/governance/blob/master/wiki/vendors/logicgate.md
+"Enterprise Governance, Risk & Compliance",Optro (formerly AuditBoard),"Renamed from AuditBoard 2026-03; Acq. by Hg (2024; >$3B)",,https://optro.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/optro.md
+"Enterprise Governance, Risk & Compliance",Onspring,Independent,,https://onspring.com/,https://github.com/druce/governance/blob/master/wiki/vendors/onspring.md
+"Enterprise Governance, Risk & Compliance",Vanta,"NEW: compliance-automation flavored; also under AI Governance",,https://www.vanta.com,https://github.com/druce/governance/blob/master/wiki/vendors/vanta.md
+"Enterprise Governance, Risk & Compliance",Drata,"NEW: compliance automation; Vanta rival; independent ($2B valuation 2022)",,https://drata.com/,https://github.com/druce/governance/blob/master/wiki/vendors/drata.md
+"Enterprise Governance, Risk & Compliance",Other (Please Specify),,,,
+Vendor Risk Rating & Monitoring,ProcessUnity,"Marlin Equity (PE); merged CyberGRX",,https://www.processunity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/processunity.md
+Vendor Risk Rating & Monitoring,SecurityScorecard,"Independent; acquired HyperComply (2025)",,https://securityscorecard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/securityscorecard.md
+Vendor Risk Rating & Monitoring,BitSight,"Independent; Moody's largest shareholder; acquired Cybersixgill (2024)",,https://www.bitsight.com/,https://github.com/druce/governance/blob/master/wiki/vendors/bitsight.md
+Vendor Risk Rating & Monitoring,Black Kite,Independent,,https://blackkite.com/,https://github.com/druce/governance/blob/master/wiki/vendors/black-kite.md
+Vendor Risk Rating & Monitoring,UpGuard,Independent,,https://www.upguard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/upguard.md
+Vendor Risk Rating & Monitoring,Venminder (Ncontracts),"NEW: TPRM assessments; acq. by Ncontracts (2024, Hg buyout)",,https://www.venminder.com/,https://github.com/druce/governance/blob/master/wiki/vendors/venminder.md
+Vendor Risk Rating & Monitoring,Whistic,"NEW: questionnaire automation / vendor-profile network; independent (JMI Equity)",,https://www.whistic.com/,https://github.com/druce/governance/blob/master/wiki/vendors/whistic.md
+Vendor Risk Rating & Monitoring,Other (Please Specify),,,,

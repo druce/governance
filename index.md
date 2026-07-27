@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-07-27 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -32,7 +32,7 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [EDR / XDR](wiki/categories/edr-xdr.md) — Endpoint Detection and Response (EDR), and its broader cousin Extended Detection — (day-1, 2026-06-28)
 - [Enterprise AI Assistant](wiki/categories/enterprise-ai-assistant.md) — The actual chatbot your people use, with enterprise plumbing attached. A governed, compliant, general-purpose assistant: the same conversational AI employees… — (day-1, 2026-06-30)
 - [Enterprise Browser](wiki/categories/enterprise-browser.md) — A work browser with guardrails baked in. Because most AI use happens *in a browser tab* — ChatGPT, Claude, Gemini, a hundred SaaS copilots — the browser is t… — (situational, 2026-06-28)
-- [Enterprise GRC](wiki/categories/enterprise-grc.md) — One governed register for risk, controls, policy, and audit. Enterprise GRC — (day-1, 2026-06-28)
+- [Enterprise GRC](wiki/categories/enterprise-grc.md) — One governed register for risk, controls, policy, and audit. Enterprise GRC — (day-1, 2026-07-27)
 - [Entitlement-Aware RAG](wiki/categories/entitlement-aware-rag.md) — Retrieval that remembers your permissions: a permission-aware retrieval layer so an AI assistant only surfaces documents the asking user was *already* allowe… — (situational, 2026-06-28)
 - [Ephemeral Environments](wiki/categories/ephemeral-environments.md) — Disposable, build-to-order workspaces that vanish when you are done — nothing sticky to — (practice, 2026-06-28)
 - [HITL Approvals](wiki/categories/hitl-approvals.md) — **A human has to press "yes" before the AI does something consequential.** HITL — (practice, 2026-06-28)
@@ -53,9 +53,9 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Tool Identity & Integration](wiki/categories/tool-identity-integration.md) — This layer is the **universal adapter that lets agents reach SaaS tools securely** — — (day-2, 2026-06-28)
 - [Trust Zone Segmentation](wiki/categories/trust-zone-segmentation.md) — The job is to **break the exfiltration chain** before it can form. Simon Willison's — (practice, 2026-06-28)
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
-- [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-06-28)
+- [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (229)
+## Vendors (232)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -77,7 +77,6 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Artemis Security](wiki/vendors/artemis-security.md) — An AI-native security-operations platform: AI agents that autonomously — (independent, 2026-06-30)
 - [Arthur AI](wiki/vendors/arthur-ai.md) — An enterprise AI monitoring and governance platform that evaluates, monitors, and guardrails ML models, LLMs, and agents in production. — (independent, 2026-06-28)
 - [Astrix Security](wiki/vendors/astrix-security.md) — Non-human identity (NHI) security: discover, govern and protect the API keys, service accounts, OAuth tokens and AI-agent credentials that machines and agent… — (acquired-pending, 2026-06-28)
-- [AuditBoard](wiki/vendors/auditboard.md) — A cloud audit-and-risk platform that grew from internal audit into a broad connected-risk (GRC + ESG) suite; now PE-owned by Hg. — (pe-owned, 2026-06-28)
 - [Audition AI](wiki/vendors/audition-ai.md) — A compliance-first enterprise AI platform purpose-built for hedge funds and — (independent, 2026-06-30)
 - [Aurascape](wiki/vendors/aurascape.md) — An AI-native security platform that gives enterprises visibility into and control over every employee/app interaction with AI tools (sanctioned and shadow), … — (independent, 2026-06-28)
 - [AuthZed (SpiceDB)](wiki/vendors/authzed.md) — A Google-Zanzibar-style **permissions database** (open-source **SpiceDB**) that stores relationships between users, resources, and groups and answers fine-gr… — (independent, 2026-06-28)
@@ -121,6 +120,7 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [DoControl](wiki/vendors/docontrol.md) — An automated SaaS data-security / data-access-controls platform that finds over-shared and exposed data across SaaS apps and remediates it with no-code workf… — (independent, 2026-06-28)
 - [Doppel](wiki/vendors/doppel.md) — AI-driven digital risk protection / "social engineering defense": continuously scans the open web, social media, app stores, paid ads, domains, and the dark … — (independent, 2026-06-28)
 - [Doppler](wiki/vendors/doppler.md) — A developer-first, cloud-based "SecretOps" platform that centralizes app config and secrets in one place and syncs them everywhere your code runs — a cloud-a… — (independent, 2026-06-28)
+- [Drata](wiki/vendors/drata.md) — Compliance automation: continuous control monitoring and automated evidence collection for SOC 2 / ISO 27001 / GDPR and 14+ other frameworks — vanta's closes… — (independent, 2026-07-27)
 - [Dropzone AI](wiki/vendors/dropzone-ai.md) — An autonomous AI SOC analyst that investigates every security alert end-to-end, 24/7, with human-level reasoning and no playbooks to write. — (independent, 2026-06-28)
 - [Elastic (ELK)](wiki/vendors/elastic.md) — Elastic Security is a SIEM/XDR built on the Elasticsearch (ELK) stack, popular because teams can self-host the data plane and avoid per-GB SaaS SIEM pricing,… — (public, 2026-06-28)
 - [Endor Labs](wiki/vendors/endor-labs.md) — Reachability-based software composition analysis (SCA) that tells you whether a vulnerable open-source dependency is actually *callable* in your code, now ex… — (independent, 2026-06-28)
@@ -210,6 +210,7 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [OpenRouter](wiki/vendors/openrouter.md) — A hosted "unified interface for LLMs": one API and one billing relationship that routes your requests across 400+ models from 70+ providers, with automatic f… — (independent, 2026-06-28)
 - [OpenSearch](wiki/vendors/opensearch.md) — An open-source search, analytics, and observability engine (the AWS-led fork of Elasticsearch) with a vector-search engine built in — usable as the retrieval… — (independent, 2026-06-28)
 - [Operant AI](wiki/vendors/operant-ai.md) — A Kubernetes-native runtime defense platform that discovers, detects, and blocks threats against live AI apps, agents, and APIs in real time. — (independent, 2026-06-28)
+- [Optro](wiki/vendors/optro.md) — A cloud audit-and-risk platform that grew from internal audit into a broad connected-risk (GRC + ESG) suite; PE-owned by Hg; rebranded from AuditBoard to Opt… — (pe-owned, 2026-07-27)
 - [Oso](wiki/vendors/oso.md) — Authorization-as-a-service built on **Polar**, a declarative policy language — now repositioning hard as an **AI-agent security & control platform** ("Oso fo… — (independent, 2026-06-28)
 - [Palo Alto Networks](wiki/vendors/palo-alto-networks.md) — The incumbent network/SOC security platform (Strata SASE, Cortex XDR/XSIAM, Prisma Cloud) that has bought its way into a full AI-security stack: Prisma AIRS … — (public, 2026-06-28)
 - [Pangea](wiki/vendors/pangea.md) — A developer-first "AI guardrail" platform — prompt-injection blocking, AI DLP, and policy guardrails delivered as APIs/SDK — now the prompt-layer core of cro… — (acquired-closed, 2026-06-28)
@@ -275,10 +276,12 @@ Regenerated 2026-07-13 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Valence Security](wiki/vendors/valence-security.md) — A SaaS (and increasingly AI) security platform that discovers SaaS/AI app usage, finds and prioritizes posture risk, and emphasizes collaborative, business-u… — (independent, 2026-06-28)
 - [Vanta](wiki/vendors/vanta.md) — Automated security-and-compliance certification (SOC 2, ISO 27001, etc.) that has added an AI-governance module (ISO 42001, EU AI Act, NIST AI RMF mapping); … — (independent, 2026-06-28)
 - [Varonis](wiki/vendors/varonis.md) — The original data-access-governance vendor: a Data Security Platform that maps who can access which sensitive files/data, flags over-permissioned and stale a… — (public, 2026-06-28)
+- [Venminder](wiki/vendors/venminder.md) — A third-party risk management (TPRM) SaaS platform strong in financial institutions, now part of Ncontracts (fintech-compliance suite, Hg-backed). — (acquired-closed, 2026-07-27)
 - [Veza](wiki/vendors/veza.md) — Identity-security "Access Graph" that maps and controls *who (or what) can do what* across apps, data, cloud, and AI agents — now part of ServiceNow. — (acquired-closed, 2026-06-28)
 - [Wald.ai](wiki/vendors/wald-ai.md) — A context-aware "AI DLP" layer that redacts sensitive data out of prompts before they reach ChatGPT / Claude / Gemini, then re-populates the original data in… — (independent, 2026-06-28)
 - [Weaviate](wiki/vendors/weaviate.md) — An open-source, AI-native vector database (plus managed cloud) — the self-hostable alternative to Pinecone for RAG retrieval, so embeddings can stay in your … — (independent, 2026-06-28)
 - [Weights & Biases (Weave)](wiki/vendors/weights-and-biases.md) — The ML developer platform for experiment tracking and model management, whose **Weave** product does LLM/agent observability and evaluation; acquired by GPU-… — (acquired-closed, 2026-06-28)
+- [Whistic](wiki/vendors/whistic.md) — Two-sided vendor security assessment: buyers run AI-assisted vendor assessments, vendors publish proactive security profiles to a shared network — questionna… — (independent, 2026-07-27)
 - [WhyLabs](wiki/vendors/whylabs.md) — A data-and-ML monitoring / AI observability platform (now acquired by Apple and discontinued as a standalone product). — (acquired-closed, 2026-06-28)
 - [Wing Security](wiki/vendors/wing-security.md) — An SSPM + SaaS identity-threat-detection platform that inventories SaaS and AI apps, fixes risky configuration and OAuth grants, and watches for account take… — (independent, 2026-06-28)
 - [WitnessAI](wiki/vendors/witnessai.md) — Inline "AI enablement" platform that gives security teams visibility, identity-aware access governance, and runtime guardrails over how employees and agents … — (independent, 2026-06-28)

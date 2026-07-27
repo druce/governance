@@ -42,13 +42,13 @@ tags: [grc, irm, risk-management, no-code]
 
 **Deployment & architecture** — SaaS. No-code app/workflow builder; integrations with security and IT tooling; supports third-party-risk questionnaires and continuous-control mappings.
 
-**Positioning & differentiators** — Mid-market-friendly, configurable, modern UX. Competes with [onspring](onspring.md) (both no-code GRC challengers) and against the heavyweights [servicenow](servicenow.md) / [archer](archer.md); overlaps [auditboard](auditboard.md) on audit/compliance.
+**Positioning & differentiators** — Mid-market-friendly, configurable, modern UX. Competes with [onspring](onspring.md) (both no-code GRC challengers) and against the heavyweights [servicenow](servicenow.md) / [archer](archer.md); overlaps [optro](optro.md) on audit/compliance.
 
 **Ownership, funding & M&A** — `independent`, private, VC/growth-equity backed. ~$156M total: Series C $113M (2021) led by PSG with Greenspring; Series B $24.75M (2019) co-led by Jump Capital + High Alpha. Founded 2015 in Chicago. No acquisition found. (high confidence)
 
 **CTO / hedge-fund lens** — Day-1 GRC for a mid-size fund that wants a configurable risk/compliance system without an Archer-scale implementation. Reasonable fit for a 100–1,000-person shop standing up a risk program; can carry AI-governance use cases as workflows. Larger funds with existing [servicenow](servicenow.md) may not need it.
 
-**Competitors / alternatives** — [onspring](onspring.md), [auditboard](auditboard.md), [servicenow](servicenow.md), [archer](archer.md), [onetrust](onetrust.md).
+**Competitors / alternatives** — [onspring](onspring.md), [optro](optro.md), [servicenow](servicenow.md), [archer](archer.md), [onetrust](onetrust.md).
 
 **Open questions / to verify** — Latest funding/valuation post-2021; depth of dedicated AI-governance templates.
 

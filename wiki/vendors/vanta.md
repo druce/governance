@@ -77,7 +77,7 @@ SaaS, agentless-leaning, integration-driven. It pulls evidence via API from clou
 
 ## Competitors / alternatives
 
-[onetrust](onetrust.md), [credo-ai](credo-ai.md), [holistic-ai](holistic-ai.md); in the security-certification niche, Drata, Secureframe, Sprinto (not yet pages).
+[onetrust](onetrust.md), [credo-ai](credo-ai.md), [holistic-ai](holistic-ai.md); in the security-certification niche, [drata](drata.md), Secureframe, Sprinto (no pages for the latter two).
 
 ## Open questions / to verify
 

@@ -5,17 +5,17 @@ name: Enterprise GRC
 slug: enterprise-grc
 category: enterprise-grc
 layer: governance
-survey_question: Enterprise GRC
+survey_question: Enterprise Governance, Risk & Compliance
 adoption_tier: day-1
 trigger: usually already owned — extend existing GRC to AI risk
 maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-governance-platform, vendor-risk]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 8
 maps_to_seed_doc: Enterprise GRC
 maps_to_seed_csv: Enterprize GRC
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 ---
 
 ## Business objective
@@ -51,17 +51,19 @@ controls is recorded, attested, and audited.
 - [servicenow](../vendors/servicenow.md) — GRC built on the ServiceNow platform; strong where the firm already runs ServiceNow ITSM/workflow.
 - [archer](../vendors/archer.md) — long-standing enterprise GRC suite (formerly RSA Archer); deep, configurable, heavyweight.
 - [logicgate](../vendors/logicgate.md) — risk-cloud / workflow-driven GRC; lighter and more modern UX.
-- [auditboard](../vendors/auditboard.md) — audit-led GRC popular with internal audit and SOX teams; expanding into risk and IT compliance.
+- [optro](../vendors/optro.md) — audit-led GRC popular with internal audit and SOX teams (formerly AuditBoard; renamed 2026-03); expanding into risk, IT compliance, and AI governance.
 - [onspring](../vendors/onspring.md) — flexible no-code GRC platform.
 - [onetrust](../vendors/onetrust.md) — privacy/GRC suite; cross-listed because it also carries an AI-governance and DSPM module.
 - [vanta](../vendors/vanta.md) — compliance automation (SOC 2 / ISO) functioning as lightweight GRC for smaller/mid shops; extends into AI governance.
+- [drata](../vendors/drata.md) — Vanta's closest competitor in compliance automation; continuous control monitoring across 14+ frameworks.
 
 ## Consolidation / M&A dynamics
 
 A mature, consolidated market dominated by platform incumbents (ServiceNow, Archer,
-OneTrust) with newer challengers (LogicGate, AuditBoard, Vanta) winning on UX and
-time-to-value. No specific seed M&A flags for the core GRC vendors here. The live
-dynamic is feature-creep: GRC suites adding AI-governance modules, pulling them into
+OneTrust) with newer challengers (LogicGate, Optro, Vanta, Drata) winning on UX and
+time-to-value. AuditBoard — Hg-owned since 2024 — **renamed itself Optro in March
+2026** and bought AI-governance startup FairNow (fall 2025). The live dynamic is
+feature-creep: GRC suites adding AI-governance modules, pulling them into
 competition with specialist [ai-governance-platform](ai-governance-platform.md) tools.
 
 ## Adjacent categories
@@ -77,8 +79,8 @@ competition with specialist [ai-governance-platform](ai-governance-platform.md) 
 record for risk, controls, policy, and audit (and would you extend it to cover AI
 risk)?
 
-**Answer options.** ServiceNow GRC; Archer; LogicGate; AuditBoard; Onspring;
-OneTrust; Vanta; Other (Please Specify).
+**Answer options.** ServiceNow GRC; Archer; LogicGate; Optro (formerly AuditBoard);
+Onspring; OneTrust; Vanta; Drata; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -86,9 +88,11 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 **Notes for survey design.** This is a "what do you already own" question more than an
 "are you evaluating" one — most respondents will have an incumbent. The useful signal
 is whether AI risk gets folded into the existing GRC tool vs a dedicated
-[ai-governance-platform](ai-governance-platform.md); consider a follow-up. AuditBoard and Vanta skew to
-audit/compliance-automation framing and may pull different buyer personas. OneTrust
-and Vanta also appear on the [ai-governance-platform](ai-governance-platform.md) survey — expect overlap.
+[ai-governance-platform](ai-governance-platform.md); consider a follow-up. Optro (renamed from AuditBoard
+2026-03 — keep "formerly AuditBoard" on the option or respondents won't recognize
+it), Vanta, and Drata skew to audit/compliance-automation framing and may pull
+different buyer personas. OneTrust and Vanta also appear on the
+[ai-governance-platform](ai-governance-platform.md) survey — expect overlap.
 
 ## Open taxonomy questions
 

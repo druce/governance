@@ -82,8 +82,8 @@ Counts: **42 canonical categories** across 7 layers.
 | slug | display name | tier | agent-sec | trigger | survey question | notes |
 |---|---|---|---|---|---|---|
 | `ai-governance-platform` | AI Governance / Model Risk & Compliance | firm-type-specific | — | day-1 for bank-affiliated / model-validation-mandated (SR 11-7) firms; day-2 otherwise | AI Governance, Model Risk & Compliance | Credo AI, Holistic AI, ModelOp, Fairly AI (now Asenion), Monitaur, IBM watsonx.governance, Vanta, CalypsoAI, GovernGPT. |
-| `enterprise-grc` | Enterprise GRC | day-1 | — | usually already owned — extend existing GRC to AI risk | Enterprise GRC | ServiceNow GRC, Archer, LogicGate, AuditBoard, OneTrust, Onspring. |
-| `vendor-risk` | Third-Party / Vendor Risk + Cyber Ratings | day-1 | — | extend existing TPRM to AI vendors and AI features of existing vendors | Vendor Risk | ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard. |
+| `enterprise-grc` | Enterprise GRC | day-1 | — | usually already owned — extend existing GRC to AI risk | Enterprise Governance, Risk & Compliance | ServiceNow GRC, Archer, LogicGate, Optro (ex-AuditBoard), OneTrust, Onspring, Vanta, Drata. |
+| `vendor-risk` | Third-Party / Vendor Risk + Cyber Ratings | day-1 | — | extend existing TPRM to AI vendors and AI features of existing vendors | Vendor Risk Rating & Monitoring | ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard, Venminder, Whistic. |
 | `comms-surveillance` | Comms Surveillance | firm-type-specific | — | registered advisers / regulated comms (MAR/MNPI) — hedge-fund-critical | Comms Surveillance | Surveillance/analysis, NOT capture/archival — scope-boundary note required. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace. |
 | `ephemeral-environments` | Ephemeral Environments | practice | — | underpins trust-zone design — disposable compute for risky AI work | — | GitHub Codespaces, Azure Dev Boxes, Terraform Cloud, Cloudflare Workers. |
 | `policy-as-code` | Policy-as-Code | day-2 | — | guardrails you want enforced by software, not documents | — | OPA, HashiCorp Sentinel, Kyverno. |

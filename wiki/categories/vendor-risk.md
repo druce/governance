@@ -5,17 +5,17 @@ name: Third-Party / Vendor Risk + Cyber Ratings
 slug: vendor-risk
 category: vendor-risk
 layer: governance
-survey_question: Vendor Risk
+survey_question: Vendor Risk Rating & Monitoring
 adoption_tier: day-1
 trigger: extend existing TPRM to AI vendors and AI features of existing vendors
 maturity_stage_required: null
 category_maturity: mature
 adjacent: [enterprise-grc, third-party-ai-apps]
 incumbent_coverage: []
-vendor_count: 5
+vendor_count: 7
 maps_to_seed_doc: Third-Party / Vendor Risk + Cyber Ratings
 maps_to_seed_csv: Vendor Risk
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 ---
 
 ## Business objective
@@ -61,14 +61,18 @@ feeds:
 - [bitsight](../vendors/bitsight.md) — outside-in cyber ratings; large ratings dataset, common benchmark.
 - [black-kite](../vendors/black-kite.md) — cyber ratings with financial-impact and ransomware-susceptibility framing.
 - [upguard](../vendors/upguard.md) — cyber ratings + attack-surface / vendor monitoring, lighter-weight.
+- [venminder](../vendors/venminder.md) — TPRM assessment platform + analyst-performed vendor reviews; FI-heavy; part of Ncontracts since 2024.
+- [whistic](../vendors/whistic.md) — security-questionnaire automation and vendor-profile exchange network; AI-assisted assessments.
 
 ## Consolidation / M&A dynamics
 
-A relatively stable market split between assessment/workflow platforms (ProcessUnity)
-and ratings providers (BitSight, SecurityScorecard, Black Kite, UpGuard). No specific
-seed M&A flags for these vendors. The live trend is ratings vendors and TPRM platforms
-each adding AI-vendor-specific risk modules and "is this vendor using AI / training on
-your data" signals.
+A market split between assessment/workflow platforms (ProcessUnity, Venminder,
+Whistic) and ratings providers (BitSight, SecurityScorecard, Black Kite, UpGuard) —
+and consolidating: **Ncontracts acquired Venminder** (announced 2024-09-04, via an Hg
+buyout), ProcessUnity had earlier merged with CyberGRX, and SecurityScorecard bought
+HyperComply (2025) to add questionnaire automation. The live trend is ratings vendors
+and TPRM platforms each adding AI-vendor-specific risk modules and "is this vendor
+using AI / training on your data" signals.
 
 ## Adjacent categories
 
@@ -83,7 +87,7 @@ your data" signals.
 use to assess and monitor suppliers (including AI vendors)?
 
 **Answer options.** ProcessUnity; SecurityScorecard; BitSight; Black Kite; UpGuard;
-Other (Please Specify).
+Venminder (Ncontracts); Whistic; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -91,7 +95,9 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 **Notes for survey design.** Respondents commonly use an assessment platform *and* a
 ratings feed, so multi-select is essential and overlap is expected, not noise.
 BitSight and SecurityScorecard are the table-stakes ratings names; Black Kite and
-UpGuard are credible alternatives/additions. Many firms run TPRM inside their
+UpGuard are credible alternatives/additions. Venminder skews to banks/credit unions —
+useful to see whether buy-side firms use it too; Whistic is the questionnaire-exchange
+niche. Many firms run TPRM inside their
 [enterprise-grc](enterprise-grc.md) tool (ServiceNow, Archer, OneTrust) rather than a dedicated
 product — add an "our GRC platform handles this" option or follow-up. Consider asking
 separately whether AI-specific vendor questions have been added to the standard

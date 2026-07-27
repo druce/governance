@@ -42,13 +42,13 @@ tags: [grc, no-code, risk-management, compliance]
 
 **Deployment & architecture** — SaaS. No-code app/workflow builder with reporting/dashboards; integrations via API and connectors; questionnaire automation for third-party risk.
 
-**Positioning & differentiators** — A mid-market no-code challenger, closest to [logicgate](logicgate.md); both position against heavyweight [archer](archer.md) / [servicenow](servicenow.md). Smaller and less well-known than [auditboard](auditboard.md).
+**Positioning & differentiators** — A mid-market no-code challenger, closest to [logicgate](logicgate.md); both position against heavyweight [archer](archer.md) / [servicenow](servicenow.md). Smaller and less well-known than [optro](optro.md).
 
 **Ownership, funding & M&A** — `independent`. Privately held, HQ Overland Park, Kansas; founded 2010. Took a minority growth investment from Capital IP Investment Partners; no control change / acquisition found. (medium confidence — private company, limited disclosure.)
 
 **CTO / hedge-fund lens** — Day-1 GRC for a smaller or mid-size fund wanting a configurable risk/compliance system without heavy implementation. Niche/less-proven brand than the leaders; fine where flexibility and price matter more than analyst-leader status.
 
-**Competitors / alternatives** — [logicgate](logicgate.md), [auditboard](auditboard.md), [archer](archer.md), [servicenow](servicenow.md), [onetrust](onetrust.md).
+**Competitors / alternatives** — [logicgate](logicgate.md), [optro](optro.md), [archer](archer.md), [servicenow](servicenow.md), [onetrust](onetrust.md).
 
 **Open questions / to verify** — Funding amount/date; size of customer base; depth of AI-governance templates.
 

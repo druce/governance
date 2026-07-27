@@ -66,7 +66,7 @@ not *which* control.
 ## How it gets recorded (tooling, not a shortlist)
 
 - [enterprise-grc](enterprise-grc.md) — the system of record where the tier, its rationale, and its
-  owner actually live (ServiceNow GRC, Archer, AuditBoard, OneTrust, etc.). Usually
+  owner actually live (ServiceNow GRC, Archer, Optro (formerly AuditBoard), OneTrust, etc.). Usually
   already owned.
 - [ai-governance-platform](ai-governance-platform.md) — purpose-built AI inventories that attach a risk tier to
   each model/use case and map it to NIST AI RMF / EU AI Act / SR 11-7 obligations.

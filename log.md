@@ -143,3 +143,19 @@ scope). Spec: `docs/superpowers/specs/2026-07-15-citizen-dev-primer-design.md`.
 Draws on the 12-dimension maturity framework (druce.ai ai_maturity.html), the
 2026-04 ai-implementation post (Crawl→Fly), and this wiki's trust-zone / risk-tier /
 promotion-gate categories. Ch 6 tool claims flagged for research-at-writing-time.
+
+## [2026-07-27] research | optro (ex-auditboard)
+User flagged AuditBoard rename. VERIFIED: AuditBoard renamed to **Optro** (announced 2026-03-09 at IIA Great Audit Minds; new domain optro.ai). Ownership unchanged (Hg PE, 2024, >$3B). Also picked up: new CEO Raul Villar Jr. (2025-07), FairNow (AI governance) acquired fall 2025. Sources cached: `raw/sources/2026-07-27--optro--rebrand-announcement.md`.
+
+## [2026-07-27] decision | slug rename auditboard → optro
+Per slug convention (vendor slug = company name), `wiki/vendors/auditboard.md` → `wiki/vendors/optro.md` (git mv), `aka: [AuditBoard, SOXHUB]`. All inbound links updated (archer, logicgate, onspring, servicenow, enterprise-grc, risk-tiers). CSV product renamed to "Optro (formerly AuditBoard)" — keep the "formerly" qualifier on survey options while the new name is unfamiliar.
+
+## [2026-07-27] decision | survey question labels renamed
+User renamed CSV category labels: "Enterprise GRC" → "Enterprise Governance, Risk & Compliance"; "Vendor Risk" → "Vendor Risk Rating & Monitoring". Rippled into `taxonomy.yaml` `survey_question` + both category pages' frontmatter; taxonomy.md regenerated. `seed_csv`/`maps_to_seed_csv` keep the original seed names. Also fixed unquoted comma in the new GRC label that broke CSV parsing.
+
+## [2026-07-27] stub | drata, venminder, whistic
+User asked whether to add Drata, Venminder, Whistic. Added all three, created + researched same day:
+- **drata** → enterprise-grc (compliance automation, Vanta's closest rival; independent, $2B valuation Series C 2022; NO SailPoint acquisition found — rumor checked and unsubstantiated).
+- **venminder** → vendor-risk (TPRM assessments; acquired by Ncontracts announced 2024-09-04 via Hg buyout).
+- **whistic** → vendor-risk (questionnaire automation / vendor-profile network; independent, Series B 2022 JMI Equity).
+Category pages, survey options, taxonomy notes, and CSV rows updated.

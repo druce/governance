@@ -486,26 +486,26 @@ categories:
     layer: governance
     adoption_tier: day-1
     trigger: "usually already owned — extend existing GRC to AI risk"
-    survey_question: "Enterprise GRC"
+    survey_question: "Enterprise Governance, Risk & Compliance"
     agent_security_context: false
     category_maturity: mature
     adjacent: [ai-governance-platform, vendor-risk]
     seed_doc_row: "Enterprise GRC"
     seed_csv: "Enterprize GRC"
-    notes: "ServiceNow GRC, Archer, LogicGate, AuditBoard, OneTrust, Onspring."
+    notes: "ServiceNow GRC, Archer, LogicGate, Optro (ex-AuditBoard), OneTrust, Onspring, Vanta, Drata."
 
   - slug: vendor-risk
     display_name: "Third-Party / Vendor Risk + Cyber Ratings"
     layer: governance
     adoption_tier: day-1
     trigger: "extend existing TPRM to AI vendors and AI features of existing vendors"
-    survey_question: "Vendor Risk"
+    survey_question: "Vendor Risk Rating & Monitoring"
     agent_security_context: false
     category_maturity: mature
     adjacent: [enterprise-grc, third-party-ai-apps]
     seed_doc_row: "Third-Party / Vendor Risk + Cyber Ratings"
     seed_csv: "Vendor Risk"
-    notes: "ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard."
+    notes: "ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard, Venminder, Whistic."
 
   - slug: comms-surveillance
     display_name: "Comms Surveillance"
