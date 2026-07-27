@@ -1899,3 +1899,36 @@ occurrences left are historical prose in this entry and the page's History line.
 URL on a different host, out of scope for this fix.
 
 Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
+
+## [2026-07-27] research | microsoft-edge-business
+
+URL audit follow-up — **resolved as "keep the existing URL," not a swap.**
+`https://www.microsoft.com/en-us/edge/business/` 301s then **302**s to
+`https://explore.microsoft.com/en-us/edge/business/`, titled "An Industry-Leading Secure
+Enterprise Browser | Microsoft Edge for Business". Fetched and confirmed live and current
+(Forrester TEI + IDC recognition, Configure/Pilot/Adopt adoption flow). Same company, same
+product — a marketing-site domain shift, no rebrand or ownership change.
+
+Diagnosis: **domain not yet proven permanent.** The whole `/en-us/edge/business/*` subtree moves
+together (`/security`, `/download`, `/management`, `/productivity` all redirect alike), which
+argues for a real migration. But three signals argue against treating `explore.microsoft.com` as
+canonical yet:
+1. the www -> explore hop is a **302 (temporary)**, not a 301;
+2. the redirect appends a campaign tracking param, `?form=MA13FJ`;
+3. the served page's own `og:url` still declares `https://www.microsoft.com/en-us/edge/business/`,
+   contradicting its `rel=canonical`, which points at `explore.microsoft.com`.
+
+`explore.microsoft.com` is a Microsoft marketing microsite host that has carried temporary
+campaign content before. Decision: keep `website` on the `www` brand domain — it still resolves
+200, is not a dead link, and stays correct whichever way Microsoft settles this. Recorded the
+conflict as a dated open question on the page rather than papering over it.
+
+Changes: `last_verified` -> 2026-07-27; `verify_after` -> 2027-01-27 (re-check whether the 302
+hardens into a 301, then switch); dated History line; new open-questions entry. `website`
+deliberately unchanged. The `## Sources` entry pointing at `.../edge/business/security` also
+left as-is — it redirects the same way and still resolves 200.
+
+`survey-v2.csv`: no edit needed — the "Microsoft Edge for Business" row (line 131) already
+carries `https://www.microsoft.com/en-us/edge/business/`, consistent with this decision.
+
+Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).

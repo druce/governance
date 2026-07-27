@@ -25,8 +25,8 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise / mid-market / regulated (existing Microsoft 365 / Windows shops, all sizes)
-last_verified: 2026-06-28
-verify_after: null
+last_verified: 2026-07-27
+verify_after: 2027-01-27
 tags: [first-party, browser, microsoft, zero-trust, dlp, purview]
 ---
 
@@ -81,6 +81,7 @@ First-party product of **Microsoft Corporation** (NASDAQ: MSFT) — a **public**
 - Exactly which DLP / sensitivity-label / watermarking features are included at each M365 tier vs requiring E5 / Purview add-ons — the licensing matrix matters for "free" claims; verify against current Microsoft licensing docs.
 - Founding "date" — Edge (Chromium) launched 2020; the "Edge for Business" enterprise mode/branding came later (~2023). Left blank rather than assert a single founding year.
 - Depth of last-mile controls (screenshot blocking, full session isolation) versus dedicated enterprise browsers.
+- **Marketing-site domain (open, 2026-07-27).** The whole `www.microsoft.com/en-us/edge/business/*` tree now **302**s (temporary, not 301) to the same paths on `explore.microsoft.com`, which then self-redirects appending a campaign tracking param (`?form=MA13FJ`). Signals conflict: the served page's `rel=canonical` points at `explore.microsoft.com`, but its `og:url` still declares `www.microsoft.com/en-us/edge/business/`. `explore.microsoft.com` is a Microsoft marketing microsite host, so this may not be permanent. `website` deliberately kept on the `www` brand domain, which still resolves 200 and survives either outcome. Re-check whether the redirect hardens to a 301 (then switch) or reverts.
 
 ## Sources
 
@@ -89,4 +90,5 @@ First-party product of **Microsoft Corporation** (NASDAQ: MSFT) — a **public**
 
 ## History
 - [2026-06-28] Stub created from seed registry.
+- [2026-07-27] URL audit: `www.microsoft.com/en-us/edge/business/` now 302s to `explore.microsoft.com/en-us/edge/business/` (live, current — Forrester TEI / IDC content). Assessed as **not clearly permanent** — temporary 302 rather than 301, campaign tracking param appended, and the page's own `og:url` still points back to `www` even though its `rel=canonical` points at `explore`. Kept `website` on the `www` brand domain (resolves 200, no dead link); logged the ambiguity as an open question. Product, company and positioning unchanged. Refreshed last_verified; set verify_after 2027-01-27.
 - [2026-06-28] Researched; established Edge for Business = Microsoft's enterprise-managed Edge included with Windows/M365, with native Purview DLP + sensitivity labels, Defender SmartScreen, Entra Conditional Access, Intune management; advanced DLP features tier-dependent. Corrected ownership independent -> public (Microsoft, NASDAQ MSFT), confidence high. Set deployment saas/self-hosted, hedge_fund_fit medium, trifecta sensitive-data/egress. Cached 2 primary sources.
