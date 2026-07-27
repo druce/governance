@@ -113,7 +113,7 @@ Tool Identity & Integration (Agent Auth),StackOne,Unified-API agent tooling,,htt
 Tool Identity & Integration (Agent Auth),Descope,Agent/CIAM auth,,https://www.descope.com,https://github.com/druce/governance/blob/master/wiki/vendors/descope.md
 Tool Identity & Integration (Agent Auth),Stytch (Twilio),"Acq. by Twilio (closed 2025-11-14)",,https://stytch.com,https://github.com/druce/governance/blob/master/wiki/vendors/stytch.md
 Tool Identity & Integration (Agent Auth),WorkOS,"Agent auth; acquirer of Warrant (FGA)",,https://workos.com,https://github.com/druce/governance/blob/master/wiki/vendors/workos.md
-Tool Identity & Integration (Agent Auth),CyberArk (Palo Alto),"Acq. by Palo Alto (closed 2026-02-11)",,https://www.cyberark.com,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
+Tool Identity & Integration (Agent Auth),CyberArk / Idira (Palo Alto),"Now Idira (Palo Alto Networks) — rebranded 2026-05-12; acq. closed 2026-02-11",,https://www.paloaltonetworks.com/idira,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
 Tool Identity & Integration (Agent Auth),Other (Please Specify),,,,
 Shadow-AI / Insider risk,WitnessAI,"NEW (cross-listed from Runtime): shadow-AI / access governance is its primary wiki category",,https://witness.ai,https://github.com/druce/governance/blob/master/wiki/vendors/witnessai.md
 Shadow-AI / Insider risk,Harmonic,Independent,,https://www.harmonic.security,https://github.com/druce/governance/blob/master/wiki/vendors/harmonic-security.md
@@ -144,7 +144,7 @@ SaaS Security Posture Management (SSPM),Valence Security,NEW CATEGORY: Independe
 SaaS Security Posture Management (SSPM),Wing Security,NEW CATEGORY: Independent,,https://wing.security,https://github.com/druce/governance/blob/master/wiki/vendors/wing-security.md
 SaaS Security Posture Management (SSPM),DoControl,NEW CATEGORY: Independent,,https://www.docontrol.io,https://github.com/druce/governance/blob/master/wiki/vendors/docontrol.md
 SaaS Security Posture Management (SSPM),Other (Please Specify),,,,
-Non-Human Identity / Agent Identity Governance,CyberArk (Palo Alto),"Acq. by Palo Alto (closed 2026-02-11; ~$25B)",,https://www.cyberark.com,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
+Non-Human Identity / Agent Identity Governance,CyberArk / Idira (Palo Alto),"Now Idira (Palo Alto Networks) — rebranded 2026-05-12; acq. closed 2026-02-11 ($21.1B final; ~$25B announced)",,https://www.paloaltonetworks.com/idira,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
 Non-Human Identity / Agent Identity Governance,Astrix (Cisco),"Acq. by Cisco CLOSED 2026-06-29 (~$400M, unofficial) — standalone sales ended 2026-06-30",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
 Non-Human Identity / Agent Identity Governance,Token Security,Independent,,https://www.token.security,https://github.com/druce/governance/blob/master/wiki/vendors/token-security.md
 Non-Human Identity / Agent Identity Governance,Aembit,Independent,,https://aembit.io,https://github.com/druce/governance/blob/master/wiki/vendors/aembit.md
@@ -191,7 +191,7 @@ AI SOC analysts,Other (Please Specify),,,,
 Identity Governance & Visibility (IGA / ISPM),SailPoint,"Public (SAIL; re-IPO 2025; Thoma Bravo majority); acquired Entro Security (closed 2026-06-29)",,https://www.sailpoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/sailpoint.md
 Identity Governance & Visibility (IGA / ISPM),Saviynt,"Independent ($700M KKR round 2025)",,https://saviynt.com,https://github.com/druce/governance/blob/master/wiki/vendors/saviynt.md
 Identity Governance & Visibility (IGA / ISPM),Veza (ServiceNow),"Acq. by ServiceNow (closed 2026-03-02; ~$1B)",,https://veza.com,https://github.com/druce/governance/blob/master/wiki/vendors/veza.md
-Identity Governance & Visibility (IGA / ISPM),CyberArk (Palo Alto),"PAM-first; acq. by Palo Alto (closed 2026-02-11)",,https://www.cyberark.com,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
+Identity Governance & Visibility (IGA / ISPM),CyberArk / Idira (Palo Alto),"PAM-first; now Idira IGA module (Palo Alto Networks) — rebranded 2026-05-12; acq. closed 2026-02-11",,https://www.paloaltonetworks.com/idira,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
 Identity Governance & Visibility (IGA / ISPM),Linx Security,AI-native IGA + NHI,,https://www.linx.security/,https://github.com/druce/governance/blob/master/wiki/vendors/linx-security.md
 Identity Governance & Visibility (IGA / ISPM),Lumos,AI-native IGA,,https://www.lumos.com,https://github.com/druce/governance/blob/master/wiki/vendors/lumos.md
 Identity Governance & Visibility (IGA / ISPM),Hydden,Visibility/discovery layer (seed-stage),,https://www.hydden.com/,https://github.com/druce/governance/blob/master/wiki/vendors/hydden.md

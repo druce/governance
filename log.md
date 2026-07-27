@@ -819,3 +819,96 @@ column now carries the Idira/PANW status. Revisit if the cyberark pass renames i
 *second-order* acquisition — the vendor's acquirer got acquired. Two rename events can stack
 (product rename under acquirer #1, then platform rebrand under acquirer #2), so reconstruct
 the full chain before assuming the redirect target is the direct buyer.
+
+## [2026-07-27] research | cyberark
+
+Companion to the `conjur` entry above — same deal, opposite end of the chain. Conjur is the
+product two acquisitions deep; **this is the parent**. URL audit found `cyberark.com` **still
+live and unredirected (HTTP 200)** — unlike `conjur.org`, which 301s — but now leading with
+the banner *"Palo Alto Networks Completes Acquisition of CyberArk to Secure the AI Era"* and
+the headline *"CyberArk is now Idira,"* linking to `paloaltonetworks.com/idira`.
+
+**Went to primary SEC filings rather than press coverage**, per the cost-verification lesson
+from earlier in this sweep. Two findings, one confirming and one correcting:
+
+**Close date CONFIRMED exactly — 2026-02-11.** PANW Form 8-K (event date 2026-02-11, accession
+0001193125-26-045600) defines the term in Item 1.01: *"on February 11, 2026 (the 'Closing
+Date')"*, and Item 8.01 states PANW *"completed the acquisition of CyberArk pursuant to the
+Agreement and Plan of Merger, dated as of July 30, 2025."* Corroborated by CyberArk's own
+same-day Form 25-NSE (Nasdaq delisting), POSASR and 15× S-8 POS, plus Form 15-12G
+deregistration on 2026-02-23. **No drift between the blog "completion" date and the legal
+close** — this time the press release and the filing agree, which is itself worth knowing
+after the earlier task where they didn't. Also learned: reverse-triangle merger via Israeli
+Merger Sub "Athens Strategies Ltd."; **CyberArk Software Ltd. was not dissolved** and survives
+as a wholly owned PANW subsidiary, which matters for who you actually contract with.
+
+**Price CORRECTED — this is the discrepancy vs. the conjur entry.** Both `cyberark.md` and
+`conjur.md` carried "~$25B," which is the *announced equity value* from 2025-07-30. PANW's Q3
+FY2026 10-Q (period 2026-04-30, filed 2026-06-03), Note 7, gives the **final purchase
+consideration as $21.1 billion** — $2,308M cash + $18,488M in 112M PANW shares + $265M
+replacement equity awards = $21,061M. Not a contradiction, a **measurement-date difference**:
+~88% of consideration was PANW stock at a *fixed* 2.2005 exchange ratio, so the six-and-a-half
+months from signing to close repriced it. Recorded `acquisition.price` as
+`$21.1B final consideration (announced as ~$25B equity value)` — both numbers, each labelled.
+Left `conjur.md` alone; ~$25B is defensible there as the announced figure and the precise
+consideration isn't load-bearing for a product page two levels down.
+
+**Bonus signal from purchase accounting:** PANW assigned the acquired **trade name a 1-year
+useful life** (vs. $3.5B of "platform renewals" at 12–14 years). PANW was amortizing the
+CyberArk brand to zero before it publicly announced retiring it — the rebrand three months
+after close was clearly planned at signing. Purchase price allocation also shows $14.8B
+goodwill, $6.3B intangibles, and a $59M post-close workforce optimization plan running through
+FY2027.
+
+**Idira is real, not marketing.** It appears as **Idira™** in PANW's own 10-Q business
+description under a new "Identity Security" segment heading, with five modules: Workforce
+Identity Security; IT and Developer Identity Security (Modern PAM); Machine Identity Security;
+IGA; AI Agents Security. Rebrand announced **2026-05-12** per PANW investor relations — this
+**settles the 2026-05-12 vs 2026-05-13 ambiguity the conjur source file flagged**: 05-12 is
+the PANW release date, 05-13 is SDxCentral's story date.
+
+**`ownership_state: acquired-closed` verified correct and not a false positive.** The task
+flagged a risk of confusing CyberArk-as-acquirer with CyberArk-as-target — real risk, since
+CyberArk bought Conjur, Idaptive, Venafi and Zilla Security. It is genuinely the target here;
+the page now separates the two explicitly in the M&A section so a future reader doesn't
+re-litigate it.
+
+Changes to `wiki/vendors/cyberark.md`: `website` → the Idira platform page (`cyberark.com` is
+live but transitional and signposting its own replacement); `aka` += `Idira`,
+`Palo Alto Networks Idira`, `CyberArk Software Ltd.`; `ownership_note` rewritten with both
+price figures and the entity-survival fact; `acquisition.price` set; tags += `agentic-identity`,
+`palo-alto`, `idira`, `renamed`; `last_verified` → 2026-07-27; structured `sources:` block added
+(3 entries). Body: new **Idira product-map table** (module → legacy SKU), rewritten
+positioning, expanded M&A, five-point CTO checklist, 5 new sources, dated History line.
+Source cached to `raw/sources/2026-07-27--cyberark--panw-close-sec-filings-and-idira.md`.
+
+**Positioning rewritten, not just annotated.** The old page called CyberArk the "PAM gold
+standard" and left the framing intact. "Independent PAM leader" is now simply false — it is one
+pillar of a four-pillar PANW platform. The page argues both directions (consolidation leverage
+and a genuine ZSP capability gain at no extra cost, vs. loss of a best-of-breed vendor and new
+concentration risk), and flags **vendor concentration as the live buyer question** for any fund
+already running PAN-OS/Cortex. That's a risk-committee item, not a technical one, and it's the
+thing most likely to surprise someone.
+
+**Conjur open question resolved from this end too:** "does Conjur stay separately marketed"
+— no, it's Idira Secrets Manager.
+
+**`survey-v2.csv`, 3 rows (116, 147, 194) — renamed, diverging from the conjur decision.**
+Option label `CyberArk (Palo Alto)` → **`CyberArk / Idira (Palo Alto)`**; vendor URL → the
+Idira page; flag notes now carry the 2026-05-12 rebrand date. Reasoning: the recognition-over-
+precision convention (logged 2026-07-27) says keep the string respondents know — but here
+*both* strings are recognizable. The vendor's own homepage says "CyberArk is now Idira," and a
+respondent whose console has already flipped may not connect a bare "CyberArk" to what they're
+running. Leading with CyberArk preserves recognition; appending Idira catches the other half.
+This does **not** overturn the conjur row staying `Conjur (CyberArk)` — that case is different
+in kind: Conjur's replacement name is the generic "Secrets Manager," which is unrecognizable
+standing alone and would collide with every other secrets product in the option list. Rename
+where the new brand is distinctive; don't where it's generic.
+
+**Method note worth keeping:** for any acquisition where consideration is substantially
+*stock* at a fixed exchange ratio, the announced headline value and the final GAAP
+consideration will differ by however the acquirer's share price moved between signing and
+close — and the gap grows with the time to close (here, ~6.5 months and ~$4B, ~16%). The
+acquirer's first post-close 10-Q, Note "Acquisitions," is the authoritative number. Press
+coverage almost always keeps repeating the announced figure. Applies to several other
+still-pending items in this sweep; record both figures rather than picking one.
