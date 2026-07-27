@@ -6,7 +6,7 @@ slug: hashicorp-sentinel
 aka: [Sentinel]
 primary_category: policy-as-code
 also_listed_in: []
-website: https://docs.hashicorp.com/sentinel
+website: https://developer.hashicorp.com/sentinel
 founded: 2017
 hq: San Francisco, CA, USA
 ownership_state: acquired-closed
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [first-party, policy-as-code, hashicorp, ibm]
 ---
@@ -57,3 +57,4 @@ tags: [first-party, policy-as-code, hashicorp, ibm]
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched (light); established ownership = subsidiary (HashiCorp, acq. IBM 2025-02-27, high). Described as ecosystem-specific policy-as-code vs OPA/Kyverno.
+- [2026-07-27] URL fix: `docs.hashicorp.com/sentinel` 308-redirects to `developer.hashicorp.com/sentinel` (HashiCorp consolidated product docs onto the developer portal). Docs-platform domain migration only — same company, same product. Verified live; `last_verified` bumped.

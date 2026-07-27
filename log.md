@@ -1876,3 +1876,26 @@ consolidation.
 the parent [cloudflare](wiki/vendors/cloudflare.md) page, which is correct for those categories.
 
 Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
+
+## [2026-07-27] research | hashicorp-sentinel
+
+URL fix, no substantive change. `https://docs.hashicorp.com/sentinel` 308-redirects to
+`https://developer.hashicorp.com/sentinel`, titled "Sentinel | HashiCorp Developer". Fetched
+and confirmed live and current: Sentinel presented as HashiCorp's policy-as-code tool with
+getting-started docs, use cases, and the hosted policy playground.
+
+Diagnosis: **docs-platform domain migration.** HashiCorp consolidated all product docs onto the
+`developer.hashicorp.com` portal. Same company, same product — no rebrand or ownership change.
+Ownership frontmatter untouched (HashiCorp, acq. IBM closed 2025-02-27, $6.4B).
+
+Changes: `website` → `https://developer.hashicorp.com/sentinel`; `last_verified` → 2026-07-27;
+dated History line noting the migration. The `## Sources` list needed no edit — both entries
+point at the IBM newsroom acquisition release and a cached `raw/sources/` file, neither on the
+retired docs domain. No live `docs.hashicorp.com` link remains anywhere in the repo — the only
+occurrences left are historical prose in this entry and the page's History line.
+
+`survey-v2.csv`: no edit — there is no "HashiCorp Sentinel" row. The one HashiCorp row
+(Secrets Manager, HashiCorp Vault (IBM)) points at `hashicorp.com/products/vault`, a marketing
+URL on a different host, out of scope for this fix.
+
+Light-touch pass: no full lint run, `index.md` untouched (no page added/removed/renamed).
