@@ -25,7 +25,7 @@ AI Gateway,LiteLLM,"Independent (OSS)",,https://www.litellm.ai/,https://github.c
 AI Gateway,TrueFoundry,Independent,,https://www.truefoundry.com,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
 AI Gateway,Cloudflare,Public (NET),,https://www.cloudflare.com/products/ai-gateway/,https://github.com/druce/governance/blob/master/wiki/vendors/cloudflare.md
 AI Gateway,Kong AI Gateway,"Independent; also MCP gateway",,https://konghq.com,https://github.com/druce/governance/blob/master/wiki/vendors/kong.md
-AI Gateway,F5,"Public (FFIV); acquired CalypsoAI 2025-10",,https://www.f5.com,https://github.com/druce/governance/blob/master/wiki/vendors/f5.md
+AI Gateway,F5,"Public (FFIV); acquired CalypsoAI (closed 2025-09-26, $145.2M) and SurePath AI (closed 2026-06-22)",,https://www.f5.com,https://github.com/druce/governance/blob/master/wiki/vendors/f5.md
 AI Gateway,OpenRouter,"Independent; hosted aggregator (data leaves tenancy)",,https://openrouter.ai,https://github.com/druce/governance/blob/master/wiki/vendors/openrouter.md
 AI Gateway,Other (Please Specify),,,,
 LLM Observability & Eval,Langfuse (ClickHouse),"Acq. by ClickHouse (announced 2026-01-26); core stays OSS",,https://langfuse.com,https://github.com/druce/governance/blob/master/wiki/vendors/langfuse.md
@@ -124,7 +124,7 @@ Shadow-AI / Insider risk,Cyberhaven,Data-flow visibility into AI usage,,https://
 Shadow-AI / Insider risk,Wald.ai,AI usage discovery + redaction,,https://wald.ai,https://github.com/druce/governance/blob/master/wiki/vendors/wald-ai.md
 Shadow-AI / Insider risk,Portal26,Independent (formerly Titaniam),,https://portal26.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portal26.md
 Shadow-AI / Insider risk,Reco,"NEW: Independent; also AI-SPM / SSPM",,https://www.reco.ai,https://github.com/druce/governance/blob/master/wiki/vendors/reco.md
-Shadow-AI / Insider risk,SurePath AI (F5),"NEW: Acq. by F5 (announced 2026-06-22, pending close); network-based shadow-AI discovery",,https://www.surepath.ai,https://github.com/druce/governance/blob/master/wiki/vendors/surepath-ai.md
+Shadow-AI / Insider risk,SurePath AI (F5),"VERIFIED 2026-07-27: Acq. by F5, closed 2026-06-22 (announced as already completed; terms undisclosed, ~$47.6M cash implied by F5 Q3 FY2026 cash flow). SurePath brand + surepath.ai retained, still sold standalone. Separate deal from CalypsoAI. Network-based shadow-AI discovery.",,https://www.surepath.ai,https://github.com/druce/governance/blob/master/wiki/vendors/surepath-ai.md
 Shadow-AI / Insider risk,Proofpoint AI Security (formerly Acuvity),"NEW: Acq. by Proofpoint (closed 2026-02-12); Acuvity brand retired, site redirects; sold as AI Access Security / Agentic AI Security / AI MCP Security",,https://www.proofpoint.com/us/platform/ai-security,https://github.com/druce/governance/blob/master/wiki/vendors/acuvity.md
 Shadow-AI / Insider risk,Other (Please Specify),,,,
 Enterprise Browser Security,Google Chrome Enterprise Premium,Google,,https://chromeenterprise.google/products/chrome-enterprise-premium/,https://github.com/druce/governance/blob/master/wiki/vendors/chrome-enterprise.md

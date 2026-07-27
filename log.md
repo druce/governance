@@ -1426,3 +1426,82 @@ Flag-Note upgraded to the verified dates + price.
 
 No `decision` entry: nothing recorded on the page was wrong, so there was no contradiction to
 resolve under CLAUDE.md §8 — this was a confirmation plus a fill of a null field.
+
+## [2026-07-27] research | surepath-ai
+
+URL audit found `surepath.ai` live (HTTP 200, no redirect) carrying a **"SurePath AI is now a part of
+F5"** banner linking to F5's 2026-06-22 press release and to the F5 AI Security Platform page. The
+page was recorded `acquired-pending` with `closed: null` and `verify_after: 2026-10-01`.
+
+**Is this the CalypsoAI deal? No — it is a separate, second F5 acquisition.** Different target
+(Denver, network-based shadow-AI discovery vs Dublin, AI runtime guardrails), different fiscal year
+(F5 FY2026 Q3 vs FY2025 Q4), different money. CalypsoAI closed 2025-09-26 for $145.2M; SurePath
+closed nine months later. F5 stacks them as complementary — SurePath finds the AI usage, the
+CalypsoAI-derived F5 AI Red Team tests it and F5 AI Guardrails polices it.
+
+**Close established without an F5 completion notice.** F5 published no separate closing date, filed
+**no 8-K** for the deal, and as of 2026-07-27 **no F5 SEC filing names SurePath AI** — EDGAR
+full-text search for the phrase returns exactly one hit across all filers, SurePath's own 2024 Form
+D. Three converging pieces of evidence nonetheless establish that the deal is done:
+
+1. The 2026-06-22 press release uses completed-transaction language throughout ("F5 acquires…", "F5
+   also announced the acquisition of…", "The addition of SurePath AI powers…") with **none** of the
+   "definitive agreement / subject to customary closing conditions / expected to close" hedging F5
+   used during CalypsoAI's pending phase.
+2. `surepath.ai` states the company "is now a part of F5."
+3. **F5's own GAAP cash flows.** The Q3 FY2026 earnings release (8-K Ex-99.1, filed 2026-07-27)
+   shows **$47.619M** of "acquisition of businesses, net of cash acquired" for the **nine** months
+   ended 2026-06-30, against **nil** on the same line for the **six** months ended 2026-03-31 (Q2
+   FY2026 10-Q). So acquisition cash actually moved inside 2026-04-01 → 2026-06-30, and SurePath is
+   the only acquisition F5 announced in that window.
+
+Recorded as **closed 2026-06-22** (announce and close effectively simultaneous), `ownership_state`
+→ `acquired-closed`.
+
+**Price: inferred, not disclosed.** The same arithmetic implies **~$47.6M cash net of cash
+acquired** — roughly 7.5× on $6.3M of venture funding for a 3-year-old company. F5 has not itemized
+the figure and does not name SurePath in the filing, so the page states it as an inference from F5's
+cash-flow statement with that caveat, not as a disclosed number. This is the inverse of the pattern
+from the splxai / portkey / stytch entries: there the 10-Q *supplied* a price the press release
+withheld; here the 10-Q that would supply it (**Q3 FY2026, period 2026-06-30**) had not been filed
+as of 2026-07-27. `verify_after` set to **2026-08-10** to re-check EDGAR for a Note 4
+business-combination disclosure with the exact date and purchase-price allocation. Precedent for why
+that matters: F5's FY2026 Q1 10-Q moved CalypsoAI's close date by 12 days and its price by ~$35M
+against the press narrative (logged 2026-07-27).
+
+**Brand outcome is the opposite of CalypsoAI's, and that is the load-bearing editorial finding.**
+`website` stays `https://www.surepath.ai` — the site is live, unredirected, fully SurePath-branded,
+still taking demo requests, `admin.surepath.ai` still the console — whereas `calypsoai.com`
+301-redirects to F5's AI Guardrails page with the CalypsoAI name gone. F5 CTO Jimmy White is quoted
+saying F5 will continue "to offer SurePath AI as an independent platform" alongside ADSP
+integration. Nor has SurePath been renamed into an F5 SKU: the F5 AI Security Platform page lists
+**AI discovery** as one of four pillars, but the only named products under it remain **Guardrails**
+and **Red teaming** — **there is no F5-branded "AI Discovery" product** as of 2026-07-27. Both
+brand-survival open questions on the page resolved accordingly (with "for how long" left open — the
+independent-platform commitment carries no stated horizon, and CalypsoAI's brand lasted ~10 months).
+
+Also updated [f5](wiki/vendors/f5.md) for consistency (its ownership_note and body still said
+"pending close as of 2026-07-13"; last_verified 2026-06-28 → 2026-07-27, verify_after 2026-08-10)
+and survey-v2.csv rows 28 (F5) and 127 (SurePath AI) — row 28 additionally still carried the stale
+"acquired CalypsoAI 2025-10", which the 2026-07-27 CalypsoAI pass had corrected on row 46 but missed
+here. Source cached to `raw/sources/2026-07-27--surepath-ai--f5-close-evidence.md`.
+
+## [2026-07-27] decision | surepath-ai ownership_state pending → closed on inference-plus-primary evidence
+
+CLAUDE.md §7 requires a real, cited close date before `acquired-closed`, and the acquirer never
+published one. Recording `closed: 2026-06-22` rests on the press release's completed-transaction
+grammar plus F5's cash-flow statement bounding the payment inside the quarter ended 2026-06-30 —
+strong, but one inferential step short of "F5 said it closed on date X."
+
+Decision: **record it as closed rather than leaving it pending**, because leaving `acquired-pending`
+would assert something affirmatively false (that a transaction which has already been paid for and
+absorbed is still awaiting completion), and that is the worse error for a reader doing vendor
+diligence. The inference is disclosed in the body, in the `acquisition.price` field, and in the
+cached source rather than laundered into a bare fact, and `verify_after: 2026-08-10` queues the
+Q3 FY2026 10-Q as the confirmation. If that filing gives a different close date, correct the page in
+place with a dated History line — the calypsoai precedent.
+
+Separately, the **~$47.6M price is labelled an inference everywhere it appears** and is deliberately
+*not* stated as a plain figure in `acquisition.price`; per CLAUDE.md §7 an unverified value would
+otherwise stay null, and the compromise is to carry the number with its derivation attached so the
+next pass can confirm or drop it rather than re-derive it.
