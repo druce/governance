@@ -165,3 +165,9 @@ User flagged c1.ai. VERIFIED: ConductorOne renamed to **C1** (announced 2026-04-
 
 ## [2026-07-27] decision | slug rename conductorone → c1
 Per slug convention, `wiki/vendors/conductorone.md` → `wiki/vendors/c1.md` (git mv), `aka: [ConductorOne]`. Inbound links updated (microsoft-entra, okta, sailpoint, saviynt, veza, lumos, hydden, linx-security, identity-governance, data-access-governance, survey-blueprint); taxonomy notes + both CSV rows updated. Survey options render as "C1 (formerly ConductorOne)" — doubly important because an unrelated IT-services MSP (ConvergeOne) also brands as "C1" since 2023; disambiguation note added to the vendor page.
+
+## [2026-07-27] research | proofpoint-dspm (ex-normalyze)
+User flagged normalyze.ai redirect. VERIFIED: normalyze.ai 301-redirects to proofpoint.com/us/normalyze-is-now-proofpoint; product now sold as **Proofpoint Data Security Posture Management** (product page live). Resolves the page's open question — Normalyze brand retired. Source cached: `raw/sources/2026-07-27--proofpoint-dspm--normalyze-brand-retired.md`.
+
+## [2026-07-27] decision | slug rename normalyze → proofpoint-dspm
+Product-slugged (`proofpoint-dspm`), not `proofpoint`, per the product-as-shopping-unit convention (prisma-airs precedent): "Proofpoint" alone is ambiguous — Proofpoint also owns Acuvity and its core email/DLP franchise, and no company-level proofpoint page exists. `aka: [Normalyze]`; website → Proofpoint DSPM product URL; inbound links (rubrik, wiz, bedrock-security, symmetry-systems, teleskope, acuvity, dspm category, M&A map), taxonomy notes, and CSV row updated. Survey option renders "Proofpoint DSPM (formerly Normalyze)".

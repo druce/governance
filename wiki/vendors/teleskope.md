@@ -50,7 +50,7 @@ Notably flexible for the category: **air-gapped, single-tenant SaaS, or Teleskop
 - **AI-era scope** — classification and enforcement extend to GenAI tools and external-LLM egress, not just data stores.
 - **Deployment flexibility** — air-gapped option is rare among cloud-native DSPM peers.
 
-Nearest neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), [normalyze](normalyze.md) (now Proofpoint), [wiz](wiz.md) (DSPM-as-module).
+Nearest neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), [proofpoint-dspm](proofpoint-dspm.md) (ex-Normalyze), [wiz](wiz.md) (DSPM-as-module).
 
 ## Ownership, funding & M&A
 **Independent.** Founded **2022** by **Elizabeth Nammour** (CEO; ex-Airbnb security engineer), HQ **New York City**. Funding: $2.2M pre-seed (2023-07, Lerer Hippeau), ~$7M seed (Primary Venture Partners), **$25M Series A led by M13** (PR 2025-10-31), **$32.2M total**. No M&A activity found. Named customers include Ramp, LegalZoom, Alloy, EarnIn, GoFundMe, Stitch Fix, Notion, Petco, The Atlantic — fintech names (Ramp, Alloy, EarnIn) ground the `fs_traction: claimed` tag, though no asset-manager/hedge-fund customer is named.
@@ -59,7 +59,7 @@ Nearest neighbors: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [c
 Day-1 category (you must know where sensitive data sits before RAG/AI touches it), and the automated-remediation angle suits a small security team that can't work a findings backlog. Freshly funded and independent — the flip side is acquisition risk in a consolidating category (Normalyze→Proofpoint, Securiti→Veeam, Symmetry→Zscaler all went to platforms). Evaluate against Cyera/Sentra on classification quality and against your appetite for autonomous remediation actions in production data stores.
 
 ## Competitors / alternatives
-[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), [securiti](securiti.md), [normalyze](normalyze.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md).
+[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [concentric-ai](concentric-ai.md), [bedrock-security](bedrock-security.md), [securiti](securiti.md), [proofpoint-dspm](proofpoint-dspm.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md).
 
 ## Open questions / to verify
 - Which ISO certification (27001?) — site says "ISO" without a number.

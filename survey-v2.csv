@@ -219,7 +219,7 @@ DSPM / Data Security Posture,Sentra,Independent,,https://www.sentra.io,https://g
 DSPM / Data Security Posture,Concentric AI,Independent,,https://concentric.ai,https://github.com/druce/governance/blob/master/wiki/vendors/concentric-ai.md
 DSPM / Data Security Posture,Bedrock Security,Independent,,https://www.bedrock.security,https://github.com/druce/governance/blob/master/wiki/vendors/bedrock-security.md
 DSPM / Data Security Posture,Securiti (Veeam),"Acq. by Veeam (closed 2025-12-11; $1.725B)",,https://securiti.ai,https://github.com/druce/governance/blob/master/wiki/vendors/securiti.md
-DSPM / Data Security Posture,Normalyze (Proofpoint),"Acq. by Proofpoint (closed ~2024-11)",,https://normalyze.ai,https://github.com/druce/governance/blob/master/wiki/vendors/normalyze.md
+DSPM / Data Security Posture,Proofpoint DSPM (formerly Normalyze),"Acq. by Proofpoint (closed ~2024-11); Normalyze brand retired, site redirects",,https://www.proofpoint.com/us/products/data-security-posture-management,https://github.com/druce/governance/blob/master/wiki/vendors/proofpoint-dspm.md
 DSPM / Data Security Posture,Symmetry Systems (Zscaler),"Acq. by Zscaler (announced 2026-05-21 — pending)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md
 DSPM / Data Security Posture,Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 DSPM / Data Security Posture,Rubrik,"Public (RBRK); acquired Laminar",,https://www.rubrik.com,https://github.com/druce/governance/blob/master/wiki/vendors/rubrik.md

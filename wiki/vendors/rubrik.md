@@ -55,7 +55,7 @@ Rubrik's edge is owning **both** the backup/recovery franchise and a data-securi
 If a fund already runs Rubrik for backup/ransomware recovery, its DSPM is a low-friction add-on to get basic data-exposure visibility (including for Copilot) without buying a separate tool — a reasonable **Day-1 "good enough"** path. If you need best-of-breed classification/posture for a complex regulated estate, a focused DSPM ([cyera](cyera.md), [sentra](sentra.md), [symmetry-systems](symmetry-systems.md)) likely goes deeper. Backup/cyber-recovery itself is table-stakes resilience for any fund. Being a public company is a procurement/vendor-stability plus.
 
 ## Competitors / alternatives
-DSPM: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [bedrock-security](bedrock-security.md), [symmetry-systems](symmetry-systems.md), [normalyze](normalyze.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md). Backup/resilience: Cohesity, Commvault, Veritas (no pages).
+DSPM: [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [bedrock-security](bedrock-security.md), [symmetry-systems](symmetry-systems.md), [proofpoint-dspm](proofpoint-dspm.md), [wiz](wiz.md), [microsoft-purview](microsoft-purview.md). Backup/resilience: Cohesity, Commvault, Veritas (no pages).
 
 ## Open questions / to verify
 - Real-world depth/adoption of Rubrik DSPM (Laminar) vs. dedicated DSPM vendors.

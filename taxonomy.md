@@ -41,7 +41,7 @@ Counts: **42 canonical categories** across 7 layers.
 
 | slug | display name | tier | agent-sec | trigger | survey question | notes |
 |---|---|---|---|---|---|---|
-| `dspm` | Data Classification & DSPM | day-1 | — | before AI touches internal data you must know what/where the sensitive data is | DSPM / Data Security Posture | Purview, BigID, Securiti, Cyera, Sentra, Normalyze, Wiz DSPM, Concentric, Bedrock, Immuta, Collibra. |
+| `dspm` | Data Classification & DSPM | day-1 | — | before AI touches internal data you must know what/where the sensitive data is | DSPM / Data Security Posture | Purview, BigID, Securiti, Cyera, Sentra, Proofpoint DSPM (ex-Normalyze), Wiz DSPM, Concentric, Bedrock, Immuta, Collibra. |
 | `dlp` | Data Loss Prevention (DLP) | day-1 | — | employees can paste sensitive data into anything with a text box | Data Loss Prevention (DLP) | Cyberhaven, Nightfall, MIND, Prompt Security, Lasso, Netskope/Purview DLP. CSV merged DSPM+DLP; we keep the split. |
 | `data-access-governance` | Data Access Governance | day-2 | — | day-1 if doing RAG over internal permissioned data | Data Access Governance | Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, C1 (ex-ConductorOne), Silverfort, Netwrix. |
 

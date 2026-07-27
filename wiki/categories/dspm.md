@@ -67,7 +67,7 @@ Cloud-native DSPM:
 - [cyera](../vendors/cyera.md) — AI-driven data classification; spans DSPM, [dlp](dlp.md), and
   [data-access-governance](data-access-governance.md).
 - [sentra](../vendors/sentra.md) — cloud DSPM with data-access context.
-- [normalyze](../vendors/normalyze.md) — cloud-data security posture (seed flags acquisition — see below).
+- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — cloud-data security posture; formerly Normalyze, now a Proofpoint platform module.
 - [wiz](../vendors/wiz.md) — DSPM as part of a broader cloud-security platform (also [ai-spm](ai-spm.md)).
 - [bedrock-security](../vendors/bedrock-security.md) — data-store discovery and posture.
 - [symmetry-systems](../vendors/symmetry-systems.md) — data-store-centric posture and access analysis.
@@ -83,7 +83,7 @@ Cross-listed:
 
 ## Consolidation / M&A dynamics
 
-- [normalyze](../vendors/normalyze.md) — acquired by Proofpoint (per seed; unverified — to confirm in research).
+- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — Normalyze acquired by Proofpoint (verified; announced 2024-10-29). Brand retired — normalyze.ai redirects to Proofpoint and the product is sold as Proofpoint DSPM (verified 2026-07-27).
 - [wiz](../vendors/wiz.md) — acquired by Google (per seed; unverified — to confirm in research).
 
 Beyond the specific flags, DSPM is consolidating in two directions: cloud-security
@@ -105,9 +105,10 @@ suites (OneTrust, Securiti, Collibra) folding it in alongside cataloging.
 **Question.** Which data classification / DSPM tools is your firm using or
 evaluating to discover and classify sensitive data at rest?
 
-**Answer options.** Microsoft Purview, BigID, Securiti, Cyera, Sentra, Normalyze,
-Wiz, Bedrock Security, Symmetry Systems, Concentric AI, Rubrik, Teleskope, Immuta,
-Collibra, OneTrust, Netskope, Other (Please Specify).
+**Answer options.** Microsoft Purview, BigID, Securiti, Cyera, Sentra,
+Proofpoint DSPM (formerly Normalyze), Wiz, Bedrock Security, Symmetry Systems,
+Concentric AI, Rubrik, Teleskope, Immuta, Collibra, OneTrust, Netskope,
+Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -122,8 +123,8 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - Watch overlap confusion between "DSPM" and "data catalog/governance" — Collibra and
   Immuta lean governance/cataloging, not security posture; some respondents will not
   think of them as DSPM.
-- M&A may date options: confirm Normalyze (Proofpoint) and Wiz (Google) status before
-  fielding.
+- M&A may date options: Normalyze is fully absorbed (option now reads "Proofpoint
+  DSPM (formerly Normalyze)"); confirm Wiz (Google) status before fielding.
 
 ## Open taxonomy questions
 

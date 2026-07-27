@@ -48,12 +48,12 @@ Platform with endpoint/browser-level visibility and runtime enforcement points f
 ## Positioning & differentiators
 - **Breadth across the AI usage surface** — one platform from employee chat use to local AI tools to agent/MCP infrastructure, where most shadow-AI peers stop at the browser/network.
 - **MCP-era coverage** — early mover on securing MCP servers and agent tool calls, the same forward-looking angle F5 cites for [surepath-ai](surepath-ai.md).
-- **Now a platform module** — like [normalyze](normalyze.md) before it, the standalone brand is being absorbed into Proofpoint; evaluate it as Proofpoint's AI-security capability, not an independent tool.
+- **Now a platform module** — like [proofpoint-dspm](proofpoint-dspm.md) before it, the standalone brand is being absorbed into Proofpoint; evaluate it as Proofpoint's AI-security capability, not an independent tool.
 
 Nearest neighbors: [surepath-ai](surepath-ai.md) (the closest analogue — both discovery-led, both acquired by platform vendors in 2026), [witnessai](witnessai.md), [harmonic-security](harmonic-security.md), [aurascape](aurascape.md), [lanai](lanai.md); on the agent/MCP side [zenity](zenity.md), [lasso-security](lasso-security.md), [operant-ai](operant-ai.md).
 
 ## Ownership, funding & M&A
-HQ **Sunnyvale, CA**; founded by cybersecurity/engineering veterans (founding year and founder names not verified — open question). Emerged from stealth **2024-09** with a **$9M seed led by Foundation Capital**. **Acquired by Proofpoint, announced as completed 2026-02-12** (PR past tense; no separate close date given); **terms undisclosed**. Ownership chain: Proofpoint is Thoma Bravo-owned, so Acuvity is now a Thoma Bravo-portfolio asset — Proofpoint's second data/AI-security acquisition after [normalyze](normalyze.md) (DSPM, 2024). Verified against Proofpoint's press release. Confidence: high.
+HQ **Sunnyvale, CA**; founded by cybersecurity/engineering veterans (founding year and founder names not verified — open question). Emerged from stealth **2024-09** with a **$9M seed led by Foundation Capital**. **Acquired by Proofpoint, announced as completed 2026-02-12** (PR past tense; no separate close date given); **terms undisclosed**. Ownership chain: Proofpoint is Thoma Bravo-owned, so Acuvity is now a Thoma Bravo-portfolio asset — Proofpoint's second data/AI-security acquisition after [proofpoint-dspm](proofpoint-dspm.md) (DSPM, 2024). Verified against Proofpoint's press release. Confidence: high.
 
 ## CTO / hedge-fund lens
 Relevant mainly as **Proofpoint's AI-security answer**: if you already run Proofpoint for email/collaboration security and DLP, the Acuvity capability arrives as consolidation — shadow-AI visibility plus agent/MCP governance under an existing vendor relationship. If you're not a Proofpoint shop, the standalone comparators are the independent shadow-AI specialists. Too early to judge integration depth or packaging; no FS traction verified.

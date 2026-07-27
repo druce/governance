@@ -46,7 +46,7 @@ Data layer — [dspm](../categories/dspm.md). It controls access to sensitive da
 SaaS control plane with agentless, metadata-based scanning across private cloud, IaaS, PaaS, SaaS, and AI environments; data stays in place. Aimed at integrating into a broader data-security/governance program rather than acting as an inline proxy.
 
 ## Positioning & differentiators
-Competes in the crowded DSPM field against [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), [symmetry-systems](symmetry-systems.md), and [wiz](wiz.md)'s DSPM. Its angle is the "Metadata Lake" / data-stays-in-place architecture and AI-native classification, positioned for the AI-data-governance moment. Founder/CEO Bruno Kurtic co-founded Sumo Logic, which shapes the data-platform-at-scale narrative. Note marketing language ("industry-first," "frictionless") is vendor framing.
+Competes in the crowded DSPM field against [cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [proofpoint-dspm](proofpoint-dspm.md), [concentric-ai](concentric-ai.md), [symmetry-systems](symmetry-systems.md), and [wiz](wiz.md)'s DSPM. Its angle is the "Metadata Lake" / data-stays-in-place architecture and AI-native classification, positioned for the AI-data-governance moment. Founder/CEO Bruno Kurtic co-founded Sumo Logic, which shapes the data-platform-at-scale narrative. Note marketing language ("industry-first," "frictionless") is vendor framing.
 
 ## Ownership, funding & M&A
 Independent, VC-backed. $10M seed (March 2024, Greylock) and a $25M Series A announced 2025-11-19, led by Greylock Partners with Mangusta Capital, Mantis Venture Capital, and Pier 88 Investment Partners. No seed M&A flag; none found. Ownership confidence high (recent primary funding announcement).
@@ -55,7 +55,7 @@ Independent, VC-backed. $10M seed (March 2024, Greylock) and a $25M Series A ann
 DSPM is **Day-1** for a fund standing up AI on internal data — you must know where MNPI/PII/material data sits before pointing a copilot or RAG pipeline at it. Bedrock is a credible newer entrant; for a hedge fund the practical question is whether to buy a focused DSPM or use DSPM bundled into a platform already owned ([microsoft-purview](microsoft-purview.md), [wiz](wiz.md), [rubrik](rubrik.md)). The data-in-place architecture is attractive for regulated shops wary of exporting sensitive data to a scanner. Early-stage vendor risk applies (small, ~Series A).
 
 ## Competitors / alternatives
-[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [symmetry-systems](symmetry-systems.md), [normalyze](normalyze.md), [concentric-ai](concentric-ai.md), [securiti](securiti.md), [microsoft-purview](microsoft-purview.md), [wiz](wiz.md).
+[cyera](cyera.md), [sentra](sentra.md), [bigid](bigid.md), [symmetry-systems](symmetry-systems.md), [proofpoint-dspm](proofpoint-dspm.md), [concentric-ai](concentric-ai.md), [securiti](securiti.md), [microsoft-purview](microsoft-purview.md), [wiz](wiz.md).
 
 ## Open questions / to verify
 - Exact total funding and full cap table (only seed + Series A confirmed; total ~$35M is disclosed-rounds sum).

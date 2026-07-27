@@ -75,7 +75,7 @@ launched together as the F5 AI Security Platform (2026-06-22).
 | [apex-security](../vendors/apex-security.md) | Tenable | Agent/AI security → Tenable One | Announced/integrating | 2025-05-29 | reported >$105M |
 | [promptfoo](../vendors/promptfoo.md) | OpenAI | Open-source eval/red-team → OpenAI Frontier | **Closed** | 2026-03-09 | undisclosed |
 | [trojai](../vendors/trojai.md) | A10 Networks | AI detect (red-team) + defend (runtime firewall) | **Announced** | 2026-06-15 | undisclosed |
-| [acuvity](../vendors/acuvity.md) | Proofpoint | Shadow-AI + agent/MCP visibility ("agentic workspace"; Proofpoint's 2nd after [normalyze](../vendors/normalyze.md)) | **Closed** (announced as completed) | 2026-02-12 | undisclosed |
+| [acuvity](../vendors/acuvity.md) | Proofpoint | Shadow-AI + agent/MCP visibility ("agentic workspace"; Proofpoint's 2nd after [proofpoint-dspm](../vendors/proofpoint-dspm.md)) | **Closed** (announced as completed) | 2026-02-12 | undisclosed |
 
 > **TrojAI→A10 Networks was NOT in the seed CSV** — surfaced during research. A recent (2026-06-15)
 > deal; confirm completion.
@@ -116,7 +116,7 @@ Probely + Invariant Labs (2024–25); [okta](../vendors/okta.md) → Auth0 (2021
 |---|---|---|---|---|
 | [wiz](../vendors/wiz.md) | Google / Alphabet | **Closed** | 2026-03-11 | $32B (largest Google deal) |
 | HashiCorp ([hashicorp-vault](../vendors/hashicorp-vault.md)) | IBM | **Closed** | 2025-02-27 | $6.4B |
-| [normalyze](../vendors/normalyze.md) | Proofpoint | Closed (reported) | ~2024-11/12 | undisclosed |
+| [proofpoint-dspm](../vendors/proofpoint-dspm.md) (Normalyze) | Proofpoint | Closed (reported); brand retired, sold as Proofpoint DSPM | ~2024-11/12 | undisclosed |
 | [sumo-logic](../vendors/sumo-logic.md) | Francisco Partners (take-private) | **Closed** | 2023-05-12 | ~$1.7B |
 | [forgerock](../vendors/forgerock.md) | Thoma Bravo → merged into Ping Identity | **Closed** | 2023-08-23 | ~$2.3B |
 | [weights-and-biases](../vendors/weights-and-biases.md) | CoreWeave | **Closed** | 2025-05-05 | reported ~$1.7B |
