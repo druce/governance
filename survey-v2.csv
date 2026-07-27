@@ -154,7 +154,7 @@ Non-Human Identity / Agent Identity Governance,Entro Security (SailPoint),"Acq. 
 Non-Human Identity / Agent Identity Governance,Clutch Security,Independent,,https://www.clutch.security,https://github.com/druce/governance/blob/master/wiki/vendors/clutch-security.md
 Non-Human Identity / Agent Identity Governance,Other (Please Specify),,,,
 AI Red Teaming / Guardrails,Mindgard,Automated AI red teaming,,https://mindgard.ai,https://github.com/druce/governance/blob/master/wiki/vendors/mindgard.md
-AI Red Teaming / Guardrails,SplxAI (Zscaler),"CORRECTED: Acq. by Zscaler (closed 2025-11-03)",,https://splx.ai,https://github.com/druce/governance/blob/master/wiki/vendors/splxai.md
+AI Red Teaming / Guardrails,SplxAI / SPLX (Zscaler),"VERIFIED 2026-07-27: Acq. by Zscaler, closed 2025-10-31 for $40.6M cash (Zscaler 10-Q Q1 FY2026); announced 2025-11-03 as already-completed. SPLX brand + splx.ai retained.",,https://splx.ai,https://github.com/druce/governance/blob/master/wiki/vendors/splxai.md
 AI Red Teaming / Guardrails,Promptfoo (OpenAI),"Acq. by OpenAI (closed 2026-03-09); stays OSS",,https://www.promptfoo.dev,https://github.com/druce/governance/blob/master/wiki/vendors/promptfoo.md
 AI Red Teaming / Guardrails,HiddenLayer,Model scanning + red teaming (cross-listed from Runtime),,https://www.hiddenlayer.com,https://github.com/druce/governance/blob/master/wiki/vendors/hiddenlayer.md
 AI Red Teaming / Guardrails,Lakera (Check Point),"Acq. by Check Point (closed 2025-10-22, ~$201.8M per 20-F); brand still live; cross-listed with Runtime",,https://www.lakera.ai,https://github.com/druce/governance/blob/master/wiki/vendors/lakera.md

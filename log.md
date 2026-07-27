@@ -1298,3 +1298,79 @@ survey-v2.csv checked, no change needed: the SIEM/SOAR/SecOps row already reads
 `Splunk (Cisco)` with flag-note "Acq. by Cisco (closed 2024-03-18; $28B)" — consistent with
 the corrected frontmatter. Open question about post-acquisition Splunk + Cisco XDR bundling
 and current licensing left standing; it needs pricing research, not an ownership check.
+
+## [2026-07-27] research | splxai
+URL audit + M&A re-verification against primary SEC filings. `splx.ai` live (HTTP 200, no
+redirect), title "SPLX | End-to-End Security for AI", banner "SPLX is now part of Zscaler".
+The SPLX brand and the Probe product both survive the acquisition (Probe still has its own
+login at `probe.splx.ai`), so `website` stays `https://splx.ai` — no rebrand redirect to
+zscaler.com, unlike several other pages in this sweep.
+
+**Both bug patterns flagged earlier in this sweep were checked; the natoma-style fabricated
+close date WAS present.** `acquisition:` read
+`{announced: 2025-11-03, closed: 2025-11-03, price: null}` — a close date identical to the
+announcement date, with no source entry supporting any close date, while the body simultaneously
+admitted under Open Questions that the "exact close date within Zscaler Q1 FY2026" was unknown.
+Same failure mode as natoma: the `closed` field was populated by duplicating `announced` during
+the 2026-06-28 pass. The splunk-style transposition was not present.
+
+Primary source: **Zscaler Form 10-Q for the quarter ended 2025-10-31**, filed 2025-11-25
+(CIK 0001713683, accession 0001713683-25-000205), Note 6 *Business Combinations*:
+
+> On October 31, 2025, we acquired all the equity of SPLXAI Inc. ("SPLX") [...] We acquired SPLX
+> for a total cash purchase price consideration of $40.6 million.
+
+Corroborated by the filing's own XBRL contexts, which tag `zs:SPLXAIIncMember` at `2025-10-31`
+and `zs:RedCanaryIncMember` at `2025-08-01` — two separate closings inside Q1 FY2026.
+
+Corrections applied:
+- `closed` 2025-11-03 → **2025-10-31** (verified).
+- `price` null → **$40.6M cash**. The page had claimed the SPLX figure was "not separately
+  disclosed" and was only available inside the $692.0M Red Canary + SPLX aggregate. That was
+  wrong — the aggregate covers two deals and the 10-Q breaks SPLX out explicitly. Also captured:
+  $16.6M grant-date fair value of service-conditioned retention RSUs (expensed post-combination,
+  not purchase price) and 50,180 deferred shares for key-employee re-vesting.
+- `ownership_state: acquired-closed` **confirmed correct** and now genuinely sourced, rather than
+  resting on a duplicated date.
+- `last_verified` → 2026-07-27; added three `sources:` entries; added `acquired` tag.
+
+Body: rewrote competitive positioning, which still read as though SPLX were an independent
+pure-play. Reframed around platform ownership and noted that the AI red-teaming category has now
+almost entirely consolidated into incumbents (Lakera→Check Point, promptfoo→OpenAI, CalypsoAI→F5,
+SPLX→Zscaler), with [mindgard](wiki/vendors/mindgard.md) the notable remaining independent — each
+of those four cross-references verified against the repo's own vendor pages rather than asserted
+from memory. Added the buyer-relevant read of the $40.6M price: a small tuck-in, roughly a third
+of it retention equity, so expect a Zscaler SKU rather than a preserved standalone franchise.
+
+survey-v2.csv: answer option `SplxAI (Zscaler)` → `SplxAI / SPLX (Zscaler)` (live brand is SPLX;
+kept the old name for respondent recognition), Flag/Note updated with verified dates and price.
+Vendor URL unchanged. Bijection is keyed on the Wiki URL column, so the rename is lint-safe.
+
+Cached: `raw/sources/2026-07-27--splxai--zscaler-10q-close-date-price.md`.
+
+## [2026-07-27] decision | splxai close date and price correction
+**Second confirmed instance of the natoma `closed == announced` fabrication pattern.** Recording
+it separately because it sharpens the lesson from the natoma entry earlier today.
+
+At natoma the suspicious date was easy to spot because the deal was genuinely still pending, and
+the conservative fix was to downgrade to `acquired-pending`. Here the deal really had closed, so
+the wrong date sat undetected behind a *correct* `ownership_state`. **A correct ownership state is
+not evidence that the dates under it were ever verified.** The tell was the same in both cases and
+was visible without any external research: the page contradicted itself, asserting a precise
+`closed` value in frontmatter while its own Open Questions section said the close date was unknown.
+
+The correction here runs the opposite direction from natoma — the real close date (2025-10-31) is
+*earlier* than the recorded one, because Zscaler closed the deal on the last day of its fiscal Q1
+and only announced it publicly three days later, on 2025-11-03, with language that already read
+"has acquired." So `announced` legitimately post-dates `closed` on this page. That inversion looks
+like an error and will likely be re-flagged by a future audit; the frontmatter `ownership_note`,
+the body, and the cached source all state explicitly that the ordering is deliberate. Worth
+generalising: for deals a public acquirer discloses *after* completing them, "announced" means
+"made public," not "signed," and the announced ≥ closed ordering is normal rather than suspect.
+
+Method note reinforcing the portkey/cyberark/lakera pattern: for a public acquirer, the 10-Q
+business-combination note is strictly better than any press release. It gave both the exact close
+date and a SPLX-specific price ($40.6M) that no press release disclosed and that this page had
+recorded as undisclosable. The XBRL context tags are a fast cross-check — they date each
+acquisition separately even when the narrative aggregates them, which is exactly what
+disentangled SPLX from Red Canary inside the $692.0M headline figure.
