@@ -53,7 +53,7 @@ AI Runtime Security / AI Firewall,Other (Please Specify),,,,
 AI-SPM (AI estate inventory & posture),Noma,"Independent; AI-SPM + agent runtime",,https://noma.security,https://github.com/druce/governance/blob/master/wiki/vendors/noma-security.md
 AI-SPM (AI estate inventory & posture),Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 AI-SPM (AI estate inventory & posture),Prisma AIRS (Palo Alto),,,https://www.paloaltonetworks.com/prisma/prisma-airs,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
-AI-SPM (AI estate inventory & posture),Astrix (Cisco),"Acq. announced 2026-05-04 (~$400M) — pending, not closed",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
+AI-SPM (AI estate inventory & posture),Astrix (Cisco),"Acq. by Cisco CLOSED 2026-06-29 (~$400M, unofficial) — standalone sales ended 2026-06-30",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
 AI-SPM (AI estate inventory & posture),Cato AI Security (formerly Aim Security),"Acq. by Cato closed 2025-09-03 (~$350M reported); brand retired — aim.security redirects to Cato; sold as Cato AI Security (GA 2026-03-17)",,https://www.catonetworks.com/platform/ai-security-aisec/,https://github.com/druce/governance/blob/master/wiki/vendors/aim-security.md
 AI-SPM (AI estate inventory & posture),Prompt Security (SentinelOne),"Acq. by SentinelOne (announced 2025-08-05, closed ~2025-11; ~$250M)",,https://prompt.security,https://github.com/druce/governance/blob/master/wiki/vendors/prompt-security.md
 AI-SPM (AI estate inventory & posture),Cranium,"Independent; itself acquired Aiceberg (2026-05)",,https://cranium.ai,https://github.com/druce/governance/blob/master/wiki/vendors/cranium.md
@@ -145,7 +145,7 @@ SaaS Security Posture Management (SSPM),Wing Security,NEW CATEGORY: Independent,
 SaaS Security Posture Management (SSPM),DoControl,NEW CATEGORY: Independent,,https://www.docontrol.io,https://github.com/druce/governance/blob/master/wiki/vendors/docontrol.md
 SaaS Security Posture Management (SSPM),Other (Please Specify),,,,
 Non-Human Identity / Agent Identity Governance,CyberArk (Palo Alto),"Acq. by Palo Alto (closed 2026-02-11; ~$25B)",,https://www.cyberark.com,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
-Non-Human Identity / Agent Identity Governance,Astrix (Cisco),"Acq. announced 2026-05-04 (~$400M) — pending, not closed",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
+Non-Human Identity / Agent Identity Governance,Astrix (Cisco),"Acq. by Cisco CLOSED 2026-06-29 (~$400M, unofficial) — standalone sales ended 2026-06-30",,https://astrix.security,https://github.com/druce/governance/blob/master/wiki/vendors/astrix-security.md
 Non-Human Identity / Agent Identity Governance,Token Security,Independent,,https://www.token.security,https://github.com/druce/governance/blob/master/wiki/vendors/token-security.md
 Non-Human Identity / Agent Identity Governance,Aembit,Independent,,https://aembit.io,https://github.com/druce/governance/blob/master/wiki/vendors/aembit.md
 Non-Human Identity / Agent Identity Governance,Oasis Security,"Independent ($120M Series B 2026)",,https://www.oasis.security,https://github.com/druce/governance/blob/master/wiki/vendors/oasis-security.md

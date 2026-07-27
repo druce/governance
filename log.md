@@ -440,3 +440,62 @@ would have made this commit two vendors wide. Left for the cato-networks pass.
 (supersedes nothing; the 2025-09-03 acquisition PR remains the deal-facts anchor).
 
 `index.md` deliberately left stale — regenerated once at the end of this batch.
+
+## [2026-07-27] research | astrix-security
+
+**Cisco/Astrix deal CLOSED — `acquired-pending` → `acquired-closed`.** URL audit found
+`https://astrix.security` still loading live under Astrix branding (title "Identity Security
+for AI Agents & NHIs | Astrix Security") but banner-ing "Astrix Security is now part of
+Cisco" plus "Astrix has ended standalone sales of new licenses effective June 30th, 2026."
+
+**Close confirmed from a primary source.** Cisco's own 2026-05-04 "announces intent to
+acquire" blog now carries a dated update note at the top: *"June 29, 2026 Update: We have
+completed the acquisition of Astrix Security. Welcome to Cisco!"* No separate completion
+press release was issued — the update banner on the announcement post is the completion
+notice, which is normal for a private deal of this size. Cisco's corporate-development
+acquisitions pages return HTTP 403 to automated fetches and could not corroborate directly.
+→ `announced: 2026-05-04`, `closed: 2026-06-29`.
+
+**Price stays `null`.** Cisco disclosed no terms in either the announcement or the update.
+Calcalist/Ctech reports ~$400M (earlier talks reported at up to $350M). Per CLAUDE.md §7 the
+unofficial figure is cited in prose and in the source cache, not promoted into frontmatter.
+
+**`website` kept as `https://astrix.security`.** Checked whether the capability had landed in
+a named Cisco SKU to repoint at — it has not. Cisco states Astrix will be integrated into
+**Cisco Identity Intelligence** and extended across **Secure Access**, **Duo** and
+**Splunk**, but as of 2026-07-27 nothing ships under a Cisco brand and no Cisco product page
+mentions Astrix. Astrix's own domain remains the authoritative page. **This is a different
+pattern from Aim/Cato and Normalyze/Proofpoint** (this batch's two prior closes), where the
+acquired domain 301s and the brand is retired: here the brand and domain survive as a
+transition landing page for existing customers. Worth watching — the domain may yet 301.
+
+**Changed — `wiki/vendors/astrix-security.md`:** `ownership_state` acquired-pending →
+acquired-closed; `acquisition.closed` null → 2026-06-29; `verify_after` 2026-09-03 → null (no
+longer required once closed, SCHEMA.md §3.2); `last_verified` → 2026-07-27; `ownership_note`
+rewritten; added a `sources:` frontmatter block (acquisition-close, standalone-sales-ended).
+Body: header callout, deployment paragraph (integration announced-but-not-shipped),
+positioning ("no longer a buying unit"), Ownership section rewritten with the close and the
+sales-end, CTO lens rewritten into new-buyer / existing-customer / Cisco-shop guidance,
+open questions re-cut, Sources and History updated.
+
+**Soft contradiction resolved.** The 2026-06-28 flag (seed said flat "acquired", reality was
+intent-announced/pending) is marked **Resolved 2026-07-27** — the seed was premature, not
+wrong. Left the flag in place with the resolution rather than deleting it, so the correction
+history stays legible.
+
+**Changed — `survey-v2.csv` rows 56 and 148** (AI-SPM and Non-Human Identity categories):
+Flag/Note "Acq. announced 2026-05-04 (~$400M) — pending, not closed" → closed-2026-06-29 +
+standalone-sales-ended. Vendor URL left at `https://astrix.security` (still live and
+authoritative). Product option left as "Astrix (Cisco)" — unlike the Aim→Cato case there is
+no successor product name to rename to yet. **Survey-design note:** by fielding time these
+two rows may be unbuyable-but-recognizable — respondents can legitimately answer "In
+production" (existing customers) but never "Considering/evaluating" (can't buy it). If a
+Cisco SKU name lands before fielding, rename both rows to it.
+
+**Source cached:** `raw/sources/2026-07-27--astrix-security--cisco-deal-closed.md`.
+
+**Follow-ups:** (1) re-check which named Cisco product absorbs Astrix and whether
+`astrix.security` starts redirecting; (2) `wiki/vendors/cisco.md`, if it exists, may want the
+close date — not touched here to keep this commit one vendor wide.
+
+`index.md` deliberately left stale — regenerated once at the end of this batch.
