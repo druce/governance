@@ -12,10 +12,10 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 12
 maps_to_seed_doc: MCP Gateway / Tool Access Control
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 ---
 
 # MCP Gateway / Tool Access Control
@@ -69,6 +69,7 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [arcade](../vendors/arcade.md) — tool-calling/agent platform with auth and a gateway for the tools agents invoke. Cross-listed to [tool-identity-integration](tool-identity-integration.md).
 - [kong](../vendors/kong.md) — API-gateway vendor extending into MCP/agent tool ACLs. Cross-listed to [ai-gateway](ai-gateway.md).
 - [truefoundry](../vendors/truefoundry.md) — AI platform with an MCP gateway alongside its AI gateway. Cross-listed to [ai-gateway](ai-gateway.md).
+- [gravitee](../vendors/gravitee.md) — API-management vendor whose MCP Proxy gates individual MCP methods (`tools/call`, `resources/read`) with OpenFGA-backed fine-grained authorization. Cross-listed to [ai-gateway](ai-gateway.md).
 - [natoma](../vendors/natoma.md) — non-human-identity vendor offering MCP/agent gateway controls. Cross-listed to [non-human-identity](non-human-identity.md).
 - [pomerium](../vendors/pomerium.md) — identity-aware proxy used to broker MCP/tool access. Cross-listed to [authorization-engine](authorization-engine.md).
 - [prisma-airs](../vendors/prisma-airs.md) — Palo Alto's AI security platform includes an AI Agent Gateway. Cross-listed to [ai-runtime-security](ai-runtime-security.md) and [ai-spm](ai-spm.md).
@@ -98,7 +99,7 @@ apply and indicate stage.)*
 
 **Answer options.** Solo.io agentgateway · Kong MCP Gateway · TrueFoundry MCP Gateway ·
 Arcade · IBM ContextForge · Docker MCP Gateway · Obot · MintMCP · Natoma · Pomerium ·
-Prisma AIRS Agent Gateway · Other (Please Specify)
+Prisma AIRS Agent Gateway · Gravitee MCP Proxy · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.

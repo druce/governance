@@ -12,10 +12,10 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 8
 maps_to_seed_doc: AI Gateway
 maps_to_seed_csv: AI Gateway
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 ---
 
 # AI Gateway
@@ -68,6 +68,7 @@ model providers.
 - [kong](../vendors/kong.md) — API-gateway incumbent extended with an AI gateway (and MCP tool ACLs).
 - [f5](../vendors/f5.md) — application-delivery incumbent with an AI gateway (and AI security via the CalypsoAI acquisition, per seed).
 - [cloudflare](../vendors/cloudflare.md) — edge platform offering an AI gateway (caching, rate-limiting, analytics) alongside its network stack.
+- [gravitee](../vendors/gravitee.md) — open-source-rooted API/event-management vendor whose AI Gateway treats LLM, MCP, and A2A as three first-class proxy types on one self-hostable control plane. Cross-listed to [mcp-gateway](mcp-gateway.md).
 
 ## Consolidation / M&A dynamics
 
@@ -91,7 +92,7 @@ stack. Expect gateway + firewall + observability to converge into single suites.
 and log your organization's model/API traffic?
 
 **Answer options:** Portkey, LiteLLM, TrueFoundry, Kong AI Gateway, F5, Cloudflare,
-OpenRouter, Other (Please Specify).
+OpenRouter, Gravitee, Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

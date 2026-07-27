@@ -1974,3 +1974,49 @@ ownership-field changes, no survey-v2.csv changes, no new contradictions.
 
 Note for future audits: these five URLs are expected to keep returning 403 to automated
 fetchers. Treat that signal as "unverifiable by fetch," not as a broken link.
+
+## [2026-07-27] stub | gravitee
+
+Created `wiki/vendors/gravitee.md` — user-requested addition (not from the seed
+CSV). Slug = company (`gravitee`), consistent with the `kong` precedent: one page
+scoped to the vendor's AI angle, with the general API-management business kept
+brief. Registered two `survey-v2.csv` rows (both target categories have a non-null
+`survey_question`): "AI Gateway → Gravitee" and "MCP Gateway / Tool Access Control
+→ Gravitee MCP Proxy", both pointing at the single canonical page. Added to the
+vendor list and survey answer options on both category pages; bumped
+`vendor_count` 7→8 (ai-gateway) and 11→12 (mcp-gateway).
+
+## [2026-07-27] research | gravitee
+
+Researched and filled in the same pass (single vendor, not a queue item).
+
+- **Placement decision.** `primary_category: ai-gateway`,
+  `also_listed_in: [mcp-gateway]`. Gravitee is structurally the same animal as
+  [kong](wiki/vendors/kong.md) — an API-management incumbent extending into AI —
+  so it files where Kong files. The MCP cross-listing is earned, not courtesy:
+  Gravitee ships an **MCP Proxy** (a native v4 API type, 4.10) that fronts
+  upstream MCP servers, an **MCP ACL policy** gating `tools/list`, `tools/call`,
+  `prompts/list`, `resources/subscribe`, `resources/read` individually, and
+  OpenFGA/AuthZen-based fine-grained tool authorization. It also generates MCP
+  servers from OpenAPI specs (**MCP Tool Server**) — the same trick Kong ships,
+  and *not* on its own sufficient for the mcp-gateway category.
+- **Confirmed a real AI product line**, not rebranded API management: LLM Proxy
+  (OpenAI-compatible, OpenAI/Anthropic/Bedrock/Gemini/Vertex, token quotas,
+  semantic caching), MCP Proxy, A2A Proxy, AI IAM, MCP Analytics.
+- **Ownership:** independent, private, VC-backed. Founded **2015** in Lille,
+  France; now Denver/London/Lille. **Series C $60M announced 2025-05-20** led by
+  Sixth Street Growth (Riverside Acceleration Capital, AlbionVC); ~$125M total
+  raised per TechCrunch. No M&A. `market_position: challenger` in both
+  categories — smaller than Kong in both funding and mindshare.
+- **Certifications:** ISO 27001 + ISO 27701 (2021-12-15, cert 175256, NQA/UKAS);
+  Trust Center also lists SOC 2 Type 2 and PCI DSS v4.0.0. FS traction `claimed`
+  (Tide open-banking case study; no asset-manager reference found).
+- **Trifecta scoping:** primary category `ai-gateway` has
+  `agent_security_context: false`, so the vendor page uses plain risk language
+  only — no trifecta framing (SCHEMA.md §0, editorial rule 18).
+- `data_leaves_tenancy: partial` — depends on Gravitee Cloud vs self-hosted vs
+  customer-hosted control plane; SaaS retention/training-use policy not published
+  and left as an open question. Other open questions: Community-Edition vs
+  Enterprise split for the AI/MCP features, registered legal HQ, SOC 2 report
+  period, A2A Proxy GA status, and the absence of any non-vendor evaluation.
+- 3 sources cached to `raw/sources/2026-07-27--gravitee--*.md`.
