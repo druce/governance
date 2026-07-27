@@ -1658,3 +1658,82 @@ Sweep tally for this defect pattern is now: **natoma** (false closed → pending
 (false closed → pending), **splxai** (right state, wrong date), **surepath-ai** (pending → closed on
 inference), **trojai** (closed, correctly). The lesson is that `closed == announced` is a *prompt to
 verify*, not a defect in itself.
+
+## [2026-07-27] research | trulens
+
+URL audit flagged `trulens.org` as live with no redirect while the page carried
+`ownership_state: acquired-pending`, `acquisition: {announced: 2024-05-22, closed: null}`. The site's own
+copy — "Originally created by TruEra" and "Since TruEra's acquisition by Snowflake, Snowflake now actively
+oversees and supports the development of TruLens in open source" — presents the deal as settled historical
+fact. Re-verified against primary sources.
+
+**What the deal actually was.** Not a company acquisition. Snowflake's Q1 FY2025 earnings release (SEC Form
+8-K EX-99.1, filed 2024-05-22) states it "announced its **intent to acquire certain technology assets and
+hire key employees from TruEra**." The same-day Snowflake blog says "the TruEra AI Observability platform"
+— the platform, not the entity. Asset purchase + acqui-hire (~37 people incl. all three co-founders:
+Uppington, Datta, Sen). That structure explains why the TruEra corporate brand simply evaporated rather
+than surviving as a subsidiary.
+
+**Close.** Bounded, never precisely disclosed. Snowflake's 10-Q for the quarter ended 2024-07-31 books a
+completed business combination in Note 7; Snowflake's 2024-06-24 blog writes "in the weeks since the
+acquisition" in the past tense while listing shipped TruLens improvements. So close ∈ [2024-05-22,
+2024-06-24] → recorded `closed: 2024-06` (apex-security month-granularity precedent).
+
+**Price.** Note 7 reads: "the Company acquired certain technology assets and hired key employees from a
+privately-held company for **$10.8 million in cash**" ($2.5M developed technology, $8.3M goodwill).
+Snowflake does not name the counterparty, and never does — EDGAR full-text search for "TruEra" across all
+Snowflake 8-K/10-Q/10-K returns exactly one hit, the 2024-05-22 EX-99.1; the FY2025 10-K does not mention
+it at all. But the 10-Q phrasing is a verbatim match for Snowflake's own TruEra press-release language and
+falls in the quarter immediately after the announcement. Recorded as `price: undisclosed (~$10.8M cash —
+inferred …)`, explicitly labelled inference, per the surepath-ai precedent for reading an unnamed
+purchase-consideration line.
+
+**TruEra vs TruLens, resolved.** TruEra = the commercial ML/LLM-observability company (Redwood City,
+founded 2019), platform and team absorbed, brand retired, `truera.com` now a frozen 2024 page. TruLens =
+TruEra's open-source eval library, which survived. The commercial successor is **AI Observability in
+Snowflake Cortex**, GA 2025-07-31 — and it is *not a fork*: Snowflake's docs say "TruLens is the platform
+that Snowflake uses to track your applications" and require `trulens-core` / `trulens-connectors-snowflake`
+/ `trulens-providers-cortex` ≥ 2.1.2. Cortex AI Observability is a managed deployment of the same OSS.
+Both standing open questions on the page are now closed.
+
+**Other corrections.** License was wrong: **MIT, not Apache-2.0** (LICENSE file, copyright "Truera, Inc.";
+PyPI classifier agrees). Repo still lives at `truera/trulens` — there is no `snowflakedb/trulens` (404).
+OSS is demonstrably alive: not archived, pushed 2026-07-27, ~3.5k stars, PyPI `trulens` 2.9.0 released
+2026-07-23 on a ~6-week cadence through 2026.
+
+**Slug retained as `trulens`.** Per CLAUDE.md §3, vendor slug = the company — which would argue for
+`truera`. Overridden here: the company no longer exists, the product does, and the OSS project is what a
+CTO actually shops for and what the CSV option names. `TruEra` stays in `aka`, and the page now opens with
+an explicit TruEra-vs-TruLens paragraph so the lineage is not lost.
+
+Frontmatter: `ownership_state` acquired-pending → acquired-closed; `owner: Snowflake`; `hq` reworded;
+rewritten `ownership_note`; `acquisition: {announced: 2024-05-22, closed: 2024-06, price: undisclosed
+(~$10.8M …)}`; `last_verified` → 2026-07-27; `verify_after` → null; tag `acquired`; six `sources:` entries.
+Website unchanged (`https://www.trulens.org`, 200, no redirect). CSV Flag/Note rewritten to say CLOSED.
+1 new source cached: `raw/sources/2026-07-27--trulens--snowflake-truera-closed.md`.
+
+## [2026-07-27] decision | trulens — stale `acquired-pending` corrected to `acquired-closed`
+
+Per CLAUDE.md §8 this is a **soft contradiction**, not hard: no two sources name different acquirers or
+different facts. One source (`truera.com`) is simply frozen in 2024 forward-looking tense — "TruEra **has
+agreed to** join Snowflake!" — while every live source treats the deal as long done. Resolved by recency
+and source authority, no `Status: Unresolved` flag needed.
+
+Root cause worth recording: the original 2026-06-28 research correctly confirmed the acquisition but had
+no close date, so `closed: null` + a `verify_after` produced `acquired-pending` on a deal that was two
+years old. **Heuristic: `acquired-pending` on a deal announced more than ~12 months ago is a defect until
+proven otherwise.** Regulatory-clearance megadeals aside, a private, immaterial tech-asset purchase does
+not stay pending for two years. Where the acquirer's own product ships on the target's technology and its
+docs treat the target as an internal component (Cortex AI Observability on TruLens), the deal is closed
+regardless of whether a close date was ever published — reconstruct the date from filings and past-tense
+acquirer prose rather than leaving the state pending.
+
+Explicitly **not** related to the other Snowflake deal in this repo: [natoma](wiki/vendors/natoma.md),
+announced 2026-05-27 (~$110M stock+cash), genuinely still `acquired-pending` as of 2026-07-27 with
+`verify_after: 2026-09-15`. Two Snowflake deals, two states, two years apart — cross-noted on both the
+trulens page and here so a future sweep does not conflate them.
+
+Sweep tally for the closed-vs-pending defect pattern is now: **natoma** (false closed → pending),
+**symmetry-systems** (false closed → pending), **splxai** (right state, wrong date), **surepath-ai**
+(pending → closed on inference), **trojai** (closed, correctly), **trulens** (stale pending → closed;
+first case where the staleness came from an abandoned target-side page rather than a mis-read filing).

@@ -36,7 +36,7 @@ LLM Observability & Eval,Datadog LLM Observability,"Public (DDOG); organic modul
 LLM Observability & Eval,Weights & Biases (Weave),"Acq. by CoreWeave (closed 2025-05-05)",,https://wandb.ai,https://github.com/druce/governance/blob/master/wiki/vendors/weights-and-biases.md
 LLM Observability & Eval,Comet (Opik),Independent,,https://www.comet.com,https://github.com/druce/governance/blob/master/wiki/vendors/comet.md
 LLM Observability & Eval,Fiddler AI,Independent,,https://www.fiddler.ai,https://github.com/druce/governance/blob/master/wiki/vendors/fiddler-ai.md
-LLM Observability & Eval,TruLens (Snowflake),"Snowflake (acq. TruEra 2024-05); TruLens stays OSS",,https://www.trulens.org,https://github.com/druce/governance/blob/master/wiki/vendors/trulens.md
+LLM Observability & Eval,TruLens (Snowflake),"Snowflake acquired TruEra's platform + team — announced 2024-05-22, closed 2024-06 (deal CLOSED, not pending); TruEra brand retired; TruLens still MIT OSS under Snowflake stewardship and is the engine under Cortex AI Observability (GA 2025-07-31)",,https://www.trulens.org,https://github.com/druce/governance/blob/master/wiki/vendors/trulens.md
 LLM Observability & Eval,Giskard,"NEW: Independent (OSS eval/testing); also fits red-teaming",,https://www.giskard.ai,https://github.com/druce/governance/blob/master/wiki/vendors/giskard.md
 LLM Observability & Eval,Arthur AI,"NEW: Independent; monitoring/eval, overlaps AI governance",,https://www.arthur.ai,https://github.com/druce/governance/blob/master/wiki/vendors/arthur-ai.md
 LLM Observability & Eval,Other (Please Specify),,,,
