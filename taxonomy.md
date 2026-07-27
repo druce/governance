@@ -27,7 +27,7 @@ Counts: **42 canonical categories** across 7 layers.
 |---|---|---|---|---|---|---|
 | `identity-access` | Identity & Access (IdP/SSO) | day-1 | — | any users at all — the human + agent front door | General Identity | Entra, Okta, Ping, ForgeRock. |
 | `non-human-identity` | Non-Human / Agent Identity Governance | day-2 | — | agents and workloads hold their own credentials and call tools | Non-Human Identity / Agent Identity Governance | NHI: secrets-less workload + agent identity. CyberArk, Astrix, Aembit, Oasis, Token, Natoma, Entro, Clutch. |
-| `identity-governance` | Identity Governance & Visibility (IGA / ISPM) | day-2 | — | enough headcount/apps that joiner-mover-leaver and access certs need automation | Identity Governance & Visibility (IGA / ISPM) | SailPoint, Saviynt, Veza, CyberArk, ConductorOne, Lumos, Linx, Hydden. |
+| `identity-governance` | Identity Governance & Visibility (IGA / ISPM) | day-2 | — | enough headcount/apps that joiner-mover-leaver and access certs need automation | Identity Governance & Visibility (IGA / ISPM) | SailPoint, Saviynt, Veza, CyberArk, C1 (ex-ConductorOne), Lumos, Linx, Hydden. |
 | `secrets-management` | Secrets Manager | day-1 | — | any code or agent that authenticates to anything | Secrets Manager | Vaulting + rotation. Key Vault, HashiCorp Vault, AWS/GCP, Conjur, 1Password, Doppler, Infisical. |
 | `siem-soc` | Enterprise Logging / SIEM / SOC | day-1 | — | table stakes — you cannot investigate what you did not log | SIEM/SOAR/SecOps | Sentinel, Splunk, Cortex XSIAM, Sumo, ELK, Google SecOps, LogScale. |
 | `ai-soc-analysts` | AI SecOps / Agentic SOC Analysts | day-2 | — | SOC alert volume outgrows analyst headcount | AI SOC analysts | Merges doc 'AI SecOps' + CSV 'AI SOC analysts' (same vendors). Prophet, Dropzone, 7AI, Radiant, Simbian, Charlotte, Cortex AgentiX, Jazz, Torq. |
@@ -43,7 +43,7 @@ Counts: **42 canonical categories** across 7 layers.
 |---|---|---|---|---|---|---|
 | `dspm` | Data Classification & DSPM | day-1 | — | before AI touches internal data you must know what/where the sensitive data is | DSPM / Data Security Posture | Purview, BigID, Securiti, Cyera, Sentra, Normalyze, Wiz DSPM, Concentric, Bedrock, Immuta, Collibra. |
 | `dlp` | Data Loss Prevention (DLP) | day-1 | — | employees can paste sensitive data into anything with a text box | Data Loss Prevention (DLP) | Cyberhaven, Nightfall, MIND, Prompt Security, Lasso, Netskope/Purview DLP. CSV merged DSPM+DLP; we keep the split. |
-| `data-access-governance` | Data Access Governance | day-2 | — | day-1 if doing RAG over internal permissioned data | Data Access Governance | Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, ConductorOne, Silverfort, Netwrix. |
+| `data-access-governance` | Data Access Governance | day-2 | — | day-1 if doing RAG over internal permissioned data | Data Access Governance | Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, C1 (ex-ConductorOne), Silverfort, Netwrix. |
 
 ## AI model & prompt layer
 

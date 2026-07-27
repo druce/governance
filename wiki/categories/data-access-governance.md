@@ -70,14 +70,14 @@ Identity-governance vendors extending into data:
 
 - [sailpoint](../vendors/sailpoint.md) — SailPoint Data Access Security extends IGA to unstructured data.
 - [veza](../vendors/veza.md) — access-graph across systems and data; "who can do what" visibility.
-- [conductorone](../vendors/conductorone.md) — AI-native IGA extending into data-access right-sizing.
+- [c1](../vendors/c1.md) — AI-native IGA extending into data-access right-sizing (formerly ConductorOne).
 - [silverfort](../vendors/silverfort.md) — identity-security platform with data-access controls.
 
 ## Consolidation / M&A dynamics
 
 No specific acquisition flags in the seed for the primary vendors here. The structural
 dynamic is convergence from two sides: DSPM vendors (Cyera, Sentra, Concentric) adding
-access context, and IGA vendors (SailPoint, Veza, ConductorOne, Silverfort) extending
+access context, and IGA vendors (SailPoint, Veza, C1, Silverfort) extending
 governance from applications down to data. DAG is as much an overlap zone as a
 standalone market.
 
@@ -97,7 +97,7 @@ standalone market.
 audit and right-size who can access sensitive data?
 
 **Answer options.** Varonis, Netwrix, Cyera, Sentra, Concentric AI, Immuta, SailPoint
-(Data Access Security), Veza, ConductorOne, Silverfort, Other (Please Specify).
+(Data Access Security), Veza, C1 (formerly ConductorOne), Silverfort, Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -106,7 +106,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - This is **doc-only** — the seed CSV has no dedicated DAG question; these vendors
   appear under the CSV's `Identity Governance & Visibility (IGA / ISPM)` and
   `DSPM / Data Governance / DLP` questions. Expect overlap: SailPoint, Veza,
-  ConductorOne, Silverfort will also be ticked on the [identity-governance](identity-governance.md) survey;
+  C1, Silverfort will also be ticked on the [identity-governance](identity-governance.md) survey;
   Cyera, Sentra, Concentric, Immuta on the [dspm](dspm.md) survey.
 - Table-stakes anchor: Varonis (the recognized incumbent). Most others are extensions
   of an adjacent platform a respondent may already own.
@@ -119,7 +119,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - Strong overlap with both [dspm](dspm.md) and [identity-governance](identity-governance.md); DAG may be better
   modeled as a *capability* spanning those two than as a standalone category — flag
   for the final taxonomy pass.
-- Several vendors (Cyera, Sentra, Concentric, Immuta, SailPoint, Veza, ConductorOne,
+- Several vendors (Cyera, Sentra, Concentric, Immuta, SailPoint, Veza, C1,
   Silverfort) are cross-listed; confirm each one's primary home to avoid double-counting.
 - Whether to surface "DAG for RAG readiness" as its own comparison page given the
   Day-1/Day-2 split hinges entirely on the RAG decision.

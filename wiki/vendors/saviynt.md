@@ -46,7 +46,7 @@ The [identity-governance](../categories/identity-governance.md) foundation (IGA/
 Cloud-native SaaS (born in the cloud, unlike SailPoint's on-prem IdentityIQ heritage). Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md), [ping-identity](ping-identity.md)), HR, cloud platforms, and enterprise apps; notable depth in SAP/ERP access controls and cloud PAM.
 
 ## Positioning & differentiators
-Known for **convergence** (IGA + PAM + app-access in one platform) and strength in application/ERP access governance and regulated-industry compliance. Direct competitor to [sailpoint](sailpoint.md); differentiates on single-platform breadth and cloud-native architecture. Heavier and more compliance-oriented than automation-first challengers [lumos](lumos.md)/[conductorone](conductorone.md) and visibility-first [veza](veza.md).
+Known for **convergence** (IGA + PAM + app-access in one platform) and strength in application/ERP access governance and regulated-industry compliance. Direct competitor to [sailpoint](sailpoint.md); differentiates on single-platform breadth and cloud-native architecture. Heavier and more compliance-oriented than automation-first challengers [lumos](lumos.md)/[c1](c1.md) and visibility-first [veza](veza.md).
 
 ## Ownership, funding & M&A
 Independent, private company. Raised a **$700M Series B growth round in December 2025 at ~$3B valuation, led by KKR** (with Sixth Street Growth, TenEleven, and existing Carrick Capital); ~$870M total raised. Founded 2010, HQ El Segundo, CA. No acquisition; ownership confidence high. (No seed M&A flag; ownership remains independent.)
@@ -55,7 +55,7 @@ Independent, private company. Raised a **$700M Series B growth round in December
 **Day-2**, same logic as [sailpoint](sailpoint.md): a governance/compliance layer added after IdP/SIEM/DLP basics, moving toward Day-1 under SR 11-7-style model-risk or heavy-RAG regimes where entitlements must be proven and recertified. Convergence (governance + PAM in one tool) can simplify procurement for a mid-to-large fund that wants fewer vendors. For a small fund, still likely heavier than necessary.
 
 ## Competitors / alternatives
-[sailpoint](sailpoint.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). PASM/secrets neighbor: [cyberark](cyberark.md).
+[sailpoint](sailpoint.md), [veza](veza.md), [c1](c1.md), [lumos](lumos.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). PASM/secrets neighbor: [cyberark](cyberark.md).
 
 ## Open questions / to verify
 - Depth/maturity of agent and non-human identity governance relative to newer NHI-focused vendors.

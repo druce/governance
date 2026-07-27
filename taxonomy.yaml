@@ -97,7 +97,7 @@ categories:
     adjacent: [identity-access, data-access-governance, non-human-identity]
     seed_doc_row: "(folded into Identity & Access + Data Access Gov)"
     seed_csv: "Identity Governance & Visibility (IGA / ISPM)"
-    notes: "SailPoint, Saviynt, Veza, CyberArk, ConductorOne, Lumos, Linx, Hydden."
+    notes: "SailPoint, Saviynt, Veza, CyberArk, C1 (ex-ConductorOne), Lumos, Linx, Hydden."
 
   - slug: secrets-management
     display_name: "Secrets Manager"
@@ -241,7 +241,7 @@ categories:
     adjacent: [dspm, identity-governance, entitlement-aware-rag]
     seed_doc_row: "Data Access Governance"
     seed_csv: "Data Access Governance"
-    notes: "Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, ConductorOne, Silverfort, Netwrix."
+    notes: "Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, C1 (ex-ConductorOne), Silverfort, Netwrix."
 
   # -------------------------------------------------------------- model-prompt
   - slug: ai-runtime-security

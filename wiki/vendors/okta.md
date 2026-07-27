@@ -55,7 +55,7 @@ Independent public company, Nasdaq: OKTA, IPO April 2017. Founded 2009 by Todd M
 **Day-1.** A fund not standardized on Microsoft — or one wanting a neutral IdP across mixed SaaS — often picks Okta. It's the same Day-1 control surface as Entra: stand up SSO/MFA/Conditional-Access before go-live, and make your AI gateway and RAG layer authenticate against it. Cost is a real consideration versus "free with M365" Entra; the offset is neutrality and integration depth. Auth0 matters only if the fund builds customer-facing apps.
 
 ## Competitors / alternatives
-[microsoft-entra](microsoft-entra.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md).
+[microsoft-entra](microsoft-entra.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [c1](c1.md), [lumos](lumos.md).
 
 ## Open questions / to verify
 - Current depth/maturity of Okta Privileged Access and Identity Governance vs dedicated IGA/PAM tools.

@@ -46,7 +46,7 @@ Foundation layer, [identity-governance](../categories/identity-governance.md) (I
 SaaS, integrating via API/connectors to IdPs, cloud, and SaaS apps to build and continuously update an identity graph. (Exact connector catalog not verified.)
 
 ## Positioning & differentiators
-"AI-native" continuous governance vs the legacy suites ([sailpoint](sailpoint.md), [saviynt](saviynt.md)) and the newer access-request/least-privilege challengers ([lumos](lumos.md), [conductorone](conductorone.md)). Its explicit framing around AI agents and non-human identities overlaps with the visibility pitch of [hydden](hydden.md) and the access-graph pitch of [veza](veza.md). Nearest neighbors in spirit: [veza](veza.md) (authorization/entitlement graph), [conductorone](conductorone.md), [lumos](lumos.md).
+"AI-native" continuous governance vs the legacy suites ([sailpoint](sailpoint.md), [saviynt](saviynt.md)) and the newer access-request/least-privilege challengers ([lumos](lumos.md), [c1](c1.md)). Its explicit framing around AI agents and non-human identities overlaps with the visibility pitch of [hydden](hydden.md) and the access-graph pitch of [veza](veza.md). Nearest neighbors in spirit: [veza](veza.md) (authorization/entitlement graph), [c1](c1.md), [lumos](lumos.md).
 
 ## Ownership, funding & M&A
 Independent, VC-backed. Founded 2023 by Israel Duanis (CEO) and Niv Goldenberg; HQ New York. $83M total funding; $50M Series B led by Insight Partners announced 2026-03-31, with continued participation from Cyberstarts and Index Ventures. No M&A. Confidence high (primary announcement + Insight Partners).
@@ -55,7 +55,7 @@ Independent, VC-backed. Founded 2023 by Israel Duanis (CEO) and Niv Goldenberg; 
 Day-2. IGA is a real need for a regulated shop (access certifications, least privilege, SOX/audit evidence), but Linx is young (founded 2023) — a credible modernization play, not yet a safe default. A 50-person fund likely does not need a dedicated IGA platform on day one; identity governance can start inside Entra/Okta. Worth watching if you have a sprawling SaaS estate and a growing fleet of service accounts/agents. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md), [hydden](hydden.md), [silverfort](silverfort.md).
+[sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [c1](c1.md), [lumos](lumos.md), [hydden](hydden.md), [silverfort](silverfort.md).
 
 ## Open questions / to verify
 - Concrete connector/integration list and whether it does access certifications vs only visibility.

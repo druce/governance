@@ -55,7 +55,7 @@ Independent, VC-backed and early. CEO/co-founder Jai Dargan; founded ~2022; HQ N
 Day-2, and likely **too early** for most funds. The category problem (fragmented identity visibility) is real, but a $4.4M seed-stage company is a procurement risk for a regulated shop — small, unproven, single round. Of note mainly to large enterprises with genuinely sprawling, multi-tool identity estates. Most hedge funds get adequate identity visibility from Entra/Okta plus their existing IGA/PAM. Not a model-risk (SR 11-7) tool.
 
 ## Competitors / alternatives
-[veza](veza.md), [linx-security](linx-security.md), [silverfort](silverfort.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md), [conductorone](conductorone.md).
+[veza](veza.md), [linx-security](linx-security.md), [silverfort](silverfort.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md), [c1](c1.md).
 
 ## Open questions / to verify
 - Founding year and HQ (confirm against an authoritative primary source — funding release omits both).

@@ -46,7 +46,7 @@ The [identity-governance](../categories/identity-governance.md) foundation (IGA/
 SaaS (Atlas/Identity Security Cloud) plus legacy on-prem (IdentityIQ). Connects to IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md), [ping-identity](ping-identity.md)), HR systems, and hundreds of target apps for provisioning and access collection. Sits above the IdP: the IdP authenticates, SailPoint governs/certifies.
 
 ## Positioning & differentiators
-The incumbent enterprise IGA leader — deepest connector catalog, strongest certification/compliance pedigree, the safe choice for large regulated buyers. Trade-off: heavyweight and implementation-intensive versus newer automation-first challengers ([lumos](lumos.md), [conductorone](conductorone.md)) and visibility-first platforms ([veza](veza.md)). Competes head-on with [saviynt](saviynt.md).
+The incumbent enterprise IGA leader — deepest connector catalog, strongest certification/compliance pedigree, the safe choice for large regulated buyers. Trade-off: heavyweight and implementation-intensive versus newer automation-first challengers ([lumos](lumos.md), [c1](c1.md)) and visibility-first platforms ([veza](veza.md)). Competes head-on with [saviynt](saviynt.md).
 
 ## Ownership, funding & M&A
 **Verified.** SailPoint returned to public markets on **Nasdaq (ticker SAIL) in February 2025**, raising $1.38B (60M shares at $23). It first IPO'd in 2017, was taken private by **Thoma Bravo** in 2022 (~$6.9B), and re-IPO'd in 2025 — but Thoma Bravo retained ~**88%** and board control post-IPO, so it's public-but-PE-controlled. Matches the brief's re-IPO note. Ownership set public, confidence high. (Stub had `independent` → corrected to `public`.)
@@ -57,7 +57,7 @@ The incumbent enterprise IGA leader — deepest connector catalog, strongest cer
 **Day-2** for most funds — IGA is a maturity/compliance layer you add after the IdP, SIEM, and DLP basics. It becomes **Day-1-ish under SR 11-7-style model-risk / audit regimes or heavy RAG**, where you must prove access entitlements and recertify them. For a 50–500-person fund, SailPoint is often heavier than needed; lighter automation-first tools may fit better unless the fund is large, regulated, or already standardized on it.
 
 ## Competitors / alternatives
-[saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md). Microsoft's bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). Data-access neighbors: [varonis](varonis.md), [cyera](cyera.md).
+[saviynt](saviynt.md), [veza](veza.md), [c1](c1.md), [lumos](lumos.md). Microsoft's bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). Data-access neighbors: [varonis](varonis.md), [cyera](cyera.md).
 
 ## Open questions / to verify
 - Pace of migration from legacy IdentityIQ to Atlas; agent/NHI governance roadmap depth (partly answered by the Entro acquisition — watch integration pace).

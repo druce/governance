@@ -59,7 +59,7 @@ Design rule: **ask about what a fund buys as one decision.** Where the wiki spli
 
 | # | Question | Maps to | Shortlist |
 |---|---|---|---|
-| Q13 | Identity & IGA | [identity-access](../categories/identity-access.md) + [identity-governance](../categories/identity-governance.md) | Entra, Okta, Ping, SailPoint, Saviynt, Veza, ConductorOne, Other |
+| Q13 | Identity & IGA | [identity-access](../categories/identity-access.md) + [identity-governance](../categories/identity-governance.md) | Entra, Okta, Ping, SailPoint, Saviynt, Veza, C1 (formerly ConductorOne), Other |
 | Q14 | AI SOC / security automation | [ai-soc-analysts](../categories/ai-soc-analysts.md) | Prophet, Dropzone, 7AI, Radiant, Simbian, CrowdStrike Charlotte, Palo Alto AgentiX, Torq, Other |
 | Q15 | Comms surveillance (AI-prompt capture) | [comms-surveillance](../categories/comms-surveillance.md) | Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace, Other |
 | Q16 | Enterprise browser / extension | [enterprise-browser](../categories/enterprise-browser.md) + [browser-security-extension](../categories/browser-security-extension.md) | Island, Prisma Access Browser, Menlo, Seraphic, Chrome Enterprise, Edge for Business, LayerX, Other |

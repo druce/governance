@@ -46,7 +46,7 @@ The [identity-governance](../categories/identity-governance.md) foundation plus 
 SaaS. Connects broadly across IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md)), cloud (AWS/Azure/GCP), SaaS apps, data systems (Snowflake, etc.), and infrastructure to ingest permission metadata into the Access Graph. Integrates with SIEM/ITSM workflows; now folding into ServiceNow's Security & Risk portfolio and AI Control Tower.
 
 ## Positioning & differentiators
-Known for **authorization visibility** — the "Access Graph" of effective permissions — versus the workflow/certification heritage of [sailpoint](sailpoint.md)/[saviynt](saviynt.md). Positioned as AI-native identity security and a leader in NHI. Differentiator is depth of cross-system permission analysis rather than provisioning. Overlaps data-access neighbors [varonis](varonis.md), [cyera](cyera.md), [sentra](sentra.md) on the data side and [conductorone](conductorone.md) on access reviews.
+Known for **authorization visibility** — the "Access Graph" of effective permissions — versus the workflow/certification heritage of [sailpoint](sailpoint.md)/[saviynt](saviynt.md). Positioned as AI-native identity security and a leader in NHI. Differentiator is depth of cross-system permission analysis rather than provisioning. Overlaps data-access neighbors [varonis](varonis.md), [cyera](cyera.md), [sentra](sentra.md) on the data side and [c1](c1.md) on access reviews.
 
 ## Ownership, funding & M&A
 **M&A verified — material change from seed.** ServiceNow announced the acquisition of Veza on **December 2, 2025**, and the deal **closed March 2, 2026** (reported ~$1B by SecurityWeek; ServiceNow did not disclose value). Founded 2020 (CEO Tarun Thakur), HQ Los Gatos, CA; had raised ~$235M, most recently a $108M Series D (Apr 2025, NEA-led, $808M valuation). Seed registry listed it as independent with no M&A flag → **corrected to `acquired` (ServiceNow subsidiary)**, confidence high.
@@ -55,7 +55,7 @@ Known for **authorization visibility** — the "Access Graph" of effective permi
 **Day-2**, moving toward Day-1 for funds doing RAG or under model-risk/audit pressure, where proving and minimizing effective access is the control. Veza's strength — answering "who can actually touch this data/model, including agents" — is exactly the question AI access governance raises. Now-under-ServiceNow: attractive if the fund already runs ServiceNow (single pane of glass, ITSM-integrated remediation); watch for product integration/roadmap churn typical post-acquisition, and pricing moving to ServiceNow's enterprise model.
 
 ## Competitors / alternatives
-[sailpoint](sailpoint.md), [saviynt](saviynt.md), [conductorone](conductorone.md), [lumos](lumos.md). Data-access neighbors: [varonis](varonis.md), [cyera](cyera.md), [sentra](sentra.md). Bundled option: [microsoft-entra](microsoft-entra.md).
+[sailpoint](sailpoint.md), [saviynt](saviynt.md), [c1](c1.md), [lumos](lumos.md). Data-access neighbors: [varonis](varonis.md), [cyera](cyera.md), [sentra](sentra.md). Bundled option: [microsoft-entra](microsoft-entra.md).
 
 ## Open questions / to verify
 - Post-close product/branding integration into ServiceNow and impact on standalone availability and pricing.

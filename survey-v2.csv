@@ -195,7 +195,7 @@ Identity Governance & Visibility (IGA / ISPM),CyberArk (Palo Alto),"PAM-first; a
 Identity Governance & Visibility (IGA / ISPM),Linx Security,AI-native IGA + NHI,,https://www.linx.security/,https://github.com/druce/governance/blob/master/wiki/vendors/linx-security.md
 Identity Governance & Visibility (IGA / ISPM),Lumos,AI-native IGA,,https://www.lumos.com,https://github.com/druce/governance/blob/master/wiki/vendors/lumos.md
 Identity Governance & Visibility (IGA / ISPM),Hydden,Visibility/discovery layer (seed-stage),,https://www.hydden.com/,https://github.com/druce/governance/blob/master/wiki/vendors/hydden.md
-Identity Governance & Visibility (IGA / ISPM),ConductorOne,AI-native IGA,,https://www.conductorone.com,https://github.com/druce/governance/blob/master/wiki/vendors/conductorone.md
+Identity Governance & Visibility (IGA / ISPM),C1 (formerly ConductorOne),"AI-native IGA; renamed from ConductorOne 2026-04",,https://www.c1.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/c1.md
 Identity Governance & Visibility (IGA / ISPM),Silverfort,"NEW: center of gravity is ITDR/NHI runtime protection, not classic IGA",,https://www.silverfort.com/,https://github.com/druce/governance/blob/master/wiki/vendors/silverfort.md
 Identity Governance & Visibility (IGA / ISPM),Other (Please Specify),,,,
 Secrets Manager,Azure Key Vault,Microsoft,,https://azure.microsoft.com/products/key-vault,https://github.com/druce/governance/blob/master/wiki/vendors/azure-key-vault.md
@@ -234,7 +234,7 @@ Data Access Governance,Cyera,"Independent; DSPM extending to access",,https://ww
 Data Access Governance,Sentra,Independent,,https://www.sentra.io,https://github.com/druce/governance/blob/master/wiki/vendors/sentra.md
 Data Access Governance,Concentric AI,NEW: also DSPM,,https://concentric.ai,https://github.com/druce/governance/blob/master/wiki/vendors/concentric-ai.md
 Data Access Governance,SailPoint (Data Access Security),NEW: DAS module of the IGA platform,,https://www.sailpoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/sailpoint.md
-Data Access Governance,ConductorOne,NEW: also IGA,,https://www.conductorone.com,https://github.com/druce/governance/blob/master/wiki/vendors/conductorone.md
+Data Access Governance,C1 (formerly ConductorOne),"NEW: also IGA; renamed from ConductorOne 2026-04",,https://www.c1.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/c1.md
 Data Access Governance,Silverfort,NEW: ITDR/NHI-flavored,,https://www.silverfort.com/,https://github.com/druce/governance/blob/master/wiki/vendors/silverfort.md
 Data Access Governance,Netwrix,PE-owned (TA Associates),,https://www.netwrix.com,https://github.com/druce/governance/blob/master/wiki/vendors/netwrix.md
 Data Access Governance,Other (Please Specify),,,,

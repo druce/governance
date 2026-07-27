@@ -57,7 +57,7 @@ Microsoft product; not separately funded. Public parent (Nasdaq: MSFT). Ownershi
 **Day-1, and for most funds it's already there.** A hedge fund running Microsoft 365 effectively already owns its IdP — the work is configuration (Conditional Access, MFA, privileged-role protection), not procurement. For AI specifically, Entra is what your AI gateway, Copilot, and RAG layer should authenticate against so access decisions inherit existing entitlements. Bundled cost and tight Microsoft integration usually make it the default; the question is whether you also want best-of-breed governance on top.
 
 ## Competitors / alternatives
-[okta](okta.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [conductorone](conductorone.md), [lumos](lumos.md).
+[okta](okta.md), [ping-identity](ping-identity.md). Governance neighbors: [sailpoint](sailpoint.md), [saviynt](saviynt.md), [veza](veza.md), [c1](c1.md), [lumos](lumos.md).
 
 ## Open questions / to verify
 - Exact split of what's licensed P1 vs P2 vs Governance add-on for a given fund's needs (verify at purchase).

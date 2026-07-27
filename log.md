@@ -159,3 +159,9 @@ User asked whether to add Drata, Venminder, Whistic. Added all three, created + 
 - **venminder** → vendor-risk (TPRM assessments; acquired by Ncontracts announced 2024-09-04 via Hg buyout).
 - **whistic** → vendor-risk (questionnaire automation / vendor-profile network; independent, Series B 2022 JMI Equity).
 Category pages, survey options, taxonomy notes, and CSV rows updated.
+
+## [2026-07-27] research | c1 (ex-conductorone)
+User flagged c1.ai. VERIFIED: ConductorOne renamed to **C1** (announced 2026-04-06, "We Are C1" blog; new domain c1.ai; agentic-era repositioning). No ownership change — still independent, VC-backed ($79M Series B Oct 2025). Source cached: `raw/sources/2026-07-27--c1--rebrand-announcement.md`.
+
+## [2026-07-27] decision | slug rename conductorone → c1
+Per slug convention, `wiki/vendors/conductorone.md` → `wiki/vendors/c1.md` (git mv), `aka: [ConductorOne]`. Inbound links updated (microsoft-entra, okta, sailpoint, saviynt, veza, lumos, hydden, linx-security, identity-governance, data-access-governance, survey-blueprint); taxonomy notes + both CSV rows updated. Survey options render as "C1 (formerly ConductorOne)" — doubly important because an unrelated IT-services MSP (ConvergeOne) also brands as "C1" since 2023; disambiguation note added to the vendor page.

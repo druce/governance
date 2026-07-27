@@ -46,16 +46,16 @@ The [identity-governance](../categories/identity-governance.md) foundation. Cont
 SaaS. Integrates with IdPs ([microsoft-entra](microsoft-entra.md), [okta](okta.md)), HR systems, and a broad catalog of SaaS apps to discover usage, drive access requests/reviews, and automate provisioning/deprovisioning. Workflow-centric (Slack-native approvals) and automation-forward.
 
 ## Positioning & differentiators
-Known for combining **SaaS management + IGA** in an automation-first package, now marketed as autonomous/AI-driven identity. Lighter and quicker to deploy than [sailpoint](sailpoint.md)/[saviynt](saviynt.md); closest peer is [conductorone](conductorone.md) (both modern, automation-first IGA challengers), with Lumos carrying more SaaS-spend/management DNA. Customers skew fast-growing tech (Pinterest, GitHub, Anduril cited as references — marketing).
+Known for combining **SaaS management + IGA** in an automation-first package, now marketed as autonomous/AI-driven identity. Lighter and quicker to deploy than [sailpoint](sailpoint.md)/[saviynt](saviynt.md); closest peer is [c1](c1.md) (both modern, automation-first IGA challengers), with Lumos carrying more SaaS-spend/management DNA. Customers skew fast-growing tech (Pinterest, GitHub, Anduril cited as references — marketing).
 
 ## Ownership, funding & M&A
 Independent, private, VC-backed. ~$65M raised across two rounds; latest is a **$35M Series B (May 2024)** led by Scale Venture Partners with a16z, Harpoon Ventures, and Neo. Founded 2020 by Andrej Safundzic and Leo Mehr; HQ San Francisco. No acquisition and no confirmed Series C as of 2026-06-28. Ownership confidence high. (No seed M&A flag.)
 
 ## CTO / hedge-fund lens
-**Day-2.** Like [conductorone](conductorone.md), a lighter, faster IGA option for a small-to-mid hedge fund than legacy incumbents, with the bonus of SaaS discovery/spend visibility (useful for catching shadow SaaS and shadow AI). Fit improves under audit/model-risk or RAG, where access certification matters. Trade-offs: youngest/smallest of this cohort, less compliance pedigree and connector depth than [sailpoint](sailpoint.md) for large regulated estates; diligence whether its governance depth matches the fund's audit requirements.
+**Day-2.** Like [c1](c1.md), a lighter, faster IGA option for a small-to-mid hedge fund than legacy incumbents, with the bonus of SaaS discovery/spend visibility (useful for catching shadow SaaS and shadow AI). Fit improves under audit/model-risk or RAG, where access certification matters. Trade-offs: youngest/smallest of this cohort, less compliance pedigree and connector depth than [sailpoint](sailpoint.md) for large regulated estates; diligence whether its governance depth matches the fund's audit requirements.
 
 ## Competitors / alternatives
-[conductorone](conductorone.md), [veza](veza.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). SaaS-discovery adjacency: [nudge-security](nudge-security.md), [grip-security](grip-security.md).
+[c1](c1.md), [veza](veza.md), [sailpoint](sailpoint.md), [saviynt](saviynt.md). Bundled option: [microsoft-entra](microsoft-entra.md) (Entra ID Governance). SaaS-discovery adjacency: [nudge-security](nudge-security.md), [grip-security](grip-security.md).
 
 ## Open questions / to verify
 - Depth of formal access-certification/compliance reporting vs incumbents; any funding since the 2024 Series B.
