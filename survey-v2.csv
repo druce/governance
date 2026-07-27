@@ -138,7 +138,7 @@ Enterprise Browser Security,Red Access,"NEW: Independent; agentless browsing sec
 Enterprise Browser Security,Other (Please Specify),,,,
 SaaS Security Posture Management (SSPM),AppOmni,NEW CATEGORY: Independent,,https://appomni.com,https://github.com/druce/governance/blob/master/wiki/vendors/appomni.md
 SaaS Security Posture Management (SSPM),Obsidian Security,NEW CATEGORY: Independent,,https://www.obsidiansecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/obsidian-security.md
-SaaS Security Posture Management (SSPM),Adaptive Shield (CrowdStrike),"NEW CATEGORY: Acq. by CrowdStrike (closed ~2025-01; ~$300M)",,https://www.adaptive-shield.com,https://github.com/druce/governance/blob/master/wiki/vendors/adaptive-shield.md
+SaaS Security Posture Management (SSPM),Adaptive Shield (CrowdStrike Falcon Shield),"NEW CATEGORY: Acq. by CrowdStrike (closed 2024-11-20; ~$214M per 10-K). Now branded Falcon Shield",,https://www.crowdstrike.com/en-us/platform/falcon-shield/,https://github.com/druce/governance/blob/master/wiki/vendors/adaptive-shield.md
 SaaS Security Posture Management (SSPM),Grip Security,"NEW CATEGORY: Independent; leans shadow-SaaS/identity",,https://www.grip.security,https://github.com/druce/governance/blob/master/wiki/vendors/grip-security.md
 SaaS Security Posture Management (SSPM),Valence Security,NEW CATEGORY: Independent,,https://www.valencesecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/valence-security.md
 SaaS Security Posture Management (SSPM),Wing Security,NEW CATEGORY: Independent,,https://wing.security,https://github.com/druce/governance/blob/master/wiki/vendors/wing-security.md

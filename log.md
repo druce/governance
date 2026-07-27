@@ -1756,3 +1756,22 @@ placeholder copy. Sweep tally unchanged.
 Updated `aka`, `ownership_note`, naming/provenance, sources and History; `last_verified` stays
 2026-07-27. `survey-v2.csv` row ("Venminder (Ncontracts)") already correct — brand persists, no
 rename. Cached `raw/sources/2026-07-27--venminder--by-ncontracts-branding.md`.
+
+## [2026-07-27] research | adaptive-shield
+
+URL-fix pass that turned up a real date defect. `adaptive-shield.com` 301s to
+`crowdstrike.com/en-us/platform/falcon-shield/` (200, "CrowdStrike Falcon® Shield") — updated
+`website`; the standalone brand is retired.
+
+Closed-vs-announced check: **defect confirmed.** `acquisition.closed` was 2024-11-06, a copy of
+the announce date, while the body said "closed ~Jan 2025" (an estimate read off the press
+release's "expected to close in fiscal Q4"). Neither was right. CrowdStrike's FY2025 10-K Note 12
+gives the close as **2024-11-20** and the purchase price as **~$214.4M** ($213.7M cash net of
+cash acquired + $0.7M replacement equity awards), vs. the press-reported ~$300M — the gap is
+$22.8M of Class A stock subject to vesting plus retention RSU/PSU grants, all excluded from the
+purchase price as post-combination comp. Cash-flow line corroborates ($310.3M for Flow Security +
+Adaptive Shield, less Flow's $96.4M). Filled `acquisition.price`, which had been null.
+
+Both standing open questions resolved (exact close date/price; Falcon Shield vs. Falcon for SaaS
+→ **Falcon Shield**). `survey-v2.csv` row updated (URL + the "closed ~2025-01" note).
+Cached `raw/sources/2026-07-27--adaptive-shield--crowdstrike-10k-close-date-and-price.md`.
