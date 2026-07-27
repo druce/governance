@@ -1505,3 +1505,65 @@ Separately, the **~$47.6M price is labelled an inference everywhere it appears**
 *not* stated as a plain figure in `acquisition.price`; per CLAUDE.md §7 an unverified value would
 otherwise stay null, and the compromise is to carry the number with its derivation attached so the
 next pass can confirm or drop it rather than re-derive it.
+
+## [2026-07-27] research | symmetry-systems
+URL audit + M&A re-verification against primary SEC filings. Verified status: **`acquired-pending`**, Zscaler
+(NASDAQ: ZS), **$175.0M** total consideration.
+
+Primary source: Zscaler **Form 10-Q for the quarter ended 2026-04-30** (filed 2026-05-26, accession
+0001713683-26-000096), **Note 17 *Subsequent Event***: "On May 19, 2026, we entered into a definitive agreement to
+acquire Symmetry Systems, Inc. ... for total consideration of $175.0 million, consisting of cash and restricted
+shares subject to future employment services. ... The transaction is expected to close in the fourth quarter of
+fiscal 2026, subject to the satisfaction of closing conditions." Zscaler FY ends 2026-07-31.
+
+Negative evidence for non-close as of 2026-07-27: no Item 2.01 completion 8-K (EDGAR full-text search for
+"Symmetry" on CIK 0001713683 returns exactly 2 hits, both 2026-05-26 — this 10-Q and the same-day earnings 8-K);
+Zscaler's submissions feed shows only Forms 4 and 144 since 2026-05-26; no completion press release; every headline
+still reads "to acquire"; symmetry-systems.com live on its own domain with a "Zscaler to acquire" banner and a
+2026-05-21 post whose forward-looking-statements section says "the proposed acquisition."
+
+Frontmatter: `ownership_state` acquired-closed→acquired-pending; `acquisition.closed` 2026-05-21→null;
+`acquisition.price` null→"$175.0M (cash + restricted shares)"; `last_verified` 2026-07-27; `verify_after`
+2026-09-15 (post Zscaler FY2026 10-K, expected ~2026-09-11); added 3 `sources:` entries; tags += zscaler,
+acquired-pending. `website` unchanged (symmetry-systems.com still live, no redirect).
+
+Body: rewrote the Ownership section around the signed-not-closed distinction; added a **two Zscaler deals** table
+contrasting SPLX (closed 2025-10-31, $40.6M, model/prompt layer) with Symmetry (pending, $175.0M, data layer) and
+noting the two are complementary rather than overlapping — with the caveat that the combined Access-Graph +
+inline-enforcement story is roadmap, not shipped; added a mid-transaction buy-side caveat to the CTO lens (air-gapped/
+on-prem deployment is the differentiator most at risk under a cloud-delivered SSE owner); resolved the price open
+question and added a "did it close?" open question.
+
+survey-v2.csv: enriched both affected rows (Symmetry DSPM row + Zscaler SSE/SASE row) with the verified price and
+explicit PENDING-as-of-2026-07-27 wording. Both already said "pending" — the CSV was **right** and the wiki page was
+wrong, which is itself a useful signal.
+
+Cached: `raw/sources/2026-07-27--symmetry-systems--zscaler-10q-pending-175m.md`
+
+## [2026-07-27] decision | symmetry-systems ownership_state closed → pending (unsourced close date)
+**Correction, not a hard contradiction** — the page's own cited evidence never supported the closed state, so there
+were never two competing sources to reconcile.
+
+The 2026-06-28 pass recorded `acquisition: {announced: 2026-05-21, closed: 2026-05-21, ...}` and
+`ownership_state: acquired-closed`. The `closed` value was a duplicate of `announced` with **no citation** — it was
+inferred from the cached source's own hedge, "close expected shortly after announcement," which is anticipation, not
+completion. Zscaler's 10-Q Note 17 shows the deal was still subject to closing conditions five days *after* the
+announcement, and no filing since confirms close. Per CLAUDE.md §7 (announced ≠ closed) the state is corrected to
+`acquired-pending` with `closed: null` and a `verify_after` date.
+
+**Third instance of the same defect pattern in this sweep**, and the pattern is now well characterised: an
+announcement date copied into the `closed` field, converting a pending deal into a false closed one.
+- [natoma](wiki/vendors/natoma.md) — Snowflake, same shape, corrected earlier today.
+- [splxai](wiki/vendors/splxai.md) — Zscaler; the *inverse* failure. There `closed` was also set equal to the
+  announcement date (2025-11-03), but that deal had genuinely closed — on **2025-10-31**, three days *earlier*. The
+  state was right by luck; the date was wrong.
+
+Common root cause: treating the announcement date as the close date whenever a real close date is not to hand. The
+two directions of error are worth naming separately — Natoma/Symmetry overstate ownership (pending sold as closed,
+the more dangerous direction for a buyer), while SPLX merely misdated a real close. Both are fixed the same way: get
+the acquirer's 10-Q/8-K and read the business-combination or subsequent-event note.
+
+**Suggested follow-up (not actioned here):** sweep all remaining `acquired-closed` pages for
+`acquisition.closed == acquisition.announced` with no `sources:` entry backing the close — that predicate cheaply
+identifies the whole affected population rather than catching them one page at a time. Recorded against the sweep's
+open follow-ups item.

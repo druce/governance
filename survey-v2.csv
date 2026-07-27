@@ -13,7 +13,7 @@ General Identity,Google Cloud Identity,Google,,https://cloud.google.com/identity
 General Identity,AWS,Amazon Web Services,,https://aws.amazon.com/iam/,https://github.com/druce/governance/blob/master/wiki/vendors/aws-iam.md
 General Identity,Other (Please Specify),,,,
 AI-aware Network Security (SSE/SASE),Palo Alto,Public (PANW),,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
-AI-aware Network Security (SSE/SASE),Zscaler,"Public (ZS); acquired SplxAI (2025) + Symmetry Systems (2026, pending)",,https://www.zscaler.com,https://github.com/druce/governance/blob/master/wiki/vendors/zscaler.md
+AI-aware Network Security (SSE/SASE),Zscaler,"Public (ZS); acquired SplxAI (closed 2025-10-31, $40.6M) + Symmetry Systems ($175.0M, announced 2026-05-21 — PENDING as of 2026-07-27)",,https://www.zscaler.com,https://github.com/druce/governance/blob/master/wiki/vendors/zscaler.md
 AI-aware Network Security (SSE/SASE),Netskope,Public (NTSK; IPO 2025-09),,https://www.netskope.com,https://github.com/druce/governance/blob/master/wiki/vendors/netskope.md
 AI-aware Network Security (SSE/SASE),Cloudflare,Public (NET),,https://www.cloudflare.com/products/ai-gateway/,https://github.com/druce/governance/blob/master/wiki/vendors/cloudflare.md
 AI-aware Network Security (SSE/SASE),Cisco (Secure Access),Public (CSCO),,https://www.cisco.com,https://github.com/druce/governance/blob/master/wiki/vendors/cisco.md
@@ -220,7 +220,7 @@ DSPM / Data Security Posture,Concentric AI,Independent,,https://concentric.ai,ht
 DSPM / Data Security Posture,Bedrock Data (formerly Bedrock Security),Independent,,https://bedrockdata.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/bedrock-security.md
 DSPM / Data Security Posture,Securiti (Veeam),"Acq. by Veeam (closed 2025-12-11; $1.725B)",,https://securiti.ai,https://github.com/druce/governance/blob/master/wiki/vendors/securiti.md
 DSPM / Data Security Posture,Proofpoint DSPM (formerly Normalyze),"Acq. by Proofpoint (closed ~2024-11); Normalyze brand retired, site redirects",,https://www.proofpoint.com/us/products/data-security-posture-management,https://github.com/druce/governance/blob/master/wiki/vendors/proofpoint-dspm.md
-DSPM / Data Security Posture,Symmetry Systems (Zscaler),"Acq. by Zscaler (announced 2026-05-21 — pending)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md
+DSPM / Data Security Posture,Symmetry Systems (Zscaler),"Acq. by Zscaler (definitive agr. 2026-05-19, announced 2026-05-21, $175.0M — PENDING, close unconfirmed as of 2026-07-27; Zscaler expects close by FY-end 2026-07-31)",,https://www.symmetry-systems.com,https://github.com/druce/governance/blob/master/wiki/vendors/symmetry-systems.md
 DSPM / Data Security Posture,Wiz (Google),"Acq. by Google (closed 2026-03-11; $32B)",,https://www.wiz.io,https://github.com/druce/governance/blob/master/wiki/vendors/wiz.md
 DSPM / Data Security Posture,Rubrik,"Public (RBRK); acquired Laminar",,https://www.rubrik.com,https://github.com/druce/governance/blob/master/wiki/vendors/rubrik.md
 DSPM / Data Security Posture,OneTrust,"Independent; privacy/governance",,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
