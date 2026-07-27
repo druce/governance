@@ -912,3 +912,63 @@ close — and the gap grows with the time to close (here, ~6.5 months and ~$4B, 
 acquirer's first post-close 10-Q, Note "Acquisitions," is the authoritative number. Press
 coverage almost always keeps repeating the announced figure. Applies to several other
 still-pending items in this sweep; record both figures rather than picking one.
+
+## [2026-07-27] research | entro-security
+
+URL audit found `entro.security` **still live under the Entro brand** — HTTP 200, no redirect,
+`<title>` "Agentic AI & Non-Human Identity Security Platform | Entro Security" — but with a
+footer reading **"© 2026 SailPoint Technologies, Inc."**. Task was to confirm the existing
+`ownership_state: acquired-closed` / `owner: SailPoint` was accurate rather than stale from
+some earlier status.
+
+**Ownership CONFIRMED, correctly attributed.** SailPoint completed the acquisition **2026-06-29**
+per SailPoint's own release ("today announced it has completed its acquisition of Tel Aviv-based
+Entro Security", datelined June 29, 2026 09:00 ET). No change needed to `ownership_state` or
+`owner`.
+
+**Announce date CORRECTED: 2026-06-18 → 2026-06-15.** The 06-18 came from the 2026-07-09 pass and
+was in fact the **publication date of the SecurityWeek write-up**, which never states when the
+announcement happened — it only says "SailPoint has announced an agreement to acquire Entro."
+SailPoint's own intent-to-acquire release is datelined **"AUSTIN, Texas, June 15, 2026 (GLOBE
+NEWSWIRE)"**, the newswire URL path is `/news-release/2026/06/15/3311837/`, and SailPoint's IR
+listing dates it June 15. Three-way consistent, high confidence. *Lesson, same shape as the
+CyberArk/PANW one above but a different failure mode: there the risk was blog-vs-filing date
+drift; here it was **trade-press publication date silently substituted for the announce date**.
+When a page records an announce date, check that the cited source actually asserts it rather than
+merely being dated that day.*
+
+**SEC check per the prefer-filings rule — nothing to find, and that is the finding.** SailPoint,
+Inc. is **CIK 0002030781** (the pre-re-IPO "Sailpoint Technologies Holdings, Inc." is CIK
+0001627857 — do not use). EDGAR full-text search for "Entro" restricted to that CIK returns **0
+hits** as of today; a control query returns hits, so FTS is working. Filing history explains it:
+the last 10-Q was **filed 2026-06-10 for the quarter ended 2026-04-30**, i.e. *before* the 06-15
+announcement, and **no 8-K was filed for the deal** — consistent with undisclosed terms and an
+acquisition immaterial at PANW/CyberArk scale. So unlike the CyberArk task, there is no filing to
+adjudicate the dates; the acquirer press releases remain the best primary source. First filing
+expected to carry a business-combination footnote (and possibly an official price) is the **Q2
+FY2027 10-Q, period ending 2026-07-31, due ~Sept 2026**. Set `verify_after: 2026-10-01`.
+
+**Price unchanged and still soft:** officially undisclosed ("Financial terms of this transaction
+were not disclosed"); **~$200M reported by Calcalist** only, medium confidence, single press
+source.
+
+Incidental: the intent PR guided the close to **Q3 FY2027**, but it closed 2026-06-29 = **Q2
+FY2027** (SailPoint FY ends Jan 31) — closed ahead of guidance, not late. Worth noting because a
+"closed earlier than guided" gap can otherwise look like a data error.
+
+**Brand PERSISTS — surviving sub-brand, not a retired one.** entro.security serves 200 with no
+redirect, keeps the Entro-branded title, carries a co-branded **SailPoint | Entro** lockup
+(`SailPoint-Entro.png`), and only the corporate plumbing has moved (copyright + privacy policy now
+SailPoint's). Matches the close PR: Entro's NHI/credentials products are "available now to
+SailPoint customers as **standalone offerings** ... as native platform integration continues."
+This is the **opposite** of the absorb-and-retire outcome recorded for Normalyze earlier in this
+sweep (normalyze.ai 301s; product sold only as Proofpoint DSPM). Consequence for the wiki:
+`website` **stays** `https://entro.security` and, per the "rename only if the new brand is
+distinctive" rule, the survey row **keeps the Entro Security name** — no rename, just an ownership
+note. Explicitly flagged in the CSV not to fold it into the SailPoint row, since buyers still shop
+"Entro" as its own line item.
+
+Updated `wiki/vendors/entro-security.md` (announce date, ownership_note, last_verified 2026-07-27,
+verify_after, brand-persistence + SEC-status bullets, 3 new source entries, history line) and the
+`survey-v2.csv` flag note. Cached
+`raw/sources/2026-07-27--entro-security--sailpoint-announce-date-correction.md`.
