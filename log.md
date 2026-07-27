@@ -372,3 +372,71 @@ with the Proofpoint name. Flagging, not acting.
 which remains the acquisition-facts anchor).
 
 `index.md` deliberately left stale — regenerated once at the end of this batch.
+
+---
+
+## [2026-07-27] research | aim-security
+
+**Trigger:** automated URL audit — `https://www.aim.security` returns **HTTP 301 →
+`https://www.catonetworks.com/`**, a completely different company's SASE homepage with zero
+Aim branding. Page frontmatter still said `ownership_state: acquired-pending`.
+
+**Verified — the deal CLOSED, it was never really "pending".** Cato's 2025-09-03 press release
+is written entirely in the past tense ("Cato Networks **Acquires** Aim Security"), contains no
+"definitive agreement", no expected-close window and no regulatory condition, and told existing
+Aim customers they could deploy "today" — that is a post-close integration plan. Same-day
+independent coverage (SecurityWeek, CyberScoop, SiliconANGLE, Help Net Security, Network World)
+all reported it as done. There is no separate completion announcement, which is normal for a
+private cash-and-stock deal of this size. `acquired-pending` was an over-cautious read of the
+original PR on 2026-06-28, not a signal of an actual pending close.
+
+**Verified — brand fully retired and the technology is GA inside Cato.** Cato's 2026-03-17
+press release ("first GPU-powered SASE platform with native AI Security") states Cato is
+"launching **Cato AI Security**, converging advanced AI governance and protection capabilities
+from its recent acquisition of Aim Security into the Cato SASE Platform", generally available
+worldwide, running on **Cato Neural Edge** (NVIDIA GPUs deployed across Cato's private
+backbone). The product hub `catonetworks.com/platform/ai-security-aisec/` carries **no Aim
+branding whatsoever**. Aim's three legs survive functionally, renamed: AI Security for End
+Users (shadow AI), AI Security for Applications (the AI Firewall), Agentic AI Security
+(agent↔model↔MCP visibility), plus AI-SPM. This closes the long-standing open question on both
+this page and `cato-networks.md`: "whether the Aim brand survives inside Cato" — it does not.
+
+**Changed — `wiki/vendors/aim-security.md`:**
+- `website` `https://www.aim.security` → `https://www.catonetworks.com/platform/ai-security-aisec/`
+  (the Aim-lineage product hub, not the generic Cato homepage the redirect lands on — more
+  specific and more useful to a buyer; same choice made for Acuvity/Proofpoint and
+  Apex/Tenable in this batch).
+- `ownership_state` `acquired-pending` → `acquired-closed`; `acquisition.closed` `null` →
+  `2025-09-03`; `verify_after` `2026-09-03` → `null` (it existed only to satisfy the
+  acquired-pending schema requirement).
+- `aka` gained "Cato AI Security"; `tags` gained `cato`; `last_verified` → 2026-07-27;
+  three `sources:` entries added; `ownership_note` rewritten.
+- Body: One-liner and header banner now lead with brand-retired; Deployment section notes the
+  integration is finished and names Cato Neural Edge; Positioning gained a post-acquisition
+  paragraph mapping the old three legs onto the new SKU names and calling out that the
+  differentiator is now a platform argument, not a best-of-breed one; CTO lens now says
+  plainly you cannot buy Aim and that any shortlist still carrying the name is stale;
+  History entry appended.
+
+**Price left `null`.** Cato has still never disclosed terms. Press reports range ~$350M
+(Calcalist) to $350–400M. Recorded in prose as reported-not-confirmed; not promoted into
+`acquisition.price`.
+
+**Changed — `survey-v2.csv` row 57:** Vendor URL `https://www.aim.security` →
+`https://www.catonetworks.com/platform/ai-security-aisec/`; product option "Aim Security
+(Cato)" → "Cato AI Security (formerly Aim Security)"; Flag/Note updated to closed-2025-09-03 +
+brand retired + GA date. Row 20 (Cato Networks, SSE/SASE category) left alone — its note
+"acquired Aim Security (2025)" is still accurate. **Survey-design note:** AI-SPM respondents
+in 2026 will not recognize "Aim Security", and the same option now effectively duplicates the
+Cato Networks row in the SASE category for anyone who buys the whole platform. Worth deciding
+in the next survey revision whether the AI-SPM row should stay at all. Flagging, not acting.
+
+**Not changed — `wiki/vendors/cato-networks.md`.** Its open question "whether the Aim
+brand/standalone product persists" is now answerable and its `ownership_note` could gain the
+close date, but Cato is a separate research item in this batch's queue; folding it in here
+would have made this commit two vendors wide. Left for the cato-networks pass.
+
+**Source cached:** `raw/sources/2026-07-27--aim-security--cato-ai-security-brand-retired.md`
+(supersedes nothing; the 2025-09-03 acquisition PR remains the deal-facts anchor).
+
+`index.md` deliberately left stale — regenerated once at the end of this batch.
