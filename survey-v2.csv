@@ -111,7 +111,7 @@ Tool Identity & Integration (Agent Auth),Composio,Tool integration / managed age
 Tool Identity & Integration (Agent Auth),Arcade,Tool-calling / per-user OAuth (Arcade.dev),,https://www.arcade.dev,https://github.com/druce/governance/blob/master/wiki/vendors/arcade.md
 Tool Identity & Integration (Agent Auth),StackOne,Unified-API agent tooling,,https://www.stackone.com,https://github.com/druce/governance/blob/master/wiki/vendors/stackone.md
 Tool Identity & Integration (Agent Auth),Descope,Agent/CIAM auth,,https://www.descope.com,https://github.com/druce/governance/blob/master/wiki/vendors/descope.md
-Tool Identity & Integration (Agent Auth),Stytch (Twilio),"Acq. by Twilio (closed 2025-11-14)",,https://stytch.com,https://github.com/druce/governance/blob/master/wiki/vendors/stytch.md
+Tool Identity & Integration (Agent Auth),Stytch (Twilio),"VERIFIED 2026-07-27: Acq. by Twilio, announced 2025-10-30 (Twilio Q3 2025 10-Q), closed 2025-11-14 for $104.1M cash / $58.5M net of cash (Twilio FY2025 10-K Note 11). Stytch brand + stytch.com retained.",,https://stytch.com,https://github.com/druce/governance/blob/master/wiki/vendors/stytch.md
 Tool Identity & Integration (Agent Auth),WorkOS,"Agent auth; acquirer of Warrant (FGA)",,https://workos.com,https://github.com/druce/governance/blob/master/wiki/vendors/workos.md
 Tool Identity & Integration (Agent Auth),CyberArk / Idira (Palo Alto),"Now Idira (Palo Alto Networks) — rebranded 2026-05-12; acq. closed 2026-02-11",,https://www.paloaltonetworks.com/idira,https://github.com/druce/governance/blob/master/wiki/vendors/cyberark.md
 Tool Identity & Integration (Agent Auth),Other (Please Specify),,,,

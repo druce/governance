@@ -1374,3 +1374,55 @@ date and a SPLX-specific price ($40.6M) that no press release disclosed and that
 recorded as undisclosable. The XBRL context tags are a fast cross-check — they date each
 acquisition separately even when the narrative aggregates them, which is exactly what
 disentangled SPLX from Red Canary inside the $692.0M headline figure.
+
+## [2026-07-27] research | stytch
+
+Re-verified the Twilio acquisition of Stytch against **primary SEC filings** as part of the URL-audit
+sweep. The audit flagged stytch.com as live (200, no redirect) with a banner reading "Stytch has
+joined Twilio to build the intelligent identity layer for the internet."
+
+**Neither bug pattern found.** This page was clean on the two failure modes that turned up elsewhere
+in this sweep:
+
+- *Transposed dates* (the splunk.md pattern): no. Announced 2025-10-30 precedes closed 2025-11-14,
+  in the right order.
+- *Fabricated close date copied from the announced date* (the natoma.md / splxai.md pattern): no.
+  The two dates were distinct, 15 days apart, and both independently corroborated.
+
+Verified from Twilio's own filings rather than trusting the cached blog post:
+
+- **Announced 2025-10-30** — Twilio Form 10-Q for Q3 2025 (filed 2025-10-31): "On October 30, 2025,
+  we entered into a definitive agreement to acquire Stytch, Inc., an identity platform for AI agents.
+  We expect the transaction to close in the fourth quarter of 2025, subject to customary closing
+  conditions." The same filing lists "the timing and completion of our proposed acquisition of
+  Stytch, Inc." as a forward-looking statement — a clean announced-≠-closed marker in the primary
+  record.
+- **Closed 2025-11-14** — Twilio Form 10-K FY2025, Note 11 (Business Combinations): "On November 14,
+  2025, the Company acquired all outstanding shares of Stytch, Inc." Corroborated by Stytch's own
+  changelog the same day ("Twilio's acquisition of Stytch is now final").
+
+**Material addition: the price, previously `null`.** Twilio's blog said terms were undisclosed, but
+the FY2025 10-K discloses the whole purchase-price allocation: **$104.1M paid in cash, $58.5M net of
+cash acquired** — cash acquired $45.6M, identifiable intangibles $11.8M (developed technology $9.9M
+/ 5yr, customer relationships $2.0M / 4yr), goodwill $48.5M. This repeats the lesson from the splxai
+and portkey entries: **a "terms undisclosed" press release is not evidence that terms are
+undisclosable.** When the acquirer is public, the next 10-Q or 10-K usually prices the deal, and
+EDGAR should be checked before recording `price: null`.
+
+Editorially the number matters. $104.1M gross is **below the ~$120M Stytch raised in disclosed
+primary rounds** ($30M Series A + $90M Series B) and roughly a tenth of its 2021 $1B Series B
+valuation, with effective enterprise value near $58.5M and only $11.8M booked as identifiable
+technology and customer intangibles. That reads as a soft landing rather than a premium strategic
+exit, so the page now frames roadmap durability as an open diligence question and rewrites the
+competitive section to treat Stytch as a Twilio platform component, with [descope](wiki/vendors/descope.md)
+noted as the remaining independent comparable in developer-first agent/MCP auth.
+
+Brand persists: stytch.com still resolves, still Stytch-branded, product names (Connected Apps,
+IsAgent, Device Fingerprinting) intact; Twilio Inc. is parent/data controller with Stytch, Inc. as
+day-to-day processor. `website` left at https://stytch.com; `ownership_state` stays `acquired-closed`
+(a real, cited close date supports it). last_verified → 2026-07-27; frontmatter `sources:` added.
+Source cached to `raw/sources/2026-07-27--stytch--twilio-sec-filings.md`. survey-v2.csv row 114
+Flag-Note upgraded to the verified dates + price.
+
+No `decision` entry: nothing recorded on the page was wrong, so there was no contradiction to
+resolve under CLAUDE.md §8 — this was a confirmation plus a fill of a null field.
