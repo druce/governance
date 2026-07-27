@@ -96,7 +96,7 @@ date several survey answer options.
 | [trulens](../vendors/trulens.md) (TruEra) | Snowflake | LLM eval (TruLens stays OSS) | **Closed** | 2024-05-22 |
 | [langfuse](../vendors/langfuse.md) | ClickHouse | LLM observability (core stays OSS) | Announced | 2026-01-26 |
 | [helicone](../vendors/helicone.md) | Mintlify | LLM observability (now maintenance mode) | Announced | 2026-03-03 |
-| [whylabs](../vendors/whylabs.md) | Apple | ML monitoring (acqui-hire; product wound down) | ~2025 (med conf.) | — |
+| WhyLabs | Apple | ML monitoring (acqui-hire; company since discontinued operations and open-sourced its platform — page removed 2026-07-27) | ~2025 (med conf.) | — |
 | [seraphic](../vendors/seraphic.md) | CrowdStrike | Enterprise browser security | Announced | 2026-01-13 ($420M) |
 | [layerx](../vendors/layerx.md) | Akamai | Browser security extension | Announced | 2026-05-14 (~$205M) |
 | Styra / OPA team | Apple | Authorization (acqui-hire; company since wound down, OPA stays CNCF — see [open-policy-agent](../vendors/open-policy-agent.md)) | ~2025-08 (med conf.) | — |

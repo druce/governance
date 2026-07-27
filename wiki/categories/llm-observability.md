@@ -71,7 +71,6 @@ red-teaming that actually block. Treat it as the eyes, not the bouncer.
 - [weights-and-biases](../vendors/weights-and-biases.md) — Weave, W&B's LLM tracing/eval alongside its experiment-tracking platform.
 - [fiddler-ai](../vendors/fiddler-ai.md) — model monitoring and explainability (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
 - [arthur-ai](../vendors/arthur-ai.md) — model/LLM monitoring and guardrails (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
-- [whylabs](../vendors/whylabs.md) — data/ML and LLM monitoring (drift, quality).
 
 ## Consolidation / M&A dynamics
 
@@ -97,7 +96,7 @@ to trace, debug, evaluate, and monitor your AI applications?
 
 **Answer options:** Langfuse, LangSmith, Arize Phoenix, Braintrust, Helicone,
 Datadog LLM Observability, Weights & Biases (Weave), Comet (Opik), Fiddler AI,
-TruLens, WhyLabs, Arthur AI, Giskard, Other (Please Specify).
+TruLens, Arthur AI, Giskard, Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -107,6 +106,7 @@ Pilot/implementing; In production; Would recommend; Would not recommend.
 - Strong split between observability-first (Langfuse, Helicone, Datadog) and eval-first (Braintrust, Giskard) tools — respondents using both may answer twice; the question stem should make clear it's multi-select.
 - Overlap with [ai-red-teaming](ai-red-teaming.md) (Braintrust, Giskard) and [ai-governance-platform](ai-governance-platform.md) (Fiddler, Arthur) will confuse some respondents about where to place a tool.
 - Promptfoo (an OSS eval/red-team tool, flagged → OpenAI) is filed under [ai-red-teaming](ai-red-teaming.md) but some respondents will expect it here.
+- **WhyLabs removed as an answer option (2026-07-27)**: the company discontinued operations and open-sourced its platform, so it is no longer a purchasable choice. A "WhyLabs" write-in should be read as legacy `whylogs`/LangKit usage, not a live vendor relationship.
 
 ## Open taxonomy questions
 

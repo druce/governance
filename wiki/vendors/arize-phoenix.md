@@ -48,7 +48,7 @@ tags: [open-source, observability, evals, ml-monitoring]
 
 **CTO / hedge-fund lens** — Day-1 for a shop doing RAG or agents that wants both LLM observability and an upgrade path to production ML monitoring. Phoenix OSS lets you keep traces (potential MNPI) self-hosted; Arize AX is the route when you need scale/support. Strong funding and strategic investors lower continuity risk. Not a governance/SR 11-7 system itself — pair with [ai-governance-platform](../categories/ai-governance-platform.md).
 
-**Competitors / alternatives** — [langfuse](langfuse.md), [langsmith](langsmith.md), [braintrust](braintrust.md), [helicone](helicone.md), [datadog](datadog.md), [comet](comet.md), [fiddler-ai](fiddler-ai.md), [whylabs](whylabs.md).
+**Competitors / alternatives** — [langfuse](langfuse.md), [langsmith](langsmith.md), [braintrust](braintrust.md), [helicone](helicone.md), [datadog](datadog.md), [comet](comet.md), [fiddler-ai](fiddler-ai.md).
 
 **Open questions / to verify**
 - Phoenix OSS vs Arize AX feature boundary (what's gated to commercial).

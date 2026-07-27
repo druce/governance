@@ -48,7 +48,7 @@ tags: [observability, model-monitoring, explainability, guardrails, governance, 
 
 **CTO / hedge-fund lens** — Day-1-ish for shops running production AI that needs monitoring + governance evidence. The bias/explainability/audit heritage maps well to **SR 11-7 / model-risk** expectations, and the on-prem option suits a fund unwilling to route model traffic externally. For a small fund it's likely heavier than an OSS tracer; it fits mid-market-to-enterprise with a formal model-risk or compliance function. The OSS Arthur Engine is a low-commitment way to trial the guardrails/eval piece.
 
-**Competitors / alternatives** — [fiddler-ai](fiddler-ai.md), [arize-phoenix](arize-phoenix.md), [whylabs](whylabs.md) (wound down), [langfuse](langfuse.md), [braintrust](braintrust.md), [giskard](giskard.md), [datadog](datadog.md).
+**Competitors / alternatives** — [fiddler-ai](fiddler-ai.md), [arize-phoenix](arize-phoenix.md), [langfuse](langfuse.md), [braintrust](braintrust.md), [giskard](giskard.md), [datadog](datadog.md).
 
 **Open questions / to verify**
 - Any funding/ownership changes since the 2022 Series B (no later round confirmed).

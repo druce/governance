@@ -48,7 +48,7 @@ tags: [observability, model-monitoring, explainability, guardrails, governance]
 
 **CTO / hedge-fund lens** — Day-1-ish if you run production AI you must monitor and document. The governance/explainability angle maps to **SR 11-7 / model-risk** expectations, which is unusually relevant for a regulated asset manager — Fiddler can produce the monitoring evidence a model-risk function wants. For a 50-person fund it is likely heavier (and pricier) than needed versus an OSS tracer; it fits mid-market-to-enterprise shops with formal model governance.
 
-**Competitors / alternatives** — [arthur-ai](arthur-ai.md), [arize-phoenix](arize-phoenix.md), [whylabs](whylabs.md) (now wound down post-Apple), [langfuse](langfuse.md), [langsmith](langsmith.md), [braintrust](braintrust.md), [comet](comet.md), [datadog](datadog.md).
+**Competitors / alternatives** — [arthur-ai](arthur-ai.md), [arize-phoenix](arize-phoenix.md), [langfuse](langfuse.md), [langsmith](langsmith.md), [braintrust](braintrust.md), [comet](comet.md), [datadog](datadog.md).
 
 **Open questions / to verify**
 - Exact pricing tiers and minimum commitment for self-hosted deployments.

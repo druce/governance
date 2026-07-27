@@ -208,3 +208,52 @@ regenerated once at the end of this cleanup batch.
 - Left deliberately: `taxonomy.yaml` / `taxonomy.md` / `taxonomy-gaps.md` historical record
   of the `OPA / Styra` → two-page split (a record of a past decision, not a live pointer),
   and `raw/` sources (immutable).
+
+## [2026-07-27] decision | delete whylabs page — company discontinued operations
+`wiki/vendors/whylabs.md` **deleted** (git rm). Second vendor-is-gone case in this cleanup
+batch (after `styra`). Fresh fetch of https://whylabs.ai (2026-07-27) returns a shutdown
+notice, not a product site: "WhyLabs, Inc. is discontinuing operations," with the full
+WhyLabs platform, `whylogs`, and LangKit released to the community as open source. No
+redirect, no acquirer landing page, no rebrand. There is no successor product to point a
+reader at, so the page was removed rather than rewritten.
+
+**Apple-attribution discrepancy — investigated and resolved as NOT an error.** The audit
+task flagged a suspicion that this page's `owner: Apple` was a mix-up with the
+Styra/OPA→Apple acqui-hire logged earlier today. It is not. The two are independent,
+separately sourced events that happened to involve the same acquirer in the same year:
+- Styra: Apple hired Teemu Koponen / Tim Hinrichs / Torin Sandall (OPA maintainers), ~2025-08.
+- WhyLabs: GeekWire, "Founders at Seattle startup WhyLabs join Apple following an
+  under-the-radar acquisition" (2025) names WhyLabs specifically; corroborated by Andrew
+  Ng's AI Fund portfolio page ("acquired in 2025"), a Crunchbase acquisition record
+  (`apple-acquires-whylabs`), an ex-AI-Fund GP's LinkedIn ("ACQ BY APPLE"), and European
+  Commission DMA filings. Cached at
+  `raw/sources/2026-06-28--whylabs--apple-acquisition.md`.
+
+So the Apple acqui-hire claim stands at its original **medium** confidence (Apple never
+officially confirms acquisitions), and the fresh "discontinuing operations / open-sourcing"
+finding does **not** contradict it — it completes it. Same shape as Styra: team absorbed,
+corporate shell wound down, code thrown over the wall. Note the shutdown page itself does
+not mention Apple, which is expected of an acqui-hire wind-down notice and is not evidence
+against the deal. No `Contradiction (hard)` flag warranted. The deleted page had already
+recorded both halves of this story since 2026-06-28.
+
+**5 files repaired** (inbound links, judged case-by-case):
+- Dropped entirely from **Competitors / alternatives** lists — a company that has ceased
+  operations is not a live alternative, and the trailing "(wound down)" hedges went with
+  it: `wiki/vendors/fiddler-ai.md`, `wiki/vendors/arize-phoenix.md`,
+  `wiki/vendors/arthur-ai.md`.
+- `wiki/categories/llm-observability.md` — removed the vendor bullet from the
+  enterprise-monitoring list; removed **WhyLabs as a survey answer option** and added a
+  survey-design note so a write-in is read as legacy `whylogs`/LangKit usage rather than a
+  live vendor relationship.
+- `wiki/comparisons/ai-security-m-and-a-map.md` — M&A row **retained** but delinked to
+  plain text (the acqui-hire did happen; it belongs in the historical record), with the
+  wind-down and page removal noted inline. The prose line naming Apple's two
+  open-source-adjacent acqui-hires (WhyLabs, Styra/OPA) is accurate as written and left
+  alone.
+
+`survey-v2.csv` checked — **no WhyLabs row exists** (this is exactly the orphan that lint
+rule R1 has been reporting against `wiki/vendors/whylabs.md` since 2026-07-05; deleting the
+page clears that finding). `index.md` intentionally left stale — regenerated once at the end
+of this batch. `raw/sources/` left untouched (immutable), as are the seed files and
+`proposed-*` snapshots that name WhyLabs as a point-in-time record.
