@@ -11,8 +11,8 @@ founded: 2008
 hq: San Francisco, CA, USA
 ownership_state: acquired-closed
 owner: Microsoft
-ownership_note: Product of GitHub, a subsidiary of Microsoft (Microsoft acq. GitHub 2018-10, closed; announced 2018-06)
-acquisition: {announced: 2018-10-01, closed: 2018-06-01, price: null}
+ownership_note: 'Product of GitHub, a wholly-owned subsidiary of Microsoft (NASDAQ: MSFT) — announced 2018-06-04, closed 2018-10-25, $7.5B in Microsoft stock (inclusive of $1.3B cash for vested GitHub equity awards and an indemnity escrow); $6,924M allocated as purchase price under ASC 805.'
+acquisition: {announced: 2018-06-04, closed: 2018-10-25, price: '$7.5B in Microsoft stock ($6,924M purchase price allocated; Microsoft FY2019 10-K Note 8)'}
 funding_total: null
 last_funding: null
 market_position: null
@@ -25,7 +25,7 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: enterprise / mid-market (GitHub Team & Enterprise orgs)
-last_verified: 2026-06-28
+last_verified: 2026-07-27
 verify_after: null
 tags: [sast, secret-scanning, sca, code-scanning, codeql, copilot-autofix, devsecops]
 ---
@@ -64,7 +64,11 @@ GHAS's edge is that it is **platform-native**: nothing new to deploy, findings s
 **2025 repackaging (verify-worthy):** GitHub split GHAS into two separately purchasable products — **GitHub Secret Protection** ($19/active committer/mo) and **GitHub Code Security** ($30/active committer/mo) — announced 2025-03-04, available to Team-plan customers from 2025-04-01 via metered/pay-as-you-go billing. This lets teams buy secret scanning without paying for the full SAST/SCA suite, and extended these features below the Enterprise tier for the first time. The umbrella term "GitHub Advanced Security" still refers to the combined capability set.
 
 ## Ownership, funding & M&A
-GHAS is a product, not a company. It is part of **GitHub**, which **Microsoft acquired** (announced 2018-06-04, closed 2018-10-26 for ~$7.5B in stock). Ownership: subsidiary (Microsoft → GitHub). Confidence: high (well-documented, primary).
+GHAS is a product, not a company. It is part of **GitHub**, which **Microsoft acquired** — announced **2018-06-04** (Form 8-K, Item 8.01, same-day press release: "Microsoft will acquire GitHub for $7.5 billion in Microsoft stock ... subject to customary closing conditions and completion of regulatory review") and closed **2018-10-25** (Microsoft FY2019 10-K, Note 8). Ownership: subsidiary (Microsoft → GitHub). Confidence: high (primary SEC filings).
+
+Two details worth carrying: the headline $7.5B was all-stock **except** a $1.3B cash component covering vested GitHub equity awards and an indemnity escrow, and the amount actually allocated in purchase accounting was **$6,924M** (goodwill $5,497M, intangibles $1,267M, assigned to Intelligent Cloud) — the ~$600M difference was recognized separately as post-combination compensation expense.
+
+> Date trap: most secondary coverage dates the close to 2018-10-26, but that is the day *completion was announced* (both the Microsoft blog post and Nat Friedman's GitHub post are dated 10-26 and neither states a closing date). Microsoft's SEC filings say **October 25, 2018**, twice and consistently.
 
 ## CTO / hedge-fund lens
 - **Day-2 in general, Day-1 if you ship AI-generated code.** If your developers are already on GitHub and using Copilot/Cursor/Claude, turning on Code Security + Secret Protection is usually the path of least resistance for code-level guardrails — it is a **tier/product upgrade on tooling you already own, not a new vendor** to onboard, contract, and integrate.
@@ -83,7 +87,11 @@ GHAS is a product, not a company. It is part of **GitHub**, which **Microsoft ac
 ## Sources
 - [Introducing GitHub Secret Protection and GitHub Code Security — GitHub Changelog](https://github.blog/changelog/2025-03-04-introducing-github-secret-protection-and-github-code-security/) — fetched 2026-06-28 — supports: 2025 repackaging into two purchasable products, features, pricing, dates; confidence: high (primary).
 - [About GitHub Advanced Security — GitHub Docs](https://docs.github.com/en/get-started/learning-about-github/about-github-advanced-security) — fetched 2026-06-28 — supports: GHAS components (CodeQL SAST, secret scanning, Dependabot/dependency review, Copilot Autofix), Secret Protection vs Code Security packaging; confidence: high (primary).
+- [Microsoft Form 10-K, FY2019](https://www.sec.gov/Archives/edgar/data/789019/000156459019027952/msft-10k_20190630.htm), Note 8 *Business Combinations* — fetched 2026-07-27 — supports: **close date 2018-10-25**, $7.5B stock transaction inclusive of $1.3B cash, $6,924M purchase price allocated, goodwill $5,497M / intangibles $1,267M, Intelligent Cloud segment; confidence: high (primary, audited). Cached: `raw/sources/2026-07-27--github-advanced-security--microsoft-github-deal-dates.md`
+- [Microsoft Form 8-K (2018-06-04)](https://www.sec.gov/Archives/edgar/data/789019/000119312518182975/d600091d8k.htm) + [press-release exhibit 99.1](https://www.sec.gov/Archives/edgar/data/789019/000119312518182975/d600091dex991.htm) — fetched 2026-07-27 — supports: **announce date 2018-06-04**, $7.5B in Microsoft stock, and explicit pending language ("subject to customary closing conditions and completion of regulatory review"); confidence: high (primary)
+- [Microsoft FY2019 Q2 Form 10-Q (quarter ended 2018-12-31)](https://www.sec.gov/Archives/edgar/data/789019/000156459019001392/msft-10q_20181231.htm), Note 7 — fetched 2026-07-27 — supports: contemporaneous corroboration of the 2018-10-25 close date; confidence: high (primary)
 
 ## History
 - [2026-06-28] Researched; established Microsoft/GitHub subsidiary ownership (high confidence), 2025 split into GitHub Secret Protection + GitHub Code Security, component features (CodeQL SAST, secret scanning, Dependabot, Copilot Autofix), SaaS + Enterprise Server deployment, Day-1-for-AI-code hedge-fund lens. status stub -> researched.
 - [2026-06-28] Stub created from seed registry.
+- [2026-07-27] Date-sanity sweep — **fixed transposed acquisition dates**. Frontmatter read `{announced: 2018-10-01, closed: 2018-06-01}`, i.e. the deal closed four months *before* it was announced — impossible, and contradicted by the page's own `ownership_note`, which had the direction right but only month precision. Verified against Microsoft's SEC filings: Form 8-K dated 2018-06-04 announces the definitive agreement with explicit pending language, and the FY2019 10-K (Note 8) plus FY2019 Q2 10-Q (Note 7) both state the acquisition closed **2018-10-25**. Corrected to `{announced: 2018-06-04, closed: 2018-10-25}` and filled the null `price` ($7.5B in stock; $6,924M allocated purchase price). Added a note on the common 10-25 vs 10-26 confusion — 10-26 is the day completion was *announced*, not the closing date. Cached 1 new source.
