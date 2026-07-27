@@ -104,7 +104,7 @@ MCP Gateway / Tool Access Control,Arcade,"NEW (cross-listed with Tool Identity):
 MCP Gateway / Tool Access Control,Docker MCP Gateway,NEW: OSS,,https://github.com/docker/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/docker-mcp-gateway.md
 MCP Gateway / Tool Access Control,IBM ContextForge,NEW: OSS,,https://github.com/IBM/mcp-context-forge,https://github.com/druce/governance/blob/master/wiki/vendors/ibm-contextforge.md
 MCP Gateway / Tool Access Control,Pomerium,Identity-aware proxy for MCP/tool access,,https://www.pomerium.com,https://github.com/druce/governance/blob/master/wiki/vendors/pomerium.md
-MCP Gateway / Tool Access Control,Natoma (Snowflake),"MCP-native NHI gateway; acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai/platform,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
+MCP Gateway / Tool Access Control,Natoma (Snowflake),"MCP-native NHI gateway; acq. by Snowflake (definitive agr. 2026-05-24, announced 2026-05-27, ~$110M — PENDING, close unconfirmed as of 2026-07-27)",,https://natoma.ai/platform,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
 MCP Gateway / Tool Access Control,Prisma AIRS AI Agent Gateway,Palo Alto,,https://www.paloaltonetworks.com/sase,https://github.com/druce/governance/blob/master/wiki/vendors/prisma-airs.md
 MCP Gateway / Tool Access Control,Other (Please Specify),,,,
 Tool Identity & Integration (Agent Auth),Composio,Tool integration / managed agent auth,,https://composio.dev,https://github.com/druce/governance/blob/master/wiki/vendors/composio.md
@@ -149,7 +149,7 @@ Non-Human Identity / Agent Identity Governance,Astrix (Cisco),"Acq. by Cisco CLO
 Non-Human Identity / Agent Identity Governance,Token Security,Independent,,https://www.token.security,https://github.com/druce/governance/blob/master/wiki/vendors/token-security.md
 Non-Human Identity / Agent Identity Governance,Aembit,Independent,,https://aembit.io,https://github.com/druce/governance/blob/master/wiki/vendors/aembit.md
 Non-Human Identity / Agent Identity Governance,Oasis Security,"Independent ($120M Series B 2026)",,https://www.oasis.security,https://github.com/druce/governance/blob/master/wiki/vendors/oasis-security.md
-Non-Human Identity / Agent Identity Governance,Natoma (Snowflake),"Acq. by Snowflake (intent 2026-05-27 — PENDING)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
+Non-Human Identity / Agent Identity Governance,Natoma (Snowflake),"Acq. by Snowflake (definitive agr. 2026-05-24, announced 2026-05-27, ~$110M — PENDING, close unconfirmed as of 2026-07-27)",,https://natoma.ai,https://github.com/druce/governance/blob/master/wiki/vendors/natoma.md
 Non-Human Identity / Agent Identity Governance,Entro Security (SailPoint),"Acq. by SailPoint (announced 2026-06-15, closed 2026-06-29; ~$200M reported, terms undisclosed). Entro brand + entro.security still live as a SailPoint sub-brand — keep as its own option, do not fold into the SailPoint row",,https://entro.security,https://github.com/druce/governance/blob/master/wiki/vendors/entro-security.md
 Non-Human Identity / Agent Identity Governance,Clutch Security,Independent,,https://www.clutch.security,https://github.com/druce/governance/blob/master/wiki/vendors/clutch-security.md
 Non-Human Identity / Agent Identity Governance,Other (Please Specify),,,,

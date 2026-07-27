@@ -1167,3 +1167,61 @@ history line). Cached `raw/sources/2026-07-27--layerx--akamai-close-2026-07-02.m
 "announced 2026-05-14" to the closed date, price caveat and the Akamai Workforce Protector name;
 product name left "LayerX (Akamai)" and vendor URL left at layerxsecurity.com per the no-rename
 decision above.
+
+## [2026-07-27] research | natoma
+Re-verified the Snowflake deal against primary sources after a URL audit found natoma.ai
+live (200, no redirect) with a banner reading "Natoma is joining forces with Snowflake" and
+a blog post still using "has signed a definitive agreement to acquire" — announcement, not
+completion, language two months after signing.
+
+Primary evidence: Snowflake Inc. Form 10-Q for the quarter ended 2026-04-30 (filed
+2026-05-29, accession 0001640147-26-000030), Note "Subsequent Events — Business
+Combinations": definitive agreement signed **2026-05-24** to acquire all outstanding capital
+stock of **Natoma Labs, Inc.** for total stated consideration of **~$110.0 million**,
+primarily Snowflake common stock with the remainder in cash, ~30% of the equity
+consideration subject to vesting (post-combination SBC). "The transaction is expected to
+close in June 2026, subject to satisfaction of certain closing conditions." The disclosure
+is XBRL-tagged `us-gaap:SubsequentEventMember srt:ScenarioForecastMember
+snow:NatomaLabsInc.Member 2026-06-01 2026-06-30` — a forecast, machine-readable
+confirmation it was not consummated at filing.
+
+Close status searched and NOT confirmed as of 2026-07-27: EDGAR full-text search for
+"Natoma" (all forms) returns no 8-K Item 2.01 completion filing; Snowflake's newsroom
+carries only the "Announces Intent to Acquire" release; natoma.ai remains live on its own
+domain with unchanged announcement wording; no trade-press report of consummation
+(Reuters, The Register, Forbes, CIO, BigDATAwire all report intent only). Caveat recorded on
+the page: at ~$110M the deal is likely below Snowflake's Reg S-X significance threshold, so
+no completion 8-K would be required — absence is weak evidence, not proof of non-close.
+
+Source cached: `raw/sources/2026-07-27--natoma--snowflake-10q-subsequent-event.md`.
+Frontmatter: `closed: null`, price "~$110.0M (stock + cash)", `last_verified: 2026-07-27`,
+`verify_after: 2026-09-15`. Body gained a dated History line, an expanded M&A section, a
+strategic-intent note (AI agent enablement / governed access being folded into Snowflake
+Intelligence, Cortex Agents, Cortex Code), and a procurement caveat in the CTO lens.
+survey-v2.csv: both Natoma rows' flag-notes refreshed with the agreement date, price, and
+explicit "close unconfirmed as of 2026-07-27" (both already said PENDING — correct).
+
+## [2026-07-27] decision | natoma status correction
+**Contradiction (hard) resolved: page said `acquired-closed`, evidence says pending.**
+
+wiki/vendors/natoma.md carried `ownership_state: acquired-closed` with
+`acquisition: {announced: 2026-05-27, closed: 2026-05-27, ...}` — a close date identical to
+the announcement date — while the same page's body read "Deal is subject to customary
+closing conditions; financial terms undisclosed; **close date not stated**." The page
+contradicted itself, and no source entry supported any close date. Diagnosis: the `closed`
+field was populated by duplicating `announced` during the 2026-06-28 research pass rather
+than from evidence — exactly the failure mode CLAUDE.md §7's "Announced ≠ closed" rule
+exists to prevent.
+
+Resolution: corrected to `ownership_state: acquired-pending` with `closed: null` and
+`verify_after: 2026-09-15`, per SCHEMA.md §5 rule 4 (`acquired-closed` requires a close date
+plus a source entry; `acquired-pending` requires `verify_after`). Chose the conservative
+state deliberately: the expected June 2026 close window has elapsed, so the deal may well
+have closed quietly, but "probably closed" is not a verifiable close date and must not be
+recorded as one. The next authoritative checkpoint is Snowflake's Q2 FY2027 10-Q (quarter
+ended 2026-07-31, normally filed late Aug / early Sept), where a closed deal appears in
+purchase-price accounting rather than as a forecast subsequent event — hence the
+2026-09-15 verify_after.
+
+Process note for the rest of this sweep: a `closed` date equal to the `announced` date is a
+smell, not a fact. Worth grepping other `acquired-closed` pages for that pattern.
