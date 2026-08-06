@@ -18,6 +18,7 @@ SCALE = ["Interested in a demo", "Considering/Evaluating", "Piloting/Implementin
          "In production", "Recommended", "Not Recommended"]
 
 # CSV category -> (wiki category slug, one-line description)
+
 CATEGORIES = {
  "AI Gateway": ("ai-gateway", "Single governed exit door for all model/API traffic — routing, logging, cost and policy control."),
  "LLM Observability & Eval": ("llm-observability", "Prompt-level evaluation, tracing, debugging, and monitoring of LLM usage."),
@@ -48,8 +49,8 @@ CATEGORIES = {
  "Data Access Governance": ("data-access-governance", "Audit and right-size who can access sensitive data."),
  "Data Loss Prevention (DLP)": ("dlp", "Egress-time controls on data leaving the firm, including via AI prompts."),
  "Software supply chain": ("software-supply-chain", "Code, dependency and pipeline security — including AI-generated code."),
- "Enterprise GRC": ("enterprise-grc", "System of record for risk, controls, policy and audit."),
- "Vendor Risk": ("vendor-risk", "Third-party risk assessment and cyber ratings, extended to AI vendors."),
+ "Enterprise Governance, Risk & Compliance": ("enterprise-grc", "System of record for risk, controls, policy and audit."),
+ "Vendor Risk Rating & Monitoring": ("vendor-risk", "Third-party risk assessment and cyber ratings, extended to AI vendors."),
 }
 
 def load_token():
