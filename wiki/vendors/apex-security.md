@@ -81,7 +81,7 @@ Day-2 (AI posture/governance is something you layer on after baseline controls).
 - [Tenable One AI Exposure product page](https://www.tenable.com/products/ai-exposure) — fetched 2026-07-27 — supports: live successor URL, product name, capabilities, supported AI platforms; confidence: high
 - [Tenable Extends Exposure Management to AI Attack Surface (press release, 2026-01-27)](https://www.tenable.com/press-releases/tenable-extends-exposure-management-to-AI-attack-surface) — fetched 2026-07-27 — supports: GA of Tenable One AI Exposure on 2026-01-27; confidence: high
 - [Introducing Tenable AI Exposure (Tenable blog, 2025-08-06)](https://www.tenable.com/blog/introducing-tenable-ai-exposure-stop-guessing-start-securing-your-ai-attack-surface) — fetched 2026-07-27 — supports: private-preview launch date, agentless architecture, prompt-injection/jailbreak detection; confidence: high
-- Cached: [raw/sources/2026-07-27--apex-security--tenable-close-and-ai-exposure.md](../../raw/sources/2026-07-27--apex-security--tenable-close-and-ai-exposure.md)
+- Cached: `raw/sources/2026-07-27--apex-security--tenable-close-and-ai-exposure.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.

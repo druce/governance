@@ -46,8 +46,12 @@ jobs:
           cp -r site/wiki quartz/content/wiki
           cp site/quartz.config.ts quartz/quartz.config.ts
           cp site/quartz.layout.ts quartz/quartz.layout.ts
+          # Field-guide theme. Without this the build silently falls back to
+          # Quartz's stock custom.scss and only the config palette applies.
+          cp site/custom.scss quartz/quartz/styles/custom.scss
           echo "----- assembled content tree -----"
           find quartz/content -name '*.md' | wc -l
+          test -s quartz/quartz/styles/custom.scss || { echo "custom.scss missing"; exit 1; }
 
       - name: Build site
         working-directory: quartz

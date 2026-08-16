@@ -19,33 +19,42 @@ const config: QuartzConfig = {
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
+      // Field-guide theme, matched to https://druce.ai/governance_wiki/ so the two
+      // sites read as one publication. Display serif (Fraunces) + reading serif
+      // (Source Serif 4) + mono chrome (JetBrains Mono); warm paper light, deep ink
+      // dark, one amber accent. custom.scss consumes these variables — keep the two
+      // in sync, and see .github/workflows/deploy-quartz.yml, which copies
+      // custom.scss into quartz/styles/ at build time.
+      // Weights are explicit because custom.scss leans on 500/600, which Quartz
+      // does not request by default — without these the browser would synthesise
+      // them and headings would render heavier than the reference site.
       typography: {
-        header: "Schibsted Grotesk",
-        body: "Source Sans Pro",
-        code: "IBM Plex Mono",
+        header: { name: "Fraunces", weights: [400, 500, 600, 700] },
+        body: "Source Serif 4",
+        code: { name: "JetBrains Mono", weights: [400, 500, 600] },
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          light: "#f7f3ea",
+          lightgray: "#e2dac9",
+          gray: "#8c8678",
+          darkgray: "#33302a",
+          dark: "#211f1a",
+          secondary: "#9a5d12",
+          tertiary: "#b3701a",
+          highlight: "#b3701a1a",
+          textHighlight: "#b3701a47",
         },
         darkMode: {
-          light: "#161618",
-          lightgray: "#393639",
-          gray: "#646464",
-          darkgray: "#d4d4d4",
-          dark: "#ebebec",
-          secondary: "#7b97aa",
-          tertiary: "#84a59d",
-          highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#b3aa0288",
+          light: "#15151a",
+          lightgray: "#2c2c35",
+          gray: "#837e74",
+          darkgray: "#ded8ca",
+          dark: "#ece6d8",
+          secondary: "#d8a14a",
+          tertiary: "#f0b657",
+          highlight: "#e0a23e21",
+          textHighlight: "#e0a23e4d",
         },
       },
     },

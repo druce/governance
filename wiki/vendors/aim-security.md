@@ -50,7 +50,7 @@ Primary [ai-runtime-security](../categories/ai-runtime-security.md) (the AI fire
 SaaS with API and inline deployment in front of AI apps/agents. **As of 2026-03-17 the integration is done**: Aim's inspection runs natively inside the [cato-networks](cato-networks.md) SASE Platform on **Cato Neural Edge**, a GPU-accelerated (NVIDIA) inspection layer deployed across Cato's private backbone, so AI controls ride the same inline path as SD-WAN/SSE rather than as a standalone proxy. Standalone-Aim deployments were offered a migration path. Integrations: IdP, SIEM, the enterprise's AI gateways and SaaS estate.
 
 ## Positioning & differentiators
-Aim covered the full enterprise-AI-security span (shadow AI + runtime firewall + AI-SPM) in one product rather than picking a single slice — that breadth is part of why a SASE vendor bought it to instantly fill its AI-security line. Founded by [[Unit 8200]] veterans, backed by [[YL Ventures]] and Canaan Partners.
+Aim covered the full enterprise-AI-security span (shadow AI + runtime firewall + AI-SPM) in one product rather than picking a single slice — that breadth is part of why a SASE vendor bought it to instantly fill its AI-security line. Founded by Unit 8200 veterans, backed by YL Ventures and Canaan Partners.
 
 **Post-acquisition (verified 2026-07-27):** the three-leg product structure survived the absorption but the name did not. Cato sells it as **Cato AI Security (AISEC)** with the legs renamed: *AI Security for End Users* (shadow-AI discovery and policy on public GenAI), *AI Security for Applications* (Aim's AI Firewall — prompt injection, data leakage, runtime attacks against private AI apps/agents), *Agentic AI Security* (visibility and logging of agent↔model↔MCP-server interactions, tool calls, APIs), and *AI-SPM* (posture, tested against EU AI Act and ISO 42001). The differentiator is no longer "best-of-breed AI-security pure-play" but "AI security you don't deploy separately because it's already in the SASE path you bought" — which is a platform argument, and only compelling if you are already buying Cato.
 
@@ -80,7 +80,7 @@ Day-1 control type (AI firewall + shadow-AI), but **you cannot buy Aim** — as 
 - [Cato Networks Acquires Aim Security… (Cato press release)](https://www.catonetworks.com/news/cato-acquires-aim-security-to-extend-sase-leadership-and-secure-enterprise-ai-transformation/) — fetched 2026-06-28, re-checked 2026-07-27 — supports: acquirer, announced/closed 2025-09-03, past-tense close language, Aim's three capabilities, founding 2022, YL/Canaan backing; confidence: high
 - [Cato Networks Acquires AI Security Firm Aim Security (SecurityWeek)](https://www.securityweek.com/cato-networks-acquires-ai-security-firm-aim-security/) — fetched 2026-07-27 — supports: independent same-day confirmation the deal was done, not pending; confidence: high
 - [Cato Networks acquires AI security startup Aim Security (CyberScoop)](https://cyberscoop.com/cato-networks-acquires-ai-security-startup-aim-security/) — fetched 2026-06-28 — supports: ~$350M reported value, Unit 8200 founders; confidence: med
-- Cached: [raw/sources/2026-07-27--aim-security--cato-ai-security-brand-retired.md](../../raw/sources/2026-07-27--aim-security--cato-ai-security-brand-retired.md)
+- Cached: `raw/sources/2026-07-27--aim-security--cato-ai-security-brand-retired.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.

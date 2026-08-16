@@ -86,7 +86,7 @@ Researched Aikido Security. Independent VC-backed; founded 2022 Ghent, Belgium (
 ## [2026-06-28] lint | clean pass
 - 0 broken wikilinks, 0 orphans, 0 stubs (222/222 researched), 0 "Status: Unresolved", 0 unverified-M&A (acquired+low). Both commit gates pass. 6 zero-vendor categories are intentional (process + third-party-ai-apps). Regenerated index.md.
 
-## [2026-06-28] decision | converted [[wikilinks]] -> relative markdown links (Option A)
+## [2026-06-28] decision | converted `[[wikilinks]]` → relative markdown links (Option A)
 - Converted 5,415 `[[slug]]` / `[[slug|alias]]` links across 275 md files to relative `[text](path.md)` links so they render as clickable in GitHub's repo view (GHFM does not resolve `[[ ]]`). 0 unresolved, 0 broken targets, 0 wikilinks remaining. Excluded Claude.md (convention examples) and conversation.txt (transcript). Updated Claude.md §3 note.
 
 ## [2026-06-28] decision | Quartz published site on GitHub Pages
@@ -2120,3 +2120,141 @@ questions flag rewritten from "pending decision" to "done"; History line added. 
 regenerated. Intentionally left pointing at the old string: the cached source filename
 `raw/sources/2026-07-27--bedrock-security--rebrand-to-bedrock-data.md` (raw/ is immutable),
 the vendor's own press-release URL, and prior `log.md` history.
+
+## [2026-08-16] decision | product slug for Bifrost (vs. company slug maxim-ai)
+Bifrost is a product of Maxim AI, which already has a page (`wiki/vendors/maxim-ai.md`,
+primary `ai-red-teaming`). Rather than fold an AI-gateway product into an eval/observability
+company page, created `wiki/vendors/bifrost.md` as a **product slug** per the CLAUDE.md §3
+carve-out ("when a product is the unit people shop for"), with the parent cross-linked both
+ways. Precedent: `prisma-airs`. Rationale: buyers shortlist Bifrost against LiteLLM and
+Portkey, not against Maxim's eval suite; the two products have different buyers, different
+categories and different licences (Bifrost is Apache-2.0 OSS). `maxim-ai` keeps
+`ai-red-teaming` + `llm-observability` and is untouched apart from the inbound link.
+
+## [2026-08-16] stub+research | bifrost (ai-gateway)
+Created and researched in one pass (user-requested addition, not a seed/CSV row).
+Established: Apache-2.0 AI gateway written in Go, repo `maximhq/bifrost` created 2025-03-19,
+7,339 stars / 1,049 forks / 870 open issues, actively released (per-component tags,
+`transports/v1.6.11` 2026-08-14). Unified OpenAI-compatible API over ~20+ providers,
+virtual-key → team → customer budget hierarchy, semantic caching, OTel/Prometheus,
+Go/WASM plugins. `ownership_state: oss-vendor-backed`, owner Maxim AI — independent,
+$3M seed 2024-06-18 (Elevation Capital), **no later round and no M&A** found 2026-08-16
+(consistent with the existing maxim-ai page). Position `challenger` in `ai-gateway`.
+Two things flagged rather than smoothed over: (a) a **soft contradiction** — the product
+page markets the MCP gateway and content guardrails as features while docs.getbifrost.ai
+scopes both to the enterprise licence; docs treated as authoritative, noted inline on the
+page; (b) vendor benchmarks that do not reconcile across Maxim's own surfaces (11 µs /
+20 µs / <100 µs added latency; "50x" vs "54x" faster than LiteLLM), with no independent
+replication found — recorded as a gotcha, not repeated as fact. Not cross-listed to
+`mcp-gateway`: the MCP gateway exists but is enterprise-only and undocumented at the
+tool-ACL level, unlike gravitee. Registered in `survey-v2.csv`, the `ai-gateway` category
+page (vendor list + survey options + survey notes, vendor_count 8→9), and `index.md`.
+Source cached: `raw/sources/2026-08-16--bifrost--maxim-product-and-github.md`.
+
+## [2026-08-16] stub+research | signoz (siem-soc, cross-listed llm-observability)
+Created and researched in one pass (user-requested addition, not a seed/CSV row).
+Established: open-core, OpenTelemetry-native observability platform on ClickHouse
+(logs/metrics/traces/APM), repo `SigNoz/signoz` created 2021-01-03, 31,847 stars /
+2,426 forks, weekly releases, still pre-1.0 (v0.137.1, 2026-08-14). **Licence is open
+*core*, not MIT throughout**: root LICENSE puts `ee/` and `cmd/enterprise/` under a
+separate SigNoz enterprise licence, and `ee/` contains `authn`, `authz`, `auditor`,
+`anomaly`, `gateway`, `querier` — i.e. SSO, authorization and audit are paid; GitHub
+reports "NOASSERTION". Pricing verified from the vendor price list: $0.30/GB logs and
+traces, $0.10/M metric samples, Teams from $49/mo, **Enterprise minimum $4,000/mo** (where
+SSO/SAML lives). Ownership: independent, VC-backed, YC alum, ~$6.5M total ($1.1M post-YC
+2021 + $5.4M announced 2023-09-28, SignalFire lead); **no Series B and no M&A** found
+2026-08-16 — a ~3-year-old last raise against a 31k-star project, flagged as the main
+viability question. Cross-listed to `llm-observability` on its OTel GenAI tracing.
+**Scope caveat recorded prominently** (page banner, category page, survey notes): SigNoz
+is observability/enterprise logging, **not a SIEM** — no detection rules, correlation,
+case management, SOAR or UEBA — so it answers only the "Enterprise Logging" half of the
+category. Registered in `survey-v2.csv`, `siem-soc` (vendor_count 9→10),
+`llm-observability` (13→14), and `index.md`. Source cached:
+`raw/sources/2026-08-16--signoz--product-pricing-license-funding.md`.
+
+## [2026-08-16] taxonomy | open question — is "Enterprise Logging" the same category as SIEM/SOC?
+Filing SigNoz surfaced a seam in `siem-soc`: every other vendor there is a detection
+platform, while SigNoz is a pure telemetry backend. Documented both consistent resolutions
+in `taxonomy-gaps.md` (either the category genuinely covers log backends — in which case
+Datadog, Grafana/Loki and OpenSearch belong too — or it is security-logging only and
+SigNoz needs a new `observability` category). Recommended the latter; **not acted on**,
+since adding a category is a taxonomy change reserved for the human. SigNoz stays in
+`siem-soc` with the caveat carried on the page until that call is made.
+
+## [2026-08-16] lint | broken-link sweep across the generated site (not just the repo)
+Ran the check against **built Quartz HTML**, not the markdown, because the two disagree:
+several links resolve fine in the repo and 404 once published. Method: clone Quartz v4,
+assemble content exactly as `.github/workflows/deploy-quartz.yml` does, build, then resolve
+every `<a href>` in all 784 emitted pages against the emitted file tree, plus every
+same-page anchor, plus liveness on all 653 external URLs.
+
+**Found 11 broken internal targets and 1 broken anchor; fixed all of them.**
+
+1. **4 links into `raw/sources/`** (`aim-security`, `apex-security`, `helicone`, `lakera`).
+   The files exist, but `raw/` is in `ignorePatterns` and is never copied into `content/`,
+   so every one was a 404 on the published site. Converted to backticked paths, which is
+   what the rest of the wiki already does for cached sources — still greppable, no longer a
+   link. `raw/` stays unpublished by design.
+2. **4 leftover Obsidian wikilinks** the 2026-06-28 conversion missed —
+   `[[Paladin Capital Group]]` (calypsoai), `[[Shlomo Kramer]]` (cato-networks),
+   `[[Unit 8200]]` and `[[YL Ventures]]` (aim-security). The converter only rewrote
+   `[[slug]]` forms that matched an existing page, so these four — people and investors with
+   no page — were skipped, and the 2026-06-28 entry's "0 wikilinks remaining" was wrong.
+   Quartz was turning them into links to non-existent `wiki/vendors/Unit-8200` etc.; on
+   GitHub they rendered as literal `[[...]]`. Converted to plain text, matching how the same
+   names already appear elsewhere on those pages. Repo-wide grep now shows zero.
+3. **`[[wikilinks]]` in the 2026-06-28 log heading** — same problem in `log.md`. Backticked
+   it. Also changed that heading's `->` to `→`: Quartz's TOC slugger and its heading-anchor
+   slugger disagreed on the smartypants arrow (`...wikilinks-spanrarrspan-relative...` vs
+   `...wikilinks--relative...`), which was the one broken same-page anchor on the site.
+   Historical text otherwise unchanged.
+4. **External URLs: 653 checked, 4 genuinely dead** (the other ~100 non-200s are anti-bot
+   403s — SEC EDGAR, Crunchbase, Business Wire, Cisco — and press-wire timeouts; those URLs
+   are fine in a browser). Re-pointed all four to verified-live replacements and recorded
+   the reason inline on each source line:
+   - `weaviate` — PR Newswire slug had been truncated; restored the full slug (200).
+   - `behavox` — the vendor deleted its own SoftBank release; re-pointed to the Business
+     Wire copy (the surviving primary) and **added FinSMEs as independent corroboration**,
+     since a claim resting on a vendor page that has since vanished deserves a second source.
+   - `behavox` — `/our-company/` → `/about` (200).
+   - `portal26` — Tracxn retired the pre-rebrand `/titaniam/` URL; re-pointed to the
+     current Portal26 profile (200).
+
+**Residual, and correct:** `404.html` links to `/governance`, the configured `baseUrl`
+root. It only resolves once deployed under that path. Not a defect.
+
+**Separate finding, not fixed here (needs the human).** The live site at
+`druce.ai/governance` is **stale and serving different content** — `/governance/wiki/`
+currently returns the citizen-developer primer, and every vendor/category URL 404s. Cause is
+CI, not content: `gh run list` shows the last two deploys stuck (`pending` ~154h, `waiting`
+~234h) and the 2026-08-06 run failed with "The job was not acquired by Runner of type hosted
+even after multiple attempts" — a runner-availability/quota problem on the account. Nothing
+in this repo has deployed since 2026-08-06. The build itself is healthy: verified locally,
+exit 0, 287 files parsed, 795 emitted.
+
+## [2026-08-16] decision | restyle the vendor wiki to match druce.ai/governance_wiki
+`custom.scss` (the "field-guide" theme — Fraunces / Source Serif 4 / JetBrains Mono, warm
+paper light, deep ink dark, amber accent) has been committed at repo root since 2026-08-09
+but was **never reaching the built site**: `deploy-quartz.yml` copied `quartz.config.ts` and
+`quartz.layout.ts` into the Quartz tree and nothing else, so every build silently used
+Quartz's stock `quartz/styles/custom.scss`. Meanwhile `quartz.config.ts` still carried the
+stock Quartz palette (Schibsted Grotesk / Source Sans Pro / IBM Plex Mono, `#faf8f8`,
+`#284b63`) — which custom.scss depends on, since Quartz emits the `--light`/`--secondary`/
+font variables from the config and custom.scss only adds what Quartz has no slot for.
+
+Two changes:
+- **`deploy-quartz.yml`** now copies `custom.scss` → `quartz/quartz/styles/custom.scss`, with
+  a `test -s` guard so a silent fallback fails the build instead of shipping the wrong theme.
+- **`quartz.config.ts`** palette and typography replaced with the exact tokens the reference
+  site serves, both light and dark. Font weights are declared explicitly
+  (`Fraunces [400,500,600,700]`, `JetBrains Mono [400,500,600]`) because custom.scss uses
+  500/600 and Quartz otherwise requests only 400/700, which would have left the browser
+  synthesising weights and rendering headings heavier than the reference.
+
+**Verified by building, not by inspection:** the generated `public/index.css` is
+**byte-identical** to `https://druce.ai/governance_wiki/index.css` (44,394 bytes, `cmp`
+clean), and the emitted Google Fonts request matches the reference character for character.
+
+Note for future local reproduction: the user's shell aliases `cp` to `cp -i`, so a scripted
+`cp` over an existing file silently declines and the build appears to succeed with stale
+config. Use `command cp -f`. GitHub Actions runners are unaffected.

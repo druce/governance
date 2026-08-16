@@ -51,7 +51,7 @@ tags: [vector-database, retrieval, open-source, independent]
 **Open questions / to verify** — Exact total-funding figure (sources range ~$67–118M); Series C valuation.
 
 ## Sources
-- [Weaviate raises $50M Series B (PR Newswire)](https://www.prnewswire.com/news-releases/weaviate-raises-50-million-series-b-funding-301803296.html) — fetched 2026-06-28 — supports: Series B, founding, HQ; confidence: high
+- [Weaviate raises $50M Series B (PR Newswire)](https://www.prnewswire.com/news-releases/weaviate-raises-50-million-series-b-funding-to-meet-soaring-demand-for-ai-native-vector-database-technology-301803296.html) — fetched 2026-06-28, URL corrected 2026-08-16 (the shortened slug now 404s) — supports: Series B, founding, HQ; confidence: high
 - [raw/sources/2026-06-28--weaviate--funding.md] — supports: Series C 2025, ownership independent; confidence: medium
 
 ## History

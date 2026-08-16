@@ -60,7 +60,7 @@ tags: [open-source, observability, proxy, ai-gateway, yc-w23, maintenance-mode]
 ## Sources
 - [Helicone is joining Mintlify (Helicone blog)](https://www.helicone.ai/blog/joining-mintlify) — fetched 2026-06-28, re-fetched 2026-07-27 — supports: acquisition by Mintlify 2026-03-03, completed past-tense framing, maintenance mode, proxy model, scale, founders; confidence: high.
 - [Mintlify acquires Helicone (Mintlify blog)](https://www.mintlify.com/blog/mintlify-acquires-helicone) — fetched 2026-06-28, re-fetched 2026-07-27 — supports: acquisition confirmation/rationale, maintenance mode, customer-migration commitment, fold-in to Mintlify's AI products; confidence: high.
-- [raw/sources/2026-07-27--helicone--mintlify-acquisition-closed.md](../../raw/sources/2026-07-27--helicone--mintlify-acquisition-closed.md) — cached 2026-07-27 — supports: deal type (acquisition, not partnership/merger), closed status and its evidence, undisclosed terms, no sunset date, live-site/brand-persistence check; confidence: high (medium on close date).
+- `raw/sources/2026-07-27--helicone--mintlify-acquisition-closed.md` — cached 2026-07-27 — supports: deal type (acquisition, not partnership/merger), closed status and its evidence, undisclosed terms, no sunset date, live-site/brand-persistence check; confidence: high (medium on close date).
 
 ## History
 - [2026-06-28] Stub created from seed registry.

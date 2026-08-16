@@ -97,7 +97,7 @@ Still a good fit for funds building their own LLM apps/agents; just diligence it
 - [Check Point Acquires Lakera… (Check Point press release)](https://www.checkpoint.com/press-releases/check-point-acquires-lakera-to-deliver-end-to-end-ai-security-for-enterprises/) — fetched 2026-06-28 — supports: 2025-09-16 announce, founders, founding 2021, Zurich/SF HQ, Center of Excellence integration, then-expected Q4 2025 close; confidence: high
 - [Lakera raises $20M Series A (TechCrunch)](https://techcrunch.com/2024/07/24/lakera-which-protects-enterprises-from-llm-vulnerabilities-raises-20m/) — fetched 2026-06-28 — supports: $20M Series A, ~$30M total, Atomico lead, Gandalf; confidence: high
 - [Check Point acquires Lakera in $300 million deal (Calcalist)](https://www.calcalistech.com/ctechnews/article/rj5bc1vige) — fetched 2026-06-28 — supports: the ~$300M figure reported at announcement; confidence: low-med (superseded on price by the 20-F's $201.8M; retained to document the discrepancy)
-- Cached: [`raw/sources/2026-07-27--lakera--checkpoint-20f-close-date-and-price.md`](../../raw/sources/2026-07-27--lakera--checkpoint-20f-close-date-and-price.md)
+- Cached: `raw/sources/2026-07-27--lakera--checkpoint-20f-close-date-and-price.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.
