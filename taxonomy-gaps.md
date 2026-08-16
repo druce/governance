@@ -136,6 +136,32 @@ categories; the changes were **vendor moves** and ownership corrections. Decisio
   lint cross-check caught a research miss. Verified against Zscaler/Symmetry primary announcements.
 - **robust-intelligence** kept as a thin alias of `cisco-ai-defense` (dedupe; both = same asset).
 
+### Open question added 2026-08-16 — does "Enterprise Logging" belong with SIEM/SOC?
+
+Adding [signoz](wiki/vendors/signoz.md) to `siem-soc` (user-requested) exposed a seam in the
+category. `siem-soc` is named "Enterprise Logging / SIEM / SOC" and its trigger is "you cannot
+investigate what you did not log," but every other vendor on it is a **detection** platform
+(Sentinel, Splunk, XSIAM, SecOps, LogScale, Elastic Security) — they correlate, alert, and hold
+the case record. SigNoz is a pure telemetry backend: OpenTelemetry in, ClickHouse store,
+dashboards out, **no detection content, no case management, no SOAR**. It is filed here on the
+"Enterprise Logging" half of the name, with an explicit scope caveat at the top of its page.
+
+Two consistent resolutions, and the wiki currently sits between them:
+
+1. **The category really is "logging OR SIEM."** Then it is under-populated —
+   [datadog](wiki/vendors/datadog.md) (currently `llm-observability` only), Grafana/Loki/Tempo,
+   and OpenSearch all belong, and the survey question needs a label distinguishing "log backend"
+   from "SIEM."
+2. **The category is SIEM/SOC, and "Enterprise Logging" is just the seed doc's phrasing for
+   *security* logging.** Then SigNoz does not belong and needs a new `observability` category
+   (which would also give `datadog` and Grafana a proper home), or gets dropped.
+
+Recommendation: (2) plus a new `observability` category, since a hedge-fund CTO shopping for a
+SIEM and one shopping for APM are two different buyers with two different budgets. **Needs a
+human decision** — creating a category is a taxonomy change, so it was not done unilaterally.
+Until then SigNoz stays in `siem-soc` with the caveat carried on the page, the category page,
+and the survey notes.
+
 **Residual (documented, low-impact):** a few category-page *prose* vendor lists may still list a
 vendor under a category it was re-tagged out of during research (frontmatter + `index.md` are
 authoritative and correct). The 6 zero-vendor categories (5 process pages + `third-party-ai-apps`)

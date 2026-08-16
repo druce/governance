@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-07-27 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-08-16 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -55,7 +55,7 @@ Regenerated 2026-07-27 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (231)
+## Vendors (233)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -87,6 +87,7 @@ Regenerated 2026-07-27 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Azure Key Vault](wiki/vendors/azure-key-vault.md) — Microsoft's official wording: "a secure secrets store, providing management for secrets, keys, and certificates, all backed by Hardware Security Modules" — t… — (public, 2026-06-28)
 - [Bedrock Data](wiki/vendors/bedrock-data.md) — An AI-native data security posture management (DSPM) platform that discovers, classifies, and governs sensitive enterprise data in place using a "Metadata La… — (independent, 2026-07-27)
 - [Behavox](wiki/vendors/behavox.md) — Behavox is a compliance-surveillance vendor that scans a firm's e-comms and voice traffic with its own purpose-built financial-services LLM to surface market… — (independent, 2026-06-28)
+- [Bifrost](wiki/vendors/bifrost.md) — An Apache-2.0, Go-based LLM gateway that fronts ~20+ model — (oss-vendor-backed, 2026-08-16)
 - [BigID](wiki/vendors/bigid.md) — A data-intelligence platform that uses ML to find and classify sensitive data at scale, then layers DSPM, DLP, data access governance, privacy, and AI govern… — (independent, 2026-06-28)
 - [Bitsight](wiki/vendors/bitsight.md) — The other major outside-in security-ratings provider, scoring organizations and their third parties on externally observable cyber posture; Moody's is its la… — (independent, 2026-06-28)
 - [Black Kite](wiki/vendors/black-kite.md) — A third-party cyber-risk-intelligence / ratings vendor that scores suppliers across technical, financial (dollar-risk), and compliance dimensions. — (independent, 2026-06-28)
@@ -250,6 +251,7 @@ Regenerated 2026-07-27 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [ServiceNow GRC](wiki/vendors/servicenow.md) — The GRC / Integrated-Risk-Management module set bolted onto the Now Platform, so risk, compliance, audit and vendor-risk workflows live next to the ITSM/CMDB… — (public, 2026-06-28)
 - [SharePoint / OneDrive (Microsoft)](wiki/vendors/sharepoint.md) — Microsoft 365's document and collaboration repositories — for most enterprises the single biggest pile of unstructured content, and therefore the primary cor… — (public, 2026-06-28)
 - [Shield](wiki/vendors/shield.md) — An end-to-end communications-surveillance platform that captures, — (independent, 2026-06-28)
+- [SigNoz](wiki/vendors/signoz.md) — Open-source, OpenTelemetry-native observability on ClickHouse: — (oss-vendor-backed, 2026-08-16)
 - [Silverfort](wiki/vendors/silverfort.md) — A unified, largely agentless/proxyless identity-security platform that extends MFA, conditional access, and threat detection to systems that normally can't g… — (independent, 2026-06-28)
 - [Simbian](wiki/vendors/simbian.md) — A suite of autonomous security AI agents — a SOC agent, a GRC agent and a hosting platform — built to not just find security issues but act on them. — (independent, 2026-06-28)
 - [Snyk](wiki/vendors/snyk.md) — Developer-first security platform that scans your own code, your open-source dependencies, containers, and IaC for vulnerabilities, integrated into the IDE a… — (independent, 2026-06-28)

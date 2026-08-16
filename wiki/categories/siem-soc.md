@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-soc-analysts, edr-xdr]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 10
 maps_to_seed_doc: Enterprise logging / SIEM / SOC
 maps_to_seed_csv: SIEM/SOAR/SecOps
 last_verified: 2026-06-28
@@ -48,6 +48,10 @@ SOAR / automation cross-listed (modern, AI-leaning automation that overlaps the 
 
 - [torq](../vendors/torq.md) — hyperautomation/SOAR platform (also relevant to AI-SPM and AI SOC).
 
+Enterprise-logging side only (telemetry backend, **no detection content**):
+
+- [signoz](../vendors/signoz.md) — open-core, OpenTelemetry-native logs/metrics/traces on ClickHouse; self-hostable Datadog alternative. Answers the *logging* half of this category, not the SIEM half — no rule packs, correlation, case management or SOAR. Cross-listed to [llm-observability](llm-observability.md).
+
 ## Consolidation / M&A dynamics
 
 - Splunk — per seed, acquired by Cisco (per seed; unverified — to confirm in research).
@@ -66,13 +70,14 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Question.** Which SIEM / SOAR / SecOps platform(s) is your firm currently using or evaluating?
 
-**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Torq; Other (Please Specify).
+**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Torq; SigNoz; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Torq is SOAR/automation rather than full SIEM — it overlaps [ai-soc-analysts](ai-soc-analysts.md) and may confuse respondents; consider moving them to that question or labeling them clearly. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
+**Notes for survey design.** Sentinel and Splunk are table-stakes and will dominate "in production"; most firms already own one, so emphasize the *primary* SIEM and whether AI telemetry is ingested. Torq is SOAR/automation rather than full SIEM — it overlaps [ai-soc-analysts](ai-soc-analysts.md) and may confuse respondents; consider moving them to that question or labeling them clearly. [signoz](../vendors/signoz.md) has the same problem in the other direction: it is a telemetry backend with no detection content, so a respondent selecting it is telling you about their logging stack, not their SOC — label it "(observability/log backend)" in the option text or the answer is unusable. Splunk→Cisco and Sumo→Francisco Partners (per seed) date those options.
 
 ## Open taxonomy questions
 
 - SOAR/automation (Torq) straddles this and [ai-soc-analysts](ai-soc-analysts.md). (Jazz Security reclassified to [dlp](dlp.md) post-research.)
 - As SIEM folds into "SecOps platforms," confirm whether this stays a distinct category or merges with [ai-soc-analysts](ai-soc-analysts.md) and [edr-xdr](edr-xdr.md).
+- **Does "Enterprise Logging" belong in the same category as SIEM/SOC?** [signoz](../vendors/signoz.md) (added 2026-08-16) is a pure observability backend with no detection capability, filed here on the logging half of the category name. If that is right, [datadog](../vendors/datadog.md) and Grafana/Loki arguably belong here too; if not, SigNoz needs a home elsewhere. Flagged for the human in `taxonomy-gaps.md`.

@@ -28,6 +28,7 @@ AI Gateway,Kong AI Gateway,"Independent; also MCP gateway",,https://konghq.com,h
 AI Gateway,F5,"Public (FFIV); acquired CalypsoAI (closed 2025-09-26, $145.2M) and SurePath AI (closed 2026-06-22)",,https://www.f5.com,https://github.com/druce/governance/blob/master/wiki/vendors/f5.md
 AI Gateway,OpenRouter,"Independent; hosted aggregator (data leaves tenancy)",,https://openrouter.ai,https://github.com/druce/governance/blob/master/wiki/vendors/openrouter.md
 AI Gateway,Gravitee,"NEW (added 2026-07-27): independent, VC-backed (Series C $60M 2025-05-20); API-management incumbent; LLM/MCP/A2A proxies; also MCP gateway",,https://www.gravitee.io/platform/ai-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/gravitee.md
+AI Gateway,Bifrost (Maxim AI),"NEW (added 2026-08-16): Apache-2.0 Go gateway by Maxim AI; OSS challenger to LiteLLM; guardrails/MCP gateway/SSO are enterprise-tier only",,https://www.getmaxim.ai/bifrost,https://github.com/druce/governance/blob/master/wiki/vendors/bifrost.md
 AI Gateway,Other (Please Specify),,,,
 LLM Observability & Eval,Langfuse (ClickHouse),"Acq. by ClickHouse (announced 2026-01-26); core stays OSS",,https://langfuse.com,https://github.com/druce/governance/blob/master/wiki/vendors/langfuse.md
 LLM Observability & Eval,LangSmith,Independent (LangChain),,https://www.langchain.com/langsmith,https://github.com/druce/governance/blob/master/wiki/vendors/langsmith.md
@@ -180,6 +181,7 @@ SIEM/SOAR/SecOps,Google SecOps (Chronicle),Google (incl. Mandiant),,https://clou
 SIEM/SOAR/SecOps,Palo Alto Cortex XSIAM,Palo Alto,,https://www.paloaltonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
 SIEM/SOAR/SecOps,CrowdStrike Falcon LogScale,CrowdStrike (former Humio),,https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/,https://github.com/druce/governance/blob/master/wiki/vendors/crowdstrike-logscale.md
 SIEM/SOAR/SecOps,Torq,"Independent; SOAR/hyperautomation — overlaps the AI SOC analysts question",,https://torq.io,https://github.com/druce/governance/blob/master/wiki/vendors/torq.md
+SIEM/SOAR/SecOps,SigNoz,"NEW (added 2026-08-16): open-core OpenTelemetry-native observability on ClickHouse — enterprise logging, NOT a SIEM (no detection content/SOAR); also LLM observability",,https://signoz.io,https://github.com/druce/governance/blob/master/wiki/vendors/signoz.md
 SIEM/SOAR/SecOps,Other (Please Specify),,,,
 AI SOC analysts,Prophet Security,Independent,,https://www.prophetsecurity.ai,https://github.com/druce/governance/blob/master/wiki/vendors/prophet-security.md
 AI SOC analysts,Dropzone AI,Independent,,https://www.dropzone.ai,https://github.com/druce/governance/blob/master/wiki/vendors/dropzone-ai.md

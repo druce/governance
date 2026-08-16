@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 9
 maps_to_seed_doc: AI Gateway
 maps_to_seed_csv: AI Gateway
 last_verified: 2026-07-27
@@ -63,6 +63,7 @@ model providers.
 - [portkey](../vendors/portkey.md) — gateway plus guardrails, observability, and prompt management; control-plane oriented.
 - [truefoundry](../vendors/truefoundry.md) — AI/ML platform with a gateway plus an [mcp-gateway](mcp-gateway.md) offering.
 - [openrouter](../vendors/openrouter.md) — aggregator/marketplace routing to many models behind one API and billing relationship.
+- [bifrost](../vendors/bifrost.md) — Apache-2.0 Go gateway from [maxim-ai](../vendors/maxim-ai.md), pitched explicitly as the fast alternative to LiteLLM; guardrails, clustering, SSO and the MCP gateway are enterprise-tier.
 
 **Incumbent infra / API-management gateways**
 - [kong](../vendors/kong.md) — API-gateway incumbent extended with an AI gateway (and MCP tool ACLs).
@@ -92,13 +93,13 @@ stack. Expect gateway + firewall + observability to converge into single suites.
 and log your organization's model/API traffic?
 
 **Answer options:** Portkey, LiteLLM, TrueFoundry, Kong AI Gateway, F5, Cloudflare,
-OpenRouter, Gravitee, Other (Please Specify).
+OpenRouter, Gravitee, Bifrost (Maxim AI), Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
 
 **Notes for survey design:**
-- LiteLLM is the most common OSS default; expect high "in production" among teams building on raw APIs.
+- LiteLLM is the most common OSS default; expect high "in production" among teams building on raw APIs. [bifrost](../vendors/bifrost.md) is its newest OSS challenger (2025) and will read as unfamiliar to most respondents — low recognition is itself a useful signal, so keep it as a distinct option rather than folding it into Other.
 - "AI gateway" overlaps confusingly with [mcp-gateway](mcp-gateway.md) (Kong, TrueFoundry appear in both) — clarify "model traffic" vs "agent tool access" in the question stem.
 - Many shops use a model provider's native console or a SASE/proxy as a de-facto gateway; the Other field will catch DIY/none.
 - M&A dates Portkey (flagged → Palo Alto) and F5 (flagged ← CalypsoAI); show product names respondents will recognize.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
 incumbent_coverage: []
-vendor_count: 13
+vendor_count: 14
 maps_to_seed_doc: LLM Observability & Evaluation
 maps_to_seed_csv: LLM Observability & Eval
 last_verified: 2026-06-28
@@ -61,6 +61,7 @@ red-teaming that actually block. Treat it as the eyes, not the bouncer.
 - [helicone](../vendors/helicone.md) — lightweight proxy-based observability and cost tracking.
 - [comet](../vendors/comet.md) — Opik, Comet's open-source LLM eval/observability alongside its ML-experiment heritage.
 - [trulens](../vendors/trulens.md) — open-source RAG/agent evaluation framework (TruEra/Snowflake lineage).
+- [signoz](../vendors/signoz.md) — general-purpose OpenTelemetry observability (logs/metrics/traces on ClickHouse) that traces LLM calls via the OTel GenAI conventions; the generalist option, no prompt management or evals. Primary category is [siem-soc](siem-soc.md).
 
 **Evaluation / testing-first**
 - [braintrust](../vendors/braintrust.md) — eval-and-experimentation platform for LLM apps (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
