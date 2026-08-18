@@ -12,10 +12,10 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dlp, anti-deepfake]
 incumbent_coverage: []
-vendor_count: 6
+vendor_count: 8
 maps_to_seed_doc: Comms Surveillance
 maps_to_seed_csv: (in AI Governance, Model Risk)
-last_verified: 2026-06-28
+last_verified: 2026-08-18
 ---
 
 ## Business objective
@@ -64,13 +64,18 @@ try to stop the leak before it happens.
 - [theta-lake](../vendors/theta-lake.md) — surveillance and compliance for modern collaboration channels (Zoom, Teams, Webex) and AI features.
 - [shield](../vendors/shield.md) — communications compliance/surveillance platform with an AI/LLM analytics emphasis.
 - [relativity-trace](../vendors/relativity-trace.md) — proactive comms surveillance built on the Relativity (e-discovery) platform.
+- [hadrius](../vendors/hadrius.md) — AI-native SEC/FINRA compliance platform (archive + supervision + marketing review); archives **ChatGPT and Claude Enterprise conversations** as a recordkeeping channel.
+- [greenboard](../vendors/greenboard.md) — AI-native SEC/FINRA compliance platform unifying 17a-4 archiving/supervision with marketing review and attestations; Instant Bloomberg among its channels.
 
 ## Consolidation / M&A dynamics
 
 A specialized RegTech market serving regulated financial firms, split between
 markets-surveillance incumbents (NICE Actimize), AI-native challengers (Behavox,
-Shield, SteelEye), collaboration-channel specialists (Theta Lake), and e-discovery
-crossovers (Relativity Trace). No specific seed M&A flags for these vendors. The live
+Shield, SteelEye), collaboration-channel specialists (Theta Lake), e-discovery
+crossovers (Relativity Trace), and — new as of 2026 — **YC-lineage full-program
+platforms aimed down-market at US registered advisers and broker-dealers**
+(Hadrius, Greenboard), which bundle the archive itself with supervision, marketing
+review and attestations rather than selling surveillance alone. No specific seed M&A flags for these vendors. The live
 dynamic is every vendor racing to (a) ingest AI assistant prompts/outputs and modern
 collaboration channels, and (b) replace brittle lexicons with LLM-based intent
 detection.
@@ -89,7 +94,7 @@ market-abuse / conduct monitoring (and is it sweeping AI assistant prompts and
 responses)?
 
 **Answer options.** Behavox; SteelEye; NICE Actimize; Theta Lake; Shield; Relativity
-Trace; Other (Please Specify).
+Trace; Hadrius; Greenboard; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -101,7 +106,12 @@ respondents name those, they answered the wrong question — add a note or a sep
 capture question. NICE Actimize skews to large enterprises and doubles as
 AML/financial-crime, which may inflate its selection for reasons unrelated to comms.
 The high-signal AI-era follow-up: "are AI assistant prompts/outputs in scope for
-capture and surveillance?"
+capture and surveillance?" As of 2026-08-18 **Hadrius** is the only vendor on this list
+with documented capture of employee ChatGPT/Claude conversations (via Anthropic's Claude
+Compliance API), so that follow-up now discriminates between vendors rather than merely
+measuring intent. Hadrius and Greenboard are also **program platforms, not pure
+surveillance tools** — small-RIA respondents may name them for archiving or attestations
+rather than market-abuse monitoring; interpret their selections with that in mind.
 
 ## Open taxonomy questions
 

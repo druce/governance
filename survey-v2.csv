@@ -88,6 +88,8 @@ AI Antiphishing/deepfake/social engineering defense,Other (Please Specify),,,,
 Comms Surveillance,Behavox,"Independent; comms-surveillance",,https://www.behavox.com/,https://github.com/druce/governance/blob/master/wiki/vendors/behavox.md
 Comms Surveillance,SteelEye,"NEW: Independent; capture + surveillance",,https://www.steel-eye.com,https://github.com/druce/governance/blob/master/wiki/vendors/steeleye.md
 Comms Surveillance,Theta Lake,"Independent; comms-surveillance",,https://thetalake.com,https://github.com/druce/governance/blob/master/wiki/vendors/theta-lake.md
+Comms Surveillance,Hadrius,NEW: Independent,,https://www.hadrius.com,https://github.com/druce/governance/blob/master/wiki/vendors/hadrius.md
+Comms Surveillance,Greenboard,NEW: Independent,,https://www.greenboard.com,https://github.com/druce/governance/blob/master/wiki/vendors/greenboard.md
 Comms Surveillance,Shield,NEW: Independent,,https://www.shieldfc.com,https://github.com/druce/governance/blob/master/wiki/vendors/shield.md
 Comms Surveillance,NICE Actimize,"NEW: large-enterprise skew; also AML/fin-crime (may inflate selection)",,https://www.niceactimize.com,https://github.com/druce/governance/blob/master/wiki/vendors/nice-actimize.md
 Comms Surveillance,Other (Please Specify),"Note: capture/archival tools (Smarsh, Global Relay, Purview) are a different question",,,

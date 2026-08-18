@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-08-16 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-08-18 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -24,7 +24,7 @@ Regenerated 2026-08-16 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Security Awareness / Anti-Deepfake](wiki/categories/anti-deepfake.md) — Defend the **human layer** against AI-era social engineering. The seed doc frames — (day-2, 2026-06-28)
 - [Authorization Engine (Agent / Tool)](wiki/categories/authorization-engine.md) — An authorization engine is the **externalized rules engine that answers one question** — — (day-2, 2026-06-28)
 - [Browser Security Extension](wiki/categories/browser-security-extension.md) — A bolt-on guard for your existing Chrome (or Edge) — browser-level DLP and monitoring that watches risky web/AI activity *without swapping browsers*. It inst… — (situational, 2026-06-28)
-- [Comms Surveillance](wiki/categories/comms-surveillance.md) — The compliance detective. Communications surveillance replays the firm's archived — (firm-type-specific, 2026-06-28)
+- [Comms Surveillance](wiki/categories/comms-surveillance.md) — The compliance detective. Communications surveillance replays the firm's archived — (firm-type-specific, 2026-08-18)
 - [Enterprise Content Sources](wiki/categories/content-sources.md) — The systems of record an AI assistant reads from: where your knowledge actually lives — the SharePoints, Drives, and wikis the model retrieves from when answ… — (situational, 2026-06-28)
 - [Data Access Governance](wiki/categories/data-access-governance.md) — Data Access Governance (DAG) audits and right-sizes *who can open which data*, and — (day-2, 2026-06-28)
 - [Data Loss Prevention (DLP)](wiki/categories/dlp.md) — DLP prevents exfiltration of sensitive data via content- and lineage-aware controls. — (day-1, 2026-06-30)
@@ -55,7 +55,7 @@ Regenerated 2026-08-16 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (233)
+## Vendors (235)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -146,8 +146,10 @@ Regenerated 2026-08-16 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Google SecOps (Chronicle)](wiki/vendors/google-secops.md) — Google's cloud-native SIEM/SOAR platform, built for petabyte-scale log retention, enriched with Mandiant threat intelligence and Gemini-powered investigation… — (public, 2026-06-28)
 - [GovernGPT](wiki/vendors/governgpt.md) — AI that drafts answers to investor DDQs and RFPs for fund managers, — (independent, 2026-06-28)
 - [Gravitee](wiki/vendors/gravitee.md) — Gravitee is an open-source-rooted API- and event-management vendor whose **AI Gateway** puts LLM calls, MCP tool calls, and agent-to-agent traffic behind one… — (independent, 2026-07-27)
+- [Greenboard](wiki/vendors/greenboard.md) — An AI-native compliance platform for SEC/FINRA-regulated firms that — (independent, 2026-08-18)
 - [Grip Security](wiki/vendors/grip-security.md) — An identity-first SaaS Security Posture Management (SSPM) platform that finds all the SaaS and AI apps employees sign up for and helps you govern access and … — (independent, 2026-06-28)
 - [Guardrails AI](wiki/vendors/guardrails-ai.md) — An open-source "guardrails" library that validates and corrects LLM — (independent, 2026-06-28)
+- [Hadrius](wiki/vendors/hadrius.md) — An AI-native compliance platform for SEC/FINRA-regulated US firms that — (independent, 2026-08-18)
 - [Haize Labs](wiki/vendors/haize-labs.md) — Automated red-teaming that algorithmically discovers how an LLM fails — (independent, 2026-07-27)
 - [Harmonic Security](wiki/vendors/harmonic-security.md) — A data-protection/"shadow AI" governance platform that watches how employees (and increasingly agents) use generative-AI tools and stops sensitive data from … — (independent, 2026-06-28)
 - [HashiCorp Sentinel](wiki/vendors/hashicorp-sentinel.md) — HashiCorp's embedded policy-as-code framework that enforces fine-grained, logic-based guardrails inside Terraform, Vault, Nomad, and Consul Enterprise/HCP — … — (acquired-closed, 2026-07-27)

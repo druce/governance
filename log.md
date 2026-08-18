@@ -2258,3 +2258,65 @@ clean), and the emitted Google Fonts request matches the reference character for
 Note for future local reproduction: the user's shell aliases `cp` to `cp -i`, so a scripted
 `cp` over an existing file silently declines and the build appears to succeed with stale
 config. Use `command cp -f`. GitHub Actions runners are unaffected.
+
+## [2026-08-18] stub+research | hadrius (comms-surveillance)
+
+Created and researched `wiki/vendors/hadrius.md` in one pass from the survey-v2.csv row.
+
+- Independent, YC W23, founded 2023, NYC, ~80 staff. **$27M raised** (seed + a **$22M
+  Series A led by CRV**, announced 2026-07-14; YC and Pathlight Ventures participating).
+  The "$22M" vs "$27M" split across press is not a contradiction — $27M is seed+A.
+- Six-module SEC/FINRA compliance platform: comms supervision, marketing review, people
+  oversight (personal trading/attestations), account surveillance, testing program,
+  compliance-manual implementation. Multi-tenant workspaces for compliance consultants.
+- **Key finding for this wiki:** Hadrius archives employees' **ChatGPT and Claude
+  Enterprise conversations** as a supervised books-and-records channel — Claude via
+  Anthropic's **Claude Compliance API**, announced 2026-07-28, agentless. Corroborated
+  independently: Hadrius is named on Anthropic's own Compliance API partner list. This
+  answers the open question flagged on [steeleye](wiki/vendors/steeleye.md) — whether
+  any surveillance vendor treats the AI assistant as a *channel* rather than just
+  applying AI *to* the archive.
+- Traction stats (500+ firms, $3T AUM, 99% false-positive reduction) recorded as
+  **vendor claims**, `fs_traction: claimed`. Named logos (BBVA, Altruist, M1 Finance)
+  are from the vendor release.
+- Sources cached: `raw/sources/2026-08-18--hadrius--funding-and-yc-profile.md`,
+  `raw/sources/2026-08-18--hadrius--claude-compliance-api-archive.md`.
+
+## [2026-08-18] stub+research | greenboard (comms-surveillance)
+
+Created and researched `wiki/vendors/greenboard.md` in one pass from the survey-v2.csv row.
+
+- Independent, YC W24, founded 2023, NYC, ~26 staff. **$20M raised**, including a
+  **previously unannounced $15.5M Series A led by Base10 Partners**, disclosed
+  2026-05-12 alongside the GreenboardGo launch. General Catalyst, Commerce Ventures,
+  Transpose, Liquid2, Kulveer Taggar, YC also in.
+- Unified 17a-4/WORM archive + supervision, marketing review, employee attestations,
+  firm and third-party compliance, plus **GreenboardGo**, a policy-grounded chat layer
+  over the firm's own books and records. Channels include **Instant Bloomberg** — a
+  buy-side-relevant capture point. Listed in the Schwab Advisor Services directory.
+- **Negative finding recorded:** no AI-assistant (ChatGPT/Claude/Copilot) channel on the
+  published channel list, and Greenboard is **absent** from Anthropic's Claude Compliance
+  API partner list as of 2026-08-18. Logged as an open question, not as "doesn't exist."
+- Soft contradiction flagged on-page: Ventureburn says Austin, TX; YC directory and
+  vendor say NYC. Recorded NYC, Austin treated as aggregator error. Non-blocking.
+- Source cached: `raw/sources/2026-08-18--greenboard--funding-and-yc-profile.md`.
+
+## [2026-08-18] decision | survey-v2.csv — Greenboard row had the wrong product name
+
+The two new rows were both labeled `Hadrius`; the second one carried the greenboard.com
+URL and the greenboard.md wiki link. Corrected the product name on that row to
+`Greenboard`. Left in place: both are genuinely `Comms Surveillance` for survey purposes,
+even though both are broader compliance-program platforms than the category's incumbents.
+
+## [2026-08-18] taxonomy | comms-surveillance — capture/archival boundary is eroding
+
+The category page's scope note ("surveillance/analysis, NOT capture/archival — Smarsh,
+Global Relay, Purview are upstream") holds for the incumbents but does **not** describe
+Hadrius or Greenboard, which sell the archive *and* the supervision layer as one product,
+plus non-surveillance compliance chores (attestations, marketing review, testing). Noted
+inline on both vendor pages and in the category's consolidation paragraph; the existing
+open taxonomy question ("should capture be its own thin category?") is now more pressing,
+since a whole class of down-market entrants ignores the split. Not resolving unilaterally
+— flagged for the human. Also updated the category's survey notes: the AI-era follow-up
+question ("are AI prompts/outputs in scope?") now discriminates between vendors rather
+than only measuring intent, since Hadrius documents it and Greenboard does not.
