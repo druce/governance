@@ -66,6 +66,7 @@ firewall.
 - [hiddenlayer](../vendors/hiddenlayer.md) — model scanning plus red-teaming (primary in [ai-runtime-security](ai-runtime-security.md)).
 - [enkrypt-ai](../vendors/enkrypt-ai.md) — red-teaming plus guardrails (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 - [trojai](../vendors/trojai.md) — model scanning and red-teaming (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
+- [deepkeep](../vendors/deepkeep.md) — automated red teaming plus "Vibe AI Red Teaming", a human-steered mode where staff redirect an agent-run campaign mid-execution (primary in [ai-runtime-security](ai-runtime-security.md)).
 
 **Guardrails / safety-filter-first**
 - [guardrails-ai](../vendors/guardrails-ai.md) — open-source guardrails framework (validators for I/O).

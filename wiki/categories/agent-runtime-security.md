@@ -68,6 +68,7 @@ anyway.
 - [straiker](../vendors/straiker.md) — runtime security for AI agents and applications.
 - [acuvity](../vendors/acuvity.md) — runtime inspection and governance of agents and MCP servers (primary in [ai-access-governance](ai-access-governance.md); acquired by Proofpoint 2026-02-12).
 - [noma-security](../vendors/noma-security.md) — AI/ML and agent security spanning discovery and runtime; primary in [ai-spm](ai-spm.md), cross-listed here.
+- [deepkeep](../vendors/deepkeep.md) — AI Agent Scanner (2026-03) maps an agent's tools and reachable actions into an attack-surface graph scored against the OWASP Top 10 for Agentic Applications, and is offered free; runtime enforcement covers only "select frameworks". Primary in [ai-runtime-security](ai-runtime-security.md).
 - [knostic](../vendors/knostic.md) — moved here 2026-07-09: now leads with agentic security (Kirin — runtime least-privilege and injection-blocking for agents, coding assistants, and MCP servers; AgentMesh supply-chain reputation). Distinctive coding-tool/MCP supply-chain wedge. Its original need-to-know/oversharing product stays cross-listed in [entitlement-aware-rag](entitlement-aware-rag.md).
 
 ## Consolidation / M&A dynamics

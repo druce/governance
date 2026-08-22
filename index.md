@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-08-18 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-08-22 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -55,7 +55,7 @@ Regenerated 2026-08-18 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-06-28)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (235)
+## Vendors (236)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -116,6 +116,7 @@ Regenerated 2026-08-18 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Cyberhaven](wiki/vendors/cyberhaven.md) — An endpoint-based, AI-powered data-loss-prevention / "data detection and response" (DDR) platform that tracks the *lineage* of data — where it came from, how… — (independent, 2026-06-28)
 - [Cyera](wiki/vendors/cyera.md) — The fast-growing, AI-native DSPM leader: agentless discovery of sensitive data across cloud and SaaS, converged with DLP and identity into one data-security … — (independent, 2026-06-28)
 - [Datadog LLM Observability](wiki/vendors/datadog.md) — The LLM/agent observability module inside Datadog's broader monitoring platform — buy it where you already run APM and logs. — (public, 2026-06-28)
+- [DeepKeep](wiki/vendors/deepkeep.md) — An Israeli AI-security suite that puts runtime guardrails, red — (independent, 2026-08-22)
 - [Descope](wiki/vendors/descope.md) — Developer-first authentication/CIAM with visual auth flows that now doubles — (independent, 2026-06-28)
 - [Docker MCP Gateway](wiki/vendors/docker-mcp-gateway.md) — An open-source (MIT) Docker CLI plugin that runs MCP servers as isolated containers from a signed catalog and puts them behind one central gateway, adding se… — (independent, 2026-06-28)
 - [DoControl](wiki/vendors/docontrol.md) — An automated SaaS data-security / data-access-controls platform that finds over-shared and exposed data across SaaS apps and remediates it with no-code workf… — (independent, 2026-06-28)

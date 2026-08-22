@@ -2320,3 +2320,64 @@ since a whole class of down-market entrants ignores the split. Not resolving uni
 — flagged for the human. Also updated the category's survey notes: the AI-era follow-up
 question ("are AI prompts/outputs in scope?") now discriminates between vendors rather
 than only measuring intent, since Hadrius documents it and Greenboard does not.
+
+## [2026-08-22] decision | DeepKeep category placement — ai-runtime-security primary, no software-supply-chain
+
+The human offered "agentic security or software supply chain or ai-spm or
+cross-reference" and left the call to me. DeepKeep is a five-module suite (AI
+Firewall, AI Red Teaming, AI Lens discovery, AI Agent Scanner, Model Scanning),
+so no single slot is honest. Call:
+
+- **primary_category: `ai-runtime-security`** — the AI Firewall ("60+ runtime
+  guardrails") is the lead SKU and the thing a buyer swaps in against
+  Lakera/Prisma AIRS/Cisco AI Defense. Same shape as `hiddenlayer`, filed the
+  same way, which keeps the two comparable.
+- **also_listed_in: `[ai-red-teaming, ai-spm, agent-runtime-security]`** — each
+  is a real module, not marketing surface area.
+- **Deliberately NOT `software-supply-chain`.** DeepKeep's Model Scanning does
+  MLBOM + CVE detection on *model artifacts*, which is ML supply chain. This
+  wiki's `software-supply-chain` category is "Software Supply Chain & Coding
+  Security" — SAST/SCA/pipeline security for code you ship. DeepKeep does no
+  code scanning, so cross-listing it there would put it in bake-offs against
+  Endor Labs / GitHub Advanced Security that it cannot answer. Recorded as a
+  filing note on the page instead.
+
+Follow-on taxonomy question (not resolved here): the wiki has no home for
+**model-artifact scanning / MLBOM** as such. HiddenLayer, TrojAI and DeepKeep all
+do it and all get filed under ai-runtime-security by default. If a survey
+respondent shops for it separately, it needs its own slug. Added to
+`taxonomy-gaps.md`.
+
+## [2026-08-22] stub+research | deepkeep (ai-runtime-security)
+
+Created and researched in one pass — page is fully filled, not a stub.
+Confirmed: founded 2021 by Rony Ohayon (CTO Yossi Altevet), Tel Aviv; $10M seed
+announced 2024-05-01 led by Awz Ventures; AI Agent Scanner launched 2026-03-03
+(OWASP Agentic Top 10, free at agentscanner.deepkeep.ai); Vibe AI Red Teaming
+launched 2026-04-20; Gartner *Representative Provider* listing in the 2026
+Competitive Landscape: AI Operations Management (announced 2026-06-04).
+
+Judgment calls recorded on the page:
+
+- **Funding total left `unverified`.** Aggregators (Tracxn/PitchBook/Crunchbase)
+  claim ~$19M across 4 rounds and a January 2026 OurCrowd round. DeepKeep has
+  published no funding release since the 2024 seed and no primary source
+  corroborates it. Per CLAUDE.md §7 this is not asserted — noted as an open
+  question with the aggregator provenance named.
+- **`certifications: []` means "none found", not "none exists"** — no SOC 2 /
+  ISO 27001 claim anywhere on the site or in any release. Called out as a
+  procurement blocker with that caveat attached.
+- **`fs_traction: unverified`** — site logos are NTT Data, ST Engineering, EY,
+  i.e. an SI/Big-Four partner motion, not named end users. No FS customer found.
+- Confidence on the SiliconANGLE Vibe red-teaming source set to **low**: it
+  restates the vendor release with no independent commentary. The
+  "first-of-its-kind" claim is labelled marketing on the page.
+- `verify_after: 2026-11-22` — small vendor, consolidating category, unconfirmed
+  Series A. Worth a re-check in ~3 months.
+
+## [2026-08-22] lint | signoz + bifrost already present — no duplicate created
+
+The human's list included SigNoz and Bifrost. Both were built 2026-08-16 (pages,
+CSV rows and category entries all present and fully researched), so per CLAUDE.md
+§3 "never create duplicate vendor pages" nothing was re-added. Only DeepKeep was
+new work.

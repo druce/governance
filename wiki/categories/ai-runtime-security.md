@@ -73,6 +73,7 @@ observation.
 - [lakera](../vendors/lakera.md) — prompt-injection/guardrail detection with a strong research profile (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
 - [trojai](../vendors/trojai.md) — model and runtime security, scanning plus runtime defense.
 - [splxai](../vendors/splxai.md) — red-teaming-first vendor that also offers runtime guardrails (primary in [ai-red-teaming](ai-red-teaming.md)).
+- [deepkeep](../vendors/deepkeep.md) — five-module Israeli suite (firewall, red teaming, discovery, agent scanner, model scanning); the only vendor here that also covers **computer-vision** models. Cross-listed to [ai-red-teaming](ai-red-teaming.md), [ai-spm](ai-spm.md) and [agent-runtime-security](agent-runtime-security.md).
 
 **Runtime guardrails inside a DLP/data-security lineage**
 - [prompt-security](../vendors/prompt-security.md) — prompt/response inspection and AI DLP (cross-listed in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md)).

@@ -74,6 +74,7 @@ red/yellow/green assets and flags the ones that violate your zone design.
 - [torq](../vendors/torq.md) — SOC automation vendor with an AI-governance posture offering; overlaps SecOps tooling.
 - [hiddenlayer](../vendors/hiddenlayer.md) — model scanning and ML asset risk; posture angle overlaps with its runtime/red-teaming work.
 - [pillar-security](../vendors/pillar-security.md) — AI app discovery and posture alongside runtime protection.
+- [deepkeep](../vendors/deepkeep.md) — "AI Lens" discovery and usage control plus MLBOM/CVE model scanning; posture is one module of a broader suite (primary in [ai-runtime-security](ai-runtime-security.md)).
 
 ## Consolidation / M&A dynamics
 

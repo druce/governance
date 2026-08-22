@@ -166,3 +166,36 @@ and the survey notes.
 vendor under a category it was re-tagged out of during research (frontmatter + `index.md` are
 authoritative and correct). The 6 zero-vendor categories (5 process pages + `third-party-ai-apps`)
 are intentionally vendorless.
+
+### Open question added 2026-08-22 — no home for model-artifact scanning / MLBOM
+
+Adding [deepkeep](wiki/vendors/deepkeep.md) surfaced a category with no slug. Three vendors on
+this wiki ship **model-artifact scanning** — static/dynamic inspection of model files for
+deserialization payloads and known-bad weights, producing an **MLBOM** and CVE findings:
+[hiddenlayer](wiki/vendors/hiddenlayer.md), [trojai](wiki/vendors/trojai.md), and now DeepKeep.
+(Protect AI's `modelscan`, the OSS reference implementation, is now inside
+[prisma-airs](wiki/vendors/prisma-airs.md).)
+
+All three are filed `ai-runtime-security` because the AI firewall is their lead SKU, so the
+scanning capability is invisible in the taxonomy. That is fine while nobody shops for it
+separately — and wrong the moment someone does. The question is whether model scanning is:
+
+1. **A feature of `ai-runtime-security`.** Status quo. Cheap, but a CTO asking "what scans the
+   models we pull off Hugging Face?" gets no answer from the category pages.
+2. **Part of `software-supply-chain`.** Tempting — it *is* supply chain — but that category is
+   "Software Supply Chain & Coding Security" (SAST/SCA/pipeline security for code you ship), and
+   none of these three do code scanning. Filing them there puts them in bake-offs against
+   [endor-labs](wiki/vendors/endor-labs.md) and
+   [github-advanced-security](wiki/vendors/github-advanced-security.md) that they cannot answer.
+   Rejected for DeepKeep on 2026-08-22 (see `log.md`).
+3. **Its own slug**, e.g. `model-supply-chain`, in the model-prompt layer, day-2, covering model
+   scanning + MLBOM + model-registry provenance.
+
+Recommendation: **(3) if and only if the survey shows buyers shopping for it as a line item.**
+Otherwise (1) plus a paragraph on `software-supply-chain` pointing at the three vendors, so the
+question at least resolves to *something*. **Needs a human decision** — creating a category is a
+taxonomy change, so it was not done unilaterally.
+
+Second-order note: this wiki's `software-supply-chain` page says nothing about **models** as a
+supply-chain artifact at all. Whatever is decided above, that page needs a cross-reference — the
+"where did this artifact come from" question is the same question in both places.
