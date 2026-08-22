@@ -11,7 +11,10 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: null,
+    analytics: {
+      provider: "google",
+      tagId: "G-E1305JTTCL", // GA4 Measurement ID, Admin → Data Streams → Web
+    },
     locale: "en-US",
     baseUrl: "druce.ai/governance",
     ignorePatterns: ["private", "templates", ".obsidian", "raw", "tasks"],
