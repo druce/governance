@@ -3,7 +3,7 @@ title: DeepKeep
 type: vendor
 name: DeepKeep
 slug: deepkeep
-aka: [DeepKeep Ltd., DeepKeep.ai, DeepKeep for LLM, DeepKeep for Vision]
+aka: [DeepKeep Ltd., DeepKeep.ai, DeepKeep for LLM, DeepKeep for Vision, DeepKeep for VLM]
 primary_category: ai-runtime-security
 also_listed_in: [ai-red-teaming, ai-spm, agent-runtime-security]
 website: https://www.deepkeep.ai
@@ -21,7 +21,7 @@ form_factor: [platform, api, inline-proxy]
 data_leaves_tenancy: partial
 integrations: [agentforce, openai-agents, crewai, amazon-bedrock-agentcore, n8n, make, microsoft-agent-frameworks]
 mcp_support: unverified
-certifications: []
+certifications: [ISO 27001 (vendor-stated), ISO 9001 (vendor-stated), SOC 2 (vendor-stated; no Type marking), GDPR (vendor-stated)]
 pricing_model: null
 fs_traction: unverified
 target_customer: Enterprise security teams securing self-built LLM *and computer-vision* systems across the full lifecycle, from one console
@@ -125,15 +125,23 @@ a firm that already owns a platform with an AI-security module
 [wiz](wiz.md)) — DeepKeep has to beat something you already pay for. Also an
 anti-fit if you need best-of-breed depth in exactly one slot: buy
 [lakera](lakera.md) for prompt-injection detection or a red-teaming specialist
-for red teaming. And an anti-fit for procurement teams that require SOC 2 Type 2
-on paper, since no certification is published (see below).
+for red teaming. And an anti-fit for procurement teams that need a SOC 2 report
+in hand before signing, since DeepKeep publishes badges but no retrievable
+report — you will be waiting on the vendor to produce one (see below).
 
 **Known weaknesses / gotchas**
 
-- **No published certifications.** No SOC 2, ISO 27001 or equivalent appears on
-  the site or in any release as of 2026-08-22. For a product that sits inline on
-  prompts and responses, that is a live procurement blocker at a regulated firm —
-  ask in the first call.
+- **Certifications are claimed on the website, not evidenced.** The footer
+  carries four badge images — **ISO 27001, ISO 9001, SOC 2 and GDPR** — and
+  nothing sits behind them: none of the badges is a hyperlink, there is no trust
+  centre, compliance page or downloadable report, and no certificate number,
+  auditor, audit period or scope statement appears anywhere. **The SOC 2 badge
+  carries no Type marking**, which is the detail that matters — Type I is a
+  point-in-time opinion on control *design*, Type II tests operating
+  effectiveness over a period, and only the latter is worth much to a regulated
+  buyer. For a product that sits inline on prompts and responses, ask for the
+  report, the audit period, the auditor and the SOC 2 **Type** before treating
+  any of these badges as evidence.
 - **No public pricing at all**, and no published tier structure. Full sales cycle.
 - **"For select frameworks" is doing work.** The Agent Scanner *discovers and
   maps* across the listed frameworks, but *runtime enforcement* on agents is
@@ -177,7 +185,10 @@ for a security product that should be feeding
 [siem-soc](../categories/siem-soc.md). No marketplace listings found. No FS
 channel partners found.
 
-**Compliance & FS traction** — No certifications published. Logos shown on the
+**Compliance & FS traction** — Four compliance badges (ISO 27001, ISO 9001,
+SOC 2, GDPR) are displayed in the site footer as static images with no report,
+trust centre or Type marking behind them; treat them as vendor-stated until you
+hold the documents. Logos shown on the
 site are **NTT Data, ST Engineering and EY** — systems integrators and a Big Four
 firm, i.e. a partner/services motion, not named end-user references. **No
 financial-services customer is named anywhere**, and nothing indicates
@@ -193,8 +204,13 @@ a full sales cycle.
 - **Funding since the 2024 seed.** Aggregators say ~$19M / 4 rounds and an
   OurCrowd round in January 2026; DeepKeep has announced nothing. Is there a
   Series A? Unresolved — aggregator-only, not asserted on this page.
-- **Certifications.** Is there a SOC 2 Type 2 or ISO 27001 that simply isn't
-  marketed? Could not find; do not assume absence means none exists.
+- **What backs the four badges?** ISO 27001, ISO 9001, SOC 2 and GDPR are
+  displayed, so audits are being asserted — but no report, certificate number,
+  auditor, audit period or scope is published, and the SOC 2 badge shows no Type.
+  Is the SOC 2 a Type I or a Type II? What is the ISO 27001 scope and which body
+  issued it? A targeted search on 2026-08-22 retrieved nothing; **"not
+  retrievable" is not "does not exist"** — these are the questions for the first
+  call, not a conclusion.
 - **Which frameworks get runtime enforcement**, as opposed to discovery/mapping
   only? The release says "select frameworks" without enumerating.
 - **MCP support** — none found, but absence of evidence only. Unverified.
@@ -206,12 +222,14 @@ a full sales cycle.
 ## Sources
 
 - [DeepKeep — product site](https://www.deepkeep.ai/) — fetched 2026-08-22 — supports: five modules, two product lines, deployment options, customer logos; confidence: medium (vendor marketing).
+- [DeepKeep — About / site footer](https://www.deepkeep.ai/about) — re-fetched 2026-08-22 — supports: the four compliance badges (ISO 27001, ISO 9001, SOC 2, GDPR), their alt text, that none is a hyperlink, that the SOC 2 badge carries no Type marking, and that no trust centre or downloadable report is linked; confidence: high (primary, read directly).
 - [SecurityWeek — DeepKeep Launches AI-Native Security Platform With $10 Million in Seed Funding](https://www.securityweek.com/deepkeep-launches-ai-native-security-platform-with-10-million-in-seed-funding/) — fetched 2026-08-22 — supports: founded 2021, Rony Ohayon, Tel Aviv, $10M seed 2024-05-01 led by Awz Ventures; confidence: high.
 - [PR Newswire — DeepKeep Launches AI Agent Attack Surface Mapping and Discovery Solution](https://www.prnewswire.com/il/news-releases/deepkeep-launches-ai-agent-attack-surface-mapping-and-discovery-solution-302702359.html) — fetched 2026-08-22 — supports: Agent Scanner scope, framework list, OWASP Agentic Top 10 mapping, free hosted scanner, 2026-03-03 date; confidence: medium (vendor release).
 - [SiliconANGLE — DeepKeep rolls out Vibe AI Red Teaming](https://siliconangle.com/2026/04/20/deepkeep-rolls-vibe-ai-red-teaming-test-ai-apps-agents/) — fetched 2026-08-22 — supports: Vibe red teaming, 2026-04-20, CTO name; confidence: low (restates vendor release, no independent commentary).
 - [PR Newswire — DeepKeep Recognized in the 2026 Gartner Competitive Landscape: AI Operations Management](https://www.prnewswire.com/il/news-releases/deepkeep-recognized-in-the-2026-gartner-competitive-landscape-ai-operations-management-302791556.html) — fetched 2026-08-22 — supports: Representative Provider listing, May 2026 report, About-DeepKeep boilerplate; confidence: medium (vendor release about a paywalled report).
-- Cached: `raw/sources/2026-08-22--deepkeep--platform-modules-and-founding.md`, `raw/sources/2026-08-22--deepkeep--agent-scanner-and-vibe-red-teaming.md`
+- Cached: `raw/sources/2026-08-22--deepkeep--platform-modules-and-founding.md`, `raw/sources/2026-08-22--deepkeep--agent-scanner-and-vibe-red-teaming.md`, `raw/sources/2026-08-22--deepkeep--footer-compliance-badges.md`
 
 ## History
 
 - [2026-08-22] Page created and researched in one pass via wiki-create + wiki-research. Category call (`ai-runtime-security` primary, three cross-lists, no `software-supply-chain`) recorded in `log.md`.
+- [2026-08-22] **Correction.** The page asserted in three places that DeepKeep publishes no certifications; `certifications: []` and an open question rested on the same claim. Wrong: the site footer carries ISO 27001, ISO 9001, SOC 2 and GDPR badges. Re-fetched https://www.deepkeep.ai/about and confirmed the badges exist, none is a hyperlink, the SOC 2 badge carries no Type marking, and no trust centre or report sits behind them. Reframed from "no certification is published" to "claimed on the website, not evidenced" (the idiom already used on [signoz](signoz.md)), `certifications:` set with the `(vendor-stated)` convention used on [hadrius](hadrius.md), and the procurement advice changed to ask for the report, period, auditor and SOC 2 Type. Source cached.

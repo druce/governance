@@ -2367,6 +2367,8 @@ Judgment calls recorded on the page:
 - **`certifications: []` means "none found", not "none exists"** — no SOC 2 /
   ISO 27001 claim anywhere on the site or in any release. Called out as a
   procurement blocker with that caveat attached.
+  > **CORRECTED 2026-08-22** — this was wrong. DeepKeep's site footer carries
+  > ISO 27001, ISO 9001, SOC 2 and GDPR badges. See the correction entry below.
 - **`fs_traction: unverified`** — site logos are NTT Data, ST Engineering, EY,
   i.e. an SI/Big-Four partner motion, not named end users. No FS customer found.
 - Confidence on the SiliconANGLE Vibe red-teaming source set to **low**: it
@@ -2381,3 +2383,118 @@ The human's list included SigNoz and Bifrost. Both were built 2026-08-16 (pages,
 CSV rows and category entries all present and fully researched), so per CLAUDE.md
 §3 "never create duplicate vendor pages" nothing was re-added. Only DeepKeep was
 new work.
+
+## [2026-08-22] research | correction sweep — deepkeep, signoz, bifrost
+
+Three pages re-verified against primary sources re-fetched today. Four factual
+errors found and fixed; all four were driving buying advice. Committed separately
+from the build work so one revert undoes the corrections alone.
+
+### 1. deepkeep — certifications claim was wrong (§8 hard, self-resolved)
+
+**Was:** "No published certifications. No SOC 2, ISO 27001 or equivalent appears
+on the site or in any release" — asserted in three places (weaknesses bullet,
+anti-fit sentence, Compliance & FS traction), with `certifications: []` and an
+open question resting on it, and recorded above as a deliberate judgment call.
+
+**Evidence:** re-fetched https://www.deepkeep.ai/about 2026-08-22. The site
+footer carries four badge images, alt text `ISO 27001 badge`, `ISO 9001 badge`,
+`SOC 2 badge`, `GDPR badge`.
+
+**But also confirmed what is *not* there:** none of the four badges is a
+hyperlink; there is no trust centre, compliance page or downloadable report
+anywhere; no certificate number, auditor, audit period or scope is published; and
+**the SOC 2 badge carries no Type marking**. A targeted search retrieved no
+report elsewhere — recorded as "not retrievable", explicitly not as "does not
+exist" (CLAUDE.md §7).
+
+**Fix:** reframed to the idiom the corpus already had on [signoz] —
+"Certifications are claimed on the website, not evidenced." `certifications:` now
+uses the `(vendor-stated)` convention from [hadrius] rather than a new one, with
+`SOC 2 (vendor-stated; no Type marking)`. Procurement advice changed from "no
+certification is published" to "ask for the report, the audit period, the auditor
+and the SOC 2 Type before treating the badge as evidence" — a weaker assurance
+than a published report, a stronger fact than "none found". Open question
+rewritten to ask what backs the badges rather than whether anything exists.
+Also added `DeepKeep for VLM` to `aka:` — the footer now uses VLM where the
+product page said Vision.
+
+Primary category untouched, as instructed.
+
+### 2. signoz — two pricing-tier claims wrong, both from a summarized read
+
+Re-read https://signoz.io/pricing/ row by row (the 2026-08-16 build had read a
+summary of the table, not the table).
+
+**Was (a):** "SSO/SAML is gated behind the $4,000/mo Enterprise minimum, a steep
+step from the $49/mo Teams tier." **Actually:** SSO is on **all three tiers,
+including free Community**; SAML starts at **Teams, $49/mo**. The "steep step"
+framing inverted — Enterprise buys dedicated environments, BYOC and support, not
+basic SSO.
+
+**Was (b):** "Budget for Enterprise if you need SSO/SAML and audit trails."
+**Actually:** **Audit Logs**, **Finer RBAC with custom roles** and
+**Multi-tenancy** are all marked **COMING SOON on Enterprise** — $4,000/mo does
+not buy an audit trail today, at any price, with no published date. For a
+regulated reader this is now the most important line on the page.
+
+Also recorded explicitly: `ee/auditor` existing in the repository is **not**
+evidence the feature ships. Follow the price list, not the directory tree.
+
+Knock-on edits for internal consistency: anti-fit line, the open-core bullet's
+closing advice, Compliance & FS traction (SigNoz markets a SOC 2 Type II while
+its own Audit Logs row reads COMING SOON — its certification covers its operation
+of the service, not your ability to get an audit trail out of it), and Commercial.
+
+`siem-soc` filing and the observability-not-a-SIEM scope caveat left untouched,
+as instructed — both remain correct.
+
+### 3. bifrost — benchmark methodology added, internal contradiction fixed
+
+**(a) Benchmarks.** The unreconciled-numbers gotcha was right and stays; added
+why the numbers are unfalsifiable. Docs: *"All benchmarks are on mocked OpenAI
+calls"*; the `maximhq/bifrost-benchmarking` harness runs *"the mocker as a
+stand-in provider"*; the gateway-overhead test uses a **60 ms mock OpenAI
+response**. No real provider, no network, no streaming. Verified in both the docs
+and the benchmarking repo before writing, as asked.
+
+Sharper finding while verifying: the headline figures are **three different
+metrics** presented as one story — 0.99 ms vs LiteLLM's 40 ms (comparative
+overhead, "40.4x"); 1.68 s vs 90.72 s (**P99 latency** at 500 RPS, "54x"); and
+11 µs / 59 µs (**Bifrost-only internal** overhead at 5,000 RPS, no LiteLLM
+comparison at all). The microsecond numbers everyone quotes are the ones with no
+competitor in them. Page now says so, while conceding the Go-vs-Python argument
+is real and 40 ms of proxy overhead is genuinely bad.
+
+**(b) Internal contradiction.** The OSS-vs-enterprise section listed "audit
+logging" as enterprise-gated; "Where it sits in the stack" told a fund an OSS
+deployment gives it "an audit trail" and that this is the artefact it needs for
+comms-surveillance review. Both cannot be true. They are two different artefacts:
+the **request log** (prompts/responses, in the free Apache-2.0 build, and the one
+that answers "what did staff ask a model") versus the enterprise **Audit Logs**
+feature, which per the docs records *"who changed what, when it happened, and
+which resource was affected"* — configuration-change history. Every mention on
+the page now names which log it means.
+
+**(c) Immutability — classified soft, not hard.** The docs index advertises
+*"Immutable, timestamped audit trails ... SOC 2, GDPR, HIPAA, ISO 27001
+friendly"*; the audit-logs page guarantees no immutability, defaults to a
+mutable DB record under `retention_days: 365`, makes WORM conditional on the
+customer enabling **S3 Object Lock**, and names no compliance regime at all.
+
+Judgment call, flagged for the human: I classified this **soft**, not hard.
+Reasoning — it is the same marketing-overstates-docs pattern as the tier-scope
+discrepancy already recorded soft on this page, and HMAC tamper-*evidence* plus
+optional customer WORM is a coherent design that "immutable" oversells rather
+than contradicts. Classifying it hard would leave `Status: Unresolved` and block
+the commit gate by design. **If you read the index's bare "immutable" as an
+unqualified product claim, it is hard** — the page says so inline and it is a
+one-line change to re-flag. Practical consequence recorded either way: if WORM
+audit retention is a control you assert to an examiner, your S3 Object Lock
+config is doing the work, not a Bifrost feature.
+
+### Sources cached
+
+- `raw/sources/2026-08-22--deepkeep--footer-compliance-badges.md`
+- `raw/sources/2026-08-22--signoz--pricing-table-feature-tiers.md`
+- `raw/sources/2026-08-22--bifrost--benchmark-methodology-and-audit-logs.md`

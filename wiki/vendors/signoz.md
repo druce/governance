@@ -169,8 +169,10 @@ does not immediately strand your telemetry.
   this is the wrong category of product entirely — see
   [microsoft-sentinel](microsoft-sentinel.md), [splunk](splunk.md),
   [google-secops](google-secops.md). Also an anti-fit for a small team with no
-  appetite to run ClickHouse, and for anyone who needs the enterprise controls
-  (SSO/SAML) at a small footprint, since those start at $4,000/mo.
+  appetite to run ClickHouse, and — critically — for anyone who needs **audit
+  logs, custom RBAC roles or multi-tenancy**, since all three are marked
+  *COMING SOON* on the Enterprise tier and therefore ship at no price today
+  (checked 2026-08-22).
 
 ## Known weaknesses / gotchas
 
@@ -180,14 +182,26 @@ does not immediately strand your telemetry.
   licence. The `ee/` tree includes **`authn`, `authz`, `auditor`, `anomaly`,
   `gateway`, `licensing` and `querier`** — i.e. authentication, authorization,
   audit logging and anomaly detection are the paid side. GitHub reports the repo
-  licence as "NOASSERTION" for this reason. Budget for Enterprise if you need
-  SSO/SAML and audit trails.
+  licence as "NOASSERTION" for this reason. **But note what `ee/auditor` is not:**
+  code in the repository is not evidence a feature ships — SigNoz's own pricing
+  table marks Audit Logs *COMING SOON* even on Enterprise (see below). Follow the
+  price list, not the directory tree.
 - **Not a SIEM** — restated because it is the most likely way to misuse this page.
   No detection rules, no correlation content, no case management, no SOAR, no UEBA.
 - **Still pre-1.0** at v0.137.1 (2026-08-14), with ~1,500 open issues. Release
   cadence is weekly, which is a strength and a churn risk.
-- **SSO/SAML is gated behind the $4,000/mo Enterprise minimum**, a steep step from
-  the $49/mo Teams tier for what most regulated firms consider a baseline control.
+- **Audit logs do not exist yet, at any price.** The pricing table marks
+  **Audit Logs**, **Finer RBAC with custom roles** and **Multi-tenancy** as
+  *COMING SOON* on the **Enterprise** tier (checked 2026-08-22) — so the
+  $4,000/mo minimum does not currently buy an audit trail. For a regulated firm
+  this is the single most important line on the page: if you need to evidence who
+  looked at which telemetry, SigNoz cannot do it today, and there is no published
+  date. Ask for a commitment in writing before it becomes a control assumption.
+- **Access control tiers better than you might expect, though.** Plain **SSO is on
+  all three tiers including the free Community edition**, and **SAML starts at the
+  $49/mo Teams tier** — not at Enterprise. The $4,000/mo minimum buys dedicated
+  environments, BYOC, support and volume terms; it is not the price of admission
+  for basic single sign-on.
 - **Certifications are claimed on the website, not evidenced.** SOC 2 Type II and
   HIPAA are asserted; no report period, auditor or trust-centre artefact was
   retrieved. Verify before relying on them.
@@ -197,8 +211,12 @@ does not immediately strand your telemetry.
 ## Compliance & FS traction
 
 Website claims **SOC 2 Type II** and **HIPAA**, with SSO/SAML, query API keys and
-US/EU/India data residency. No FedRAMP, no ISO 27001 found. **No named
-financial-services customers** and no FS case studies located —
+US/EU/India data residency. No FedRAMP, no ISO 27001 found. Note the gap between
+that compliance posture and the feature table: SigNoz markets a SOC 2 Type II
+while its own **Audit Logs** row reads *COMING SOON* on every tier — its
+certification covers SigNoz's operation of the service, not your ability to
+produce an access audit trail out of it. **No named financial-services
+customers** and no FS case studies located —
 `fs_traction: unverified`. Nothing about the product assumes enterprise scale in
 the negative sense: a mid-size firm can run it.
 
@@ -207,9 +225,13 @@ the negative sense: a mid-size firm can run it.
 Community Edition free (MIT core). **Teams Cloud from $49/mo** (site notes a cut
 from $199), usage-based: **$0.30/GB ingested for logs**, **$0.30/GB for traces**,
 **$0.10 per million metric samples**; the $49 includes roughly 163 GB of
-logs/traces or ~490M metric samples. **Enterprise from $4,000/mo minimum**, adding
-SSO/SAML, dedicated support, volume discounts, BAAs, migration assistance and an
-SLA. Startups under three years old with <30 staff and <$6M raised get 50% off.
+logs/traces or ~490M metric samples. Teams also carries **SAML**; plain **SSO is
+available on every tier, Community included**. **Enterprise from $4,000/mo
+minimum**, adding dedicated environments, bring-your-own-cloud or self-host-with-
+support, dedicated support, volume discounts, BAAs, migration assistance and an
+SLA — but *not* audit logs, custom RBAC roles or multi-tenancy, all three of
+which are marked *COMING SOON* (checked 2026-08-22). Startups under three years
+old with <30 staff and <$6M raised get 50% off.
 
 ## Competitors / alternatives
 
@@ -231,6 +253,9 @@ other obvious OSS alternative and has no page here.
   Raised in `taxonomy-gaps.md`; flagged for the human.
 - SOC 2 Type II report period and auditor; HIPAA attestation basis. Claimed on the
   site, not evidenced.
+- **Ship date for Audit Logs, Finer RBAC and Multi-tenancy.** All three are
+  *COMING SOON* on Enterprise with no published timeline. For a regulated buyer
+  this is the gating question, not a nice-to-have.
 - Whether any funding has closed since 2023-09 — nothing public, and the gap is
   large enough to matter for vendor-risk assessment.
 - Headcount and cloud-revenue signal; no reliable figure found.
@@ -245,7 +270,7 @@ other obvious OSS alternative and has no page here.
 ## Sources
 
 - [SigNoz/signoz (GitHub repo, LICENSE, `ee/` tree via API)](https://github.com/SigNoz/signoz) — fetched 2026-08-16 — supports: created 2021-01-03, 31,847 stars / 2,426 forks / 1,509 open issues, v0.137.1 (2026-08-14), MIT-core-plus-`ee/` licence split and the contents of `ee/`; confidence: high (primary, machine-read).
-- [SigNoz pricing](https://signoz.io/pricing/) — fetched 2026-08-16 — supports: $0.30/GB logs and traces, $0.10/M metric samples, $49/mo Teams, $4,000/mo Enterprise minimum, retention options, SSO/SAML tiering, BYOC/self-hosted-with-support, startup discount; confidence: high (vendor's own price list).
+- [SigNoz pricing](https://signoz.io/pricing/) — fetched 2026-08-16, **re-read row by row 2026-08-22** — supports: $0.30/GB logs and traces, $0.10/M metric samples, $49/mo Teams, $4,000/mo Enterprise minimum, retention options, BYOC/self-hosted-with-support, startup discount; and the corrected feature tiering — SSO on all three tiers, SAML on Teams and Enterprise, Audit Logs / Finer RBAC with custom roles / Multi-tenancy all *COMING SOON* on Enterprise; confidence: high (vendor's own price list). Cached: `raw/sources/2026-08-22--signoz--pricing-table-feature-tiers.md`.
 - [SigNoz homepage](https://signoz.io/) — fetched 2026-08-16 — supports: OpenTelemetry-native positioning, ClickHouse backend, APM/logs/traces/infra scope, PromQL/ClickHouse querying, OpAmp pipelines, LLM observability, MCP server and "Noz", SOC 2 / HIPAA claims, US/EU/India regions, competitive framing vs Datadog/New Relic/Grafana/Dynatrace; confidence: medium (vendor marketing).
 - [We've raised $6.5M to build the future of open source observability (SigNoz blog)](https://signoz.io/blog/signoz-funding/) — fetched 2026-08-16 — supports: $6.5M total, $5.4M round, SignalFire lead, YC lineage, founders; confidence: high (primary).
 - [SigNoz raises $5.4 Mn in a new round (Entrackr, 2023-09)](https://entrackr.com/2023/09/signoz-raises-5-4-mn-in-a-new-round/) — fetched 2026-08-16 — supports: independent corroboration of the 2023-09-28 round, investor list including Tom Preston-Werner; confidence: medium (press).
@@ -253,3 +278,4 @@ other obvious OSS alternative and has no page here.
 ## History
 
 - [2026-08-16] Page created and researched in one pass (user-requested addition, not a seed/CSV row). Filed `siem-soc` as requested with an explicit scope caveat — SigNoz is observability/enterprise logging, not a SIEM (no detection content, no case management, no SOAR); cross-listed to `llm-observability` on the strength of its OTel GenAI tracing. Established: independent open-core, ~$6.5M raised, last round 2023-09-28 (SignalFire), no M&A; MIT core with `ee/` (authn/authz/auditor/anomaly) under a separate enterprise licence; SSO/SAML behind a $4,000/mo minimum. Category-fit question raised in `taxonomy-gaps.md`. 1 source cached.
+- [2026-08-22] **Correction (pricing tiers).** Two claims from the 2026-08-16 build were wrong; both came from a summarized read of the pricing page rather than the feature table, and both drove buying advice. (1) The page said SSO/SAML was "gated behind the $4,000/mo Enterprise minimum, a steep step from the $49/mo Teams tier" — in fact **SSO is on all three tiers including free Community, and SAML starts at Teams ($49/mo)**. (2) The page advised budgeting for Enterprise "if you need SSO/SAML and audit trails" — in fact **Audit Logs, Finer RBAC with custom roles and Multi-tenancy are all marked *COMING SOON* on Enterprise**, so no tier buys an audit trail today. Re-read https://signoz.io/pricing/ row by row on 2026-08-22 and corrected the anti-fit line, the open-core bullet, the weaknesses bullets, Compliance and Commercial. Also recorded that the `ee/auditor` package existing in the repo is not evidence the feature ships. The `siem-soc` filing and the observability-not-a-SIEM scope caveat are unchanged and remain correct. Source cached.
