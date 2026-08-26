@@ -2647,3 +2647,69 @@ written to either page. Both pages left unchanged.
 
 Registered all 11 in `survey-v2.csv`, the six affected category pages (vendor lists +
 survey answer options), and `index.md`.
+
+## [2026-08-26] research | live SurveyMonkey diff — 15 vendors added
+
+The live instrument (`AI Governance & Security Stack — CTO Usage Survey`,
+SurveyMonkey preview link supplied by the human) has drifted from `survey-v2.csv`:
+people have been adding products directly in SurveyMonkey. Crawled all 27 pages of
+the preview and diffed **263 survey products against 247 wiki vendor pages**.
+
+**Method.** The preview renders the survey in an inner iframe and each question is a
+full page POST, so the crawl navigated to the inner frame URL directly and
+accumulated each page's matrix row labels into `localStorage` (which survives
+navigation) before clicking Next. Raw capture: `reports/survey-scan-2026-08-26/raw-capture.json`.
+
+**Result: 41 rows did not match a wiki page. 26 were name variants** of pages that
+already exist — "ELK / Elastic" → `elastic`, "CyberArk / Idira (Palo Alto)" →
+`cyberark`, "Solo.io agentgateway" → `agentgateway`, "SplxAI / SPLX (Zscaler)" →
+`splxai`, "Palo Alto Cortex XSIAM"/"Cortex AgentiX" → `palo-alto-networks`,
+"CrowdStrike Charlotte AI" → `crowdstrike`, and so on. **15 were genuine gaps**, all
+added:
+
+| Vendor | Category | Note |
+|---|---|---|
+| dope-security | network-security-sase (+dlp) | on-device SSE; inspection never leaves the endpoint |
+| dnsfilter | network-security-sase | protective DNS — **weaker control than the SSEs it sits beside** |
+| rapid7 | siem-soc | mid-market VM+SIEM+MDR bundle; Jana activist sale pressure |
+| crogl | ai-soc-analysts | "knowledge engine"; ex-Splunk/Databricks founders |
+| d3-security | ai-soc-analysts (+siem-soc) | 2002 SOAR vendor rebuilt agentic; 800+ integrations; self-hostable |
+| sekoia | ai-soc-analysts (+siem-soc) | the EU-sovereignty option; Bpifrance-backed |
+| qevlar-ai | ai-soc-analysts | best-referenced European entrant; SOC+vuln convergence |
+| keeper | secrets-management (+identity-access) | zero-knowledge vault → PAM; founder-led |
+| delinea | secrets-management (+2) | TPG-owned Thycotic+Centrify merger — four legacy names |
+| beyondtrust | secrets-management (+identity-access) | PAM leader; vendor privileged remote access; sale reported |
+| pensar | software-supply-chain (+agent-runtime-security) | **agent-code** security, pre-deployment — a real gap |
+| secureframe | enterprise-grc | third to Vanta/Drata; no round since 2022 |
+| vendict | vendor-risk (+enterprise-grc) | answers inbound questionnaires, not just issues them |
+| frame-security | anti-deepfake | $50M May 2026 launch; product mechanics unverified |
+| outtake | anti-deepfake | agentic takedown; **thinnest evidence base in the batch** |
+
+Three pages carry deliberate warnings rather than assessments: `frame-security` (three
+months out of stealth, no verifiable product detail), `outtake` (founding year,
+location, funding and investors could not be established at all), and `pensar`
+(~10 staff — evaluate, do not standardise). `dnsfilter` carries an explicit scope
+caveat: filing protective DNS beside Zscaler/Netskope invites respondents to report
+equivalent coverage for a control that cannot inspect payloads or separate a
+sanctioned AI tenant from the consumer one.
+
+**Reverse diff — 39 wiki vendors are NOT in the live survey**, including all 11 added
+earlier today (checkmarx, veracode, black-duck, mend-io, hyperproof, centraleyes,
+panorays*, alation, fortinet, trend-micro, mimecast) plus microsoft-defender,
+sentinelone, rubrik, reco, hadrius, and the policy-engine set (open-policy-agent,
+cerbos, oso, authzed, permit-io). *Panorays was already in the survey — the human's
+manual addition is what prompted this pass. The rest are candidates for the survey
+owner to add; the wiki is ahead of the instrument here.
+
+**One data-quality finding for the survey owner:** the AI Gateway question contains a
+row literally labelled `Gateway`, between "Bifrost" and "Kong AI Gateway". It matches
+no vendor and looks like a truncated or accidental entry. Not added as a page.
+
+**Side effect worth noting:** the `vendor_count` frontmatter refresh corrected stale
+values on 12 categories beyond the ones touched here (ai-access-governance 13→18,
+non-human-identity 8→11, llm-observability 14→13, policy-as-code 5→4, and others) —
+these had drifted from the actual vendor lists over previous edits.
+
+Registered all 15 in `survey-v2.csv`, eight category pages (vendor lists + survey
+answer options), `index.md`. Sources cached to `raw/sources/2026-08-26--*`.
+Lint: 0 errors, 27 warns, 2 research-needed — unchanged from baseline.

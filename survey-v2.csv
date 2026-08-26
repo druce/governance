@@ -20,6 +20,8 @@ AI-aware Network Security (SSE/SASE),Cisco (Secure Access),Public (CSCO),,https:
 AI-aware Network Security (SSE/SASE),Cato Networks,Independent; acquired Aim Security (2025),,https://www.catonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/cato-networks.md
 AI-aware Network Security (SSE/SASE),Forcepoint,Francisco Partners (PE),,https://www.forcepoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/forcepoint.md
 AI-aware Network Security (SSE/SASE),Fortinet,NEW 2026-08-26: FortiGate/FortiSASE incumbent; public (NASDAQ: FTNT),,https://www.fortinet.com/,https://github.com/druce/governance/blob/master/wiki/vendors/fortinet.md
+AI-aware Network Security (SSE/SASE),dope.security,"NEW 2026-08-26: on-device 'Fly Direct' SSE — inspection on the endpoint, no vendor data centre in path; independent (Series A 2023)",,https://dope.security/,https://github.com/druce/governance/blob/master/wiki/vendors/dope-security.md
+AI-aware Network Security (SSE/SASE),DNSFilter,"NEW 2026-08-26: protective DNS + content filtering — NOT an SSE; domain-level block only, no payload inspection. Independent (Insight Partners)",,https://www.dnsfilter.com/,https://github.com/druce/governance/blob/master/wiki/vendors/dnsfilter.md
 AI-aware Network Security (SSE/SASE),Other (Please Specify),,,,
 AI Gateway,Portkey (Palo Alto),"Acq. by Palo Alto — announced 2026-04-30, CLOSED 2026-05-29 for $140M cash + replacement awards (per PANW 10-Q, verified 2026-07-27); now the Prisma AIRS AI Gateway. portkey.ai still live under its own brand; standalone SKU availability unconfirmed",,https://portkey.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portkey.md
 AI Gateway,LiteLLM,Independent (OSS),,https://www.litellm.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/litellm.md
@@ -77,6 +79,8 @@ AI Antiphishing/deepfake/social engineering defense,Doppel,Independent,,https://
 AI Antiphishing/deepfake/social engineering defense,Reality Defender,Independent,,https://www.realitydefender.com,https://github.com/druce/governance/blob/master/wiki/vendors/reality-defender.md
 AI Antiphishing/deepfake/social engineering defense,GetReal,Independent (Hany Farid),,https://www.getrealsecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/getreal.md
 AI Antiphishing/deepfake/social engineering defense,Pindrop,Independent; voice-channel specific,,https://www.pindrop.com,https://github.com/druce/governance/blob/master/wiki/vendors/pindrop.md
+AI Antiphishing/deepfake/social engineering defense,Frame Security,"NEW 2026-08-26: AI-social-engineering defence; $50M launch May 2026 (Index, Team8). Product mechanics unverified",,https://www.framesecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/frame-security.md
+AI Antiphishing/deepfake/social engineering defense,Outtake,NEW 2026-08-26: agentic impersonation detection + autonomous takedown; peer of Doppel. Evidence base thin,,https://www.outtake.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/outtake.md
 AI Antiphishing/deepfake/social engineering defense,Other (Please Specify),,,,
 "AI Governance, Model Risk & Compliance",Credo AI,Independent,,https://www.credo.ai,https://github.com/druce/governance/blob/master/wiki/vendors/credo-ai.md
 "AI Governance, Model Risk & Compliance",Holistic AI,Independent (distinct from Paris 'H'),,https://www.holisticai.com,https://github.com/druce/governance/blob/master/wiki/vendors/holistic-ai.md
@@ -186,6 +190,7 @@ SIEM/SOAR/SecOps,Palo Alto Cortex XSIAM,Palo Alto,,https://www.paloaltonetworks.
 SIEM/SOAR/SecOps,CrowdStrike Falcon LogScale,CrowdStrike (former Humio),,https://www.crowdstrike.com/en-us/platform/next-gen-siem/falcon-logscale/,https://github.com/druce/governance/blob/master/wiki/vendors/crowdstrike-logscale.md
 SIEM/SOAR/SecOps,Torq,Independent; SOAR/hyperautomation — overlaps the AI SOC analysts question,,https://torq.io,https://github.com/druce/governance/blob/master/wiki/vendors/torq.md
 SIEM/SOAR/SecOps,SigNoz,"NEW (added 2026-08-16): open-core OpenTelemetry-native observability on ClickHouse — enterprise logging, NOT a SIEM (no detection content/SOAR); also LLM observability",,https://signoz.io,https://github.com/druce/governance/blob/master/wiki/vendors/signoz.md
+SIEM/SOAR/SecOps,Rapid7,NEW 2026-08-26: InsightVM + InsightIDR + MDR bundle; public (NASDAQ: RPD) under activist pressure from Jana to sell,,https://www.rapid7.com/,https://github.com/druce/governance/blob/master/wiki/vendors/rapid7.md
 SIEM/SOAR/SecOps,Other (Please Specify),,,,
 AI SOC analysts,Prophet Security,Independent,,https://www.prophetsecurity.ai,https://github.com/druce/governance/blob/master/wiki/vendors/prophet-security.md
 AI SOC analysts,Dropzone AI,Independent,,https://www.dropzone.ai,https://github.com/druce/governance/blob/master/wiki/vendors/dropzone-ai.md
@@ -195,6 +200,10 @@ AI SOC analysts,Simbian,Independent (seed-stage),,https://www.simbian.ai,https:/
 AI SOC analysts,Artemis Security,NEW: Independent,,https://artemissecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/artemis-security.md
 AI SOC analysts,CrowdStrike Charlotte AI,CrowdStrike (built in-house),,https://www.crowdstrike.com,https://github.com/druce/governance/blob/master/wiki/vendors/crowdstrike.md
 AI SOC analysts,Palo Alto Cortex AgentiX,Palo Alto,,https://www.paloaltonetworks.com,https://github.com/druce/governance/blob/master/wiki/vendors/palo-alto-networks.md
+AI SOC analysts,Crogl,"NEW 2026-08-26: 'knowledge engine' AI SOC analyst; $30M, Menlo-led Series A 2025-03",,https://www.crogl.com/,https://github.com/druce/governance/blob/master/wiki/vendors/crogl.md
+AI SOC analysts,D3 Security (Morpheus),NEW 2026-08-26: 2002-vintage SOAR vendor rebuilt as agentic SOC; 800+ integrations; self-hostable; no disclosed funding,,https://d3security.com/,https://github.com/druce/governance/blob/master/wiki/vendors/d3-security.md
+AI SOC analysts,Sekoia.io,NEW 2026-08-26: European AI-native SOC + first-party threat intel; the EU-sovereignty option (Bpifrance-backed),,https://www.sekoia.io/,https://github.com/druce/governance/blob/master/wiki/vendors/sekoia.md
+AI SOC analysts,Qevlar AI,"NEW 2026-08-26: agentic SOC investigation; $30M Series A 2026-03; Mercedes-Benz, Orange Cyberdefense, Atos",,https://www.qevlar.com/,https://github.com/druce/governance/blob/master/wiki/vendors/qevlar-ai.md
 AI SOC analysts,Other (Please Specify),,,,
 Identity Governance & Visibility (IGA / ISPM),SailPoint,Public (SAIL; re-IPO 2025; Thoma Bravo majority); acquired Entro Security (closed 2026-06-29),,https://www.sailpoint.com,https://github.com/druce/governance/blob/master/wiki/vendors/sailpoint.md
 Identity Governance & Visibility (IGA / ISPM),Saviynt,Independent ($700M KKR round 2025),,https://saviynt.com,https://github.com/druce/governance/blob/master/wiki/vendors/saviynt.md
@@ -214,6 +223,9 @@ Secrets Manager,GCP Secret Manager,Google,,https://cloud.google.com/secret-manag
 Secrets Manager,1Password,SPLIT from bundled row: Independent; acquired Apono (2026-06),,https://1password.com/,https://github.com/druce/governance/blob/master/wiki/vendors/1password.md
 Secrets Manager,Doppler,SPLIT from bundled row: Independent,,https://www.doppler.com/,https://github.com/druce/governance/blob/master/wiki/vendors/doppler.md
 Secrets Manager,Infisical,SPLIT from bundled row: Independent (OSS),,https://infisical.com/,https://github.com/druce/governance/blob/master/wiki/vendors/infisical.md
+Secrets Manager,Keeper Security,"NEW 2026-08-26: zero-knowledge vault → secrets → KeeperPAM; founder-led, Summit Partners minority",,https://www.keepersecurity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/keeper.md
+Secrets Manager,Delinea,NEW 2026-08-26: PAM incumbent (Secret Server); TPG-owned merger of Thycotic + Centrify — four legacy names,,https://delinea.com/,https://github.com/druce/governance/blob/master/wiki/vendors/delinea.md
+Secrets Manager,BeyondTrust,NEW 2026-08-26: PAM leader; strong on vendor/third-party privileged remote access. Francisco Partners majority; sale reported,,https://www.beyondtrust.com/,https://github.com/druce/governance/blob/master/wiki/vendors/beyondtrust.md
 Secrets Manager,Other (Please Specify),,,,
 EDR / XDR,Microsoft Defender XDR,Microsoft,,https://www.microsoft.com/en-us/security/business/endpoint-security/microsoft-defender-endpoint,https://github.com/druce/governance/blob/master/wiki/vendors/microsoft-defender.md
 EDR / XDR,SentinelOne,Public (S),,https://www.sentinelone.com,https://github.com/druce/governance/blob/master/wiki/vendors/sentinelone.md
@@ -275,6 +287,7 @@ Software supply chain,Checkmarx,"NEW 2026-08-26: AppSec/SAST incumbent + ASPM; P
 Software supply chain,Veracode,"NEW 2026-08-26: AppSec incumbent, binary scanning; PE-owned (TA Associates)",,https://www.veracode.com/,https://github.com/druce/governance/blob/master/wiki/vendors/veracode.md
 Software supply chain,Black Duck,"NEW 2026-08-26: SCA + licence compliance (Coverity); carved out of Synopsys 2024-10-01, PE-owned (Clearlake + Francisco Partners)",,https://www.blackduck.com/,https://github.com/druce/governance/blob/master/wiki/vendors/black-duck.md
 Software supply chain,Mend.io,NEW 2026-08-26: SCA with automated remediation (formerly WhiteSource); independent,,https://www.mend.io/,https://github.com/druce/governance/blob/master/wiki/vendors/mend-io.md
+Software supply chain,Pensar,"NEW 2026-08-26: agentic AppSec that writes the patch, plus an AI-AGENT-specific code scanner. Seed-stage (~10 staff)",,https://www.pensarai.com/,https://github.com/druce/governance/blob/master/wiki/vendors/pensar.md
 Software supply chain,Other (Please Specify),,,,
 "Enterprise Governance, Risk & Compliance",OneTrust,Independent,,https://www.onetrust.com,https://github.com/druce/governance/blob/master/wiki/vendors/onetrust.md
 "Enterprise Governance, Risk & Compliance",ServiceNow GRC,NEW (was missing — the wiki's lead option); TYPO FIXED in category name (was 'Enterprize'),,https://www.servicenow.com/products/governance-risk-and-compliance.html,https://github.com/druce/governance/blob/master/wiki/vendors/servicenow.md
@@ -286,6 +299,7 @@ Software supply chain,Other (Please Specify),,,,
 "Enterprise Governance, Risk & Compliance",Drata,NEW: compliance automation; Vanta rival; independent ($2B valuation 2022),,https://drata.com/,https://github.com/druce/governance/blob/master/wiki/vendors/drata.md
 "Enterprise Governance, Risk & Compliance",Centraleyes,NEW 2026-08-26: no-code cyber risk & compliance (formerly CyGov); independent — disclosed funding small/unconfirmed,,https://www.centraleyes.com/,https://github.com/druce/governance/blob/master/wiki/vendors/centraleyes.md
 "Enterprise Governance, Risk & Compliance",Hyperproof,NEW 2026-08-26: compliance operations; independent (Riverwood Capital),,https://hyperproof.io/,https://github.com/druce/governance/blob/master/wiki/vendors/hyperproof.md
+"Enterprise Governance, Risk & Compliance",Secureframe,"NEW 2026-08-26: compliance automation, third to Vanta/Drata; $79M, no round since 2022",,https://secureframe.com/,https://github.com/druce/governance/blob/master/wiki/vendors/secureframe.md
 "Enterprise Governance, Risk & Compliance",Other (Please Specify),,,,
 Vendor Risk Rating & Monitoring,ProcessUnity,Marlin Equity (PE); merged CyberGRX,,https://www.processunity.com/,https://github.com/druce/governance/blob/master/wiki/vendors/processunity.md
 Vendor Risk Rating & Monitoring,SecurityScorecard,Independent; acquired HyperComply (2025),,https://securityscorecard.com/,https://github.com/druce/governance/blob/master/wiki/vendors/securityscorecard.md
@@ -295,4 +309,5 @@ Vendor Risk Rating & Monitoring,UpGuard,Independent,,https://www.upguard.com/,ht
 Vendor Risk Rating & Monitoring,Venminder (Ncontracts),"NEW: TPRM assessments; acq. by Ncontracts (2024, Hg buyout)",,https://www.venminder.com/,https://github.com/druce/governance/blob/master/wiki/vendors/venminder.md
 Vendor Risk Rating & Monitoring,Whistic,NEW: questionnaire automation / vendor-profile network; independent (JMI Equity),,https://www.whistic.com/,https://github.com/druce/governance/blob/master/wiki/vendors/whistic.md
 Vendor Risk Rating & Monitoring,Panorays,NEW 2026-08-26: TPRM combining outside-in ratings with questionnaire automation; independent; DORA/NIS2 mapping,,https://panorays.com/,https://github.com/druce/governance/blob/master/wiki/vendors/panorays.md
+Vendor Risk Rating & Monitoring,Vendict,"NEW 2026-08-26: GenAI security-questionnaire automation — answers inbound questionnaires, not just issues them",,https://vendict.com/,https://github.com/druce/governance/blob/master/wiki/vendors/vendict.md
 Vendor Risk Rating & Monitoring,Other (Please Specify),,,,

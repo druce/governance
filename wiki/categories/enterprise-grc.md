@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-governance-platform, vendor-risk]
 incumbent_coverage: []
-vendor_count: 10
+vendor_count: 11
 maps_to_seed_doc: Enterprise GRC
 maps_to_seed_csv: Enterprize GRC
 last_verified: 2026-07-27
@@ -58,6 +58,7 @@ controls is recorded, attested, and audited.
 - [drata](../vendors/drata.md) — Vanta's closest competitor in compliance automation; continuous control monitoring across 14+ frameworks.
 - [hyperproof](../vendors/hyperproof.md) — "compliance operations": a real risk register and cross-framework control library sitting deliberately between compliance automation and heavyweight GRC. Chartis Category Leader 2026 in eGRC, TPRM and IT Risk. (added 2026-08-26)
 - [centraleyes](../vendors/centraleyes.md) — no-code cyber risk and compliance for smaller firms; time-to-value is the whole pitch. Small and thinly-funded on public record — diligence the vendor before making it the system of record. (added 2026-08-26)
+- [secureframe](../vendors/secureframe.md) — the third name in compliance automation beside Vanta and Drata; guided onboarding aimed at non-technical buyers. $79M raised with **no round since 2022** against two much better-capitalised rivals. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -82,7 +83,7 @@ record for risk, controls, policy, and audit (and would you extend it to cover A
 risk)?
 
 **Answer options.** ServiceNow GRC; Archer; LogicGate; Optro (formerly AuditBoard);
-Onspring; OneTrust; Vanta; Drata; Hyperproof; Centraleyes; Other (Please Specify).
+Onspring; OneTrust; Vanta; Drata; Hyperproof; Centraleyes; Secureframe; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

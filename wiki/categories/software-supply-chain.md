@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [promotion-gates]
 incumbent_coverage: []
-vendor_count: 15
+vendor_count: 16
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
 last_verified: 2026-06-28
@@ -73,6 +73,10 @@ to already own, and three of the four are PE-held):
 - [black-duck](../vendors/black-duck.md) — SCA plus the deepest open-source **licence-compliance** knowledge base, and the M&A software-audit services business; also owns Coverity (SAST). Carved out of Synopsys 2024-10-01.
 - [mend-io](../vendors/mend-io.md) — SCA with a remediation-first pitch; maintains the Renovate dependency-update bot (formerly WhiteSource). Independent.
 
+Agent-code security — the shift-left counterpart to [agent-runtime-security](agent-runtime-security.md):
+
+- [pensar](../vendors/pensar.md) — agentic scanner that writes the patch, plus a scanner for vulnerability classes conventional SAST does not model (unsafe tool usage, insecure code execution, memory manipulation in **agent** code). Seed-stage, ~10 staff — evaluate, do not standardise. (added 2026-08-26)
+
 ## Consolidation / M&A dynamics
 
 No specific seed M&A flags for this category, but it's an active and crowded space
@@ -111,6 +115,7 @@ or evaluate, including for AI-generated code?
 - Veracode
 - Black Duck (formerly Synopsys Software Integrity)
 - Mend.io (formerly WhiteSource)
+- Pensar
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

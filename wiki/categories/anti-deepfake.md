@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [comms-surveillance]
 incumbent_coverage: []
-vendor_count: 5
+vendor_count: 7
 maps_to_seed_doc: Security Awareness / Anti-Deepfake
 maps_to_seed_csv: AI Antiphishing/deepfake/social engineering defense
 last_verified: 2026-06-28
@@ -56,6 +56,8 @@ if an employee is talked into bypassing it by a convincing deepfake).
 - [reality-defender](../vendors/reality-defender.md) — real-time deepfake detection across audio, video, and images.
 - [getreal](../vendors/getreal.md) — synthetic-media / deepfake detection aimed at enterprise comms and meetings.
 - [pindrop](../vendors/pindrop.md) — voice authentication and deepfake-voice detection (call centers, phone channels).
+- [frame-security](../vendors/frame-security.md) — AI-powered social engineering defence; launched May 2026 with $50M (Index, Team8, Wiz CEO). Well funded, **product mechanics unverified** — a briefing, not yet a procurement. (added 2026-08-26)
+- [outtake](../vendors/outtake.md) — agentic impersonation detection with **autonomous takedown**; direct peer of [doppel](../vendors/doppel.md), whose analyst-driven enforcement it claims to beat on latency. Evidence base thin — compare head-to-head before committing. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -83,6 +85,8 @@ does your firm use or evaluate?
 - Reality Defender
 - GetReal
 - Pindrop
+- Frame Security
+- Outtake
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

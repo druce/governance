@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 13
 maps_to_seed_doc: LLM Observability & Evaluation
 maps_to_seed_csv: LLM Observability & Eval
 last_verified: 2026-06-28

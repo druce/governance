@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [sspm, agent-runtime-security, ai-access-governance]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 15
 maps_to_seed_doc: AI-SPM / Agent Governance
 maps_to_seed_csv: AI-SPM
 last_verified: 2026-06-28

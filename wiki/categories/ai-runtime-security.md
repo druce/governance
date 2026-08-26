@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-gateway, ai-red-teaming, agent-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 15
 maps_to_seed_doc: AI Runtime Security (AI Firewall)
 maps_to_seed_csv: AI Runtime Security / AI Firewall
 last_verified: 2026-06-28

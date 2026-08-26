@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [mcp-gateway, policy-as-code, tool-identity-integration]
 incumbent_coverage: []
-vendor_count: 6
+vendor_count: 5
 maps_to_seed_doc: Authorization Engine (Agent / Tool)
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-06-28

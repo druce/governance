@@ -50,6 +50,7 @@ SOAR / automation cross-listed (modern, AI-leaning automation that overlaps the 
 
 Enterprise-logging side only (telemetry backend, **no detection content**):
 
+- [rapid7](../vendors/rapid7.md) — InsightVM + InsightIDR + MDR bundled for the mid-market; the "one vendor, no SOC" option. Public (NASDAQ: RPD) but under activist pressure from Jana Partners to sell itself — price the ownership uncertainty into a multi-year contract. (added 2026-08-26)
 - [signoz](../vendors/signoz.md) — open-core, OpenTelemetry-native logs/metrics/traces on ClickHouse; self-hostable Datadog alternative. Answers the *logging* half of this category, not the SIEM half — no rule packs, correlation, case management or SOAR. Cross-listed to [llm-observability](llm-observability.md).
 
 ## Consolidation / M&A dynamics
@@ -70,7 +71,7 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Question.** Which SIEM / SOAR / SecOps platform(s) is your firm currently using or evaluating?
 
-**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Torq; SigNoz; Other (Please Specify).
+**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Rapid7; Torq; SigNoz; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

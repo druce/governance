@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [authorization-engine, promotion-gates]
 incumbent_coverage: []
-vendor_count: 5
+vendor_count: 4
 maps_to_seed_doc: Policy-as-Code
 maps_to_seed_csv: (OPA appears in MCP/Agent)
 last_verified: 2026-06-28

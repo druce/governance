@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [identity-access, secrets-management, tool-identity-integration, identity-governance]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 11
 maps_to_seed_doc: (folded into Identity & Access + Tool Identity)
 maps_to_seed_csv: Non-Human Identity / Agent Identity Governance
 last_verified: 2026-06-28

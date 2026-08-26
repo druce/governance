@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 9
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28

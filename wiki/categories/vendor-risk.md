@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [enterprise-grc, third-party-ai-apps]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 9
 maps_to_seed_doc: Third-Party / Vendor Risk + Cyber Ratings
 maps_to_seed_csv: Vendor Risk
 last_verified: 2026-07-27
@@ -64,6 +64,7 @@ feeds:
 - [venminder](../vendors/venminder.md) — TPRM assessment platform + analyst-performed vendor reviews; FI-heavy; part of Ncontracts since 2024.
 - [whistic](../vendors/whistic.md) — security-questionnaire automation and vendor-profile exchange network; AI-assisted assessments.
 - [panorays](../vendors/panorays.md) — combines both halves in one tool: outside-in ratings plus questionnaire workflow, with DORA/NIS2 regulatory mapping and LLM-assisted questionnaire autofill. Forrester Wave Leader, Q2 2026. (added 2026-08-26)
+- [vendict](../vendors/vendict.md) — GenAI questionnaire automation that works in **both directions**: it drafts the answers to inbound allocator/counterparty questionnaires from the firm's own compliance corpus, not just the ones you issue. The half of this category most alternative managers actually feel. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -88,7 +89,7 @@ using AI / training on your data" signals.
 use to assess and monitor suppliers (including AI vendors)?
 
 **Answer options.** ProcessUnity; SecurityScorecard; BitSight; Black Kite; UpGuard;
-Venminder (Ncontracts); Whistic; Panorays; Other (Please Specify).
+Venminder (Ncontracts); Whistic; Panorays; Vendict; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [non-human-identity, identity-access]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 11
 maps_to_seed_doc: Secrets Manager
 maps_to_seed_csv: Secrets Manager
 last_verified: 2026-06-28
@@ -51,6 +51,13 @@ Developer-friendly / modern:
 - [doppler](../vendors/doppler.md) — developer-centric secrets platform (SecretOps) with environment syncing.
 - [infisical](../vendors/infisical.md) — open-source-rooted secrets management platform.
 
+PAM vendors — the privileged-access half of this problem, where the vault is one
+component of session control, rotation and privilege removal:
+
+- [beyondtrust](../vendors/beyondtrust.md) — PAM leader; **Privileged Remote Access** is the standout, brokering third-party/vendor administrator access with full session recording. Francisco Partners majority; a sale has been reported. Note the December 2024 Remote Support compromise. (added 2026-08-26)
+- [delinea](../vendors/delinea.md) — Secret Server vaulting plus session and endpoint-privilege management; the mid-market CyberArk alternative. TPG-owned merger of Thycotic and Centrify — four legacy names for one vendor. (added 2026-08-26)
+- [keeper](../vendors/keeper.md) — zero-knowledge vault extending from password management into machine secrets and KeeperPAM; founder-led with minority growth equity, so less renewal-pricing pressure than the PE-controlled peers. Materially shallower PAM than the two above. (added 2026-08-26)
+
 Cross-listed (secrets sit adjacent to NHI): [cyberark](../vendors/cyberark.md), [entro-security](../vendors/entro-security.md) (acquired by SailPoint, closed 2026-06-29).
 
 ## Consolidation / M&A dynamics
@@ -71,7 +78,7 @@ The independents are consolidating into platform owners (IBM, Palo Alto), while 
 
 **Question.** Which secrets manager(s) is your firm currently using or evaluating?
 
-**Answer options.** Azure Key Vault; HashiCorp Vault; AWS Secrets Manager; GCP Secret Manager; CyberArk Conjur; 1Password; Doppler; Infisical; Other (Please Specify).
+**Answer options.** Azure Key Vault; HashiCorp Vault; AWS Secrets Manager; GCP Secret Manager; CyberArk Conjur; 1Password; Doppler; Infisical; Keeper Security; Delinea; BeyondTrust; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

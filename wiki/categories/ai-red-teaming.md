@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 16
+vendor_count: 17
 maps_to_seed_doc: (folded into LLM Observability "red-teaming")
 maps_to_seed_csv: AI Red Teaming / Guardrails
 last_verified: 2026-06-28

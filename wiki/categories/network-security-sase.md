@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-access-governance, dlp, enterprise-browser]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 9
 maps_to_seed_doc: Network Security / SASE
 maps_to_seed_csv: AI-aware Network Security (SSE/SASE)
 last_verified: 2026-06-28
@@ -61,7 +61,11 @@ the public internet. Lives at the perimeter of every zone; it's the wall between
 - [cisco](../vendors/cisco.md) — Secure Access; bundled with Cisco's networking and security portfolio.
 - [cato-networks](../vendors/cato-networks.md) — single-vendor SASE built cloud-first; converged networking + security.
 - [forcepoint](../vendors/forcepoint.md) — SSE with a data-security/DLP focus.
-- [fortinet](../vendors/fortinet.md) — FortiGate NGFW + FortiSASE on a single FortiOS/FortiASIC stack; appliance-rooted rather than cloud-first, and therefore the incumbent egress path at a large share of mid-size firms with real offices and colo footprints. (added 2026-08-26)
+
+Architecturally different — same category, materially different control:
+
+- [dope-security](../vendors/dope-security.md) — inverts the model: TLS inspection runs **on the endpoint** and traffic flies direct, so user traffic never traverses a vendor data centre. Managed devices only. Series A-stage. (added 2026-08-26)
+- [dnsfilter](../vendors/dnsfilter.md) — **protective DNS, not an SSE.** Blocks or allows at the domain level before connection; cannot inspect payloads, separate a sanctioned AI tenant from the consumer one, or apply DLP. Cheapest possible shadow-AI control and a much weaker one — do not read it as equivalent coverage. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -95,6 +99,8 @@ use or evaluate to inspect and control traffic to AI services?
 - Cato Networks
 - Forcepoint
 - Fortinet (FortiGate + FortiSASE)
+- dope.security
+- DNSFilter (protective DNS — not full SSE)
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

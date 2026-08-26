@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [dlp, network-security-sase, sspm, ai-spm]
 incumbent_coverage: []
-vendor_count: 13
+vendor_count: 18
 maps_to_seed_doc: AI Access Governance (CASB for AI)
 maps_to_seed_csv: Shadow-AI / Insider risk
 last_verified: 2026-06-28

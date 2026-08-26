@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [enterprise-grc, llm-observability, ai-spm]
 incumbent_coverage: []
-vendor_count: 13
+vendor_count: 14
 maps_to_seed_doc: AI Governance Platform
 maps_to_seed_csv: AI Governance, Model Risk & Compliance
 last_verified: 2026-06-30
