@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [promotion-gates]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 15
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
 last_verified: 2026-06-28
@@ -64,6 +64,15 @@ zone** (production/build systems); also reinforces [promotion-gates](promotion-g
 - [github-advanced-security](../vendors/github-advanced-security.md) — native code/secret/dependency scanning in GitHub.
 - [gitlab](../vendors/gitlab.md) — GitLab Ultimate's built-in security scanning across the DevOps platform.
 
+AppSec incumbents (added 2026-08-26 — the largest coverage gap found by the
+competitor scan; all four are the names a large in-house dev team is most likely
+to already own, and three of the four are PE-held):
+
+- [checkmarx](../vendors/checkmarx.md) — SAST incumbent; Checkmarx One platform plus an ASPM correlation layer. PE-owned (Hellman & Friedman); self-hosting is first-class.
+- [veracode](../vendors/veracode.md) — SaaS AppSec incumbent; unique for **binary/compiled-artifact scanning** of software you have no source for. PE-owned (TA Associates).
+- [black-duck](../vendors/black-duck.md) — SCA plus the deepest open-source **licence-compliance** knowledge base, and the M&A software-audit services business; also owns Coverity (SAST). Carved out of Synopsys 2024-10-01.
+- [mend-io](../vendors/mend-io.md) — SCA with a remediation-first pitch; maintains the Renovate dependency-update bot (formerly WhiteSource). Independent.
+
 ## Consolidation / M&A dynamics
 
 No specific seed M&A flags for this category, but it's an active and crowded space
@@ -98,6 +107,10 @@ or evaluate, including for AI-generated code?
 - JFrog
 - GitHub Advanced Security
 - GitLab Ultimate
+- Checkmarx
+- Veracode
+- Black Duck (formerly Synopsys Software Integrity)
+- Mend.io (formerly WhiteSource)
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

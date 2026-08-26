@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dspm, ai-access-governance, network-security-sase]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 13
 maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-30
@@ -74,6 +74,7 @@ Platform / incumbent DLP:
   Microsoft shops (also [dspm](dspm.md)).
 - [netskope](../vendors/netskope.md) — inline DLP within its SSE/SASE platform.
 - [forcepoint](../vendors/forcepoint.md) — long-standing enterprise DLP (endpoint/network/email).
+- [mimecast](../vendors/mimecast.md) — email security plus insider-risk DLP (Code42/Incydr) and collaboration capture (Aware); also holds the SEC 17a-4 / FINRA books-and-records archive at many registered advisers, which makes it unusually sticky. Watches file and message movement, **not** prompt content. (added 2026-08-26)
 - [cyera](../vendors/cyera.md) — DSPM-led vendor extending into DLP/egress controls.
 - [teleskope](../vendors/teleskope.md) — DSPM-led with native remediation (redact/quarantine/block) and external-LLM egress prevention (primary in [dspm](dspm.md)).
 
@@ -103,7 +104,7 @@ prompt-aware egress story; classic DLP increasingly ships inside SASE/SSE suites
 including controls over data leaving via AI prompts?
 
 **Answer options.** Cyberhaven, Nightfall AI, MIND, Prompt Security, Lasso Security,
-Microsoft Purview DLP, Netskope DLP, Forcepoint, Cyera, Other (Please Specify).
+Microsoft Purview DLP, Netskope DLP, Forcepoint, Cyera, Mimecast (incl. Code42/Incydr), Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

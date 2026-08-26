@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-access-governance, dlp, enterprise-browser]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 8
 maps_to_seed_doc: Network Security / SASE
 maps_to_seed_csv: AI-aware Network Security (SSE/SASE)
 last_verified: 2026-06-28
@@ -61,6 +61,7 @@ the public internet. Lives at the perimeter of every zone; it's the wall between
 - [cisco](../vendors/cisco.md) — Secure Access; bundled with Cisco's networking and security portfolio.
 - [cato-networks](../vendors/cato-networks.md) — single-vendor SASE built cloud-first; converged networking + security.
 - [forcepoint](../vendors/forcepoint.md) — SSE with a data-security/DLP focus.
+- [fortinet](../vendors/fortinet.md) — FortiGate NGFW + FortiSASE on a single FortiOS/FortiASIC stack; appliance-rooted rather than cloud-first, and therefore the incumbent egress path at a large share of mid-size firms with real offices and colo footprints. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -93,6 +94,7 @@ use or evaluate to inspect and control traffic to AI services?
 - Cisco (Secure Access)
 - Cato Networks
 - Forcepoint
+- Fortinet (FortiGate + FortiSASE)
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

@@ -199,3 +199,77 @@ taxonomy change, so it was not done unilaterally.
 Second-order note: this wiki's `software-supply-chain` page says nothing about **models** as a
 supply-chain artifact at all. Whatever is decided above, that page needs a cross-reference — the
 "where did this artifact come from" question is the same question in both places.
+
+---
+
+## [2026-08-26] Two gaps exposed by the competitor scan — both need a human decision
+
+Source: `reports/competitor-scan-2026-08-25/candidates.md`. Eleven candidates from that
+scan were added as vendor pages on 2026-08-26; the two items below are **category**
+questions the scan surfaced that could not be resolved by adding a vendor to an
+existing slug.
+
+### 1. Investor AML / KYC screening — a real gap, but the scan named the wrong vendors
+
+The scan's Tier A put **Feedzai**, **Verafin** and **ThetaRay** forward as its highest
+CTO-relevance finding and proposed a new `financial-crime` category. **All three were
+rejected on buyer-profile grounds** and no category was created:
+
+- **Feedzai** — fraud and financial-crime decisioning for retail banks, corporate banks,
+  fintechs and PSPs. Real-time payment-transaction scoring.
+- **Verafin** — BSA/AML for regional banks and credit unions in North America. Nasdaq-owned.
+- **ThetaRay** — unsupervised anomaly detection over cross-border payments and
+  correspondent banking corridors.
+
+None of these sells into a hedge fund or asset manager. They monitor **payment flows**,
+and an alternative manager does not operate one. The scan's frequency score was low
+(all three came from a single source, NICE Actimize) and its CTO score was high; the
+CTO score was the wrong one.
+
+**But the underlying gap is real, and it is a different gap.** What an alternative
+manager actually faces is **investor-side AML/KYC**: sanctions and PEP screening,
+beneficial-ownership identification, and ongoing monitoring of subscribers to the fund
+— pushed up the agenda by FinCEN's rule extending AML/CFT programme requirements to
+SEC-registered investment advisers and ERAs. The vendors in that space are names like
+ComplyAdvantage, LSEG World-Check, Fenergo and Napier, none of which the scan surfaced
+and none of which has a page here. It is also frequently **outsourced to the fund
+administrator**, which is why it may not be a CTO purchase at all.
+
+**Open questions for the human:**
+- Is investor AML/KYC in scope for a wiki about *AI* governance and security? The AI
+  angle is real (screening is heavily ML-driven, and false-positive reduction is the
+  main AI pitch) but it is a compliance-function purchase, not a CTO one.
+- If in scope, the slug should be something like `investor-aml-kyc` in the `governance`
+  layer, `firm-type-specific` tier — **not** the scan's proposed `financial-crime`,
+  which would drag in the bank/payments vendors that were just rejected.
+- Confirm current status and effective date of the FinCEN IA AML rule before writing
+  any page that leans on it — it has been subject to proposed delay.
+
+**Not done unilaterally.** Creating a category is a taxonomy change (CLAUDE.md §5).
+
+### 2. Security-awareness / human risk management has no slug
+
+**KnowBe4** scored 6 in the scan with the note "no current category; would need a
+taxonomy decision." That is correct, and the decision is still open.
+
+The case for a slug: security-awareness training is close to universal at regulated
+firms, is an explicit SEC examination talking point, and is commonly required by cyber
+insurers. The category has also moved — vendors now market **human risk management**
+(per-user risk scoring, adaptive training, phishing simulation) rather than annual
+training modules, and AI has changed both sides of it: AI-generated phishing on the
+attack side, AI-personalised training on the defence side. There is a genuine
+adjacency to [anti-deepfake](wiki/categories/anti-deepfake.md).
+
+The case against: it is a training purchase, only loosely connected to the AI
+governance thesis, and the wiki would be committing to a category to hold essentially
+one or two vendors.
+
+Complication worth noting: **[mimecast](wiki/vendors/mimecast.md) (added 2026-08-26) is
+already assembling this** — Elevate Security (per-user risk scoring, Jan 2024), Code42
+(insider risk), Aware (collaboration capture) — and markets the bundle as human risk
+management. So the category, if created, would immediately cross-list a vendor filed
+under `dlp`. That is an argument that HRM is a *packaging* trend rather than a buying
+category, and that the status quo is defensible.
+
+**Recommendation:** hold. Revisit if survey responses show firms shopping for human
+risk management as a line item distinct from both DLP and awareness training.

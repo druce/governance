@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [siem-soc, network-security-sase]
 incumbent_coverage: []
-vendor_count: 4
+vendor_count: 5
 maps_to_seed_doc: EDR / XDR
 maps_to_seed_csv: EDR
 last_verified: 2026-06-28
@@ -57,6 +57,7 @@ consequences of a compromised endpoint are highest.
 - [microsoft-defender](../vendors/microsoft-defender.md) — Defender XDR; bundled with M365 E5, the default for Microsoft-centric shops.
 - [sentinelone](../vendors/sentinelone.md) — Singularity platform; autonomous EDR/XDR, also pushing into AI/runtime security.
 - [palo-alto-networks](../vendors/palo-alto-networks.md) — Cortex XDR; part of the broader Palo Alto platform (NGFW, Prisma, Cortex SIEM).
+- [trend-micro](../vendors/trend-micro.md) — Trend Vision One; XDR fused with attack-surface risk management, strong hybrid/legacy-server coverage, and the only mainstream non-US-listed option (TSE 4704). PE take-private reported Feb 2025 and still unresolved. (added 2026-08-26)
 
 ## Consolidation / M&A dynamics
 
@@ -84,6 +85,7 @@ detection and response?
 - Microsoft Defender XDR
 - SentinelOne
 - Palo Alto Cortex XDR
+- Trend Micro (Trend Vision One)
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

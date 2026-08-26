@@ -2498,3 +2498,152 @@ config is doing the work, not a Bifrost feature.
 - `raw/sources/2026-08-22--deepkeep--footer-compliance-badges.md`
 - `raw/sources/2026-08-22--signoz--pricing-table-feature-tiers.md`
 - `raw/sources/2026-08-22--bifrost--benchmark-methodology-and-audit-logs.md`
+
+## [2026-08-24] compare | agent-memory-landscape
+Query "top agent memory SaaS products and modules" filed back as
+wiki/comparisons/agent-memory-landscape.md. Landscape scan (web, secondary
+sources): dedicated SaaS (Mem0, Zep/Graphiti, Letta, Cognee, Supermemory,
+Honcho, Memobase), hyperscaler managed (AWS AgentCore Memory GA 2025-10,
+Vertex AI Memory Bank GA, Cloudflare Agent Memory private beta), and
+framework-embedded modules (LangMem, CrewAI, LlamaIndex, OpenAI memory,
+Claude memory tool, Redis Agent Memory Server). No agent-memory category in
+taxonomy.yaml yet — flagged as open question; no vendor pages created;
+sources not cached to raw/sources (secondary roundups only).
+
+## [2026-08-24] compare | agent-memory-landscape (addendum)
+Added OSS/research systems section per human request: Hindsight (Vectorize
+OSS, 91.4% LongMemEval), MemPalace (viral OSS, benchmark claims disputed),
+Memora (Microsoft Research, ICML 2026), OpenBrain (small local-first MCP
+memory). None are SaaS — filed in a separate "not SaaS" section with caveats.
+
+## [2026-08-24] compare | vector-database-landscape
+Scoping question ("are Pinecone/Chroma/LanceDB/Vectara/Contextual.ai in scope?")
+filed back as wiki/comparisons/vector-database-landscape.md. Decision: keep the
+D9/Q3 stance — `vector-retrieval` stays a thin situational category with no
+survey question, and Qdrant, Milvus/Zilliz, Chroma, LanceDB, pgvector, S3
+Vectors and turbopuffer get **named on the landscape page rather than stub
+vendor pages**; they add nothing to the governance story weaviate/pinecone
+already carry. Page covers the four market shapes (managed pure-play,
+self-hosted OSS, embedded, "use what you already have"), consolidation
+dynamics, and the four things that actually matter for governance (index is an
+ACL-stripped copy of the corpus; pre-filter not post-filter; embeddings are
+sensitive data; deletion must propagate).
+
+Also updated wiki/categories/vector-retrieval.md ("Also in this space" list,
+M&A note, link to the comparison; last_verified 2026-08-24).
+
+## [2026-08-24] research | pinecone (M&A watch, not a state change)
+Found during the above: Edo Liberty moved CEO → Chief Scientist 2025-09-08 with
+Ash Ashutosh (ex-Actifio/Google) named CEO, and press reporting (The
+Information, via secondary coverage) that Pinecone engaged bankers to explore a
+sale (>$2B speculated; Oracle/IBM/MongoDB/Snowflake floated). **No transaction
+announced** — ownership_state stays `independent`, flagged soft with
+verify_after 2026-11-24. Elastic CEO's "vector databases are a feature, never a
+business" quote recorded as the bear case.
+
+### Sources cached
+- `raw/sources/2026-08-24--pinecone--ceo-change-and-sale-reporting.md`
+- `raw/sources/2026-08-24--qdrant--series-b-announcement.md`
+
+## [2026-08-24] decision | Vectara + Contextual AI left as open questions
+Both are RAG *platforms*, not vector DBs — Vectara leads with hallucination
+detection (HHEM + public leaderboard), Contextual AI with "RAG 2.0" agents into
+banking. Governance-relevant enough to deserve pages, but not verified against
+primary sources yet. Logged as open questions on the landscape page; probable
+homes enterprise-ai-assistant / entitlement-aware-rag (+ llm-observability
+cross-listing for Vectara).
+
+## [2026-08-26] research | competitor-discovery scan via Google Knowledge-Panel carousels
+
+Swept all 236 `wiki/vendors/` pages through Google's Knowledge-Panel "People also
+search for" carousel to surface market peers with no wiki page. Serial, single
+Chrome tab, DOM extraction. Output: `reports/competitor-scan-2026-08-25/`
+(`PLAN.md`, `METHOD.md`, `candidates.md`, one `<category>.jsonl` of raw evidence).
+
+**Yield.** 198/236 vendors (84%) returned no carousel at all; only 32 (14%) produced
+usable peer names. 119 distinct peers surfaced, 55 already wiki vendors, 64 new,
+13 scoring >=8 on the agreed rubric (co-mention frequency / category fit + AI
+relevance / alive-and-independent / hedge-fund-CTO relevance).
+
+**Top candidates:** Centraleyes, Checkmarx, Hyperproof (10); Veracode, Black Duck,
+Feedzai (9); Verafin, ThetaRay, Panorays, SAI360, Sprinto, Mend.io, Imperva (8).
+The financial-crime cluster (Feedzai / Verafin / ThetaRay, all via NICE Actimize)
+is the most audience-relevant find and is under-rated by frequency scoring because
+the wiki has only one vendor in that neighbourhood.
+
+**Decisions.**
+- Method is a *recall aid, not a census*. Carousels are popularity-weighted
+  co-search, not a market map: the SIEM probes never surfaced Microsoft Sentinel,
+  QRadar, Securonix, Devo, Graylog, Panther or Hunters. Nothing from this run is
+  written into `wiki/`; every candidate needs a normal `wiki-research` pass with a
+  cached primary source first. All ownership claims flagged unverified.
+- **The method cannot see the AI-native half of the wiki.** Every vendor in
+  `agent-runtime-security`, `ai-red-teaming`, `ai-runtime-security`, `ai-spm`,
+  `mcp-gateway`, `ai-soc-analysts` and most of `ai-access-governance` returned
+  nothing — no Knowledge Graph entity exists. Do not re-run this expecting coverage
+  there; it is structurally blind to exactly our highest-risk categories.
+- Three extraction bugs were found and fixed mid-run; the third (`innerText`
+  returning empty strings for off-screen carousel tiles) silently produced empty
+  results for precisely the vendors that *do* have carousels, so the first 84
+  vendors were discarded and re-run. Fix documented in `METHOD.md`.
+
+**Follow-up flagged:** Google labels CalypsoAI "Now part of F5" — check
+`wiki/vendors/calypsoai.md` against a primary source.
+
+## [2026-08-26] research | competitor-scan triage — 11 vendors added, 3 Tier A rejected
+
+Reviewed all 26 candidates in `reports/competitor-scan-2026-08-25/candidates.md`
+against one filter: **would a CTO at an alternative investment firm plausibly
+shortlist this?** Scan scores were treated as a hint, not a ranking (CLAUDE.md §7).
+
+**Added (11)** — each researched and sourced the same day, sources cached to
+`raw/sources/2026-08-26--*`:
+
+| Vendor | Category | Why |
+|---|---|---|
+| checkmarx | software-supply-chain | SAST incumbent + ASPM; PE-owned (H&F, $1.15B) |
+| veracode | software-supply-chain | binary scanning of third-party software; PE-owned (TA) |
+| black-duck | software-supply-chain | OSS **licence** compliance + M&A software audits |
+| mend-io | software-supply-chain | SCA + Renovate; the remediation-first option |
+| hyperproof | enterprise-grc | fits the gap between Vanta/Drata and ServiceNow/Archer |
+| centraleyes | enterprise-grc | lightweight GRC for sub-$5B managers |
+| panorays | vendor-risk | ratings + questionnaires in one; DORA/NIS2 mapping |
+| alation | data-access-governance | catalog/metadata layer under entitlement-aware RAG |
+| fortinet | network-security-sase | owns the egress path at many mid-size firms |
+| trend-micro | edr-xdr | category had only 3 vendors; hybrid + non-US-listed option |
+| mimecast | dlp | SEC 17a-4 / FINRA archive + Code42 insider-risk DLP |
+
+Four of these were Tier B in the scan (alation, fortinet, trend-micro, mimecast) and
+were promoted: the scan scored on co-mention frequency, which under-rates incumbents
+that simply fill a hole in a thin category.
+
+**Rejected — the scan's own top financial-crime finding.** Feedzai, Verafin and
+ThetaRay were the scan's most-recommended names ("the most interesting result of the
+scan for this wiki's audience"). **Rejected on buyer profile:** all three monitor
+*payment flows* — retail/corporate banks, credit unions, PSPs, correspondent banking
+corridors. An alternative manager does not operate a payment flow. No `financial-crime`
+category was created. The real adjacent gap (investor-side AML/KYC screening, driven by
+the FinCEN adviser rule — ComplyAdvantage, World-Check, Fenergo class of vendor) is
+written up in `taxonomy-gaps.md` as an open question, because it is a compliance-function
+purchase and may be out of scope for this wiki entirely.
+
+**Also rejected:** Imperva (Thales-owned WAF/DB security — adjacent, not core, and few
+managers run public-facing web apps at that scale); SAI360 (EHS/ethics-weighted GRC for
+large enterprises); Sprinto (SMB/startup SOC 2, already covered by Vanta + Drata);
+TrustArc (privacy-specific); Dynatrace and New Relic (generic APM — Datadog already
+represents that overlap in `llm-observability`, and adding more dilutes the category);
+Langwatch (early-stage, category already holds 12); Aryaka, Langdock, SolarWinds; and all
+of Tier C. **Code42** was not given its own page — it is inside Mimecast and is covered
+there. **KnowBe4** needs a category that does not exist; written up in `taxonomy-gaps.md`.
+
+**CalypsoAI correction — no action needed.** The scan flagged
+`wiki/vendors/calypsoai.md` for a Google carousel labelling CalypsoAI "Now part of F5".
+Re-checked against primary sources 2026-08-26: the page is **already correct and more
+precise than the scan** — announced 2025-09-11 (~$180M), closed 2025-09-26 for $145.2M
+cash per F5's 10-Q, brand fully retired. `wiki/vendors/f5.md` additionally documents the
+later SurePath AI acquisition. A secondary source claimed a 2026-01-14 GA date for F5 AI
+Guardrails / AI Red Team; the F5 blog it cited does not state GA, so it was **not**
+written to either page. Both pages left unchanged.
+
+Registered all 11 in `survey-v2.csv`, the six affected category pages (vendor lists +
+survey answer options), and `index.md`.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [dspm, identity-governance, entitlement-aware-rag]
 incumbent_coverage: []
-vendor_count: 10
+vendor_count: 11
 maps_to_seed_doc: Data Access Governance
 maps_to_seed_csv: — (doc-only; overlaps IGA survey question)
 last_verified: 2026-06-28
@@ -66,6 +66,11 @@ DSPM vendors extending into access context:
 - [concentric-ai](../vendors/concentric-ai.md) — unstructured-data classification with access right-sizing.
 - [immuta](../vendors/immuta.md) — policy-based access control for analytic data platforms.
 
+Catalog / metadata layer — describes and documents the estate rather than enforcing
+access, but is the prerequisite for governing what retrieval and agents can reach:
+
+- [alation](../vendors/alation.md) — data catalog, lineage, glossary and policy metadata across a heterogeneous estate; peer of [collibra](../vendors/collibra.md). Note it **documents, it does not enforce** — pair with [immuta](../vendors/immuta.md) or [varonis](../vendors/varonis.md). (added 2026-08-26)
+
 Identity-governance vendors extending into data:
 
 - [sailpoint](../vendors/sailpoint.md) — SailPoint Data Access Security extends IGA to unstructured data.
@@ -97,7 +102,7 @@ standalone market.
 audit and right-size who can access sensitive data?
 
 **Answer options.** Varonis, Netwrix, Cyera, Sentra, Concentric AI, Immuta, SailPoint
-(Data Access Security), Veza, C1 (formerly ConductorOne), Silverfort, Other (Please Specify).
+(Data Access Security), Veza, C1 (formerly ConductorOne), Silverfort, Alation, Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
