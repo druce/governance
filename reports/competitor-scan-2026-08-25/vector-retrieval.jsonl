@@ -1,0 +1,4 @@
+{"slug":"pinecone","q":"Pinecone vector database","panel":"none","peers":[]}
+{"slug":"weaviate","q":"Weaviate","panel":"mini-noise","peers":[]}
+{"slug":"opensearch","q":"OpenSearch","panel":"company","peers":["Elasticsearch","Kibana","ClickHouse","RabbitMQ"]}
+{"slug":"azure-ai-search","q":"Azure AI Search","panel":"none","peers":[]}

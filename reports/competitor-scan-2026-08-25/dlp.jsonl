@@ -1,0 +1,6 @@
+{"slug":"cyberhaven","q":"Cyberhaven","panel":"none","peers":[]}
+{"slug":"forcepoint","q":"Forcepoint","panel":"company","peers":["Proofpoint","Code 42 Software Inc.","Zscaler","Netskope, Inc"]}
+{"slug":"proofpoint-dspm","q":"Proofpoint","panel":"company","peers":["Mimecast","KnowBe4","Forcepoint","IronPort"]}
+{"slug":"nightfall-ai","q":"Nightfall AI","panel":"none","peers":[]}
+{"slug":"jazz-security","q":"Jazz Security","panel":"none","peers":[]}
+{"slug":"mind","q":"Mind data security","panel":"none","peers":[]}

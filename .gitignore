@@ -10,3 +10,6 @@ __pycache__/
 # source amterial
 input/
 agents/
+
+# browser automation scratch output
+.playwright-mcp/

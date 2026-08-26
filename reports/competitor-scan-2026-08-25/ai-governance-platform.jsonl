@@ -1,0 +1,9 @@
+{"slug":"collibra","q":"Collibra data governance","panel":"none","peers":[]}
+{"slug":"credo-ai","q":"Credo AI","panel":"mini","peers":["CalypsoAI (Now part of F5)","Centraleyes","Arthur","ModelOp"]}
+{"slug":"holistic-ai","q":"Holistic AI","panel":"mini","peers":["Arthur","CalypsoAI (Now part of F5)","ModelOp","Centraleyes"]}
+{"slug":"ibm-watsonx-governance","q":"IBM watsonx.governance","panel":"none","peers":[]}
+{"slug":"modelop","q":"ModelOp model governance","panel":"none","peers":[]}
+{"slug":"vanta","q":"Vanta","panel":"company","peers":["Drata Inc.","OneTrust","Hyperproof Inc.","SecurityScorecard"]}
+{"slug":"fairly-ai","q":"Fairly AI governance","panel":"none","peers":[]}
+{"slug":"monitaur","q":"Monitaur","panel":"none","peers":[]}
+{"slug":"governgpt","q":"GovernGPT","panel":"company-nocarousel","peers":[]}

@@ -1,0 +1,9 @@
+{"slug":"glean","q":"Glean enterprise search","panel":"none","peers":[]}
+{"slug":"microsoft-365-copilot","q":"Microsoft 365 Copilot","panel":"company","peers":["ChatGPT","Gemini","Claude","Microsoft Teams"]}
+{"slug":"perplexity","q":"Perplexity AI","panel":"company","peers":["Google","DeepSeek","Anthropic","OpenAI"]}
+{"slug":"amazon-q-business","q":"Amazon Q Business","panel":"none","peers":[]}
+{"slug":"gemini-enterprise","q":"Gemini Enterprise Google","panel":"none","peers":[]}
+{"slug":"openai-chatgpt-enterprise","q":"ChatGPT Enterprise OpenAI","panel":"none","peers":[]}
+{"slug":"anthropic-claude-enterprise","q":"Claude Enterprise Anthropic","panel":"none","peers":[]}
+{"slug":"audition-ai","q":"Audition AI","panel":"none","peers":[]}
+{"slug":"perplexity-enterprise","q":"Perplexity Enterprise Pro","panel":"none","peers":[]}

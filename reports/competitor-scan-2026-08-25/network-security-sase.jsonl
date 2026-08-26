@@ -1,0 +1,4 @@
+{"slug":"zscaler","q":"Zscaler","panel":"none","peers":[]}
+{"slug":"cato-networks","q":"Cato Networks","panel":"company","peers":["Zscaler","Netskope, Inc","Imperva","Aryaka"]}
+{"slug":"menlo-security","q":"Menlo Security","panel":"none","peers":[]}
+{"slug":"netskope","q":"Netskope","panel":"company","peers":["Zscaler","Palo Alto Networks","Forcepoint","Cloudflare"]}

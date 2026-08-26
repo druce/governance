@@ -1,0 +1,8 @@
+{"slug":"splunk","q":"Splunk","panel":"company","peers":["Dynatrace","Datadog","New Relic","AppDynamics"]}
+{"slug":"microsoft-sentinel","q":"Microsoft Sentinel","panel":"none","peers":[]}
+{"slug":"sumo-logic","q":"Sumo Logic","panel":"company","peers":["Splunk Technology","New Relic","Datadog","Dynatrace"]}
+{"slug":"elastic","q":"Elastic NV","panel":"none","peers":[]}
+{"slug":"google-secops","q":"Google Security Operations Chronicle","panel":"company","peers":["Mandiant","Splunk Technology","Apigee","Sumo Logic"]}
+{"slug":"crowdstrike-logscale","q":"CrowdStrike Falcon LogScale","panel":"none","peers":[]}
+{"slug":"palo-alto-networks","q":"Palo Alto Networks","panel":"none-local","peers":[]}
+{"slug":"signoz","q":"SigNoz observability","panel":"none","peers":[]}

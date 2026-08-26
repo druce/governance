@@ -1,0 +1,10 @@
+{"slug":"okta","q":"Okta","panel":"company","peers":["Auth0","OneLogin","Ping Identity Corporation","SailPoint Technologies"]}
+{"slug":"ping-identity","q":"Ping Identity","panel":"none","peers":[]}
+{"slug":"forgerock","q":"ForgeRock","panel":"none","peers":[]}
+{"slug":"silverfort","q":"Silverfort","panel":"company","peers":["CyberArk","Palo Alto Networks","Check Point Software Technologies","Microsoft"]}
+{"slug":"descope","q":"Descope","panel":"none","peers":[]}
+{"slug":"workos","q":"WorkOS","panel":"none","peers":[]}
+{"slug":"stytch","q":"Stytch","panel":"none","peers":[]}
+{"slug":"microsoft-entra","q":"Microsoft Entra ID","panel":"none","peers":[]}
+{"slug":"aws-iam","q":"AWS IAM","panel":"none","peers":[]}
+{"slug":"google-cloud-identity","q":"Google Cloud Identity","panel":"none","peers":[]}

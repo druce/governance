@@ -1,0 +1,12 @@
+{"slug":"datadog","q":"Datadog","panel":"none","peers":[]}
+{"slug":"weights-and-biases","q":"Weights & Biases","panel":"none","peers":[]}
+{"slug":"comet","q":"Comet ML","panel":"none","peers":[]}
+{"slug":"arize-phoenix","q":"Arize AI","panel":"none","peers":[]}
+{"slug":"arthur-ai","q":"Arthur AI","panel":"none","peers":[]}
+{"slug":"fiddler-ai","q":"Fiddler AI","panel":"none","peers":[]}
+{"slug":"langfuse","q":"Langfuse","panel":"mini","peers":["Langdock GmbH","Langwatch","Portkey AI","Humanloop"]}
+{"slug":"langsmith","q":"LangSmith LangChain","panel":"none","peers":[]}
+{"slug":"helicone","q":"Helicone","panel":"none","peers":[]}
+{"slug":"braintrust","q":"Braintrust AI evals","panel":"none","peers":[]}
+{"slug":"giskard","q":"Giskard AI","panel":"none","peers":[]}
+{"slug":"trulens","q":"TruLens","panel":"none","peers":[]}

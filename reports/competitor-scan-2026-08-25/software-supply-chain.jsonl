@@ -1,0 +1,11 @@
+{"slug":"snyk","q":"Snyk","panel":"company","peers":["Checkmarx","Veracode","JFrog","Black Duck Software"]}
+{"slug":"sonatype","q":"Sonatype","panel":"company","peers":["JFrog","Checkmarx","Snyk","Mend.io"]}
+{"slug":"jfrog","q":"JFrog","panel":"company","peers":["Snyk","Checkmarx","Black Duck Software","Sonatype"]}
+{"slug":"gitlab","q":"GitLab","panel":"none","peers":[]}
+{"slug":"semgrep","q":"Semgrep","panel":"none","peers":[]}
+{"slug":"legit-security","q":"Legit Security","panel":"none","peers":[]}
+{"slug":"endor-labs","q":"Endor Labs","panel":"none","peers":[]}
+{"slug":"socket","q":"Socket.dev","panel":"none","peers":[]}
+{"slug":"apiiro","q":"Apiiro","panel":"none","peers":[]}
+{"slug":"aikido-security","q":"Aikido Security","panel":"company","peers":["Snyk","GitHub","Checkmarx","Veracode"]}
+{"slug":"github-advanced-security","q":"GitHub Advanced Security","panel":"none","peers":[]}
