@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: null
 adjacent: [risk-tiers, policy-as-code, software-supply-chain]
 incumbent_coverage: []
-vendor_count: 0
+vendor_count: 1
 maps_to_seed_doc: Promotion Gates
 maps_to_seed_csv: —
 last_verified: 2026-06-28
@@ -74,6 +74,13 @@ and an open outbound path — from shipping.
   peers, usually already owned).
 - [llm-observability](llm-observability.md) / [ai-red-teaming](ai-red-teaming.md) — supply the eval and red-team evidence a
   gate checks against.
+- **Code-quality gates on AI-written code** — [sonar](../vendors/sonar.md) (SonarQube quality gates, with an
+  "AI Code Assurance" label that applies a stricter gate to AI-generated code) is the
+  established example; AI code reviewers such as Greptile and Qodo (no pages) sit at
+  the same pull-request checkpoint. (added 2026-10-16)
+- **Feature flags and kill switches** — e.g. LaunchDarkly AI Configs (no page): ship the
+  model/prompt change dark, ramp it, and turn it off without a redeploy. The runtime half
+  of a gate. (added 2026-10-16)
 
 ## Adjacent categories
 

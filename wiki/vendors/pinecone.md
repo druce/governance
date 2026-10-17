@@ -48,7 +48,7 @@ tags: [vector-database, retrieval, independent]
 
 **CTO / hedge-fund lens** — Day-1 RAG infra *if* you want a managed vector DB and are comfortable with embeddings living in a third-party cloud — a real data-residency/MNPI consideration for a fund. If your data cannot leave your tenancy, prefer self-hostable [weaviate](weaviate.md) / [opensearch](opensearch.md) or your cloud's native [azure-ai-search](azure-ai-search.md).
 
-**Competitors / alternatives** — [weaviate](weaviate.md), [opensearch](opensearch.md), [azure-ai-search](azure-ai-search.md); Qdrant, Milvus/Zilliz, Chroma, LanceDB and the substrate options (pgvector, S3 Vectors, turbopuffer) have no pages — see [vector-database-landscape](../comparisons/vector-database-landscape.md).
+**Competitors / alternatives** — [weaviate](weaviate.md), [opensearch](opensearch.md), [azure-ai-search](azure-ai-search.md); Qdrant, Milvus/Zilliz, Chroma, LanceDB and the substrate options (pgvector, S3 Vectors) have no pages; [turbopuffer](turbopuffer.md) does — see [vector-database-landscape](../comparisons/vector-database-landscape.md).
 
 **Open questions / to verify** — Current enterprise data-residency / BYOC options for regulated buyers. Whether the reported sale process produces a transaction (re-check 2026-11-24); vendor-continuity risk is now part of the buying case.
 

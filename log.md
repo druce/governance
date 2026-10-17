@@ -2713,3 +2713,55 @@ these had drifted from the actual vendor lists over previous edits.
 Registered all 15 in `survey-v2.csv`, eight category pages (vendor lists + survey
 answer options), `index.md`. Sources cached to `raw/sources/2026-08-26--*`.
 Lint: 0 errors, 27 warns, 2 research-needed — unchanged from baseline.
+
+## [2026-10-16] stub | 12 vendors from the AIE NYC 2026 attendee scan
+
+The human diffed AIE NYC 2026 speakers, sponsors and exhibitors against the wiki and
+proposed 9 strong adds and 9 second-tier names. Four parallel research agents verified
+each hint against primary sources and wrote full pages, so these are researched pages,
+not bare stubs. Sources cached to `raw/sources/2026-10-16--*` (24 files).
+
+| Page | Category (+cross-list) | Note |
+|---|---|---|
+| keycard | non-human-identity (+tool-identity-integration, authorization-engine) | task-scoped agent credentials via OAuth token exchange; $38M; acquired Anchor.dev 2026-02 |
+| runlayer | mcp-gateway | $42M ($11M seed + $30M A, 2026-06); Runlayer v. Rippling trade-secret suit 2026-07-28 |
+| speakeasy | mcp-gateway (+tool-identity-integration) | Gram became a governance gateway (MCP Gateway GA 2026-03), so it fits; filed under mcp-gateway, not tool-identity |
+| turbopuffer | vector-retrieval (+entitlement-aware-rag) | permissions are DIY filters; Bridgewater appears only as a logo; the joint "row-level permissions" talk was **not** confirmed |
+| judgment-labs | llm-observability | $32M = seed + Series A combined (Lightspeed, 2026-05), not a Series A alone |
+| pydantic-logfire | llm-observability | product slug (Logfire is the shopping unit; company Pydantic) |
+| sentry | llm-observability | Agent Monitoring module; no evals; prompt fields not scrubbed by default |
+| sonar | software-supply-chain (+promotion-gates) | Tidelift / AutoCodeRover / Gitar tuck-ins; 5 AIE sessions, not 6 speakers |
+| chainguard | software-supply-chain | $3.5B (2025-04); AIE Silver sponsor, no talk found |
+| tetrate | ai-gateway (+mcp-gateway) | Envoy AI Gateway renamed **Agent Router** and moved to AAIF (2026-09) |
+| daytona | ephemeral-environments | Sysbox containers; OSS repo archived, development moved private |
+| modal | ephemeral-environments | gVisor or VM sandboxes; $750M Series D at $15.75B (2026-10-14) |
+
+**Decisions.**
+- `pydantic-logfire` uses a product slug (CLAUDE.md §3).
+- Speakeasy's primary category is `mcp-gateway`, not the suggested tool-identity-integration.
+- turbopuffer is listed on entitlement-aware-rag as the illustration of the DIY pattern,
+  but is **not** added as a survey answer option there.
+- Daytona, Modal and turbopuffer get no CSV row, because their primary categories have
+  no survey question (same as their peers); they add 3 expected R1 orphan warnings.
+- The ephemeral-environments page gains an "Agent code sandboxes" subsection, separate
+  from the human dev environments.
+
+**Not given pages:**
+- Entire and Norm Ai: researched and written up in `taxonomy-gaps.md` (2026-10-16
+  section) for a human decision.
+- LaunchDarkly AI Configs, Greptile and Qodo: named on `promotion-gates`, a practice-tier
+  category with no shortlist.
+- Browserbase, Anchor Browser and E2B: named on `ephemeral-environments`.
+
+**Registered:**
+- 12 `survey-v2.csv` rows (CRLF preserved).
+- Vendor lists and survey answer options on 10 category pages, with `vendor_count`
+  incremented for today's adds only.
+- The `pinecone` cross-link and `index.md`.
+
+**Drift found, not fixed:** recounting `vendor_count` from vendor frontmatter (primary +
+also_listed_in) disagrees with the stored value on 32 categories. The field has no
+definition in SCHEMA.md, so the counting rule needs a decision before anyone runs a
+bulk refresh.
+
+Lint: 0 errors, 30 warns (27 + 3 expected orphans), 48 research-needed.

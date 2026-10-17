@@ -4,7 +4,7 @@ title: "Index"
 
 # Index — content catalog
 
-Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
+Regenerated 2026-10-16 by `scripts/wiki_lint.py --write-index`. One page per line: link — one-line summary — (key facts).
 
 ## Overview
 
@@ -55,7 +55,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-08-24)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (262)
+## Vendors (274)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -100,6 +100,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Cato Networks](wiki/vendors/cato-networks.md) — A cloud-native SASE platform (network + security in one cloud service) that bought AI-security pure-play aim-security in 2025 to fold an AI firewall, shadow-… — (independent, 2026-06-28)
 - [Centraleyes](wiki/vendors/centraleyes.md) — A lightweight, no-code cyber-risk-and-compliance platform aimed at firms that need a real risk register and framework coverage but have no appetite for a GRC… — (independent, 2026-08-26)
 - [Cerbos](wiki/vendors/cerbos.md) — Open-source, stateless authorization layer (a Policy Decision Point) that answers "can this principal do this action on this resource?" so you stop hard-codi… — (independent, 2026-06-28)
+- [Chainguard](wiki/vendors/chainguard.md) — A supplier of **hardened, minimal, continuously rebuilt open-source artifacts**: container images, language libraries (Java, Python, JavaScript) and VM image… — (independent, 2026-10-16)
 - [Checkmarx](wiki/vendors/checkmarx.md) — The AppSec incumbent: an enterprise application-security platform (Checkmarx One) built around SAST, now bundling SCA, IaC, API, DAST, container and supply-c… — (pe-owned, 2026-08-26)
 - [Chrome Enterprise Premium (Google)](wiki/vendors/chrome-enterprise.md) — Google's paid security upgrade to managed Chrome: it turns the browser everyone already uses into an enforcement point with DLP, advanced threat protection, … — (public, 2026-06-28)
 - [Cisco AI Defense](wiki/vendors/cisco-ai-defense.md) — Cisco's "security for AI" product: it validates and red-teams models before deployment and enforces runtime guardrails (prompt-injection, jailbreak, data-lea… — (acquired-closed, 2026-06-28)
@@ -123,6 +124,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Cyera](wiki/vendors/cyera.md) — The fast-growing, AI-native DSPM leader: agentless discovery of sensitive data across cloud and SaaS, converged with DLP and identity into one data-security … — (independent, 2026-06-28)
 - [D3 Security](wiki/vendors/d3-security.md) — A long-established SOAR vendor that rebuilt itself as an agentic SOC platform (Morpheus) — the incumbent-turned-AI-native case in a category otherwise made o… — (independent, 2026-08-26)
 - [Datadog LLM Observability](wiki/vendors/datadog.md) — The LLM/agent observability module inside Datadog's broader monitoring platform — buy it where you already run APM and logs. — (public, 2026-06-28)
+- [Daytona](wiki/vendors/daytona.md) — An API that gives an AI agent its own disposable, isolated computer: spin up a sandbox in well under a second, let the agent run code or drive a desktop insi… — (independent, 2026-10-16)
 - [DeepKeep](wiki/vendors/deepkeep.md) — An Israeli AI-security suite that puts runtime guardrails, red — (independent, 2026-08-22)
 - [Delinea](wiki/vendors/delinea.md) — A privileged access management incumbent assembled from Thycotic and Centrify by TPG — the mid-market alternative to CyberArk, with credential vaulting (Secr… — (pe-owned, 2026-08-26)
 - [Descope](wiki/vendors/descope.md) — Developer-first authentication/CIAM with visual auth flows that now doubles — (independent, 2026-06-28)
@@ -179,7 +181,9 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Island](wiki/vendors/island.md) — A purpose-built, Chromium-based "enterprise browser" that bakes security, DLP, and access controls directly into the browser itself, so the place where work … — (independent, 2026-06-28)
 - [Jazz Security](wiki/vendors/jazz-security.md) — An AI-native DLP platform that uses an autonomous "Agentic Investigator" to read intent and context, so data-loss alerts come with answers instead of rule-ba… — (independent, 2026-06-28)
 - [JFrog](wiki/vendors/jfrog.md) — The "system of record" for software binaries: a universal artifact repository (Artifactory) plus dependency/security scanning (Xray) that has extended into s… — (public, 2026-06-28)
+- [Judgment Labs](wiki/vendors/judgment-labs.md) — Agent-behavior monitoring and evaluation. It traces production agents, runs LLM "judges" over whole trajectories, and finds recurring failure modes and drift… — (independent, 2026-10-16)
 - [Keeper Security](wiki/vendors/keeper.md) — A zero-knowledge password manager that grew upward into privileged access management and machine secrets — the cheapest credible path from "we use a shared p… — (independent, 2026-08-26)
+- [Keycard](wiki/vendors/keycard.md) — Runtime authorization for AI agents: instead of handing an agent a long-lived API key, Keycard verifies which agent is asking, on whose behalf, and for what … — (independent, 2026-10-16)
 - [Knostic](wiki/vendors/knostic.md) — An agentic-AI security platform ("Security Across the Agentic Lifecycle"): Kirin secures AI agents, coding assistants, and MCP servers at runtime (least-priv… — (independent, 2026-07-09)
 - [Kong](wiki/vendors/kong.md) — Kong is a mature, open-source-rooted API-management vendor whose **AI Gateway** turns its battle-tested Kong Gateway proxy into a single governed exit door f… — (independent, 2026-06-28)
 - [Kyverno](wiki/vendors/kyverno.md) — A Kubernetes-native, open-source policy engine that enforces policy-as-code as YAML — validating, mutating, and generating cluster resources so non-compliant… — (independent, 2026-06-28)
@@ -209,6 +213,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [MIND](wiki/vendors/mind.md) — An AI-native, "autonomous" data-loss-prevention (DLP) and data-detection-and-response (DDR) platform that discovers, classifies, and blocks sensitive-data le… — (independent, 2026-06-28)
 - [Mindgard](wiki/vendors/mindgard.md) — Offensive AI security: continuously red-teams your LLMs and AI — (independent, 2026-06-28)
 - [MintMCP](wiki/vendors/mintmcp.md) — A managed enterprise gateway that sits between AI clients (Claude, Cursor, custom agents) and MCP servers, hosting the servers, handling SSO/credentials, enf… — (independent, 2026-06-28)
+- [Modal](wiki/vendors/modal.md) — A serverless compute cloud for AI workloads (GPU inference, training, batch jobs). Its **Sandboxes** product has become the largest disclosed business in dis… — (independent, 2026-10-16)
 - [ModelOp](wiki/vendors/modelop.md) — An enterprise AI/ML governance and ModelOps platform that acts as a centralized "system of record" for every model, enforcing inventory, validation, approval… — (independent, 2026-06-28)
 - [Monitaur](wiki/vendors/monitaur.md) — A SaaS "ML Assurance" / model-governance platform purpose-built for highly regulated financial services (above all insurance), giving risk and compliance tea… — (independent, 2026-06-28)
 - [Natoma](wiki/vendors/natoma.md) — An enterprise Model Context Protocol (MCP) governance gateway that gives AI agents identity-scoped, audited, policy-controlled access to enterprise tools and… — (acquired-pending, 2026-07-27)
@@ -254,6 +259,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Promptfoo](wiki/vendors/promptfoo.md) — Popular open-source tool for testing, evaluating, and red-teaming LLM apps; OpenAI agreed to acquire it in March 2026, to be folded into OpenAI Frontier (sta… — (acquired-pending, 2026-07-27)
 - [Proofpoint DSPM](wiki/vendors/proofpoint-dspm.md) — Proofpoint's Data Security Posture Management product, built from the acquired DSPM startup **Normalyze**: discovers and classifies sensitive data across clo… — (acquired-closed, 2026-07-27)
 - [Prophet Security](wiki/vendors/prophet-security.md) — An agentic "AI SOC analyst" that autonomously triages and investigates security alerts and writes up findings in plain language, so human analysts stop drown… — (independent, 2026-06-28)
+- [Pydantic Logfire](wiki/vendors/pydantic-logfire.md) — A full-stack observability platform built on OpenTelemetry, from the team behind the Pydantic library. It puts LLM and agent traces in the same trace as your… — (independent, 2026-10-16)
 - [Qevlar AI](wiki/vendors/qevlar-ai.md) — An agentic AI SOC platform that autonomously enriches, correlates and investigates security alerts to a verdict — the best-funded and most enterprise-referen… — (independent, 2026-08-26)
 - [Quilr](wiki/vendors/quilr.md) — An early-stage agentic-AI security startup that discovers shadow AI, applies adaptive guardrails to prompts and data, and provides posture management over AI… — (independent, 2026-06-28)
 - [Radiant Security](wiki/vendors/radiant-security.md) — An AI SOC platform/"co-pilot" that automatically triages and investigates every alert across all data sources — no playbooks or preset rules — and drives con… — (independent, 2026-06-28)
@@ -264,6 +270,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Relativity Trace](wiki/vendors/relativity-trace.md) — A proactive e-comms surveillance product from the e-discovery vendor Relativity, leaning on the same review/search/ML stack lawyers use for litigation to cat… — (acquired-closed, 2026-07-27)
 - [Robust Intelligence](wiki/vendors/robust-intelligence.md) — **In one line** — AI security/validation pioneer out of Harvard ML research (founded 2019, San Francisco; founders Yaron Singer, Kojin Oshiba, Eric Balkanski… — (acquired-closed, 2026-07-27)
 - [Rubrik](wiki/vendors/rubrik.md) — A public data-security company best known for backup and ransomware/cyber recovery, now offering DSPM (built on acquired Laminar) to find and govern exposed … — (public, 2026-06-28)
+- [Runlayer](wiki/vendors/runlayer.md) — An enterprise MCP gateway that has grown into an "AI control plane". It gives employees an approved catalog of MCP servers, skills and plugins across every A… — (independent, 2026-10-16)
 - [SailPoint](wiki/vendors/sailpoint.md) — The category-defining identity governance (IGA) vendor: who has access to what, access certifications, and joiner/mover/leaver lifecycle at enterprise scale. — (public, 2026-06-28)
 - [Saviynt](wiki/vendors/saviynt.md) — Cloud-native converged identity security platform: IGA plus privileged access and app/data access governance in one SaaS, the main challenger to SailPoint. — (independent, 2026-06-28)
 - [Secureframe](wiki/vendors/secureframe.md) — The third name in compliance automation alongside Vanta and Drata: automated evidence collection and continuous control monitoring for SOC 2 and ISO 27001, p… — (independent, 2026-08-26)
@@ -273,6 +280,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Semgrep](wiki/vendors/semgrep.md) — Fast, customizable static analysis (SAST) with a popular open-source engine, extended into a commercial platform covering dependencies (SCA) and secrets — kn… — (independent, 2026-06-28)
 - [SentinelOne](wiki/vendors/sentinelone.md) — The main publicly traded EDR/XDR challenger to crowdstrike and microsoft-defender, whose Singularity platform now extends into GenAI security after acquiring… — (public, 2026-06-28)
 - [Sentra](wiki/vendors/sentra.md) — Agentless, cloud-native DSPM that discovers and classifies sensitive data across the cloud and adds controls to keep PII out of AI training sets and gen-AI p… — (independent, 2026-06-28)
+- [Sentry](wiki/vendors/sentry.md) — The developer-incumbent route into LLM observability. If your engineers already use Sentry for errors and performance, its **Agent Monitoring** adds agent, t… — (independent, 2026-10-16)
 - [Seraphic Security](wiki/vendors/seraphic.md) — Adds enterprise security and governance *inside* the browsers employees already use, rather than making them switch to a dedicated secure browser. — (acquired-pending, 2026-06-28)
 - [ServiceNow GRC](wiki/vendors/servicenow.md) — The GRC / Integrated-Risk-Management module set bolted onto the Now Platform, so risk, compliance, audit and vendor-risk workflows live next to the ITSM/CMDB… — (public, 2026-06-28)
 - [SharePoint / OneDrive (Microsoft)](wiki/vendors/sharepoint.md) — Microsoft 365's document and collaboration repositories — for most enterprises the single biggest pile of unstructured content, and therefore the primary cor… — (public, 2026-06-28)
@@ -282,7 +290,9 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Simbian](wiki/vendors/simbian.md) — A suite of autonomous security AI agents — a SOC agent, a GRC agent and a hosting platform — built to not just find security issues but act on them. — (independent, 2026-06-28)
 - [Snyk](wiki/vendors/snyk.md) — Developer-first security platform that scans your own code, your open-source dependencies, containers, and IaC for vulnerabilities, integrated into the IDE a… — (independent, 2026-06-28)
 - [Socket](wiki/vendors/socket.md) — Supply-chain security that catches *malicious* open-source packages — backdoors, typosquats, install-script abuse, obfuscated code — before they land in your… — (independent, 2026-06-28)
+- [Sonar](wiki/vendors/sonar.md) — The incumbent code-quality and static-analysis platform (SonarQube), now pitched as the independent **verification layer for AI-generated code**: quality gat… — (independent, 2026-10-16)
 - [Sonatype](wiki/vendors/sonatype.md) — Software-supply-chain pioneer: the steward of Maven Central, maker of Nexus Repository, and a leader in open-source SCA plus a "repository firewall" that blo… — (pe-owned, 2026-06-28)
+- [Speakeasy](wiki/vendors/speakeasy.md) — An MCP gateway and "AI control plane" that gives each team one governed path to its MCP servers. Access is provisioned by role from the corporate IdP, creden… — (independent, 2026-10-16)
 - [Splunk](wiki/vendors/splunk.md) — The market-leading machine-data platform for searching, monitoring and analyzing logs — the SIEM/SOAR and observability backbone many SOCs run on, now Cisco'… — (acquired-closed, 2026-07-27)
 - [SplxAI](wiki/vendors/splxai.md) — Automated, continuous AI red-teaming ("Probe") plus runtime guardrails and prompt-hardening for conversational and agentic AI apps — now owned by Zscaler. — (acquired-closed, 2026-07-27)
 - [StackOne](wiki/vendors/stackone.md) — Unified-API / agent-tooling infrastructure: one interface that turns hundreds of — (independent, 2026-06-28)
@@ -294,6 +304,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Symmetry Systems](wiki/vendors/symmetry-systems.md) — A DSPM platform that maps sensitive data to *who can reach it* — humans, service accounts, AI agents, third parties — and can automatically remediate over-pe… — (acquired-pending, 2026-07-27)
 - [Teleskope](wiki/vendors/teleskope.md) — An "agentic data security" DSPM that doesn't stop at finding and classifying sensitive data — it autonomously remediates (block, quarantine, redact, delete),… — (independent, 2026-07-13)
 - [Terraform Cloud (HCP Terraform)](wiki/vendors/terraform-cloud.md) — HashiCorp's managed service for running Terraform infrastructure-as-code with remote state, collaboration, and policy enforcement — the control plane through… — (acquired-closed, 2026-07-27)
+- [Tetrate](wiki/vendors/tetrate.md) — The Envoy/Istio service-mesh company that co-created **Envoy AI Gateway**, an open-source LLM and MCP gateway now renamed **Agent Router** and governed by th… — (independent, 2026-10-16)
 - [Theta Lake](wiki/vendors/theta-lake.md) — A compliance-surveillance and archiving platform purpose-built for — (independent, 2026-06-28)
 - [Token Security](wiki/vendors/token-security.md) — Identity-first security for non-human and AI-agent identities: find every machine — (independent, 2026-06-28)
 - [Torq](wiki/vendors/torq.md) — A security hyperautomation platform (modern SOAR) that has grown into an "AI SOC" with agentic alert triage and a self-service agent builder. — (independent, 2026-06-28)
@@ -301,6 +312,7 @@ Regenerated 2026-08-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [TrojAI](wiki/vendors/trojai.md) — AI-security platform pairing build-time red teaming (TrojAI Detect) with runtime threat protection (TrojAI Defend); acquired outright by network-infrastructu… — (acquired-closed, 2026-07-27)
 - [TrueFoundry](wiki/vendors/truefoundry.md) — A Kubernetes-native enterprise AI platform whose centerpiece is an — (independent, 2026-06-28)
 - [TruLens](wiki/vendors/trulens.md) — An open-source Python library for evaluating and tracing LLM, RAG, and agent applications, now stewarded by Snowflake. — (acquired-closed, 2026-07-27)
+- [turbopuffer](wiki/vendors/turbopuffer.md) — A search engine (vector, full-text and hybrid) that stores its indexes in cloud object storage and caches hot data on SSD and memory. That makes very large o… — (independent, 2026-10-16)
 - [UpGuard](wiki/vendors/upguard.md) — A cyber-risk-ratings and third-party-risk platform that pairs external security scoring with attack-surface management and data-leak detection. — (independent, 2026-06-28)
 - [Valence Security](wiki/vendors/valence-security.md) — A SaaS (and increasingly AI) security platform that discovers SaaS/AI app usage, finds and prioritizes posture risk, and emphasizes collaborative, business-u… — (independent, 2026-06-28)
 - [Vanta](wiki/vendors/vanta.md) — Automated security-and-compliance certification (SOC 2, ISO 27001, etc.) that has added an AI-governance module (ISO 42001, EU AI Act, NIST AI RMF mapping); … — (independent, 2026-06-28)

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 10
 maps_to_seed_doc: AI Gateway
 maps_to_seed_csv: AI Gateway
 last_verified: 2026-07-27
@@ -70,6 +70,7 @@ model providers.
 - [f5](../vendors/f5.md) — application-delivery incumbent with an AI gateway (and AI security via the CalypsoAI acquisition, per seed).
 - [cloudflare](../vendors/cloudflare.md) — edge platform offering an AI gateway (caching, rate-limiting, analytics) alongside its network stack.
 - [gravitee](../vendors/gravitee.md) — open-source-rooted API/event-management vendor whose AI Gateway treats LLM, MCP, and A2A as three first-class proxy types on one self-hostable control plane. Cross-listed to [mcp-gateway](mcp-gateway.md).
+- [tetrate](../vendors/tetrate.md) — Envoy-based: co-created the open-source Envoy AI Gateway (renamed Agent Router and moved to the Agentic AI Foundation, 2026-09, Bloomberg a co-founder) and sells Agent Router Service/Enterprise with data planes in your VPC. The Envoy-native alternative to LiteLLM and Bifrost. Cross-listed to [mcp-gateway](mcp-gateway.md). (added 2026-10-16)
 
 ## Consolidation / M&A dynamics
 
@@ -93,7 +94,7 @@ stack. Expect gateway + firewall + observability to converge into single suites.
 and log your organization's model/API traffic?
 
 **Answer options:** Portkey, LiteLLM, TrueFoundry, Kong AI Gateway, F5, Cloudflare,
-OpenRouter, Gravitee, Bifrost (Maxim AI), Other (Please Specify).
+OpenRouter, Gravitee, Bifrost (Maxim AI), Tetrate Agent Router (Envoy AI Gateway), Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [promotion-gates]
 incumbent_coverage: []
-vendor_count: 16
+vendor_count: 18
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
 last_verified: 2026-06-28
@@ -99,6 +99,11 @@ buyers toward whoever already hosts their repos.
 **Question:** Which software supply chain / coding security tool does your firm use
 or evaluate, including for AI-generated code?
 
+Code-quality gate and hardened open-source supply (added 2026-10-16):
+
+- [sonar](../vendors/sonar.md) — SonarQube's quality-and-security gate repositioned as the model-independent check on AI-generated code (AI Code Assurance, AI CodeFix, Gitar code review), with SCA via Tidelift. Formerly SonarSource; independent. Cross-listed to [promotion-gates](promotion-gates.md).
+- [chainguard](../vendors/chainguard.md) — hardened, minimal, daily-rebuilt container images and from-source language libraries (incl. Python/AI dependencies) with signed provenance: prevents open-source risk rather than scanning for it. Independent; $3.5B valuation (2025-04).
+
 **Answer options (multi-select):**
 - Snyk
 - Semgrep
@@ -116,6 +121,8 @@ or evaluate, including for AI-generated code?
 - Black Duck (formerly Synopsys Software Integrity)
 - Mend.io (formerly WhiteSource)
 - Pensar
+- Sonar (SonarQube)
+- Chainguard
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

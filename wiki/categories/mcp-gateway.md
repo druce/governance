@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
 incumbent_coverage: []
-vendor_count: 12
+vendor_count: 15
 maps_to_seed_doc: MCP Gateway / Tool Access Control
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-07-27
@@ -73,6 +73,9 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [natoma](../vendors/natoma.md) — non-human-identity vendor offering MCP/agent gateway controls. Cross-listed to [non-human-identity](non-human-identity.md).
 - [pomerium](../vendors/pomerium.md) — identity-aware proxy used to broker MCP/tool access. Cross-listed to [authorization-engine](authorization-engine.md).
 - [prisma-airs](../vendors/prisma-airs.md) — Palo Alto's AI security platform includes an AI Agent Gateway. Cross-listed to [ai-runtime-security](ai-runtime-security.md) and [ai-spm](ai-spm.md).
+- [runlayer](../vendors/runlayer.md) — MCP gateway turned "AI control plane": approved catalog of MCP servers/skills across AI clients, IdP-mapped permissions, tool-call scanning, shadow-AI discovery; SaaS or self-hosted. $42M raised; in trade-secret litigation with Rippling (filed 2026-07-28). The closest peer to mintmcp and natoma. (added 2026-10-16)
+- [speakeasy](../vendors/speakeasy.md) — ex-SDK-generation vendor whose AGPL Gram platform became an MCP gateway: IdP-provisioned access, OAuth brokering, inline secret/PII detectors and agent hooks; cloud, self-hosted or air-gapped. Cross-listed to [tool-identity-integration](tool-identity-integration.md). (added 2026-10-16)
+- [tetrate](../vendors/tetrate.md) — Agent Router Enterprise (the commercial build of the open-source Envoy AI Gateway, now Agent Router under AAIF) governs MCP alongside LLM traffic. Primary is [ai-gateway](ai-gateway.md). (added 2026-10-16)
 
 ## Consolidation / M&A dynamics
 
@@ -99,7 +102,8 @@ apply and indicate stage.)*
 
 **Answer options.** Solo.io agentgateway · Kong MCP Gateway · TrueFoundry MCP Gateway ·
 Arcade · IBM ContextForge · Docker MCP Gateway · Obot · MintMCP · Natoma · Pomerium ·
-Prisma AIRS Agent Gateway · Gravitee MCP Proxy · Other (Please Specify)
+Prisma AIRS Agent Gateway · Gravitee MCP Proxy · Runlayer · Speakeasy Gram ·
+Tetrate Agent Router · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.

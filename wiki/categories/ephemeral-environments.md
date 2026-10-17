@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: null
 adjacent: [trust-zone-segmentation, promotion-gates]
 incumbent_coverage: []
-vendor_count: 4
+vendor_count: 6
 maps_to_seed_doc: Ephemeral Environments
 maps_to_seed_csv: —
 last_verified: 2026-06-28
@@ -60,6 +60,12 @@ ephemeral workloads, not AI-security products per se:
 - [terraform-cloud](../vendors/terraform-cloud.md) — declarative infrastructure provisioning/teardown; cross-listed with [policy-as-code](policy-as-code.md) (Sentinel) for governing what gets built.
 - [cloudflare-workers](../vendors/cloudflare-workers.md) — edge serverless compute; short-lived, isolated execution for sandboxed/red-zone tasks.
 
+**Agent code sandboxes** (added 2026-10-16). A different product from the four above: those give a *human* a disposable workstation; these give an *agent* a disposable, API-created box per task in which to run code nobody has reviewed. The buying questions are isolation strength (container vs gVisor vs microVM), default egress, and whether the sandbox can run in your own cloud.
+
+- [modal](../vendors/modal.md) — serverless AI compute whose Sandboxes run untrusted agent-generated code on gVisor or a per-sandbox VM runtime; hosted only; outbound network open by default. $750M Series D at $15.75B (2026-10-14).
+- [daytona](../vendors/daytona.md) — API-driven, sub-second, stateful agent sandboxes (Sysbox-hardened containers, not microVMs); pivoted from human dev environments in 2025; open-source repo archived, BYOC is Enterprise-only.
+- **Also in this space, no pages:** E2B (Firecracker microVM sandboxes), and the browser-agent sandboxes Browserbase and Anchor Browser — hosted headless browsers in which an agent can be confined.
+
 ## Consolidation / M&A dynamics
 
 Not an AI-security M&A market — these are platform offerings from major cloud/dev
@@ -82,7 +88,7 @@ purpose-built for AI agents executing code).
 compute for developers or AI/agentic workloads?
 
 **Answer options.** GitHub Codespaces; Azure Dev Boxes; Terraform Cloud; Cloudflare
-Workers; Other (Please Specify).
+Workers; Modal Sandboxes; Daytona; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

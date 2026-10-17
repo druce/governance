@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [identity-access, secrets-management, tool-identity-integration, identity-governance]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 12
 maps_to_seed_doc: (folded into Identity & Access + Tool Identity)
 maps_to_seed_csv: Non-Human Identity / Agent Identity Governance
 last_verified: 2026-06-28
@@ -44,6 +44,7 @@ Dedicated NHI / agent-identity platforms (the survey shortlist):
 - [natoma](../vendors/natoma.md) — agent identity and access governance (also relevant to MCP/tool access).
 - [entro-security](../vendors/entro-security.md) — NHI and secrets security; discovery of non-human identities and exposed secrets. Acquired by [sailpoint](../vendors/sailpoint.md) (closed 2026-06-29) — the IGA incumbent buying into this category.
 - [clutch-security](../vendors/clutch-security.md) — NHI security platform.
+- [keycard](../vendors/keycard.md) — runtime authorization built for agents: short-lived, task-scoped credentials that narrow at each delegation hop via OAuth token exchange, with Cedar policy-as-code. Founded 2025; $38M raised. Cross-listed to [tool-identity-integration](tool-identity-integration.md) and [authorization-engine](authorization-engine.md). (added 2026-10-16)
 
 Identity/governance platforms with NHI capabilities (cross-listed):
 
@@ -71,7 +72,7 @@ NHI is an active acquisition target: the platform players (Palo Alto, Cisco, now
 
 **Question.** Which non-human / agent identity governance tool(s) is your firm currently using or evaluating?
 
-**Answer options.** CyberArk; Astrix Security; Token Security; Aembit; Oasis Security; Natoma; Entro Security (SailPoint); Clutch Security; Other (Please Specify).
+**Answer options.** CyberArk; Astrix Security; Token Security; Aembit; Oasis Security; Natoma; Entro Security (SailPoint); Clutch Security; Keycard; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

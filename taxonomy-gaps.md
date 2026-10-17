@@ -273,3 +273,51 @@ category, and that the status quo is defensible.
 
 **Recommendation:** hold. Revisit if survey responses show firms shopping for human
 risk management as a line item distinct from both DLP and awareness training.
+
+---
+
+## [2026-10-16] Two items from the AIE NYC 2026 attendee scan — need a human decision
+
+Source: the human's diff of AIE NYC 2026 speakers/sponsors against the wiki. Twelve
+vendors were added as pages on 2026-10-16. The two items below were researched but
+**not** given pages, because neither fits an existing slug cleanly.
+
+### 1. Entire — "agent provenance" for AI-written code
+
+**Verified** (`raw/sources/2026-10-16--entire--seed-checkpoints-git-network.md`):
+Entire was founded by Thomas Dohmke (GitHub CEO until August 2025) and raised a $60M
+seed at a $300M valuation (announced 2026-02-10, Felicis lead). Its MIT-licensed CLI
+hooks into git and records the coding agent's prompts, transcript, files touched, token
+usage and tool calls as a "checkpoint". Each checkpoint is stored in a separate git ref
+and linked from the commit message (`Entire-Checkpoint:`). The README pitches audit and
+compliance traceability. Secret redaction is best-effort, and a public repo exposes its
+transcripts. A distributed git network went to waitlist preview on 2026-07-08. No
+enterprise product or pricing has been published.
+
+**The gap:** none of the existing slugs answers "who or what wrote this line of code,
+and what was it told to do?"
+- `software-supply-chain` is the nearest fit: this is provenance for first-party code,
+  the counterpart of SBOM/SLSA provenance for third-party code.
+- `llm-observability` traces runtime LLM apps, not a developer's coding agent.
+- `promotion-gates` is a practice, and Entire is a record rather than a gate.
+
+**Recommendation:** don't create a category on the strength of one free developer tool.
+Either (a) file Entire under `software-supply-chain` with a note, or (b) open an
+`agent-provenance` slug once a second vendor appears or an enterprise SKU ships. Revisit
+by 2027-04.
+
+### 2. Norm Ai — AI *for* compliance, not governance *of* AI
+
+**Verified** (`raw/sources/2026-10-16--norm-ai--funding-product-customers.md`):
+- Founded 2023 in New York; John Nay is CEO.
+- "Regulatory AI Agents" turn rules and firm policies into executable compliance checks.
+- Funding is reported at more than $260M, most recently a $120M Series C at $1.2B led
+  by Khosla (2026-07-07).
+- New York Life and Prudential are the only named customers, both insurers. Vanguard,
+  Blackstone, TIAA and Citi are investors or advisers, not confirmed users.
+
+**Scope call:** the core product is compliance automation and belongs in the
+category-level `governance_wiki` rather than here. A "Supervisory AI" product that checks
+the output of a firm's chatbots and agents against SEC and FINRA rules would make it a
+fair `also_listed_in: ai-governance-platform` candidate. That product is known only from
+a vendor snippet (the page returned 404 on 2026-10-16). Hold until it's verifiable.

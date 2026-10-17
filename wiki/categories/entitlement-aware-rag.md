@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [vector-retrieval, data-access-governance, content-sources]
 incumbent_coverage: []
-vendor_count: 3
+vendor_count: 4
 maps_to_seed_doc: Entitlement-Aware RAG
 maps_to_seed_csv: (in Enterprise Chat & RAG)
 last_verified: 2026-06-28
@@ -69,6 +69,9 @@ No seed-flagged acquisitions in this slot. The structural dynamic to watch is **
 ## Survey
 
 **Question.** For governing what your AI assistant can retrieve, which entitlement-aware RAG / permission-enforcement approach are you using or evaluating? (Select all that apply.)
+
+**Retrieval substrate with filter primitives (not entitlement sync)**
+- [turbopuffer](../vendors/turbopuffer.md) — object-storage-native vector/full-text search, primary in [vector-retrieval](vector-retrieval.md). Listed here as the illustrative case of the DIY pattern: its docs say permissions "currently have to be implemented at the user-level with filters", so you mirror ACLs into document attributes and keep them in sync yourself. Bridgewater is a vendor-listed customer logo; no published case study of its entitlement design was found (2026-10-16). Not a survey answer option — it falls under "Built-in security-trimming from our vector/search platform" or "Custom in-house". (added 2026-10-16)
 
 **Answer options.**
 - Glean (native permissions-mirroring index)

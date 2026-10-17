@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
 incumbent_coverage: []
-vendor_count: 13
+vendor_count: 16
 maps_to_seed_doc: LLM Observability & Evaluation
 maps_to_seed_csv: LLM Observability & Eval
 last_verified: 2026-06-28
@@ -61,14 +61,17 @@ red-teaming that actually block. Treat it as the eyes, not the bouncer.
 - [helicone](../vendors/helicone.md) — lightweight proxy-based observability and cost tracking.
 - [comet](../vendors/comet.md) — Opik, Comet's open-source LLM eval/observability alongside its ML-experiment heritage.
 - [trulens](../vendors/trulens.md) — open-source RAG/agent evaluation framework (TruEra/Snowflake lineage).
+- [pydantic-logfire](../vendors/pydantic-logfire.md) — OpenTelemetry-native observability from the Pydantic team: agent/LLM spans in the same trace as API and database calls, SQL queries, online/offline evals; cloud (EU/US), dedicated or self-hosted (Enterprise). (added 2026-10-16)
 - [signoz](../vendors/signoz.md) — general-purpose OpenTelemetry observability (logs/metrics/traces on ClickHouse) that traces LLM calls via the OTel GenAI conventions; the generalist option, no prompt management or evals. Primary category is [siem-soc](siem-soc.md).
 
 **Evaluation / testing-first**
 - [braintrust](../vendors/braintrust.md) — eval-and-experimentation platform for LLM apps (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
 - [giskard](../vendors/giskard.md) — open-source testing/eval for ML and LLMs (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
+- [judgment-labs](../vendors/judgment-labs.md) — agent-behavior monitoring: LLM judges score whole agent trajectories online and offline and surface recurring failure modes and drift. OSS Judgeval SDK (Apache-2.0); scoring needs the hosted platform. $32M seed + Series A (2026-05). (added 2026-10-16)
 
 **Enterprise monitoring / explainability / model-risk-leaning**
 - [datadog](../vendors/datadog.md) — LLM observability inside the broader Datadog APM/monitoring suite.
+- [sentry](../vendors/sentry.md) — the error/APM incumbent's Agent Monitoring: agent runs, tool calls, tokens, cost and errors tied to existing Sentry traces; on every plan, no evals. Prompt capture is opt-in and not scrubbed by default once on. (added 2026-10-16)
 - [weights-and-biases](../vendors/weights-and-biases.md) — Weave, W&B's LLM tracing/eval alongside its experiment-tracking platform.
 - [fiddler-ai](../vendors/fiddler-ai.md) — model monitoring and explainability (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
 - [arthur-ai](../vendors/arthur-ai.md) — model/LLM monitoring and guardrails (cross-listed in [ai-governance-platform](ai-governance-platform.md)).
@@ -97,7 +100,8 @@ to trace, debug, evaluate, and monitor your AI applications?
 
 **Answer options:** Langfuse, LangSmith, Arize Phoenix, Braintrust, Helicone,
 Datadog LLM Observability, Weights & Biases (Weave), Comet (Opik), Fiddler AI,
-TruLens, Arthur AI, Giskard, Other (Please Specify).
+TruLens, Arthur AI, Giskard, Judgment Labs, Pydantic Logfire,
+Sentry (Agent Monitoring), Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

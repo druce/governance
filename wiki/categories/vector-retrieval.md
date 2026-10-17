@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [content-sources, entitlement-aware-rag]
 incumbent_coverage: []
-vendor_count: 4
+vendor_count: 5
 maps_to_seed_doc: Vector Retrieval
 maps_to_seed_csv: —
 last_verified: 2026-08-24
@@ -34,20 +34,21 @@ A **sensitive-data store**, not a control. A vector index is a *copy* of your se
 
 ## Vendors
 
-Infrastructure choices, not a competitive survey shortlist. Pages exist for four:
+Infrastructure choices, not a competitive survey shortlist. Pages exist for five:
 
 - [azure-ai-search](../vendors/azure-ai-search.md) — Azure's managed search/vector service; default for Microsoft-stack RAG, supports security-trimming via document-level ACLs.
 - [pinecone](../vendors/pinecone.md) — managed vector database; popular standalone choice for custom RAG builds.
 - [weaviate](../vendors/weaviate.md) — open-source / managed vector database.
 - [opensearch](../vendors/opensearch.md) — open-source search engine with vector support; the self-hosted option.
+- [turbopuffer](../vendors/turbopuffer.md) — object-storage-native vector + full-text search; very large corpora and namespace counts at low storage cost; SaaS, single-tenant or BYOC. No native ACLs: entitlements are DIY filters (cross-listed to [entitlement-aware-rag](entitlement-aware-rag.md)). (added 2026-10-16)
 
-**Also in this space** (named for completeness; no vendor pages — they add nothing to the governance story the four above do not already carry):
+**Also in this space** (named for completeness; no vendor pages — they add nothing to the governance story the five above do not already carry):
 
 - **Qdrant** — Apache-2.0 Rust engine; the filtering/performance pick. Hybrid Cloud keeps the data plane in your infrastructure. $50M Series B, 2026-03.
 - **Milvus / Zilliz** — Apache-2.0 (LF AI & Data); the billion-scale option, heaviest to operate.
 - **Chroma** — embedded-first, Apache 2.0; the prototyping default. Chroma Cloud GA 2025-08.
 - **LanceDB** — embedded + cloud over the Lance columnar format; the multimodal angle, and a common agent-memory substrate.
-- **pgvector, MongoDB Atlas Vector Search, Redis, Vespa, Amazon S3 Vectors, turbopuffer** — the "use what you already have" and object-storage-native options. For most funds pgvector on existing Postgres is the right default.
+- **pgvector, MongoDB Atlas Vector Search, Redis, Vespa, Amazon S3 Vectors** — the "use what you already have" and object-storage-native options. For most funds pgvector on existing Postgres is the right default.
 
 Full comparison, market shapes, and consolidation dynamics: [vector-database-landscape](../comparisons/vector-database-landscape.md).
 

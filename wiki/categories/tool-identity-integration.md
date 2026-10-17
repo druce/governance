@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [mcp-gateway, non-human-identity, authorization-engine]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 9
 maps_to_seed_doc: Tool Identity & Integration Layer
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-06-28
@@ -68,6 +68,8 @@ revocable. Lives in yellow/green zones alongside the gateway.
 - [stytch](../vendors/stytch.md) — auth/identity platform offering agent and connected-app auth. Cross-listed to [non-human-identity](non-human-identity.md).
 - [workos](../vendors/workos.md) — enterprise auth/SSO and connector platform extending to agent auth. Cross-listed to [identity-access](identity-access.md).
 - [cyberark](../vendors/cyberark.md) — secrets/PAM and machine-identity heritage applied to agent-to-tool credentials. Cross-listed to [non-human-identity](non-human-identity.md), [secrets-management](secrets-management.md), [identity-governance](identity-governance.md).
+- [keycard](../vendors/keycard.md) — agent-first credential issuance: per-task scoped tokens that narrow along delegation chains (OAuth token exchange). Primary is [non-human-identity](non-human-identity.md). (added 2026-10-16)
+- [speakeasy](../vendors/speakeasy.md) — Gram/AI Control Plane brokers OAuth so agents never hold the vendor API key; SCIM-synced roles from Okta/Entra. Primary is [mcp-gateway](mcp-gateway.md). (added 2026-10-16)
 
 ## Consolidation / M&A dynamics
 
@@ -94,7 +96,7 @@ or evaluating to give agents managed, secure access to SaaS tools? *(Select all 
 apply and indicate stage.)*
 
 **Answer options.** Composio · StackOne · Arcade · Descope · Stytch · WorkOS · CyberArk ·
-Other (Please Specify)
+Keycard · Speakeasy Gram · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.
