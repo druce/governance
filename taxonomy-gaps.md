@@ -321,3 +321,31 @@ category-level `governance_wiki` rather than here. A "Supervisory AI" product th
 the output of a firm's chatbots and agents against SEC and FINRA rules would make it a
 fair `also_listed_in: ai-governance-platform` candidate. That product is known only from
 a vendor snippet (the page returned 404 on 2026-10-16). Hold until it's verifiable.
+
+## [2026-10-20] kagent (Solo.io) — agent runtime / orchestration platform has no slug
+
+Source: the human asked whether Solo.io kagent / agentregistry are covered.
+agentregistry got a page (`mcp-gateway`, cross-listed `ai-spm`). kagent was researched
+but **not** given a page (`raw/sources/2026-10-20--kagent--cncf-repo-enterprise.md`).
+
+**Verified.** kagent is a Kubernetes-native framework and runtime for AI agents.
+- **How agents are defined:** as Kubernetes custom resources, so they can be managed through GitOps.
+- **Agent features:** it supports MCP tools and A2A, allows per-tool human approval (`requireApproval`), and emits OpenTelemetry traces.
+- **Status:** CNCF Sandbox since 2025-05-22, Apache-2.0, about 4.1k stars. Latest stable release v0.10.3 (2026-10-02), with v1.0 alphas shipping.
+- **Paid edition:** Solo Enterprise for kagent (announced 2025-09-15) adds on-behalf-of identity and policy, an AgentOps tracing UI, multicluster federation and FIPS builds.
+- **Not published:** pricing and named customers.
+
+**The gap:** no slug covers "where my agents run and how their lifecycle is governed".
+- `ephemeral-environments` covers sandboxed compute.
+- `agent-runtime-security` covers protection.
+- `mcp-gateway` covers the tool path.
+
+The same unfiled class includes AWS Bedrock AgentCore, Azure AI Foundry Agent Service,
+Google Agent Engine and Copilot Studio, none of which has a page. TrueFoundry's agent harness (open-sourced as TrueForge, 2026-08) and
+Obot's experimental self-hosted Claude Environments are in the same class; both are
+described on their existing gateway pages for now.
+
+**Recommendation:** don't force kagent into an existing category. Either (a) open an
+`agent-platform` (runtime/orchestration) slug, probably day-2 or situational in the
+model-prompt layer, when the hyperscaler agent runtimes are wanted as pages; or (b) keep
+kagent as a mention on the agentregistry and agentgateway pages. Revisit by 2027-04.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: null
 adjacent: [trust-zone-segmentation, promotion-gates]
 incumbent_coverage: []
-vendor_count: 6
+vendor_count: 8
 maps_to_seed_doc: Ephemeral Environments
 maps_to_seed_csv: —
 last_verified: 2026-06-28
@@ -64,6 +64,8 @@ ephemeral workloads, not AI-security products per se:
 
 - [modal](../vendors/modal.md) — serverless AI compute whose Sandboxes run untrusted agent-generated code on gVisor or a per-sandbox VM runtime; hosted only; outbound network open by default. $750M Series D at $15.75B (2026-10-14).
 - [daytona](../vendors/daytona.md) — API-driven, sub-second, stateful agent sandboxes (Sysbox-hardened containers, not microVMs); pivoted from human dev environments in 2025; open-source repo archived, BYOC is Enterprise-only.
+- [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker Sandboxes (`sbx`) runs off-the-shelf coding agents (Claude Code, Codex, Copilot, Gemini CLI…) in local per-session microVMs with their own kernel, a host-side egress proxy (deny by default) and placeholder-credential injection; the paid Docker AI Governance add-on gives central policy and audit. Proprietary CLI, free locally. (added 2026-10-20)
+- [nvidia-openshell](../vendors/nvidia-openshell.md) — NVIDIA's open-source, self-hosted sandbox runtime for long-running agents (Docker/Podman/Kubernetes; microVM driver in prerelease); provides policy and containment, not compute. Primary is [agent-runtime-security](agent-runtime-security.md). (added 2026-10-20)
 - **Also in this space, no pages:** E2B (Firecracker microVM sandboxes), and the browser-agent sandboxes Browserbase and Anchor Browser — hosted headless browsers in which an agent can be confined.
 
 ## Consolidation / M&A dynamics

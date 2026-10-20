@@ -99,7 +99,9 @@ Segmentation is a design realized through controls you already run:
 
 - **Isolation / disposability** — [ephemeral-environments](ephemeral-environments.md) give you zone-scoped,
   short-lived compute that vanishes after use, so red-zone work leaves nothing sticky
-  to compromise.
+  to compromise. Agent sandbox runtimes such as [nvidia-openshell](../vendors/nvidia-openshell.md) and
+  [docker-sandboxes](../vendors/docker-sandboxes.md) go further: a per-sandbox policy file
+  (filesystem, egress allowlist, credentials) is effectively the zone definition.
 - **Egress control** — [network-security-sase](network-security-sase.md) and the [ai-gateway](ai-gateway.md) (the single
   exit door for model traffic) are how you actually cut or allowlist outbound paths
   for the yellow zone.

@@ -64,7 +64,7 @@ Primary category: [mcp-gateway](../categories/mcp-gateway.md) (model/prompt laye
 - **Open-source + neutral governance.** Unlike most MCP-gateway entrants, agentgateway is Apache-2.0 and lives under the Linux Foundation's Agentic AI Foundation (AAIF), with contributors from AWS, Microsoft, Red Hat, IBM, Cisco, Huawei, Shell, and Zayo. That neutrality is its main differentiator versus single-vendor tools.
 - **Three-in-one data plane (LLM + MCP + A2A)** in one Rust binary, rather than just an MCP proxy.
 - **Versus single-vendor / product gateways:** [kong](kong.md) and [truefoundry](truefoundry.md) approach AI/MCP gateways from existing API-gateway products; [docker-mcp-gateway](docker-mcp-gateway.md) focuses on running MCP servers in containers locally; [ibm-contextforge](ibm-contextforge.md) (MCP Context Forge) is another OSS MCP gateway/registry; [obot](obot.md), [mintmcp](mintmcp.md), [arcade](arcade.md), and [natoma](natoma.md) are more managed/SaaS MCP-access plays; [pomerium](pomerium.md) comes from identity-aware access proxying. agentgateway's claim to fame is being the broad, foundation-governed, performance-focused OSS data plane.
-- Note Solo.io ships sibling OSS projects (kagent, agentregistry, agentevals) around it.
+- Note Solo.io ships sibling OSS projects (kagent, agentregistry, agentevals) around it. [agentregistry](agentregistry.md) now has its own page: the approved catalog of agents, MCP servers and skills whose runtime-authorization rules agentgateway enforces. kagent and agentevals are summarised there (as of 2026-10-20).
 
 > Marketing claims (flagged): "first complete connectivity solution for Agentic AI," "zero-config TLS." Treat as vendor framing.
 
@@ -101,3 +101,4 @@ Primary category: [mcp-gateway](../categories/mcp-gateway.md) (model/prompt laye
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established it is an Apache-2.0 OSS Rust proxy created by Solo.io and donated to the Linux Foundation (2025-08-25), now hosted under the Agentic AI Foundation (AAIF) — ownership set to independent/high. Confirmed it is distinct from (not the same as) kgateway. Filled MCP/A2A/LLM gateway functionality, self-hosted/inline-proxy deployment, egress+untrusted-input trifecta role; hedge_fund_fit set low (platform-team infra, Day-2). No M&A. Cached 4 sources.
+- [2026-10-20] Linked the sibling-projects note to the new [agentregistry](agentregistry.md) page; kagent/agentevals summarised there.

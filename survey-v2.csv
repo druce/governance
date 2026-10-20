@@ -25,7 +25,7 @@ AI-aware Network Security (SSE/SASE),DNSFilter,"NEW 2026-08-26: protective DNS +
 AI-aware Network Security (SSE/SASE),Other (Please Specify),,,,
 AI Gateway,Portkey (Palo Alto),"Acq. by Palo Alto — announced 2026-04-30, CLOSED 2026-05-29 for $140M cash + replacement awards (per PANW 10-Q, verified 2026-07-27); now the Prisma AIRS AI Gateway. portkey.ai still live under its own brand; standalone SKU availability unconfirmed",,https://portkey.ai,https://github.com/druce/governance/blob/master/wiki/vendors/portkey.md
 AI Gateway,LiteLLM,Independent (OSS),,https://www.litellm.ai/,https://github.com/druce/governance/blob/master/wiki/vendors/litellm.md
-AI Gateway,TrueFoundry,Independent,,https://www.truefoundry.com,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
+AI Gateway,TrueFoundry,Independent; acquired Seldon AI (announced 2026-06-24); Agent Gateway + Agent Harness/TrueForge 2026,,https://www.truefoundry.com,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
 AI Gateway,Cloudflare,Public (NET),,https://www.cloudflare.com/products/ai-gateway/,https://github.com/druce/governance/blob/master/wiki/vendors/cloudflare.md
 AI Gateway,Kong AI Gateway,Independent; also MCP gateway,,https://konghq.com,https://github.com/druce/governance/blob/master/wiki/vendors/kong.md
 AI Gateway,F5,"Public (FFIV); acquired CalypsoAI (closed 2025-09-26, $145.2M) and SurePath AI (closed 2026-06-22)",,https://www.f5.com,https://github.com/druce/governance/blob/master/wiki/vendors/f5.md
@@ -77,6 +77,8 @@ Agent Security (runtime protection of agents),Straiker,Independent,,https://www.
 Agent Security (runtime protection of agents),Operant AI,Runtime agent/API protection,,https://www.operant.ai,https://github.com/druce/governance/blob/master/wiki/vendors/operant-ai.md
 Agent Security (runtime protection of agents),Lasso Security,Independent; AI/agent security + shadow-AI,,https://www.lasso.security,https://github.com/druce/governance/blob/master/wiki/vendors/lasso-security.md
 Agent Security (runtime protection of agents),Knostic,MOVED primary from Entitlement-Aware RAG (2026-07-09): repositioned to agentic security — Kirin (agents/coding tools/MCP) + AgentMesh supply chain,,https://www.knostic.ai,https://github.com/druce/governance/blob/master/wiki/vendors/knostic.md
+Agent Security (runtime protection of agents),NVIDIA OpenShell,"Open-source (Apache-2.0) agent sandbox runtime from NVIDIA; announced 2026-03-16 (GTC), v0.1.0 2026-09-25; part of the Open Agent Safety Platform (2026-09-28)",,https://github.com/NVIDIA/OpenShell,https://github.com/druce/governance/blob/master/wiki/vendors/nvidia-openshell.md
+Agent Security (runtime protection of agents),Docker AI Governance (Docker Sandboxes),"NEW 2026-05-12: central egress/filesystem/credential/MCP policy + SIEM audit for coding agents in Docker microVM sandboxes (sbx); paid add-on; distinct from OSS Docker MCP Gateway",,https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/,https://github.com/druce/governance/blob/master/wiki/vendors/docker-sandboxes.md
 Agent Security (runtime protection of agents),Other (Please Specify),,,,
 AI Antiphishing/deepfake/social engineering defense,Adaptive,Independent; OpenAI Startup Fund-backed,,https://www.adaptivesecurity.com,https://github.com/druce/governance/blob/master/wiki/vendors/adaptive-security.md
 AI Antiphishing/deepfake/social engineering defense,Doppel,Independent,,https://www.doppel.com,https://github.com/druce/governance/blob/master/wiki/vendors/doppel.md
@@ -111,8 +113,8 @@ Authorization Engine (Agent / Tool),AuthZed (SpiceDB),Relationship-based authz (
 Authorization Engine (Agent / Tool),Other (Please Specify),,,,
 MCP Gateway / Tool Access Control,Kong MCP Gateway,Agent/MCP gateway,,https://konghq.com/products/mcp-registry.com,https://github.com/druce/governance/blob/master/wiki/vendors/kong.md
 MCP Gateway / Tool Access Control,Solo.io agentgateway,Open-source (Linux Foundation; distinct from kgateway),,https://agentgateway.dev,https://github.com/druce/governance/blob/master/wiki/vendors/agentgateway.md
-MCP Gateway / Tool Access Control,TrueFoundry MCP Gateway,Agent/MCP gateway,,https://www.truefoundry.com/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
-MCP Gateway / Tool Access Control,Obot,SPLIT from 'Obot / MintMCP': agent/MCP gateway (early-stage),,https://obot.ai,https://github.com/druce/governance/blob/master/wiki/vendors/obot.md
+MCP Gateway / Tool Access Control,TrueFoundry MCP Gateway,Agent/MCP gateway; part of TrueFoundry gateway family with Agent Gateway (2026-06),,https://www.truefoundry.com/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/truefoundry.md
+MCP Gateway / Tool Access Control,Obot,SPLIT from 'Obot / MintMCP': agent/MCP gateway (early-stage); now also LLM gateway + coding-agent device controls (2026),,https://obot.ai,https://github.com/druce/governance/blob/master/wiki/vendors/obot.md
 MCP Gateway / Tool Access Control,MintMCP,SPLIT from 'Obot / MintMCP': agent/MCP gateway (early-stage),,https://www.mintmcp.com,https://github.com/druce/governance/blob/master/wiki/vendors/mintmcp.md
 MCP Gateway / Tool Access Control,Arcade,NEW (cross-listed with Tool Identity): tool-calling gateway + per-user OAuth,,https://www.arcade.dev,https://github.com/druce/governance/blob/master/wiki/vendors/arcade.md
 MCP Gateway / Tool Access Control,Docker MCP Gateway,NEW: OSS,,https://github.com/docker/mcp-gateway,https://github.com/druce/governance/blob/master/wiki/vendors/docker-mcp-gateway.md
@@ -124,6 +126,7 @@ MCP Gateway / Tool Access Control,Gravitee MCP Proxy,NEW (added 2026-07-27): met
 MCP Gateway / Tool Access Control,Runlayer,"$42M total: $11M seed (Khosla/Felicis, 2025-11) + $30M Series A (Felicis, 2026-06); Runlayer v. Rippling trade-secret suit filed 2026-07-28",,https://www.runlayer.com/,https://github.com/druce/governance/blob/master/wiki/vendors/runlayer.md
 MCP Gateway / Tool Access Control,Speakeasy Gram (AI Control Plane),Pivot from API SDK tooling; Gram (AGPL-3.0) MCP Gateway GA 2026-03; last confirmed round $15M Series A (2024-10),,https://www.speakeasy.com/,https://github.com/druce/governance/blob/master/wiki/vendors/speakeasy.md
 MCP Gateway / Tool Access Control,Tetrate Agent Router,Cross-listed (primary: AI Gateway); LLM + MCP gateway on Envoy,,https://tetrate.io/,https://github.com/druce/governance/blob/master/wiki/vendors/tetrate.md
+MCP Gateway / Tool Access Control,agentregistry (Solo.io),"OSS (Apache-2.0) agent/MCP/skills registry; CNCF Sandbox vote passed 2026-09-29, onboarding pending; governance controls mainly in Solo Enterprise edition; pairs with agentgateway",,https://github.com/agentregistry-dev/agentregistry,https://github.com/druce/governance/blob/master/wiki/vendors/agentregistry.md
 MCP Gateway / Tool Access Control,Other (Please Specify),,,,
 Tool Identity & Integration (Agent Auth),Composio,Tool integration / managed agent auth,,https://composio.dev,https://github.com/druce/governance/blob/master/wiki/vendors/composio.md
 Tool Identity & Integration (Agent Auth),Arcade,Tool-calling / per-user OAuth (Arcade.dev),,https://www.arcade.dev,https://github.com/druce/governance/blob/master/wiki/vendors/arcade.md

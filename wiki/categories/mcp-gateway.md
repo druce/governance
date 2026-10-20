@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
 incumbent_coverage: []
-vendor_count: 15
+vendor_count: 17
 maps_to_seed_doc: MCP Gateway / Tool Access Control
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-07-27
@@ -62,13 +62,14 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [agentgateway](../vendors/agentgateway.md) — Solo.io's open-source agent/MCP gateway (kgateway lineage); data-plane for agent and tool traffic.
 - [ibm-contextforge](../vendors/ibm-contextforge.md) — IBM's open-source MCP gateway/registry for cataloguing and brokering MCP servers.
 - [docker-mcp-gateway](../vendors/docker-mcp-gateway.md) — Docker's gateway for running and gating containerized MCP servers.
-- [obot](../vendors/obot.md) — open-source MCP gateway / agent platform.
+- [obot](../vendors/obot.md) — open-source (MIT) MCP gateway and registry that has grown into a broader AI governance platform: LLM gateway, device-level audit and enforcement for local coding agents (Obot Sentry, beta), self-hosted Claude sessions (experimental). SSO connectors free up to 100 users since 2026-07-31. (refreshed 2026-10-20)
+- [agentregistry](../vendors/agentregistry.md) — Solo.io's Apache-2.0 catalog of approved agents, MCP servers and skills; the paid Solo Enterprise edition adds OIDC sign-in, roles, an admin approval queue, runtime authorization enforced at agentgateway, and read-only discovery of agents in AgentCore, Foundry and Copilot Studio. CNCF Sandbox vote passed 2026-09-29, onboarding pending. Cross-listed to [ai-spm](ai-spm.md). (added 2026-10-20)
 
 **Commercial / managed gateways**
 - [mintmcp](../vendors/mintmcp.md) — managed MCP gateway for enterprise tool access control.
 - [arcade](../vendors/arcade.md) — tool-calling/agent platform with auth and a gateway for the tools agents invoke. Cross-listed to [tool-identity-integration](tool-identity-integration.md).
 - [kong](../vendors/kong.md) — API-gateway vendor extending into MCP/agent tool ACLs. Cross-listed to [ai-gateway](ai-gateway.md).
-- [truefoundry](../vendors/truefoundry.md) — AI platform with an MCP gateway alongside its AI gateway. Cross-listed to [ai-gateway](ai-gateway.md).
+- [truefoundry](../vendors/truefoundry.md) — MCP Gateway module of TrueFoundry's AI gateway platform, which since 2026 also includes an Agent Gateway and a managed agent harness (TrueForge). Cross-listed to [ai-gateway](ai-gateway.md).
 - [gravitee](../vendors/gravitee.md) — API-management vendor whose MCP Proxy gates individual MCP methods (`tools/call`, `resources/read`) with OpenFGA-backed fine-grained authorization. Cross-listed to [ai-gateway](ai-gateway.md).
 - [natoma](../vendors/natoma.md) — non-human-identity vendor offering MCP/agent gateway controls. Cross-listed to [non-human-identity](non-human-identity.md).
 - [pomerium](../vendors/pomerium.md) — identity-aware proxy used to broker MCP/tool access. Cross-listed to [authorization-engine](authorization-engine.md).
@@ -76,6 +77,7 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [runlayer](../vendors/runlayer.md) — MCP gateway turned "AI control plane": approved catalog of MCP servers/skills across AI clients, IdP-mapped permissions, tool-call scanning, shadow-AI discovery; SaaS or self-hosted. $42M raised; in trade-secret litigation with Rippling (filed 2026-07-28). The closest peer to mintmcp and natoma. (added 2026-10-16)
 - [speakeasy](../vendors/speakeasy.md) — ex-SDK-generation vendor whose AGPL Gram platform became an MCP gateway: IdP-provisioned access, OAuth brokering, inline secret/PII detectors and agent hooks; cloud, self-hosted or air-gapped. Cross-listed to [tool-identity-integration](tool-identity-integration.md). (added 2026-10-16)
 - [tetrate](../vendors/tetrate.md) — Agent Router Enterprise (the commercial build of the open-source Envoy AI Gateway, now Agent Router under AAIF) governs MCP alongside LLM traffic. Primary is [ai-gateway](ai-gateway.md). (added 2026-10-16)
+- [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker Sandboxes (`sbx`) has its own built-in MCP gateway (`sbx mcp`, since v0.38.0, 2026-08) with Cedar policy set through the paid Docker AI Governance; it governs only agents running inside Docker Sandboxes and is separate from the open-source [docker-mcp-gateway](../vendors/docker-mcp-gateway.md). Primary is [ephemeral-environments](ephemeral-environments.md). (added 2026-10-20)
 
 ## Consolidation / M&A dynamics
 
@@ -103,7 +105,7 @@ apply and indicate stage.)*
 **Answer options.** Solo.io agentgateway · Kong MCP Gateway · TrueFoundry MCP Gateway ·
 Arcade · IBM ContextForge · Docker MCP Gateway · Obot · MintMCP · Natoma · Pomerium ·
 Prisma AIRS Agent Gateway · Gravitee MCP Proxy · Runlayer · Speakeasy Gram ·
-Tetrate Agent Router · Other (Please Specify)
+Tetrate Agent Router · agentregistry (Solo.io) · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.
@@ -112,6 +114,8 @@ In production; Would recommend; Would not recommend.
 - Very new and OSS-heavy — expect **low production adoption**, lots of "evaluating," and self-built solutions hiding in "Other."
 - **Overlap risk is high:** the CSV asked MCP gateway, authorization engine, and tool identity as *one* question. Here they're split; respondents will still conflate them. A scope line ("the *doorway/allowlist* that brokers tool calls — not the auth engine or the connectors") helps. Cerbos/OPA/Permit.io/Oso belong on the [authorization-engine](authorization-engine.md) question; Composio/Descope/Stytch/WorkOS on [tool-identity-integration](tool-identity-integration.md).
 - Kong, TrueFoundry, and Prisma AIRS also appear on the [ai-gateway](ai-gateway.md) question — same vendor, different door.
+- **Two Docker options, two products (2026-10-20).** "Docker MCP Gateway" is the open-source Desktop/Engine gateway; Docker Sandboxes' built-in `sbx mcp` gateway is a separate, proprietary feature governed through Docker AI Governance (asked on the [agent-runtime-security](agent-runtime-security.md) question). Respondents will merge them; a parenthetical on the answer option helps.
+- agentregistry is a *catalog*, not a proxy; its rules are enforced at agentgateway. Expect respondents using both to tick only agentgateway.
 
 ## Open taxonomy questions
 

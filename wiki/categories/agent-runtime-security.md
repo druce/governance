@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 11
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28
@@ -70,6 +70,8 @@ anyway.
 - [noma-security](../vendors/noma-security.md) — AI/ML and agent security spanning discovery and runtime; primary in [ai-spm](ai-spm.md), cross-listed here.
 - [deepkeep](../vendors/deepkeep.md) — AI Agent Scanner (2026-03) maps an agent's tools and reachable actions into an attack-surface graph scored against the OWASP Top 10 for Agentic Applications, and is offered free; runtime enforcement covers only "select frameworks". Primary in [ai-runtime-security](ai-runtime-security.md).
 - [knostic](../vendors/knostic.md) — moved here 2026-07-09: now leads with agentic security (Kirin — runtime least-privilege and injection-blocking for agents, coding assistants, and MCP servers; AgentMesh supply-chain reputation). Distinctive coding-tool/MCP supply-chain wedge. Its original need-to-know/oversharing product stays cross-listed in [entitlement-aware-rag](entitlement-aware-rag.md).
+- [nvidia-openshell](../vendors/nvidia-openshell.md) — NVIDIA's open-source (Apache-2.0), self-hosted agent sandbox: agents run behind Landlock/seccomp, network egress is denied by default and checked by an OPA-based proxy, the agent holds only placeholder credentials, and policy changes need human approval. It contains the agent rather than detecting attacks; Cisco and CrowdStrike build on it rather than compete. Cross-listed to [ephemeral-environments](ephemeral-environments.md) and [trust-zone-segmentation](trust-zone-segmentation.md). (added 2026-10-20)
+- [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker AI Governance (paid, launched 2026-05-12) sets central egress, filesystem, credential and MCP policy for coding agents running in Docker's microVM sandboxes, with SIEM-streamed audit logs; enforcement at the execution boundary, no prompt inspection. Primary is [ephemeral-environments](ephemeral-environments.md). (added 2026-10-20)
 
 ## Consolidation / M&A dynamics
 
@@ -94,7 +96,7 @@ evaluating to protect agentic applications as they act? *(Select all that apply 
 indicate stage.)*
 
 **Answer options.** Zenity · Lasso Security · Operant AI · Apex Security · Straiker ·
-Noma · Knostic · Other (Please Specify)
+Noma · Knostic · NVIDIA OpenShell · Docker AI Governance · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.
@@ -105,6 +107,7 @@ In production; Would recommend; Would not recommend.
 - Lasso also appears under [ai-runtime-security](ai-runtime-security.md) and shadow-AI; respondents may file it wherever they first met it.
 - Knostic repositioned into this category in 2026; respondents who know it as the Copilot-oversharing tool may file it under [entitlement-aware-rag](entitlement-aware-rag.md) instead (it appears in both questions on purpose).
 - "Other" likely captures Prisma AIRS and AI-firewall vendors that pitch agent protection as a feature.
+- **NVIDIA OpenShell and Docker AI Governance (added 2026-10-20) are containment, not detection:** they sandbox the agent and police its egress, files and credentials rather than inspecting prompts or behaviour. OpenShell is open source and is also the base layer that Cisco and CrowdStrike integrations sit on, so a respondent may be "using" it indirectly.
 
 ## Open taxonomy questions
 

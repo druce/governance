@@ -25,9 +25,14 @@ certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: developers and enterprise platform/security teams already using Docker
-last_verified: 2026-06-28
+last_verified: 2026-10-20
 verify_after: null
 tags: [mcp, gateway, container-isolation, open-source, docker]
+sources:
+  - {claim: "repo docker/mcp-gateway still MIT, not archived, last push 2026-09-23, latest tag v0.44.1", url: "https://github.com/docker/mcp-gateway", date: 2026-10-20, confidence: high}
+  - {claim: "Docker AI Governance (launched 2026-05-12) is a control plane over Docker Sandboxes and the MCP Gateway", url: "https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/", date: 2026-05-12, confidence: high}
+  - {claim: "Docker Sandboxes' built-in MCP gateway is separate from the Docker Desktop MCP Toolkit; Cedar MCP policy via AI Governance", url: "https://docs.docker.com/ai/sandboxes/mcp-gateway/", date: 2026-10-20, confidence: high}
+  - {claim: "AI Governance audit logs cover Sandboxes decisions; MCP Gateway enforcement decisions planned, no date", url: "https://www.docker.com/blog/docker-ai-governance-audit-logs-now-where-your-security-team-already-works/", date: 2026-08-03, confidence: high}
 ---
 
 # Docker MCP Gateway
@@ -118,6 +123,30 @@ multi-tenant policy, and centralized RBAC, where the identity-proxy products
 (Pomerium, Arcade, MintMCP) are stronger. Many of these are complementary rather
 than mutually exclusive.
 
+## Docker AI Governance and Docker Sandboxes (added 2026-10-20)
+
+In 2026 Docker built a second, proprietary MCP-governance path next to this
+open-source gateway. It is covered on [docker-sandboxes](docker-sandboxes.md):
+
+- **Docker Sandboxes (`sbx`)**, launched around March–April 2026, runs coding
+  agents in per-session microVMs. Since **v0.38.0 (2026-08-06)** it has its own
+  built-in MCP gateway (`sbx mcp`). Docker's docs say this gateway "is separate
+  from the Docker Desktop MCP Toolkit" and does not share server settings with
+  it. Whether it shares code with this repo is not stated (open question).
+- **Docker AI Governance** (launched **2026-05-12**, paid, contact-sales) is
+  described as "the control plane that sits on top of" the sandbox and the MCP
+  Gateway. It adds admin-console policy, SAML/SCIM team scoping, and MCP rules
+  written in **Cedar** covering registration, tool calls, resources, prompts and
+  approval gates. As of 2026-08-03, its audit logs/SIEM streaming cover Sandboxes
+  decisions only. MCP Gateway enforcement decisions are "planned" with no date.
+
+What this means for a buyer: the earlier gap noted below (thin centralized
+policy/RBAC) is partly addressed, but **only through the paid Sandboxes +
+AI Governance product, for agents running inside Docker Sandboxes**. The
+open-source gateway on its own still has the gaps described on this page. As of
+2026-10-20 the repo is still MIT, not archived, last pushed 2026-09-23, latest
+tag v0.44.1.
+
 ## Ownership, funding & M&A
 
 - **Owner:** Docker, Inc., an independent private company headquartered in Palo
@@ -129,6 +158,11 @@ than mutually exclusive.
 - **M&A:** none relevant to the gateway. Docker, Inc. has not been acquired; it
   sold its enterprise business to Mirantis in 2019 and refocused on developer
   tooling. No seed M&A flag for this entry.
+- **Refresh 2026-10-20:** still private and independent. No 2026 funding round
+  or acquisition found. CEO Don Johnson (ex-Oracle Cloud Infrastructure founder)
+  since 2025-02-12. Mat Velloso (CPO) and Vinh Le (CFO) appointed 2026-08-18
+  (Docker press releases). Secondary-market estimates (~$0.8–0.9B, May–Jul 2026,
+  TrueUp) are below the 2022 mark; aggregator figures, low confidence.
 
 ## CTO / hedge-fund lens
 
@@ -161,14 +195,19 @@ stack; not sufficient on its own as the *access-governance* layer.
 - Parent Docker, Inc. total funding — no primary/audited figure; aggregator range
   only.
 - Relationship/overlap with Docker's `cagent` multi-agent tooling.
+- Does the `sbx` built-in MCP gateway share code with this repo? Is Docker
+  Desktop MCP Toolkit being superseded by Sandboxes + AI Governance? (added 2026-10-20)
 
 ## Sources
 
 - [Docker MCP Gateway: Open Source, Secure Infrastructure for Agentic AI](https://www.docker.com/blog/docker-mcp-gateway-secure-infrastructure-for-agentic-ai/) — fetched 2026-06-28 — supports: what it does, interceptors (`--verify-signatures`/`--block-secrets`/`--log-calls`), OAuth, Compose, launch date 2025-07-09; confidence: high (vendor blog)
 - [docker/mcp-gateway (GitHub)](https://github.com/docker/mcp-gateway) — fetched 2026-06-28 — supports: MIT license, container isolation, secrets via Docker Desktop, OAuth, catalog, dynamic discovery, monitoring; confidence: high (primary repo)
 - [MCP Gateway / MCP Catalog (Docker Docs)](https://docs.docker.com/ai/mcp-catalog-and-toolkit/) — fetched 2026-06-28 — supports: proxy/isolation architecture, restricted privileges/network/resources, Docker Desktop vs standalone install, signed catalog (300+ servers, provenance + SBOM); confidence: high (vendor docs)
+- [docker/mcp-gateway GitHub API](https://api.github.com/repos/docker/mcp-gateway) — fetched 2026-10-20 — supports: MIT, not archived, last push 2026-09-23, tag v0.44.1; confidence: high
+- [Docker AI Governance launch blog (2026-05-12)](https://www.docker.com/blog/docker-ai-governance-unlock-agent-autonomy-safely/), [AI Governance audit logs blog (2026-08-03)](https://www.docker.com/blog/docker-ai-governance-audit-logs-now-where-your-security-team-already-works/), [Sandboxes MCP gateway docs](https://docs.docker.com/ai/sandboxes/mcp-gateway/) — fetched 2026-10-20 — supports: AI Governance scope, separation from MCP Toolkit, audit coverage; confidence: high (vendor). Cached: `raw/sources/2026-10-20--docker-ai-governance--launch-audit-docs.md`, `raw/sources/2026-10-20--docker-sandboxes--docs-architecture-security.md`, `raw/sources/2026-10-20--docker--leadership-ownership-2026.md`
 - [Docker Raises $105M at $2.1B Valuation (Crunchbase News)](https://news.crunchbase.com/enterprise/docker-bain-capital-vc-funding/) — fetched 2026-06-28 — supports: Docker, Inc. private, Palo Alto HQ, 2022 raise/valuation; confidence: medium (secondary); total-funding figures low confidence (aggregators disagree)
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established Docker MCP Gateway as an MIT-licensed open-source Docker CLI plugin/gateway (launched 2025-07-09) that runs MCP servers as isolated containers from a signed Docker MCP Catalog, with secrets handling, `--verify-signatures`/`--block-secrets`/`--log-calls` interceptors, and OAuth; ships in Docker Desktop's MCP Toolkit and runs standalone on Docker Engine. Owner = Docker, Inc., independent private company (Palo Alto); not acquired. Corrected license assumption: repo states MIT, not Apache-2.0. Kept primary category [mcp-gateway](../categories/mcp-gateway.md). Set ownership_confidence high (origin) but funding low (aggregator-only). hedge_fund_fit = medium. No M&A flag; no contradictions.
+- [2026-10-20] Refreshed (user question on Docker AI Governance / sbx). Added a section on Docker AI Governance (launched 2026-05-12) and the separate MCP gateway built into Docker Sandboxes `sbx` (v0.38.0, 2026-08-06), cross-linked to the new [docker-sandboxes](docker-sandboxes.md) page. Re-checked the repo (MIT, active, v0.44.1). Ownership refresh: still independent; 2026-08-18 CPO/CFO hires. No prior claims changed; added `sources:` frontmatter.

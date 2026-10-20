@@ -2765,3 +2765,35 @@ definition in SCHEMA.md, so the counting rule needs a decision before anyone run
 bulk refresh.
 
 Lint: 0 errors, 30 warns (27 + 3 expected orphans), 48 research-needed.
+
+## [2026-10-20] stub | Docker Sandboxes/AI Governance, NVIDIA OpenShell, agentregistry; Obot + TrueFoundry refresh
+
+The human asked whether Docker AI Governance, Docker sbx v0.38.0, Obot on GitHub,
+TrueFoundry Agent Harness, NVIDIA OpenShell and Solo.io kagent/agentregistry were covered.
+Four parallel research agents verified each against primary sources. Sources are cached
+under `raw/sources/2026-10-20--*`.
+
+| Page | Category (+cross-list) | Note |
+|---|---|---|
+| docker-sandboxes (new) | ephemeral-environments (+mcp-gateway, agent-runtime-security) | `sbx` CLI runs coding agents in per-session microVMs. Docker AI Governance (paid, launched 2026-05-12) is folded in, not given its own page. v0.38.0 (2026-08-06) added the `sbx mcp` gateway; the latest is v0.49.1 |
+| nvidia-openshell (new) | agent-runtime-security (+ephemeral-environments, trust-zone-segmentation) | Apache-2.0 agent sandbox runtime; GTC 2026-03-16; v0.1.0 2026-09-25; six CVEs fixed 2026-08-25 |
+| agentregistry (new) | mcp-gateway (+ai-spm) | Solo.io registry; CNCF Sandbox vote passed 2026-09-29, onboarding pending |
+| docker-mcp-gateway (refresh) | — | added an AI Governance/Sandboxes section; Docker leadership refresh |
+| obot (refresh) | — | repositioned as an "AI governance platform"; v0.23–v0.27 changes; SSO connectors free ≤100 users from 2026-07-31 |
+| truefoundry (refresh) | — | Agent Harness (2026-06-09), later open-sourced as TrueForge (MIT, 2026-08-19); Agent Gateway (2026-06-02); Seldon acquisition announced 2026-06-24 |
+| agentgateway (touch) | — | sibling-projects line now links agentregistry |
+
+**Decisions.**
+- `docker-sandboxes` and `nvidia-openshell` use product slugs, consistent with `docker-mcp-gateway`, `agentgateway` and `agentregistry`.
+- Docker AI Governance is covered on `docker-sandboxes`. Docker describes it as the control plane over Sandboxes and MCP Gateway, but its policy and audit features cover Sandboxes only so far.
+- The NVIDIA OpenShell primary category is agent-runtime-security, because it enforces policy on a running agent from outside the agent and provides no compute itself. Market position: `oss-default`.
+- agentregistry ownership is `oss-vendor-backed` until CNCF onboarding completes. Soft contradiction: press in 2026-04 called it a Sandbox project already, but cncf/sandbox#477 shows the vote passed later, on 2026-09-29. Resolved in favour of the primary record.
+- kagent and agentevals get no pages. kagent is written up in `taxonomy-gaps.md` (2026-10-20) as an agent-platform/runtime gap, together with TrueForge and Obot Claude Environments.
+- TrueFoundry was not cross-listed to agent-runtime-security: the evidence shows preventive controls but no detection.
+- Obot cross-listing to ai-gateway is left for the human.
+- Soft contradictions noted on the pages: Obot licensing (June vs 2026-07-31); TrueFoundry HQ; Seldon announcement date (6/24 vs 6/25). Two aggregator funding claims for Obot were not adopted.
+
+**Registered.**
+- 3 new `survey-v2.csv` rows: agentregistry under MCP Gateway; NVIDIA OpenShell and Docker AI Governance under Agent Security. Docker gets one row only; the MCP survey notes warn that its two MCP gateways are easy to confuse.
+- CSV notes refreshed for TrueFoundry (2 rows) and Obot.
+- Vendor lists and answer options updated on mcp-gateway, agent-runtime-security, ephemeral-environments, ai-spm, ai-gateway and trust-zone-segmentation (prose only). `vendor_count` incremented for today's adds.

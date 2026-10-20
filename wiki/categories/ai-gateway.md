@@ -61,7 +61,7 @@ model providers.
 **Developer/OSS-leaning gateways**
 - [litellm](../vendors/litellm.md) — widely used open-source proxy/SDK that normalizes 100+ model providers behind one OpenAI-compatible API.
 - [portkey](../vendors/portkey.md) — gateway plus guardrails, observability, and prompt management; control-plane oriented.
-- [truefoundry](../vendors/truefoundry.md) — AI/ML platform with a gateway plus an [mcp-gateway](mcp-gateway.md) offering.
+- [truefoundry](../vendors/truefoundry.md) — Kubernetes-native AI gateway family (LLM, MCP and Agent Gateway, 2026-06) plus a managed agent harness (open-sourced as MIT TrueForge, 2026-08) and model serving; bought Seldon (announced 2026-06-24). Cross-listed to [mcp-gateway](mcp-gateway.md). (refreshed 2026-10-20)
 - [openrouter](../vendors/openrouter.md) — aggregator/marketplace routing to many models behind one API and billing relationship.
 - [bifrost](../vendors/bifrost.md) — Apache-2.0 Go gateway from [maxim-ai](../vendors/maxim-ai.md), pitched explicitly as the fast alternative to LiteLLM; guardrails, clustering, SSO and the MCP gateway are enterprise-tier.
 
