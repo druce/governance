@@ -1,8 +1,8 @@
 vendor,write_in_labels,mentions,in_production,questions,survey_categories,wiki_categories,existing_wiki_page,notes,decision,detail
 ACA Group,ACA,1,1,Q38,Communications Surveillance,comms-surveillance,,,added,aca-group (comms-surveillance; +enterprise-grc)
-ASKB,ASKB,1,,Q9,"AI Market Data Terminal, Screening & Idea-Generation Tools",,,could not identify from label; verify,unidentified,
+ASKB,ASKB,1,,Q9,"AI Market Data Terminal, Screening & Idea-Generation Tools",,,could not identify from label; verify,out of scope,"Bloomberg ASKB (agentic AI on the Terminal, beta 2026-02-23); business-app question"
 Accelex,Accelex,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Adlumin (N-able),Adlumin,1,1,Q46,SIEM / Logging,siem-soc,,,named,MDR; siem-soc page + MDR gap
+Adlumin (N-able),Adlumin,1,1,Q46,SIEM / Logging,siem-soc,,,added,adlumin (ai-soc-analysts; +siem-soc). MDR; N-able closed 2024-11-20
 Airbyte,Airbyte,1,,Q17,"Data Engineering, Document Ingestion, ETL",,,,out of scope,business-app question (no wiki category); security/governance-only scope
 AlphaSense,AlphaSense,2,,Q6,Research / Q&A / Chat-Over-Docs,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 AlphaSights,AlphaSights,1,,Q6,Research / Q&A / Chat-Over-Docs,,,,out of scope,business-app question (no wiki category); security/governance-only scope
@@ -10,9 +10,9 @@ Anduin,Anduin,1,,Q10,Due Diligence & Data-Room Agents,,,,out of scope,business-a
 Audition AI,Audition AI,2,,Q14,Foundation Models & Enterprise AI Assistants,,audition-ai,,no change,audition-ai exists (enterprise-ai-assistant); Q14 foundation-model placement is loose
 BeyondTrust,BeyondTrust,1,1,Q48,IGA / Access Governance,identity-governance,beyondtrust,,cross-listed,beyondtrust +identity-governance (ISPM side only)
 Bitwarden,Bitwarden,5,5,Q49,Secrets Management,secrets-management,,,added,bitwarden (secrets-management)
-Blackpoint,Blackpoint,2,2,Q46,SIEM / Logging,siem-soc,,,named,MDR; siem-soc page + MDR gap in taxonomy-gaps
+Blackpoint,Blackpoint,2,2,Q46,SIEM / Logging,siem-soc,,,added,blackpoint-cyber (ai-soc-analysts; +siem-soc). MDR
 Blue J,Blue J,1,,Q27,Legal AI Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-BlueVoyant,BlueVoyant,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,,named,vendor-risk page (Supply Chain Defense)
+BlueVoyant,BlueVoyant,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,,added,bluevoyant (ai-soc-analysts; +vendor-risk). MDR + Supply Chain Defense
 CENTRL,CENTRL,2,,Q10,Due Diligence & Data-Room Agents,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Canoe Intelligence,Canoe Intelligence,1,,Q10,Due Diligence & Data-Room Agents,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Carta,Carta,3,,Q10; Q26,"Due Diligence & Data-Room Agents; Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
@@ -21,47 +21,47 @@ Check Point,Check Point,1,1,Q52,DLP,dlp,,,added,"check-point (network-security-s
 Checkbox,Checkbox,1,,Q27,Legal AI Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Cisco (Duo),Duo,1,1,Q29,Identity Providers (IdP),identity-access,cisco,,cross-listed,cisco +identity-access (Duo)
 Claren,Claren (Wilson AI),1,,Q27,Legal AI Tools,,,formerly Wilson AI,out of scope,business-app question (no wiki category); security/governance-only scope
-Clarier,Clarier,1,1,Q35,AI-SPM / Agent Security Posture,ai-spm,,could not identify from label; verify,unidentified,AI-SPM write-in; not found
+Clarier,Clarier,1,1,Q35,AI-SPM / Agent Security Posture,ai-spm,,could not identify from label; verify,added,"clarier (ai-access-governance; +ai-governance-platform, vendor-risk). clarier.ai; AI-SPM placement was a misfit"
 Clarity AI,Clarity AI,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Click Studios (Passwordstate),Passwordstate,1,1,Q49,Secrets Management,secrets-management,,,named,secrets-management page
 Coder,Coder,1,,Q22,Agent Sandboxes / Code-Execution Runtimes,,,,not added,"agent/dev sandbox; ephemeral-environments is practice-tier, no shortlist"
 Dagster Labs,Dagster,2,,Q17,"Data Engineering, Document Ingestion, ETL",,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Dakota,Dakota,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Daloopa,Daloopa,3,,Q7; Q11,"Market Intelligence, Earnings & Expert Content; Excel / Financial-Model Automation",,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Dashlane,Dashlane,2,2,Q49,Secrets Management,secrets-management,,,added,dashlane (secrets-management)
+Dashlane,Dashlane,2,2,Q49,Secrets Management,secrets-management,,,removed,"page removed 2026-10-24 (human): staff password manager, poor enterprise choice; named on secrets-management"
 Datadog,Datadog; Datadog Bits,2,1,Q46; Q47,SIEM / Logging; AI SOC,siem-soc; ai-soc-analysts,datadog,,cross-listed,"datadog +siem-soc (Cloud SIEM), +ai-soc-analysts (Bits AI Security Analyst)"
 Docker,Docker Sandbox,1,,Q22,Agent Sandboxes / Code-Execution Runtimes,,docker-sandboxes,,no change,docker-sandboxes already ephemeral-environments
 Dope Security,Dope Security,1,0,Q31,AI Usage Control / Shadow-AI,ai-access-governance,dope-security,,cross-listed,dope-security +ai-access-governance
 Drawbridge,Drawbridge,3,3,Q55,Third-Party Risk (TPRM),vendor-risk,,,added,drawbridge (vendor-risk; +enterprise-grc). Vendor DD is advisor-delivered
 DuckDB Labs (DuckLake),DuckLake,1,,Q16,Data Platforms,,,open-source lakehouse format,out of scope,business-app question (no wiki category); security/governance-only scope
 Egnyte,Egnyte,5,4,Q17; Q50; Q51; Q54,"Data Engineering, Document Ingestion, ETL; DSPM / Data Classification; Data Access Governance; GRC / AI Governance",dspm; data-access-governance; enterprise-grc,,,added,"egnyte (data-access-governance; +dspm, content-sources). GRC placement = respondent misplacement"
-Elteni,Elteni,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,could not identify from label; verify,unidentified,TPRM write-in; not found
+Elteni,Elteni,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,could not identify from label; verify,added,elteni (vendor-risk; +enterprise-grc). elteni.com; services boutique
 Entrilia,Entrilia,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
 FIS,FIS Investran,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
 FalkorDB,FalkorDB,1,,Q23,Agent APIs / MCP / Search & Retrieval,,,,not added,"graph DB used for agent memory; adjacent infra, no category"
-Firegate,Firegate,1,1,Q32,LLM Gateways,ai-gateway,,could not identify from label; verify,unidentified,LLM-gateway write-in; possibly FortiGate or Fireraven FireGuard
+Firegate,Firegate,1,1,Q32,LLM Gateways,ai-gateway,,could not identify from label; verify,not added,"getfiregate.com is a UK home/SMB network appliance, not an LLM gateway"
 Fivetran,Fivetran,1,,Q17,"Data Engineering, Document Ingestion, ETL",,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Fortra (Digital Guardian),Digital Guardian (Fortra),1,1,Q52,DLP,dlp,,,named,dlp page
+Fortra (Digital Guardian),Digital Guardian (Fortra),1,1,Q52,DLP,dlp,,,added,"fortra (dlp; +network-security-sase, dspm). Digital Guardian now Fortra DLP"
 Geordie AI,Geordie AI,2,2,Q33; Q34,LLM Observability; AI Runtime Security / AI Firewall,llm-observability; ai-runtime-security,,,added,geordie-ai (agent-runtime-security; +ai-spm). LLM-observability placement = misplacement
 Glean,Glean,1,,Q6,Research / Q&A / Chat-Over-Docs,,glean,,no change,glean exists (entitlement-aware-rag)
 Harmonic (harmonic.ai),Harmonic,1,,Q13,Private Equity / Deal Sourcing,,,deal-sourcing data; not Harmonic Security,out of scope,business-app question (no wiki category); security/governance-only scope
 Hebbia,Hebbia,2,,Q11; Q21,Excel / Financial-Model Automation; Agent Frameworks,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Inedo,Inedo ProGet,1,1,Q53,AppSec / Software Supply Chain,software-supply-chain,,,named,software-supply-chain page (ProGet)
+Inedo,Inedo ProGet,1,1,Q53,AppSec / Software Supply Chain,software-supply-chain,,,added,inedo (software-supply-chain). ProGet
 Island,Island AI controls,1,1,Q31,AI Usage Control / Shadow-AI,ai-access-governance,island,,cross-listed,island +ai-access-governance (AI Protect)
 LSEG (Refinitiv),Refinitiv,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-LastPass,LastPass,5,5,Q49,Secrets Management,secrets-management,,,added,lastpass (secrets-management)
+LastPass,LastPass,5,5,Q49,Secrets Management,secrets-management,,,removed,"page removed 2026-10-24 (human): staff password manager, poor enterprise choice; named on secrets-management"
 LawVu,LawVu,1,,Q27,Legal AI Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Lepide,Lepide,2,2,Q50; Q51,DSPM / Data Classification; Data Access Governance,dspm; data-access-governance,,,added,lepide (data-access-governance; +dspm)
 Lightkeeper,Lightkeeper,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
 LiteLLM,LiteLLM MCP proxy,1,1,Q39,MCP Gateways,mcp-gateway,litellm,,cross-listed,litellm +mcp-gateway
 Litera,Litera,1,,Q27,Legal AI Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-LogPoint,LogPoint,1,1,Q46,SIEM / Logging,siem-soc,,,named,siem-soc page (rebranded guardsix 2026-03-12)
+LogPoint,LogPoint,1,1,Q46,SIEM / Logging,siem-soc,,,added,guardsix (siem-soc). LogPoint renamed guardsix 2026-03-12
 Loopio,Loopio,1,,Q10,Due Diligence & Data-Room Agents,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-MIK,MIK,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,could not identify from label; verify,unidentified,
+MIK,MIK,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,could not identify from label; verify,out of scope,"MIK Fund Solutions (mikfs.com), hedge-fund OMS/portfolio software; business-app question"
 ManageEngine (Zoho),ManageEngine Log360,2,2,Q46,SIEM / Logging,siem-soc,,,added,manageengine (siem-soc)
 Mastra,Mastra,1,,Q21,Agent Frameworks,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 MetaView,MetaView,1,,Q25,Meeting-Intelligence Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Mitratech,Mitratech,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,,named,"vendor-risk page (Prevalent, acquired 2024-10-02)"
+Mitratech,Mitratech,1,1,Q55,Third-Party Risk (TPRM),vendor-risk,,,added,mitratech (vendor-risk; +enterprise-grc). Owns Prevalent
 Moody's,Moody's,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Nasdaq Data Link (Quandl),Quandl,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Notion,Notion,1,,Q25,Meeting-Intelligence Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
@@ -70,24 +70,24 @@ OpenCode,OpenCode,1,,Q20,AI Coding Assistants/Vibe-Coding/Low-code,,,open-source
 OpenRouter,OpenRouter,1,,Q15,AI Model Hosting / Inference Platforms,,openrouter,,no change,openrouter exists (ai-gateway); written under model hosting
 PitchBook (Morningstar),PitchBook,1,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Portkey (Palo Alto Networks),Portkey MCP Gateway,2,1,Q23; Q39,Agent APIs / MCP / Search & Retrieval; MCP Gateways,mcp-gateway,portkey,,cross-listed,portkey +mcp-gateway; now branded Prisma AIRS AI Gateway
-Proofpoint,Proofpoint,1,1,Q52,DLP,dlp,proofpoint-dspm,,named,"dlp page; wiki page proofpoint-dspm is product-slugged (Normalyze DSPM), Proofpoint DLP named on dlp page rather than cross-listing a DSPM page"
+Proofpoint,Proofpoint,1,1,Q52,DLP,dlp,proofpoint-dspm,,cross-listed,proofpoint-dspm +dlp (Proofpoint Enterprise DLP section)
 Proton,Proton Pass,1,1,Q49,Secrets Management,secrets-management,,,named,secrets-management page (Proton Pass)
 Qdrant,Qdrant,1,,Q23,Agent APIs / MCP / Search & Retrieval,,,,covered elsewhere,vector-database-landscape comparison (no-stub stance 2026-08-24)
 Quill,Quill,1,,Q25,Meeting-Intelligence Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Quilr,Quilr MCP Gateway,1,,Q23,Agent APIs / MCP / Search & Retrieval,,quilr,,cross-listed,quilr +mcp-gateway
 Reco,Reco,1,0,Q42,SaaS Security Posture (SSPM),sspm,reco,,no change,reco already sspm
-Red Canary (Zscaler),Red Canary,1,1,Q46,SIEM / Logging,siem-soc,zscaler,acquired by Zscaler 2025; verify,named,MDR; covered on zscaler page (closed 2025-08-01); MDR gap in taxonomy-gaps
+Red Canary (Zscaler),Red Canary,1,1,Q46,SIEM / Logging,siem-soc,zscaler,acquired by Zscaler 2025; verify,cross-listed,zscaler +ai-soc-analysts (Red Canary MDR)
 ReliaQuest,ReliaQuest,2,2,Q47,AI SOC,ai-soc-analysts,,,added,"reliaquest (ai-soc-analysts; +siem-soc). Managed outcome, not pure software"
 Responsive,Responsive,1,,Q10,Due Diligence & Data-Room Agents,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 Rogo,Rogo,1,,Q11,Excel / Financial-Model Automation,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 S&P Global (Capital IQ),CapIQ,2,,Q19,Data Providers and Alt-Data,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 SS&C Advent (Geneva),Geneva,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
-Safe Security,Safe Security,1,0,Q55,Third-Party Risk (TPRM),vendor-risk,,,named,vendor-risk page (SAFE TPRM)
+Safe Security,Safe Security,1,0,Q55,Third-Party Risk (TPRM),vendor-risk,,,added,safe-security (vendor-risk; +enterprise-grc)
 Salesforce,Salesforce,1,,Q13,Private Equity / Deal Sourcing,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 SentinelOne,Prompt Security (SentinelOne); Prompt Security browser plug-in,2,2,Q30; Q41,SSE / SASE / Web Gateway; Enterprise Browsers,network-security-sase; enterprise-browser,prompt-security,,cross-listed,prompt-security +browser-security-extension. SSE/SASE placement = misplacement
-Sevii,Sevii,1,1,Q47,AI SOC,ai-soc-analysts,,,named,ai-soc-analysts page
+Sevii,Sevii,1,1,Q47,AI SOC,ai-soc-analysts,,,added,sevii (ai-soc-analysts)
 Sophos (Secureworks Taegis),Secureworks Taegis (Sophos),2,2,Q46,SIEM / Logging,siem-soc,,,added,"sophos (edr-xdr; +siem-soc, network-security-sase, ai-access-governance). Secureworks closed 2025-02-03"
-Soteria,Soteria,1,0,Q46,SIEM / Logging,siem-soc,,could not identify from label; verify,named,MDR (Charleston SC); siem-soc page + MDR gap
+Soteria,Soteria,1,0,Q46,SIEM / Logging,siem-soc,,could not identify from label; verify,added,soteria (ai-soc-analysts; +siem-soc). Probably soteria.io MDR; identification flagged
 Strata (ambiguous),Strata,2,2,Q31; Q32,AI Usage Control / Shadow-AI; LLM Gateways,ai-access-governance; ai-gateway,,"likely Palo Alto Networks Strata, possibly Strata Identity; unverified",cross-listed,most likely PANW AI Access Security -> palo-alto-networks +ai-access-governance; Strata Identity (Rubrik) alternative noted in taxonomy-gaps
 Superblocks,Superblocks,1,,Q20,AI Coding Assistants/Vibe-Coding/Low-code,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 TS Imagine,TS Imagine,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope
@@ -100,5 +100,5 @@ Workato,Workato,1,,Q17,"Data Engineering, Document Ingestion, ETL",,,,out of sco
 Zep,Zep (Graphiti),1,,Q23,Agent APIs / MCP / Search & Retrieval,,,,covered elsewhere,agent-memory-landscape comparison
 Zscaler,Zscaler AI Guard; Zscaler,2,2,Q44; Q52,AI Red-Teaming / Guardrails; DLP,ai-red-teaming; dlp,zscaler,,cross-listed,"zscaler +dlp, ai-red-teaming, ai-runtime-security"
 dbt Labs,dbt,1,,Q17,"Data Engineering, Document Ingestion, ETL",,,merger with Fivetran announced 2025; verify status,out of scope,business-app question (no wiki category); security/governance-only scope
-eSentire,eSentire,1,1,Q47,AI SOC,ai-soc-analysts,,,named,MDR; siem-soc page + MDR gap
+eSentire,eSentire,1,1,Q47,AI SOC,ai-soc-analysts,,,added,esentire (ai-soc-analysts). MDR
 iManage,iManage,1,,Q27,Legal AI Tools,,,,out of scope,business-app question (no wiki category); security/governance-only scope

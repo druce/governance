@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [enterprise-grc, llm-observability, ai-spm]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 15
 maps_to_seed_doc: AI Governance Platform
 maps_to_seed_csv: AI Governance, Model Risk & Compliance
 last_verified: 2026-06-30
@@ -78,6 +78,10 @@ Adjacent platforms that also carry an AI-governance module (cross-listed):
 
 Observability vendors with governance reporting also overlap here: [fiddler-ai](../vendors/fiddler-ai.md),
 [arthur-ai](../vendors/arthur-ai.md).
+
+Cross-listed:
+
+- [clarier](../vendors/clarier.md) — AI-use inventory, AI-vendor approval and an SEC-exam/DDQ evidence log for alternative managers; governance of *employee AI use*, not model risk. Primary in [ai-access-governance](ai-access-governance.md). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 

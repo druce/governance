@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-governance-platform, vendor-risk]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 17
 maps_to_seed_doc: Enterprise GRC
 maps_to_seed_csv: Enterprize GRC
 last_verified: 2026-07-27
@@ -65,6 +65,9 @@ Fund-industry specialists and TPRM modules (cross-listed):
 - [aca-group](../vendors/aca-group.md) — ComplianceAlpha's compliance-management module (calendar, workflows, risk and policy management) sold alongside ACA's advisory and managed services; in effect the compliance system of record at many alternative managers already using ACA. Primary in [comms-surveillance](comms-surveillance.md). (added 2026-10-23)
 - [drawbridge](../vendors/drawbridge.md) — runs a hedge fund's or PE manager's cyber programme (assessments, policies, training, vendor DD) on a proprietary scoring/benchmarking platform with advisors; a lightweight cyber-compliance system of record, not a general GRC suite. Primary in [vendor-risk](vendor-risk.md). (added 2026-10-23)
 - [viso-trust](../vendors/viso-trust.md) — TPRM module rather than a GRC suite, but now a brand of the GRC vendor Protecht (acquired 2026-04), so increasingly sold alongside Protecht's risk platform. Primary in [vendor-risk](vendor-risk.md). (added 2026-10-23)
+- [mitratech](../vendors/mitratech.md) — PE-owned legal, risk and compliance suite (policy, internal controls, ESG, Preparis continuity) with Prevalent TPRM attached; a suite module rather than a stand-alone GRC buy. Primary in [vendor-risk](vendor-risk.md). (added 2026-10-24)
+- [safe-security](../vendors/safe-security.md) — Cyber risk quantification (FAIR-based, dollar-denominated risk register for boards and insurers) plus Balbix exposure management; the cyber-risk slice of GRC, not full GRC. Primary in [vendor-risk](vendor-risk.md). (added 2026-10-24)
+- [elteni](../vendors/elteni.md) — vCISO-led outsourced cyber/compliance programme for small funds — the services alternative to buying GRC software. Primary in [vendor-risk](vendor-risk.md). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 

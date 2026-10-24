@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [promotion-gates]
 incumbent_coverage: []
-vendor_count: 18
+vendor_count: 19
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
 last_verified: 2026-06-28
@@ -77,6 +77,8 @@ Agent-code security — the shift-left counterpart to [agent-runtime-security](a
 
 - [pensar](../vendors/pensar.md) — agentic scanner that writes the patch, plus a scanner for vulnerability classes conventional SAST does not model (unsafe tool usage, insecure code execution, memory manipulation in **agent** code). Seed-stage, ~10 staff — evaluate, do not standardise. (added 2026-08-26)
 
+- [inedo](../vendors/inedo.md) — ProGet: self-hosted private package/container registry with vulnerability scanning, licence blocking and CycloneDX SBOMs — paid editions only; a cheaper alternative to Artifactory or Nexus, with no malicious-package detection claimed. Independent. (added 2026-10-24)
+
 ## Consolidation / M&A dynamics
 
 No specific seed M&A flags for this category, but it's an active and crowded space
@@ -94,9 +96,6 @@ buyers toward whoever already hosts their repos.
 - [policy-as-code](policy-as-code.md) — pipeline policy enforcement (e.g. block builds failing a scan).
 - [ephemeral-environments](ephemeral-environments.md) — short-lived build/dev compute these tools protect.
 
-### Also named in survey write-ins (no page)
-
-- Inedo ProGet — self-hosted private package repository/Docker registry with SCA; a lighter alternative to Artifactory/Nexus.
 
 ## Survey
 
@@ -127,6 +126,7 @@ Code-quality gate and hardened open-source supply (added 2026-10-16):
 - Pensar
 - Sonar (SonarQube)
 - Chainguard
+- Inedo ProGet
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [enterprise-grc, third-party-ai-apps]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 16
 maps_to_seed_doc: Third-Party / Vendor Risk + Cyber Ratings
 maps_to_seed_csv: Vendor Risk
 last_verified: 2026-07-27
@@ -67,12 +67,11 @@ feeds:
 - [vendict](../vendors/vendict.md) — GenAI questionnaire automation that works in **both directions**: it drafts the answers to inbound allocator/counterparty questionnaires from the firm's own compliance corpus, not just the ones you issue. The half of this category most alternative managers actually feel. (added 2026-08-26)
 - [drawbridge](../vendors/drawbridge.md) — Cyber-programme software + advisory services built only for hedge funds/PE; vendor due diligence is one advisor-led service line, benchmarked against 1,000+ peer managers. Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-23)
 - [viso-trust](../vendors/viso-trust.md) — AI-native TPRM that assesses vendors from their existing SOC 2/audit artifacts instead of questionnaires, with 4th/nth-party monitoring; now a Protecht brand (acquired 2026-04). Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-23)
-
-### Also named in survey write-ins (no page)
-
-- BlueVoyant Supply Chain Defense — fully managed third-party cyber-risk monitoring with BlueVoyant analysts working remediation with the vendors.
-- Mitratech (Prevalent) — Mitratech acquired Prevalent (completed 2024-10-02); Prevalent TPRM is now a Mitratech product.
-- Safe Security (SAFE TPRM) — "autonomous" agentic-AI TPRM with FAIR-based scores, launched 2025-05-28 (vendor marketing).
+- [mitratech](../vendors/mitratech.md) — Prevalent TPRM (acquired 2024-10-02), now a module of Mitratech's legal/GRC suite: 800+ questionnaire templates, a shared vendor-assessment network, adverse-media/sanctions/cyber monitoring and optional managed services. OTPP-owned; sale exploration reported 2025-02. Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-24)
+- [safe-security](../vendors/safe-security.md) — Agent-first TPRM (launched 2025-05-28) combining outside-in exposure scanning with questionnaire, contract and SOC-report evidence, scored in dollars on SAFE's FAIR-based risk-quantification scale. Young module; "100% autonomous" is marketing. Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-24)
+- [elteni](../vendors/elteni.md) — NYC boutique running outsourced cyber programmes for funds and family offices (vCISO, pen tests, assessments) with advisor-delivered vendor due diligence and monitoring — a service, not a TPRM platform. Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-24)
+- [bluevoyant](../vendors/bluevoyant.md) — Supply Chain Defense: fully managed third-party cyber-risk monitoring in which BlueVoyant's analysts validate findings and work remediation directly with your vendors. Primary in [ai-soc-analysts](ai-soc-analysts.md) (MDR). (added 2026-10-24)
+- [clarier](../vendors/clarier.md) — AI-vendor trust reports and approval workflow — vendor diligence narrowed to AI tools. Primary in [ai-access-governance](ai-access-governance.md). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 
@@ -97,7 +96,7 @@ using AI / training on your data" signals.
 use to assess and monitor suppliers (including AI vendors)?
 
 **Answer options.** ProcessUnity; SecurityScorecard; BitSight; Black Kite; UpGuard;
-Venminder (Ncontracts); Whistic; Panorays; Vendict; Drawbridge; VISO TRUST (Protecht); Other (Please Specify).
+Venminder (Ncontracts); Whistic; Panorays; Vendict; Drawbridge; VISO TRUST (Protecht); Mitratech (Prevalent); Safe Security (SAFE TPRM); Elteni; BlueVoyant (Supply Chain Defense); Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [non-human-identity, identity-access]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 12
 maps_to_seed_doc: Secrets Manager
 maps_to_seed_csv: Secrets Manager
 last_verified: 2026-06-28
@@ -61,13 +61,12 @@ component of session control, rotation and privilege removal:
 Workforce password managers — staff credentials first; respondents wrote these in as answers to this question:
 
 - [bitwarden](../vendors/bitwarden.md) — Open-source, self-hostable password manager plus a real machine-secrets product (Secrets Manager: machine accounts, CLI/SDKs, CI/CD, Kubernetes); the low-cost one-vendor option for staff passwords and developer secrets. Not PAM, no dynamic secrets. (added 2026-10-23)
-- [lastpass](../vendors/lastpass.md) — Long-established password manager for staff credentials (no machine-secrets product found) and the reference breach case: encrypted vault backups stolen in 2022, later linked to crypto thefts. Defensible only if every pre-2023 credential has been rotated. (added 2026-10-23)
-- [dashlane](../vendors/dashlane.md) — Business password manager repositioned as workforce credential-risk monitoring (Omnix); staff passwords only, SaaS-only, no PAM. (added 2026-10-23)
 
 Cross-listed (secrets sit adjacent to NHI): [cyberark](../vendors/cyberark.md), [entro-security](../vendors/entro-security.md) (acquired by SailPoint, closed 2026-06-29).
 
 ### Also named in survey write-ins (no page)
 
+- LastPass and Dashlane — consumer-heritage staff password managers (5 and 2 firms in production). Pages removed 2026-10-24: no machine-secrets product, and weak enterprise choices (LastPass's 2022 vault-backup theft; Dashlane SaaS-only, no PAM).
 - Passwordstate (Click Studios) — self-managed password manager; its in-place upgrade was hijacked 2021-04-20→22 to push the "Moserpass" credential-stealer.
 - Proton Pass (Proton AG) — E2E-encrypted password manager; business tiers add SSO/SCIM, SIEM export, CLI/SSH agent.
 
@@ -89,11 +88,11 @@ The independents are consolidating into platform owners (IBM, Palo Alto), while 
 
 **Question.** Which secrets manager(s) is your firm currently using or evaluating?
 
-**Answer options.** Azure Key Vault; HashiCorp Vault; AWS Secrets Manager; GCP Secret Manager; CyberArk Conjur; 1Password; Doppler; Infisical; Keeper Security; Delinea; BeyondTrust; Bitwarden; LastPass; Dashlane; Other (Please Specify).
+**Answer options.** Azure Key Vault; HashiCorp Vault; AWS Secrets Manager; GCP Secret Manager; CyberArk Conjur; 1Password; Doppler; Infisical; Keeper Security; Delinea; BeyondTrust; Bitwarden; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 
-**Notes for survey design.** Cloud-native options (Key Vault, AWS, GCP) are table-stakes and will dominate; most firms use whatever ships with their cloud, so expect multi-select with a clear primary. The seed bundled "1Password / Doppler / Infisical" as one option — split here, but they serve a similar developer-secrets niche and may confuse respondents who lump them. HashiCorp→IBM and Conjur/CyberArk→Palo Alto (per seed) date those options. Ask whether secrets rotation is actually automated — ownership ≠ good hygiene. Oct-2026 survey write-ins show respondents treat staff password managers (Bitwarden, LastPass, Dashlane) as answers to this question — consider an explicit "workforce password manager" option or a split.
+**Notes for survey design.** Cloud-native options (Key Vault, AWS, GCP) are table-stakes and will dominate; most firms use whatever ships with their cloud, so expect multi-select with a clear primary. The seed bundled "1Password / Doppler / Infisical" as one option — split here, but they serve a similar developer-secrets niche and may confuse respondents who lump them. HashiCorp→IBM and Conjur/CyberArk→Palo Alto (per seed) date those options. Ask whether secrets rotation is actually automated — ownership ≠ good hygiene. Oct-2026 survey write-ins show respondents treat staff password managers (Bitwarden, LastPass, Dashlane, Passwordstate, Proton Pass) as answers to this question — consider an explicit "workforce password manager" option or a split.
 
 ## Open taxonomy questions
 

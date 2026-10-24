@@ -2872,3 +2872,36 @@ business-app questions have no wiki category and are out of scope (48 vendors).
 - Category pages: vendor lists, survey answer options, plain-text mentions and
   `vendor_count` (today's adds only).
 - `index.md`.
+
+## [2026-10-24] decision | survey write-ins round 2 — drop password managers, MDR → AI SOC, 13 more vendors
+
+Human direction on the 2026-10-23 triage:
+
+- **LastPass and Dashlane removed.** Pages deleted, CSV rows and survey options dropped; both are now named in plain text on `secrets-management` ("just password managers and poor enterprise choices"). Bitwarden stays because it has a real machine-secrets product. Passwordstate and Proton Pass stay as plain-text mentions for the same reason.
+- **MDR providers go in `ai-soc-analysts`** ("assume they have AI"). No new slug; the taxonomy-gaps MDR item is marked resolved. Each MDR page states what AI the provider actually claims, labelled as marketing; Soteria makes none. The survey note suggests a separate "who runs your 24/7 detection?" question.
+- **Single mentions get a page if the vendor claims the capability** of the category it was written into.
+- **Unidentified names resolved** with domains the human supplied (see taxonomy-gaps §3).
+
+**Added (13).** Four parallel research agents; sources in `raw/sources/2026-10-24--*`.
+
+| Page | Category (+cross-list) | Note |
+|---|---|---|
+| clarier | ai-access-governance (+ai-governance-platform, vendor-risk) | written under AI-SPM; no posture claim; alts-focused, early-stage |
+| elteni | vendor-risk (+enterprise-grc) | NYC services boutique, not a platform |
+| soteria | ai-soc-analysts (+siem-soc) | inferred as soteria.io (probable); Panther managed SIEM; no AI claim |
+| blackpoint-cyber | ai-soc-analysts (+siem-soc) | 2 in production; MSP-channel MDR |
+| adlumin | ai-soc-analysts (+siem-soc) | N-able, closed 2024-11-20, $98.7M cash at close + stock/deferred/earn-out. **Slug decision:** product slug (`adlumin`), as buyers name it; an `n-able` page would link to it |
+| esentire | ai-soc-analysts | Warburg Pincus majority; 2024 sale explored, none found |
+| bluevoyant | ai-soc-analysts (+vendor-risk) | written under TPRM (Supply Chain Defense); primary follows the MDR rule |
+| sevii | ai-soc-analysts | seed-stage agentic remediation |
+| mitratech | vendor-risk (+enterprise-grc) | **Slug decision:** `mitratech`, not `prevalent` (Prevalent acquired and absorbed, closed 2024-10-02; prevalent.net redirects) |
+| safe-security | vendor-risk (+enterprise-grc) | SAFE TPRM + FAIR CRQ; Balbix acq. announced 2025-11-18, close not found |
+| guardsix | siem-soc | **Slug decision:** current name; LogPoint renamed guardsix 2026-03-12 (rename only) |
+| fortra | dlp (+network-security-sase, dspm) | **Slug decision:** `fortra` (company), since the Digital Guardian brand is retired and digitalguardian.com redirects to Fortra DLP |
+| inedo | software-supply-chain | ProGet SCA/licence/SBOM in paid editions only |
+
+**Cross-lists.** proofpoint-dspm → dlp (Proofpoint Enterprise DLP section); sophos → ai-soc-analysts (Sophos/Taegis MDR); zscaler → ai-soc-analysts (Red Canary MDR). CSV rows added for Sophos MDR, Red Canary (Zscaler) and Proofpoint Enterprise DLP under their new questions.
+
+**No page.** Firegate (consumer/SMB network appliance, not an LLM gateway); Bloomberg ASKB and MIK Fund Solutions (identified, business-app questions).
+
+**Correction.** proofpoint-dspm `acquisition.closed` 2024-10-29 → null: that was the announcement date; no completion release found (now an R4 research item).

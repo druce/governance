@@ -5,7 +5,7 @@ name: Zscaler
 slug: zscaler
 aka: [ZS, Zero Trust Exchange]
 primary_category: network-security-sase
-also_listed_in: [ai-access-governance, dlp, ai-red-teaming, ai-runtime-security]
+also_listed_in: [ai-access-governance, dlp, ai-red-teaming, ai-runtime-security, ai-soc-analysts]
 website: https://www.zscaler.com
 founded: 2007
 hq: San Jose, California, USA
@@ -15,7 +15,7 @@ ownership_note: 'Public company, NASDAQ: ZS (IPO 2018); confirmed via vendor pre
 acquisition: {announced: null, closed: null, price: null}
 funding_total: n/a (public)
 last_funding: 'IPO March 2018 (NASDAQ: ZS)'
-market_position: {dlp: platform-module, ai-red-teaming: platform-module, ai-runtime-security: platform-module}
+market_position: {dlp: platform-module, ai-red-teaming: platform-module, ai-runtime-security: platform-module, ai-soc-analysts: platform-module}
 deployment_model: [saas]
 form_factor: [inline-proxy, api]
 data_leaves_tenancy: unverified
@@ -99,9 +99,10 @@ FY2026 Form 10-K (filed 2026-09-03):
   not a specialist.
 - **Security operations: Red Canary MDR.** Zscaler now sells a **Managed Detection and
   Response** service and an **Agentic SOC** product (10-K) built on the Red Canary
-  acquisition. This makes Zscaler an MDR provider. Not cross-listed: there is no MDR
-  category, and the Agentic SOC product was not researched against
-  [ai-soc-analysts](../categories/ai-soc-analysts.md) peers this pass.
+  acquisition. This makes Zscaler an MDR provider. Cross-listed in
+  [ai-soc-analysts](../categories/ai-soc-analysts.md) on 2026-10-24, when MDR providers
+  were placed in that category (decision in `log.md`). The Agentic SOC product itself has
+  not yet been benchmarked against the AI-SOC startups.
 
 ## Positioning & differentiators
 Known for scale and an installed inline footprint: if a shop already routes egress
@@ -161,3 +162,4 @@ not model validation.
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; confirmed public (NASDAQ: ZS, IPO 2018), HQ San Jose, founded 2007; documented AI access governance / shadow-AI / inline-DLP positioning; set ownership: public (high). One vendor source cached (marketing).
 - [2026-10-23] Cross-listed in dlp, ai-red-teaming and ai-runtime-security from Zscaler's FY2026 10-K product descriptions plus AI Guard integration docs, after Oct-2026 CTO survey write-ins ("Zscaler" under DLP; "Zscaler AI Guard" under AI Red-Teaming/Guardrails). Verified **Red Canary** acquisition (announced 2025-05-27, closed 2025-08-01, $651.4M cash). Corrected the SPLX timing (closed 2025-10-31, not announced Jan 2026). Added SquareX (closed 2026-02-05) and found that **Symmetry Systems closed 2026-05-27** per the 10-K, so the symmetry-systems page is stale. Set market_position labels. Not cross-listed to an MDR/SOC category (none exists for MDR, and Agentic SOC was not researched).
+- [2026-10-24] Cross-listed in ai-soc-analysts (Red Canary MDR + Agentic SOC) after the decision to place MDR providers in that category; a survey respondent wrote Red Canary in under SIEM/Logging (in production).

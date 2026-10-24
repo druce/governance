@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-soc-analysts, edr-xdr]
 incumbent_coverage: []
-vendor_count: 14
+vendor_count: 18
 maps_to_seed_doc: Enterprise logging / SIEM / SOC
 maps_to_seed_csv: SIEM/SOAR/SecOps
 last_verified: 2026-06-28
@@ -59,12 +59,12 @@ Enterprise-logging side only (telemetry backend, **no detection content**):
 
 - [rapid7](../vendors/rapid7.md) — InsightVM + InsightIDR + MDR bundled for the mid-market; the "one vendor, no SOC" option. Public (NASDAQ: RPD) but under activist pressure from Jana Partners to sell itself — price the ownership uncertainty into a multi-year contract. (added 2026-08-26)
 - [signoz](../vendors/signoz.md) — open-core, OpenTelemetry-native logs/metrics/traces on ClickHouse; self-hostable Datadog alternative. Answers the *logging* half of this category, not the SIEM half — no rule packs, correlation, case management or SOAR. Cross-listed to [llm-observability](llm-observability.md).
+- [guardsix](../vendors/guardsix.md) — Formerly LogPoint (renamed 2026-03-12). Copenhagen SIEM + NDR + SOAR, on-prem or SaaS, historically priced by node rather than ingest; EAL3+ and SOC 2. The sovereignty/MSSP option for EU-regulated firms. Summa Equity-owned. (added 2026-10-24)
+- [adlumin](../vendors/adlumin.md) — Cloud-native SIEM with "unmetered data ingest", sold standalone or fully managed via Adlumin MDR (N-able). Primary in [ai-soc-analysts](ai-soc-analysts.md). (added 2026-10-24)
+- [blackpoint-cyber](../vendors/blackpoint-cyber.md) — CompassOne's compliance-oriented SIEM (logging & compliance) module bundled with Blackpoint MDR; not a standalone enterprise SIEM. Primary in [ai-soc-analysts](ai-soc-analysts.md). (added 2026-10-24)
+- [soteria](../vendors/soteria.md) — Managed SIEM built on Panther, sold with its MDR. Primary in [ai-soc-analysts](ai-soc-analysts.md). (added 2026-10-24)
 
-### Also named in survey write-ins (no page)
-
-- LogPoint (rebranded guardsix 2026-03-12) — Danish SIEM/NDR/SOAR software sold to MSSPs and regulated orgs.
-
-Several respondents wrote MDR providers into this question (Blackpoint Cyber, Red Canary (Zscaler), Adlumin (N-able), eSentire, Soteria) — managed detection is a distinct buying motion; see `taxonomy-gaps.md` (2026-10-23).
+Several respondents wrote MDR providers into this question (Blackpoint Cyber, Red Canary, Adlumin, Soteria, Sophos/Secureworks). As of 2026-10-24 MDR providers are filed under [ai-soc-analysts](ai-soc-analysts.md); those that also sell a SIEM are cross-listed above.
 
 ## Consolidation / M&A dynamics
 
@@ -84,7 +84,7 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Question.** Which SIEM / SOAR / SecOps platform(s) is your firm currently using or evaluating?
 
-**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Rapid7; Torq; SigNoz; ManageEngine Log360; Other (Please Specify).
+**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Rapid7; Torq; SigNoz; ManageEngine Log360; guardsix (formerly LogPoint); Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

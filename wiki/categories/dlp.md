@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dspm, ai-access-governance, network-security-sase]
 incumbent_coverage: []
-vendor_count: 15
+vendor_count: 17
 maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-30
@@ -79,11 +79,8 @@ Platform / incumbent DLP:
 - [teleskope](../vendors/teleskope.md) — DSPM-led with native remediation (redact/quarantine/block) and external-LLM egress prevention (primary in [dspm](dspm.md)).
 - [check-point](../vendors/check-point.md) — Harmony DLP across endpoints, browsers, web apps and GenAI tools, plus prompt-intent exfiltration controls in its AI Network Firewall; a module of the firewall/SASE estate (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 - [zscaler](../vendors/zscaler.md) — inline DLP (100+ dictionaries) across web, endpoint, email and AI prompts inside its SSE proxy, which most egress already traverses (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
-
-### Also named in survey write-ins (no page)
-
-- Digital Guardian (Fortra) — endpoint/network/cloud DLP incumbent with a managed-DLP option; HelpSystems (now Fortra) acquisition announced 2021-10-27.
-- Proofpoint (Enterprise DLP) — email-centred DLP from the email-security incumbent; written in once (in production). Its DSPM product (ex-Normalyze) has a page: [proofpoint-dspm](../vendors/proofpoint-dspm.md).
+- [fortra](../vendors/fortra.md) — Digital Guardian, now sold as Fortra DLP: kernel-level endpoint DLP (Windows/Mac/Linux/VDI) with network and cloud modules and a managed-DLP service; GenAI content pack for AI-site uploads and pastes. PE-owned (TA/Charlesbank/Harvest). (added 2026-10-24)
+- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — Proofpoint Enterprise DLP across email (Adaptive Email DLP, from Tessian), cloud, endpoint and GenAI prompts/uploads, bundled with its DSPM in Data Security Complete (2025); strongest where Proofpoint already runs email security (primary in [dspm](dspm.md)). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 
@@ -111,7 +108,7 @@ prompt-aware egress story; classic DLP increasingly ships inside SASE/SSE suites
 including controls over data leaving via AI prompts?
 
 **Answer options.** Cyberhaven, Nightfall AI, MIND, Prompt Security, Lasso Security,
-Microsoft Purview DLP, Netskope DLP, Forcepoint, Cyera, Mimecast (incl. Code42/Incydr), Other (Please Specify).
+Microsoft Purview DLP, Netskope DLP, Forcepoint, Cyera, Mimecast (incl. Code42/Incydr), Fortra DLP (formerly Digital Guardian), Proofpoint Enterprise DLP, Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

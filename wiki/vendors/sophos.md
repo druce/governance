@@ -5,7 +5,7 @@ name: Sophos
 slug: sophos
 aka: [Secureworks, Secureworks Taegis, Taegis XDR, Sophos MDR, Sophos Intercept X, Sophos Central, Sophos Fusion, Sophos Firewall, Sophos AI Defense]
 primary_category: edr-xdr
-also_listed_in: [siem-soc, network-security-sase, ai-access-governance]
+also_listed_in: [siem-soc, network-security-sase, ai-access-governance, ai-soc-analysts]
 website: https://www.sophos.com/
 founded: null
 hq: Oxfordshire, UK (described as "Oxford-based" by UKTN, 2025-02-04; exact HQ town not verified)
@@ -15,7 +15,7 @@ ownership_note: Taken private by Thoma Bravo for ~$3.9B. Announced 2019-10-14, c
 acquisition: {announced: null, closed: null, price: null}
 funding_total: null
 last_funding: null
-market_position: {edr-xdr: challenger, siem-soc: niche-specialist, network-security-sase: challenger, ai-access-governance: platform-module}
+market_position: {edr-xdr: challenger, siem-soc: niche-specialist, network-security-sase: challenger, ai-access-governance: platform-module, ai-soc-analysts: challenger}
 deployment_model: [saas, hybrid]
 form_factor: [agent, platform, inline-proxy]
 data_leaves_tenancy: "true"
@@ -105,3 +105,4 @@ Viability is not in question at Sophos's scale. The PE-ownership risks are the u
 ## History
 
 - [2026-10-23] Page created and researched. Added because of Oct-2026 CTO survey write-ins ("Secureworks Taegis (Sophos)", 2 in production under SIEM/Logging). Secureworks is folded into this page (acquired-closed subsidiary, no separate page). Primary set to edr-xdr (core endpoint/XDR business, and Taegis is an XDR), with cross-lists siem-soc (Taegis/Next-Gen SIEM), network-security-sase (Sophos Firewall/ZTNA), and ai-access-governance (AI Defense, GA Oct 2026).
+- [2026-10-24] Cross-listed in ai-soc-analysts as an MDR provider (Sophos MDR / Taegis MDR) after the decision to place MDR providers in that category.

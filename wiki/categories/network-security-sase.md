@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-access-governance, dlp, enterprise-browser]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 12
 maps_to_seed_doc: Network Security / SASE
 maps_to_seed_csv: AI-aware Network Security (SSE/SASE)
 last_verified: 2026-06-28
@@ -68,6 +68,7 @@ Architecturally different — same category, materially different control:
 
 - [dope-security](../vendors/dope-security.md) — inverts the model: TLS inspection runs **on the endpoint** and traffic flies direct, so user traffic never traverses a vendor data centre. Managed devices only. Series A-stage. (added 2026-08-26)
 - [dnsfilter](../vendors/dnsfilter.md) — **protective DNS, not an SSE.** Blocks or allows at the domain level before connection; cannot inspect payloads, separate a sanctioned AI tenant from the consumer one, or apply DLP. Cheapest possible shadow-AI control and a much weaker one — do not read it as equivalent coverage. (added 2026-08-26)
+- [fortra](../vendors/fortra.md) — Fortra's SSE (CASB/SWG/ZTNA from Lookout's Cloud Security business, deal announced 2025-05-12), sold alongside Fortra DLP. Primary in [dlp](dlp.md). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 

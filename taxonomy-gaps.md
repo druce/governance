@@ -367,6 +367,8 @@ One respondent wrote "really want my MSSP to…". For a fund with 2–10 IT staf
 detection is the buying motion. `siem-soc` describes software and `ai-soc-analysts`
 describes autonomous agents; neither describes buying a service.
 
+> **Resolved 2026-10-24 (human decision):** no new slug. MDR providers go in `ai-soc-analysts` (assume they use AI; each page states what AI is actually claimed). Pages added: blackpoint-cyber, adlumin, esentire, bluevoyant, soteria; sophos and zscaler (Red Canary) cross-listed. The separate-survey-question idea below stays open as a survey-design note on `ai-soc-analysts`.
+
 **Recommendation:** add an `mdr-managed-soc` slug, probably day-1 in the foundation
 layer, adjacent to `siem-soc`, `edr-xdr` and `ai-soc-analysts`, with its own survey
 question ("Who provides your 24/7 detection & response?"). The alternative is to add
@@ -390,14 +392,12 @@ questions where the wiki already has coverage:
 **Open:** if the survey's business-app half is ever meant to be scaffolded by this wiki, it
 needs its own taxonomy layer.
 
-**3. Unidentified write-ins.** These are "couldn't find", not "doesn't exist":
-- **Clarier:** under AI-SPM, 1 firm in production.
-- **Firegate:** under LLM Gateways, 1 in production. Possibly Fortinet FortiGate or
-  Fireraven FireGuard.
-- **Elteni:** under TPRM, 1 in production.
-- **ASKB and MIK:** in business-app questions.
-
-The survey owner may be able to ask the respondents what they meant.
+**3. Unidentified write-ins.** *Resolved 2026-10-24* — the human supplied domains:
+- **Clarier** (clarier.ai): shadow-AI inventory + AI-vendor diligence for alt managers → page `clarier`, primary `ai-access-governance` (the AI-SPM placement was a misfit; it claims no posture management).
+- **Firegate** (getfiregate.com): UK home/SMB network appliance (DNS/malware blocking, IDS) with no LLM-gateway features → **no page** (out of scope; respondent may have meant Fortinet FortiAIGate or their office firewall).
+- **Elteni** (elteni.com): NYC FS-focused cyber services boutique with a vendor-risk service line → page `elteni`, `vendor-risk`.
+- **ASKB**: Bloomberg's agentic AI interface on the Terminal (beta announced 2026-02-23); **MIK**: MIK Fund Solutions (mikfs.com), hedge-fund OMS/portfolio software. Both business-app questions → identified only, no pages.
+- **Soteria** (no domain given): probably soteria.io, a Charleston MDR → page `soteria` under `ai-soc-analysts`; identification flagged as probable on the page.
 
 **4. "Strata" is ambiguous.** It was written under both shadow-AI and LLM gateways.
 - **Most likely reading:** Palo Alto Networks AI Access Security, which buyers file under
