@@ -46,7 +46,7 @@ Primarily the **data** layer ([dspm](../categories/dspm.md)) with an [ai-spm](..
 SaaS console; connects to cloud accounts via agentless API scanning (read-only roles) with optional lightweight sensors for runtime. Integrates with SIEM/SOC ([siem-soc](../categories/siem-soc.md)), ticketing, CI/CD and IdP. Not an inline proxy.
 
 ## Positioning & differentiators
-Known for fast agentless deployment, the security graph, and attack-path prioritization that reduced alert noise versus legacy CSPM. Nearest neighbors in DSPM: [cyera](cyera.md), [sentra](sentra.md), [proofpoint-dspm](proofpoint-dspm.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md) — most of those are data-first specialists, whereas Wiz comes at data from a broad cloud-security posture angle (DSPM as a module of CNAPP). For AI-SPM it overlaps [noma-security](noma-security.md), [prisma-airs](prisma-airs.md).
+Known for fast agentless deployment, the security graph, and attack-path prioritization that reduced alert noise versus legacy CSPM. Nearest neighbors in DSPM: [cyera](cyera.md), [sentra](sentra.md), [proofpoint](proofpoint.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md) — most of those are data-first specialists, whereas Wiz comes at data from a broad cloud-security posture angle (DSPM as a module of CNAPP). For AI-SPM it overlaps [noma-security](noma-security.md), [prisma-airs](prisma-airs.md).
 
 ## Ownership, funding & M&A
 **Verified.** Acquired by **Google (Alphabet)** for **$32B all-cash** — Google's largest-ever acquisition. Announced March 2025; **closed 2026-03-11** after a long regulatory path (US DOJ clearance Oct 2025; EU + Australia Feb 2026; Singapore + Japan Mar 2026). Wiz joins Google Cloud but keeps its brand and multi-cloud support. Founded January 2020 by the ex-Adallom team (Assaf Rappaport et al.); raised ~$1.9B pre-deal (Series E $1B, May 2024, ~$12B valuation); crossed $1B ARR in 2025. Ownership confidence **high**.
@@ -55,7 +55,7 @@ Known for fast agentless deployment, the security graph, and attack-path priorit
 **Day-1 if you run meaningful workloads in public cloud**; less central for a shop that is mostly SaaS-only. For a fund, the draw is one tool for cloud misconfig + data exposure + (increasingly) AI asset posture, which maps to data-protection and model-risk diligence. Watch the Google ownership: neutral-multi-cloud messaging is the stated commitment, but a Google-owned control plane may be a governance question for some shops. Pricing is enterprise-tier.
 
 ## Competitors / alternatives
-[cyera](cyera.md), [sentra](sentra.md), [proofpoint-dspm](proofpoint-dspm.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-data](bedrock-data.md) (DSPM); [noma-security](noma-security.md), [prisma-airs](prisma-airs.md) (AI-SPM); [microsoft-purview](microsoft-purview.md) (data security in Microsoft estates).
+[cyera](cyera.md), [sentra](sentra.md), [proofpoint](proofpoint.md), [bigid](bigid.md), [securiti](securiti.md), [concentric-ai](concentric-ai.md), [bedrock-data](bedrock-data.md) (DSPM); [noma-security](noma-security.md), [prisma-airs](prisma-airs.md) (AI-SPM); [microsoft-purview](microsoft-purview.md) (data security in Microsoft estates).
 
 ## Open questions / to verify
 - Exact total funding figure (sources range ~$1.9B); confirm against Crunchbase/filings.

@@ -67,7 +67,7 @@ Cloud-native DSPM:
 - [cyera](../vendors/cyera.md) — AI-driven data classification; spans DSPM, [dlp](dlp.md), and
   [data-access-governance](data-access-governance.md).
 - [sentra](../vendors/sentra.md) — cloud DSPM with data-access context.
-- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — cloud-data security posture; formerly Normalyze, now a Proofpoint platform module.
+- [proofpoint](../vendors/proofpoint.md) — cloud-data security posture; formerly Normalyze, now a Proofpoint platform module.
 - [wiz](../vendors/wiz.md) — DSPM as part of a broader cloud-security platform (also [ai-spm](ai-spm.md)).
 - [bedrock-data](../vendors/bedrock-data.md) — data-store discovery and posture via a "Metadata Lake"; renamed **Bedrock Data** (ex-Bedrock Security) 2025-08-05.
 - [symmetry-systems](../vendors/symmetry-systems.md) — data-store-centric posture and access analysis.
@@ -86,7 +86,7 @@ Cross-listed:
 
 ## Consolidation / M&A dynamics
 
-- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — Normalyze acquired by Proofpoint (verified; announced 2024-10-29). Brand retired — normalyze.ai redirects to Proofpoint and the product is sold as Proofpoint DSPM (verified 2026-07-27).
+- [proofpoint](../vendors/proofpoint.md) — Normalyze acquired by Proofpoint (verified; announced 2024-10-29). Brand retired — normalyze.ai redirects to Proofpoint and the product is sold as Proofpoint DSPM (verified 2026-07-27).
 - [wiz](../vendors/wiz.md) — acquired by Google (per seed; unverified — to confirm in research).
 
 Beyond the specific flags, DSPM is consolidating in two directions: cloud-security

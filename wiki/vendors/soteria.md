@@ -41,7 +41,7 @@ sources:
 
 **One-liner** — A small Charleston, SC managed-security provider founded by former NSA staff. It sells 24x7 managed detection and response (**Soteria Defense MDR**), a **managed SIEM built on Panther**, incident response, vCISO and pen-testing services to firms without their own SOC.
 
-**Survey placement and identification** — Written in once in the October 2026 CTO survey under Q46 "SIEM / Logging" (1 respondent, **not in production**). The respondent gave the name only, no domain. The wiki identifies it as soteria.io, the Charleston MDR. It is the only cybersecurity MDR or SIEM provider named Soteria found in searches (2026-10-24). It sells a managed SIEM, which fits the SIEM question. It cites SEC, FINRA, NYDFS and GLBA requirements, names a capital-markets client (Templum), and is distributed by Thomas Murray, a risk firm serving financial institutions. **This match is probable, not confirmed**, so verify with the respondent if the answer matters. Following the wiki's rule that MDR providers are filed under [ai-soc-analysts](../categories/ai-soc-analysts.md), that is the primary category, with [siem-soc](../categories/siem-soc.md) cross-listed for the managed SIEM. Note that Soteria's own homepage does not market AI. The only AI language is Panther's "AI-powered detection-as-code", which belongs to the SIEM it runs. Treat it as a **human-led MDR**, not an agentic-SOC product.
+**Survey placement and identification** — Written in once in the October 2026 CTO survey under Q46 "SIEM / Logging" (1 respondent, **not in production**). The respondent gave the name only, no domain; the survey owner **confirmed on 2026-10-24 that it is soteria.io**, the Charleston MDR. It sells a managed SIEM, which fits the SIEM question. It cites SEC, FINRA, NYDFS and GLBA requirements, names a capital-markets client (Templum), and is distributed by Thomas Murray, a risk firm serving financial institutions. Following the wiki's rule that MDR providers are filed under [ai-soc-analysts](../categories/ai-soc-analysts.md), that is the primary category, with [siem-soc](../categories/siem-soc.md) cross-listed for the managed SIEM. Note that Soteria's own homepage does not market AI. The only AI language is Panther's "AI-powered detection-as-code", which belongs to the SIEM it runs. Treat it as a **human-led MDR**, not an agentic-SOC product.
 
 **What it does** —
 - **Soteria Defense MDR:** "a fully managed endpoint and cloud telemetry solution". It runs on the client's EDR (Microsoft Defender, SentinelOne, LimaCharlie) and covers endpoints, cloud platforms and identity providers, with 24x7 monitoring and response by its Detection and Response Team (DART).
@@ -61,7 +61,6 @@ sources:
 **Who should choose them / anti-fit** — Fits a **small or mid-sized fund or financial firm with no SOC** that already owns Defender or SentinelOne, wants a managed SIEM without staffing it, and values a boutique relationship. **Anti-fit:** firms wanting an AI-SOC tool to augment their own analysts, large or multi-region firms needing a big follow-the-sun SOC, and firms that want a SIEM platform to run themselves (buy Panther, [microsoft-sentinel](microsoft-sentinel.md) or similar directly).
 
 **Known weaknesses / gotchas** —
-- **Identification is inferred** (see above).
 - **"AI SOC" placement is by wiki policy, not vendor claim.** No AI triage or agentic capability is claimed by Soteria itself.
 - **Small and shrinking headcount** (aggregator data). That makes analyst depth and 24x7 staffing questions worth asking.
 - **Thin independent evidence.** Sources are vendor and partner releases and an aggregator profile.
@@ -92,3 +91,4 @@ sources:
 ## History
 
 - [2026-10-24] Page created and researched. Triggered by one not-in-production write-in under Q46 "SIEM / Logging" in the October 2026 CTO survey (name only, no domain). Identified as soteria.io (Charleston MDR, managed SIEM on Panther). Identification is probable, not confirmed. Primary set to ai-soc-analysts per the user's MDR-placement decision, with siem-soc cross-listed. Noted that the vendor itself makes no AI claims.
+- [2026-10-24] Identification confirmed by the survey owner (soteria.io); removed the "probable" caveats.

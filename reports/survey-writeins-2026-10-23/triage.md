@@ -30,7 +30,7 @@ Input: `survey-write-in-vendors.csv` (103 vendors deduplicated from the `*` writ
 | Safe Security | 1 | 0 | Q55 | safe-security (vendor-risk; +enterprise-grc) |
 | Sevii | 1 | 1 | Q47 | sevii (ai-soc-analysts) |
 | Sophos (Secureworks Taegis) | 2 | 2 | Q46 | sophos (edr-xdr; +siem-soc, network-security-sase, ai-access-governance). Secureworks closed 2025-02-03 |
-| Soteria | 1 | 0 | Q46 | soteria (ai-soc-analysts; +siem-soc). Probably soteria.io MDR; identification flagged |
+| Soteria | 1 | 0 | Q46 | soteria (ai-soc-analysts; +siem-soc). soteria.io MDR (confirmed) |
 | VISO Trust | 2 | 2 | Q54; Q55 | viso-trust (vendor-risk; +enterprise-grc). Acquired by Protecht 2026-04 |
 
 ## cross-listed (13)

@@ -2905,3 +2905,9 @@ Human direction on the 2026-10-23 triage:
 **No page.** Firegate (consumer/SMB network appliance, not an LLM gateway); Bloomberg ASKB and MIK Fund Solutions (identified, business-app questions).
 
 **Correction.** proofpoint-dspm `acquisition.closed` 2024-10-29 → null: that was the announcement date; no completion release found (now an R4 research item).
+
+## [2026-10-24] decision | Soteria confirmed; proofpoint-dspm → proofpoint; BlueVoyant placement confirmed
+
+- **Soteria** identification confirmed by the human (soteria.io). "Probable" caveats removed from the page, the category line, the CSV note, taxonomy-gaps and triage.
+- **Slug renamed** `proofpoint-dspm` → `proofpoint` (human request). The page now covers both DSPM (ex-Normalyze) and Enterprise DLP, so it is the company page. Frontmatter ownership was re-pointed to the company: Thoma Bravo take-private, announced 2021-04-26, closed 2021-08-31, ~$12.3B cash. Inbound links and survey-v2.csv Wiki URLs updated. `acuvity` stays a separate page. Old-slug mentions remain only in history lines.
+- **BlueVoyant** calls itself an MDR / managed SOC, and it was already primary in `ai-soc-analysts`. No change. It is not cross-listed to `siem-soc` because it runs customers' Microsoft Sentinel rather than its own SIEM.

@@ -87,7 +87,7 @@ Salesforce,Salesforce,1,,Q13,Private Equity / Deal Sourcing,,,,out of scope,busi
 SentinelOne,Prompt Security (SentinelOne); Prompt Security browser plug-in,2,2,Q30; Q41,SSE / SASE / Web Gateway; Enterprise Browsers,network-security-sase; enterprise-browser,prompt-security,,cross-listed,prompt-security +browser-security-extension. SSE/SASE placement = misplacement
 Sevii,Sevii,1,1,Q47,AI SOC,ai-soc-analysts,,,added,sevii (ai-soc-analysts)
 Sophos (Secureworks Taegis),Secureworks Taegis (Sophos),2,2,Q46,SIEM / Logging,siem-soc,,,added,"sophos (edr-xdr; +siem-soc, network-security-sase, ai-access-governance). Secureworks closed 2025-02-03"
-Soteria,Soteria,1,0,Q46,SIEM / Logging,siem-soc,,could not identify from label; verify,added,soteria (ai-soc-analysts; +siem-soc). Probably soteria.io MDR; identification flagged
+Soteria,Soteria,1,0,Q46,SIEM / Logging,siem-soc,,could not identify from label; verify,added,soteria (ai-soc-analysts; +siem-soc). soteria.io MDR (confirmed)
 Strata (ambiguous),Strata,2,2,Q31; Q32,AI Usage Control / Shadow-AI; LLM Gateways,ai-access-governance; ai-gateway,,"likely Palo Alto Networks Strata, possibly Strata Identity; unverified",cross-listed,most likely PANW AI Access Security -> palo-alto-networks +ai-access-governance; Strata Identity (Rubrik) alternative noted in taxonomy-gaps
 Superblocks,Superblocks,1,,Q20,AI Coding Assistants/Vibe-Coding/Low-code,,,,out of scope,business-app question (no wiki category); security/governance-only scope
 TS Imagine,TS Imagine,1,,Q26,"Accounting, Ops, Middle and Back-Office",,,,out of scope,business-app question (no wiki category); security/governance-only scope

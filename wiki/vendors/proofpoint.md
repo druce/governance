@@ -1,20 +1,20 @@
 ---
-title: Proofpoint DSPM
+title: Proofpoint
 type: vendor
-name: Proofpoint DSPM
-slug: proofpoint-dspm
-aka: [Normalyze]
+name: Proofpoint
+slug: proofpoint
+aka: [Proofpoint DSPM, Proofpoint Enterprise DLP, Normalyze]
 primary_category: dspm
 also_listed_in: [dlp]
-website: https://www.proofpoint.com/us/products/data-security-posture-management
-founded: 2020
-hq: San Francisco, USA
-ownership_state: acquired-closed
-owner: Proofpoint
-ownership_note: Normalyze acquired by Proofpoint; announced 2024-10-29, expected close Nov 2024. Terms undisclosed. Brand retired — normalyze.ai now redirects to Proofpoint; sold as Proofpoint DSPM. (Proofpoint is itself Thoma Bravo-owned.)
-acquisition: {announced: 2024-10-29, closed: null, price: null}
-funding_total: ~$26.6M
-last_funding: Series A $22.2M (2022-06, Battery Ventures + Lightspeed)
+website: https://www.proofpoint.com/
+founded: null
+hq: null
+ownership_state: pe-owned
+owner: Thoma Bravo
+ownership_note: Proofpoint taken private by Thoma Bravo (announced 2021-04-26, closed 2021-08-31, ~$12.3B cash). Normalyze (DSPM) acquired by Proofpoint; announced 2024-10-29, expected close Nov 2024, no completion release found. Terms undisclosed. Brand retired — normalyze.ai now redirects to Proofpoint; sold as Proofpoint DSPM. (Proofpoint is itself Thoma Bravo-owned.)
+acquisition: {announced: 2021-04-26, closed: 2021-08-31, price: "~$12.3B cash (Thoma Bravo take-private)"}
+funding_total: null
+last_funding: null
 market_position: null
 deployment_model: [saas]
 form_factor: [api]
@@ -29,15 +29,16 @@ last_verified: 2026-10-24
 verify_after: null
 tags: [dspm, data-security, proofpoint, thoma-bravo]
 sources:
+  - {claim: "Thoma Bravo completed ~$12.3B all-cash take-private of Proofpoint 2021-08-31 (announced 2021-04-26)", url: "https://www.thomabravo.com/press-releases/thoma-bravo-completes-acquisition-of-proofpoint", date: 2026-10-24, confidence: high}
   - {claim: "Normalyze brand retired; normalyze.ai 301-redirects to Proofpoint; product now Proofpoint Data Security Posture Management", url: "https://www.proofpoint.com/us/normalyze-is-now-proofpoint", date: 2026-07-27, confidence: high}
   - {claim: "Proofpoint Enterprise DLP covers email, cloud apps, endpoints and AI tools; GenAI prompt/upload detection; single console (marketing)", url: "https://www.proofpoint.com/us/products/information-protection/enterprise-dlp", date: 2026-10-24, confidence: medium}
   - {claim: "DLP Transform cross-channel DLP (email, cloud, endpoint, web); GenAI allow/disallow by behavior, content, lineage; ChatGPT/Gemini browser extension expected end Q2 2024; Adaptive Email DLP (Tessian) GA", url: "https://www.proofpoint.com/us/newsroom/press-releases/proofpoint-bolsters-information-protection-offering-cross-channel-dlp", date: 2024-05-01, confidence: high}
   - {claim: "Data Security Complete (DSPM + DLP + ITM + lineage) launched Q3 2025; AI Data Governance", url: "https://www.businesswire.com/news/home/20250923151333/en/Proofpoint-Secures-Collaboration-and-Data-in-the-Agentic-Workspace-with-Industry-First-Innovations", date: 2025-09-23, confidence: medium}
 ---
 
-# Proofpoint DSPM
+# Proofpoint
 
-> **One-liner** — Proofpoint's Data Security Posture Management product, built from the acquired DSPM startup **Normalyze**: discovers and classifies sensitive data across cloud/SaaS/on-prem and puts a dollar value on the risk.
+> **One-liner** — Thoma Bravo-owned email-security incumbent's data-security line: **Proofpoint DSPM** (built from the acquired startup **Normalyze**), which discovers and classifies sensitive data across cloud/SaaS/on-prem and puts a dollar value on the risk, and **Proofpoint Enterprise DLP** across email, cloud, endpoint and GenAI tools. Its AI-security line (ex-Acuvity) has its own page, [acuvity](acuvity.md).
 
 **Categories** — [dspm](../categories/dspm.md); also listed in [dlp](../categories/dlp.md) for Proofpoint Enterprise DLP (see below).
 
@@ -93,3 +94,5 @@ Known for in-place scanning and quantified risk ("data risk in dollars"). Neares
 - [2026-07-27] Renamed page `normalyze` → `proofpoint-dspm` (user-flagged; verified normalyze.ai 301-redirects to Proofpoint and product is sold as Proofpoint DSPM). Brand-survival open question resolved: brand retired.
 - [2026-10-24] Cross-listed to dlp and added a Proofpoint Enterprise DLP section (channels, GenAI prompt claims marked as marketing, Data Security Complete 2025), triggered by a 1-respondent in-production write-in under DLP in the October 2026 CTO survey. Kept as one Proofpoint data-security page rather than creating a duplicate Proofpoint vendor page.
 - [2026-10-24] Set `acquisition.closed` to null: 2024-10-29 was the announcement date and no completion release has been found (ownership_state stays acquired-closed because the brand is fully absorbed).
+- [2026-10-24] **Slug renamed** `proofpoint-dspm` → `proofpoint` (user request): the page now covers both Proofpoint DSPM and Enterprise DLP, so it is the company page. Inbound links and `survey-v2.csv` Wiki URLs updated. Acuvity stays a separate page.
+- [2026-10-24] Frontmatter ownership re-pointed to the company: Thoma Bravo take-private (closed 2021-08-31). Normalyze's founding year, HQ (2020, San Francisco) and pre-acquisition funding (~$26.6M; Series A $22.2M, 2022-06) moved here from frontmatter; Proofpoint's own founding/HQ not yet verified.

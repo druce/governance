@@ -397,7 +397,7 @@ needs its own taxonomy layer.
 - **Firegate** (getfiregate.com): UK home/SMB network appliance (DNS/malware blocking, IDS) with no LLM-gateway features → **no page** (out of scope; respondent may have meant Fortinet FortiAIGate or their office firewall).
 - **Elteni** (elteni.com): NYC FS-focused cyber services boutique with a vendor-risk service line → page `elteni`, `vendor-risk`.
 - **ASKB**: Bloomberg's agentic AI interface on the Terminal (beta announced 2026-02-23); **MIK**: MIK Fund Solutions (mikfs.com), hedge-fund OMS/portfolio software. Both business-app questions → identified only, no pages.
-- **Soteria** (no domain given): probably soteria.io, a Charleston MDR → page `soteria` under `ai-soc-analysts`; identification flagged as probable on the page.
+- **Soteria**: soteria.io, a Charleston MDR (confirmed by the human 2026-10-24) → page `soteria` under `ai-soc-analysts`.
 
 **4. "Strata" is ambiguous.** It was written under both shadow-AI and LLM gateways.
 - **Most likely reading:** Palo Alto Networks AI Access Security, which buyers file under

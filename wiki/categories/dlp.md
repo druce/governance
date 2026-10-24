@@ -80,7 +80,7 @@ Platform / incumbent DLP:
 - [check-point](../vendors/check-point.md) — Harmony DLP across endpoints, browsers, web apps and GenAI tools, plus prompt-intent exfiltration controls in its AI Network Firewall; a module of the firewall/SASE estate (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 - [zscaler](../vendors/zscaler.md) — inline DLP (100+ dictionaries) across web, endpoint, email and AI prompts inside its SSE proxy, which most egress already traverses (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 - [fortra](../vendors/fortra.md) — Digital Guardian, now sold as Fortra DLP: kernel-level endpoint DLP (Windows/Mac/Linux/VDI) with network and cloud modules and a managed-DLP service; GenAI content pack for AI-site uploads and pastes. PE-owned (TA/Charlesbank/Harvest). (added 2026-10-24)
-- [proofpoint-dspm](../vendors/proofpoint-dspm.md) — Proofpoint Enterprise DLP across email (Adaptive Email DLP, from Tessian), cloud, endpoint and GenAI prompts/uploads, bundled with its DSPM in Data Security Complete (2025); strongest where Proofpoint already runs email security (primary in [dspm](dspm.md)). (added 2026-10-24)
+- [proofpoint](../vendors/proofpoint.md) — Proofpoint Enterprise DLP across email (Adaptive Email DLP, from Tessian), cloud, endpoint and GenAI prompts/uploads, bundled with its DSPM in Data Security Complete (2025); strongest where Proofpoint already runs email security (primary in [dspm](dspm.md)). (added 2026-10-24)
 
 ## Consolidation / M&A dynamics
 
