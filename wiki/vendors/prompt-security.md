@@ -5,7 +5,7 @@ name: Prompt Security
 slug: prompt-security
 aka: [Prompt, Prompt Security (SentinelOne)]
 primary_category: dlp
-also_listed_in: [ai-runtime-security, ai-spm, ai-access-governance]
+also_listed_in: [ai-runtime-security, ai-spm, ai-access-governance, browser-security-extension]
 website: https://prompt.security
 founded: 2023
 hq: Tel Aviv, Israel
@@ -17,7 +17,7 @@ funding_total: ~$23M (pre-acquisition)
 last_funding: Series A (Hetz Ventures, Jump Capital, Ridge Ventures; strategics Okta, F5)
 market_position: null
 deployment_model: [saas]
-form_factor: [inline-proxy, api, sdk]
+form_factor: [inline-proxy, api, sdk, browser-extension, agent]
 data_leaves_tenancy: unverified
 integrations: []
 mcp_support: unverified
@@ -27,12 +27,14 @@ fs_traction: unverified
 target_customer: enterprise / mid-market
 last_verified: 2026-07-27
 verify_after: null
-tags: [genai-security, ai-firewall, prompt-injection, shadow-ai, dlp, sentinelone]
+tags: [genai-security, ai-firewall, prompt-injection, shadow-ai, dlp, sentinelone, browser-extension]
+sources:
+  - {claim: "browser extension deployed on Chrome, Safari, Brave; real-time prompt scanning and redaction before data reaches external AI tools; visibility into AI tools used", url: "https://www.sentinelone.com/customers/hibob/", date: 2026-10-23, confidence: medium}
 ---
 
 # Prompt Security
 
-> Primary category: [dlp](../categories/dlp.md). Cross-listed in [ai-runtime-security](../categories/ai-runtime-security.md), [ai-spm](../categories/ai-spm.md), and [ai-access-governance](../categories/ai-access-governance.md). **Acquired by [sentinelone](sentinelone.md)** (2025).
+> Primary category: [dlp](../categories/dlp.md). Cross-listed in [ai-runtime-security](../categories/ai-runtime-security.md), [ai-spm](../categories/ai-spm.md), [ai-access-governance](../categories/ai-access-governance.md), and [browser-security-extension](../categories/browser-security-extension.md). **Acquired by [sentinelone](sentinelone.md)** (2025).
 
 **One-liner** — A GenAI security platform that gives enterprises visibility and control over employee and developer AI use — shadow-AI discovery, prompt-injection defense, and prompt/response DLP — now SentinelOne's AI-security product.
 
@@ -45,6 +47,9 @@ It straddles several layers, which is why it's cross-listed:
 - [ai-runtime-security](../categories/ai-runtime-security.md) — inline AI firewall blocking prompt injection.
 - [ai-access-governance](../categories/ai-access-governance.md) — CASB-for-AI shadow-AI discovery and policy over sanctioned/unsanctioned tools.
 - [ai-spm](../categories/ai-spm.md) — inventory/posture of AI usage and agents.
+- [browser-security-extension](../categories/browser-security-extension.md) — the workforce product is delivered mainly as a **managed browser extension** (added 2026-10-23). SentinelOne's HiBob case study describes it deployed on Chrome, Safari and Brave, scanning and redacting prompts in real time before they reach external AI tools. SiliconANGLE (2025-08-05) describes the extension as the mechanism that discovers which AI apps the workforce uses. It is a narrower extension than [layerx](layerx.md): AI-usage DLP and discovery, not general browser DLP or SaaS/OAuth governance. A 2026-10 CTO-survey respondent reported the "Prompt Security browser plug-in" in production under Enterprise Browsers.
+
+**Not an SSE/SASE product.** Another 2026-10 survey respondent wrote "Prompt Security (SentinelOne)" under *AI-aware Network Security (SSE/SASE)*. That is **probably a respondent misplacement**: Prompt Security enforces through a browser extension, a desktop agent and API/SDK/proxy in front of AI apps. It is not a cloud proxy or secure web gateway for general web traffic, and SentinelOne does not sell an SSE. The confusion is understandable, since both control employee egress to AI sites. It is not cross-listed to [network-security-sase](../categories/network-security-sase.md).
 It lives in the yellow (AI application/usage) trust zone, screening untrusted input, preventing sensitive-data leakage, and controlling outbound data flows.
 
 ## Deployment & architecture
@@ -73,15 +78,18 @@ Day-1 for the AI-usage control problem: if employees are pasting into ChatGPT/Cl
 ## Open questions / to verify
 - ~~Final purchase price and confirmed close date~~ — **RESOLVED 2026-07-27**: closed 2025-09-05; ~$180M deal value / $159.3M GAAP purchase consideration per SentinelOne's 8-K and 10-Q. The ~$250M press figure is unsupported by any filing.
 - Whether it remains sold standalone or only within SentinelOne Singularity.
+- Microsoft Edge support for the browser extension (Chrome, Safari, Brave confirmed in the HiBob case study; Edge not named).
 
 ## Sources
 - [SentinelOne Form 8-K (filed 2025-09-08)](https://www.sec.gov/Archives/edgar/data/1583708/000110465925088079/tm2525181d1_8k.htm) — fetched 2026-07-27 — supports: **close date 2025-09-05** ("completed on September 5, 2025"), merger agreement dated 2025-08-05, ~$180M cash + Class A stock deal value; confidence: high (primary). Cached: `raw/sources/2026-07-27--prompt-security--sentinelone-close-date.md`
 - [SentinelOne Form 10-Q, quarter ended 2025-10-31](https://www.sec.gov/Archives/edgar/data/1583708/000158370825000159/s-20251031.htm) (filed 2025-12-04), Note 4 *Acquisitions* — fetched 2026-07-27 — supports: close date 2025-09-05 (independent corroboration), $159.3M purchase consideration breakdown, goodwill $130.4M, intangibles $21.6M; also separates the Observo deal (closed 2025-09-22) from Prompt; confidence: high (primary)
 - [SentinelOne to Acquire Prompt Security to Advance GenAI Security](https://www.sentinelone.com/press/sentinelone-to-acquire-prompt-security-to-advance-genai-security/) — fetched 2026-06-28, re-checked 2026-07-27 — supports: announcement date 2025-08-05, capabilities, and explicit pending language ("expected to close in ... third quarter of fiscal year 2026 ... subject to ... customary closing conditions"); confidence: high
 - [SentinelOne buys Prompt for $250M (Calcalist)](https://www.calcalistech.com/ctechnews/article/im5ma59bu) — fetched 2026-06-28 — supports: founded 2023, two years old; the ~$250M value is a **press estimate contradicted by SentinelOne's filings** (see 8-K/10-Q above) — do not cite it as fact; confidence: low on price, med otherwise
+- [SentinelOne — HiBob customer story](https://www.sentinelone.com/customers/hibob/) — fetched 2026-10-23 — supports: browser extension on Chrome/Safari/Brave, real-time prompt redaction, AI-tool visibility; confidence: medium (vendor case study). Also: [SiliconANGLE, 2025-08-05](https://siliconangle.com/2025/08/05/sentinelone-acquires-ai-security-startup-prompt-security/) (search snapshot) — extension-based discovery of workforce AI apps. Cached: `raw/sources/2026-10-23--prompt-security--browser-extension.md`
 - [Prompt Security + SentinelOne: A New Chapter Begins (Prompt blog)](https://prompt.security/blog/prompt-security-sentinelone-a-new-chapter-begins) — fetched 2026-06-28 — supports: founders, Tel Aviv HQ, deal narrative; confidence: med (vendor)
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; CONFIRMED acquisition by SentinelOne (announced 2025-08-05, ~$250M cash+stock, closed fiscal Q3 FY2026) — raised ownership_confidence to high. Established founded Aug 2023, HQ Tel Aviv, founders Golan/Drihem, ~$23M raised (incl. Okta, F5). Kept the four cross-listed categories. Set hedge_fund_fit high.
 - [2026-07-27] Date-sanity sweep — **corrected a fabricated close date**. `closed` was 2025-08-05, an exact copy of the announcement date, which the page's own `ownership_note` contradicted by saying the deal "closed in SentinelOne fiscal Q3 FY2026" (a quarter ending 2025-10-31). Checked SentinelOne's SEC filings: the Form 8-K filed 2025-09-08 states the acquisition "was completed on September 5, 2025", and the Q3 FY2026 10-Q Note 4 independently repeats that date — so the real close is **2025-09-05**, one month after announcement. Also replaced the null `price` with the two filed figures (~$180M deal value per the 8-K; $159.3M GAAP purchase consideration per the 10-Q PPA) and demoted the ~$250M Calcalist number to an explicitly unconfirmed press estimate, since it appears in no SentinelOne filing or release. `ownership_state: acquired-closed` confirmed correct and now genuinely sourced. Added a note distinguishing the separate Observo deal (closed 2025-09-22) that fell in the same quarter. Cached 1 new source.
+- [2026-10-23] Cross-listed to browser-security-extension (added browser-extension and agent to form_factor) on the evidence of SentinelOne's HiBob case study; prompted by a 2026-10 CTO-survey write-in ("Prompt Security browser plug-in", 1 in production under Enterprise Browsers). A second write-in placed it under SSE/SASE; judged a respondent misplacement and not cross-listed. Ownership not re-verified; last_verified left unchanged.

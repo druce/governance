@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [dlp, network-security-sase, sspm, ai-spm]
 incumbent_coverage: []
-vendor_count: 18
+vendor_count: 22
 maps_to_seed_doc: AI Access Governance (CASB for AI)
 maps_to_seed_csv: Shadow-AI / Insider risk
 last_verified: 2026-06-28
@@ -78,7 +78,13 @@ model.
 **Network/SASE incumbents with an "AI guard" module**
 - [zscaler](../vendors/zscaler.md) — Zscaler AI Guard, shadow-AI control inside its SSE platform (primary in [network-security-sase](network-security-sase.md)).
 - [netskope](../vendors/netskope.md) — Netskope One AI controls inside its CASB/SSE platform (primary in [network-security-sase](network-security-sase.md)).
+- [palo-alto-networks](../vendors/palo-alto-networks.md) — AI Access Security (GA 2024-08-15): shadow-AI discovery, sanctioned/tolerated/unsanctioned app classes, inline DLP on Prisma Access/NGFW (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+- [dope-security](../vendors/dope-security.md) — per-user AI app/account inventory, corporate-vs-personal tenant control and prompt/upload DLP, all enforced from its endpoint SWG agent (vendor marketing; primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+- [sophos](../vendors/sophos.md) — Sophos AI Defense (GA 2026-10): shadow-AI discovery and real-time prompt/upload inspection through its existing device, network, sign-in and browser controls, feeding XDR/MDR (primary in [edr-xdr](edr-xdr.md)). (added 2026-10-23)
 - [grip-security](../vendors/grip-security.md) — SaaS/identity discovery extended to shadow AI (primary in [sspm](sspm.md)).
+
+**Enterprise browser with AI controls**
+- [island](../vendors/island.md) — Island AI Protect (2026-03-17): separates corporate from personal AI tenants, logs prompts/responses/agent activity and enforces data boundaries before AI providers (primary in [enterprise-browser](enterprise-browser.md)). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

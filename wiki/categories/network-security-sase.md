@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-access-governance, dlp, enterprise-browser]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 11
 maps_to_seed_doc: Network Security / SASE
 maps_to_seed_csv: AI-aware Network Security (SSE/SASE)
 last_verified: 2026-06-28
@@ -61,6 +61,8 @@ the public internet. Lives at the perimeter of every zone; it's the wall between
 - [cisco](../vendors/cisco.md) — Secure Access; bundled with Cisco's networking and security portfolio.
 - [cato-networks](../vendors/cato-networks.md) — single-vendor SASE built cloud-first; converged networking + security.
 - [forcepoint](../vendors/forcepoint.md) — SSE with a data-security/DLP focus.
+- [check-point](../vendors/check-point.md) — Firewall incumbent turning its installed Quantum/Harmony base into an AI-security control point (AI Defense Plane, Lakera); DLP is a Harmony module, not a standalone franchise. (added 2026-10-23)
+- [sophos](../vendors/sophos.md) — Sophos Firewall (NGFW), ZTNA and NDR, channel-sold to small and mid-size firms and managed from Sophos Central alongside its endpoint estate. Primary in [edr-xdr](edr-xdr.md). (added 2026-10-23)
 
 Architecturally different — same category, materially different control:
 
@@ -101,6 +103,7 @@ use or evaluate to inspect and control traffic to AI services?
 - Fortinet (FortiGate + FortiSASE)
 - dope.security
 - DNSFilter (protective DNS — not full SSE)
+- Check Point
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

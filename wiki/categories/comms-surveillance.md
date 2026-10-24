@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dlp, anti-deepfake]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 9
 maps_to_seed_doc: Comms Surveillance
 maps_to_seed_csv: (in AI Governance, Model Risk)
 last_verified: 2026-08-18
@@ -66,6 +66,7 @@ try to stop the leak before it happens.
 - [relativity-trace](../vendors/relativity-trace.md) — proactive comms surveillance built on the Relativity (e-discovery) platform.
 - [hadrius](../vendors/hadrius.md) — AI-native SEC/FINRA compliance platform (archive + supervision + marketing review); archives **ChatGPT and Claude Enterprise conversations** as a recordkeeping channel.
 - [greenboard](../vendors/greenboard.md) — AI-native SEC/FINRA compliance platform unifying 17a-4 archiving/supervision with marketing review and attestations; Instant Bloomberg among its channels.
+- [aca-group](../vendors/aca-group.md) — Compliance consultancy to much of the alternatives industry that also sells ComplianceAlpha — e-comms capture, 17a-4 archive and surveillance bundled with personal-trading and trade surveillance; the default surveillance vendor for funds already using ACA advisory. No documented capture of AI-assistant conversations (2026-10). Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 
@@ -94,7 +95,7 @@ market-abuse / conduct monitoring (and is it sweeping AI assistant prompts and
 responses)?
 
 **Answer options.** Behavox; SteelEye; NICE Actimize; Theta Lake; Shield; Relativity
-Trace; Hadrius; Greenboard; Other (Please Specify).
+Trace; Hadrius; Greenboard; ACA Group (ComplianceAlpha); Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

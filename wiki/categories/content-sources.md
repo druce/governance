@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [vector-retrieval, entitlement-aware-rag]
 incumbent_coverage: []
-vendor_count: 3
+vendor_count: 4
 maps_to_seed_doc: Content Sources
 maps_to_seed_csv: — (folded into Enterprise Chat & RAG)
 last_verified: 2026-06-28
@@ -39,6 +39,7 @@ These are infrastructure/systems of record, not a competitive survey shortlist:
 - [sharepoint](../vendors/sharepoint.md) — SharePoint / OneDrive; the dominant enterprise document store and the default corpus for Microsoft-centric RAG.
 - [confluence](../vendors/confluence.md) — Atlassian wiki; common engineering and internal-knowledge source.
 - [google-drive](../vendors/google-drive.md) — Google Workspace document store; the Google-shop equivalent of SharePoint/OneDrive.
+- [egnyte](../vendors/egnyte.md) — cloud file platform that is the document system of record at many alternative managers; exposes content to AI through its own AI layer and a generally available MCP server (2026-02). Primary in [data-access-governance](data-access-governance.md). (added 2026-10-23)
 
 (Plus everything else with an API: ticketing systems, CRMs, file shares, data warehouses.)
 

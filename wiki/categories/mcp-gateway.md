@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [authorization-engine, tool-identity-integration, ai-gateway, agent-runtime-security]
 incumbent_coverage: []
-vendor_count: 17
+vendor_count: 20
 maps_to_seed_doc: MCP Gateway / Tool Access Control
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-07-27
@@ -64,6 +64,7 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [docker-mcp-gateway](../vendors/docker-mcp-gateway.md) — Docker's gateway for running and gating containerized MCP servers.
 - [obot](../vendors/obot.md) — open-source (MIT) MCP gateway and registry that has grown into a broader AI governance platform: LLM gateway, device-level audit and enforcement for local coding agents (Obot Sentry, beta), self-hosted Claude sessions (experimental). SSO connectors free up to 100 users since 2026-07-31. (refreshed 2026-10-20)
 - [agentregistry](../vendors/agentregistry.md) — Solo.io's Apache-2.0 catalog of approved agents, MCP servers and skills; the paid Solo Enterprise edition adds OIDC sign-in, roles, an admin approval queue, runtime authorization enforced at agentgateway, and read-only discovery of agents in AgentCore, Foundry and Copilot Studio. CNCF Sandbox vote passed 2026-09-29, onboarding pending. Cross-listed to [ai-spm](ai-spm.md). (added 2026-10-20)
+- [litellm](../vendors/litellm.md) — the open-source LiteLLM proxy's MCP Gateway: one fixed endpoint for all MCP tools, key/team/org access control and upstream OAuth 2.0 auth. Primary is [ai-gateway](ai-gateway.md). (added 2026-10-23)
 
 **Commercial / managed gateways**
 - [mintmcp](../vendors/mintmcp.md) — managed MCP gateway for enterprise tool access control.
@@ -78,6 +79,8 @@ It enforces; an [authorization-engine](authorization-engine.md) often supplies t
 - [speakeasy](../vendors/speakeasy.md) — ex-SDK-generation vendor whose AGPL Gram platform became an MCP gateway: IdP-provisioned access, OAuth brokering, inline secret/PII detectors and agent hooks; cloud, self-hosted or air-gapped. Cross-listed to [tool-identity-integration](tool-identity-integration.md). (added 2026-10-16)
 - [tetrate](../vendors/tetrate.md) — Agent Router Enterprise (the commercial build of the open-source Envoy AI Gateway, now Agent Router under AAIF) governs MCP alongside LLM traffic. Primary is [ai-gateway](ai-gateway.md). (added 2026-10-16)
 - [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker Sandboxes (`sbx`) has its own built-in MCP gateway (`sbx mcp`, since v0.38.0, 2026-08) with Cedar policy set through the paid Docker AI Governance; it governs only agents running inside Docker Sandboxes and is separate from the open-source [docker-mcp-gateway](../vendors/docker-mcp-gateway.md). Primary is [ephemeral-environments](ephemeral-environments.md). (added 2026-10-20)
+- [portkey](../vendors/portkey.md) — Portkey MCP Gateway: central MCP server/tool registry, OAuth 2.1/JWT/IdP auth, RBAC, tool allowlisting and audited tool calls. Now branded "Prisma AIRS AI Gateway" after the Palo Alto Networks acquisition, so it overlaps the [prisma-airs](../vendors/prisma-airs.md) entry above. Primary is [ai-gateway](ai-gateway.md). (added 2026-10-23)
+- [quilr](../vendors/quilr.md) — QuilrAI MCP Gateway (vendor marketing, 2026-10): sits in front of MCP servers, scopes each agent to a subset of tools, verifies identity on each call and logs tool calls. Primary is [ai-spm](ai-spm.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

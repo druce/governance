@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [dlp, data-access-governance]
 incumbent_coverage: []
-vendor_count: 16
+vendor_count: 18
 maps_to_seed_doc: Data Classification & DSPM
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-28
@@ -80,6 +80,8 @@ Cross-listed:
 
 - [onetrust](../vendors/onetrust.md) — data discovery/classification within a broader GRC/privacy suite.
 - [netskope](../vendors/netskope.md) — DSPM as part of its SSE/data-protection platform.
+- [egnyte](../vendors/egnyte.md) — Secure & Govern content classification (PII, financial and regulated content, one-click policy packs), scoped to Egnyte-hosted and connected M365 content rather than the wider estate. Primary in [data-access-governance](data-access-governance.md). (added 2026-10-23)
+- [lepide](../vendors/lepide.md) — classification of sensitive unstructured data on file servers as part of its AD/file auditing platform; on-prem, Microsoft-centric. Primary in [data-access-governance](data-access-governance.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

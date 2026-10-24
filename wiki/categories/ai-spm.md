@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [sspm, agent-runtime-security, ai-access-governance]
 incumbent_coverage: []
-vendor_count: 16
+vendor_count: 17
 maps_to_seed_doc: AI-SPM / Agent Governance
 maps_to_seed_csv: AI-SPM
 last_verified: 2026-06-28
@@ -76,6 +76,7 @@ red/yellow/green assets and flags the ones that violate your zone design.
 - [pillar-security](../vendors/pillar-security.md) — AI app discovery and posture alongside runtime protection.
 - [deepkeep](../vendors/deepkeep.md) — "AI Lens" discovery and usage control plus MLBOM/CVE model scanning; posture is one module of a broader suite (primary in [ai-runtime-security](ai-runtime-security.md)).
 - [agentregistry](../vendors/agentregistry.md) — Solo.io's agent/MCP/skills registry; the enterprise edition adds read-only discovery of unregistered agents in Bedrock AgentCore, Azure AI Foundry and Copilot Studio. Primary in [mcp-gateway](mcp-gateway.md). (added 2026-10-20)
+- [geordie-ai](../vendors/geordie-ai.md) — discovery-and-posture half of its platform: inventories coding, low-code and SaaS agents and maps each one's permissions, tool/MCP connections, knowledge sources and models, updated continuously. Primary in [agent-runtime-security](agent-runtime-security.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

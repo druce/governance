@@ -5,7 +5,7 @@ name: Island
 slug: island
 aka: [Island.io, The Enterprise Browser]
 primary_category: enterprise-browser
-also_listed_in: []
+also_listed_in: [ai-access-governance]
 website: https://www.island.io
 founded: 2020
 hq: Dallas, Texas, USA (R&D in Tel Aviv)
@@ -27,12 +27,14 @@ fs_traction: unverified
 target_customer: enterprise / regulated
 last_verified: 2026-06-28
 verify_after: null
-tags: [enterprise-browser, browser-security, dlp, zero-trust]
+tags: [enterprise-browser, browser-security, dlp, zero-trust, shadow-ai]
+sources:
+  - {claim: "AI Protect (launched 2026-03-17): distinguishes corporate vs personal AI tenants, audit logs of prompts/responses/agent activity, data boundaries before AI providers, prompt-injection and risky-extension controls; covers web AI tools, desktop apps, extensions, connectors", url: "https://www.island.io/press/island-makes-ai-work-for-the-enterprise", date: 2026-03-17, confidence: medium}
 ---
 
 # Island
 
-> **Primary category:** [enterprise-browser](../categories/enterprise-browser.md).
+> **Primary category:** [enterprise-browser](../categories/enterprise-browser.md). Also listed in [ai-access-governance](../categories/ai-access-governance.md).
 
 **One-liner** — A purpose-built, Chromium-based "enterprise browser" that bakes security, DLP, and access controls directly into the browser itself, so the place where work actually happens becomes the control point.
 
@@ -41,6 +43,8 @@ Island ships a full enterprise browser (built on Chromium, so it looks and feels
 
 ## Where it sits in the stack
 Lives at the **UX layer** in [enterprise-browser](../categories/enterprise-browser.md). For the lethal trifecta, an enterprise browser is primarily an **egress** control (it can stop data leaving via copy/paste, upload, download, or unsanctioned destinations) and secondarily an **untrusted-input** control (it isolates/inspects web content and risky sites at the point of use); with DLP-style inspection it also touches **sensitive-data** handling. It sits at the boundary between the user's endpoint (potentially untrusted/yellow zone) and corporate SaaS (green zone). For an AI-governance use case, the browser is a natural chokepoint for catching paste-into-chatbot and file-upload-to-AI-tool behavior.
+
+**AI usage controls (cross-listed to [ai-access-governance](../categories/ai-access-governance.md), 2026-10-23).** On 2026-03-17 Island launched four "Enterprise AI" offerings: AI Protect, AI Browser, AI Automation and AI Publish. **AI Protect** is the shadow-AI and AI-usage-governance piece. It "distinguishes corporate and personal tenants," enforces data boundaries before data reaches AI providers, "captures detailed audit logs of prompts, responses, and agent activity," and adds browser-level controls against prompt injection and risky extensions. Island says coverage reaches beyond its own browser to "web AI tools, desktop apps, extensions, and connectors," via an Island Extension for other browsers and Island Desktop for thick-client apps. That reach matters, because it means AI-usage control does not strictly require migrating every user to the Island browser. Treat the extension and desktop coverage as vendor-stated until tested. A 2026-10 CTO-survey respondent reported "Island AI controls" in production under Shadow-AI.
 
 ## Deployment & architecture
 SaaS-managed; the unit deployed is the **Island browser application** installed on user endpoints (Windows, macOS, Linux, ChromeOS, plus mobile), centrally policy-managed from Island's cloud console. No inline network proxy is required because enforcement happens in the browser. Integrations: IdP/SSO (SAML/OIDC) for conditional access, SIEM/SOC for session and event logs, and existing EDR/MDM for device posture. Island positions the browser as able to reduce reliance on VDI and some SASE/VPN paths.
@@ -65,13 +69,15 @@ Enterprise browser is **priority: optional** — a strong control point but not 
 
 ## Open questions / to verify
 - Exact pricing and per-seat economics (not public).
-- Depth/quality of native AI-tool controls (e.g., prompt/paste inspection) vs. a dedicated AI-security layer.
+- Depth/quality of native AI-tool controls (e.g., prompt/paste inspection) vs. a dedicated AI-security layer. AI Protect (2026-03-17) now exists; still unverified: AI-app catalog breadth, prompt-content DLP accuracy, and how much AI Protect works through the Island Extension on Chrome/Edge versus only inside the Island browser.
 - Real-world performance/compatibility for trading and other latency-sensitive web apps.
 
 ## Sources
 - [Island Secures $250 Million as Valuation Continues to Soar to Nearly $5 Billion](https://www.island.io/press/island-secures-250-million-as-valuation-continues-to-soar-to-nearly-5-billion) — fetched 2026-06-28 — supports: Series E $250M / ~$4.8B, total ~$730M, founders, HQ, product; confidence: high (vendor press; metrics vendor-reported)
+- [Island Makes AI Work for the Enterprise (Island press release, 2026-03-17)](https://www.island.io/press/island-makes-ai-work-for-the-enterprise) — fetched 2026-10-23 — supports: AI Protect / AI Browser / AI Automation / AI Publish, tenant separation, prompt audit logs, coverage beyond the Island browser; confidence: medium (vendor press). Cached: `raw/sources/2026-10-23--island--ai-protect.md`
 - [Island lands $250M in funding at a $4.8B valuation (TechCrunch)](https://techcrunch.com/2025/03/26/island-lands-250m-in-funding-at-a-4-8b-valuation/) — fetched 2026-06-28 — supports: funding-round history (Series C/D/E, dates, valuations), 450 customers, independence; confidence: high
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established Island is an independent, private enterprise-browser pure-play (founded 2020, Dallas + Tel Aviv R&D), ~$730M raised, Series E $250M at ~$4.8B (Mar 2025, Coatue). Ownership independent, confidence high. No M&A involving Island found. hedge_fund_fit medium.
+- [2026-10-23] Cross-listed to ai-access-governance on the evidence of Island's AI Protect launch (2026-03-17); prompted by a 2026-10 CTO-survey write-in ("Island AI controls", 1 in production under Shadow-AI). Ownership/funding not re-verified; last_verified left unchanged.

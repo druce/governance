@@ -5,7 +5,7 @@ name: Palo Alto Networks
 slug: palo-alto-networks
 aka: [PANW, Prisma, Cortex, Strata]
 primary_category: network-security-sase
-also_listed_in: [siem-soc, edr-xdr, ai-runtime-security, ai-soc-analysts, enterprise-browser, ai-gateway, non-human-identity]
+also_listed_in: [siem-soc, edr-xdr, ai-runtime-security, ai-soc-analysts, enterprise-browser, ai-gateway, non-human-identity, ai-access-governance]
 website: https://www.paloaltonetworks.com
 founded: 2005
 hq: Santa Clara, California, USA
@@ -50,6 +50,8 @@ tags: [platform, sase, xdr, siem, ai-security, acquirer]
 - **CyberArk** (incl. Conjur secrets) -> new Identity Security pillar. Announced **2025-07-30** (~$25B: $45 cash + 2.2005 PANW shares/share); **closed 2026-02-11**.
 - **Portkey** -> AI Gateway component of Prisma AIRS. Announced **2026-04-30**; **closed 2026-05-29**; terms undisclosed.
 
+**Shadow-AI control (AI Access Security)** — Generally available since 2024-08-15 and delivered on the existing SSE (Prisma Access) and next-gen firewall estate: a catalogue of 4,000+ GenAI apps, classification of each as sanctioned / tolerated / unsanctioned, per-role usage policy, user coaching and inline sensitive-data blocking (vendor product page and GA blog, fetched 2026-10-23). That is the [ai-access-governance](../categories/ai-access-governance.md) job, which is why PANW is cross-listed there. For funds already on Prisma Access it is usually the cheapest shadow-AI option to turn on. Survey note: one respondent in the 2026-10 CTO survey wrote "Strata" under shadow-AI; this is most likely this product, which buyers file under the Strata (network) pillar even though PANW does not brand it "Strata".
+
 **CTO / hedge-fund lens** — Day-1 relevance is high because most funds already run something from PANW (a firewall, Prisma Access, or Cortex). The strategic question is consolidation risk vs. convenience: buying the AI-security layer from your existing SASE vendor is operationally simple and procurement-friendly, but concentrates dependency and means inheriting integration timelines for freshly-acquired products (Portkey, Protect AI) still being natively stitched in. Identity-Security-for-agentic-AI (CyberArk) is the piece most relevant to SR 11-7-style model/agent governance.
 
 **Competitors / alternatives** — [cisco](cisco.md), [crowdstrike](crowdstrike.md), [zscaler](zscaler.md), [netskope](netskope.md), [microsoft-entra](microsoft-entra.md) (as platform stacks), plus the standalone vendors PANW's acquisitions displace.
@@ -59,6 +61,7 @@ tags: [platform, sase, xdr, siem, ai-security, acquirer]
 - CyberArk integration roadmap into Cortex/Strata post-close.
 
 **Sources**
+- [PANW AI Access Security product page](https://www.paloaltonetworks.com/sase/ai-access-security) and [GA blog, 2024-08-15](https://www.paloaltonetworks.com/blog/2024/08/enabling-the-safe-use-of-genai-applications/) — fetched 2026-10-23 — supports: GA date, app catalogue, sanctioned/tolerated/unsanctioned classes, inline data controls on SSE/NGFW; confidence: med (vendor). Cached: `raw/sources/2026-10-23--palo-alto-networks--ai-access-security.md`
 - [Palo Alto Networks to Acquire CyberArk](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-announces-agreement-to-acquire-cyberark--the-identity-security-leader) — fetched 2026-06-28 — supports: CyberArk deal terms/date; confidence: high
 - [PANW Completes Acquisition of Portkey](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents) — fetched 2026-06-28 — supports: Portkey close 2026-05-29, AI gateway role; confidence: high
 - [PANW Completes Acquisition of Protect AI](https://www.paloaltonetworks.com/company/press/2025/palo-alto-networks-completes-acquisition-of-protect-ai) — fetched 2026-06-28 — supports: Protect AI close 2025-07-22, Prisma AIRS; confidence: high
@@ -67,3 +70,4 @@ tags: [platform, sase, xdr, siem, ai-security, acquirer]
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; confirmed ownership=public (NASDAQ: PANW), founded 2005, HQ Santa Clara, FY25 rev ~$9.22B. Verified the full AI-security roll-up against PANW press releases: Talon (closed 2023-12-28), Protect AI (2025-07-22), CyberArk ~$25B (announced 2025-07-30, closed 2026-02-11), Portkey (closed 2026-05-29). Corrected seed's "ownership: acquired" — PANW is the acquirer, not a target.
+- [2026-10-23] Cross-listed to ai-access-governance on the strength of AI Access Security (GA 2024-08-15). Prompted by a "Strata" survey write-in under shadow-AI. Source cached.

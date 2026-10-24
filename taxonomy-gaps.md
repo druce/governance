@@ -349,3 +349,63 @@ described on their existing gateway pages for now.
 `agent-platform` (runtime/orchestration) slug, probably day-2 or situational in the
 model-prompt layer, when the hyperscaler agent runtimes are wanted as pages; or (b) keep
 kagent as a mention on the agentregistry and agentgateway pages. Revisit by 2027-04.
+
+## [2026-10-23] Survey write-ins (Oct 2026 CTO survey) — one category gap, a scope call, four unidentified names
+
+Source: write-in ("*") answers in `surveyfinal.pdf` (N=123, results dated 2026-10-08),
+extracted to `survey-write-ins.csv` and deduplicated to `survey-write-in-vendors.csv` (local working files, not committed).
+The full triage is in `reports/survey-writeins-2026-10-23/triage.md`.
+
+**1. MDR / managed SOC has no slug.** Respondents with no answer for "who runs my
+detection" wrote MDR providers into the SIEM/Logging and AI SOC questions:
+- **Pure MDR providers:** Blackpoint Cyber (2 firms in production), Red Canary
+  (a Zscaler company, closed 2025-08-01), Adlumin (N-able), eSentire and Soteria.
+- **Platforms with large MDR businesses:** Sophos/Secureworks, Zscaler via Red Canary,
+  and ReliaQuest (hybrid).
+
+One respondent wrote "really want my MSSP to…". For a fund with 2–10 IT staff, outsourced
+detection is the buying motion. `siem-soc` describes software and `ai-soc-analysts`
+describes autonomous agents; neither describes buying a service.
+
+**Recommendation:** add an `mdr-managed-soc` slug, probably day-1 in the foundation
+layer, adjacent to `siem-soc`, `edr-xdr` and `ai-soc-analysts`, with its own survey
+question ("Who provides your 24/7 detection & response?"). The alternative is to add
+an MDR option set to the SIEM question. **Needs a human decision.** Until then, these
+names sit as plain-text mentions on `siem-soc`, and Sophos and ReliaQuest have pages
+under their software categories.
+
+**2. Business-app questions (Q6–Q27) are out of scope.** About 70 of the 103 deduplicated
+write-ins came from the workflow questions, which carry no wiki category: research
+copilots, market data, due diligence, Excel automation, deal sourcing, data
+engineering, data providers, legal AI, back office, meeting notes. Examples are Daloopa,
+Carta, CENTRL, Dagster and iManage. Following the 2026-08-26 buyer-profile rule
+(security/governance only), these get **no pages**. The exceptions are infrastructure
+questions where the wiki already has coverage:
+- **Agent sandboxes:** Coder and Flyte. The `ephemeral-environments` page covers this
+  class; no pages added.
+- **Agent memory and vector stores:** Qdrant, Zep and FalkorDB are covered or adjacent on
+  `comparisons/vector-database-landscape.md` and `comparisons/agent-memory-landscape.md`,
+  consistent with the 2026-08-24 no-stub stance.
+
+**Open:** if the survey's business-app half is ever meant to be scaffolded by this wiki, it
+needs its own taxonomy layer.
+
+**3. Unidentified write-ins.** These are "couldn't find", not "doesn't exist":
+- **Clarier:** under AI-SPM, 1 firm in production.
+- **Firegate:** under LLM Gateways, 1 in production. Possibly Fortinet FortiGate or
+  Fireraven FireGuard.
+- **Elteni:** under TPRM, 1 in production.
+- **ASKB and MIK:** in business-app questions.
+
+The survey owner may be able to ask the respondents what they meant.
+
+**4. "Strata" is ambiguous.** It was written under both shadow-AI and LLM gateways.
+- **Most likely reading:** Palo Alto Networks AI Access Security, which buyers file under
+  the Strata network pillar. PANW is now cross-listed to `ai-access-governance` on that
+  basis.
+- **Other reading:** Strata Identity's AI Identity Gateway (2025-11-19). Rubrik announced
+  it had acquired Strata Identity on 2026-06-09; no close date has been confirmed. That
+  product is an agent identity/authorization gateway, so it is a
+  `tool-identity-integration` candidate if Rubrik keeps it.
+
+**Not added for now.** Revisit if it appears again.

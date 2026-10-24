@@ -5,7 +5,7 @@ name: LiteLLM
 slug: litellm
 aka: [BerriAI]
 primary_category: ai-gateway
-also_listed_in: []
+also_listed_in: [mcp-gateway]
 website: https://www.litellm.ai/
 founded: 2023
 hq: San Francisco, CA, USA
@@ -20,23 +20,25 @@ deployment_model: [self-hosted, saas, on-prem]
 form_factor: [api, sdk, inline-proxy]
 data_leaves_tenancy: unverified
 integrations: []
-mcp_support: unverified
+mcp_support: gateway
 certifications: []
 pricing_model: null
 fs_traction: unverified
 target_customer: Developers and platform/ML-platform teams; startups through enterprise
 last_verified: 2026-06-28
 verify_after: null
-tags: [open-source, ai-gateway, llm-proxy, yc]
+tags: [open-source, ai-gateway, llm-proxy, yc, mcp-gateway]
+sources:
+  - {claim: "LiteLLM proxy ships an MCP Gateway: fixed endpoint for all MCP tools, key/team/org access control, OAuth 2.0 and other upstream auth, Streamable HTTP/SSE/stdio transports", url: "https://docs.litellm.ai/docs/mcp", date: 2026-10-23, confidence: high}
 ---
 
 # LiteLLM
 
-> Open-source LLM gateway/proxy (by BerriAI) that lets you call 100+ model providers behind one OpenAI-compatible API, with cost tracking, virtual keys, guardrails, and load balancing. Primary category: [ai-gateway](../categories/ai-gateway.md).
+> Open-source LLM gateway/proxy (by BerriAI) that lets you call 100+ model providers behind one OpenAI-compatible API, with cost tracking, virtual keys, guardrails, and load balancing. Primary category: [ai-gateway](../categories/ai-gateway.md). Also listed in [mcp-gateway](../categories/mcp-gateway.md).
 
 **One-liner** — The popular self-hostable, open-source AI gateway: one OpenAI-compatible endpoint in front of every model provider, so you control spend, keys, and routing from a single chokepoint.
 
-**Categories** — [ai-gateway](../categories/ai-gateway.md)
+**Categories** — [ai-gateway](../categories/ai-gateway.md) · [mcp-gateway](../categories/mcp-gateway.md)
 
 ## What it does
 
@@ -56,7 +58,11 @@ LiteLLM is an [ai-gateway](../categories/ai-gateway.md) in the model/prompt laye
 - **SDK** — import as a Python library for direct, in-process provider abstraction.
 - **Self-hosted proxy** — deploy the gateway via Docker on your own infra (on-prem or private cloud); this is the common enterprise pattern. Acts as an **inline proxy** for all model calls.
 - **Managed/cloud** — a LiteLLM-hosted/cloud option exists for teams that don't want to run it.
-- **Integrations** — IdP/SSO (Okta, Azure AD) and JWT auth, RBAC, audit logs; guardrail providers (Presidio, Bedrock, Pangea, etc.); observability/logging sinks (S3, GCS, and LLM-observability tools such as [langfuse](langfuse.md)-style backends). MCP support is part of the broader gateway feature set.
+- **Integrations** — IdP/SSO (Okta, Azure AD) and JWT auth, RBAC, audit logs; guardrail providers (Presidio, Bedrock, Pangea, etc.); observability/logging sinks (S3, GCS, and LLM-observability tools such as [langfuse](langfuse.md)-style backends). MCP support is part of the broader gateway feature set — see below.
+
+### MCP gateway function
+
+The same proxy also works as an [mcp-gateway](../categories/mcp-gateway.md). LiteLLM's docs (fetched 2026-10-23) describe "a fixed endpoint for all MCP tools": agents connect to one LiteLLM URL instead of to each MCP server. Access to MCP servers is controlled by key, team, organization or end-customer. Upstream auth options are API key, bearer, basic, OAuth 2.0 (PKCE and client-credentials) and AWS SigV4. Transports are Streamable HTTP, SSE, and stdio, with stdio off by default behind an explicit flag. Tool calls are attributed per caller for tracking. A 2026-10 CTO-survey respondent reported using LiteLLM's MCP proxy in production for exactly this. The docs page describes access control at the **server** level and does not spell out per-tool allowlisting. It also does not say which MCP features need the Enterprise license. Verify both in a POC before treating it as a full tool-access-control layer like the dedicated MCP gateways.
 
 ## Positioning & differentiators
 
@@ -91,12 +97,15 @@ Fit is **medium**: excellent if you have a platform/ML-platform engineer comfort
 - Exact **total funding** and whether any post-seed round (Series A) has closed — primary announcement not found; aggregators disagree (~$1.6M seed confirmed vs ~$2.1M–$5M claimed).
 - Scope and pricing of the managed/cloud offering vs self-hosted Enterprise.
 - Precise split of which guardrail/governance features are open-source vs Commercial-License-gated.
+- MCP gateway: is per-tool (not just per-server) allowlisting supported, and are MCP access controls / MCP audit logging in the MIT core or Enterprise-only?
 
 ## Sources
 - [LiteLLM | Y Combinator](https://www.ycombinator.com/companies/litellm) — fetched 2026-06-28 — supports: founded 2023, founders, SF HQ, W23 batch, $1.6M seed (YC/Gravity/Pioneer), product; confidence: high
 - [LiteLLM (litellm.ai)](https://www.litellm.ai/) — fetched 2026-06-28 — supports: deployment options (SDK/proxy/cloud/on-prem), enterprise features (SSO, audit logs), guardrails, pricing tiers; confidence: med (vendor/marketing)
 - [BerriAI/litellm — GitHub](https://github.com/BerriAI/litellm) — fetched 2026-06-28 — supports: open-source proxy/gateway feature set, 100+ providers, MIT core + Commercial License, guardrails/virtual keys/rate limiting; confidence: high
+- [LiteLLM docs — MCP Gateway](https://docs.litellm.ai/docs/mcp) — fetched 2026-10-23 — supports: MCP gateway endpoint, access control by key/team/org, upstream auth types, transports; confidence: high (vendor docs). Cached: `raw/sources/2026-10-23--litellm--mcp-gateway-docs.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established founded 2023, SF HQ, founders Krrish Dholakia & Ishaan Jaffer, BerriAI/YC W23, ~$1.6M seed (independent, ownership_confidence high), no M&A. Filled deployment (self-hosted/saas/api/sdk/inline-proxy/on-prem), risk role=egress control, hedge_fund_fit=medium. Cached 3 sources.
+- [2026-10-23] Cross-listed to mcp-gateway (set mcp_support: gateway) on the evidence of LiteLLM's MCP Gateway docs; prompted by a 2026-10 CTO-survey write-in ("LiteLLM has MCP proxy gateway function", 1 in production under MCP Gateways). Only the MCP claim was re-verified; last_verified left unchanged.

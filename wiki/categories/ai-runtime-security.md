@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-gateway, ai-red-teaming, agent-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 15
+vendor_count: 17
 maps_to_seed_doc: AI Runtime Security (AI Firewall)
 maps_to_seed_csv: AI Runtime Security / AI Firewall
 last_verified: 2026-06-28
@@ -78,6 +78,10 @@ observation.
 **Runtime guardrails inside a DLP/data-security lineage**
 - [prompt-security](../vendors/prompt-security.md) — prompt/response inspection and AI DLP (cross-listed in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md)).
 - [lasso-security](../vendors/lasso-security.md) — runtime LLM/agent protection (cross-listed in [dlp](dlp.md) and [agent-runtime-security](agent-runtime-security.md)).
+
+**Network/SSE incumbents with AI runtime modules**
+- [check-point](../vendors/check-point.md) — AI Defense Plane: the AI Network Firewall (R82.20, 2026-07-30) adds prompt-injection blocking and shadow-AI/MCP discovery to its gateways; parent of [lakera](../vendors/lakera.md) (closed 2025-10-22) (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+- [zscaler](../vendors/zscaler.md) — Zscaler AI Guard: inline prompt-injection and data-leakage guardrails for AI apps, delivered from its SSE platform (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [identity-access, data-access-governance, non-human-identity]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 10
 maps_to_seed_doc: (folded into Identity & Access + Data Access Gov)
 maps_to_seed_csv: Identity Governance & Visibility (IGA / ISPM)
 last_verified: 2026-06-28
@@ -48,6 +48,7 @@ IGA / ISPM platforms:
 Cross-listed:
 
 - [cyberark](../vendors/cyberark.md) — PAM-first incumbent extending into IGA (per seed, acquired by Palo Alto).
+- [beyondtrust](../vendors/beyondtrust.md) — ISPM side only (Identity Security Insights / True Privilege graph); no IGA certifications/JML; complements SailPoint/Saviynt, overlaps Veza. Primary is [secrets-management](secrets-management.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

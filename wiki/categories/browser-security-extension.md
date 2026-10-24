@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [enterprise-browser]
 incumbent_coverage: []
-vendor_count: 4
+vendor_count: 5
 maps_to_seed_doc: Browser Security Extension
 maps_to_seed_csv: (in Enterprise Browser)
 last_verified: 2026-06-28
@@ -38,6 +38,7 @@ Agent security's core threat model — the lethal trifecta of untrusted input, s
 - [material-security](../vendors/material-security.md) — primarily an email/M365 data-security vendor; included per seed for its browser/data-protection reach. Positioning in the *extension* slot is partial — confirm scope in research.
 - [grip-security](../vendors/grip-security.md) — SaaS/identity-risk and shadow-SaaS discovery with a browser-extension delivery; bridges into [sspm](sspm.md) and [ai-access-governance](ai-access-governance.md). Cross-listed.
 - [chrome-enterprise](../vendors/chrome-enterprise.md) — Chrome Enterprise Premium's built-in policy/DLP/reporting is the "use the browser's own controls instead of a third-party extension" option. Cross-listed with [enterprise-browser](enterprise-browser.md).
+- [prompt-security](../vendors/prompt-security.md) — SentinelOne-owned AI security vendor whose workforce product is delivered mainly as a managed browser extension (Chrome, Safari, Brave) that scans and redacts prompts before they reach external AI tools. Primary in [dlp](dlp.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [ai-soc-analysts, edr-xdr]
 incumbent_coverage: []
-vendor_count: 10
+vendor_count: 14
 maps_to_seed_doc: Enterprise logging / SIEM / SOC
 maps_to_seed_csv: SIEM/SOAR/SecOps
 last_verified: 2026-06-28
@@ -47,11 +47,24 @@ Enterprise SIEM / SecOps platforms:
 SOAR / automation cross-listed (modern, AI-leaning automation that overlaps the SOC):
 
 - [torq](../vendors/torq.md) — hyperautomation/SOAR platform (also relevant to AI-SPM and AI SOC).
+- [reliaquest](../vendors/reliaquest.md) — GreyMatter runs triage, investigation and containment as a managed outcome on top of the SIEM/EDR you already own; it is not a SIEM itself. Primary in [ai-soc-analysts](ai-soc-analysts.md). (added 2026-10-23)
+
+Mid-market and platform-bundled SIEM:
+
+- [manageengine](../vendors/manageengine.md) — Low-cost, licence-priced (not ingest-priced) SIEM + UEBA + SOAR from Zoho's IT-management division; strongest on Windows/AD, on-prem or cloud. (added 2026-10-23)
+- [sophos](../vendors/sophos.md) — Secureworks Taegis XDR (acquired with Secureworks, closed 2025-02-03) and Sophos Next-Gen SIEM, now the analytics core of Sophos Fusion; mostly bought alongside Sophos MDR. Primary in [edr-xdr](edr-xdr.md). (added 2026-10-23)
+- [datadog](../vendors/datadog.md) — Datadog Cloud SIEM: detection rules (800+ out of the box) over logs already in Datadog log management; the natural option where observability already runs on Datadog. Primary in [llm-observability](llm-observability.md). (added 2026-10-23)
 
 Enterprise-logging side only (telemetry backend, **no detection content**):
 
 - [rapid7](../vendors/rapid7.md) — InsightVM + InsightIDR + MDR bundled for the mid-market; the "one vendor, no SOC" option. Public (NASDAQ: RPD) but under activist pressure from Jana Partners to sell itself — price the ownership uncertainty into a multi-year contract. (added 2026-08-26)
 - [signoz](../vendors/signoz.md) — open-core, OpenTelemetry-native logs/metrics/traces on ClickHouse; self-hostable Datadog alternative. Answers the *logging* half of this category, not the SIEM half — no rule packs, correlation, case management or SOAR. Cross-listed to [llm-observability](llm-observability.md).
+
+### Also named in survey write-ins (no page)
+
+- LogPoint (rebranded guardsix 2026-03-12) — Danish SIEM/NDR/SOAR software sold to MSSPs and regulated orgs.
+
+Several respondents wrote MDR providers into this question (Blackpoint Cyber, Red Canary (Zscaler), Adlumin (N-able), eSentire, Soteria) — managed detection is a distinct buying motion; see `taxonomy-gaps.md` (2026-10-23).
 
 ## Consolidation / M&A dynamics
 
@@ -71,7 +84,7 @@ The SIEM market is consolidating into platform owners (Cisco/Splunk, Palo Alto C
 
 **Question.** Which SIEM / SOAR / SecOps platform(s) is your firm currently using or evaluating?
 
-**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Rapid7; Torq; SigNoz; Other (Please Specify).
+**Answer options.** Microsoft Sentinel; Splunk; Sumo Logic; Elastic (ELK); Google SecOps (Chronicle); CrowdStrike Falcon LogScale; Palo Alto Cortex XSIAM; Rapid7; Torq; SigNoz; ManageEngine Log360; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.
 

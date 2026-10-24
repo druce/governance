@@ -3,9 +3,9 @@ title: Portkey
 type: vendor
 name: Portkey
 slug: portkey
-aka: [Portkey AI]
+aka: [Portkey AI, Prisma AIRS AI Gateway]
 primary_category: ai-gateway
-also_listed_in: []
+also_listed_in: [mcp-gateway]
 website: https://portkey.ai
 founded: 2023
 hq: San Francisco, California, USA
@@ -20,7 +20,7 @@ deployment_model: [saas, self-hosted]
 form_factor: [api, inline-proxy]
 data_leaves_tenancy: unverified
 integrations: []
-mcp_support: unverified
+mcp_support: gateway
 certifications: []
 pricing_model: null
 fs_traction: unverified
@@ -32,11 +32,12 @@ sources:
   - {claim: acquisition-close, url: "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000015/panw-20260430.htm", date: 2026-06-03, confidence: high}
   - {claim: acquisition-price, url: "https://www.sec.gov/Archives/edgar/data/1327567/000132756726000015/panw-20260430.htm", date: 2026-06-03, confidence: high}
   - {claim: acquisition-announced, url: "https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-acquire-portkey-to-secure-the-rise-of-ai-agents", date: 2026-04-30, confidence: high}
+  - {claim: "MCP Gateway: central registry, OAuth 2.1/JWT/IdP auth, RBAC, tool allowlisting, audited tool calls; page headline 'Portkey is now PRISMA AIRS AI Gateway'", url: "https://portkey.ai/features/mcp", date: 2026-10-23, confidence: medium}
 ---
 
 # Portkey
 
-> **Researched 2026-06-28; re-verified 2026-07-27 against PANW's SEC filings.** Primary category: [ai-gateway](../categories/ai-gateway.md). The AI gateway / control plane Palo Alto Networks bought to anchor Prisma AIRS. **No longer an independent company** — the acquisition closed 2026-05-29 for $140M. `portkey.ai` is still live (HTTP 200, no redirect) under the Portkey brand, but banners the PANW completion release; shop for this as **Prisma AIRS AI Gateway** and price it as part of a PANW platform deal.
+> **Researched 2026-06-28; re-verified 2026-07-27 against PANW's SEC filings.** Primary category: [ai-gateway](../categories/ai-gateway.md); also listed in [mcp-gateway](../categories/mcp-gateway.md). The AI gateway / control plane Palo Alto Networks bought to anchor Prisma AIRS. **No longer an independent company** — the acquisition closed 2026-05-29 for $140M. `portkey.ai` is still live (HTTP 200, no redirect) under the Portkey brand, but banners the PANW completion release; shop for this as **Prisma AIRS AI Gateway** and price it as part of a PANW platform deal.
 
 **One-liner** — A high-performance AI gateway and control plane that sits between enterprise apps and model APIs — routing, rate-limiting, caching, governing, and observing LLM traffic — acquired by [palo-alto-networks](palo-alto-networks.md) in May 2026 to become the gateway layer of [prisma-airs](prisma-airs.md).
 
@@ -45,6 +46,8 @@ sources:
 **Where it sits in the stack** — Model/prompt-layer [ai-gateway](../categories/ai-gateway.md). As a chokepoint on model traffic it primarily controls outbound data flows (what leaves to which model/provider) and is the natural enforcement point to bolt untrusted-input inspection (prompt injection screening) onto. Under PANW it becomes the AI Gateway that feeds Prisma AIRS three capabilities: AI runtime security (traffic inspection), agent identity security, and AI observability.
 
 **Deployment & architecture** — Inline gateway/proxy deployed as SaaS or self-hosted, fronting provider APIs via a unified API; SDKs and an OpenAI-compatible interface; integrates with observability and guardrail tooling. Designed for high-throughput agentic workloads.
+
+**MCP gateway** — Portkey also sells an **MCP Gateway**, which is why it is cross-listed to [mcp-gateway](../categories/mcp-gateway.md). Per its product page (fetched 2026-10-23), it provides a central registry of MCP servers and tools with team scoping. Auth covers OAuth 2.1, API tokens and header auth, plus JWT validation, identity forwarding, and Okta/Entra integration. RBAC runs at org, workspace, team and user level, with explicit tool allowlisting ("If it's not approved in the gateway, agents can't use it"). It enforces runtime policy (PII redaction, content filtering, blocking unauthorized tool calls) and logs every tool invocation in a searchable audit trail. Deployment options are SaaS, private cloud/VPC and self-hosted. 2026-10 CTO-survey respondents wrote "Portkey MCP Gateway" in under MCP Gateways (1 in production) and under Agent APIs/MCP. So for this audience, Portkey is a model-traffic *and* tool-traffic chokepoint in one product.
 
 **Positioning & differentiators** — Known for combining a fast gateway with built-in governance/observability rather than being a thin proxy. **This is no longer an independent-vendor comparison.** Post-close, Portkey's pitch is not "best gateway" but "the gateway that is natively wired into a full AI-security platform" — PANW positions it as the enforcement point where three previously separate acquisitions meet: AI Runtime Security inspects the traffic, [Idira](cyberark.md) (the rebranded CyberArk portfolio) authenticates the agent identity behind each call, and Chronosphere carries the telemetry. That bundle is the differentiator and the lock-in in equal measure. Nearest neighbors, now all more independent than Portkey is: [litellm](litellm.md) (OSS routing), [kong](kong.md) (API-gateway lineage, MCP), [truefoundry](truefoundry.md), [cloudflare](cloudflare.md) AI Gateway, [openrouter](openrouter.md). Note that the neutral-gateway field is consolidating generally — [f5](f5.md) acquired CalypsoAI on a similar thesis — so "buy independent" increasingly means buying OSS.
 
@@ -57,7 +60,8 @@ sources:
 **Open questions / to verify**
 - Whether Portkey stays available as a standalone product or only inside Prisma AIRS. Still open as of 2026-07-27 — `portkey.ai` continues to sell under its own brand and pricing, but that is the normal ~2-month post-close state and is not evidence of a long-term standalone commitment.
 - Continued support for the open-source / self-hosted gateway under PANW.
-- Whether the Portkey brand survives or is absorbed into the Prisma AIRS naming (PANW retired the CyberArk brand in favor of Idira within ~3 months of that close, so brand retirement here would not be surprising).
+- Whether the Portkey brand survives or is absorbed into the Prisma AIRS naming (PANW retired the CyberArk brand in favor of Idira within ~3 months of that close, so brand retirement here would not be surprising). **Partly answered 2026-10-23:** `portkey.ai/features/mcp` now headlines "Portkey is now PRISMA AIRS AI Gateway" and routes contact/webinar links to paloaltonetworks.com. The rebrand is underway on the site, though the `portkey.ai` domain still serves. No PANW release formally announcing the rename was found.
+- MCP Gateway GA date and whether it is licensed separately from the model gateway under Prisma AIRS.
 - Purchase-price allocation (goodwill / intangibles split) — not yet published; lands in PANW's FY2026 Form 10-K, expected ~September 2026.
 
 **Sources**
@@ -65,9 +69,11 @@ sources:
 - [PANW Completes Acquisition of Portkey](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-completes-acquisition-of-portkey-to-secure-ai-agents) — fetched 2026-06-28, re-fetched 2026-07-27 — supports: close 2026-05-29 (dateline), AI Gateway role in Prisma AIRS alongside Idira and Chronosphere; terms not disclosed here; confidence: high
 - [PANW to Acquire Portkey](https://www.paloaltonetworks.com/company/press/2026/palo-alto-networks-to-acquire-portkey-to-secure-the-rise-of-ai-agents) — fetched 2026-07-27 — supports: announcement date 2026-04-30, expected close in PANW fiscal Q4 2026; confidence: high
 - [Portkey Raises $15M Series A (Portkey blog)](https://portkey.ai/blog/series-a-funding/) — fetched 2026-06-28 — supports: founded 2023, SF HQ, $15M Series A 2026-02; confidence: high (vendor source for funding)
-- Cached: `raw/sources/2026-07-27--portkey--panw-10q-close-date-and-price.md`
+- [Portkey — MCP Gateway](https://portkey.ai/features/mcp) — fetched 2026-10-23 — supports: MCP gateway features (registry, auth, RBAC, allowlisting, audit, deployment options) and the "Portkey is now PRISMA AIRS AI Gateway" headline; confidence: medium (vendor page)
+- Cached: `raw/sources/2026-07-27--portkey--panw-10q-close-date-and-price.md`, `raw/sources/2026-10-23--portkey--mcp-gateway-and-prisma-rebrand.md`
 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; **CONFIRMED** seed M&A flag: acquired by Palo Alto Networks (announced 2026-04-30, closed 2026-05-29, terms undisclosed) against PANW completion press release. Becomes Prisma AIRS AI Gateway. Established founded 2023, SF HQ, ~$18M total funding incl. $15M Series A (Feb 2026) only ~3 months pre-acquisition. Raised ownership_confidence low->high.
 - [2026-07-27] URL audit + M&A re-verification. `portkey.ai` live (HTTP 200, no redirect), now bannering "Palo Alto Networks has completed the acquisition of Portkey" — website unchanged. **Checked for the `closed == announced` copy-paste bug found on [natoma](natoma.md) during the same sweep: not present here.** Both dates independently re-confirmed against PANW's Form 10-Q for the quarter ended 2026-04-30 (filed 2026-06-03) — definitive agreement 2026-04-30 (Note 6), completion 2026-05-29 (Note 17 Subsequent Events, restated in MD&A); `acquired-closed` stands. **New fact:** the previously-undisclosed price is in the filing — **$140M in cash and replacement awards, subject to adjustments** — so `acquisition.price` moved from `null` to a verified figure. Added the 10-Q and the announcement release as source entries; expanded the M&A, positioning, and CTO-lens sections for a vendor that is no longer independent (platform lock-in, standalone-SKU risk at renewal, OSS as the neutral alternative).
+- [2026-10-23] Cross-listed to mcp-gateway (mcp_support: gateway) on the evidence of Portkey's MCP Gateway product page; prompted by 2026-10 CTO-survey write-ins ("Portkey MCP Gateway" under MCP Gateways, 1 in production, and under Agent APIs/MCP). Added `Prisma AIRS AI Gateway` to aka: the product page now headlines "Portkey is now PRISMA AIRS AI Gateway." Only the MCP and branding claims were re-verified; last_verified left unchanged.

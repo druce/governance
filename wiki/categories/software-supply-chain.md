@@ -94,6 +94,10 @@ buyers toward whoever already hosts their repos.
 - [policy-as-code](policy-as-code.md) — pipeline policy enforcement (e.g. block builds failing a scan).
 - [ephemeral-environments](ephemeral-environments.md) — short-lived build/dev compute these tools protect.
 
+### Also named in survey write-ins (no page)
+
+- Inedo ProGet — self-hosted private package repository/Docker registry with SCA; a lighter alternative to Artifactory/Nexus.
+
 ## Survey
 
 **Question:** Which software supply chain / coding security tool does your firm use

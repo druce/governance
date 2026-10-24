@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 17
+vendor_count: 18
 maps_to_seed_doc: (folded into LLM Observability "red-teaming")
 maps_to_seed_csv: AI Red Teaming / Guardrails
 last_verified: 2026-06-28
@@ -67,6 +67,7 @@ firewall.
 - [enkrypt-ai](../vendors/enkrypt-ai.md) — red-teaming plus guardrails (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 - [trojai](../vendors/trojai.md) — model scanning and red-teaming (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 - [deepkeep](../vendors/deepkeep.md) — automated red teaming plus "Vibe AI Red Teaming", a human-steered mode where staff redirect an agent-run campaign mid-execution (primary in [ai-runtime-security](ai-runtime-security.md)).
+- [zscaler](../vendors/zscaler.md) — continuous AI red teaming from its SPLX acquisition (closed 2025-10-31; see [splxai](../vendors/splxai.md)) paired with AI Guard runtime guardrails (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 
 **Guardrails / safety-filter-first**
 - [guardrails-ai](../vendors/guardrails-ai.md) — open-source guardrails framework (validators for I/O).

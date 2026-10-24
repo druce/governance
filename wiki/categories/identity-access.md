@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [non-human-identity, identity-governance, secrets-management]
 incumbent_coverage: []
-vendor_count: 7
+vendor_count: 8
 maps_to_seed_doc: Identity & Access
 maps_to_seed_csv: General Identity
 last_verified: 2026-06-28
@@ -49,6 +49,7 @@ Cloud-suite IdPs (added to survey CSV 2026-07; stubs, to research):
 Adjacent / agent-era identity:
 
 - [workos](../vendors/workos.md) — developer-focused auth and SSO; primary fit is tool/agent identity, listed here as it overlaps the IdP slot for app builders.
+- [cisco](../vendors/cisco.md) — Duo — MFA/SSO/device trust; many funds use it only as the second factor in front of Entra/Okta. Primary in [network-security-sase](network-security-sase.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 

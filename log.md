@@ -2797,3 +2797,78 @@ under `raw/sources/2026-10-20--*`.
 - 3 new `survey-v2.csv` rows: agentregistry under MCP Gateway; NVIDIA OpenShell and Docker AI Governance under Agent Security. Docker gets one row only; the MCP survey notes warn that its two MCP gateways are easy to confuse.
 - CSV notes refreshed for TrueFoundry (2 rows) and Obot.
 - Vendor lists and answer options updated on mcp-gateway, agent-runtime-security, ephemeral-environments, ai-spm, ai-gateway and trust-zone-segmentation (prose only). `vendor_count` incremented for today's adds.
+
+## [2026-10-23] research | survey write-ins — 13 vendors added, 11 cross-lists, Symmetry close corrected
+
+The human supplied the Oct-2026 CTO survey results (`surveyfinal.pdf`, N=123, dated
+2026-10-08). Write-in answers (marked `*`) were extracted per question with the
+respondent's category (`survey-write-ins.csv`, 168 rows), then deduplicated to 103 vendors
+(`survey-write-in-vendors.csv`). The human pruned that list by hand. Both CSVs are local
+working files and are not committed. Per-vendor decisions are in
+`reports/survey-writeins-2026-10-23/triage.md` (+ `triage.csv`).
+
+**Triage rule.** A vendor got a page if:
+- it was written into a security/governance question;
+- it could be identified;
+- and either 2+ firms run it in production, or it is specific to alternative-investment
+  buyers (Drawbridge, ACA), or it fills a major platform gap (Check Point).
+
+Single mentions are named as plain text on the category page. Write-ins under the Q6–Q27
+business-app questions have no wiki category and are out of scope (48 vendors).
+
+**Added (13).** Four parallel research agents wrote these; sources are in `raw/sources/2026-10-23--*`.
+
+| Page | Category (+cross-list) | Note |
+|---|---|---|
+| bitwarden | secrets-management | 5 firms in production; real Secrets Manager product; CLI npm compromise 2026-04-22 |
+| lastpass | secrets-management | 5 firms in production; staff passwords only; 2022 vault theft, ICO fine 2025-12-11; PE-owned since GoTo split (2024-05-01) |
+| dashlane | secrets-management | 2 in production; staff passwords / credential risk (Omnix) |
+| egnyte | data-access-governance (+dspm, content-sources) | 4 in production; the GRC write-in was a respondent misplacement |
+| lepide | data-access-governance (+dspm) | 2 in production; on-prem Varonis/Netwrix alternative |
+| drawbridge | vendor-risk (+enterprise-grc) | 3 in production; alts-only; vendor DD is advisor-delivered |
+| viso-trust | vendor-risk (+enterprise-grc) | **acquired by Protecht, completed 2026-04-21** (CSV label "VISO TRUST (Protecht)") |
+| geordie-ai | agent-runtime-security (+ai-spm) | RSAC 2026 ISB winner; $30M A (Balderton, 2026-05-28); LLM-observability write-in was a misplacement |
+| aca-group | comms-surveillance (+enterprise-grc) | ComplianceAlpha; PE-owned (Genstar); no AI-assistant capture documented |
+| reliaquest | ai-soc-analysts (+siem-soc) | GreyMatter, a managed outcome; >$500M at $3.4B (EQT, 2025-03) |
+| manageengine | siem-soc | Log360; Zoho division |
+| sophos | edr-xdr (+siem-soc, network-security-sase, ai-access-governance) | Secureworks closed 2025-02-03 (~$859M, SEC 8-K); folded in, no separate page |
+| check-point | network-security-sase (+dlp, ai-runtime-security) | parent of lakera (lakera.md now links back) |
+
+**Cross-listed existing pages (11).**
+- beyondtrust → identity-governance (ISPM side only)
+- cisco → identity-access (Duo)
+- datadog → siem-soc, ai-soc-analysts
+- dope-security, island, palo-alto-networks → ai-access-governance
+- litellm, portkey, quilr → mcp-gateway
+- prompt-security → browser-security-extension
+- zscaler → dlp, ai-red-teaming, ai-runtime-security
+
+**Decisions.**
+- **"Strata" write-in:** read as PANW AI Access Security. PANW is cross-listed on that
+  product's own merits (GA 2024-08-15). The Strata Identity alternative (Rubrik announced
+  the acquisition 2026-06-09) is noted in taxonomy-gaps.
+- **Secureworks** is folded into `sophos`. **Red Canary** is covered on `zscaler`
+  (closed 2025-08-01, $651.4M per 10-K).
+- **Proofpoint DLP** is named on `dlp` rather than cross-listing the product-slugged
+  `proofpoint-dspm` page.
+- **LastPass and Dashlane** stay in secrets-management because that is where
+  respondents put them. Both pages say plainly that they hold staff passwords, not
+  machine secrets. The survey notes now suggest a workforce-password-manager option.
+- **New taxonomy gap: MDR / managed SOC.** Five pure MDR providers were written in under
+  SIEM/AI SOC. Recommendation and the unidentified names (Clarier, Firegate, Elteni,
+  ASKB, MIK) are in `taxonomy-gaps.md` (2026-10-23). **Needs a human decision.**
+
+**Corrections found along the way.**
+- **symmetry-systems: `acquired-pending` → `acquired-closed`.** Zscaler's FY2026 10-K
+  (Note 6) records the close on 2026-05-27, for $152.9M cash plus $16.9M restricted stock.
+  There is a soft discrepancy with the 10-Q's pre-close $175.0M.
+- **zscaler:** the SPLX close was 2025-10-31 for $40.6M; the page had "announced Jan 2026".
+  Also added SquareX (closed 2026-02-05).
+- **portkey:** the vendor page now reads "Portkey is now PRISMA AIRS AI Gateway"; added to `aka`.
+- **lakera:** removed a stray `</content>` line.
+
+**Registered.**
+- 13 `survey-v2.csv` rows, CRLF preserved, each inserted before its category's Other row.
+- Category pages: vendor lists, survey answer options, plain-text mentions and
+  `vendor_count` (today's adds only).
+- `index.md`.

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [dspm, identity-governance, entitlement-aware-rag]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 13
 maps_to_seed_doc: Data Access Governance
 maps_to_seed_csv: — (doc-only; overlaps IGA survey question)
 last_verified: 2026-06-28
@@ -58,6 +58,11 @@ Data-access-specialist:
 - [varonis](../vendors/varonis.md) — the category archetype; permissions analysis, sensitive-data
   monitoring, and remediation across file shares, SaaS, and cloud.
 - [netwrix](../vendors/netwrix.md) — permissions auditing and data-access governance for files/AD.
+- [lepide](../vendors/lepide.md) — Mid-market, on-prem/self-hosted Varonis/Netwrix alternative: AD and file-server auditing, permission analysis, classification and anomaly alerting for Microsoft-centric estates. (added 2026-10-23)
+
+Content platforms with a built-in governance layer:
+
+- [egnyte](../vendors/egnyte.md) — Cloud file platform popular with alt managers; its Secure & Govern add-on classifies files, reviews permissions and external sharing, detects ransomware and enforces retention — mainly over Egnyte-hosted and connected M365 content. Cross-listed to [dspm](dspm.md) and [content-sources](content-sources.md). (added 2026-10-23)
 
 DSPM vendors extending into access context:
 
@@ -102,7 +107,7 @@ standalone market.
 audit and right-size who can access sensitive data?
 
 **Answer options.** Varonis, Netwrix, Cyera, Sentra, Concentric AI, Immuta, SailPoint
-(Data Access Security), Veza, C1 (formerly ConductorOne), Silverfort, Alation, Other (Please Specify).
+(Data Access Security), Veza, C1 (formerly ConductorOne), Silverfort, Alation, Egnyte (Secure & Govern), Lepide, Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

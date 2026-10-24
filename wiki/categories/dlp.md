@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dspm, ai-access-governance, network-security-sase]
 incumbent_coverage: []
-vendor_count: 13
+vendor_count: 15
 maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-30
@@ -77,6 +77,13 @@ Platform / incumbent DLP:
 - [mimecast](../vendors/mimecast.md) — email security plus insider-risk DLP (Code42/Incydr) and collaboration capture (Aware); also holds the SEC 17a-4 / FINRA books-and-records archive at many registered advisers, which makes it unusually sticky. Watches file and message movement, **not** prompt content. (added 2026-08-26)
 - [cyera](../vendors/cyera.md) — DSPM-led vendor extending into DLP/egress controls.
 - [teleskope](../vendors/teleskope.md) — DSPM-led with native remediation (redact/quarantine/block) and external-LLM egress prevention (primary in [dspm](dspm.md)).
+- [check-point](../vendors/check-point.md) — Harmony DLP across endpoints, browsers, web apps and GenAI tools, plus prompt-intent exfiltration controls in its AI Network Firewall; a module of the firewall/SASE estate (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+- [zscaler](../vendors/zscaler.md) — inline DLP (100+ dictionaries) across web, endpoint, email and AI prompts inside its SSE proxy, which most egress already traverses (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+
+### Also named in survey write-ins (no page)
+
+- Digital Guardian (Fortra) — endpoint/network/cloud DLP incumbent with a managed-DLP option; HelpSystems (now Fortra) acquisition announced 2021-10-27.
+- Proofpoint (Enterprise DLP) — email-centred DLP from the email-security incumbent; written in once (in production). Its DSPM product (ex-Normalyze) has a page: [proofpoint-dspm](../vendors/proofpoint-dspm.md).
 
 ## Consolidation / M&A dynamics
 

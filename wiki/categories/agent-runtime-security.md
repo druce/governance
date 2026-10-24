@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 11
+vendor_count: 12
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28
@@ -72,6 +72,7 @@ anyway.
 - [knostic](../vendors/knostic.md) — moved here 2026-07-09: now leads with agentic security (Kirin — runtime least-privilege and injection-blocking for agents, coding assistants, and MCP servers; AgentMesh supply-chain reputation). Distinctive coding-tool/MCP supply-chain wedge. Its original need-to-know/oversharing product stays cross-listed in [entitlement-aware-rag](entitlement-aware-rag.md).
 - [nvidia-openshell](../vendors/nvidia-openshell.md) — NVIDIA's open-source (Apache-2.0), self-hosted agent sandbox: agents run behind Landlock/seccomp, network egress is denied by default and checked by an OPA-based proxy, the agent holds only placeholder credentials, and policy changes need human approval. It contains the agent rather than detecting attacks; Cisco and CrowdStrike build on it rather than compete. Cross-listed to [ephemeral-environments](ephemeral-environments.md) and [trust-zone-segmentation](trust-zone-segmentation.md). (added 2026-10-20)
 - [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker AI Governance (paid, launched 2026-05-12) sets central egress, filesystem, credential and MCP policy for coding agents running in Docker's microVM sandboxes, with SIEM-streamed audit logs; enforcement at the execution boundary, no prompt inspection. Primary is [ephemeral-environments](ephemeral-environments.md). (added 2026-10-20)
+- [geordie-ai](../vendors/geordie-ai.md) — London agent-security startup (RSAC 2026 Innovation Sandbox winner) that discovers coding, low-code and SaaS agents, maps their tool/data access, and steers or blocks agent actions in-process via its Beam hooks — posture plus runtime, closest in shape to Zenity. Cross-listed to [ai-spm](ai-spm.md). (added 2026-10-23)
 
 ## Consolidation / M&A dynamics
 
@@ -96,7 +97,7 @@ evaluating to protect agentic applications as they act? *(Select all that apply 
 indicate stage.)*
 
 **Answer options.** Zenity · Lasso Security · Operant AI · Apex Security · Straiker ·
-Noma · Knostic · NVIDIA OpenShell · Docker AI Governance · Other (Please Specify)
+Noma · Knostic · NVIDIA OpenShell · Docker AI Governance · Geordie AI · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.
