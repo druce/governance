@@ -10,7 +10,7 @@ Regenerated 2026-10-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 
 - [overview](wiki/overview.md) — The thesis: standing up a *governed* enterprise AI platform isn't one purchase — it's a **stack**.
 
-## Categories (42)
+## Categories (43)
 
 - [Acceptable Use Policies](wiki/categories/acceptable-use-policies.md) — The **"here's what you can and can't do with AI here" rulebook everyone signs.** An — (practice, 2026-06-28)
 - [Agent Security (runtime)](wiki/categories/agent-runtime-security.md) — Agent runtime security **protects agentic applications while they run** — as the agent — (day-2, 2026-06-28)
@@ -49,13 +49,14 @@ Regenerated 2026-10-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Enterprise Logging / SIEM / SOC](wiki/categories/siem-soc.md) — The security camera control room. A SIEM (security information and event management) platform collects logs and telemetry from across the estate — endpoints,… — (day-1, 2026-06-28)
 - [Software Supply Chain & Coding Security](wiki/categories/software-supply-chain.md) — Secure and govern the software supply chain — the code you write, the dependencies — (day-2, 2026-06-28)
 - [SaaS Security Posture Management](wiki/categories/sspm.md) — Continuously assess and harden the configuration of your SaaS estate. The seed doc — (day-2, 2026-06-28)
+- [Synthetic & Masked Data](wiki/categories/synthetic-masked-data.md) — Give developers, testers, data scientists and AI pipelines **realistic data that is not real client data**, so production PII, client positions and MNPI neve… — (day-2, 2026-10-26)
 - [Third-Party AI Apps](wiki/categories/third-party-ai-apps.md) — The niche AI tools — legal review, coding, research, transcription, market-data copilots, deal-diligence assistants — funneled through the same controls as e… — (practice, 2026-06-28)
 - [Tool Identity & Integration](wiki/categories/tool-identity-integration.md) — This layer is the **universal adapter that lets agents reach SaaS tools securely** — — (day-2, 2026-06-28)
 - [Trust Zone Segmentation](wiki/categories/trust-zone-segmentation.md) — The job is to **break the exfiltration chain** before it can form. Simon Willison's — (practice, 2026-06-28)
 - [Vector Retrieval](wiki/categories/vector-retrieval.md) — The AI's card catalog: turns documents into searchable "meaning" (embeddings) so the model finds the right snippet to ground its answer. Semantic search and … — (situational, 2026-08-24)
 - [Third-Party / Vendor Risk + Cyber Ratings](wiki/categories/vendor-risk.md) — The background check on every AI vendor before they touch your data — and the — (day-1, 2026-07-27)
 
-## Vendors (314)
+## Vendors (317)
 
 - [1Password](wiki/vendors/1password.md) — The password manager that grew into an enterprise "Extended Access Management" platform — vaulting human credentials, passkeys, and developer secrets, and (p… — (independent, 2026-06-28)
 - [7AI](wiki/vendors/7ai.md) — A "dynamic agentic security" platform from the Cybereason founders that runs swarms of autonomous AI agents to investigate security alerts at enterprise scale. — (independent, 2026-06-28)
@@ -184,6 +185,7 @@ Regenerated 2026-10-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [GovernGPT](wiki/vendors/governgpt.md) — AI that drafts answers to investor DDQs and RFPs for fund managers, — (independent, 2026-06-28)
 - [Gravitee](wiki/vendors/gravitee.md) — Gravitee is an open-source-rooted API- and event-management vendor whose **AI Gateway** puts LLM calls, MCP tool calls, and agent-to-agent traffic behind one… — (independent, 2026-07-27)
 - [Greenboard](wiki/vendors/greenboard.md) — An AI-native compliance platform for SEC/FINRA-regulated firms that — (independent, 2026-08-18)
+- [Gretel](wiki/vendors/gretel.md) — Formerly the best-known standalone synthetic-data startup. Since its March 2025 acquisition by NVIDIA, Gretel is **no longer a product you buy**: its technol… — (acquired-closed, 2026-10-26)
 - [Grip Security](wiki/vendors/grip-security.md) — An identity-first SaaS Security Posture Management (SSPM) platform that finds all the SaaS and AI apps employees sign up for and helps you govern access and … — (independent, 2026-06-28)
 - [Guardrails AI](wiki/vendors/guardrails-ai.md) — An open-source "guardrails" library that validates and corrects LLM — (independent, 2026-06-28)
 - [guardsix](wiki/vendors/guardsix.md) — guardsix is the Copenhagen-based SIEM vendor known until March 2026 as **LogPoint**. It sells a SIEM + NDR + SOAR platform that can run on-prem, mainly to Eu… — (pe-owned, 2026-10-24)
@@ -206,6 +208,7 @@ Regenerated 2026-10-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Jazz Security](wiki/vendors/jazz-security.md) — An AI-native DLP platform that uses an autonomous "Agentic Investigator" to read intent and context, so data-loss alerts come with answers instead of rule-ba… — (independent, 2026-06-28)
 - [JFrog](wiki/vendors/jfrog.md) — The "system of record" for software binaries: a universal artifact repository (Artifactory) plus dependency/security scanning (Xray) that has extended into s… — (public, 2026-06-28)
 - [Judgment Labs](wiki/vendors/judgment-labs.md) — Agent-behavior monitoring and evaluation. It traces production agents, runs LLM "judges" over whole trajectories, and finds recurring failure modes and drift… — (independent, 2026-10-16)
+- [K2view](wiki/vendors/k2view.md) — An Israeli enterprise data-platform company whose **entity-based** architecture (one "micro-database" per customer, account or order, assembled from every so… — (independent, 2026-10-26)
 - [Keeper Security](wiki/vendors/keeper.md) — A zero-knowledge password manager that grew upward into privileged access management and machine secrets — the cheapest credible path from "we use a shared p… — (independent, 2026-08-26)
 - [Keycard](wiki/vendors/keycard.md) — Runtime authorization for AI agents: instead of handing an agent a long-lived API key, Keycard verifies which agent is asking, on whose behalf, and for what … — (independent, 2026-10-16)
 - [Knostic](wiki/vendors/knostic.md) — An agentic-AI security platform ("Security Across the Agentic Lifecycle"): Kirin secures AI agents, coding assistants, and MCP servers at runtime (least-priv… — (independent, 2026-07-09)
@@ -345,6 +348,7 @@ Regenerated 2026-10-26 by `scripts/wiki_lint.py --write-index`. One page per lin
 - [Tetrate](wiki/vendors/tetrate.md) — The Envoy/Istio service-mesh company that co-created **Envoy AI Gateway**, an open-source LLM and MCP gateway now renamed **Agent Router** and governed by th… — (independent, 2026-10-16)
 - [Theta Lake](wiki/vendors/theta-lake.md) — A compliance-surveillance and archiving platform purpose-built for — (independent, 2026-06-28)
 - [Token Security](wiki/vendors/token-security.md) — Identity-first security for non-human and AI-agent identities: find every machine — (independent, 2026-06-28)
+- [Tonic.ai](wiki/vendors/tonic-ai.md) — The best-known developer-oriented vendor for **realistic fake data**. It masks and subsets production databases into safe test copies, redacts or synthesises… — (independent, 2026-10-26)
 - [Torq](wiki/vendors/torq.md) — A security hyperautomation platform (modern SOAR) that has grown into an "AI SOC" with agentic alert triage and a self-service agent builder. — (independent, 2026-06-28)
 - [Trend Micro](wiki/vendors/trend-micro.md) — A 35-year endpoint-security incumbent that consolidated its portfolio into **Trend Vision One**, a single platform pairing XDR with attack-surface risk manag… — (public, 2026-08-26)
 - [TrojAI](wiki/vendors/trojai.md) — AI-security platform pairing build-time red teaming (TrojAI Detect) with runtime threat protection (TrojAI Defend); acquired outright by network-infrastructu… — (acquired-closed, 2026-07-27)

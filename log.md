@@ -2935,3 +2935,19 @@ The human supplied a list of products to evaluate. Four parallel research agents
 **No page:** DevPod. It is unmaintained since 2025, and its owner Loft Labs renamed itself vCluster Labs on 2025-08-15. It is named in plain text on ephemeral-environments.
 
 **R1 orphans (expected):** coder, google-cloud-workstations, ona and cilium sit in practice-tier categories, which have no survey-v2.csv section. The existing ephemeral-environments pages are in the same state.
+
+## [2026-10-26] decision | new category `synthetic-masked-data`; Tonic.ai, K2view, Gretel (NVIDIA)
+
+**Decision.** The human approved a new category for synthetic and masked data: data layer, day-2 tier, survey question "Synthetic / Masked Data", `agent_security_context: false`. Its job is to give dev, test and model-training work realistic data without exposing production PII or client data. It has been added to `taxonomy.yaml` (taxonomy.md regenerated), and a category page was written with a Survey section. The CSV section sits after DLP.
+
+**Pages.**
+
+| Page | Note |
+|---|---|
+| tonic-ai | Structural/Textual/Ephemeral/Fabricate; independent; last confirmed round is a $35M Series B (2021-09-29) |
+| k2view | entity-based test-data management; independent; $15M Trinity Capital growth financing (2025-06-23) |
+| gretel | **Slug decision:** `gretel`, titled "Gretel (NVIDIA)". The acquisition was reported completed 2025-03-19 (Wired/TechCrunch), but NVIDIA never announced it and the price is unconfirmed. The standalone product is gone; it continues as the open-source NeMo Safe Synthesizer and Data Designer. Revisit an `nvidia-nemo` page if those become things people shop for |
+
+**Also in the space, no pages:** Delphix (Perforce, closed 2024-03-25), Informatica TDM (Salesforce, closed 2025-11-18), Broadcom TDM, SAS Data Maker (ex-Hazy), MOSTLY AI (assets bought by Syntho, announced 2026-06-09).
+
+**Fix.** `survey-v2.csv` line endings were restored to CRLF. The 2026-10-24 Soteria edit (commit e7ee346) had rewritten the file in text mode and converted every line to LF. A diff against 880cc9d confirms only the intended rows changed. Also updated the Symmetry Systems CSV note from "PENDING" to closed 2026-05-27 (Zscaler FY2026 10-K), matching the page corrected on 2026-10-23.
