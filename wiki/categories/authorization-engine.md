@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [mcp-gateway, policy-as-code, tool-identity-integration]
 incumbent_coverage: []
-vendor_count: 5
+vendor_count: 7
 maps_to_seed_doc: Authorization Engine (Agent / Tool)
 maps_to_seed_csv: MCP / Agent Gateway & Tool Access (split)
 last_verified: 2026-06-28
@@ -65,9 +65,11 @@ enforceable. Lives wherever decisions are made — typically yellow/green zones.
 **Commercial / managed policy platforms**
 - [permit-io](../vendors/permit-io.md) — developer-first authorization-as-a-service (wraps OPA/Cedar); SDKs and a hosted PDP, pitching agent/MCP authz. Cross-listed to [mcp-gateway](mcp-gateway.md).
 - [oso](../vendors/oso.md) — authorization-as-a-service / library (Polar language) for application and agent permissions.
+- [amazon-verified-permissions](../vendors/amazon-verified-permissions.md) — AWS's managed Cedar policy decision point; per-request pricing, API Gateway/AppSync integration. Cedar (open source, CNCF Sandbox 2025-10-08, formally verified) also powers Bedrock AgentCore Policy's tool-call checks and several third-party agent-auth products. (added 2026-10-26)
 
 **Relationship-based (ReBAC / Zanzibar-style)**
 - [authzed](../vendors/authzed.md) — AuthZed / SpiceDB, a Google-Zanzibar-style relationship-based permissions database for fine-grained, relationship-driven access.
+- [openfga](../vendors/openfga.md) — open-source Zanzibar-style relationship engine (CNCF Incubating 2025-10-28), created by Okta/Auth0 and sold hosted as Auth0/Okta FGA; the main open-source alternative to SpiceDB. Cross-listed to [entitlement-aware-rag](entitlement-aware-rag.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
@@ -101,7 +103,7 @@ evaluating to make fine-grained access decisions for agents and tools? *(Select 
 apply and indicate stage.)*
 
 **Answer options.** Open Policy Agent (OPA) · Cerbos · Permit.io · Oso ·
-AuthZed (SpiceDB) · Other (Please Specify)
+AuthZed (SpiceDB) · Amazon Verified Permissions (Cedar) · OpenFGA / Auth0 FGA · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.

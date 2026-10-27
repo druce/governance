@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [identity-access, secrets-management, tool-identity-integration, identity-governance]
 incumbent_coverage: []
-vendor_count: 12
+vendor_count: 13
 maps_to_seed_doc: (folded into Identity & Access + Tool Identity)
 maps_to_seed_csv: Non-Human Identity / Agent Identity Governance
 last_verified: 2026-06-28
@@ -51,6 +51,7 @@ Identity/governance platforms with NHI capabilities (cross-listed):
 - [silverfort](../vendors/silverfort.md) — identity security across human and non-human accounts; service-account discovery and MFA.
 - [linx-security](../vendors/linx-security.md) — AI-native IGA that explicitly covers NHI.
 - [descope](../vendors/descope.md) / [stytch](../vendors/stytch.md) — agent/app auth (primary fit is tool-identity), relevant for issuing agent identities.
+- [gitguardian](../vendors/gitguardian.md) — enters NHI from the secrets side: inventory of secrets used by machine identities (including ones outside vaults), with owners, permissions, stale/over-privileged detection and semi-automated rotation. Weaker on OAuth/SaaS-to-SaaS discovery than dedicated NHI platforms. Primary in [software-supply-chain](software-supply-chain.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 

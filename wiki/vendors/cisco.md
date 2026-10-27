@@ -11,7 +11,7 @@ founded: 1984
 hq: San Jose, California, USA
 ownership_state: public
 owner: null
-ownership_note: 'Public (NASDAQ: CSCO). Active acquirer in AI security: Splunk (closed 2024-03-18, $28B), Robust Intelligence (closed ~2024-09-24, now Cisco AI Defense), Galileo (announced 2026-04-09; reported closed 2026-05-22), Astrix Security (intent announced 2026-05-04, pending).'
+ownership_note: 'Public (NASDAQ: CSCO). Active acquirer in AI security: Isovalent (closed 2024-04-12, undisclosed; Cilium/Tetragon steward), Splunk (closed 2024-03-18, $28B), Robust Intelligence (closed ~2024-09-24, now Cisco AI Defense), Galileo (announced 2026-04-09; reported closed 2026-05-22), Astrix Security (intent announced 2026-05-04, pending).'
 acquisition: {announced: null, closed: null, price: null}
 funding_total: null
 last_funding: null
@@ -52,6 +52,7 @@ sources:
 
 Cisco is a public company (NASDAQ: CSCO), founded 1984, HQ San Jose, CA. It is the **acquirer** in four AI-security-relevant deals flagged by the seed — all verified:
 
+- **Isovalent → [cilium](cilium.md)** — announced **2023-12-21**, closed **2024-04-12**, price undisclosed (Cisco newsroom). Makes Cisco the main commercial steward of Cilium (Kubernetes networking and network policy) and its runtime-security sub-project Tetragon; the projects stay CNCF-governed. Confirmed (high).
 - **[splunk](splunk.md)** — completed **2024-03-18**, ~**$28B** (announced 2023-09-21). Largest acquisition in Cisco history. Confirmed (high).
 - **[robust-intelligence](robust-intelligence.md) → [cisco-ai-defense](cisco-ai-defense.md)** — intent announced **2024-08-26**, closed ~**2024-09-24**. Robust Intelligence's tech became Cisco AI Defense / Foundation AI. Confirmed (high).
 - **[galileo](galileo.md)** — intent announced **2026-04-09**; secondary press reports completion **2026-05-22** (Cisco's own note said expected close Q4 FY2026). Confirmed announced (high); close date medium.
@@ -71,6 +72,7 @@ Most funds already touch Cisco somewhere (network gear, Duo MFA, or Splunk). Tha
 - Track Astrix close (pending); confirm final terms if disclosed.
 
 ## Sources
+- [Cisco completes acquisition of Isovalent (Cisco newsroom)](https://newsroom.cisco.com/c/r/newsroom/en/us/a/y2024/m04/cisco-completes-acquisition-of-isovalent-to-define-the-future-of-multicloud-networking-and-security.html) — fetched 2026-10-26 — supports: announced 2023-12-21, closed 2024-04-12, terms undisclosed; confidence: high. Cached: `raw/sources/2026-10-26--cilium--cisco-isovalent-acquisition.md`
 - [Cisco Blogs — Intent to Acquire Astrix Security](https://blogs.cisco.com/news/cisco-announces-intent-to-acquire-astrix-security) — fetched 2026-06-28 — supports: Astrix intent 2026-05-04, NHI/agentic identity, Splunk/Duo/Identity Intelligence integration; confidence: high
 - [Cisco Blogs — Intent to Acquire Galileo](https://blogs.cisco.com/news/cisco-announces-the-intent-to-acquire-galileo) — fetched 2026-06-28 — supports: Galileo intent 2026-04-09, AI observability/guardrails into Splunk Observability; confidence: high
 - [Cisco Blogs — Intent to Acquire Robust Intelligence](https://blogs.cisco.com/news/fortifying-the-future-of-security-for-ai-cisco-announces-intent-to-acquire-robust-intelligence) — fetched 2026-06-28 — supports: Robust Intelligence announced 2024-08-26, basis of Cisco AI Defense; confidence: high
@@ -81,3 +83,4 @@ Most funds already touch Cisco somewhere (network gear, Duo MFA, or Splunk). Tha
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; confirmed Cisco is public (CSCO) and the acquirer of Splunk (closed 2024-03-18, $28B), Robust Intelligence (closed ~2024-09-24 → Cisco AI Defense), Galileo (announced 2026-04-09, reported closed 2026-05-22) and Astrix Security (intent 2026-05-04, pending). Added siem-soc category. Set ownership=public, confidence high.
 - [2026-10-23] Cross-listed to identity-access on the evidence of Duo's product page (MFA, SSO, passwordless, device trust, Duo Directory as IdP); prompted by a 2026-10 CTO-survey write-in ("Duo" under Identity Providers). Only the Duo claims were checked; last_verified left unchanged.
+- [2026-10-26] Added Isovalent (closed 2024-04-12) to M&A and ownership_note; links to the new [cilium](cilium.md) page.

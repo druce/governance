@@ -243,6 +243,19 @@ categories:
     seed_csv: "Data Access Governance"
     notes: "Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, C1 (ex-ConductorOne), Silverfort, Netwrix."
 
+  - slug: synthetic-masked-data
+    display_name: "Synthetic & Masked Data"
+    layer: data
+    adoption_tier: day-2
+    trigger: "developers, testers or model-training jobs need realistic data without exposing production PII or client data"
+    survey_question: "Synthetic / Masked Data"
+    agent_security_context: false
+    category_maturity: consolidating
+    adjacent: [dspm, dlp, ephemeral-environments]
+    seed_doc_row: null
+    seed_csv: null
+    notes: "Added 2026-10-26 by human decision. Test-data masking/subsetting and synthetic-data generation for dev, test and model training/eval. Tonic.ai, Gretel (NVIDIA), K2view."
+
   # -------------------------------------------------------------- model-prompt
   - slug: ai-runtime-security
     display_name: "AI Runtime Security (AI Firewall)"
@@ -518,7 +531,7 @@ categories:
     adjacent: [dlp, anti-deepfake]
     seed_doc_row: "Comms Surveillance"
     seed_csv: "(in AI Governance, Model Risk)"
-    notes: "Surveillance/analysis, NOT capture/archival — scope-boundary note required. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace."
+    notes: "Surveillance/analysis; pure capture/archival (e.g. Purview retention) is out of scope — scope-boundary note required. Archive incumbents that also sell surveillance (Smarsh, Global Relay) are in since 2026-10-26. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace, Smarsh, Global Relay."
 
   - slug: ephemeral-environments
     display_name: "Ephemeral Environments"

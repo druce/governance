@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [llm-observability, ai-runtime-security, mcp-gateway]
 incumbent_coverage: []
-vendor_count: 10
+vendor_count: 11
 maps_to_seed_doc: AI Gateway
 maps_to_seed_csv: AI Gateway
 last_verified: 2026-07-27
@@ -71,6 +71,7 @@ model providers.
 - [cloudflare](../vendors/cloudflare.md) — edge platform offering an AI gateway (caching, rate-limiting, analytics) alongside its network stack.
 - [gravitee](../vendors/gravitee.md) — open-source-rooted API/event-management vendor whose AI Gateway treats LLM, MCP, and A2A as three first-class proxy types on one self-hostable control plane. Cross-listed to [mcp-gateway](mcp-gateway.md).
 - [tetrate](../vendors/tetrate.md) — Envoy-based: co-created the open-source Envoy AI Gateway (renamed Agent Router and moved to the Agentic AI Foundation, 2026-09, Bloomberg a co-founder) and sells Agent Router Service/Enterprise with data planes in your VPC. The Envoy-native alternative to LiteLLM and Bifrost. Cross-listed to [mcp-gateway](mcp-gateway.md). (added 2026-10-16)
+- [coder](../vendors/coder.md) — Coder AI Gateway (formerly AI Bridge, GA 2026-02-03): an LLM proxy inside the dev-environment platform with central keys, per-user prompt/token/tool-call logs and admin-approved MCP servers; governs coding-agent traffic only. Primary in [ephemeral-environments](ephemeral-environments.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 

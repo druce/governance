@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [ai-spm, ai-runtime-security, mcp-gateway, hitl-approvals]
 incumbent_coverage: []
-vendor_count: 12
+vendor_count: 14
 maps_to_seed_doc: (folded into AI-SPM / Agent Governance)
 maps_to_seed_csv: Agent Security
 last_verified: 2026-06-28
@@ -73,6 +73,8 @@ anyway.
 - [nvidia-openshell](../vendors/nvidia-openshell.md) — NVIDIA's open-source (Apache-2.0), self-hosted agent sandbox: agents run behind Landlock/seccomp, network egress is denied by default and checked by an OPA-based proxy, the agent holds only placeholder credentials, and policy changes need human approval. It contains the agent rather than detecting attacks; Cisco and CrowdStrike build on it rather than compete. Cross-listed to [ephemeral-environments](ephemeral-environments.md) and [trust-zone-segmentation](trust-zone-segmentation.md). (added 2026-10-20)
 - [docker-sandboxes](../vendors/docker-sandboxes.md) — Docker AI Governance (paid, launched 2026-05-12) sets central egress, filesystem, credential and MCP policy for coding agents running in Docker's microVM sandboxes, with SIEM-streamed audit logs; enforcement at the execution boundary, no prompt inspection. Primary is [ephemeral-environments](ephemeral-environments.md). (added 2026-10-20)
 - [geordie-ai](../vendors/geordie-ai.md) — London agent-security startup (RSAC 2026 Innovation Sandbox winner) that discovers coding, low-code and SaaS agents, maps their tool/data access, and steers or blocks agent actions in-process via its Beam hooks — posture plus runtime, closest in shape to Zenity. Cross-listed to [ai-spm](ai-spm.md). (added 2026-10-23)
+- [llamafirewall](../vendors/llamafirewall.md) — LlamaFirewall (Meta): open-source (MIT) in-process guardrail framework for agents — PromptGuard 2 injection classifier, experimental AlignmentCheck LLM auditor of agent reasoning for goal hijacking, CodeShield for generated code. Self-hosted library; no release since 2025-05. (added 2026-10-26)
+- [coder](../vendors/coder.md) — Coder Agent Firewall (formerly Agent Boundaries): per-agent-process HTTP egress allowlist with central request logs, cutting the exfiltration leg for coding agents; Coder's own docs rate it bypassable in some modes. Primary in [ephemeral-environments](ephemeral-environments.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
@@ -97,7 +99,7 @@ evaluating to protect agentic applications as they act? *(Select all that apply 
 indicate stage.)*
 
 **Answer options.** Zenity · Lasso Security · Operant AI · Apex Security · Straiker ·
-Noma · Knostic · NVIDIA OpenShell · Docker AI Governance · Geordie AI · Other (Please Specify)
+Noma · Knostic · NVIDIA OpenShell · Docker AI Governance · Geordie AI · Meta LlamaFirewall · Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing;
 In production; Would recommend; Would not recommend.

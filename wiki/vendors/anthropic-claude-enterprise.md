@@ -86,7 +86,6 @@ As a sanctioned assistant its main exposure is sensitive-data leakage — staff 
 
 - **Data residency:** is EU / region-pinned residency contractually offered for Claude Enterprise tenants, or US-only processing? Not clearly documented publicly.
 - Exact audit-log / Compliance-API retention beyond the 180-day activity window for conversation content; whether custom retention extends archival.
-- Whether Global Relay (common at funds) has a published Claude Compliance API integration — Smarsh, Proofpoint, Theta Lake, RelativityOne are confirmed; Global Relay was not found as of 2026-06-28.
 - Post-IPO (filed 2026-06-01): any change to terms, ownership, or governance.
 
 ## Sources
@@ -99,3 +98,4 @@ As a sanctioned assistant its main exposure is sensitive-data leakage — staff 
 ## History
 - [2026-06-28] Stub created from seed registry.
 - [2026-06-28] Researched; established Claude Enterprise as a Day-1 governed frontier assistant ([enterprise-ai-assistant](../categories/enterprise-ai-assistant.md)). Confirmed enterprise governance posture: no-training default, SSO/SAML + domain capture, SCIM, RBAC, audit logs (~180d), custom retention, IP allowlisting, OTEL, and a Compliance API that exports conversation content into eDiscovery/archiving/SIEM partners (Smarsh, Proofpoint, Theta Lake, RelativityOne) — a strong comms-surveillance fit for funds (hedge_fund_fit: high). Certs: SOC 2 I/II, ISO 27001, ISO 42001, HIPAA-ready/BAA, GDPR/CCPA. Ownership: independent (Amazon/Google minority investments), confidence high; IPO filed 2026-06-01. Open: EU data residency, Global Relay integration. Cached 4 sources.
+- [2026-10-26] Resolved open question: [global-relay](global-relay.md) publishes a Claude connector built on the Compliance API (globalrelay.com/connector/claude/, undated vendor page; cached `raw/sources/2026-10-26--global-relay--ownership-ai-connectors-surveillance.md`). Smarsh's Claude capture is documented on [smarsh](smarsh.md).

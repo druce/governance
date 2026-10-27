@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: null
 adjacent: [trust-zone-segmentation, promotion-gates]
 incumbent_coverage: []
-vendor_count: 8
+vendor_count: 11
 maps_to_seed_doc: Ephemeral Environments
 maps_to_seed_csv: —
 last_verified: 2026-06-28
@@ -59,6 +59,10 @@ ephemeral workloads, not AI-security products per se:
 - [azure-dev-boxes](../vendors/azure-dev-boxes.md) — managed, policy-governed cloud developer workstations on Azure.
 - [terraform-cloud](../vendors/terraform-cloud.md) — declarative infrastructure provisioning/teardown; cross-listed with [policy-as-code](policy-as-code.md) (Sentinel) for governing what gets built.
 - [cloudflare-workers](../vendors/cloudflare-workers.md) — edge serverless compute; short-lived, isolated execution for sandboxed/red-zone tasks.
+- [coder](../vendors/coder.md) — self-hosted (any cloud, on-prem, air-gapped) cloud dev environments for developers and coding agents; Premium adds AI Gateway (LLM proxy with per-user prompt/tool-call audit) and Agent Firewall (per-agent HTTP egress allowlist with central logs). KKR and QRT are named customers and investors ($90M Series C, 2026-04-01). Cross-listed to [ai-gateway](ai-gateway.md) and [agent-runtime-security](agent-runtime-security.md). (added 2026-10-26)
+- [google-cloud-workstations](../vendors/google-cloud-workstations.md) — Google Cloud's managed dev workstations; VMs run in your own GCP project/VPC, private clusters inside VPC Service Controls perimeters, rebuilt on each start. The 2026 agent mode adds suspend/keep-alive for long-running coding agents but no agent-specific egress control. (added 2026-10-26)
+- [ona](../vendors/ona.md) — formerly Gitpod; agent-first dev environments in Ona's cloud or the customer's AWS VPC. Acquired by OpenAI (announced 2026-06-11, closed 2026-08-10 per Ona) and being absorbed into Codex; hosted Ona Cloud shuts 2026-10-31. Not a new-evaluation candidate. (added 2026-10-26)
+- **Not given a page:** DevPod (vCluster Labs, formerly Loft Labs) — open-source client-only devcontainer tool, unmaintained since 2025 (no release since 2025-06). (noted 2026-10-26)
 
 **Agent code sandboxes** (added 2026-10-16). A different product from the four above: those give a *human* a disposable workstation; these give an *agent* a disposable, API-created box per task in which to run code nobody has reviewed. The buying questions are isolation strength (container vs gVisor vs microVM), default egress, and whether the sandbox can run in your own cloud.
 
@@ -90,7 +94,7 @@ purpose-built for AI agents executing code).
 compute for developers or AI/agentic workloads?
 
 **Answer options.** GitHub Codespaces; Azure Dev Boxes; Terraform Cloud; Cloudflare
-Workers; Modal Sandboxes; Daytona; Other (Please Specify).
+Workers; Modal Sandboxes; Daytona; Coder; Google Cloud Workstations; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
@@ -101,7 +105,7 @@ Respondents will likely pick whatever matches their existing cloud (GitHub/Azure
 pick Codespaces/Dev Boxes by default), so selections reflect incumbency more than a
 deliberate security choice. The more meaningful signal may be a follow-up: "do you scope
 AI/agent workloads into short-lived, network-constrained environments?" rather than the
-specific product.
+specific product. Gitpod/Ona is deliberately not an option: OpenAI bought it and its hosted service closes 2026-10-31; respondents still naming it are on a migration path.
 
 ## Open taxonomy questions
 

@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: nascent
 adjacent: [vector-retrieval, data-access-governance, content-sources]
 incumbent_coverage: []
-vendor_count: 4
+vendor_count: 5
 maps_to_seed_doc: Entitlement-Aware RAG
 maps_to_seed_csv: (in Enterprise Chat & RAG)
 last_verified: 2026-06-28
@@ -52,6 +52,7 @@ This is a small, somewhat mixed slot — part platform feature, part dedicated o
 
 **Dedicated overlay / knowledge-boundary guardrail**
 - [knostic](../vendors/knostic.md) — purpose-built for the gap the above leave open: it sits over Copilot/Glean-class assistants and enforces *need-to-know* knowledge boundaries, catching oversharing and inference that raw ACL-trimming permits. Positioned as the "your permissions are messier than you think, and the AI just exposed it" remediation layer. **Note (2026-07-09):** the company now leads with agentic security and its primary category moved to [agent-runtime-security](agent-runtime-security.md); the knowledge-security product is still offered and stays listed here. Also cross-listed under [enterprise-ai-assistant](enterprise-ai-assistant.md).
+- [openfga](../vendors/openfga.md) — build-it-yourself retrieval permission check: Auth0 FGA documents checking each retrieved document against the user's relationships before it reaches the LLM; you keep the permission data in sync with each source's ACLs. A component, not a turnkey product. Primary in [authorization-engine](authorization-engine.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
@@ -80,6 +81,7 @@ No seed-flagged acquisitions in this slot. The structural dynamic to watch is **
 - Built-in security-trimming from our vector/search platform (e.g. Azure AI Search ACLs)
 - Custom in-house entitlement enforcement
 - Not addressed yet / unaware this was needed
+- OpenFGA / Auth0 FGA
 - Other (Please Specify)
 
 **Response scale.** multi-select; Interested; Considering/evaluating; Pilot/implementing; In production; Would recommend; Would not recommend.

@@ -17,7 +17,7 @@ scaling/agents) · `situational` (depends on deployment pattern; see trigger) ·
 `agent_security_context`: the lethal trifecta is a core concern for this
 category (SCHEMA.md §0); trifecta framing elsewhere fails editorial lint.
 
-Counts: **42 canonical categories** across 7 layers.
+Counts: **43 canonical categories** across 7 layers.
 
 ---
 
@@ -44,6 +44,7 @@ Counts: **42 canonical categories** across 7 layers.
 | `dspm` | Data Classification & DSPM | day-1 | — | before AI touches internal data you must know what/where the sensitive data is | DSPM / Data Security Posture | Purview, BigID, Securiti, Cyera, Sentra, Proofpoint DSPM (ex-Normalyze), Wiz DSPM, Concentric, Bedrock Data (ex-Bedrock Security), Immuta, Collibra. |
 | `dlp` | Data Loss Prevention (DLP) | day-1 | — | employees can paste sensitive data into anything with a text box | Data Loss Prevention (DLP) | Cyberhaven, Nightfall, MIND, Prompt Security, Lasso, Netskope/Purview DLP. CSV merged DSPM+DLP; we keep the split. |
 | `data-access-governance` | Data Access Governance | day-2 | — | day-1 if doing RAG over internal permissioned data | Data Access Governance | Varonis, SailPoint DAS, Cyera, Sentra, Concentric, Veza, C1 (ex-ConductorOne), Silverfort, Netwrix. |
+| `synthetic-masked-data` | Synthetic & Masked Data | day-2 | — | developers, testers or model-training jobs need realistic data without exposing production PII or client data | Synthetic / Masked Data | Added 2026-10-26 by human decision. Test-data masking/subsetting and synthetic-data generation for dev, test and model training/eval. Tonic.ai, Gretel (NVIDIA), K2view. |
 
 ## AI model & prompt layer
 
@@ -84,7 +85,7 @@ Counts: **42 canonical categories** across 7 layers.
 | `ai-governance-platform` | AI Governance / Model Risk & Compliance | firm-type-specific | — | day-1 for bank-affiliated / model-validation-mandated (SR 11-7) firms; day-2 otherwise | AI Governance, Model Risk & Compliance | Credo AI, Holistic AI, ModelOp, Fairly AI (now Asenion), Monitaur, IBM watsonx.governance, Vanta, CalypsoAI, GovernGPT. |
 | `enterprise-grc` | Enterprise GRC | day-1 | — | usually already owned — extend existing GRC to AI risk | Enterprise Governance, Risk & Compliance | ServiceNow GRC, Archer, LogicGate, Optro (ex-AuditBoard), OneTrust, Onspring, Vanta, Drata. |
 | `vendor-risk` | Third-Party / Vendor Risk + Cyber Ratings | day-1 | — | extend existing TPRM to AI vendors and AI features of existing vendors | Vendor Risk Rating & Monitoring | ProcessUnity, SecurityScorecard, BitSight, Black Kite, UpGuard, Venminder, Whistic. |
-| `comms-surveillance` | Comms Surveillance | firm-type-specific | — | registered advisers / regulated comms (MAR/MNPI) — hedge-fund-critical | Comms Surveillance | Surveillance/analysis, NOT capture/archival — scope-boundary note required. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace. |
+| `comms-surveillance` | Comms Surveillance | firm-type-specific | — | registered advisers / regulated comms (MAR/MNPI) — hedge-fund-critical | Comms Surveillance | Surveillance/analysis; pure capture/archival (e.g. Purview retention) is out of scope — scope-boundary note required. Archive incumbents that also sell surveillance (Smarsh, Global Relay) are in since 2026-10-26. Behavox, SteelEye, NICE Actimize, Theta Lake, Shield, Relativity Trace, Smarsh, Global Relay. |
 | `ephemeral-environments` | Ephemeral Environments | practice | — | underpins trust-zone design — disposable compute for risky AI work | — | GitHub Codespaces, Azure Dev Boxes, Terraform Cloud, Cloudflare Workers. |
 | `policy-as-code` | Policy-as-Code | day-2 | — | guardrails you want enforced by software, not documents | — | OPA, HashiCorp Sentinel, Kyverno. |
 

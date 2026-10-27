@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dlp, anti-deepfake]
 incumbent_coverage: []
-vendor_count: 9
+vendor_count: 11
 maps_to_seed_doc: Comms Surveillance
 maps_to_seed_csv: (in AI Governance, Model Risk)
 last_verified: 2026-08-18
@@ -30,10 +30,15 @@ employee communications for insider dealing and market manipulation. The tooling
 applies lexicons, behavioral models, and increasingly LLM-based analysis to a captured
 archive and surfaces alerts for compliance review.
 
-Note the division of labor: **capture/archival** (Smarsh, Global Relay, Microsoft
-Purview) preserves the communications; **surveillance** (this category) analyzes that
-archive. The seed lists surveillance vendors; the capture vendors are upstream
-infrastructure.
+Note the division of labor, and where it blurs: **capture/archival** preserves
+communications as 17a-4/FINRA books-and-records, and **surveillance** analyzes that
+archive for market abuse and conduct risk. The two archive incumbents,
+[smarsh](../vendors/smarsh.md) and [global-relay](../vendors/global-relay.md), now sell
+their own AI surveillance on top and are the main capture points for Copilot, ChatGPT and
+Claude conversations, so they are listed here (since 2026-10-26). Analytics-first tools
+(Behavox, Shield, SteelEye, NICE Actimize) often read from their archives rather than
+replacing them. Microsoft Purview remains capture/retention infrastructure, not
+surveillance.
 
 ## When you need it
 
@@ -67,6 +72,8 @@ try to stop the leak before it happens.
 - [hadrius](../vendors/hadrius.md) — AI-native SEC/FINRA compliance platform (archive + supervision + marketing review); archives **ChatGPT and Claude Enterprise conversations** as a recordkeeping channel.
 - [greenboard](../vendors/greenboard.md) — AI-native SEC/FINRA compliance platform unifying 17a-4 archiving/supervision with marketing review and attestations; Instant Bloomberg among its channels.
 - [aca-group](../vendors/aca-group.md) — Compliance consultancy to much of the alternatives industry that also sells ComplianceAlpha — e-comms capture, 17a-4 archive and surveillance bundled with personal-trading and trade surveillance; the default surveillance vendor for funds already using ACA advisory. No documented capture of AI-assistant conversations (2026-10). Cross-listed to [enterprise-grc](enterprise-grc.md). (added 2026-10-23)
+- [smarsh](../vendors/smarsh.md) — largest US comms archive (17a-4/FINRA) with AI surveillance from its Digital Reasoning acquisition (announced 2020-11-10); captures M365 Copilot, ChatGPT and Claude Enterprise conversations. PE-owned (K1). Its TeleMessage mobile-archiving unit was breached in May 2025. (added 2026-10-26)
+- [global-relay](../vendors/global-relay.md) — founder-owned archive common at hedge funds (17a-4/FINRA), with an LLM-based surveillance module since 2024-11; connectors capture ChatGPT Enterprise, Microsoft Copilot and Claude conversations. (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
@@ -95,29 +102,31 @@ market-abuse / conduct monitoring (and is it sweeping AI assistant prompts and
 responses)?
 
 **Answer options.** Behavox; SteelEye; NICE Actimize; Theta Lake; Shield; Relativity
-Trace; Hadrius; Greenboard; ACA Group (ComplianceAlpha); Other (Please Specify).
+Trace; Hadrius; Greenboard; ACA Group (ComplianceAlpha); Smarsh; Global Relay; Other (Please Specify).
 
 **Response scale.** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.
 
 **Notes for survey design.** This question only applies to firms under market-conduct
-supervision (MAR / SEC / FINRA / CFTC) — consider a gating question first. Do **not**
-confuse surveillance with capture/archival (Smarsh, Global Relay, Purview); if
-respondents name those, they answered the wrong question — add a note or a separate
-capture question. NICE Actimize skews to large enterprises and doubles as
+supervision (MAR / SEC / FINRA / CFTC) — consider a gating question first. Smarsh and
+Global Relay are options since 2026-10-26 because both now sell surveillance, but many
+respondents will tick them for the **archive** alone — consider a separate capture
+question, or ask whether their surveillance module is licensed. Purview is still
+capture, not surveillance. NICE Actimize skews to large enterprises and doubles as
 AML/financial-crime, which may inflate its selection for reasons unrelated to comms.
 The high-signal AI-era follow-up: "are AI assistant prompts/outputs in scope for
-capture and surveillance?" As of 2026-08-18 **Hadrius** is the only vendor on this list
-with documented capture of employee ChatGPT/Claude conversations (via Anthropic's Claude
-Compliance API), so that follow-up now discriminates between vendors rather than merely
+capture and surveillance?" As of 2026-10-26 **Hadrius**, **Smarsh** and **Global Relay**
+document capture of employee ChatGPT/Claude conversations (Smarsh and Global Relay also
+Microsoft Copilot), so that follow-up discriminates between vendors rather than merely
 measuring intent. Hadrius and Greenboard are also **program platforms, not pure
 surveillance tools** — small-RIA respondents may name them for archiving or attestations
 rather than market-abuse monitoring; interpret their selections with that in mind.
 
 ## Open taxonomy questions
 
-- Capture/archival (Smarsh, Global Relay, Purview) vs surveillance/analytics (this
-  page) — should capture be its own thin category? Currently treated as upstream infra.
+- Capture/archival vs surveillance/analytics (this page) — should capture be its own
+  thin category? Since 2026-10-26 Smarsh and Global Relay are listed here because they
+  sell surveillance too; Purview stays out as capture-only infrastructure.
 - The CSV folds this under "AI Governance, Model Risk & Compliance"; kept separate here
   because the buyer (compliance/surveillance) and vendors are distinct from
   [ai-governance-platform](ai-governance-platform.md).

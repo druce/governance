@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 18
+vendor_count: 21
 maps_to_seed_doc: (folded into LLM Observability "red-teaming")
 maps_to_seed_csv: AI Red Teaming / Guardrails
 last_verified: 2026-06-28
@@ -74,6 +74,8 @@ firewall.
 - [nemo-guardrails](../vendors/nemo-guardrails.md) — NVIDIA's open-source guardrails toolkit.
 - [lakera](../vendors/lakera.md) — prompt-injection/guardrail detection with strong research (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 - [pangea](../vendors/pangea.md) — AI security guardrails / API-delivered controls (flagged acquired by CrowdStrike, per seed).
+- [presidio](../vendors/presidio.md) — the default open-source (MIT) PII detection and redaction library, often wired into gateways such as LiteLLM to mask PII in prompts, outputs and logs. Created by Microsoft; community-governed under Data Privacy Stack since mid-2026. Cross-listed to [dlp](dlp.md). (added 2026-10-26)
+- [llamafirewall](../vendors/llamafirewall.md) — OSS agent-focused guardrail framework, the counterpart to NeMo Guardrails / Guardrails AI (primary in [agent-runtime-security](agent-runtime-security.md)). (added 2026-10-26)
 
 **Eval-and-guardrail platforms (overlap with observability)**
 - [galileo](../vendors/galileo.md) — safety/hallucination guardrails and evals (flagged acquired by Cisco, per seed).
@@ -81,6 +83,7 @@ firewall.
 - [maxim-ai](../vendors/maxim-ai.md) — eval + observability + red-teaming platform (cross-listed in [llm-observability](llm-observability.md)).
 - [braintrust](../vendors/braintrust.md) — eval/experimentation platform used for red-team-style testing (primary in [llm-observability](llm-observability.md)).
 - [giskard](../vendors/giskard.md) — open-source testing/red-teaming for ML and LLMs (primary in [llm-observability](llm-observability.md)).
+- [confident-ai](../vendors/confident-ai.md) — Confident AI's DeepTeam: open-source (Apache-2.0) red teaming of LLMs and agents built on DeepEval, with 50+ vulnerability types, multi-turn jailbreaks and OWASP/NIST/ATLAS mappings (primary in [llm-observability](llm-observability.md)). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
@@ -106,7 +109,7 @@ test AI apps for vulnerabilities and to enforce input/output safety controls?
 
 **Answer options:** Mindgard, SplxAI, Promptfoo, HiddenLayer, Lakera, Guardrails AI,
 NeMo Guardrails, Galileo, Patronus, Pangea, Maxim AI, Haize Labs, Enkrypt AI, TrojAI,
-Braintrust, Giskard, Other (Please Specify).
+Braintrust, Giskard, Presidio (ex-Microsoft), Confident AI (DeepTeam), Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

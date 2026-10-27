@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: mature
 adjacent: [dspm, ai-access-governance, network-security-sase]
 incumbent_coverage: []
-vendor_count: 17
+vendor_count: 18
 maps_to_seed_doc: Data Loss Prevention (DLP)
 maps_to_seed_csv: DSPM / Data Governance / DLP (split — see Survey notes)
 last_verified: 2026-06-30
@@ -81,6 +81,7 @@ Platform / incumbent DLP:
 - [zscaler](../vendors/zscaler.md) — inline DLP (100+ dictionaries) across web, endpoint, email and AI prompts inside its SSE proxy, which most egress already traverses (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 - [fortra](../vendors/fortra.md) — Digital Guardian, now sold as Fortra DLP: kernel-level endpoint DLP (Windows/Mac/Linux/VDI) with network and cloud modules and a managed-DLP service; GenAI content pack for AI-site uploads and pastes. PE-owned (TA/Charlesbank/Harvest). (added 2026-10-24)
 - [proofpoint](../vendors/proofpoint.md) — Proofpoint Enterprise DLP across email (Adaptive Email DLP, from Tessian), cloud, endpoint and GenAI prompts/uploads, bundled with its DSPM in Data Security Complete (2025); strongest where Proofpoint already runs email security (primary in [dspm](dspm.md)). (added 2026-10-24)
+- [presidio](../vendors/presidio.md) — free, self-hosted PII detection/anonymization engine for text, images and tables — a building block for custom pipelines, not a DLP product (no console, endpoints or incident workflow). Primary in [ai-red-teaming](ai-red-teaming.md). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 

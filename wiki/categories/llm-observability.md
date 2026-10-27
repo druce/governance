@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: growth
 adjacent: [ai-gateway, ai-red-teaming, ai-governance-platform]
 incumbent_coverage: []
-vendor_count: 16
+vendor_count: 17
 maps_to_seed_doc: LLM Observability & Evaluation
 maps_to_seed_csv: LLM Observability & Eval
 last_verified: 2026-06-28
@@ -68,6 +68,7 @@ red-teaming that actually block. Treat it as the eyes, not the bouncer.
 - [braintrust](../vendors/braintrust.md) — eval-and-experimentation platform for LLM apps (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
 - [giskard](../vendors/giskard.md) — open-source testing/eval for ML and LLMs (cross-listed in [ai-red-teaming](ai-red-teaming.md)).
 - [judgment-labs](../vendors/judgment-labs.md) — agent-behavior monitoring: LLM judges score whole agent trajectories online and offline and surface recurring failure modes and drift. OSS Judgeval SDK (Apache-2.0); scoring needs the hosted platform. $32M seed + Series A (2026-05). (added 2026-10-16)
+- [confident-ai](../vendors/confident-ai.md) — maker of DeepEval, the widely used Apache-2.0 pytest-style LLM eval framework, with a hosted platform for tracing, evals on production traces and release gates. YC W25, $2.2M seed (2025-03). Also [ai-red-teaming](ai-red-teaming.md) (DeepTeam). (added 2026-10-26)
 
 **Enterprise monitoring / explainability / model-risk-leaning**
 - [datadog](../vendors/datadog.md) — LLM observability inside the broader Datadog APM/monitoring suite.
@@ -101,7 +102,7 @@ to trace, debug, evaluate, and monitor your AI applications?
 **Answer options:** Langfuse, LangSmith, Arize Phoenix, Braintrust, Helicone,
 Datadog LLM Observability, Weights & Biases (Weave), Comet (Opik), Fiddler AI,
 TruLens, Arthur AI, Giskard, Judgment Labs, Pydantic Logfire,
-Sentry (Agent Monitoring), Other (Please Specify).
+Sentry (Agent Monitoring), Confident AI (DeepEval), Other (Please Specify).
 
 **Response scale:** multi-select; Interested; Considering/evaluating;
 Pilot/implementing; In production; Would recommend; Would not recommend.

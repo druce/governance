@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [promotion-gates]
 incumbent_coverage: []
-vendor_count: 19
+vendor_count: 21
 maps_to_seed_doc: Software Supply Chain & Coding Security
 maps_to_seed_csv: Software supply chain
 last_verified: 2026-06-28
@@ -79,6 +79,11 @@ Agent-code security — the shift-left counterpart to [agent-runtime-security](a
 
 - [inedo](../vendors/inedo.md) — ProGet: self-hosted private package/container registry with vulnerability scanning, licence blocking and CycloneDX SBOMs — paid editions only; a cheaper alternative to Artifactory or Nexus, with no malicious-package detection claimed. Independent. (added 2026-10-24)
 
+Secrets scanning (added 2026-10-26):
+
+- [gitguardian](../vendors/gitguardian.md) — secrets-detection specialist: leaked keys in code, git history, CI and Slack/Jira/Confluence; honeytokens; AI-coding-agent hooks (Claude Code, Cursor, Copilot CLI, Codex) plus an MCP server. Independent ($50M Series C, 2026-02). Cross-listed to [non-human-identity](non-human-identity.md). (added 2026-10-26)
+- [truffle-security](../vendors/truffle-security.md) — maker of open-source TruffleHog (AGPL-3.0), the default free secrets scanner; live-verifies found keys against providers. Enterprise adds continuous monitoring and rotation tracking; Analyze maps a leaked key's permissions. VC-backed ($25M Series B, 2025-11). (added 2026-10-26)
+
 ## Consolidation / M&A dynamics
 
 No specific seed M&A flags for this category, but it's an active and crowded space
@@ -127,6 +132,8 @@ Code-quality gate and hardened open-source supply (added 2026-10-16):
 - Sonar (SonarQube)
 - Chainguard
 - Inedo ProGet
+- GitGuardian
+- TruffleHog (Truffle Security)
 - Other (Please Specify)
 
 **Response scale:** multi-select; Interested; Considering/evaluating;

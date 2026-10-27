@@ -2911,3 +2911,27 @@ Human direction on the 2026-10-23 triage:
 - **Soteria** identification confirmed by the human (soteria.io). "Probable" caveats removed from the page, the category line, the CSV note, taxonomy-gaps and triage.
 - **Slug renamed** `proofpoint-dspm` → `proofpoint` (human request). The page now covers both DSPM (ex-Normalyze) and Enterprise DLP, so it is the company page. Frontmatter ownership was re-pointed to the company: Thoma Bravo take-private, announced 2021-04-26, closed 2021-08-31, ~$12.3B cash. Inbound links and survey-v2.csv Wiki URLs updated. `acuvity` stays a separate page. Old-slug mentions remain only in history lines.
 - **BlueVoyant** calls itself an MDR / managed SOC, and it was already primary in `ai-soc-analysts`. No change. It is not cross-listed to `siem-soc` because it runs customers' Microsoft Sentinel rather than its own SIEM.
+
+## [2026-10-26] research | 13 pages from human-supplied product list (dev environments, comms archiving, secrets scanning, authz, evals/guardrails, Cilium)
+
+The human supplied a list of products to evaluate. Four parallel research agents wrote the pages; sources are in `raw/sources/2026-10-26--*`.
+
+| Page | Category (+cross-list) | Note |
+|---|---|---|
+| coder | ephemeral-environments (+ai-gateway, agent-runtime-security) | AI Gateway + Agent Firewall (renamed 2026-07); $90M C led by KKR (2026-04-01); KKR and QRT are customers |
+| google-cloud-workstations | ephemeral-environments | **Slug decision:** product slug, following github-codespaces / azure-dev-boxes |
+| ona | ephemeral-environments | **Slug decision:** `ona`, with Gitpod in aka. Acquired by OpenAI (announced 2026-06-11, closed 2026-08-10 per Ona only); Ona Cloud shuts 2026-10-31; `verify_after` 2026-12-31. Kept off the survey options |
+| smarsh | comms-surveillance | **Scope decision:** archive incumbents that also sell surveillance are now in the category; comms-surveillance prose, survey notes and taxonomy note revised. Silver Lake stake unverified; Digital Reasoning close not found |
+| global-relay | comms-surveillance | founder-owned; Claude connector confirmed (resolves open question on anthropic-claude-enterprise) |
+| gitguardian | software-supply-chain (+non-human-identity) | $50M Series C (Insight, 2026-02-11) |
+| truffle-security | software-supply-chain | **Slug decision:** company slug, with TruffleHog in aka |
+| amazon-verified-permissions | authorization-engine | **Slug decision:** one page, with Cedar in aka (no separate `cedar` page). Cedar became a CNCF Sandbox project 2025-10-08 |
+| openfga | authorization-engine (+entitlement-aware-rag) | CNCF Incubating 2025-10-28; page covers Auth0/Okta FGA |
+| cilium | trust-zone-segmentation | **Slug decision:** OSS project slug, like agentgateway. Isovalent → Cisco, announced 2023-12-21, closed 2024-04-12 (cisco.md updated) |
+| confident-ai | llm-observability (+ai-red-teaming) | DeepEval/DeepTeam |
+| presidio | ai-red-teaming (+dlp) | **Slug decision:** `presidio`, not `microsoft-presidio`. The project moved from Microsoft to the community org Data Privacy Stack in 2026 |
+| llamafirewall | agent-runtime-security (+ai-runtime-security, ai-red-teaming) | Meta OSS; last release 2025-05 |
+
+**No page:** DevPod. It is unmaintained since 2025, and its owner Loft Labs renamed itself vCluster Labs on 2025-08-15. It is named in plain text on ephemeral-environments.
+
+**R1 orphans (expected):** coder, google-cloud-workstations, ona and cilium sit in practice-tier categories, which have no survey-v2.csv section. The existing ephemeral-environments pages are in the same state.

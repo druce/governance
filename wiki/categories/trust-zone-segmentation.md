@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: null
 adjacent: [risk-tiers, ephemeral-environments]
 incumbent_coverage: []
-vendor_count: 0
+vendor_count: 1
 maps_to_seed_doc: Trust Zone Segmentation
 maps_to_seed_csv: —
 last_verified: 2026-06-28
@@ -104,7 +104,10 @@ Segmentation is a design realized through controls you already run:
   (filesystem, egress allowlist, credentials) is effectively the zone definition.
 - **Egress control** — [network-security-sase](network-security-sase.md) and the [ai-gateway](ai-gateway.md) (the single
   exit door for model traffic) are how you actually cut or allowlist outbound paths
-  for the yellow zone.
+  for the yellow zone. On Kubernetes, [cilium](../vendors/cilium.md) (Isovalent / Cisco) is the
+  in-cluster enforcement point: identity- and DNS-aware network policy, egress gateways,
+  Hubble flow logs and Tetragon runtime enforcement cut the egress leg and lateral
+  movement between zones; it does not see prompts or content. (added 2026-10-26)
 - **Input/output inspection within a zone** — [ai-runtime-security](ai-runtime-security.md) (the AI
   firewall) and [dlp](dlp.md) catch what slips through at the prompt/response boundary.
 - **Identity & authorization** — [identity-access](identity-access.md), [authorization-engine](authorization-engine.md), and

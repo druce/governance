@@ -12,7 +12,7 @@ maturity_stage_required: null
 category_maturity: consolidating
 adjacent: [ai-gateway, ai-red-teaming, agent-runtime-security, llm-observability]
 incumbent_coverage: []
-vendor_count: 17
+vendor_count: 18
 maps_to_seed_doc: AI Runtime Security (AI Firewall)
 maps_to_seed_csv: AI Runtime Security / AI Firewall
 last_verified: 2026-06-28
@@ -82,6 +82,10 @@ observation.
 **Network/SSE incumbents with AI runtime modules**
 - [check-point](../vendors/check-point.md) — AI Defense Plane: the AI Network Firewall (R82.20, 2026-07-30) adds prompt-injection blocking and shadow-AI/MCP discovery to its gateways; parent of [lakera](../vendors/lakera.md) (closed 2025-10-22) (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
 - [zscaler](../vendors/zscaler.md) — Zscaler AI Guard: inline prompt-injection and data-leakage guardrails for AI apps, delivered from its SSE platform (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+
+**Open-source building blocks** (added 2026-10-26)
+
+- [llamafirewall](../vendors/llamafirewall.md) — its PromptGuard 2 classifier is a free, locally run prompt-injection/jailbreak filter, often used as a baseline against commercial AI firewalls (primary in [agent-runtime-security](agent-runtime-security.md)). (added 2026-10-26)
 
 ## Consolidation / M&A dynamics
 
