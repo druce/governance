@@ -74,7 +74,7 @@ observation.
 - [trojai](../vendors/trojai.md) — model and runtime security, scanning plus runtime defense.
 - [splxai](../vendors/splxai.md) — red-teaming-first vendor that also offers runtime guardrails (primary in [ai-red-teaming](ai-red-teaming.md)).
 - [deepkeep](../vendors/deepkeep.md) — five-module Israeli suite (firewall, red teaming, discovery, agent scanner, model scanning); the only vendor here that also covers **computer-vision** models. Cross-listed to [ai-red-teaming](ai-red-teaming.md), [ai-spm](ai-spm.md) and [agent-runtime-security](agent-runtime-security.md).
-- [Akto](https://www.akto.io/agentic-security) — agentic AI security with runtime guardrails: Argus enforces through an MCP Gateway or Agent Gateway that blocks prompt injection, tool abuse and schema violations on live agent and MCP traffic; Atlas runs guardrails on employee endpoints. Also does discovery and red teaming ([docs](https://ai-security-docs.akto.io/agentic-guardrails/overview)). (added 2026-11-25)
+- [Akto](https://www.akto.io/agentic-security) — agentic AI security with runtime guardrails: Argus enforces through an MCP Gateway or Agent Gateway that blocks prompt injection, tool abuse and schema violations on live agent and MCP traffic; Atlas runs guardrails on employee endpoints. Also does discovery and red teaming ([docs](https://ai-security-docs.akto.io/agentic-guardrails/overview)).
 
 **Runtime guardrails inside a DLP/data-security lineage**
 - [prompt-security](../vendors/prompt-security.md) — prompt/response inspection and AI DLP (cross-listed in [dlp](dlp.md) and [ai-access-governance](ai-access-governance.md)).
