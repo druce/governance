@@ -68,6 +68,7 @@ firewall.
 - [trojai](../vendors/trojai.md) — model scanning and red-teaming (cross-listed in [ai-runtime-security](ai-runtime-security.md)).
 - [deepkeep](../vendors/deepkeep.md) — automated red teaming plus "Vibe AI Red Teaming", a human-steered mode where staff redirect an agent-run campaign mid-execution (primary in [ai-runtime-security](ai-runtime-security.md)).
 - [zscaler](../vendors/zscaler.md) — continuous AI red teaming from its SPLX acquisition (closed 2025-10-31; see [splxai](../vendors/splxai.md)) paired with AI Guard runtime guardrails (primary in [network-security-sase](network-security-sase.md)). (added 2026-10-23)
+- [akto](../vendors/akto.md) — automated red teaming for AI agents, MCP servers and models via Argus; 4,000+ probes (vendor-reported) covering prompt injection, tool abuse and privilege escalation, mapped to OWASP Top 10 for LLMs; scheduled daily/weekly or run on-demand via CLI. Also does runtime guardrails (cross-listed in [ai-runtime-security](ai-runtime-security.md) and [agent-runtime-security](agent-runtime-security.md)).
 
 **Guardrails / safety-filter-first**
 - [guardrails-ai](../vendors/guardrails-ai.md) — open-source guardrails framework (validators for I/O).

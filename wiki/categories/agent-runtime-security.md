@@ -75,6 +75,7 @@ anyway.
 - [geordie-ai](../vendors/geordie-ai.md) — London agent-security startup (RSAC 2026 Innovation Sandbox winner) that discovers coding, low-code and SaaS agents, maps their tool/data access, and steers or blocks agent actions in-process via its Beam hooks — posture plus runtime, closest in shape to Zenity. Cross-listed to [ai-spm](ai-spm.md). (added 2026-10-23)
 - [llamafirewall](../vendors/llamafirewall.md) — LlamaFirewall (Meta): open-source (MIT) in-process guardrail framework for agents — PromptGuard 2 injection classifier, experimental AlignmentCheck LLM auditor of agent reasoning for goal hijacking, CodeShield for generated code. Self-hosted library; no release since 2025-05. (added 2026-10-26)
 - [coder](../vendors/coder.md) — Coder Agent Firewall (formerly Agent Boundaries): per-agent-process HTTP egress allowlist with central request logs, cutting the exfiltration leg for coding agents; Coder's own docs rate it bypassable in some modes. Primary in [ephemeral-environments](ephemeral-environments.md). (added 2026-10-26)
+- [akto](../vendors/akto.md) — Argus enforces runtime policy for agents and MCP servers via an MCP Gateway or Agent Gateway that blocks prompt injection, tool abuse and schema violations on live traffic; Atlas extends to employee endpoints with on-device guardrails. Cross-listed to [ai-runtime-security](ai-runtime-security.md) and [ai-red-teaming](ai-red-teaming.md).
 
 ## Consolidation / M&A dynamics
 

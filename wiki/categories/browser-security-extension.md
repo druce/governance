@@ -39,6 +39,7 @@ Agent security's core threat model — the lethal trifecta of untrusted input, s
 - [grip-security](../vendors/grip-security.md) — SaaS/identity-risk and shadow-SaaS discovery with a browser-extension delivery; bridges into [sspm](sspm.md) and [ai-access-governance](ai-access-governance.md). Cross-listed.
 - [chrome-enterprise](../vendors/chrome-enterprise.md) — Chrome Enterprise Premium's built-in policy/DLP/reporting is the "use the browser's own controls instead of a third-party extension" option. Cross-listed with [enterprise-browser](enterprise-browser.md).
 - [prompt-security](../vendors/prompt-security.md) — SentinelOne-owned AI security vendor whose workforce product is delivered mainly as a managed browser extension (Chrome, Safari, Brave) that scans and redacts prompts before they reach external AI tools. Primary in [dlp](dlp.md). (added 2026-10-23)
+- [akto](../vendors/akto.md) — Atlas browser extensions for Chrome, Firefox and Safari discover AI agents, MCP servers, LLMs, skills and plugins on employee endpoints; feeds a unified inventory and applies on-device guardrails (prompt injection, risky MCP tool calls, shadow AI). Angle is agent-discovery and guardrails rather than pure DLP. Cross-listed to [ai-runtime-security](ai-runtime-security.md) and [agent-runtime-security](agent-runtime-security.md).
 
 ## Consolidation / M&A dynamics
 
